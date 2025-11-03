@@ -1,0 +1,381 @@
+// src/services/PlateService.js
+/**
+ * Core business logic for plate management
+ * Extracted from React components and converted to headless service
+ */
+
+const Plate = require("../models/Plate");
+
+class PlateService {
+  constructor(storage) {
+    this.storage = storage;
+    this.collectionName = "plates";
+  }
+
+  async createPlate(plateData, operator) {
+    try {
+      // Check if plate ID already exists
+      const existing = await this.storage.findOne(this.collectionName, {
+        plateId: plateData.plateId
+      });
+
+      if (existing) {
+        throw new Error(`Plate with ID ${plateData.plateId} already exists`);
+      }
+
+      const plate = new Plate({
+        ...plateData,
+        lastModifiedBy: operator,
+      });
+
+      const validation = plate.validate();
+      if (!validation.isValid) {
+        throw new Error(`Validation failed: ${validation.errors.join(", ")}`);
+      }
+
+      plate.addHistoryEntry("created", operator, { initial: true });
+
+      const result = await this.db
+        .collection(this.collectionName)
+        .insertOne(plate.toJSON());
+
+      console.log(`✅ Created plate ${plate.plateId}`);
+      return { ...plate.toJSON(), _id: result.insertedId };
+    } catch (error) {
+      console.error(`Failed to create plate:`, error);
+      throw error;
+    }
+  }
+
+  async getAllPlates(filters = {}) {
+    try {
+      const query = this.buildQuery(filters);
+      const plates = await this.db
+        .collection(this.collectionName)
+        .find(query)
+        .sort({ createdAt: -1 })
+        .toArray();
+
+      return plates.map((doc) => Plate.fromDatabase(doc).toJSON());
+    } catch (error) {
+      console.error("Failed to get plates:", error);
+      throw error;
+    }
+  }
+
+  async getPlateById(plateId) {
+    try {
+      const doc = await this.db
+        .collection(this.collectionName)
+        .findOne({ plateId: plateId });
+
+      if (!doc) {
+        throw new Error(`Plate ${plateId} not found`);
+      }
+
+      return Plate.fromDatabase(doc).toJSON();
+    } catch (error) {
+      console.error(`Failed to get plate ${plateId}:`, error);
+      throw error;
+    }
+  }
+
+  async updatePlate(plateId, updateData, operator) {
+    try {
+      const existingDoc = await this.db
+        .collection(this.collectionName)
+        .findOne({ plateId: plateId });
+
+      if (!existingDoc) {
+        throw new Error(`Plate ${plateId} not found`);
+      }
+
+      const plate = Plate.fromDatabase(existingDoc);
+
+      // Update allowed fields
+      if (updateData.name !== undefined) plate.name = updateData.name;
+      if (updateData.shelf !== undefined) plate.shelf = updateData.shelf;
+      if (updateData.notes !== undefined) plate.notes = updateData.notes;
+
+      plate.addHistoryEntry("updated", operator, {
+        fieldsUpdated: Object.keys(updateData),
+      });
+
+      const result = await this.db
+        .collection(this.collectionName)
+        .updateOne({ plateId: plateId }, { $set: plate.toJSON() });
+
+      if (result.modifiedCount === 0) {
+        throw new Error(`Failed to update plate ${plateId}`);
+      }
+
+      console.log(`✅ Updated plate ${plateId}`);
+      return plate.toJSON();
+    } catch (error) {
+      console.error(`Failed to update plate ${plateId}:`, error);
+      throw error;
+    }
+  }
+
+  async startWork(plateId, workName, operator) {
+    try {
+      const existingDoc = await this.db
+        .collection(this.collectionName)
+        .findOne({ plateId: plateId });
+
+      if (!existingDoc) {
+        throw new Error(`Plate ${plateId} not found`);
+      }
+
+      const plate = Plate.fromDatabase(existingDoc);
+      plate.startWork(workName, operator);
+
+      const result = await this.db
+        .collection(this.collectionName)
+        .updateOne({ plateId: plateId }, { $set: plate.toJSON() });
+
+      if (result.modifiedCount === 0) {
+        throw new Error(`Failed to start work on plate ${plateId}`);
+      }
+
+      console.log(
+        `✅ Started work ${workName} on plate ${plateId} by ${operator}`
+      );
+      return plate.toJSON();
+    } catch (error) {
+      console.error(`Failed to start work on plate ${plateId}:`, error);
+      throw error;
+    }
+  }
+
+  async finishWork(plateId, operator, toolsUsed = []) {
+    try {
+      const existingDoc = await this.db
+        .collection(this.collectionName)
+        .findOne({ plateId: plateId });
+
+      if (!existingDoc) {
+        throw new Error(`Plate ${plateId} not found`);
+      }
+
+      const plate = Plate.fromDatabase(existingDoc);
+      const workName = plate.currentWork?.workName;
+
+      plate.finishWork(operator, toolsUsed);
+
+      const result = await this.db
+        .collection(this.collectionName)
+        .updateOne({ plateId: plateId }, { $set: plate.toJSON() });
+
+      if (result.modifiedCount === 0) {
+        throw new Error(`Failed to finish work on plate ${plateId}`);
+      }
+
+      console.log(
+        `✅ Finished work ${workName} on plate ${plateId} by ${operator}`
+      );
+      return plate.toJSON();
+    } catch (error) {
+      console.error(`Failed to finish work on plate ${plateId}:`, error);
+      throw error;
+    }
+  }
+
+  async lockPlate(plateId, operator, reason = "") {
+    try {
+      const existingDoc = await this.db
+        .collection(this.collectionName)
+        .findOne({ plateId: plateId });
+
+      if (!existingDoc) {
+        throw new Error(`Plate ${plateId} not found`);
+      }
+
+      const plate = Plate.fromDatabase(existingDoc);
+      plate.lockPlate(operator, reason);
+
+      const result = await this.db
+        .collection(this.collectionName)
+        .updateOne({ plateId: plateId }, { $set: plate.toJSON() });
+
+      console.log(`✅ Locked plate ${plateId} by ${operator}`);
+      return plate.toJSON();
+    } catch (error) {
+      console.error(`Failed to lock plate ${plateId}:`, error);
+      throw error;
+    }
+  }
+
+  async unlockPlate(plateId, operator) {
+    try {
+      const existingDoc = await this.db
+        .collection(this.collectionName)
+        .findOne({ plateId: plateId });
+
+      if (!existingDoc) {
+        throw new Error(`Plate ${plateId} not found`);
+      }
+
+      const plate = Plate.fromDatabase(existingDoc);
+      plate.unlockPlate(operator);
+
+      const result = await this.db
+        .collection(this.collectionName)
+        .updateOne({ plateId: plateId }, { $set: plate.toJSON() });
+
+      console.log(`✅ Unlocked plate ${plateId} by ${operator}`);
+      return plate.toJSON();
+    } catch (error) {
+      console.error(`Failed to unlock plate ${plateId}:`, error);
+      throw error;
+    }
+  }
+
+  async deletePlate(plateId, operator) {
+    try {
+      const existingDoc = await this.db
+        .collection(this.collectionName)
+        .findOne({ plateId: plateId });
+
+      if (!existingDoc) {
+        throw new Error(`Plate ${plateId} not found`);
+      }
+
+      const plate = Plate.fromDatabase(existingDoc);
+
+      if (plate.status.occupancy === "in-use") {
+        throw new Error(`Cannot delete plate ${plateId} - work in progress`);
+      }
+
+      const result = await this.db
+        .collection(this.collectionName)
+        .deleteOne({ plateId: plateId });
+
+      if (result.deletedCount === 0) {
+        throw new Error(`Failed to delete plate ${plateId}`);
+      }
+
+      console.log(`✅ Deleted plate ${plateId} by ${operator}`);
+      return { success: true, plateId: plateId };
+    } catch (error) {
+      console.error(`Failed to delete plate ${plateId}:`, error);
+      throw error;
+    }
+  }
+
+  async getAnalytics() {
+    try {
+      const pipeline = [
+        {
+          $group: {
+            _id: null,
+            totalPlates: { $sum: 1 },
+            inUse: {
+              $sum: { $cond: [{ $eq: ["$status.occupancy", "in-use"] }, 1, 0] },
+            },
+            free: {
+              $sum: { $cond: [{ $eq: ["$status.occupancy", "free"] }, 1, 0] },
+            },
+            newPlates: {
+              $sum: { $cond: [{ $eq: ["$status.health", "new"] }, 1, 0] },
+            },
+            usedPlates: {
+              $sum: { $cond: [{ $eq: ["$status.health", "used"] }, 1, 0] },
+            },
+            lockedPlates: {
+              $sum: { $cond: [{ $eq: ["$status.health", "locked"] }, 1, 0] },
+            },
+          },
+        },
+      ];
+
+      const result = await this.db
+        .collection(this.collectionName)
+        .aggregate(pipeline)
+        .toArray();
+
+      const analytics = result[0] || {
+        totalPlates: 0,
+        inUse: 0,
+        free: 0,
+        newPlates: 0,
+        usedPlates: 0,
+        lockedPlates: 0,
+      };
+
+      // Get recent activity
+      const recentActivity = await this.getRecentActivity(10);
+
+      return {
+        summary: analytics,
+        recentActivity: recentActivity,
+        timestamp: new Date(),
+      };
+    } catch (error) {
+      console.error("Failed to get analytics:", error);
+      throw error;
+    }
+  }
+
+  async getRecentActivity(limit = 20) {
+    try {
+      const plates = await this.db
+        .collection(this.collectionName)
+        .find({ "history.0": { $exists: true } })
+        .sort({ "history.date": -1 })
+        .limit(limit * 2) // Get more to sort properly
+        .toArray();
+
+      const allActivity = [];
+      plates.forEach((plate) => {
+        plate.history.forEach((entry) => {
+          allActivity.push({
+            ...entry,
+            plateId: plate.plateId,
+            plateName: plate.name,
+          });
+        });
+      });
+
+      // Sort by date descending and limit
+      return allActivity
+        .sort((a, b) => new Date(b.date) - new Date(a.date))
+        .slice(0, limit);
+    } catch (error) {
+      console.error("Failed to get recent activity:", error);
+      throw error;
+    }
+  }
+
+  buildQuery(filters) {
+    const query = {};
+
+    if (filters.status) {
+      if (filters.status === "free") query["status.occupancy"] = "free";
+      if (filters.status === "in-use") query["status.occupancy"] = "in-use";
+      if (filters.status === "new") query["status.health"] = "new";
+      if (filters.status === "used") query["status.health"] = "used";
+      if (filters.status === "locked") query["status.health"] = "locked";
+    }
+
+    if (filters.shelf) {
+      query.shelf = filters.shelf;
+    }
+
+    if (filters.search) {
+      query.$or = [
+        { plateId: { $regex: filters.search, $options: "i" } },
+        { name: { $regex: filters.search, $options: "i" } },
+        { shelf: { $regex: filters.search, $options: "i" } },
+      ];
+    }
+
+    if (filters.workName) {
+      query["currentWork.workName"] = filters.workName;
+    }
+
+    return query;
+  }
+}
+
+module.exports = PlateService;
