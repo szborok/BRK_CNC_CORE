@@ -1,0 +1,15 @@
+{
+  "id": "W5270NS01001C_1763024521123",
+  "filename": "W5270NS01001C",
+  "processedAt": "2025-11-13T09:02:01.123Z",
+  "results": {
+    "rulesApplied": [
+      "AutoCorrectionContour",
+      "GunDrill60MinLimit",
+      "M110Contour",
+      "SingleToolInNC"
+    ],
+    "violations": []
+  },
+  "status": "passed"
+}
