@@ -4,8 +4,8 @@
 3 ; DRAWING NUMBER: 
 4 ; INDEX   	  : 
 5 ; MACHINE	  : DMG DMU 100P duoBLOCK
-6 ; DATE   	  : 21.10.2025
-7 ; TIME  	  : 16:38
+6 ; DATE   	  : 05.11.2025
+7 ; TIME  	  : 14:33
 8 ; PROGRAM RAN	  :
 9 ; ----------------------------------
 10 ;
@@ -72,14 +72,14 @@
 64 *   - JOB: 105: M9x1
 65 ; ----------------------------------
 66 FN 0:Q2=566 ;Z FEEDRATE
-67 L X-52 Y17 Z30 R0 F MAX
+67 L X-56 Y17 Z30 R0 F MAX
 68 CYCL DEF 207 RIGID TAPPING NEW~
    Q200=3 ;SET-UP CLEARANCE~
    Q201=-12.9999 ;DEPTH~
    Q239=+1 ;THREAD PITCH~
    Q203=2 ;SURFACE COORDINATE~
    Q204=28 ;2ND SET-UP CLEARANCE
-69 L X-52 Y17 R0 F MAX M99
+69 L X-56 Y17 R0 F MAX M99
 70 ; ----------------------------------
 71 *   - JOB: 106: M9X1
 72 ; ----------------------------------

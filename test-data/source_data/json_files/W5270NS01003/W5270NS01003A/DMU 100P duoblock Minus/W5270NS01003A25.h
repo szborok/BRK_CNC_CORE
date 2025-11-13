@@ -4,8 +4,8 @@
 3 ; DRAWING NUMBER: 
 4 ; INDEX   	  : 
 5 ; MACHINE	  : DMG DMU 100P duoBLOCK
-6 ; DATE   	  : 21.10.2025
-7 ; TIME  	  : 16:38
+6 ; DATE   	  : 05.11.2025
+7 ; TIME  	  : 14:33
 8 ; PROGRAM RAN	  :
 9 ; ----------------------------------
 10 ;
@@ -196,7 +196,7 @@
 153 *   - JOB: 79: KPF16 M9x1 LT
 154 ; ----------------------------------
 155 FN 0:Q2=50 ;Z FEEDRATE
-156 L X-52 Y17 Z30 R0 F MAX
+156 L X-56 Y17 Z30 R0 F MAX
 157 CYCL DEF 200 DRILLING~
     Q200=5 ;SET-UP CLEARANCE~
     Q201=-5 ;DEPTH~
@@ -206,7 +206,7 @@
     Q203=0.0001 ;SURFACE COORDINATE~
     Q204=29.9999 ;2ND SET-UP CLEARANCE~
     Q211=0 ;DWELL TIME AT BOTTOM
-158 L X-52 Y17 R0 F MAX M99
+158 L X-56 Y17 R0 F MAX M99
 159 ; ----------------------------------
 160 *   - JOB: 80: KPF16 M9x1 LT
 161 ; ----------------------------------

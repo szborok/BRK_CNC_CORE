@@ -1,0 +1,136 @@
+1 BEGIN PGM W5246NS01007B10 MM
+2 ; ----------------------------------
+3 ; PROJECT	  :
+4 ; DRAWING NUMBER:
+5 ; INDEX   	  :
+6 ; MACHINE	  : DMG DMU 85 monoBLOCK
+7 ; DATE   	  : 12.11.2025
+8 ; TIME  	  : 10:30
+9 ; PROGRAM RAN	  :
+10 ; ----------------------------------
+11 ;
+12 ;created by hyperMILL 2025 OPEN MIND Technologies AG
+13 ;
+14 ; --- TOOLLIST BEGIN ---------------
+15 ; T1635493907 | GUH-4630-MF_M8_H63PL100-MF / DM=8 CR=0 TL=161
+16 ; ---- TOOLLIST END ----------------
+17 ;
+18 ; --- BLOCK FORM -------------------
+19 BLK FORM 0.1 Z X-258 Y-95 Z-22
+20 BLK FORM 0.2 X258 Y95 Z0
+21 ; ----------------------------------
+22 ;
+23 ; ----------------------------------
+24 CYCL DEF 392 ATC~
+   Q240=0 ;TUNING MODE~
+   Q241=1 ;WEIGHT MODE
+25 ; ----------------------------------
+26 M127 ; SHORTER PATH TRAVERSE OF ROTARY AXES OFF
+27 FUNCTION RESET TCPM
+28 CALL LBL 1 ; RESET WORKING PLANE
+29 ; --- SAFEPOSITION TOOL CALL -------
+30 L Z0 R0 FMAX M91
+31 L X0 R0 FMAX M91
+32 L Y-425 R0 FMAX M91
+33 ; ----------------------------------
+34 L A0 R0 FMAX
+35 ; ----------------------------------
+36 * - TOOL: T1635493907 | GUH-4630-MF_M8_H63PL100-MF / DM=8 CR=0 TL=161
+37 TOOL CALL "MH08000000530275" Z S239 DL+0 DR+0
+38 ; ----------------------------------
+39 *   - JOB: 19: M8-menetfúrás-CYCL207
+40 ; ----------------------------------
+41 CALL LBL 1 ; RESET WORKING PLANE
+42 FN 0:Q3=299 ; Z FEED RATE
+43 ; --- SAFEPOSITION -----------------
+44 L Z0 R0 FMAX M91
+45 L X0 R0 FMAX M91
+46 L Y-425 R0 FMAX M91
+47 ; ----------------------------------
+48 ; ----------------------------------
+49 ; A-90 C90
+50 ; ----------------------------------
+51 CYCL DEF 7.0 DATUM SHIFT
+52 CYCL DEF 7.1 X-258
+53 CYCL DEF 7.2 Y1.5
+54 CYCL DEF 7.3 Z-11
+55 PLANE SPATIAL SPA90 SPB0 SPC-90 STAY SEQ- TABLE ROT
+56 L A+Q120 C+Q122 R0 FMAX M126
+57 L X51.5 Y0 R0 F MAX M3
+58 M8
+59 L Z50 R0 F MAX
+60 CYCL DEF 207 RIGID TAPPING NEW~
+   Q200=3 ;SET-UP CLEARANCE~
+   Q201=-18.5 ;DEPTH~
+   Q239=+1.25 ;THREAD PITCH~
+   Q203=0 ;SURFACE COORDINATE~
+   Q204=50 ;2ND SET-UP CLEARANCE
+61 L X51.5 Y0 R0 F MAX M99
+62 L X-48.5 Y0 R0 F MAX M99
+63 ; ----------------------------------
+64 *   - JOB: 20: M8-menetfúrás-CYCL207
+65 ; ----------------------------------
+66 CALL LBL 1 ; RESET WORKING PLANE
+67 FN 0:Q3=299 ; Z FEED RATE
+68 ; --- SAFEPOSITION -----------------
+69 L Z0 R0 FMAX M91
+70 L X0 R0 FMAX M91
+71 L Y-425 R0 FMAX M91
+72 ; ----------------------------------
+73 ; ----------------------------------
+74 ; A-90 C270
+75 ; ----------------------------------
+76 CYCL DEF 7.0 DATUM SHIFT
+77 CYCL DEF 7.1 X258
+78 CYCL DEF 7.2 Y0
+79 CYCL DEF 7.3 Z-11
+80 PLANE SPATIAL SPA90 SPB0 SPC90 STAY SEQ- TABLE ROT
+81 L A+Q120 C+Q122 R0 FMAX M126
+82 L X50 Y0 R0 F MAX
+83 L Z50 R0 F MAX
+84 CYCL DEF 207 RIGID TAPPING NEW~
+   Q200=3 ;SET-UP CLEARANCE~
+   Q201=-18.5 ;DEPTH~
+   Q239=+1.25 ;THREAD PITCH~
+   Q203=0 ;SURFACE COORDINATE~
+   Q204=50 ;2ND SET-UP CLEARANCE
+85 L X50 Y0 R0 F MAX M99
+86 L X-50 Y0 R0 F MAX M99
+87 M9
+88 M5
+89 CALL LBL 1 ; RESET WORKING PLANE
+90 ; --- SAFEPOSITION END -------------
+91 L Z0 R0 FMAX M91
+92 L X0 R0 FMAX M91
+93 L Y-425 R0 FMAX M91
+94 ; ----------------------------------
+95 L A0 C0 R0 FMAX ; STRAIGTHEN ROTATIONAXES R1 R2
+96 ; --- SAFEPOSITION END -------------
+97 L Z0 R0 FMAX M91
+98 L X0 R0 FMAX M91
+99 L Y0 R0 FMAX M91
+100 ; ----------------------------------
+/101 M30
+102 * --- LBL BEGIN --------------------
+103 LBL 1 ; RESET WORKING PLANE
+104 CYCL DEF 7.0 DATUM SHIFT
+105 CYCL DEF 7.1 X0
+106 CYCL DEF 7.2 Y0
+107 CYCL DEF 7.3 Z0
+108 PLANE RESET STAY
+109 LBL 0
+110 ; ----------------------------------
+111 LBL "CuttingEdgesCheck"
+112 FN 9: IF +Q1900 EQU +1 GOTO LBL "CuttingEdges1"
+113 FN 9: IF +Q1900 EQU +2 GOTO LBL "CuttingEdges2"
+114 LBL 0
+115 ; ----------------------------------
+116 LBL "CuttingEdges1"
+117 FN 0: Q1901=4
+118 LBL 0
+119 ; ----------------------------------
+120 LBL "CuttingEdges2"
+121 FN 0: Q1901=3
+122 LBL 0
+123 ; ----------------------------------
+124 END PGM W5246NS01007B10 MM

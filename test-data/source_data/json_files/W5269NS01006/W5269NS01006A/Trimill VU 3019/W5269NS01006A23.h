@@ -1,0 +1,130 @@
+0 BEGIN PGM W5269NS01006A23 MM
+1 ; ----------------------------------
+2 ; PROJECT	  :
+3 ; DRAWING NUMBER:
+4 ; INDEX   	  :
+5 ; MACHINE	  : TRIMILL VU3019
+6 ; DATE   	  : 12.11.2025
+7 ; TIME  	  : 09:30
+8 ; PROGRAM RAN	  :
+9 ; ----------------------------------
+10 ;
+11 ;created by hyperMILL 2025 OPEN MIND Technologies AG
+12;
+13; --- TOOLLIST BEGIN ---------------
+14; T1803135404 | FRA-P15250-S11.7R0_H100ZM12L95 / DM=11.7 CR=0 TL=133
+15; ---- TOOLLIST END ----------------
+16;
+17 ; --- BLOCK FORM -------------------
+18 BLK FORM 0.1 Z X-498 Y-373 Z-160.25
+19 BLK FORM 0.2 X498 Y373 Z0.25
+20 ; ----------------------------------
+21 ;
+22 M16 ; CLAMP ROTARY AXIS
+23 M127 ; SHORTER PATH TRAVERSE OFF
+24 FUNCTION RESET TCPM
+25 CALL LBL 1 ; RESET WORKING PLANE
+26 ; --- SAFEPOSITION TOOL CALL -------
+27 L Z+1000 R0 FMAX M91
+28 L Y-960 R0 F MAX M91
+29 L B+0 R0 FMAX
+30 L X-1490 R0 FMAX M91
+31 ; ----------------------------------
+32 PLANE SPATIAL SPA0 SPB0 SPC0 TURN FMAX SEQ+ TABLE ROT
+33 CALL LBL 1 ; RESET WORKING PLANE
+34 ; ----------------------------------
+35 * - TOOL: T1803135404 | FRA-P15250-S11.7R0_H100ZM12L95 / DM=11.7 CR=0 TL=133
+36 TOOL CALL "SS11700000380069" Z S4353 DL+0 DR+0
+37 ; --- SAFEPOSITION TOOL CALL -------
+38 L Z+1000 R0 FMAX M91
+39 L X-1490 R0 FMAX M91
+40 L Y-960 R0 F MAX M91
+41 ; ----------------------------------
+42 CALL LBL 1 ; RESET WORKING PLANE
+43 ; ----------------------------------
+44 *   - JOB: 101: D24,2 S RAH xy0 z0.1 CYCL 208
+45 ; ----------------------------------
+46 ; ----------------------------------
+47 CYCL DEF 332 TUNING ~
+     Q395=+0 ; TUNING MODE
+48 ; ----------------------------------
+49 CYCL DEF 32.0 TOLERANCE
+50 CYCL DEF 32.1
+51 ; ----------------------------------
+52 FN 0:Q1=1554 ; XY FEED RATE
+53 FN 0:Q2=1554 ; Z FEED RATE
+54 ; --- SAFEPOSITION B MINUS ---------
+55 L Z+1000 R0 FMAX M91
+56 L X-1490 R0 FMAX M91
+57 L Y-960 R0 FMAX M91
+58 ; ----------------------------------
+59 CYCL DEF 7.0 DATUM SHIFT
+60 CYCL DEF 7.1 X0
+61 CYCL DEF 7.2 Y0
+62 CYCL DEF 7.3 Z0
+63 PLANE SPATIAL SPA0 SPB0 SPC0 TURN FMAX SEQ+ TABLE ROT
+64 L X0 Y160 R0 F MAX M3
+65 L Z30 R0 F MAX
+66 M8 M57
+67 CYCL DEF 208 BORE MILLING~
+ Q200=3 ;SET-UP CLEARANCE~
+ Q201=-0.9 ;DEPTH~
+ Q206=Q1 ;FEED RATE FOR PLUNGING~
+ Q334=0.5 ;PLUNGING DEPTH~
+ Q203=-25 ;SURFACE COORDINATE~
+ Q204=55 ;2ND SET-UP CLEARANCE~
+ Q335=24.2 ;NOMINAL DIAMETER~
+ Q342=24.1 ;ROUGHING DIAMETER~
+ Q351=+1;CLIMB OR UP-CUT
+68 L X0 Y160 R0 F MAX M99
+69 L X383 Y160 R0 F MAX M99
+70 L X383 Y-160 R0 F MAX M99
+71 L X0 Y-160 R0 F MAX M99
+72 L X-383 Y-160 R0 F MAX M99
+73 L X-383 Y160 R0 F MAX M99
+74 ; ----------------------------------
+75 CYCL DEF 32.0 TOLERANCE
+76 CYCL DEF 32.1
+77 ; ----------------------------------
+78 CYCL DEF 332 TUNING ~
+     Q395=+0 ; TUNING MODE
+79 ; ----------------------------------
+80 M9
+81 M5
+82 CALL LBL 1 ; RESET WORKING PLANE
+83 ; --- SAFEPOSITION B MINUS RETRACT -
+84 L Z+1000 R0 FMAX M91
+85 L X-1490 R0 FMAX M91
+86 L Y-960 R0 FMAX M91
+87 L B+0 R0 FMAX
+88 ; ----------------------------------
+89 ; --- SAFEPOSITION END -------------
+90 L Z+1000 R0 FMAX M91
+91 L Y-960 R0 FMAX M91
+92 L X-1490 R0 FMAX M91
+93 ; ----------------------------------
+94 M30
+95 * --- LBL BEGIN --------------------
+96 ; * RESET WORKING PLANE *
+97 LBL 1 ; RESET WORKING PLANE
+98 CYCL DEF 7.0 DATUM SHIFT
+99 CYCL DEF 7.1 X+0
+100 CYCL DEF 7.2 Y+0
+101 CYCL DEF 7.3 Z+0
+102 PLANE RESET STAY
+103 LBL 0
+104 ; ----------------------------------
+105 LBL "CuttingEdgesCheck"
+106 FN 9: IF +Q1900 EQU +1 GOTO LBL "CuttingEdges1"
+107 FN 9: IF +Q1900 EQU +2 GOTO LBL "CuttingEdges2"
+108 LBL 0
+109 ; ----------------------------------
+110 LBL "CuttingEdges1"
+111 FN 0: Q1901=4
+112 LBL 0
+113 ; ----------------------------------
+114 LBL "CuttingEdges2"
+115 FN 0: Q1901=3
+116 LBL 0
+117 ; ----------------------------------
+118 END PGM W5269NS01006A23 MM

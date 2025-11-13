@@ -4,8 +4,8 @@
 3 ; DRAWING NUMBER: 
 4 ; INDEX   	  : 
 5 ; MACHINE	  : DMG DMU 100P duoBLOCK
-6 ; DATE   	  : 21.10.2025
-7 ; TIME  	  : 16:41
+6 ; DATE   	  : 05.11.2025
+7 ; TIME  	  : 14:23
 8 ; PROGRAM RAN	  :
 9 ; ----------------------------------
 10 ;

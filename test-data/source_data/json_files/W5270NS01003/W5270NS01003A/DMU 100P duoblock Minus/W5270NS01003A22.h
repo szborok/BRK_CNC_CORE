@@ -4,8 +4,8 @@
 3 ; DRAWING NUMBER: 
 4 ; INDEX   	  : 
 5 ; MACHINE	  : DMG DMU 100P duoBLOCK
-6 ; DATE   	  : 21.10.2025
-7 ; TIME  	  : 16:38
+6 ; DATE   	  : 05.11.2025
+7 ; TIME  	  : 14:33
 8 ; PROGRAM RAN	  :
 9 ; ----------------------------------
 10 ;
@@ -82,7 +82,7 @@
 70 ; ----------------------------------
 71 FN 0:Q1=899 ;XY FEEDRATE
 72 FN 0:Q2=899 ;Z FEEDRATE
-73 L X-52 Y17 Z30 R0 F MAX
+73 L X-56 Y17 Z30 R0 F MAX
 74 CYCL DEF 208 BORE MILLING~
    Q200=1 ;SET-UP CLEARANCE~
    Q201=-13.9999 ;DEPTH~
@@ -93,7 +93,7 @@
    Q335=8.1 ;NOMINAL DIAMETER~
    Q342=8 ;ROUGHING DIAMETER~
    Q351=1 ;CLIMB OR UP-CUT
-75 L X-52 Y17 R0 F MAX M99
+75 L X-56 Y17 R0 F MAX M99
 76 ; ----------------------------------
 77 *   - JOB: 49: D5.7 D8,1 RAH_0
 78 ; ----------------------------------

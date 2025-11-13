@@ -1,0 +1,118 @@
+1 BEGIN PGM W5246NS01007B12 MM
+2 ; ----------------------------------
+3 ; PROJECT	  :
+4 ; DRAWING NUMBER:
+5 ; INDEX   	  :
+6 ; MACHINE	  : DMG DMU 85 monoBLOCK
+7 ; DATE   	  : 12.11.2025
+8 ; TIME  	  : 10:30
+9 ; PROGRAM RAN	  :
+10 ; ----------------------------------
+11 ;
+12 ;created by hyperMILL 2025 OPEN MIND Technologies AG
+13 ;
+14 ; --- TOOLLIST BEGIN ---------------
+15 ; T61804393 | FRA-P8400-S7.7R0_H63WM8L65X / DM=7.7 CR=0 TL=91
+16 ; ---- TOOLLIST END ----------------
+17 ;
+18 ; --- BLOCK FORM -------------------
+19 BLK FORM 0.1 Z X-258 Y-95 Z-22
+20 BLK FORM 0.2 X258 Y95 Z0
+21 ; ----------------------------------
+22 ;
+23 ; ----------------------------------
+24 CYCL DEF 392 ATC~
+   Q240=0 ;TUNING MODE~
+   Q241=1 ;WEIGHT MODE
+25 ; ----------------------------------
+26 M127 ; SHORTER PATH TRAVERSE OF ROTARY AXES OFF
+27 FUNCTION RESET TCPM
+28 CALL LBL 1 ; RESET WORKING PLANE
+29 ; --- SAFEPOSITION TOOL CALL -------
+30 L Z0 R0 FMAX M91
+31 L X0 R0 FMAX M91
+32 L Y-425 R0 FMAX M91
+33 ; ----------------------------------
+34 L A0 R0 FMAX
+35 ; ----------------------------------
+36 * - TOOL: T61804393 | FRA-P8400-S7.7R0_H63WM8L65X / DM=7.7 CR=0 TL=91
+37 TOOL CALL "SA07700000260339" Z S5787 DL+0 DR+0
+38 ; ----------------------------------
+39 *   - JOB: 28: D17_sík_sim_FRA-P8400-S7.7R0_DL:0_DR:0
+40 ; ----------------------------------
+41 CALL LBL 1 ; RESET WORKING PLANE
+42 FN 0:Q2=1204 ; XY FEED RATE
+43 FN 0:Q3=1204 ; Z FEED RATE
+44 CYCL DEF 32.0 TOLERANCE
+45 CYCL DEF 32.1 T0.015
+46 CYCL DEF 32.2 HSC-MODE:0
+47 ; --- SAFEPOSITION -----------------
+48 L Z0 R0 FMAX M91
+49 L X0 R0 FMAX M91
+50 L Y-425 R0 FMAX M91
+51 ; ----------------------------------
+52 ; ----------------------------------
+53 ; A0 C0
+54 ; ----------------------------------
+55 CYCL DEF 7.0 DATUM SHIFT
+56 CYCL DEF 7.1 X0
+57 CYCL DEF 7.2 Y0
+58 CYCL DEF 7.3 Z0
+59 PLANE SPATIAL SPA0 SPB0 SPC0 STAY SEQ+ TABLE ROT
+60 L A+Q120 C+Q122 R0 FMAX M126
+61 L X190 Y-83 R0 F MAX M3
+62 M26
+63 L Z50 R0 F MAX
+64 CYCL DEF 208 BORE MILLING~
+  Q200=0.5 ;SET-UP CLEARANCE~
+  Q201=-0.1 ;DEPTH~
+  Q206=Q2 ;FEED RATE FOR PLUNGING~
+  Q334=0.33 ;PLUNGING DEPTH~
+  Q203=-4.9 ;SURFACE COORDINATE~
+  Q204=54.9 ;2ND SET-UP CLEARANCE~
+  Q335=17 ;NOMINAL DIAMETER~
+  Q342=16.9 ;ROUGHING DIAMETER~
+  Q351=1 ;CLIMB OR UP-CUT
+65 L X190 Y-83 R0 F MAX M99
+66 L X190 Y83 R0 F MAX M99
+67 L X-190 Y83 R0 F MAX M99
+68 L X-190 Y-83 R0 F MAX M99
+69 CYCL DEF 32.0 TOLERANCE
+70 CYCL DEF 32.1
+71 M9
+72 M5
+73 CALL LBL 1 ; RESET WORKING PLANE
+74 ; --- SAFEPOSITION END -------------
+75 L Z0 R0 FMAX M91
+76 L X0 R0 FMAX M91
+77 L Y-425 R0 FMAX M91
+78 ; ----------------------------------
+79 ; --- SAFEPOSITION END -------------
+80 L Z0 R0 FMAX M91
+81 L X0 R0 FMAX M91
+82 L Y0 R0 FMAX M91
+83 ; ----------------------------------
+/84 M30
+85 * --- LBL BEGIN --------------------
+86 LBL 1 ; RESET WORKING PLANE
+87 CYCL DEF 7.0 DATUM SHIFT
+88 CYCL DEF 7.1 X0
+89 CYCL DEF 7.2 Y0
+90 CYCL DEF 7.3 Z0
+91 PLANE RESET STAY
+92 LBL 0
+93 ; ----------------------------------
+94 LBL "CuttingEdgesCheck"
+95 FN 9: IF +Q1900 EQU +1 GOTO LBL "CuttingEdges1"
+96 FN 9: IF +Q1900 EQU +2 GOTO LBL "CuttingEdges2"
+97 LBL 0
+98 ; ----------------------------------
+99 LBL "CuttingEdges1"
+100 FN 0: Q1901=4
+101 LBL 0
+102 ; ----------------------------------
+103 LBL "CuttingEdges2"
+104 FN 0: Q1901=3
+105 LBL 0
+106 ; ----------------------------------
+107 END PGM W5246NS01007B12 MM
