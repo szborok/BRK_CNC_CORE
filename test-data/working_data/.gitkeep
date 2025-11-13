@@ -1,0 +1,16 @@
+# Working Data Directory
+# 
+# This directory is used by the CNC Management System to store all processing outputs,
+# logs, and temporary files. The system will automatically create subdirectories here
+# during operation:
+#
+# BRK CNC Management Dashboard/
+# ├── jsonscanner/     - JSONScanner processing results
+# ├── toolmanager/     - ToolManager processing results  
+# ├── dashboard/       - Dashboard application data
+# ├── logs/            - System logs
+# ├── backups/         - Backup files
+# ├── temp/            - Temporary processing files
+# └── output/          - Reports and exports
+#
+# In demo mode, this simulates the customer's chosen working directory.

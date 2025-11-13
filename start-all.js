@@ -235,10 +235,23 @@ async function main() {
   log(`⚙️  Node: ${process.version}`, 'dim');
   console.log('');
   
-  // Show reset mode info
+  // Show reset mode info and clean working data
   if (resetMode) {
-    log('🔄 RESET MODE: localStorage will be cleared', 'yellow');
-    log('   Dashboard will show setup wizard on startup', 'yellow');
+    log('🔄 RESET MODE: Complete clean start', 'yellow');
+    log('   • localStorage will be cleared in browser', 'yellow');
+    log('   • Working data folder will be cleaned', 'yellow');
+    console.log('');
+    
+    // Clean working data folder
+    const workingDataPath = path.join(__dirname, 'test-data', 'working_data', 'BRK CNC Management Dashboard');
+    if (fs.existsSync(workingDataPath)) {
+      try {
+        fs.rmSync(workingDataPath, { recursive: true, force: true });
+        log('   ✅ Cleaned working data folder', 'green');
+      } catch (e) {
+        log(`   ⚠️  Could not clean working data: ${e.message}`, 'yellow');
+      }
+    }
     console.log('');
   }
   
@@ -259,11 +272,22 @@ async function main() {
     log(`⏱️  Started in ${elapsed}s`, 'green');
     console.log('');
     
+    const dashboardUrl = resetMode 
+      ? 'http://localhost:3000/?reset=true' 
+      : 'http://localhost:3000';
+    
+    log(`🌐 Dashboard:  ${dashboardUrl}`, 'bright');
     if (resetMode) {
-      log('🌐 Dashboard:  http://localhost:5173?reset=true', 'bright');
       log('   (will clear localStorage and show setup wizard)', 'dim');
-    } else {
-      log('🌐 Dashboard:  http://localhost:5173', 'bright');
+      
+      // Auto-open browser in reset mode
+      try {
+        const openCmd = IS_WINDOWS ? 'start' : process.platform === 'darwin' ? 'open' : 'xdg-open';
+        execSync(`${openCmd} "${dashboardUrl}"`, { stdio: 'ignore' });
+        log('   ✅ Browser opened automatically', 'dim');
+      } catch (e) {
+        log('   ⚠️  Could not auto-open browser', 'dim');
+      }
     }
     console.log('');
     
