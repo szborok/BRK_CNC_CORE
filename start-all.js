@@ -10,10 +10,36 @@
  *   node start-all.js --reset   # Clear localStorage and force setup wizard
  */
 
-const { spawn } = require('child_process');
+const { spawn, execSync } = require('child_process');
 const path = require('path');
+const fs = require('fs');
 
 const IS_WINDOWS = process.platform === 'win32';
+
+// Detect Node binary path (prefer nvm if available)
+function getNodePath() {
+  try {
+    // Check for nvm
+    const nvmDir = process.env.NVM_DIR || path.join(require('os').homedir(), '.nvm');
+    const nvmSh = path.join(nvmDir, 'nvm.sh');
+    
+    if (fs.existsSync(nvmSh)) {
+      // Source nvm and get node path
+      const nodePath = execSync(
+        `. "${nvmSh}" && nvm which default || which node`,
+        { shell: '/bin/bash', encoding: 'utf8' }
+      ).trim();
+      if (nodePath && fs.existsSync(nodePath)) {
+        return nodePath;
+      }
+    }
+  } catch (e) {
+    // Fall back to system node
+  }
+  return 'node';
+}
+
+const NODE_PATH = getNodePath();
 
 // Terminal colors
 const c = {
@@ -128,7 +154,7 @@ async function startBackends() {
     // JSONScanner (port 3001) - Start API server only (idle until configured by Dashboard)
     const jsonScanner = await startProcess(
       'JSONScanner',
-      'node',
+      NODE_PATH,
       ['server/index.js'],
       path.join(root, 'BRK_CNC_JSONScanner'),
       'green'
@@ -139,7 +165,7 @@ async function startBackends() {
     // ToolManager (port 3002) - Start API server only (idle until configured by Dashboard)
     const toolManager = await startProcess(
       'ToolManager',
-      'node',
+      NODE_PATH,
       ['server/index.js'],
       path.join(root, 'BRK_CNC_ToolManager'),
       'yellow'
@@ -150,7 +176,7 @@ async function startBackends() {
     // ClampingPlateManager (port 3003) - Start API server only
     const clampingPlate = await startProcess(
       'ClampingPlateManager',
-      'node',
+      NODE_PATH,
       ['main.js', '--serve'],
       path.join(root, 'BRK_CNC_ClampingPlateManager'),
       'blue'
