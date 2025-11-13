@@ -66,12 +66,13 @@ function startProcess(name, cmd, args, cwd, color = 'white') {
         }
       });
 
-      // Detect successful startup
+      // Detect successful startup (case-insensitive)
+      const outputLower = output.toLowerCase();
       if (!started && (
-        output.includes('running on') ||
-        output.includes('Server running') ||
-        output.includes('API Server running') ||
-        output.includes('started successfully')
+        outputLower.includes('running on') ||
+        outputLower.includes('server running') ||
+        outputLower.includes('api server running') ||
+        outputLower.includes('started successfully')
       )) {
         started = true;
         log(`✅ ${name} is ready`, 'green');
@@ -124,34 +125,34 @@ async function startBackends() {
     // Note: __dirname is BRK_CNC_CORE, so services are at path.join(__dirname, '..', 'ServiceName')
     const root = path.join(__dirname, '..');
     
-    // JSONScanner (port 3001)
+    // JSONScanner (port 3001) - Start API server only (idle until configured by Dashboard)
     const jsonScanner = await startProcess(
       'JSONScanner',
       'node',
-      ['main.js', '--test'],
-      path.join(root, 'JSONScanner'),
+      ['server/index.js'],
+      path.join(root, 'BRK_CNC_JSONScanner'),
       'green'
     );
     processes.push(jsonScanner);
     await new Promise(r => setTimeout(r, 1500));
     
-    // ToolManager (port 3002)
+    // ToolManager (port 3002) - Start API server only (idle until configured by Dashboard)
     const toolManager = await startProcess(
       'ToolManager',
       'node',
-      ['main.js', '--test'],
-      path.join(root, 'ToolManager'),
+      ['server/index.js'],
+      path.join(root, 'BRK_CNC_ToolManager'),
       'yellow'
     );
     processes.push(toolManager);
     await new Promise(r => setTimeout(r, 1500));
     
-    // ClampingPlateManager (port 3003)
+    // ClampingPlateManager (port 3003) - Start API server only
     const clampingPlate = await startProcess(
       'ClampingPlateManager',
       'node',
       ['main.js', '--serve'],
-      path.join(root, 'ClampingPlateManager'),
+      path.join(root, 'BRK_CNC_ClampingPlateManager'),
       'blue'
     );
     processes.push(clampingPlate);
@@ -176,7 +177,7 @@ async function startDashboard() {
     'Dashboard',
     IS_WINDOWS ? 'npm.cmd' : 'npm',
     ['run', 'dev'],
-    path.join(root, 'Dashboard'),
+    path.join(root, 'BRK_CNC_Dashboard'),
     'cyan'
   );
   processes.push(dashboard);
