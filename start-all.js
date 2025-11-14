@@ -287,12 +287,28 @@ async function main() {
     log('   • ClampingPlateManager: Web service (plates.json)', 'dim');
     console.log('');
     
-    log('Press Ctrl+C to stop all services', 'yellow');
+    log('Press Ctrl+Shift+Q to stop all services', 'yellow');
     console.log('');
     
-    // Setup graceful shutdown
-    process.on('SIGINT', cleanup);
+    // Disable Ctrl+C, use Ctrl+Shift+Q instead
+    process.on('SIGINT', () => {
+      console.log('');
+      log('⚠️  Ctrl+C disabled. Press Ctrl+Shift+Q to stop services.', 'yellow');
+    });
     process.on('SIGTERM', cleanup);
+    
+    // Setup readline for Ctrl+Shift+Q detection
+    const readline = require('readline');
+    readline.emitKeypressEvents(process.stdin);
+    if (process.stdin.isTTY) {
+      process.stdin.setRawMode(true);
+    }
+    
+    process.stdin.on('keypress', (str, key) => {
+      if (key && key.ctrl && key.shift && key.name === 'q') {
+        cleanup();
+      }
+    });
     
     // Keep alive
     await new Promise(() => {});
