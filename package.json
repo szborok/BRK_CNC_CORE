@@ -1,0 +1,35 @@
+{
+  "name": "brk_cnc_core",
+  "version": "1.0.0",
+  "description": "",
+  "main": "start-all.js",
+  "scripts": {
+    "start": "node start-all.js",
+    "test": "npm run test:all",
+    "test:all": "npm run test:jsonscanner && npm run test:toolmanager && npm run test:plates",
+    "test:jsonscanner": "cd ../BRK_CNC_JSONScanner && npm test",
+    "test:toolmanager": "cd ../BRK_CNC_ToolManager && npm test",
+    "test:plates": "cd ../BRK_CNC_ClampingPlateManager && npm test",
+    "prepare": "husky"
+  },
+  "lint-staged": {
+    "../BRK_CNC_JSONScanner/**/*.js": "cd ../BRK_CNC_JSONScanner && npm test -- --bail --findRelatedTests",
+    "../BRK_CNC_ToolManager/**/*.js": "cd ../BRK_CNC_ToolManager && npm test -- --bail --findRelatedTests",
+    "../BRK_CNC_ClampingPlateManager/**/*.js": "cd ../BRK_CNC_ClampingPlateManager && npm test -- --bail --findRelatedTests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/szborok/BRK_CNC_CORE.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/szborok/BRK_CNC_CORE/issues"
+  },
+  "homepage": "https://github.com/szborok/BRK_CNC_CORE#readme",
+  "devDependencies": {
+    "husky": "^9.1.7",
+    "lint-staged": "^16.2.6"
+  }
+}

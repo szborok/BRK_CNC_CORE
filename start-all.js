@@ -16,6 +16,28 @@ const fs = require('fs');
 
 const IS_WINDOWS = process.platform === 'win32';
 
+// Port assignments
+const PORTS = {
+  DASHBOARD: 3000,
+  JSON_SCANNER: 3001,
+  TOOL_MANAGER: 3002,
+  CLAMPING_PLATE: 3003
+};
+
+// Kill any existing processes on our ports
+function killPortProcesses() {
+  const ports = Object.values(PORTS);
+  ports.forEach(port => {
+    try {
+      // Kill any process using this port
+      execSync(`lsof -ti :${port} | xargs kill -9`, { stdio: 'ignore' });
+      log(`🔪 Killed existing process on port ${port}`, 'yellow');
+    } catch (e) {
+      // Port was free, no process to kill
+    }
+  });
+}
+
 // Detect Node binary path (prefer nvm if available)
 function getNodePath() {
   try {
@@ -83,7 +105,7 @@ function startProcess(name, cmd, args, cwd, color = 'white') {
     let started = false;
     let startupError = '';
 
-    // Capture stdout
+    // Capture stdout - SHOW ALL OUTPUT
     proc.stdout.on('data', (data) => {
       const output = data.toString();
       output.split('\n').forEach(line => {
@@ -98,7 +120,9 @@ function startProcess(name, cmd, args, cwd, color = 'white') {
         outputLower.includes('running on') ||
         outputLower.includes('server running') ||
         outputLower.includes('api server running') ||
-        outputLower.includes('started successfully')
+        outputLower.includes('started successfully') ||
+        outputLower.includes('local:') ||
+        outputLower.includes('vite') && outputLower.includes('ready')
       )) {
         started = true;
         log(`✅ ${name} is ready`, 'green');
@@ -106,18 +130,20 @@ function startProcess(name, cmd, args, cwd, color = 'white') {
       }
     });
 
-    // Capture stderr
+    // Capture stderr - SHOW ALL OUTPUT
     proc.stderr.on('data', (data) => {
       const output = data.toString();
-      // Only show actual errors
-      if (output.includes('Error') || output.includes('ERROR')) {
-        output.split('\n').forEach(line => {
-          if (line.trim()) {
+      output.split('\n').forEach(line => {
+        if (line.trim()) {
+          // Show all stderr, but highlight actual errors in red
+          if (line.includes('Error') || line.includes('ERROR')) {
             console.log(`${c.red}[${name} ERROR]${c.reset} ${line}`);
+            startupError += line + '\n';
+          } else {
+            console.log(`${c[color]}[${name}]${c.reset} ${line}`);
           }
-        });
-        startupError += output;
-      }
+        }
+      });
     });
 
     // Handle process errors
@@ -185,9 +211,9 @@ async function startBackends() {
     await new Promise(r => setTimeout(r, 1500));
     
     logBox('BACKENDS READY', 'green');
-    log('✅ JSONScanner:          http://localhost:3001/api/status', 'green');
-    log('✅ ToolManager:          http://localhost:3002/api/status', 'green');
-    log('✅ ClampingPlateManager: http://localhost:3003/api/health', 'green');
+    log(`✅ JSONScanner:          http://localhost:${PORTS.JSON_SCANNER}/api/status`, 'green');
+    log(`✅ ToolManager:          http://localhost:${PORTS.TOOL_MANAGER}/api/status`, 'green');
+    log(`✅ ClampingPlateManager: http://localhost:${PORTS.CLAMPING_PLATE}/api/health`, 'green');
     console.log('');
     
   } catch (error) {
@@ -231,6 +257,9 @@ async function main() {
   
   logBox('CNC MANAGEMENT DASHBOARD', 'bright');
   log(`📅 ${new Date().toLocaleString()}`, 'dim');
+  
+  // Kill any existing processes on our ports
+  killPortProcesses();
   log(`💻 Platform: ${process.platform}`, 'dim');
   log(`⚙️  Node: ${process.version}`, 'dim');
   console.log('');
@@ -273,8 +302,8 @@ async function main() {
     console.log('');
     
     const dashboardUrl = resetMode 
-      ? 'http://localhost:3000/?reset=true' 
-      : 'http://localhost:3000';
+      ? `http://localhost:${PORTS.DASHBOARD}/?reset=true` 
+      : `http://localhost:${PORTS.DASHBOARD}`;
     
     log(`🌐 Dashboard:  ${dashboardUrl}`, 'bright');
     if (resetMode) {
@@ -293,16 +322,17 @@ async function main() {
     
     log('📋 HOW IT WORKS:', 'cyan');
     log('', 'dim');
-    log('   FIRST TIME (no localStorage config):', 'yellow');
+    log('   FIRST TIME (no setup config file):', 'yellow');
+    log('   → All backends start in IDLE mode', 'dim');
     log('   → Dashboard shows setup wizard', 'dim');
-    log('   → Complete wizard → triggers ONE-TIME backend init', 'dim');
-    log('   → Init validates backends and processes test data', 'dim');
-    log('   → Config saved to localStorage', 'dim');
+    log('   → Complete wizard → configures backends automatically', 'dim');
+    log('   → Config saved to localStorage → shows login page', 'dim');
     log('', 'dim');
-    log('   RESTART (localStorage config exists):', 'yellow');
-    log('   → Backends start and run normally', 'dim');
-    log('   → Dashboard loads with saved config', 'dim');
-    log('   → No wizard, no init - just works', 'dim');
+    log('   RESTART (setup config exists):', 'yellow');
+    log('   → Backends start in IDLE mode', 'dim');
+    log('   → Dashboard detects existing config', 'dim');
+    log('   → Automatically configures backends → shows login page', 'dim');
+    log('   → No wizard needed - direct to login', 'dim');
     console.log('');
     
     log('🔄 BACKEND AUTO-PROCESSING:', 'cyan');
