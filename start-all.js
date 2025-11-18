@@ -18,7 +18,8 @@ const IS_WINDOWS = process.platform === 'win32';
 
 // Port assignments
 const PORTS = {
-  DASHBOARD: 3000,
+  DASHBOARD: 3000,      // Vite dev server
+  DASHBOARD_API: 3004,  // Dashboard backend (config API)
   JSON_SCANNER: 3001,
   TOOL_MANAGER: 3002,
   CLAMPING_PLATE: 3003
@@ -177,6 +178,17 @@ async function startBackends() {
     // Note: __dirname is BRK_CNC_CORE, so services are at path.join(__dirname, '..', 'ServiceName')
     const root = path.join(__dirname, '..');
     
+    // Dashboard Backend (port 3000) - Config API
+    const dashboardBackend = await startProcess(
+      'Dashboard-Backend',
+      NODE_PATH,
+      ['server/index.cjs'],
+      path.join(root, 'BRK_CNC_Dashboard'),
+      'magenta'
+    );
+    processes.push(dashboardBackend);
+    await new Promise(r => setTimeout(r, 1500));
+    
     // JSONScanner (port 3001) - Start API server only (idle until configured by Dashboard)
     const jsonScanner = await startProcess(
       'JSONScanner',
@@ -211,6 +223,7 @@ async function startBackends() {
     await new Promise(r => setTimeout(r, 1500));
     
     logBox('BACKENDS READY', 'green');
+    log(`✅ Dashboard Backend:    http://localhost:${PORTS.DASHBOARD_API}/api/config`, 'magenta');
     log(`✅ JSONScanner:          http://localhost:${PORTS.JSON_SCANNER}/api/status`, 'green');
     log(`✅ ToolManager:          http://localhost:${PORTS.TOOL_MANAGER}/api/status`, 'green');
     log(`✅ ClampingPlateManager: http://localhost:${PORTS.CLAMPING_PLATE}/api/health`, 'green');
@@ -222,11 +235,11 @@ async function startBackends() {
 }
 
 async function startDashboard() {
-  logBox('DASHBOARD', 'cyan');
+  logBox('DASHBOARD FRONTEND', 'cyan');
   
   const root = path.join(__dirname, '..');
   const dashboard = await startProcess(
-    'Dashboard',
+    'Dashboard-UI',
     IS_WINDOWS ? 'npm.cmd' : 'npm',
     ['run', 'dev'],
     path.join(root, 'BRK_CNC_Dashboard'),
