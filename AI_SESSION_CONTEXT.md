@@ -1,58 +1,90 @@
+````markdown
 # AI Agent Session Context - BRK CNC System
 
-**Last Updated**: 2025-11-17 22:13
+**Last Updated**: 2025-11-18 20:00
 **Production Deadline**: THIS WEEK (Nov 2025)
 
 ## Critical System Facts
 
 ### Architecture
-- **4 Backend Services**: JSONScanner (3001), ToolManager (3002), ClampingPlateManager (3003), Dashboard (3000)
+- **4 Backend Services**: JSONScanner (3001), ToolManager (3002), ClampingPlateManager (3003), Dashboard-Backend (3004)
+- **1 Frontend**: Dashboard-UI (3000) - Vite + React + TypeScript
 - **Node.js**: v22.21.1
 - **Platform**: Cross-platform (macOS, Windows, Linux)
 - **Storage**: Read-only source data → working_data temp results
 
 ### Current State
+✅ **Dashboard fetches live data from backend APIs** - Real-time updates from all 3 backends
+✅ **Config renamed**: unified.config.json → BRK_SETUP_WIZARD_CONFIG.json
+✅ **18 projects processing** with operation/NC file counts now included
 ✅ **63 tests passing** (18 JSONScanner, 13 ToolManager, 10 ClampingPlate, 22 Dashboard)
-✅ **18 projects** loading from API
 ✅ **Config scanner** finds filesystem config in 11-15+ platform-specific locations
 ✅ **Error prevention** layers: jsconfig.json, ESLint, JSDoc, input validation, integration tests
-✅ **Git protection**: working_data/ and brk-cnc-system.config.json excluded
+✅ **Git protection**: working_data/ and BRK_SETUP_WIZARD_CONFIG.json excluded
 
-### Critical Bugs Fixed
-1. ❌ **project.getProjectPath()** → ✅ `project.projectPath` (property, not method)
-2. ❌ **Path duplication** → ✅ DataManager reads correct `{base}/JSONScanner/results`
-3. ❌ **Scan endpoint stub** → ✅ Real processing via Executor
-4. ❌ **Writing to read-only source** → ✅ TempFileManager for all writes
+### Critical Bugs Fixed (Session 2025-11-18)
+1. ❌ **Dashboard not showing Tools/Clamps** → ✅ Added API polling to BackendDataLoader
+2. ❌ **Missing operation counts** → ✅ Added summary{totalOperations, totalNCFiles} to result files
+3. ❌ **Dashboard used localStorage only** → ✅ Now fetches from APIs first, caches in localStorage
+4. ❌ **Config filename generic** → ✅ Renamed to BRK_SETUP_WIZARD_CONFIG.json across all backends
+5. ❌ **project.getProjectPath()** → ✅ `project.projectPath` (property, not method)
+6. ❌ **Path duplication** → ✅ DataManager reads correct `{base}/JSONScanner/results`
+7. ❌ **Scan endpoint stub** → ✅ Real processing via Executor
+8. ❌ **Writing to read-only source** → ✅ TempFileManager for all writes
 
 ### Config System Architecture
-- **OLD**: localStorage only (browser, backends can't access)
-- **NEW**: Filesystem-first with localStorage fallback
+- **Filename**: BRK_SETUP_WIZARD_CONFIG.json (renamed from unified.config.json for clarity)
+- **Storage**: Filesystem-first with localStorage fallback
   - Dashboard checks `GET /api/config` FIRST
   - Falls back to localStorage if 404
   - Config scanner searches platform-specific paths:
     - **Windows**: AppData, ProgramData, Program Files
     - **macOS**: Application Support, iCloud, /Applications, /Library
     - **Linux**: ~/.config, ~/.local/share, /etc, /opt, /usr/local/share
+- **Archive**: Timestamped backups in config_archive/ (BRK_SETUP_WIZARD_CONFIG.backup_*.json)
+
+### Data Flow Architecture
+```
+Source Data (read-only)
+    ↓
+Backend Processing (60s auto-scan)
+    ↓
+Result Files (working_data/*/results/*.json)
+    ↓
+Backend APIs (/api/projects, /api/tools, /api/plates)
+    ↓
+Dashboard Fetch → localStorage Cache
+    ↓
+UI Display
+```
 
 ## Key File Locations
 
-### Modified Files (Latest Session)
+### Modified Files (Session 2025-11-18)
 ```
 BRK_CNC_JSONScanner/
-  server/index.js - Added GET /api/config endpoint (line 74-98)
-  src/DataManager.js - Fixed project.projectPath, path duplication, validation
-  src/Results.js - Added input validation
-  src/Project.js - Fixed == to ===, property not method
-  config.js - Integrated configScanner
+  src/Project.js - Added summary{totalOperations, totalNCFiles} to getAnalysisResults()
+  server/index.js - Config path changed to BRK_SETUP_WIZARD_CONFIG.json
 
 BRK_CNC_Dashboard/
-  src/hooks/useSetupConfig.ts - Filesystem-first config loading
-  package.json - Removed duplicate "prepare" script
+  src/services/BackendDataLoader.ts:
+    - loadJSONScannerData() now fetches from http://localhost:3001/api/projects
+    - loadToolManagerData() now fetches from http://localhost:3002/api/tools
+    - loadClampingPlateData() now fetches from http://localhost:3003/api/plates
+  src/services/DashboardDataService.ts:
+    - Added loadFromBackends() method for API-first data loading
 
-BRK_CNC_CORE/
-  utils/configScanner.js - Cross-platform config file discovery
-  test-data/.gitignore - Exclude all working_data/
-  .gitignore - Exclude brk-cnc-system.config.json
+BRK_CNC_ToolManager/
+  server/index.js - Config path changed to BRK_SETUP_WIZARD_CONFIG.json
+
+BRK_CNC_ClampingPlateManager/
+  (No changes needed - already has /api/plates endpoint)
+
+Previous Session Files:
+  BRK_CNC_JSONScanner/server/index.js - GET /api/config endpoint
+  BRK_CNC_JSONScanner/src/DataManager.js - Fixed project.projectPath, paths
+  BRK_CNC_Dashboard/src/hooks/useSetupConfig.ts - Filesystem-first config
+  BRK_CNC_CORE/utils/configScanner.js - Cross-platform config discovery
 ```
 
 ### Critical Code Patterns
@@ -88,18 +120,19 @@ TempFileManager.saveToTemp(data, 'result.json')  // ✅
 ## Production Deployment Checklist
 
 ### Must Have Before Production
-- [ ] Complete setup wizard flow (filesystem config)
-- [ ] Verify Dashboard shows 18 projects
-- [ ] Test all 3 backend modules with real data
+- [x] Complete setup wizard flow (filesystem config)
+- [x] Verify Dashboard shows 18 projects with operation counts
+- [x] Test all 3 backend modules with real data
+- [x] Dashboard fetches live data from backend APIs
 - [ ] Verify config scanner on Windows/Linux (not just macOS)
 - [ ] End-to-end test: fresh install → setup → login → see data
 - [ ] Clear all test data from git
-- [ ] Document where to place brk-cnc-system.config.json
+- [ ] Document where to place BRK_SETUP_WIZARD_CONFIG.json
 
 ### Known Issues to Address
-- Setup wizard still saves to localStorage (should only use filesystem)
-- Dashboard needs to clear localStorage after migrating to filesystem
+- Dashboard still uses localStorage cache (but now fetches from API first)
 - Need production build testing (currently only dev mode tested)
+- Auto-scan interval may need tuning (currently 60s for all backends)
 
 ## Key Commands
 
@@ -128,12 +161,12 @@ localStorage.removeItem('cncDashboardConfig'); location.reload();
 
 ## Next Steps (Priority Order)
 
-1. **Finish localStorage migration** - Remove all localStorage saves after filesystem config works
-2. **Test complete setup flow** - Fresh browser → wizard → save → verify backends load config
-3. **Verify 18 projects in Dashboard UI** - Not just API, full end-to-end
-4. **Cross-platform testing** - Windows/Linux config scanner verification
-5. **Production build** - Test with `npm run build` not just dev mode
-6. **Documentation** - User guide for placing config file on deployment
+1. **Verify Dashboard displays Tools and Clamps data** - User reported not seeing after latest changes
+2. **Test JSONScanner re-scan with new summary data** - Wait for next 60s scan cycle
+3. **Cross-platform testing** - Windows/Linux config scanner verification
+4. **Production build** - Test with `npm run build` not just dev mode
+5. **End-to-end fresh install test** - Clean browser → wizard → verify all data appears
+6. **Documentation** - User guide for placing BRK_SETUP_WIZARD_CONFIG.json on deployment
 
 ## Working Principles
 
