@@ -1,0 +1,25 @@
+# User config files - created by setup wizard
+brk-cnc-system.config.json
+
+# Runtime data
+**/working_data/
+**/logs/
+*.log
+
+# Dependencies
+node_modules/
+package-lock.json
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# macOS iCloud sync files
+._*
+*.icloud
