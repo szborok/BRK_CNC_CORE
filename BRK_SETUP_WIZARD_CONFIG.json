@@ -45,7 +45,7 @@
     "logsPath": "../BRK_CNC_CORE/test-data/working_data/Logs",
     "backupPath": "../BRK_CNC_CORE/test-data/working_data/Backups",
     "tempPath": "../BRK_CNC_CORE/test-data/working_data",
-    "outputPath": "../BRK_CNC_CORE/test-data/working_data/BRK CNC Management Dashboard/output"
+    "outputPath": "./output"
   },
   "features": {
     "themeMode": "system",
@@ -68,6 +68,6 @@
   },
   "companyLogo": "/api/placeholder/150/150",
   "configVersion": "1.0.0",
-  "savedAt": "2025-11-18T19:39:06.132Z",
+  "savedAt": "2025-11-19T13:42:37.629Z",
   "savedBy": "Dashboard"
 }

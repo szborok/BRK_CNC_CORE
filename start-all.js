@@ -19,7 +19,6 @@ const IS_WINDOWS = process.platform === 'win32';
 // Port assignments
 const PORTS = {
   DASHBOARD: 3000,      // Vite dev server
-  DASHBOARD_API: 3004,  // Dashboard backend (config API)
   JSON_SCANNER: 3001,
   TOOL_MANAGER: 3002,
   CLAMPING_PLATE: 3003
@@ -223,7 +222,6 @@ async function startBackends() {
     await new Promise(r => setTimeout(r, 1500));
     
     logBox('BACKENDS READY', 'green');
-    log(`✅ Dashboard Backend:    http://localhost:${PORTS.DASHBOARD_API}/api/config`, 'magenta');
     log(`✅ JSONScanner:          http://localhost:${PORTS.JSON_SCANNER}/api/status`, 'green');
     log(`✅ ToolManager:          http://localhost:${PORTS.TOOL_MANAGER}/api/status`, 'green');
     log(`✅ ClampingPlateManager: http://localhost:${PORTS.CLAMPING_PLATE}/api/health`, 'green');
@@ -354,11 +352,45 @@ async function main() {
     log('   • ClampingPlateManager: Web service (plates.json)', 'dim');
     console.log('');
     
-    log('Press Ctrl+C to stop all services', 'yellow');
+    log('⚠️  To shutdown: Press Ctrl+Shift+Q three times', 'yellow');
     console.log('');
     
-    // Setup graceful shutdown
-    process.on('SIGINT', cleanup);
+    // Setup graceful shutdown with triple Ctrl+Shift+Q
+    let shutdownKeyPressCount = 0;
+    let shutdownTimeout = null;
+    
+    process.stdin.setRawMode(true);
+    process.stdin.resume();
+    process.stdin.on('data', (key) => {
+      // Ctrl+Shift+Q = byte 17 (0x11)
+      if (key[0] === 17) {
+        shutdownKeyPressCount++;
+        
+        if (shutdownTimeout) clearTimeout(shutdownTimeout);
+        
+        if (shutdownKeyPressCount === 1) {
+          log('⚠️  Shutdown initiated (press 2 more times to confirm)', 'yellow');
+        } else if (shutdownKeyPressCount === 2) {
+          log('⚠️  Press one more time to confirm shutdown', 'red');
+        } else if (shutdownKeyPressCount >= 3) {
+          cleanup();
+        }
+        
+        // Reset counter after 3 seconds
+        shutdownTimeout = setTimeout(() => {
+          if (shutdownKeyPressCount < 3) {
+            log('✅ Shutdown cancelled', 'green');
+          }
+          shutdownKeyPressCount = 0;
+        }, 3000);
+      } else {
+        // Any other key resets the counter
+        shutdownKeyPressCount = 0;
+        if (shutdownTimeout) clearTimeout(shutdownTimeout);
+      }
+    });
+    
+    // Also keep standard SIGTERM handler for external signals
     process.on('SIGTERM', cleanup);
     
     // Keep alive
