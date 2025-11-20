@@ -1,11 +1,6 @@
 # Working data - ALL generated runtime data excluded from git
 working_data/
 
-# Source data - keep structure only
-source_data/*
-!source_data/.gitkeep
-!source_data/README.md
-
 # Temporary files
 *.tmp
 *.temp
