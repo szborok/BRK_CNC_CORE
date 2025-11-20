@@ -1,0 +1,1947 @@
+VERICUT-log
+Version-9.4.1
+*---------------------------------------------------------*
+*
+*   Wed Nov 12 09:49:06 2025
+*   User = aszilagyi.
+*   Build Date = December 08, 2023 .
+*   Library Date = 12/08/23.
+*   Customer Name = 107429_Euroform.
+*   Customer ID = 107429.
+*   Server ID = 001.
+*   Host ID = F079595DCDE8.
+*
+*---------------------------------------------------------*
+
+
+*** Processing NC program file p:\Project\Hummingbird\W5269NS01006\W5269NS01006A\Trimill VU 3019\W5269NS01006A1.h
+Wed Nov 12 09:49:19 2025
+
+
+
+*** Finished processing NC program file p:\Project\Hummingbird\W5269NS01006\W5269NS01006A\Trimill VU 3019\W5269NS01006A1.h
+Wed Nov 12 09:49:19 2025
+
+******************************************************************************************************************************
+Toolpath File : p:\Project\Hummingbird\W5269NS01006\W5269NS01006A\Trimill VU 3019\W5269NS01006A1.h
+
+                                  Tool Summary
+                                 ==============
+
+Seq.  Record                                                   Tool Description                             Cutter Height  Cutter Stick Out  Time        Air Time    Air Time %  Cut Distance  Distance
+------------------------------------------------------------------------------------------------------------------------------
+   1    37: 36 TOOL CALL "TF39000002010352" Z S1061 DL+0 DR+0  TF39000002010352: WID-TCF-TF39_H100W40L110X  200.8          200.8             0:01:40     0:00:51     51%         555.9         6966.134938
+==============================================================================================================================
+      Total Time:                                                                                                                            0:01:40     0:00:51     51%         555.9         6966.134938
+
+Number of Errors: 0
+Number of Warnings: 0
+Total cycle time since last rewind: 0:03:47
+Total air time since last rewind: 0:02:57 (78)%
+******************************************************************************************************************************
+
+
+*** Processing NC program file p:\Project\Hummingbird\W5269NS01006\W5269NS01006A\Trimill VU 3019\W5269NS01006A2.h
+Wed Nov 12 09:49:19 2025
+
+
+
+*** Finished processing NC program file p:\Project\Hummingbird\W5269NS01006\W5269NS01006A\Trimill VU 3019\W5269NS01006A2.h
+Wed Nov 12 09:49:20 2025
+
+******************************************************************************************************************************
+Toolpath File : p:\Project\Hummingbird\W5269NS01006\W5269NS01006A\Trimill VU 3019\W5269NS01006A2.h
+
+                                  Tool Summary
+                                 ==============
+
+Seq.  Record                                                   Tool Description                               Cutter Height  Cutter Stick Out  Time        Air Time    Air Time %  Cut Distance  Distance
+------------------------------------------------------------------------------------------------------------------------------
+   1    37: 36 TOOL CALL "TF26500001580356" Z S1201 DL+0 DR+0  TF26500001580356: TGT-TOP5-TF26.5_H100W32L120  157.999999     158               0:06:49     0:02:02     30%         978.532       50681.617145
+==============================================================================================================================
+      Total Time:                                                                                                                              0:06:49     0:02:02     30%         978.532       50681.617145
+
+Number of Errors: 0
+Number of Warnings: 0
+Total cycle time since last rewind: 0:12:42
+Total air time since last rewind: 0:07:06 (56)%
+******************************************************************************************************************************
+
+
+*** Processing NC program file p:\Project\Hummingbird\W5269NS01006\W5269NS01006A\Trimill VU 3019\W5269NS01006A3.h
+Wed Nov 12 09:49:20 2025
+
+
+
+*** Finished processing NC program file p:\Project\Hummingbird\W5269NS01006\W5269NS01006A\Trimill VU 3019\W5269NS01006A3.h
+Wed Nov 12 09:49:20 2025
+
+******************************************************************************************************************************
+Toolpath File : p:\Project\Hummingbird\W5269NS01006\W5269NS01006A\Trimill VU 3019\W5269NS01006A3.h
+
+                                  Tool Summary
+                                 ==============
+
+Seq.  Record                                                   Tool Description                            Cutter Height  Cutter Stick Out  Time        Air Time    Air Time %  Cut Distance  Distance
+------------------------------------------------------------------------------------------------------------------------------
+   1    37: 36 TOOL CALL "TF22000001320032" Z S1447 DL+0 DR+0  TF22000001320032: TGT-TOP5-TF22_H100W25L95  132.500003     132.5             0:07:11     0:00:57     13%         1273.74       12972.89378
+==============================================================================================================================
+      Total Time:                                                                                                                           0:07:11     0:00:57     13%         1273.74       12972.89378
+
+Number of Errors: 0
+Number of Warnings: 0
+Total cycle time since last rewind: 0:22:00
+Total air time since last rewind: 0:10:09 (46)%
+******************************************************************************************************************************
+
+
+*** Processing NC program file p:\Project\Hummingbird\W5269NS01006\W5269NS01006A\Trimill VU 3019\W5269NS01006A4.h
+Wed Nov 12 09:49:20 2025
+
+
+
+*** Finished processing NC program file p:\Project\Hummingbird\W5269NS01006\W5269NS01006A\Trimill VU 3019\W5269NS01006A4.h
+Wed Nov 12 09:49:21 2025
+
+******************************************************************************************************************************
+Toolpath File : p:\Project\Hummingbird\W5269NS01006\W5269NS01006A\Trimill VU 3019\W5269NS01006A4.h
+
+                                  Tool Summary
+                                 ==============
+
+Seq.  Record                                                   Tool Description                                Cutter Height  Cutter Stick Out  Time        Air Time    Air Time %  Cut Distance  Distance
+------------------------------------------------------------------------------------------------------------------------------
+   1    37: 36 TOOL CALL "TF17500001110359" Z S1819 DL+0 DR+0  TF17500001110359: TGT-TOP5-TF17.5_H100W25L100X  110.900002     110.9             0:05:02     0:00:49     16%         819.428       9273.658453
+==============================================================================================================================
+      Total Time:                                                                                                                               0:05:02     0:00:49     16%         819.428       9273.658453
+
+Number of Errors: 0
+Number of Warnings: 0
+Total cycle time since last rewind: 0:29:08
+Total air time since last rewind: 0:13:05 (45)%
+******************************************************************************************************************************
+
+
+*** Processing NC program file p:\Project\Hummingbird\W5269NS01006\W5269NS01006A\Trimill VU 3019\W5269NS01006A5.h
+Wed Nov 12 09:49:21 2025
+
+
+
+*** Finished processing NC program file p:\Project\Hummingbird\W5269NS01006\W5269NS01006A\Trimill VU 3019\W5269NS01006A5.h
+Wed Nov 12 09:49:21 2025
+
+******************************************************************************************************************************
+Toolpath File : p:\Project\Hummingbird\W5269NS01006\W5269NS01006A\Trimill VU 3019\W5269NS01006A5.h
+
+                                  Tool Summary
+                                 ==============
+
+Seq.  Record                                                   Tool Description                               Cutter Height  Cutter Stick Out  Time        Air Time    Air Time %  Cut Distance  Distance
+------------------------------------------------------------------------------------------------------------------------------
+   1    37: 36 TOOL CALL "BH08600000930284" Z S2961 DL+0 DR+0  BH08600000930284: GUH-5512-BHF8.6_H100Z10L90X  93             93                0:01:23     0:00:47     57%         682.276       8920.012852
+==============================================================================================================================
+      Total Time:                                                                                                                              0:01:23     0:00:47     57%         682.276       8920.012852
+
+Number of Errors: 0
+Number of Warnings: 0
+Total cycle time since last rewind: 0:32:38
+Total air time since last rewind: 0:15:59 (49)%
+******************************************************************************************************************************
+
+
+*** Processing NC program file p:\Project\Hummingbird\W5269NS01006\W5269NS01006A\Trimill VU 3019\W5269NS01006A6.h
+Wed Nov 12 09:49:21 2025
+
+
+
+******************** TOOLPATH ERROR REPORT ********************
+Error for line 134973, Filename: W5269NS01006A6.h
+134969 L X-314.7792 Y392.0525
+Error: Cutter Shank of the tool "VN42000000430011" loaded in component "Tool" exceeded allowable collision distance 0.05 with "Stock" at line (134973) 134969 L X-314.7792 Y392.0525
+
+
+******************** TOOLPATH ERROR REPORT ********************
+Error for line 134974, Filename: W5269NS01006A6.h
+134970 L X-314.3304 Y391.7255
+Error: Cutter Shank of the tool "VN42000000430011" loaded in component "Tool" exceeded allowable collision distance 0.05 with "Stock" at line (134974) 134970 L X-314.3304 Y391.7255
+
+
+******************** TOOLPATH ERROR REPORT ********************
+Error for line 134975, Filename: W5269NS01006A6.h
+134971 L X-313.8541 Y391.4072
+Error: Cutter Shank of the tool "VN42000000430011" loaded in component "Tool" exceeded allowable collision distance 0.05 with "Stock" at line (134975) 134971 L X-313.8541 Y391.4072
+
+
+******************** TOOLPATH ERROR REPORT ********************
+Error for line 134976, Filename: W5269NS01006A6.h
+134972 L X-313.35 Y391.098
+Error: Cutter Shank of the tool "VN42000000430011" loaded in component "Tool" exceeded allowable collision distance 0.05 with "Stock" at line (134976) 134972 L X-313.35 Y391.098
+
+
+******************** TOOLPATH ERROR REPORT ********************
+Error for line 134977, Filename: W5269NS01006A6.h
+134973 L X-312.9825 Y390.8782
+Error: Cutter Shank of the tool "VN42000000430011" loaded in component "Tool" exceeded allowable collision distance 0.05 with "Stock" at line (134977) 134973 L X-312.9825 Y390.8782
+
+
+******************** TOOLPATH ERROR REPORT ********************
+Error for line 134978, Filename: W5269NS01006A6.h
+134974 L X-312.5289 Y390.5909
+Error: Cutter Shank of the tool "VN42000000430011" loaded in component "Tool" exceeded allowable collision distance 0.05 with "Stock" at line (134978) 134974 L X-312.5289 Y390.5909
+
+
+******************** TOOLPATH ERROR REPORT ********************
+Error for line 134979, Filename: W5269NS01006A6.h
+134975 L X-312.0753 Y390.2859
+Error: Cutter Shank of the tool "VN42000000430011" loaded in component "Tool" exceeded allowable collision distance 0.05 with "Stock" at line (134979) 134975 L X-312.0753 Y390.2859
+
+
+******************** TOOLPATH ERROR REPORT ********************
+Error for line 134980, Filename: W5269NS01006A6.h
+134976 L X-311.4848 Y389.8634
+Error: Cutter Shank of the tool "VN42000000430011" loaded in component "Tool" exceeded allowable collision distance 0.05 with "Stock" at line (134980) 134976 L X-311.4848 Y389.8634
+
+
+******************** TOOLPATH ERROR REPORT ********************
+Error for line 134981, Filename: W5269NS01006A6.h
+134977 L X-310.8948 Y389.4098
+Error: Cutter Shank of the tool "VN42000000430011" loaded in component "Tool" exceeded allowable collision distance 0.05 with "Stock" at line (134981) 134977 L X-310.8948 Y389.4098
+
+
+******************** TOOLPATH ERROR REPORT ********************
+Error for line 134982, Filename: W5269NS01006A6.h
+134978 L X-310.2609 Y388.8822
+Error: Cutter Shank of the tool "VN42000000430011" loaded in component "Tool" exceeded allowable collision distance 0.05 with "Stock" at line (134982) 134978 L X-310.2609 Y388.8822
+
+
+******************** TOOLPATH ERROR REPORT ********************
+Error for line 134983, Filename: W5269NS01006A6.h
+134979 L X-309.9274 Y388.5881
+Error: Cutter Shank of the tool "VN42000000430011" loaded in component "Tool" exceeded allowable collision distance 0.05 with "Stock" at line (134983) 134979 L X-309.9274 Y388.5881
+
+
+******************** TOOLPATH ERROR REPORT ********************
+Error for line 134984, Filename: W5269NS01006A6.h
+134980 L X-309.3537 Y388.0503
+Error: Cutter Shank of the tool "VN42000000430011" loaded in component "Tool" exceeded allowable collision distance 0.05 with "Stock" at line (134984) 134980 L X-309.3537 Y388.0503
+
+
+******************** TOOLPATH ERROR REPORT ********************
+Error for line 134985, Filename: W5269NS01006A6.h
+134981 L X-307.1991 Y385.8984
+Error: Cutter Shank of the tool "VN42000000430011" loaded in component "Tool" exceeded allowable collision distance 0.05 with "Stock" at line (134985) 134981 L X-307.1991 Y385.8984
+
+
+******************** TOOLPATH ERROR REPORT ********************
+Error for line 134986, Filename: W5269NS01006A6.h
+134982 L X-306.8651 Y385.5582
+Error: Cutter Shank of the tool "VN42000000430011" loaded in component "Tool" exceeded allowable collision distance 0.05 with "Stock" at line (134986) 134982 L X-306.8651 Y385.5582
+
+
+******************** TOOLPATH ERROR REPORT ********************
+Error for line 134987, Filename: W5269NS01006A6.h
+134983 L X-306.3309 Y384.9814
+Error: Cutter Shank of the tool "VN42000000430011" loaded in component "Tool" exceeded allowable collision distance 0.05 with "Stock" at line (134987) 134983 L X-306.3309 Y384.9814
+
+
+******************** TOOLPATH ERROR REPORT ********************
+Error for line 134988, Filename: W5269NS01006A6.h
+134984 L X-306.0421 Y384.651
+Error: Cutter Shank of the tool "VN42000000430011" loaded in component "Tool" exceeded allowable collision distance 0.05 with "Stock" at line (134988) 134984 L X-306.0421 Y384.651
+
+
+******************** TOOLPATH ERROR REPORT ********************
+Error for line 134989, Filename: W5269NS01006A6.h
+134985 L X-305.7249 Y384.2718
+Error: Cutter Shank of the tool "VN42000000430011" loaded in component "Tool" exceeded allowable collision distance 0.05 with "Stock" at line (134989) 134985 L X-305.7249 Y384.2718
+
+
+******************** TOOLPATH ERROR REPORT ********************
+Error for line 134990, Filename: W5269NS01006A6.h
+134986 L X-305.3086 Y383.7438
+Error: Cutter Shank of the tool "VN42000000430011" loaded in component "Tool" exceeded allowable collision distance 0.05 with "Stock" at line (134990) 134986 L X-305.3086 Y383.7438
+
+
+******************** TOOLPATH ERROR REPORT ********************
+Error for line 134991, Filename: W5269NS01006A6.h
+134987 L X-305.0578 Y383.4089
+Error: Cutter Shank of the tool "VN42000000430011" loaded in component "Tool" exceeded allowable collision distance 0.05 with "Stock" at line (134991) 134987 L X-305.0578 Y383.4089
+
+
+******************** TOOLPATH ERROR REPORT ********************
+Error for line 134992, Filename: W5269NS01006A6.h
+134988 L X-304.653 Y382.8366
+Error: Cutter Shank of the tool "VN42000000430011" loaded in component "Tool" exceeded allowable collision distance 0.05 with "Stock" at line (134992) 134988 L X-304.653 Y382.8366
+
+
+******************** TOOLPATH ERROR REPORT ********************
+Error for line 134993, Filename: W5269NS01006A6.h
+134989 L X-304.3526 Y382.383
+Error: Cutter Shank of the tool "VN42000000430011" loaded in component "Tool" exceeded allowable collision distance 0.05 with "Stock" at line (134993) 134989 L X-304.3526 Y382.383
+
+
+******************** TOOLPATH ERROR REPORT ********************
+Error for line 134994, Filename: W5269NS01006A6.h
+134990 L X-304.0674 Y381.9294
+Error: Cutter Shank of the tool "VN42000000430011" loaded in component "Tool" exceeded allowable collision distance 0.05 with "Stock" at line (134994) 134990 L X-304.0674 Y381.9294
+
+
+******************** TOOLPATH ERROR REPORT ********************
+Error for line 134995, Filename: W5269NS01006A6.h
+134991 L X-303.7245 Y381.3447
+Error: Cutter Shank of the tool "VN42000000430011" loaded in component "Tool" exceeded allowable collision distance 0.05 with "Stock" at line (134995) 134991 L X-303.7245 Y381.3447
+
+
+******************** TOOLPATH ERROR REPORT ********************
+Error for line 134996, Filename: W5269NS01006A6.h
+134992 L X-303.5455 Y381.0222
+Error: Cutter Shank of the tool "VN42000000430011" loaded in component "Tool" exceeded allowable collision distance 0.05 with "Stock" at line (134996) 134992 L X-303.5455 Y381.0222
+
+
+******************** TOOLPATH ERROR REPORT ********************
+Error for line 134997, Filename: W5269NS01006A6.h
+134993 L X-303.3063 Y380.5686
+Error: Cutter Shank of the tool "VN42000000430011" loaded in component "Tool" exceeded allowable collision distance 0.05 with "Stock" at line (134997) 134993 L X-303.3063 Y380.5686
+
+
+******************** TOOLPATH ERROR REPORT ********************
+Error for line 134998, Filename: W5269NS01006A6.h
+134994 L X-303.0804 Y380.115
+Error: Cutter Shank of the tool "VN42000000430011" loaded in component "Tool" exceeded allowable collision distance 0.05 with "Stock" at line (134998) 134994 L X-303.0804 Y380.115
+
+
+******************** TOOLPATH ERROR REPORT ********************
+Error for line 134999, Filename: W5269NS01006A6.h
+134995 L X-302.8324 Y379.5799
+Error: Cutter Shank of the tool "VN42000000430011" loaded in component "Tool" exceeded allowable collision distance 0.05 with "Stock" at line (134999) 134995 L X-302.8324 Y379.5799
+
+
+******************** TOOLPATH ERROR REPORT ********************
+Error for line 135000, Filename: W5269NS01006A6.h
+134996 L X-302.6702 Y379.2078
+Error: Cutter Shank of the tool "VN42000000430011" loaded in component "Tool" exceeded allowable collision distance 0.05 with "Stock" at line (135000) 134996 L X-302.6702 Y379.2078
+
+
+******************** TOOLPATH ERROR REPORT ********************
+Error for line 135001, Filename: W5269NS01006A6.h
+134997 L X-302.4833 Y378.7542
+Error: Cutter Shank of the tool "VN42000000430011" loaded in component "Tool" exceeded allowable collision distance 0.05 with "Stock" at line (135001) 134997 L X-302.4833 Y378.7542
+
+
+******************** TOOLPATH ERROR REPORT ********************
+Error for line 135002, Filename: W5269NS01006A6.h
+134998 L X-302.1998 Y377.9985
+Error: Cutter Shank of the tool "VN42000000430011" loaded in component "Tool" exceeded allowable collision distance 0.05 with "Stock" at line (135002) 134998 L X-302.1998 Y377.9985
+
+
+******************** TOOLPATH ERROR REPORT ********************
+Error for line 135338, Filename: W5269NS01006A6.h
+135334 L X302.6702 Y379.2078
+Error: Cutter Shank of the tool "VN42000000430011" loaded in component "Tool" exceeded allowable collision distance 0.05 with "Stock" at line (135338) 135334 L X302.6702 Y379.2078
+
+
+******************** TOOLPATH ERROR REPORT ********************
+Error for line 135339, Filename: W5269NS01006A6.h
+135335 L X302.8324 Y379.5799
+Error: Cutter Shank of the tool "VN42000000430011" loaded in component "Tool" exceeded allowable collision distance 0.05 with "Stock" at line (135339) 135335 L X302.8324 Y379.5799
+
+
+******************** TOOLPATH ERROR REPORT ********************
+Error for line 135340, Filename: W5269NS01006A6.h
+135336 L X303.0804 Y380.115
+Error: Cutter Shank of the tool "VN42000000430011" loaded in component "Tool" exceeded allowable collision distance 0.05 with "Stock" at line (135340) 135336 L X303.0804 Y380.115
+
+
+******************** TOOLPATH ERROR REPORT ********************
+Error for line 135341, Filename: W5269NS01006A6.h
+135337 L X303.3059 Y380.5686
+Error: Cutter Shank of the tool "VN42000000430011" loaded in component "Tool" exceeded allowable collision distance 0.05 with "Stock" at line (135341) 135337 L X303.3059 Y380.5686
+
+
+******************** TOOLPATH ERROR REPORT ********************
+Error for line 135342, Filename: W5269NS01006A6.h
+135338 L X303.5455 Y381.0222
+Error: Cutter Shank of the tool "VN42000000430011" loaded in component "Tool" exceeded allowable collision distance 0.05 with "Stock" at line (135342) 135338 L X303.5455 Y381.0222
+
+
+******************** TOOLPATH ERROR REPORT ********************
+Error for line 135343, Filename: W5269NS01006A6.h
+135339 L X303.7245 Y381.3447
+Error: Cutter Shank of the tool "VN42000000430011" loaded in component "Tool" exceeded allowable collision distance 0.05 with "Stock" at line (135343) 135339 L X303.7245 Y381.3447
+
+
+******************** TOOLPATH ERROR REPORT ********************
+Error for line 135344, Filename: W5269NS01006A6.h
+135340 L X304.0674 Y381.9294
+Error: Cutter Shank of the tool "VN42000000430011" loaded in component "Tool" exceeded allowable collision distance 0.05 with "Stock" at line (135344) 135340 L X304.0674 Y381.9294
+
+
+******************** TOOLPATH ERROR REPORT ********************
+Error for line 135345, Filename: W5269NS01006A6.h
+135341 L X304.3522 Y382.383
+Error: Cutter Shank of the tool "VN42000000430011" loaded in component "Tool" exceeded allowable collision distance 0.05 with "Stock" at line (135345) 135341 L X304.3522 Y382.383
+
+
+******************** TOOLPATH ERROR REPORT ********************
+Error for line 135346, Filename: W5269NS01006A6.h
+135342 L X304.653 Y382.8366
+Error: Cutter Shank of the tool "VN42000000430011" loaded in component "Tool" exceeded allowable collision distance 0.05 with "Stock" at line (135346) 135342 L X304.653 Y382.8366
+
+
+******************** TOOLPATH ERROR REPORT ********************
+Error for line 135347, Filename: W5269NS01006A6.h
+135343 L X305.0578 Y383.4089
+Error: Cutter Shank of the tool "VN42000000430011" loaded in component "Tool" exceeded allowable collision distance 0.05 with "Stock" at line (135347) 135343 L X305.0578 Y383.4089
+
+
+******************** TOOLPATH ERROR REPORT ********************
+Error for line 135348, Filename: W5269NS01006A6.h
+135344 L X305.3086 Y383.7438
+Error: Cutter Shank of the tool "VN42000000430011" loaded in component "Tool" exceeded allowable collision distance 0.05 with "Stock" at line (135348) 135344 L X305.3086 Y383.7438
+
+
+******************** TOOLPATH ERROR REPORT ********************
+Error for line 135349, Filename: W5269NS01006A6.h
+135345 L X305.7249 Y384.2718
+Error: Cutter Shank of the tool "VN42000000430011" loaded in component "Tool" exceeded allowable collision distance 0.05 with "Stock" at line (135349) 135345 L X305.7249 Y384.2718
+
+
+******************** TOOLPATH ERROR REPORT ********************
+Error for line 135350, Filename: W5269NS01006A6.h
+135346 L X306.0421 Y384.651
+Error: Cutter Shank of the tool "VN42000000430011" loaded in component "Tool" exceeded allowable collision distance 0.05 with "Stock" at line (135350) 135346 L X306.0421 Y384.651
+
+
+******************** TOOLPATH ERROR REPORT ********************
+Error for line 135351, Filename: W5269NS01006A6.h
+135347 L X306.3309 Y384.9814
+Error: Cutter Shank of the tool "VN42000000430011" loaded in component "Tool" exceeded allowable collision distance 0.05 with "Stock" at line (135351) 135347 L X306.3309 Y384.9814
+
+
+******************** TOOLPATH ERROR REPORT ********************
+Error for line 135352, Filename: W5269NS01006A6.h
+135348 L X306.8651 Y385.5582
+Error: Cutter Shank of the tool "VN42000000430011" loaded in component "Tool" exceeded allowable collision distance 0.05 with "Stock" at line (135352) 135348 L X306.8651 Y385.5582
+
+
+******************** TOOLPATH ERROR REPORT ********************
+Error for line 135353, Filename: W5269NS01006A6.h
+135349 L X309.0135 Y387.7123
+Error: Cutter Shank of the tool "VN42000000430011" loaded in component "Tool" exceeded allowable collision distance 0.05 with "Stock" at line (135353) 135349 L X309.0135 Y387.7123
+
+
+******************** TOOLPATH ERROR REPORT ********************
+Error for line 135354, Filename: W5269NS01006A6.h
+135350 L X309.3537 Y388.0503
+Error: Cutter Shank of the tool "VN42000000430011" loaded in component "Tool" exceeded allowable collision distance 0.05 with "Stock" at line (135354) 135350 L X309.3537 Y388.0503
+
+
+******************** TOOLPATH ERROR REPORT ********************
+Error for line 135355, Filename: W5269NS01006A6.h
+135351 L X309.9274 Y388.5881
+Error: Cutter Shank of the tool "VN42000000430011" loaded in component "Tool" exceeded allowable collision distance 0.05 with "Stock" at line (135355) 135351 L X309.9274 Y388.5881
+
+
+******************** TOOLPATH ERROR REPORT ********************
+Error for line 135356, Filename: W5269NS01006A6.h
+135352 L X310.2609 Y388.8822
+Error: Cutter Shank of the tool "VN42000000430011" loaded in component "Tool" exceeded allowable collision distance 0.05 with "Stock" at line (135356) 135352 L X310.2609 Y388.8822
+
+
+******************** TOOLPATH ERROR REPORT ********************
+Error for line 135357, Filename: W5269NS01006A6.h
+135353 L X310.8948 Y389.4098
+Error: Cutter Shank of the tool "VN42000000430011" loaded in component "Tool" exceeded allowable collision distance 0.05 with "Stock" at line (135357) 135353 L X310.8948 Y389.4098
+
+
+******************** TOOLPATH ERROR REPORT ********************
+Error for line 135358, Filename: W5269NS01006A6.h
+135354 L X311.4848 Y389.8634
+Error: Cutter Shank of the tool "VN42000000430011" loaded in component "Tool" exceeded allowable collision distance 0.05 with "Stock" at line (135358) 135354 L X311.4848 Y389.8634
+
+
+******************** TOOLPATH ERROR REPORT ********************
+Error for line 135359, Filename: W5269NS01006A6.h
+135355 L X312.0753 Y390.2859
+Error: Cutter Shank of the tool "VN42000000430011" loaded in component "Tool" exceeded allowable collision distance 0.05 with "Stock" at line (135359) 135355 L X312.0753 Y390.2859
+
+
+******************** TOOLPATH ERROR REPORT ********************
+Error for line 135360, Filename: W5269NS01006A6.h
+135356 L X312.5289 Y390.5909
+Error: Cutter Shank of the tool "VN42000000430011" loaded in component "Tool" exceeded allowable collision distance 0.05 with "Stock" at line (135360) 135356 L X312.5289 Y390.5909
+
+
+******************** TOOLPATH ERROR REPORT ********************
+Error for line 135361, Filename: W5269NS01006A6.h
+135357 L X312.9825 Y390.8782
+Error: Cutter Shank of the tool "VN42000000430011" loaded in component "Tool" exceeded allowable collision distance 0.05 with "Stock" at line (135361) 135357 L X312.9825 Y390.8782
+
+
+******************** TOOLPATH ERROR REPORT ********************
+Error for line 135362, Filename: W5269NS01006A6.h
+135358 L X313.35 Y391.098
+Error: Cutter Shank of the tool "VN42000000430011" loaded in component "Tool" exceeded allowable collision distance 0.05 with "Stock" at line (135362) 135358 L X313.35 Y391.098
+
+
+******************** TOOLPATH ERROR REPORT ********************
+Error for line 135363, Filename: W5269NS01006A6.h
+135359 L X319.3857 Y394.6435
+Error: Cutter Shank of the tool "VN42000000430011" loaded in component "Tool" exceeded allowable collision distance 0.05 with "Stock" at line (135363) 135359 L X319.3857 Y394.6435
+
+
+******************** TOOLPATH ERROR REPORT ********************
+Error for line 135702, Filename: W5269NS01006A6.h
+135698 L X313.35 Y-391.098 FQ1
+Error: Cutter Shank of the tool "VN42000000430011" loaded in component "Tool" exceeded allowable collision distance 0.05 with "Stock" at line (135702) 135698 L X313.35 Y-391.098 FQ1
+
+
+******************** TOOLPATH ERROR REPORT ********************
+Error for line 135703, Filename: W5269NS01006A6.h
+135699 L X312.9825 Y-390.8782
+Error: Cutter Shank of the tool "VN42000000430011" loaded in component "Tool" exceeded allowable collision distance 0.05 with "Stock" at line (135703) 135699 L X312.9825 Y-390.8782
+
+
+******************** TOOLPATH ERROR REPORT ********************
+Error for line 135704, Filename: W5269NS01006A6.h
+135700 L X312.5289 Y-390.5909
+Error: Cutter Shank of the tool "VN42000000430011" loaded in component "Tool" exceeded allowable collision distance 0.05 with "Stock" at line (135704) 135700 L X312.5289 Y-390.5909
+
+
+******************** TOOLPATH ERROR REPORT ********************
+Error for line 135705, Filename: W5269NS01006A6.h
+135701 L X312.0753 Y-390.2859
+Error: Cutter Shank of the tool "VN42000000430011" loaded in component "Tool" exceeded allowable collision distance 0.05 with "Stock" at line (135705) 135701 L X312.0753 Y-390.2859
+
+
+******************** TOOLPATH ERROR REPORT ********************
+Error for line 135706, Filename: W5269NS01006A6.h
+135702 L X311.4848 Y-389.8634
+Error: Cutter Shank of the tool "VN42000000430011" loaded in component "Tool" exceeded allowable collision distance 0.05 with "Stock" at line (135706) 135702 L X311.4848 Y-389.8634
+
+
+******************** TOOLPATH ERROR REPORT ********************
+Error for line 135707, Filename: W5269NS01006A6.h
+135703 L X310.8948 Y-389.4098
+Error: Cutter Shank of the tool "VN42000000430011" loaded in component "Tool" exceeded allowable collision distance 0.05 with "Stock" at line (135707) 135703 L X310.8948 Y-389.4098
+
+
+******************** TOOLPATH ERROR REPORT ********************
+Error for line 135708, Filename: W5269NS01006A6.h
+135704 L X310.2609 Y-388.8822
+Error: Cutter Shank of the tool "VN42000000430011" loaded in component "Tool" exceeded allowable collision distance 0.05 with "Stock" at line (135708) 135704 L X310.2609 Y-388.8822
+
+
+******************** TOOLPATH ERROR REPORT ********************
+Error for line 135709, Filename: W5269NS01006A6.h
+135705 L X309.9274 Y-388.5881
+Error: Cutter Shank of the tool "VN42000000430011" loaded in component "Tool" exceeded allowable collision distance 0.05 with "Stock" at line (135709) 135705 L X309.9274 Y-388.5881
+
+
+******************** TOOLPATH ERROR REPORT ********************
+Error for line 135710, Filename: W5269NS01006A6.h
+135706 L X309.3537 Y-388.0503
+Error: Cutter Shank of the tool "VN42000000430011" loaded in component "Tool" exceeded allowable collision distance 0.05 with "Stock" at line (135710) 135706 L X309.3537 Y-388.0503
+
+
+******************** TOOLPATH ERROR REPORT ********************
+Error for line 135711, Filename: W5269NS01006A6.h
+135707 L X309.0135 Y-387.7123
+Error: Cutter Shank of the tool "VN42000000430011" loaded in component "Tool" exceeded allowable collision distance 0.05 with "Stock" at line (135711) 135707 L X309.0135 Y-387.7123
+
+
+******************** TOOLPATH ERROR REPORT ********************
+Error for line 135712, Filename: W5269NS01006A6.h
+135708 L X306.8651 Y-385.5582
+Error: Cutter Shank of the tool "VN42000000430011" loaded in component "Tool" exceeded allowable collision distance 0.05 with "Stock" at line (135712) 135708 L X306.8651 Y-385.5582
+
+
+******************** TOOLPATH ERROR REPORT ********************
+Error for line 135713, Filename: W5269NS01006A6.h
+135709 L X306.3309 Y-384.9814
+Error: Cutter Shank of the tool "VN42000000430011" loaded in component "Tool" exceeded allowable collision distance 0.05 with "Stock" at line (135713) 135709 L X306.3309 Y-384.9814
+
+
+******************** TOOLPATH ERROR REPORT ********************
+Error for line 135714, Filename: W5269NS01006A6.h
+135710 L X306.0421 Y-384.651
+Error: Cutter Shank of the tool "VN42000000430011" loaded in component "Tool" exceeded allowable collision distance 0.05 with "Stock" at line (135714) 135710 L X306.0421 Y-384.651
+
+
+******************** TOOLPATH ERROR REPORT ********************
+Error for line 135715, Filename: W5269NS01006A6.h
+135711 L X305.7249 Y-384.2718
+Error: Cutter Shank of the tool "VN42000000430011" loaded in component "Tool" exceeded allowable collision distance 0.05 with "Stock" at line (135715) 135711 L X305.7249 Y-384.2718
+
+
+******************** TOOLPATH ERROR REPORT ********************
+Error for line 135716, Filename: W5269NS01006A6.h
+135712 L X305.3086 Y-383.7438
+Error: Cutter Shank of the tool "VN42000000430011" loaded in component "Tool" exceeded allowable collision distance 0.05 with "Stock" at line (135716) 135712 L X305.3086 Y-383.7438
+
+
+******************** TOOLPATH ERROR REPORT ********************
+Error for line 135717, Filename: W5269NS01006A6.h
+135713 L X305.0578 Y-383.4089
+Error: Cutter Shank of the tool "VN42000000430011" loaded in component "Tool" exceeded allowable collision distance 0.05 with "Stock" at line (135717) 135713 L X305.0578 Y-383.4089
+
+
+******************** TOOLPATH ERROR REPORT ********************
+Error for line 135718, Filename: W5269NS01006A6.h
+135714 L X304.653 Y-382.8366
+Error: Cutter Shank of the tool "VN42000000430011" loaded in component "Tool" exceeded allowable collision distance 0.05 with "Stock" at line (135718) 135714 L X304.653 Y-382.8366
+
+
+******************** TOOLPATH ERROR REPORT ********************
+Error for line 135719, Filename: W5269NS01006A6.h
+135715 L X304.3522 Y-382.383
+Error: Cutter Shank of the tool "VN42000000430011" loaded in component "Tool" exceeded allowable collision distance 0.05 with "Stock" at line (135719) 135715 L X304.3522 Y-382.383
+
+
+******************** TOOLPATH ERROR REPORT ********************
+Error for line 135720, Filename: W5269NS01006A6.h
+135716 L X304.0674 Y-381.9294
+Error: Cutter Shank of the tool "VN42000000430011" loaded in component "Tool" exceeded allowable collision distance 0.05 with "Stock" at line (135720) 135716 L X304.0674 Y-381.9294
+
+
+******************** TOOLPATH ERROR REPORT ********************
+Error for line 135721, Filename: W5269NS01006A6.h
+135717 L X303.7245 Y-381.3447
+Error: Cutter Shank of the tool "VN42000000430011" loaded in component "Tool" exceeded allowable collision distance 0.05 with "Stock" at line (135721) 135717 L X303.7245 Y-381.3447
+
+
+******************** TOOLPATH ERROR REPORT ********************
+Error for line 135722, Filename: W5269NS01006A6.h
+135718 L X303.5455 Y-381.0222
+Error: Cutter Shank of the tool "VN42000000430011" loaded in component "Tool" exceeded allowable collision distance 0.05 with "Stock" at line (135722) 135718 L X303.5455 Y-381.0222
+
+
+******************** TOOLPATH ERROR REPORT ********************
+Error for line 135723, Filename: W5269NS01006A6.h
+135719 L X303.3059 Y-380.5686
+Error: Cutter Shank of the tool "VN42000000430011" loaded in component "Tool" exceeded allowable collision distance 0.05 with "Stock" at line (135723) 135719 L X303.3059 Y-380.5686
+
+
+******************** TOOLPATH ERROR REPORT ********************
+Error for line 135724, Filename: W5269NS01006A6.h
+135720 L X303.0804 Y-380.115
+Error: Cutter Shank of the tool "VN42000000430011" loaded in component "Tool" exceeded allowable collision distance 0.05 with "Stock" at line (135724) 135720 L X303.0804 Y-380.115
+
+
+******************** TOOLPATH ERROR REPORT ********************
+Error for line 135725, Filename: W5269NS01006A6.h
+135721 L X302.8324 Y-379.5799
+Error: Cutter Shank of the tool "VN42000000430011" loaded in component "Tool" exceeded allowable collision distance 0.05 with "Stock" at line (135725) 135721 L X302.8324 Y-379.5799
+
+
+******************** TOOLPATH ERROR REPORT ********************
+Error for line 135726, Filename: W5269NS01006A6.h
+135722 L X302.6702 Y-379.2078
+Error: Cutter Shank of the tool "VN42000000430011" loaded in component "Tool" exceeded allowable collision distance 0.05 with "Stock" at line (135726) 135722 L X302.6702 Y-379.2078
+
+
+******************** TOOLPATH ERROR REPORT ********************
+Error for line 135727, Filename: W5269NS01006A6.h
+135723 L X302.4838 Y-378.7542
+Error: Cutter Shank of the tool "VN42000000430011" loaded in component "Tool" exceeded allowable collision distance 0.05 with "Stock" at line (135727) 135723 L X302.4838 Y-378.7542
+
+
+******************** TOOLPATH ERROR REPORT ********************
+Error for line 135728, Filename: W5269NS01006A6.h
+135724 L X302.1998 Y-377.9985
+Error: Cutter Shank of the tool "VN42000000430011" loaded in component "Tool" exceeded allowable collision distance 0.05 with "Stock" at line (135728) 135724 L X302.1998 Y-377.9985
+
+
+******************** TOOLPATH ERROR REPORT ********************
+Error for line 135729, Filename: W5269NS01006A6.h
+135725 L X301.9961 Y-377.3934
+Error: Cutter Shank of the tool "VN42000000430011" loaded in component "Tool" exceeded allowable collision distance 0.05 with "Stock" at line (135729) 135725 L X301.9961 Y-377.3934
+
+
+******************** TOOLPATH ERROR REPORT ********************
+Error for line 136062, Filename: W5269NS01006A6.h
+136058 L X-302.2003 Y-377.9985
+Error: Cutter Shank of the tool "VN42000000430011" loaded in component "Tool" exceeded allowable collision distance 0.05 with "Stock" at line (136062) 136058 L X-302.2003 Y-377.9985
+
+
+******************** TOOLPATH ERROR REPORT ********************
+Error for line 136063, Filename: W5269NS01006A6.h
+136059 L X-302.4833 Y-378.7542
+Error: Cutter Shank of the tool "VN42000000430011" loaded in component "Tool" exceeded allowable collision distance 0.05 with "Stock" at line (136063) 136059 L X-302.4833 Y-378.7542
+
+
+******************** TOOLPATH ERROR REPORT ********************
+Error for line 136064, Filename: W5269NS01006A6.h
+136060 L X-302.6702 Y-379.2078
+Error: Cutter Shank of the tool "VN42000000430011" loaded in component "Tool" exceeded allowable collision distance 0.05 with "Stock" at line (136064) 136060 L X-302.6702 Y-379.2078
+
+
+******************** TOOLPATH ERROR REPORT ********************
+Error for line 136065, Filename: W5269NS01006A6.h
+136061 L X-302.8324 Y-379.5799
+Error: Cutter Shank of the tool "VN42000000430011" loaded in component "Tool" exceeded allowable collision distance 0.05 with "Stock" at line (136065) 136061 L X-302.8324 Y-379.5799
+
+
+******************** TOOLPATH ERROR REPORT ********************
+Error for line 136066, Filename: W5269NS01006A6.h
+136062 L X-303.0804 Y-380.115
+Error: Cutter Shank of the tool "VN42000000430011" loaded in component "Tool" exceeded allowable collision distance 0.05 with "Stock" at line (136066) 136062 L X-303.0804 Y-380.115
+
+
+******************** TOOLPATH ERROR REPORT ********************
+Error for line 136067, Filename: W5269NS01006A6.h
+136063 L X-303.3063 Y-380.5686
+Error: Cutter Shank of the tool "VN42000000430011" loaded in component "Tool" exceeded allowable collision distance 0.05 with "Stock" at line (136067) 136063 L X-303.3063 Y-380.5686
+
+
+******************** TOOLPATH ERROR REPORT ********************
+Error for line 136068, Filename: W5269NS01006A6.h
+136064 L X-303.5455 Y-381.0222
+Error: Cutter Shank of the tool "VN42000000430011" loaded in component "Tool" exceeded allowable collision distance 0.05 with "Stock" at line (136068) 136064 L X-303.5455 Y-381.0222
+
+
+******************** TOOLPATH ERROR REPORT ********************
+Error for line 136069, Filename: W5269NS01006A6.h
+136065 L X-303.7245 Y-381.3447
+Error: Cutter Shank of the tool "VN42000000430011" loaded in component "Tool" exceeded allowable collision distance 0.05 with "Stock" at line (136069) 136065 L X-303.7245 Y-381.3447
+
+
+******************** TOOLPATH ERROR REPORT ********************
+Error for line 136070, Filename: W5269NS01006A6.h
+136066 L X-304.0674 Y-381.9294
+Error: Cutter Shank of the tool "VN42000000430011" loaded in component "Tool" exceeded allowable collision distance 0.05 with "Stock" at line (136070) 136066 L X-304.0674 Y-381.9294
+
+
+******************** TOOLPATH ERROR REPORT ********************
+Error for line 136071, Filename: W5269NS01006A6.h
+136067 L X-304.3526 Y-382.383
+Error: Cutter Shank of the tool "VN42000000430011" loaded in component "Tool" exceeded allowable collision distance 0.05 with "Stock" at line (136071) 136067 L X-304.3526 Y-382.383
+
+
+******************** TOOLPATH ERROR REPORT ********************
+Error for line 136072, Filename: W5269NS01006A6.h
+136068 L X-304.653 Y-382.8366
+Error: Cutter Shank of the tool "VN42000000430011" loaded in component "Tool" exceeded allowable collision distance 0.05 with "Stock" at line (136072) 136068 L X-304.653 Y-382.8366
+
+
+******************** TOOLPATH ERROR REPORT ********************
+Error for line 136073, Filename: W5269NS01006A6.h
+136069 L X-305.0578 Y-383.4089
+Error: Cutter Shank of the tool "VN42000000430011" loaded in component "Tool" exceeded allowable collision distance 0.05 with "Stock" at line (136073) 136069 L X-305.0578 Y-383.4089
+
+
+******************** TOOLPATH ERROR REPORT ********************
+Error for line 136074, Filename: W5269NS01006A6.h
+136070 L X-305.3086 Y-383.7438
+Error: Cutter Shank of the tool "VN42000000430011" loaded in component "Tool" exceeded allowable collision distance 0.05 with "Stock" at line (136074) 136070 L X-305.3086 Y-383.7438
+
+
+******************** TOOLPATH ERROR REPORT ********************
+Error for line 136075, Filename: W5269NS01006A6.h
+136071 L X-305.7249 Y-384.2718
+Error: Cutter Shank of the tool "VN42000000430011" loaded in component "Tool" exceeded allowable collision distance 0.05 with "Stock" at line (136075) 136071 L X-305.7249 Y-384.2718
+
+
+******************** TOOLPATH ERROR REPORT ********************
+Error for line 136076, Filename: W5269NS01006A6.h
+136072 L X-306.0421 Y-384.651
+Error: Cutter Shank of the tool "VN42000000430011" loaded in component "Tool" exceeded allowable collision distance 0.05 with "Stock" at line (136076) 136072 L X-306.0421 Y-384.651
+
+
+******************** TOOLPATH ERROR REPORT ********************
+Error for line 136077, Filename: W5269NS01006A6.h
+136073 L X-306.3309 Y-384.9814
+Error: Cutter Shank of the tool "VN42000000430011" loaded in component "Tool" exceeded allowable collision distance 0.05 with "Stock" at line (136077) 136073 L X-306.3309 Y-384.9814
+
+
+******************** TOOLPATH ERROR REPORT ********************
+Error for line 136078, Filename: W5269NS01006A6.h
+136074 L X-306.8651 Y-385.5582
+Error: Cutter Shank of the tool "VN42000000430011" loaded in component "Tool" exceeded allowable collision distance 0.05 with "Stock" at line (136078) 136074 L X-306.8651 Y-385.5582
+
+
+******************** TOOLPATH ERROR REPORT ********************
+Error for line 136079, Filename: W5269NS01006A6.h
+136075 L X-307.1991 Y-385.8984
+Error: Cutter Shank of the tool "VN42000000430011" loaded in component "Tool" exceeded allowable collision distance 0.05 with "Stock" at line (136079) 136075 L X-307.1991 Y-385.8984
+
+
+******************** TOOLPATH ERROR REPORT ********************
+Error for line 136080, Filename: W5269NS01006A6.h
+136076 L X-309.3537 Y-388.0503
+Error: Cutter Shank of the tool "VN42000000430011" loaded in component "Tool" exceeded allowable collision distance 0.05 with "Stock" at line (136080) 136076 L X-309.3537 Y-388.0503
+
+
+******************** TOOLPATH ERROR REPORT ********************
+Error for line 136081, Filename: W5269NS01006A6.h
+136077 L X-309.9274 Y-388.5881
+Error: Cutter Shank of the tool "VN42000000430011" loaded in component "Tool" exceeded allowable collision distance 0.05 with "Stock" at line (136081) 136077 L X-309.9274 Y-388.5881
+
+
+******************** TOOLPATH ERROR REPORT ********************
+Error for line 136082, Filename: W5269NS01006A6.h
+136078 L X-310.2609 Y-388.8822
+Error: Cutter Shank of the tool "VN42000000430011" loaded in component "Tool" exceeded allowable collision distance 0.05 with "Stock" at line (136082) 136078 L X-310.2609 Y-388.8822
+
+
+******************** TOOLPATH ERROR REPORT ********************
+Error for line 136083, Filename: W5269NS01006A6.h
+136079 L X-310.8948 Y-389.4098
+Error: Cutter Shank of the tool "VN42000000430011" loaded in component "Tool" exceeded allowable collision distance 0.05 with "Stock" at line (136083) 136079 L X-310.8948 Y-389.4098
+
+
+******************** TOOLPATH ERROR REPORT ********************
+Error for line 136084, Filename: W5269NS01006A6.h
+136080 L X-311.4848 Y-389.8634
+Error: Cutter Shank of the tool "VN42000000430011" loaded in component "Tool" exceeded allowable collision distance 0.05 with "Stock" at line (136084) 136080 L X-311.4848 Y-389.8634
+
+
+******************** TOOLPATH ERROR REPORT ********************
+Error for line 136085, Filename: W5269NS01006A6.h
+136081 L X-312.0753 Y-390.2859
+Error: Cutter Shank of the tool "VN42000000430011" loaded in component "Tool" exceeded allowable collision distance 0.05 with "Stock" at line (136085) 136081 L X-312.0753 Y-390.2859
+
+
+******************** TOOLPATH ERROR REPORT ********************
+Error for line 136086, Filename: W5269NS01006A6.h
+136082 L X-312.5289 Y-390.5909
+Error: Cutter Shank of the tool "VN42000000430011" loaded in component "Tool" exceeded allowable collision distance 0.05 with "Stock" at line (136086) 136082 L X-312.5289 Y-390.5909
+
+
+******************** TOOLPATH ERROR REPORT ********************
+Error for line 136087, Filename: W5269NS01006A6.h
+136083 L X-312.9825 Y-390.8782
+Error: Cutter Shank of the tool "VN42000000430011" loaded in component "Tool" exceeded allowable collision distance 0.05 with "Stock" at line (136087) 136083 L X-312.9825 Y-390.8782
+
+
+******************** TOOLPATH ERROR REPORT ********************
+Error for line 136088, Filename: W5269NS01006A6.h
+136084 L X-313.35 Y-391.098
+Error: Cutter Shank of the tool "VN42000000430011" loaded in component "Tool" exceeded allowable collision distance 0.05 with "Stock" at line (136088) 136084 L X-313.35 Y-391.098
+
+
+******************** TOOLPATH ERROR REPORT ********************
+Error for line 136089, Filename: W5269NS01006A6.h
+136085 L X-319.3857 Y-394.6435
+Error: Cutter Shank of the tool "VN42000000430011" loaded in component "Tool" exceeded allowable collision distance 0.05 with "Stock" at line (136089) 136085 L X-319.3857 Y-394.6435
+
+
+*** Finished processing NC program file p:\Project\Hummingbird\W5269NS01006\W5269NS01006A\Trimill VU 3019\W5269NS01006A6.h
+Wed Nov 12 09:52:43 2025
+
+******************************************************************************************************************************
+Toolpath File : p:\Project\Hummingbird\W5269NS01006\W5269NS01006A\Trimill VU 3019\W5269NS01006A6.h
+
+                                  Tool Summary
+                                 ==============
+
+Seq.  Record                                                   Tool Description                           Cutter Height  Cutter Stick Out  Time        Air Time    Air Time %  Cut Distance  Distance
+------------------------------------------------------------------------------------------------------------------------------
+   1    37: 36 TOOL CALL "VN42000000430011" Z S1515 DL+0 DR+0  VN42000000430011: TGT-VLM42-L_H100M16L100  42.7           42.7              1:52:38     0:25:41     23%         764415.349916  1332991.695836
+==============================================================================================================================
+      Total Time:                                                                                                                          1:52:38     0:25:41     23%         764415.349916  1332991.695836
+
+Number of Errors: 112
+Number of Warnings: 0
+Total cycle time since last rewind: 2:27:22
+Total air time since last rewind: 0:43:46 (30)%
+******************************************************************************************************************************
+
+
+*** Processing NC program file p:\Project\Hummingbird\W5269NS01006\W5269NS01006A\Trimill VU 3019\W5269NS01006A7.h
+Wed Nov 12 09:52:43 2025
+
+
+
+*** Finished processing NC program file p:\Project\Hummingbird\W5269NS01006\W5269NS01006A\Trimill VU 3019\W5269NS01006A7.h
+Wed Nov 12 09:52:46 2025
+
+******************************************************************************************************************************
+Toolpath File : p:\Project\Hummingbird\W5269NS01006\W5269NS01006A\Trimill VU 3019\W5269NS01006A7.h
+
+                                  Tool Summary
+                                 ==============
+
+Seq.  Record                                                   Tool Description                               Cutter Height  Cutter Stick Out  Time        Air Time    Air Time %  Cut Distance  Distance
+------------------------------------------------------------------------------------------------------------------------------
+   1    37: 36 TOOL CALL "VN32000000400013" Z S1989 DL+0 DR+0  VN32000000400013: TGT-VLM32-L_H100M16L150-MOD  39.7           39.7              0:04:07     0:00:52     21%         4747.168748   11308.603686
+==============================================================================================================================
+      Total Time:                                                                                                                              0:04:07     0:00:52     21%         4747.168748   11308.603686
+
+Number of Errors: 0
+Number of Warnings: 0
+Total cycle time since last rewind: 2:33:36
+Total air time since last rewind: 0:46:45 (30)%
+******************************************************************************************************************************
+
+
+*** Processing NC program file p:\Project\Hummingbird\W5269NS01006\W5269NS01006A\Trimill VU 3019\W5269NS01006A8.h
+Wed Nov 12 09:52:46 2025
+
+
+
+*** Finished processing NC program file p:\Project\Hummingbird\W5269NS01006\W5269NS01006A\Trimill VU 3019\W5269NS01006A8.h
+Wed Nov 12 09:52:49 2025
+
+******************************************************************************************************************************
+Toolpath File : p:\Project\Hummingbird\W5269NS01006\W5269NS01006A\Trimill VU 3019\W5269NS01006A8.h
+
+                                  Tool Summary
+                                 ==============
+
+Seq.  Record                                                   Tool Description                               Cutter Height  Cutter Stick Out  Time        Air Time    Air Time %  Cut Distance  Distance
+------------------------------------------------------------------------------------------------------------------------------
+   1    37: 36 TOOL CALL "VN20000000750052" Z S2998 DL+0 DR+0  VN20000000750052: TGT-VLM20-L75-L_H100Z20L105  30             30                0:04:21     0:01:02     24%         11282.376009  25786.294765
+==============================================================================================================================
+      Total Time:                                                                                                                              0:04:21     0:01:02     24%         11282.376009  25786.294765
+
+Number of Errors: 0
+Number of Warnings: 0
+Total cycle time since last rewind: 2:40:04
+Total air time since last rewind: 0:49:53 (31)%
+******************************************************************************************************************************
+
+
+*** Processing NC program file p:\Project\Hummingbird\W5269NS01006\W5269NS01006A\Trimill VU 3019\W5269NS01006A9.h
+Wed Nov 12 09:52:49 2025
+
+
+
+*** Finished processing NC program file p:\Project\Hummingbird\W5269NS01006\W5269NS01006A\Trimill VU 3019\W5269NS01006A9.h
+Wed Nov 12 09:53:21 2025
+
+******************************************************************************************************************************
+Toolpath File : p:\Project\Hummingbird\W5269NS01006\W5269NS01006A\Trimill VU 3019\W5269NS01006A9.h
+
+                                  Tool Summary
+                                 ==============
+
+Seq.  Record                                                   Tool Description                                Cutter Height  Cutter Stick Out  Time        Air Time    Air Time %  Cut Distance  Distance
+------------------------------------------------------------------------------------------------------------------------------
+   1    37: 36 TOOL CALL "VL16000900700288" Z S3778 DL+0 DR+0  VL16000900700288: TGT-VLM16-L70-L_H100Z16L100X  25             25                0:39:08     0:03:22     9%          274254.265092  315823.870081
+==============================================================================================================================
+      Total Time:                                                                                                                               0:39:08     0:03:22     9%          274254.265092  315823.870081
+
+Number of Errors: 0
+Number of Warnings: 0
+Total cycle time since last rewind: 3:21:19
+Total air time since last rewind: 0:55:22 (27)%
+******************************************************************************************************************************
+
+
+*** Processing NC program file p:\Project\Hummingbird\W5269NS01006\W5269NS01006A\Trimill VU 3019\W5269NS01006A10.h
+Wed Nov 12 09:53:21 2025
+
+
+
+*** Finished processing NC program file p:\Project\Hummingbird\W5269NS01006\W5269NS01006A\Trimill VU 3019\W5269NS01006A10.h
+Wed Nov 12 09:53:22 2025
+
+******************************************************************************************************************************
+Toolpath File : p:\Project\Hummingbird\W5269NS01006\W5269NS01006A\Trimill VU 3019\W5269NS01006A10.h
+
+                                  Tool Summary
+                                 ==============
+
+Seq.  Record                                                   Tool Description                           Cutter Height  Cutter Stick Out  Time        Air Time    Air Time %  Cut Distance  Distance
+------------------------------------------------------------------------------------------------------------------------------
+   1    37: 36 TOOL CALL "TD21000001280032" Z S1516 DL+0 DR+0  TD21000001280032: TGT-TDR-TF21_H100W25L95  127.999997     128               0:01:34     0:01:04     68%         515.358       19075.663357
+==============================================================================================================================
+      Total Time:                                                                                                                          0:01:34     0:01:04     68%         515.358       19075.663357
+
+Number of Errors: 0
+Number of Warnings: 0
+Total cycle time since last rewind: 3:25:00
+Total air time since last rewind: 0:58:32 (29)%
+******************************************************************************************************************************
+
+
+*** Processing NC program file p:\Project\Hummingbird\W5269NS01006\W5269NS01006A\Trimill VU 3019\W5269NS01006A11.h
+Wed Nov 12 09:53:22 2025
+
+
+
+*** Finished processing NC program file p:\Project\Hummingbird\W5269NS01006\W5269NS01006A\Trimill VU 3019\W5269NS01006A11.h
+Wed Nov 12 09:53:22 2025
+
+******************************************************************************************************************************
+Toolpath File : p:\Project\Hummingbird\W5269NS01006\W5269NS01006A\Trimill VU 3019\W5269NS01006A11.h
+
+                                  Tool Summary
+                                 ==============
+
+Seq.  Record                                                   Tool Description                            Cutter Height  Cutter Stick Out  Time        Air Time    Air Time %  Cut Distance  Distance
+------------------------------------------------------------------------------------------------------------------------------
+   1    37: 36 TOOL CALL "BH08000000450059" Z S3581 DL+0 DR+0  BH08000000450059: GUH-5510-BHF8_H100Z8L130  45             45                0:01:06     0:01:02     93%         514.81        19375.273526
+==============================================================================================================================
+      Total Time:                                                                                                                           0:01:06     0:01:02     93%         514.81        19375.273526
+
+Number of Errors: 0
+Number of Warnings: 0
+Total cycle time since last rewind: 3:28:13
+Total air time since last rewind: 1:01:41 (30)%
+******************************************************************************************************************************
+
+
+*** Processing NC program file p:\Project\Hummingbird\W5269NS01006\W5269NS01006A\Trimill VU 3019\W5269NS01006A12.h
+Wed Nov 12 09:53:22 2025
+
+
+
+*** Finished processing NC program file p:\Project\Hummingbird\W5269NS01006\W5269NS01006A\Trimill VU 3019\W5269NS01006A12.h
+Wed Nov 12 09:53:22 2025
+
+******************************************************************************************************************************
+Toolpath File : p:\Project\Hummingbird\W5269NS01006\W5269NS01006A\Trimill VU 3019\W5269NS01006A12.h
+
+                                  Tool Summary
+                                 ==============
+
+Seq.  Record                                                 Tool Description                            Cutter Height  Cutter Stick Out  Time        Air Time    Air Time %  Cut Distance  Distance
+------------------------------------------------------------------------------------------------------------------------------
+   1    37: 36 TOOL CALL "AF08000002000282" Z S50 DL+0 DR+0  AF08000002000282: GUH-5639-AF8_H100H20L105  200            200               0:10:38     0:02:46     26%         995.896       19599.26594
+==============================================================================================================================
+      Total Time:                                                                                                                         0:10:38     0:02:46     26%         995.896       19599.26594
+
+Number of Errors: 0
+Number of Warnings: 0
+Total cycle time since last rewind: 3:40:58
+Total air time since last rewind: 1:06:33 (30)%
+******************************************************************************************************************************
+
+
+*** Processing NC program file p:\Project\Hummingbird\W5269NS01006\W5269NS01006A\Trimill VU 3019\W5269NS01006A13.h
+Wed Nov 12 09:53:22 2025
+
+
+
+*** Finished processing NC program file p:\Project\Hummingbird\W5269NS01006\W5269NS01006A\Trimill VU 3019\W5269NS01006A13.h
+Wed Nov 12 09:53:23 2025
+
+******************************************************************************************************************************
+Toolpath File : p:\Project\Hummingbird\W5269NS01006\W5269NS01006A\Trimill VU 3019\W5269NS01006A13.h
+
+                                  Tool Summary
+                                 ==============
+
+Seq.  Record                                                   Tool Description                                  Cutter Height  Cutter Stick Out  Time        Air Time    Air Time %  Cut Distance  Distance
+------------------------------------------------------------------------------------------------------------------------------
+   1    37: 36 TOOL CALL "SN15200000420318" Z S3769 DL+0 DR+0  SN15200000420318: FRA-P8201-S15.2R0_H100W16L100X  42             42                0:02:46     0:01:59     72%         1474.866012   20769.804171
+==============================================================================================================================
+      Total Time:                                                                                                                                 0:02:46     0:01:59     72%         1474.866012   20769.804171
+
+Number of Errors: 0
+Number of Warnings: 0
+Total cycle time since last rewind: 3:45:50
+Total air time since last rewind: 1:10:39 (31)%
+******************************************************************************************************************************
+
+
+*** Processing NC program file p:\Project\Hummingbird\W5269NS01006\W5269NS01006A\Trimill VU 3019\W5269NS01006A14.h
+Wed Nov 12 09:53:23 2025
+
+
+
+******************** TOOLPATH ERROR REPORT ********************
+Error for line 116, Filename: W5269NS01006A14.h
+94 L X0 Y160 R0 F MAX M99
+Error: Cutter Shank of the tool "SN11400000360025" loaded in component "Tool" exceeded allowable collision distance 0.05 with "Stock" at line (116) 94 L X0 Y160 R0 F MAX M99
+
+
+******************** TOOLPATH ERROR REPORT ********************
+Error for line 116, Filename: W5269NS01006A14.h
+94 L X0 Y160 R0 F MAX M99
+Error: Cutter Shank of the tool "SN11400000360025" loaded in component "Tool" exceeded allowable collision distance 0.05 with "Stock" at line (116) 94 L X0 Y160 R0 F MAX M99
+
+
+******************** TOOLPATH ERROR REPORT ********************
+Error for line 116, Filename: W5269NS01006A14.h
+94 L X0 Y160 R0 F MAX M99
+Error: Cutter Shank of the tool "SN11400000360025" loaded in component "Tool" exceeded allowable collision distance 0.05 with "Stock" at line (116) 94 L X0 Y160 R0 F MAX M99
+
+
+******************** TOOLPATH ERROR REPORT ********************
+Error for line 116, Filename: W5269NS01006A14.h
+94 L X0 Y160 R0 F MAX M99
+Error: Cutter Shank of the tool "SN11400000360025" loaded in component "Tool" exceeded allowable collision distance 0.05 with "Stock" at line (116) 94 L X0 Y160 R0 F MAX M99
+
+
+******************** TOOLPATH ERROR REPORT ********************
+Error for line 116, Filename: W5269NS01006A14.h
+94 L X0 Y160 R0 F MAX M99
+Error: Cutter Shank of the tool "SN11400000360025" loaded in component "Tool" exceeded allowable collision distance 0.05 with "Stock" at line (116) 94 L X0 Y160 R0 F MAX M99
+
+
+******************** TOOLPATH ERROR REPORT ********************
+Error for line 116, Filename: W5269NS01006A14.h
+94 L X0 Y160 R0 F MAX M99
+Error: Cutter Shank of the tool "SN11400000360025" loaded in component "Tool" exceeded allowable collision distance 0.05 with "Stock" at line (116) 94 L X0 Y160 R0 F MAX M99
+
+
+******************** TOOLPATH ERROR REPORT ********************
+Error for line 116, Filename: W5269NS01006A14.h
+94 L X0 Y160 R0 F MAX M99
+Error: Cutter Shank of the tool "SN11400000360025" loaded in component "Tool" exceeded allowable collision distance 0.05 with "Stock" at line (116) 94 L X0 Y160 R0 F MAX M99
+
+
+******************** TOOLPATH ERROR REPORT ********************
+Error for line 117, Filename: W5269NS01006A14.h
+95 L X383 Y160 R0 F MAX M99
+Error: Cutter Shank of the tool "SN11400000360025" loaded in component "Tool" exceeded allowable collision distance 0.05 with "Stock" at line (117) 95 L X383 Y160 R0 F MAX M99
+
+
+******************** TOOLPATH ERROR REPORT ********************
+Error for line 117, Filename: W5269NS01006A14.h
+95 L X383 Y160 R0 F MAX M99
+Error: Cutter Shank of the tool "SN11400000360025" loaded in component "Tool" exceeded allowable collision distance 0.05 with "Stock" at line (117) 95 L X383 Y160 R0 F MAX M99
+
+
+******************** TOOLPATH ERROR REPORT ********************
+Error for line 117, Filename: W5269NS01006A14.h
+95 L X383 Y160 R0 F MAX M99
+Error: Cutter Shank of the tool "SN11400000360025" loaded in component "Tool" exceeded allowable collision distance 0.05 with "Stock" at line (117) 95 L X383 Y160 R0 F MAX M99
+
+
+******************** TOOLPATH ERROR REPORT ********************
+Error for line 117, Filename: W5269NS01006A14.h
+95 L X383 Y160 R0 F MAX M99
+Error: Cutter Shank of the tool "SN11400000360025" loaded in component "Tool" exceeded allowable collision distance 0.05 with "Stock" at line (117) 95 L X383 Y160 R0 F MAX M99
+
+
+******************** TOOLPATH ERROR REPORT ********************
+Error for line 117, Filename: W5269NS01006A14.h
+95 L X383 Y160 R0 F MAX M99
+Error: Cutter Shank of the tool "SN11400000360025" loaded in component "Tool" exceeded allowable collision distance 0.05 with "Stock" at line (117) 95 L X383 Y160 R0 F MAX M99
+
+
+******************** TOOLPATH ERROR REPORT ********************
+Error for line 117, Filename: W5269NS01006A14.h
+95 L X383 Y160 R0 F MAX M99
+Error: Cutter Shank of the tool "SN11400000360025" loaded in component "Tool" exceeded allowable collision distance 0.05 with "Stock" at line (117) 95 L X383 Y160 R0 F MAX M99
+
+
+******************** TOOLPATH ERROR REPORT ********************
+Error for line 117, Filename: W5269NS01006A14.h
+95 L X383 Y160 R0 F MAX M99
+Error: Cutter Shank of the tool "SN11400000360025" loaded in component "Tool" exceeded allowable collision distance 0.05 with "Stock" at line (117) 95 L X383 Y160 R0 F MAX M99
+
+
+******************** TOOLPATH ERROR REPORT ********************
+Error for line 118, Filename: W5269NS01006A14.h
+96 L X383 Y-160 R0 F MAX M99
+Error: Cutter Shank of the tool "SN11400000360025" loaded in component "Tool" exceeded allowable collision distance 0.05 with "Stock" at line (118) 96 L X383 Y-160 R0 F MAX M99
+
+
+******************** TOOLPATH ERROR REPORT ********************
+Error for line 118, Filename: W5269NS01006A14.h
+96 L X383 Y-160 R0 F MAX M99
+Error: Cutter Shank of the tool "SN11400000360025" loaded in component "Tool" exceeded allowable collision distance 0.05 with "Stock" at line (118) 96 L X383 Y-160 R0 F MAX M99
+
+
+******************** TOOLPATH ERROR REPORT ********************
+Error for line 118, Filename: W5269NS01006A14.h
+96 L X383 Y-160 R0 F MAX M99
+Error: Cutter Shank of the tool "SN11400000360025" loaded in component "Tool" exceeded allowable collision distance 0.05 with "Stock" at line (118) 96 L X383 Y-160 R0 F MAX M99
+
+
+******************** TOOLPATH ERROR REPORT ********************
+Error for line 118, Filename: W5269NS01006A14.h
+96 L X383 Y-160 R0 F MAX M99
+Error: Cutter Shank of the tool "SN11400000360025" loaded in component "Tool" exceeded allowable collision distance 0.05 with "Stock" at line (118) 96 L X383 Y-160 R0 F MAX M99
+
+
+******************** TOOLPATH ERROR REPORT ********************
+Error for line 118, Filename: W5269NS01006A14.h
+96 L X383 Y-160 R0 F MAX M99
+Error: Cutter Shank of the tool "SN11400000360025" loaded in component "Tool" exceeded allowable collision distance 0.05 with "Stock" at line (118) 96 L X383 Y-160 R0 F MAX M99
+
+
+******************** TOOLPATH ERROR REPORT ********************
+Error for line 118, Filename: W5269NS01006A14.h
+96 L X383 Y-160 R0 F MAX M99
+Error: Cutter Shank of the tool "SN11400000360025" loaded in component "Tool" exceeded allowable collision distance 0.05 with "Stock" at line (118) 96 L X383 Y-160 R0 F MAX M99
+
+
+******************** TOOLPATH ERROR REPORT ********************
+Error for line 118, Filename: W5269NS01006A14.h
+96 L X383 Y-160 R0 F MAX M99
+Error: Cutter Shank of the tool "SN11400000360025" loaded in component "Tool" exceeded allowable collision distance 0.05 with "Stock" at line (118) 96 L X383 Y-160 R0 F MAX M99
+
+
+******************** TOOLPATH ERROR REPORT ********************
+Error for line 119, Filename: W5269NS01006A14.h
+97 L X0 Y-160 R0 F MAX M99
+Error: Cutter Shank of the tool "SN11400000360025" loaded in component "Tool" exceeded allowable collision distance 0.05 with "Stock" at line (119) 97 L X0 Y-160 R0 F MAX M99
+
+
+******************** TOOLPATH ERROR REPORT ********************
+Error for line 119, Filename: W5269NS01006A14.h
+97 L X0 Y-160 R0 F MAX M99
+Error: Cutter Shank of the tool "SN11400000360025" loaded in component "Tool" exceeded allowable collision distance 0.05 with "Stock" at line (119) 97 L X0 Y-160 R0 F MAX M99
+
+
+******************** TOOLPATH ERROR REPORT ********************
+Error for line 119, Filename: W5269NS01006A14.h
+97 L X0 Y-160 R0 F MAX M99
+Error: Cutter Shank of the tool "SN11400000360025" loaded in component "Tool" exceeded allowable collision distance 0.05 with "Stock" at line (119) 97 L X0 Y-160 R0 F MAX M99
+
+
+******************** TOOLPATH ERROR REPORT ********************
+Error for line 119, Filename: W5269NS01006A14.h
+97 L X0 Y-160 R0 F MAX M99
+Error: Cutter Shank of the tool "SN11400000360025" loaded in component "Tool" exceeded allowable collision distance 0.05 with "Stock" at line (119) 97 L X0 Y-160 R0 F MAX M99
+
+
+******************** TOOLPATH ERROR REPORT ********************
+Error for line 119, Filename: W5269NS01006A14.h
+97 L X0 Y-160 R0 F MAX M99
+Error: Cutter Shank of the tool "SN11400000360025" loaded in component "Tool" exceeded allowable collision distance 0.05 with "Stock" at line (119) 97 L X0 Y-160 R0 F MAX M99
+
+
+******************** TOOLPATH ERROR REPORT ********************
+Error for line 119, Filename: W5269NS01006A14.h
+97 L X0 Y-160 R0 F MAX M99
+Error: Cutter Shank of the tool "SN11400000360025" loaded in component "Tool" exceeded allowable collision distance 0.05 with "Stock" at line (119) 97 L X0 Y-160 R0 F MAX M99
+
+
+******************** TOOLPATH ERROR REPORT ********************
+Error for line 119, Filename: W5269NS01006A14.h
+97 L X0 Y-160 R0 F MAX M99
+Error: Cutter Shank of the tool "SN11400000360025" loaded in component "Tool" exceeded allowable collision distance 0.05 with "Stock" at line (119) 97 L X0 Y-160 R0 F MAX M99
+
+
+******************** TOOLPATH ERROR REPORT ********************
+Error for line 120, Filename: W5269NS01006A14.h
+98 L X-383 Y-160 R0 F MAX M99
+Error: Cutter Shank of the tool "SN11400000360025" loaded in component "Tool" exceeded allowable collision distance 0.05 with "Stock" at line (120) 98 L X-383 Y-160 R0 F MAX M99
+
+
+******************** TOOLPATH ERROR REPORT ********************
+Error for line 120, Filename: W5269NS01006A14.h
+98 L X-383 Y-160 R0 F MAX M99
+Error: Cutter Shank of the tool "SN11400000360025" loaded in component "Tool" exceeded allowable collision distance 0.05 with "Stock" at line (120) 98 L X-383 Y-160 R0 F MAX M99
+
+
+******************** TOOLPATH ERROR REPORT ********************
+Error for line 120, Filename: W5269NS01006A14.h
+98 L X-383 Y-160 R0 F MAX M99
+Error: Cutter Shank of the tool "SN11400000360025" loaded in component "Tool" exceeded allowable collision distance 0.05 with "Stock" at line (120) 98 L X-383 Y-160 R0 F MAX M99
+
+
+******************** TOOLPATH ERROR REPORT ********************
+Error for line 120, Filename: W5269NS01006A14.h
+98 L X-383 Y-160 R0 F MAX M99
+Error: Cutter Shank of the tool "SN11400000360025" loaded in component "Tool" exceeded allowable collision distance 0.05 with "Stock" at line (120) 98 L X-383 Y-160 R0 F MAX M99
+
+
+******************** TOOLPATH ERROR REPORT ********************
+Error for line 120, Filename: W5269NS01006A14.h
+98 L X-383 Y-160 R0 F MAX M99
+Error: Cutter Shank of the tool "SN11400000360025" loaded in component "Tool" exceeded allowable collision distance 0.05 with "Stock" at line (120) 98 L X-383 Y-160 R0 F MAX M99
+
+
+******************** TOOLPATH ERROR REPORT ********************
+Error for line 120, Filename: W5269NS01006A14.h
+98 L X-383 Y-160 R0 F MAX M99
+Error: Cutter Shank of the tool "SN11400000360025" loaded in component "Tool" exceeded allowable collision distance 0.05 with "Stock" at line (120) 98 L X-383 Y-160 R0 F MAX M99
+
+
+******************** TOOLPATH ERROR REPORT ********************
+Error for line 120, Filename: W5269NS01006A14.h
+98 L X-383 Y-160 R0 F MAX M99
+Error: Cutter Shank of the tool "SN11400000360025" loaded in component "Tool" exceeded allowable collision distance 0.05 with "Stock" at line (120) 98 L X-383 Y-160 R0 F MAX M99
+
+
+******************** TOOLPATH ERROR REPORT ********************
+Error for line 121, Filename: W5269NS01006A14.h
+99 L X-383 Y160 R0 F MAX M99
+Error: Cutter Shank of the tool "SN11400000360025" loaded in component "Tool" exceeded allowable collision distance 0.05 with "Stock" at line (121) 99 L X-383 Y160 R0 F MAX M99
+
+
+******************** TOOLPATH ERROR REPORT ********************
+Error for line 121, Filename: W5269NS01006A14.h
+99 L X-383 Y160 R0 F MAX M99
+Error: Cutter Shank of the tool "SN11400000360025" loaded in component "Tool" exceeded allowable collision distance 0.05 with "Stock" at line (121) 99 L X-383 Y160 R0 F MAX M99
+
+
+******************** TOOLPATH ERROR REPORT ********************
+Error for line 121, Filename: W5269NS01006A14.h
+99 L X-383 Y160 R0 F MAX M99
+Error: Cutter Shank of the tool "SN11400000360025" loaded in component "Tool" exceeded allowable collision distance 0.05 with "Stock" at line (121) 99 L X-383 Y160 R0 F MAX M99
+
+
+******************** TOOLPATH ERROR REPORT ********************
+Error for line 121, Filename: W5269NS01006A14.h
+99 L X-383 Y160 R0 F MAX M99
+Error: Cutter Shank of the tool "SN11400000360025" loaded in component "Tool" exceeded allowable collision distance 0.05 with "Stock" at line (121) 99 L X-383 Y160 R0 F MAX M99
+
+
+******************** TOOLPATH ERROR REPORT ********************
+Error for line 121, Filename: W5269NS01006A14.h
+99 L X-383 Y160 R0 F MAX M99
+Error: Cutter Shank of the tool "SN11400000360025" loaded in component "Tool" exceeded allowable collision distance 0.05 with "Stock" at line (121) 99 L X-383 Y160 R0 F MAX M99
+
+
+******************** TOOLPATH ERROR REPORT ********************
+Error for line 121, Filename: W5269NS01006A14.h
+99 L X-383 Y160 R0 F MAX M99
+Error: Cutter Shank of the tool "SN11400000360025" loaded in component "Tool" exceeded allowable collision distance 0.05 with "Stock" at line (121) 99 L X-383 Y160 R0 F MAX M99
+
+
+******************** TOOLPATH ERROR REPORT ********************
+Error for line 121, Filename: W5269NS01006A14.h
+99 L X-383 Y160 R0 F MAX M99
+Error: Cutter Shank of the tool "SN11400000360025" loaded in component "Tool" exceeded allowable collision distance 0.05 with "Stock" at line (121) 99 L X-383 Y160 R0 F MAX M99
+
+
+*** Finished processing NC program file p:\Project\Hummingbird\W5269NS01006\W5269NS01006A\Trimill VU 3019\W5269NS01006A14.h
+Wed Nov 12 09:53:24 2025
+
+******************************************************************************************************************************
+Toolpath File : p:\Project\Hummingbird\W5269NS01006\W5269NS01006A\Trimill VU 3019\W5269NS01006A14.h
+
+                                  Tool Summary
+                                 ==============
+
+Seq.  Record                                                   Tool Description                                Cutter Height  Cutter Stick Out  Time        Air Time    Air Time %  Cut Distance  Distance
+------------------------------------------------------------------------------------------------------------------------------
+   1    37: 36 TOOL CALL "SN11400000360025" Z S4188 DL+0 DR+0  SN11400000360025: FRA-P8201-S11.4R0_H100W12L80  36             36                0:12:11     0:03:06     25%         10619.518386  46386.515084
+==============================================================================================================================
+      Total Time:                                                                                                                               0:12:11     0:03:06     25%         10619.518386  46386.515084
+
+Number of Errors: 42
+Number of Warnings: 0
+Total cycle time since last rewind: 4:00:08
+Total air time since last rewind: 1:15:52 (32)%
+******************************************************************************************************************************
+
+
+*** Processing NC program file p:\Project\Hummingbird\W5269NS01006\W5269NS01006A\Trimill VU 3019\W5269NS01006A15.h
+Wed Nov 12 09:53:24 2025
+
+
+
+*** Finished processing NC program file p:\Project\Hummingbird\W5269NS01006\W5269NS01006A\Trimill VU 3019\W5269NS01006A15.h
+Wed Nov 12 09:53:26 2025
+
+******************************************************************************************************************************
+Toolpath File : p:\Project\Hummingbird\W5269NS01006\W5269NS01006A\Trimill VU 3019\W5269NS01006A15.h
+
+                                  Tool Summary
+                                 ==============
+
+Seq.  Record                                                   Tool Description                                 Cutter Height  Cutter Stick Out  Time        Air Time    Air Time %  Cut Distance  Distance
+------------------------------------------------------------------------------------------------------------------------------
+   1    37: 36 TOOL CALL "SN09400000420325" Z S4571 DL+0 DR+0  SN09400000420325: FRA-P8211-S9.4R0_H100W10L160X  42             42                0:05:19     0:01:48     34%         4665.795173   24773.111076
+==============================================================================================================================
+      Total Time:                                                                                                                                0:05:19     0:01:48     34%         4665.795173   24773.111076
+
+Number of Errors: 0
+Number of Warnings: 0
+Total cycle time since last rewind: 4:07:33
+Total air time since last rewind: 1:19:47 (32)%
+******************************************************************************************************************************
+
+
+*** Processing NC program file p:\Project\Hummingbird\W5269NS01006\W5269NS01006A\Trimill VU 3019\W5269NS01006A16.h
+Wed Nov 12 09:53:26 2025
+
+
+
+*** Finished processing NC program file p:\Project\Hummingbird\W5269NS01006\W5269NS01006A\Trimill VU 3019\W5269NS01006A16.h
+Wed Nov 12 09:53:28 2025
+
+******************************************************************************************************************************
+Toolpath File : p:\Project\Hummingbird\W5269NS01006\W5269NS01006A\Trimill VU 3019\W5269NS01006A16.h
+
+                                  Tool Summary
+                                 ==============
+
+Seq.  Record                                                   Tool Description                                Cutter Height  Cutter Stick Out  Time        Air Time    Air Time %  Cut Distance  Distance
+------------------------------------------------------------------------------------------------------------------------------
+   1    37: 36 TOOL CALL "SA07400000250324" Z S6022 DL+0 DR+0  SA07400000250324: FRA-P8400-S7.4R0_H100W8L160X  25             25                0:19:22     0:09:54     51%         17135.04106   108545.17282
+==============================================================================================================================
+      Total Time:                                                                                                                               0:19:22     0:09:54     51%         17135.04106   108545.17282
+
+Number of Errors: 0
+Number of Warnings: 0
+Total cycle time since last rewind: 4:29:02
+Total air time since last rewind: 1:31:48 (34)%
+******************************************************************************************************************************
+
+
+*** Processing NC program file p:\Project\Hummingbird\W5269NS01006\W5269NS01006A\Trimill VU 3019\W5269NS01006A17.h
+Wed Nov 12 09:53:28 2025
+
+
+
+*** Finished processing NC program file p:\Project\Hummingbird\W5269NS01006\W5269NS01006A\Trimill VU 3019\W5269NS01006A17.h
+Wed Nov 12 09:53:28 2025
+
+******************************************************************************************************************************
+Toolpath File : p:\Project\Hummingbird\W5269NS01006\W5269NS01006A\Trimill VU 3019\W5269NS01006A17.h
+
+                                  Tool Summary
+                                 ==============
+
+Seq.  Record                                                   Tool Description                               Cutter Height  Cutter Stick Out  Time        Air Time    Air Time %  Cut Distance  Distance
+------------------------------------------------------------------------------------------------------------------------------
+   1    37: 36 TOOL CALL "SA05700000200315" Z S7818 DL+0 DR+0  SA05700000200315: FRA-P8400-S5.7R0_H100W6L80X  20             20                0:00:44     0:00:41     93%         539.830311    7528.224597
+==============================================================================================================================
+      Total Time:                                                                                                                              0:00:44     0:00:41     93%         539.830311    7528.224597
+
+Number of Errors: 0
+Number of Warnings: 0
+Total cycle time since last rewind: 4:31:53
+Total air time since last rewind: 1:34:35 (35)%
+******************************************************************************************************************************
+
+
+*** Processing NC program file p:\Project\Hummingbird\W5269NS01006\W5269NS01006A\Trimill VU 3019\W5269NS01006A18.h
+Wed Nov 12 09:53:28 2025
+
+
+
+*** Finished processing NC program file p:\Project\Hummingbird\W5269NS01006\W5269NS01006A\Trimill VU 3019\W5269NS01006A18.h
+Wed Nov 12 09:53:29 2025
+
+******************************************************************************************************************************
+Toolpath File : p:\Project\Hummingbird\W5269NS01006\W5269NS01006A\Trimill VU 3019\W5269NS01006A18.h
+
+                                  Tool Summary
+                                 ==============
+
+Seq.  Record                                                   Tool Description                             Cutter Height  Cutter Stick Out  Time        Air Time    Air Time %  Cut Distance  Distance
+------------------------------------------------------------------------------------------------------------------------------
+   1    37: 36 TOOL CALL "BH03400000410058" Z S7490 DL+0 DR+0  BH03400000410058: GUH-5512-BHF3.4_H100Z6L85  40.999999      41                0:02:11     0:01:23     64%         837.188       29646.255229
+==============================================================================================================================
+      Total Time:                                                                                                                            0:02:11     0:01:23     64%         837.188       29646.255229
+
+Number of Errors: 0
+Number of Warnings: 0
+Total cycle time since last rewind: 4:36:10
+Total air time since last rewind: 1:38:05 (36)%
+******************************************************************************************************************************
+
+
+*** Processing NC program file p:\Project\Hummingbird\W5269NS01006\W5269NS01006A\Trimill VU 3019\W5269NS01006A19.h
+Wed Nov 12 09:53:29 2025
+
+
+
+*** Finished processing NC program file p:\Project\Hummingbird\W5269NS01006\W5269NS01006A\Trimill VU 3019\W5269NS01006A19.h
+Wed Nov 12 09:53:29 2025
+
+******************************************************************************************************************************
+Toolpath File : p:\Project\Hummingbird\W5269NS01006\W5269NS01006A\Trimill VU 3019\W5269NS01006A19.h
+
+                                  Tool Summary
+                                 ==============
+
+Seq.  Record                                                    Tool Description                              Cutter Height  Cutter Stick Out  Time        Air Time    Air Time %  Cut Distance  Distance
+------------------------------------------------------------------------------------------------------------------------------
+   1    37: 36 TOOL CALL "BH02600000400353" Z S12243 DL+0 DR+0  BH02600000400353: GUH-6405-BHF2.6_H100PL100X  40             40                0:01:09     0:00:58     85%         569.684       15969.949503
+==============================================================================================================================
+      Total Time:                                                                                                                              0:01:09     0:00:58     85%         569.684       15969.949503
+
+Number of Errors: 0
+Number of Warnings: 0
+Total cycle time since last rewind: 4:39:26
+Total air time since last rewind: 1:41:10 (36)%
+******************************************************************************************************************************
+
+
+*** Processing NC program file p:\Project\Hummingbird\W5269NS01006\W5269NS01006A\Trimill VU 3019\W5269NS01006A20.h
+Wed Nov 12 09:53:29 2025
+
+
+
+*** Finished processing NC program file p:\Project\Hummingbird\W5269NS01006\W5269NS01006A\Trimill VU 3019\W5269NS01006A20.h
+Wed Nov 12 09:53:33 2025
+
+******************************************************************************************************************************
+Toolpath File : p:\Project\Hummingbird\W5269NS01006\W5269NS01006A\Trimill VU 3019\W5269NS01006A20.h
+
+                                  Tool Summary
+                                 ==============
+
+Seq.  Record                                                   Tool Description                              Cutter Height  Cutter Stick Out  Time        Air Time    Air Time %  Cut Distance  Distance
+------------------------------------------------------------------------------------------------------------------------------
+   1    37: 36 TOOL CALL "LE19000000480318" Z S5142 DL+0 DR+0  LE19000000480318: KOM-VL-Letoro_H100W16L100X  48             48                0:13:33     0:05:55     44%         15244.552885  153995.639246
+==============================================================================================================================
+      Total Time:                                                                                                                             0:13:33     0:05:55     44%         15244.552885  153995.639246
+
+Number of Errors: 0
+Number of Warnings: 0
+Total cycle time since last rewind: 4:55:05
+Total air time since last rewind: 1:49:11 (37)%
+******************************************************************************************************************************
+
+
+*** Processing NC program file p:\Project\Hummingbird\W5269NS01006\W5269NS01006A\Trimill VU 3019\W5269NS01006A21.h
+Wed Nov 12 09:53:33 2025
+
+
+
+*** Finished processing NC program file p:\Project\Hummingbird\W5269NS01006\W5269NS01006A\Trimill VU 3019\W5269NS01006A21.h
+Wed Nov 12 09:53:34 2025
+
+******************************************************************************************************************************
+Toolpath File : p:\Project\Hummingbird\W5269NS01006\W5269NS01006A\Trimill VU 3019\W5269NS01006A21.h
+
+                                  Tool Summary
+                                 ==============
+
+Seq.  Record                                                   Tool Description                             Cutter Height  Cutter Stick Out  Time        Air Time    Air Time %  Cut Distance  Distance
+------------------------------------------------------------------------------------------------------------------------------
+   1    37: 36 TOOL CALL "KW16000000630353" Z S1001 DL+0 DR+0  KW16000000630353: GUH-5678-KPF16_H100PL100X  63             63                0:03:46     0:01:47     47%         560.7         42496.111052
+==============================================================================================================================
+      Total Time:                                                                                                                            0:03:46     0:01:47     47%         560.7         42496.111052
+
+Number of Errors: 0
+Number of Warnings: 0
+Total cycle time since last rewind: 5:00:58
+Total air time since last rewind: 1:53:05 (38)%
+******************************************************************************************************************************
+
+
+*** Processing NC program file p:\Project\Hummingbird\W5269NS01006\W5269NS01006A\Trimill VU 3019\W5269NS01006A22.h
+Wed Nov 12 09:53:34 2025
+
+
+
+*** Finished processing NC program file p:\Project\Hummingbird\W5269NS01006\W5269NS01006A\Trimill VU 3019\W5269NS01006A22.h
+Wed Nov 12 09:53:35 2025
+
+******************************************************************************************************************************
+Toolpath File : p:\Project\Hummingbird\W5269NS01006\W5269NS01006A\Trimill VU 3019\W5269NS01006A22.h
+
+                                  Tool Summary
+                                 ==============
+
+Seq.  Record                                                   Tool Description                            Cutter Height  Cutter Stick Out  Time        Air Time    Air Time %  Cut Distance  Distance
+------------------------------------------------------------------------------------------------------------------------------
+   1    37: 36 TOOL CALL "KW08000000400316" Z S1003 DL+0 DR+0  KW08000000400316: GUH-5678-KPF8_H100W8L80X  40.5           40.5              0:04:12     0:01:27     34%         599.9         31384.229837
+==============================================================================================================================
+      Total Time:                                                                                                                           0:04:12     0:01:27     34%         599.9         31384.229837
+
+Number of Errors: 0
+Number of Warnings: 0
+Total cycle time since last rewind: 5:07:17
+Total air time since last rewind: 1:56:38 (38)%
+******************************************************************************************************************************
+
+
+*** Processing NC program file p:\Project\Hummingbird\W5269NS01006\W5269NS01006A\Trimill VU 3019\W5269NS01006A23.h
+Wed Nov 12 09:53:35 2025
+
+
+
+*** Finished processing NC program file p:\Project\Hummingbird\W5269NS01006\W5269NS01006A\Trimill VU 3019\W5269NS01006A23.h
+Wed Nov 12 09:53:35 2025
+
+******************************************************************************************************************************
+Toolpath File : p:\Project\Hummingbird\W5269NS01006\W5269NS01006A\Trimill VU 3019\W5269NS01006A23.h
+
+                                  Tool Summary
+                                 ==============
+
+Seq.  Record                                                   Tool Description                                  Cutter Height  Cutter Stick Out  Time        Air Time    Air Time %  Cut Distance  Distance
+------------------------------------------------------------------------------------------------------------------------------
+   1    37: 36 TOOL CALL "SS11700000380069" Z S4353 DL+0 DR+0  SS11700000380069: FRA-P15250-S11.7R0_H100ZM12L95  38             38                0:01:28     0:01:00     68%         1573.789668   10190.600375
+==============================================================================================================================
+      Total Time:                                                                                                                                 0:01:28     0:01:00     68%         1573.789668   10190.600375
+
+Number of Errors: 0
+Number of Warnings: 0
+Total cycle time since last rewind: 5:10:52
+Total air time since last rewind: 1:59:45 (39)%
+******************************************************************************************************************************
+
+
+*** Processing NC program file p:\Project\Hummingbird\W5269NS01006\W5269NS01006A\Trimill VU 3019\W5269NS01006A24.h
+Wed Nov 12 09:53:35 2025
+
+
+
+*** Finished processing NC program file p:\Project\Hummingbird\W5269NS01006\W5269NS01006A\Trimill VU 3019\W5269NS01006A24.h
+Wed Nov 12 09:53:35 2025
+
+******************************************************************************************************************************
+Toolpath File : p:\Project\Hummingbird\W5269NS01006\W5269NS01006A\Trimill VU 3019\W5269NS01006A24.h
+
+                                  Tool Summary
+                                 ==============
+
+Seq.  Record                                                   Tool Description                                  Cutter Height  Cutter Stick Out  Time        Air Time    Air Time %  Cut Distance  Distance
+------------------------------------------------------------------------------------------------------------------------------
+   1    37: 36 TOOL CALL "SS11700000380069" Z S4353 DL+0 DR+0  SS11700000380069: FRA-P15250-S11.7R0_H100ZM12L95  38             38                0:01:07     0:00:52     78%         1028.505322   9311.619777
+==============================================================================================================================
+      Total Time:                                                                                                                                 0:01:07     0:00:52     78%         1028.505322   9311.619777
+
+Number of Errors: 0
+Number of Warnings: 0
+Total cycle time since last rewind: 5:14:05
+Total air time since last rewind: 2:02:43 (39)%
+******************************************************************************************************************************
+
+
+*** Processing NC program file p:\Project\Hummingbird\W5269NS01006\W5269NS01006A\Trimill VU 3019\W5269NS01006A25.h
+Wed Nov 12 09:53:35 2025
+
+
+
+*** Finished processing NC program file p:\Project\Hummingbird\W5269NS01006\W5269NS01006A\Trimill VU 3019\W5269NS01006A25.h
+Wed Nov 12 09:53:37 2025
+
+******************************************************************************************************************************
+Toolpath File : p:\Project\Hummingbird\W5269NS01006\W5269NS01006A\Trimill VU 3019\W5269NS01006A25.h
+
+                                  Tool Summary
+                                 ==============
+
+Seq.  Record                                                   Tool Description                           Cutter Height  Cutter Stick Out  Time        Air Time    Air Time %  Cut Distance  Distance
+------------------------------------------------------------------------------------------------------------------------------
+   1    37: 36 TOOL CALL "MM21700000820318" Z S1600 DL+0 DR+0  MM21700000820318: ATO-MM-M30_H100W16L100X  82.5           82.5              0:14:28     0:04:15     29%         4111.860675   53440.540293
+==============================================================================================================================
+      Total Time:                                                                                                                          0:14:28     0:04:15     29%         4111.860675   53440.540293
+
+Number of Errors: 0
+Number of Warnings: 0
+Total cycle time since last rewind: 5:30:40
+Total air time since last rewind: 2:09:05 (39)%
+******************************************************************************************************************************
+
+
+*** Processing NC program file p:\Project\Hummingbird\W5269NS01006\W5269NS01006A\Trimill VU 3019\W5269NS01006A26.h
+Wed Nov 12 09:53:37 2025
+
+
+
+*** Finished processing NC program file p:\Project\Hummingbird\W5269NS01006\W5269NS01006A\Trimill VU 3019\W5269NS01006A26.h
+Wed Nov 12 09:53:37 2025
+
+******************************************************************************************************************************
+Toolpath File : p:\Project\Hummingbird\W5269NS01006\W5269NS01006A\Trimill VU 3019\W5269NS01006A26.h
+
+                                  Tool Summary
+                                 ==============
+
+Seq.  Record                                                   Tool Description                           Cutter Height  Cutter Stick Out  Time        Air Time    Air Time %  Cut Distance  Distance
+------------------------------------------------------------------------------------------------------------------------------
+   1    37: 36 TOOL CALL "TD21000001280032" Z S1516 DL+0 DR+0  TD21000001280032: TGT-TDR-TF21_H100W25L95  127.999997     128               0:01:33     0:01:33     100%        512.9         19070.747357
+==============================================================================================================================
+      Total Time:                                                                                                                          0:01:33     0:01:33     100%        512.9         19070.747357
+
+Number of Errors: 0
+Number of Warnings: 0
+Total cycle time since last rewind: 5:34:19
+Total air time since last rewind: 2:12:44 (40)%
+******************************************************************************************************************************
+
+
+*** Processing NC program file p:\Project\Hummingbird\W5269NS01006\W5269NS01006A\Trimill VU 3019\W5269NS01006A27.h
+Wed Nov 12 09:53:37 2025
+
+
+
+******************** TOOLPATH ERROR REPORT ********************
+Error for line 80, Filename: W5269NS01006A27.h
+73 L X0 Y47 R0 F MAX M99
+Error: Plunge distance of tool "MH24000001120353" loaded in component "Tool" exceeds tool's Flute Length at line (80) 73 L X0 Y47 R0 F MAX M99
+
+
+*** Finished processing NC program file p:\Project\Hummingbird\W5269NS01006\W5269NS01006A\Trimill VU 3019\W5269NS01006A27.h
+Wed Nov 12 09:53:38 2025
+
+******************************************************************************************************************************
+Toolpath File : p:\Project\Hummingbird\W5269NS01006\W5269NS01006A\Trimill VU 3019\W5269NS01006A27.h
+
+                                  Tool Summary
+                                 ==============
+
+Seq.  Record                                                  Tool Description                              Cutter Height  Cutter Stick Out  Time        Air Time    Air Time %  Cut Distance  Distance
+------------------------------------------------------------------------------------------------------------------------------
+   1    37: 36 TOOL CALL "MH24000001120353" Z S106 DL+0 DR+0  MH24000001120353: GUH-5738-MF-M24_H100PL100X  108            108               0:01:21     0:01:12     89%         553.9         19076.855435
+==============================================================================================================================
+      Total Time:                                                                                                                            0:01:21     0:01:12     89%         553.9         19076.855435
+
+Number of Errors: 1
+Number of Warnings: 0
+Total cycle time since last rewind: 5:37:47
+Total air time since last rewind: 2:16:03 (40)%
+******************************************************************************************************************************
+
+
+*** Processing NC program file p:\Project\Hummingbird\W5269NS01006\W5269NS01006A\Trimill VU 3019\W5269NS01006A28.h
+Wed Nov 12 09:53:38 2025
+
+
+
+*** Finished processing NC program file p:\Project\Hummingbird\W5269NS01006\W5269NS01006A\Trimill VU 3019\W5269NS01006A28.h
+Wed Nov 12 09:53:38 2025
+
+******************************************************************************************************************************
+Toolpath File : p:\Project\Hummingbird\W5269NS01006\W5269NS01006A\Trimill VU 3019\W5269NS01006A28.h
+
+                                  Tool Summary
+                                 ==============
+
+Seq.  Record                                                 Tool Description                              Cutter Height  Cutter Stick Out  Time        Air Time    Air Time %  Cut Distance  Distance
+------------------------------------------------------------------------------------------------------------------------------
+   1    37: 36 TOOL CALL "MH16600000570353" Z S96 DL+0 DR+0  MH16600000570353: GUH-965-MF-G3_8_H100PL100X  57             57                0:04:00     0:02:34     64%         829.628       21094.152326
+==============================================================================================================================
+      Total Time:                                                                                                                           0:04:00     0:02:34     64%         829.628       21094.152326
+
+Number of Errors: 0
+Number of Warnings: 0
+Total cycle time since last rewind: 5:43:53
+Total air time since last rewind: 2:20:44 (41)%
+******************************************************************************************************************************
+
+
+*** Processing NC program file p:\Project\Hummingbird\W5269NS01006\W5269NS01006A\Trimill VU 3019\W5269NS01006A29.h
+Wed Nov 12 09:53:38 2025
+
+
+
+*** Finished processing NC program file p:\Project\Hummingbird\W5269NS01006\W5269NS01006A\Trimill VU 3019\W5269NS01006A29.h
+Wed Nov 12 09:53:39 2025
+
+******************************************************************************************************************************
+Toolpath File : p:\Project\Hummingbird\W5269NS01006\W5269NS01006A\Trimill VU 3019\W5269NS01006A29.h
+
+                                  Tool Summary
+                                 ==============
+
+Seq.  Record                                                  Tool Description                              Cutter Height  Cutter Stick Out  Time        Air Time    Air Time %  Cut Distance  Distance
+------------------------------------------------------------------------------------------------------------------------------
+   1    37: 36 TOOL CALL "MH13100000570353" Z S121 DL+0 DR+0  MH13100000570353: GUH-965-MF-G1_4_H100PL100X  57             57                0:02:36     0:02:05     80%         625.444       36331.12309
+==============================================================================================================================
+      Total Time:                                                                                                                            0:02:36     0:02:05     80%         625.444       36331.12309
+
+Number of Errors: 0
+Number of Warnings: 0
+Total cycle time since last rewind: 5:48:35
+Total air time since last rewind: 2:24:56 (42)%
+******************************************************************************************************************************
+
+
+*** Processing NC program file p:\Project\Hummingbird\W5269NS01006\W5269NS01006A\Trimill VU 3019\W5269NS01006A30.h
+Wed Nov 12 09:53:39 2025
+
+
+
+*** Finished processing NC program file p:\Project\Hummingbird\W5269NS01006\W5269NS01006A\Trimill VU 3019\W5269NS01006A30.h
+Wed Nov 12 09:53:39 2025
+
+******************************************************************************************************************************
+Toolpath File : p:\Project\Hummingbird\W5269NS01006\W5269NS01006A\Trimill VU 3019\W5269NS01006A30.h
+
+                                  Tool Summary
+                                 ==============
+
+Seq.  Record                                                   Tool Description                               Cutter Height  Cutter Stick Out  Time        Air Time    Air Time %  Cut Distance  Distance
+------------------------------------------------------------------------------------------------------------------------------
+   1    37: 36 TOOL CALL "BH08600000930284" Z S2961 DL+0 DR+0  BH08600000930284: GUH-5512-BHF8.6_H100Z10L90X  93             93                0:01:18     0:01:18     100%        653.9         8863.260852
+==============================================================================================================================
+      Total Time:                                                                                                                              0:01:18     0:01:18     100%        653.9         8863.260852
+
+Number of Errors: 0
+Number of Warnings: 0
+Total cycle time since last rewind: 5:52:00
+Total air time since last rewind: 2:28:20 (42)%
+******************************************************************************************************************************
+
+
+*** Processing NC program file p:\Project\Hummingbird\W5269NS01006\W5269NS01006A\Trimill VU 3019\W5269NS01006A31.h
+Wed Nov 12 09:53:39 2025
+
+
+
+*** Finished processing NC program file p:\Project\Hummingbird\W5269NS01006\W5269NS01006A\Trimill VU 3019\W5269NS01006A31.h
+Wed Nov 12 09:53:39 2025
+
+******************************************************************************************************************************
+Toolpath File : p:\Project\Hummingbird\W5269NS01006\W5269NS01006A\Trimill VU 3019\W5269NS01006A31.h
+
+                                  Tool Summary
+                                 ==============
+
+Seq.  Record                                                  Tool Description                              Cutter Height  Cutter Stick Out  Time        Air Time    Air Time %  Cut Distance  Distance
+------------------------------------------------------------------------------------------------------------------------------
+   1    37: 36 TOOL CALL "MH10000000600353" Z S191 DL+0 DR+0  MH10000000600353: GUH-4630-MF_M10_H100PL100X  53.5           53.5              0:01:52     0:01:18     70%         781.9         8890.260852
+==============================================================================================================================
+      Total Time:                                                                                                                            0:01:52     0:01:18     70%         781.9         8890.260852
+
+Number of Errors: 0
+Number of Warnings: 0
+Total cycle time since last rewind: 5:55:59
+Total air time since last rewind: 2:31:45 (43)%
+******************************************************************************************************************************
+
+
+*** Processing NC program file p:\Project\Hummingbird\W5269NS01006\W5269NS01006A\Trimill VU 3019\W5269NS01006A32.h
+Wed Nov 12 09:53:39 2025
+
+
+
+*** Finished processing NC program file p:\Project\Hummingbird\W5269NS01006\W5269NS01006A\Trimill VU 3019\W5269NS01006A32.h
+Wed Nov 12 09:53:40 2025
+
+******************************************************************************************************************************
+Toolpath File : p:\Project\Hummingbird\W5269NS01006\W5269NS01006A\Trimill VU 3019\W5269NS01006A32.h
+
+                                  Tool Summary
+                                 ==============
+
+Seq.  Record                                                   Tool Description                             Cutter Height  Cutter Stick Out  Time        Air Time    Air Time %  Cut Distance  Distance
+------------------------------------------------------------------------------------------------------------------------------
+   1    37: 36 TOOL CALL "BH03400000410058" Z S7490 DL+0 DR+0  BH03400000410058: GUH-5512-BHF3.4_H100Z6L85  40.999999      41                0:02:03     0:02:03     100%        773.9         29519.679229
+==============================================================================================================================
+      Total Time:                                                                                                                            0:02:03     0:02:03     100%        773.9         29519.679229
+
+Number of Errors: 0
+Number of Warnings: 0
+Total cycle time since last rewind: 6:00:08
+Total air time since last rewind: 2:35:54 (43)%
+******************************************************************************************************************************
+
+
+*** Processing NC program file p:\Project\Hummingbird\W5269NS01006\W5269NS01006A\Trimill VU 3019\W5269NS01006A33.h
+Wed Nov 12 09:53:40 2025
+
+
+
+*** Finished processing NC program file p:\Project\Hummingbird\W5269NS01006\W5269NS01006A\Trimill VU 3019\W5269NS01006A33.h
+Wed Nov 12 09:53:41 2025
+
+******************************************************************************************************************************
+Toolpath File : p:\Project\Hummingbird\W5269NS01006\W5269NS01006A\Trimill VU 3019\W5269NS01006A33.h
+
+                                  Tool Summary
+                                 ==============
+
+Seq.  Record                                                  Tool Description                             Cutter Height  Cutter Stick Out  Time        Air Time    Air Time %  Cut Distance  Distance
+------------------------------------------------------------------------------------------------------------------------------
+   1    37: 36 TOOL CALL "MH04000000320353" Z S477 DL+0 DR+0  MH04000000320353: GUH-4630-MF_M4_H100PL100X  31.5           31.5              0:02:40     0:02:02     76%         893.9         29431.181575
+==============================================================================================================================
+      Total Time:                                                                                                                           0:02:40     0:02:02     76%         893.9         29431.181575
+
+Number of Errors: 0
+Number of Warnings: 0
+Total cycle time since last rewind: 6:04:55
+Total air time since last rewind: 2:40:03 (44)%
+******************************************************************************************************************************
+
+
+*** Processing NC program file p:\Project\Hummingbird\W5269NS01006\W5269NS01006A\Trimill VU 3019\W5269NS01006A34.h
+Wed Nov 12 09:53:41 2025
+
+
+
+*** Finished processing NC program file p:\Project\Hummingbird\W5269NS01006\W5269NS01006A\Trimill VU 3019\W5269NS01006A34.h
+Wed Nov 12 09:53:41 2025
+
+******************************************************************************************************************************
+Toolpath File : p:\Project\Hummingbird\W5269NS01006\W5269NS01006A\Trimill VU 3019\W5269NS01006A34.h
+
+                                  Tool Summary
+                                 ==============
+
+Seq.  Record                                                    Tool Description                              Cutter Height  Cutter Stick Out  Time        Air Time    Air Time %  Cut Distance  Distance
+------------------------------------------------------------------------------------------------------------------------------
+   1    37: 36 TOOL CALL "BH02600000400353" Z S12243 DL+0 DR+0  BH02600000400353: GUH-6405-BHF2.6_H100PL100X  40             40                0:01:07     0:01:07     100%        549.9         15930.381503
+==============================================================================================================================
+      Total Time:                                                                                                                              0:01:07     0:01:07     100%        549.9         15930.381503
+
+Number of Errors: 0
+Number of Warnings: 0
+Total cycle time since last rewind: 6:08:08
+Total air time since last rewind: 2:43:16 (44)%
+******************************************************************************************************************************
+
+
+*** Processing NC program file p:\Project\Hummingbird\W5269NS01006\W5269NS01006A\Trimill VU 3019\W5269NS01006A35.h
+Wed Nov 12 09:53:41 2025
+
+
+
+*** Finished processing NC program file p:\Project\Hummingbird\W5269NS01006\W5269NS01006A\Trimill VU 3019\W5269NS01006A35.h
+Wed Nov 12 09:53:42 2025
+
+******************************************************************************************************************************
+Toolpath File : p:\Project\Hummingbird\W5269NS01006\W5269NS01006A\Trimill VU 3019\W5269NS01006A35.h
+
+                                  Tool Summary
+                                 ==============
+
+Seq.  Record                                                  Tool Description                             Cutter Height  Cutter Stick Out  Time        Air Time    Air Time %  Cut Distance  Distance
+------------------------------------------------------------------------------------------------------------------------------
+   1    37: 36 TOOL CALL "MH03000000280353" Z S637 DL+0 DR+0  MH03000000280353: GUH-4630-MF_M3_H100PL100X  26.5           26.5              0:01:18     0:01:08     87%         573.9         15875.628673
+==============================================================================================================================
+      Total Time:                                                                                                                           0:01:18     0:01:08     87%         573.9         15875.628673
+
+Number of Errors: 0
+Number of Warnings: 0
+Total cycle time since last rewind: 6:11:34
+Total air time since last rewind: 2:46:31 (45)%
+******************************************************************************************************************************
+
+
+*** Processing NC program file p:\Project\Hummingbird\W5269NS01006\W5269NS01006A\Trimill VU 3019\W5269NS01006A36.h
+Wed Nov 12 09:53:42 2025
+
+
+
+*** Finished processing NC program file p:\Project\Hummingbird\W5269NS01006\W5269NS01006A\Trimill VU 3019\W5269NS01006A36.h
+Wed Nov 12 09:53:48 2025
+
+******************************************************************************************************************************
+Toolpath File : p:\Project\Hummingbird\W5269NS01006\W5269NS01006A\Trimill VU 3019\W5269NS01006A36.h
+
+                                  Tool Summary
+                                 ==============
+
+Seq.  Record                                                    Tool Description                                        Cutter Height  Cutter Stick Out  Time        Air Time    Air Time %  Cut Distance  Distance
+------------------------------------------------------------------------------------------------------------------------------
+   1    37: 36 TOOL CALL "GB02001000250074" Z S14000 DL+0 DR+0  GB02001000250074: FRA-SP0140-G2R1-N-ES-L25_H100ZM6L130  24.999999      25                0:03:14     0:01:56     60%         4069.364965   35841.689773
+==============================================================================================================================
+      Total Time:                                                                                                                                        0:03:14     0:01:56     60%         4069.364965   35841.689773
+
+Number of Errors: 0
+Number of Warnings: 0
+Total cycle time since last rewind: 6:16:54
+Total air time since last rewind: 2:50:33 (45)%
+******************************************************************************************************************************
+
+
+*** Processing NC program file p:\Project\Hummingbird\W5269NS01006\W5269NS01006A\Trimill VU 3019\W5269NS01006A37.h
+Wed Nov 12 09:53:48 2025
+
+
+
+*** Finished processing NC program file p:\Project\Hummingbird\W5269NS01006\W5269NS01006A\Trimill VU 3019\W5269NS01006A37.h
+Wed Nov 12 09:53:48 2025
+
+******************************************************************************************************************************
+Toolpath File : p:\Project\Hummingbird\W5269NS01006\W5269NS01006A\Trimill VU 3019\W5269NS01006A37.h
+
+                                  Tool Summary
+                                 ==============
+
+Seq.  Record                                                    Tool Description                                     Cutter Height  Cutter Stick Out  Time        Air Time    Air Time %  Cut Distance  Distance
+------------------------------------------------------------------------------------------------------------------------------
+   1    37: 36 TOOL CALL "GG01000500250074" Z S14000 DL+0 DR+0  GG01000500250074: FRA-SP0140-G1R0.5-L25_H100ZM6L130  25.000001      25                0:01:45     0:01:26     81%         565.059943    7500.115414
+==============================================================================================================================
+      Total Time:                                                                                                                                     0:01:45     0:01:26     81%         565.059943    7500.115414
+
+Number of Errors: 0
+Number of Warnings: 0
+Total cycle time since last rewind: 6:20:46
+Total air time since last rewind: 2:54:06 (46)%
+******************************************************************************************************************************
+
+Wed Nov 12 10:01:54 2025
+END-OF-FILE
+

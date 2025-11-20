@@ -1,0 +1,999 @@
+VERICUT-log
+Version-9.4.1
+*---------------------------------------------------------*
+*
+*   Wed Nov 12 09:27:41 2025
+*   User = aszilagyi.
+*   Build Date = December 08, 2023 .
+*   Library Date = 12/08/23.
+*   Customer Name = 107429_Euroform.
+*   Customer ID = 107429.
+*   Server ID = 001.
+*   Host ID = F079595DCDE8.
+*
+*---------------------------------------------------------*
+
+
+*** Processing NC program file p:\Project\Hummingbird\W5269NS01002\W5269NS01002A\Trimill VU 3019\W5269NS01002A1.h
+Wed Nov 12 09:27:58 2025
+
+
+
+*** Finished processing NC program file p:\Project\Hummingbird\W5269NS01002\W5269NS01002A\Trimill VU 3019\W5269NS01002A1.h
+Wed Nov 12 09:27:58 2025
+
+******************************************************************************************************************************
+Toolpath File : p:\Project\Hummingbird\W5269NS01002\W5269NS01002A\Trimill VU 3019\W5269NS01002A1.h
+
+                                  Tool Summary
+                                 ==============
+
+Seq.  Record                                                   Tool Description                              Cutter Height  Cutter Stick Out  Time        Air Time    Air Time %  Cut Distance  Distance
+------------------------------------------------------------------------------------------------------------------------------
+   1    37: 36 TOOL CALL "BH12000000580285" Z S2387 DL+0 DR+0  BH12000000580285: GUH-5510-BHF12_H100Z12L95X  58             58                0:02:03     0:01:32     75%         606.62        40551.973335
+==============================================================================================================================
+      Total Time:                                                                                                                             0:02:03     0:01:32     75%         606.62        40551.973335
+
+Number of Errors: 0
+Number of Warnings: 0
+Total cycle time since last rewind: 0:04:09
+Total air time since last rewind: 0:03:39 (88)%
+******************************************************************************************************************************
+
+
+*** Processing NC program file p:\Project\Hummingbird\W5269NS01002\W5269NS01002A\Trimill VU 3019\W5269NS01002A2.h
+Wed Nov 12 09:27:58 2025
+
+
+
+*** Finished processing NC program file p:\Project\Hummingbird\W5269NS01002\W5269NS01002A\Trimill VU 3019\W5269NS01002A2.h
+Wed Nov 12 09:27:59 2025
+
+******************************************************************************************************************************
+Toolpath File : p:\Project\Hummingbird\W5269NS01002\W5269NS01002A\Trimill VU 3019\W5269NS01002A2.h
+
+                                  Tool Summary
+                                 ==============
+
+Seq.  Record                                                 Tool Description                            Cutter Height  Cutter Stick Out  Time        Air Time    Air Time %  Cut Distance  Distance
+------------------------------------------------------------------------------------------------------------------------------
+   1    37: 36 TOOL CALL "AF12000003900007" Z S50 DL+0 DR+0  AF12000003900007: GUH-5640-AF12_H100H20L90  390            390               0:37:21     0:06:59     19%         2300.642      40661.342006
+==============================================================================================================================
+      Total Time:                                                                                                                         0:37:21     0:06:59     19%         2300.642      40661.342006
+
+Number of Errors: 0
+Number of Warnings: 0
+Total cycle time since last rewind: 0:43:37
+Total air time since last rewind: 0:12:44 (29)%
+******************************************************************************************************************************
+
+
+*** Processing NC program file p:\Project\Hummingbird\W5269NS01002\W5269NS01002A\Trimill VU 3019\W5269NS01002A3.h
+Wed Nov 12 09:27:59 2025
+
+
+
+*** Finished processing NC program file p:\Project\Hummingbird\W5269NS01002\W5269NS01002A\Trimill VU 3019\W5269NS01002A3.h
+Wed Nov 12 09:27:59 2025
+
+******************************************************************************************************************************
+Toolpath File : p:\Project\Hummingbird\W5269NS01002\W5269NS01002A\Trimill VU 3019\W5269NS01002A3.h
+
+                                  Tool Summary
+                                 ==============
+
+Seq.  Record                                                  Tool Description                             Cutter Height  Cutter Stick Out  Time        Air Time    Air Time %  Cut Distance  Distance
+------------------------------------------------------------------------------------------------------------------------------
+   1    37: 36 TOOL CALL "TF53000002630360" Z S781 DL+0 DR+0  TF53000002630360: WID-TCF-TF53_H100W50L130X  262.8          262.8             0:05:46     0:01:00     17%         861.9         9180.415257
+==============================================================================================================================
+      Total Time:                                                                                                                           0:05:46     0:01:00     17%         861.9         9180.415257
+
+Number of Errors: 0
+Number of Warnings: 0
+Total cycle time since last rewind: 0:51:29
+Total air time since last rewind: 0:15:51 (31)%
+******************************************************************************************************************************
+
+
+*** Processing NC program file p:\Project\Hummingbird\W5269NS01002\W5269NS01002A\Trimill VU 3019\W5269NS01002A4.h
+Wed Nov 12 09:27:59 2025
+
+
+
+*** Finished processing NC program file p:\Project\Hummingbird\W5269NS01002\W5269NS01002A\Trimill VU 3019\W5269NS01002A4.h
+Wed Nov 12 09:27:59 2025
+
+******************************************************************************************************************************
+Toolpath File : p:\Project\Hummingbird\W5269NS01002\W5269NS01002A\Trimill VU 3019\W5269NS01002A4.h
+
+                                  Tool Summary
+                                 ==============
+
+Seq.  Record                                                   Tool Description                               Cutter Height  Cutter Stick Out  Time        Air Time    Air Time %  Cut Distance  Distance
+------------------------------------------------------------------------------------------------------------------------------
+   1    37: 36 TOOL CALL "TF26500001580356" Z S1201 DL+0 DR+0  TF26500001580356: TGT-TOP5-TF26.5_H100W32L120  157.999999     158               0:04:03     0:01:39     41%         720.216       40204.919037
+==============================================================================================================================
+      Total Time:                                                                                                                              0:04:03     0:01:39     41%         720.216       40204.919037
+
+Number of Errors: 0
+Number of Warnings: 0
+Total cycle time since last rewind: 0:57:39
+Total air time since last rewind: 0:19:37 (34)%
+******************************************************************************************************************************
+
+
+*** Processing NC program file p:\Project\Hummingbird\W5269NS01002\W5269NS01002A\Trimill VU 3019\W5269NS01002A5.h
+Wed Nov 12 09:27:59 2025
+
+
+
+*** Finished processing NC program file p:\Project\Hummingbird\W5269NS01002\W5269NS01002A\Trimill VU 3019\W5269NS01002A5.h
+Wed Nov 12 09:28:00 2025
+
+******************************************************************************************************************************
+Toolpath File : p:\Project\Hummingbird\W5269NS01002\W5269NS01002A\Trimill VU 3019\W5269NS01002A5.h
+
+                                  Tool Summary
+                                 ==============
+
+Seq.  Record                                                   Tool Description                              Cutter Height  Cutter Stick Out  Time        Air Time    Air Time %  Cut Distance  Distance
+------------------------------------------------------------------------------------------------------------------------------
+   1    37: 36 TOOL CALL "TF22000001320359" Z S1447 DL+0 DR+0  TF22000001320359: TGT-TOP5-TF22_H100W25L100X  132.500003     132.5             0:09:45     0:00:56     10%         1607.66       13087.467682
+==============================================================================================================================
+      Total Time:                                                                                                                             0:09:45     0:00:56     10%         1607.66       13087.467682
+
+Number of Errors: 0
+Number of Warnings: 0
+Total cycle time since last rewind: 1:09:30
+Total air time since last rewind: 0:22:39 (33)%
+******************************************************************************************************************************
+
+
+*** Processing NC program file p:\Project\Hummingbird\W5269NS01002\W5269NS01002A\Trimill VU 3019\W5269NS01002A6.h
+Wed Nov 12 09:28:00 2025
+
+
+
+*** Finished processing NC program file p:\Project\Hummingbird\W5269NS01002\W5269NS01002A\Trimill VU 3019\W5269NS01002A6.h
+Wed Nov 12 09:28:00 2025
+
+******************************************************************************************************************************
+Toolpath File : p:\Project\Hummingbird\W5269NS01002\W5269NS01002A\Trimill VU 3019\W5269NS01002A6.h
+
+                                  Tool Summary
+                                 ==============
+
+Seq.  Record                                                   Tool Description                           Cutter Height  Cutter Stick Out  Time        Air Time    Air Time %  Cut Distance  Distance
+------------------------------------------------------------------------------------------------------------------------------
+   1    37: 36 TOOL CALL "TD21000001280032" Z S1516 DL+0 DR+0  TD21000001280032: TGT-TDR-TF21_H100W25L95  127.999997     128               0:02:05     0:01:05     52%         568.816       19468.651046
+==============================================================================================================================
+      Total Time:                                                                                                                          0:02:05     0:01:05     52%         568.816       19468.651046
+
+Number of Errors: 0
+Number of Warnings: 0
+Total cycle time since last rewind: 1:13:42
+Total air time since last rewind: 0:25:51 (35)%
+******************************************************************************************************************************
+
+
+*** Processing NC program file p:\Project\Hummingbird\W5269NS01002\W5269NS01002A\Trimill VU 3019\W5269NS01002A7.h
+Wed Nov 12 09:28:00 2025
+
+
+
+*** Finished processing NC program file p:\Project\Hummingbird\W5269NS01002\W5269NS01002A\Trimill VU 3019\W5269NS01002A7.h
+Wed Nov 12 09:28:00 2025
+
+******************************************************************************************************************************
+Toolpath File : p:\Project\Hummingbird\W5269NS01002\W5269NS01002A\Trimill VU 3019\W5269NS01002A7.h
+
+                                  Tool Summary
+                                 ==============
+
+Seq.  Record                                                   Tool Description                              Cutter Height  Cutter Stick Out  Time        Air Time    Air Time %  Cut Distance  Distance
+------------------------------------------------------------------------------------------------------------------------------
+   1    37: 36 TOOL CALL "TF10300000960007" Z S2163 DL+0 DR+0  TF10300000960007: ISC-CSF10.3-8xD_H100H20L90  96             96                0:01:27     0:01:05     75%         593.18        20676.966048
+==============================================================================================================================
+      Total Time:                                                                                                                             0:01:27     0:01:05     75%         593.18        20676.966048
+
+Number of Errors: 0
+Number of Warnings: 0
+Total cycle time since last rewind: 1:17:16
+Total air time since last rewind: 0:29:03 (38)%
+******************************************************************************************************************************
+
+
+*** Processing NC program file p:\Project\Hummingbird\W5269NS01002\W5269NS01002A\Trimill VU 3019\W5269NS01002A8.h
+Wed Nov 12 09:28:00 2025
+
+
+
+*** Finished processing NC program file p:\Project\Hummingbird\W5269NS01002\W5269NS01002A\Trimill VU 3019\W5269NS01002A8.h
+Wed Nov 12 09:29:13 2025
+
+******************************************************************************************************************************
+Toolpath File : p:\Project\Hummingbird\W5269NS01002\W5269NS01002A\Trimill VU 3019\W5269NS01002A8.h
+
+                                  Tool Summary
+                                 ==============
+
+Seq.  Record                                                   Tool Description                               Cutter Height  Cutter Stick Out  Time        Air Time    Air Time %  Cut Distance  Distance
+------------------------------------------------------------------------------------------------------------------------------
+   1    37: 36 TOOL CALL "VM63000000500001" Z S1011 DL+0 DR+0  VM63000000500001: TGT-VLF63-22R11_H100F22L100  49.999998      49.999998         0:48:00     0:04:17     9%          234504.708407  265690.103071
+==============================================================================================================================
+      Total Time:                                                                                                                              0:48:00     0:04:17     9%          234504.708407  265690.103071
+
+Number of Errors: 0
+Number of Warnings: 0
+Total cycle time since last rewind: 2:07:23
+Total air time since last rewind: 0:35:26 (28)%
+******************************************************************************************************************************
+
+
+*** Processing NC program file p:\Project\Hummingbird\W5269NS01002\W5269NS01002A\Trimill VU 3019\W5269NS01002A9.h
+Wed Nov 12 09:29:13 2025
+
+
+
+*** Finished processing NC program file p:\Project\Hummingbird\W5269NS01002\W5269NS01002A\Trimill VU 3019\W5269NS01002A9.h
+Wed Nov 12 09:30:16 2025
+
+******************************************************************************************************************************
+Toolpath File : p:\Project\Hummingbird\W5269NS01002\W5269NS01002A\Trimill VU 3019\W5269NS01002A9.h
+
+                                  Tool Summary
+                                 ==============
+
+Seq.  Record                                                   Tool Description                               Cutter Height  Cutter Stick Out  Time        Air Time    Air Time %  Cut Distance  Distance
+------------------------------------------------------------------------------------------------------------------------------
+   1    37: 36 TOOL CALL "VM63000000500001" Z S1011 DL+0 DR+0  VM63000000500001: TGT-VLF63-22R11_H100F22L100  49.999998      49.999998         0:29:59     0:02:35     9%          146353.781506  161770.937118
+==============================================================================================================================
+      Total Time:                                                                                                                              0:29:59     0:02:35     9%          146353.781506  161770.937118
+
+Number of Errors: 0
+Number of Warnings: 0
+Total cycle time since last rewind: 2:39:28
+Total air time since last rewind: 0:40:08 (25)%
+******************************************************************************************************************************
+
+
+*** Processing NC program file p:\Project\Hummingbird\W5269NS01002\W5269NS01002A\Trimill VU 3019\W5269NS01002A10.h
+Wed Nov 12 09:30:16 2025
+
+
+
+*** Finished processing NC program file p:\Project\Hummingbird\W5269NS01002\W5269NS01002A\Trimill VU 3019\W5269NS01002A10.h
+Wed Nov 12 09:30:34 2025
+
+******************************************************************************************************************************
+Toolpath File : p:\Project\Hummingbird\W5269NS01002\W5269NS01002A\Trimill VU 3019\W5269NS01002A10.h
+
+                                  Tool Summary
+                                 ==============
+
+Seq.  Record                                                   Tool Description                               Cutter Height  Cutter Stick Out  Time        Air Time    Air Time %  Cut Distance  Distance
+------------------------------------------------------------------------------------------------------------------------------
+   1    37: 36 TOOL CALL "VM63000000500001" Z S1011 DL+0 DR+0  VM63000000500001: TGT-VLF63-22R11_H100F22L100  49.999998      49.999998         0:09:30     0:02:37     27%         39070.341025  80233.52578
+==============================================================================================================================
+      Total Time:                                                                                                                              0:09:30     0:02:37     27%         39070.341025  80233.52578
+
+Number of Errors: 0
+Number of Warnings: 0
+Total cycle time since last rewind: 2:51:05
+Total air time since last rewind: 0:44:51 (26)%
+******************************************************************************************************************************
+
+
+*** Processing NC program file p:\Project\Hummingbird\W5269NS01002\W5269NS01002A\Trimill VU 3019\W5269NS01002A11.h
+Wed Nov 12 09:30:34 2025
+
+
+
+*** Finished processing NC program file p:\Project\Hummingbird\W5269NS01002\W5269NS01002A\Trimill VU 3019\W5269NS01002A11.h
+Wed Nov 12 09:40:39 2025
+
+******************************************************************************************************************************
+Toolpath File : p:\Project\Hummingbird\W5269NS01002\W5269NS01002A\Trimill VU 3019\W5269NS01002A11.h
+
+                                  Tool Summary
+                                 ==============
+
+Seq.  Record                                                   Tool Description                           Cutter Height  Cutter Stick Out  Time        Air Time    Air Time %  Cut Distance  Distance
+------------------------------------------------------------------------------------------------------------------------------
+   1    37: 36 TOOL CALL "VN42000000430011" Z S1515 DL+0 DR+0  VN42000000430011: TGT-VLM42-L_H100M16L100  42.7           42.7              1:33:02     0:31:43     34%         703614.784514  1155705.053707
+==============================================================================================================================
+      Total Time:                                                                                                                          1:33:02     0:31:43     34%         703614.784514  1155705.053707
+
+Number of Errors: 0
+Number of Warnings: 0
+Total cycle time since last rewind: 4:26:14
+Total air time since last rewind: 1:18:41 (30)%
+******************************************************************************************************************************
+
+
+*** Processing NC program file p:\Project\Hummingbird\W5269NS01002\W5269NS01002A\Trimill VU 3019\W5269NS01002A12.h
+Wed Nov 12 09:40:39 2025
+
+
+
+*** Finished processing NC program file p:\Project\Hummingbird\W5269NS01002\W5269NS01002A\Trimill VU 3019\W5269NS01002A12.h
+Wed Nov 12 09:44:25 2025
+
+******************************************************************************************************************************
+Toolpath File : p:\Project\Hummingbird\W5269NS01002\W5269NS01002A\Trimill VU 3019\W5269NS01002A12.h
+
+                                  Tool Summary
+                                 ==============
+
+Seq.  Record                                                   Tool Description                                Cutter Height  Cutter Stick Out  Time        Air Time    Air Time %  Cut Distance  Distance
+------------------------------------------------------------------------------------------------------------------------------
+   1    37: 36 TOOL CALL "VN20000001100052" Z S2998 DL+0 DR+0  VN20000001100052: TGT-VLM20-L110-L_H100Z20L105  30             30                0:16:16     0:07:23     45%         103668.584557  192207.238397
+==============================================================================================================================
+      Total Time:                                                                                                                               0:16:16     0:07:23     45%         103668.584557  192207.238397
+
+Number of Errors: 0
+Number of Warnings: 0
+Total cycle time since last rewind: 4:44:37
+Total air time since last rewind: 1:28:10 (31)%
+******************************************************************************************************************************
+
+
+*** Processing NC program file p:\Project\Hummingbird\W5269NS01002\W5269NS01002A\Trimill VU 3019\W5269NS01002A13.h
+Wed Nov 12 09:44:25 2025
+
+
+
+*** Finished processing NC program file p:\Project\Hummingbird\W5269NS01002\W5269NS01002A\Trimill VU 3019\W5269NS01002A13.h
+Wed Nov 12 09:44:41 2025
+
+******************************************************************************************************************************
+Toolpath File : p:\Project\Hummingbird\W5269NS01002\W5269NS01002A\Trimill VU 3019\W5269NS01002A13.h
+
+                                  Tool Summary
+                                 ==============
+
+Seq.  Record                                                   Tool Description                               Cutter Height  Cutter Stick Out  Time        Air Time    Air Time %  Cut Distance  Distance
+------------------------------------------------------------------------------------------------------------------------------
+   1    37: 36 TOOL CALL "VN20000000750052" Z S2998 DL+0 DR+0  VN20000000750052: TGT-VLM20-L75-L_H100Z20L105  30             30                0:08:57     0:01:42     19%         32489.931837  65824.912488
+==============================================================================================================================
+      Total Time:                                                                                                                              0:08:57     0:01:42     19%         32489.931837  65824.912488
+
+Number of Errors: 0
+Number of Warnings: 0
+Total cycle time since last rewind: 4:55:41
+Total air time since last rewind: 1:31:59 (31)%
+******************************************************************************************************************************
+
+
+*** Processing NC program file p:\Project\Hummingbird\W5269NS01002\W5269NS01002A\Trimill VU 3019\W5269NS01002A14.h
+Wed Nov 12 09:44:41 2025
+
+
+
+*** Finished processing NC program file p:\Project\Hummingbird\W5269NS01002\W5269NS01002A\Trimill VU 3019\W5269NS01002A14.h
+Wed Nov 12 09:44:43 2025
+
+******************************************************************************************************************************
+Toolpath File : p:\Project\Hummingbird\W5269NS01002\W5269NS01002A\Trimill VU 3019\W5269NS01002A14.h
+
+                                  Tool Summary
+                                 ==============
+
+Seq.  Record                                                   Tool Description                                  Cutter Height  Cutter Stick Out  Time        Air Time    Air Time %  Cut Distance  Distance
+------------------------------------------------------------------------------------------------------------------------------
+   1    37: 36 TOOL CALL "SA15600000590318" Z S2857 DL+0 DR+0  SA15600000590318: FRA-P8410-S15.6R0_H100W16L100X  59             59                0:02:54     0:02:05     72%         1617.511552   22444.383631
+==============================================================================================================================
+      Total Time:                                                                                                                                 0:02:54     0:02:05     72%         1617.511552   22444.383631
+
+Number of Errors: 0
+Number of Warnings: 0
+Total cycle time since last rewind: 5:00:41
+Total air time since last rewind: 1:36:11 (32)%
+******************************************************************************************************************************
+
+
+*** Processing NC program file p:\Project\Hummingbird\W5269NS01002\W5269NS01002A\Trimill VU 3019\W5269NS01002A15.h
+Wed Nov 12 09:44:43 2025
+
+
+
+*** Finished processing NC program file p:\Project\Hummingbird\W5269NS01002\W5269NS01002A\Trimill VU 3019\W5269NS01002A15.h
+Wed Nov 12 09:44:44 2025
+
+******************************************************************************************************************************
+Toolpath File : p:\Project\Hummingbird\W5269NS01002\W5269NS01002A\Trimill VU 3019\W5269NS01002A15.h
+
+                                  Tool Summary
+                                 ==============
+
+Seq.  Record                                                   Tool Description                                 Cutter Height  Cutter Stick Out  Time        Air Time    Air Time %  Cut Distance  Distance
+------------------------------------------------------------------------------------------------------------------------------
+   1    37: 36 TOOL CALL "SA09700000430325" Z S3117 DL+0 DR+0  SA09700000430325: FRA-P8410-S9.7R0_H100W10L160X  43             43                0:09:51     0:02:33     26%         5727.084483   39094.04335
+==============================================================================================================================
+      Total Time:                                                                                                                                0:09:51     0:02:33     26%         5727.084483   39094.04335
+
+Number of Errors: 0
+Number of Warnings: 0
+Total cycle time since last rewind: 5:12:39
+Total air time since last rewind: 1:40:51 (32)%
+******************************************************************************************************************************
+
+
+*** Processing NC program file p:\Project\Hummingbird\W5269NS01002\W5269NS01002A\Trimill VU 3019\W5269NS01002A16.h
+Wed Nov 12 09:44:44 2025
+
+
+
+*** Finished processing NC program file p:\Project\Hummingbird\W5269NS01002\W5269NS01002A\Trimill VU 3019\W5269NS01002A16.h
+Wed Nov 12 09:44:44 2025
+
+******************************************************************************************************************************
+Toolpath File : p:\Project\Hummingbird\W5269NS01002\W5269NS01002A\Trimill VU 3019\W5269NS01002A16.h
+
+                                  Tool Summary
+                                 ==============
+
+Seq.  Record                                                   Tool Description                                Cutter Height  Cutter Stick Out  Time        Air Time    Air Time %  Cut Distance  Distance
+------------------------------------------------------------------------------------------------------------------------------
+   1    37: 36 TOOL CALL "SA07700000260324" Z S5787 DL+0 DR+0  SA07700000260324: FRA-P8400-S7.7R0_H100W8L160X  26             26                0:01:52     0:01:01     55%         1527.538356   15509.728365
+==============================================================================================================================
+      Total Time:                                                                                                                               0:01:52     0:01:01     55%         1527.538356   15509.728365
+
+Number of Errors: 0
+Number of Warnings: 0
+Total cycle time since last rewind: 5:16:37
+Total air time since last rewind: 1:43:58 (33)%
+******************************************************************************************************************************
+
+
+*** Processing NC program file p:\Project\Hummingbird\W5269NS01002\W5269NS01002A\Trimill VU 3019\W5269NS01002A17.h
+Wed Nov 12 09:44:44 2025
+
+
+
+*** Finished processing NC program file p:\Project\Hummingbird\W5269NS01002\W5269NS01002A\Trimill VU 3019\W5269NS01002A17.h
+Wed Nov 12 09:44:44 2025
+
+******************************************************************************************************************************
+Toolpath File : p:\Project\Hummingbird\W5269NS01002\W5269NS01002A\Trimill VU 3019\W5269NS01002A17.h
+
+                                  Tool Summary
+                                 ==============
+
+Seq.  Record                                                   Tool Description                                Cutter Height  Cutter Stick Out  Time        Air Time    Air Time %  Cut Distance  Distance
+------------------------------------------------------------------------------------------------------------------------------
+   1    37: 36 TOOL CALL "SA05700000200323" Z S7818 DL+0 DR+0  SA05700000200323: FRA-P8400-S5.7R0_H100W6L160X  20             20                0:00:49     0:00:45     93%         539.830311    7587.283929
+==============================================================================================================================
+      Total Time:                                                                                                                               0:00:49     0:00:45     93%         539.830311    7587.283929
+
+Number of Errors: 0
+Number of Warnings: 0
+Total cycle time since last rewind: 5:19:32
+Total air time since last rewind: 1:46:50 (33)%
+******************************************************************************************************************************
+
+
+*** Processing NC program file p:\Project\Hummingbird\W5269NS01002\W5269NS01002A\Trimill VU 3019\W5269NS01002A18.h
+Wed Nov 12 09:44:44 2025
+
+
+
+*** Finished processing NC program file p:\Project\Hummingbird\W5269NS01002\W5269NS01002A\Trimill VU 3019\W5269NS01002A18.h
+Wed Nov 12 09:44:44 2025
+
+******************************************************************************************************************************
+Toolpath File : p:\Project\Hummingbird\W5269NS01002\W5269NS01002A\Trimill VU 3019\W5269NS01002A18.h
+
+                                  Tool Summary
+                                 ==============
+
+Seq.  Record                                                   Tool Description                               Cutter Height  Cutter Stick Out  Time        Air Time    Air Time %  Cut Distance  Distance
+------------------------------------------------------------------------------------------------------------------------------
+   1    37: 36 TOOL CALL "TF26500001580356" Z S1201 DL+0 DR+0  TF26500001580356: TGT-TOP5-TF26.5_H100W32L120  157.999999     158               0:02:01     0:00:52     43%         586.637       8439.749782
+==============================================================================================================================
+      Total Time:                                                                                                                              0:02:01     0:00:52     43%         586.637       8439.749782
+
+Number of Errors: 0
+Number of Warnings: 0
+Total cycle time since last rewind: 5:23:40
+Total air time since last rewind: 1:49:49 (34)%
+******************************************************************************************************************************
+
+
+*** Processing NC program file p:\Project\Hummingbird\W5269NS01002\W5269NS01002A\Trimill VU 3019\W5269NS01002A19.h
+Wed Nov 12 09:44:44 2025
+
+
+
+*** Finished processing NC program file p:\Project\Hummingbird\W5269NS01002\W5269NS01002A\Trimill VU 3019\W5269NS01002A19.h
+Wed Nov 12 09:44:45 2025
+
+******************************************************************************************************************************
+Toolpath File : p:\Project\Hummingbird\W5269NS01002\W5269NS01002A\Trimill VU 3019\W5269NS01002A19.h
+
+                                  Tool Summary
+                                 ==============
+
+Seq.  Record                                                   Tool Description                             Cutter Height  Cutter Stick Out  Time        Air Time    Air Time %  Cut Distance  Distance
+------------------------------------------------------------------------------------------------------------------------------
+   1    37: 36 TOOL CALL "BH03400000410058" Z S7490 DL+0 DR+0  BH03400000410058: GUH-5512-BHF3.4_H100Z6L85  40.999999      41                0:01:04     0:00:56     88%         524.448       15161.115903
+==============================================================================================================================
+      Total Time:                                                                                                                            0:01:04     0:00:56     88%         524.448       15161.115903
+
+Number of Errors: 0
+Number of Warnings: 0
+Total cycle time since last rewind: 5:26:51
+Total air time since last rewind: 1:52:51 (35)%
+******************************************************************************************************************************
+
+
+*** Processing NC program file p:\Project\Hummingbird\W5269NS01002\W5269NS01002A\Trimill VU 3019\W5269NS01002A20.h
+Wed Nov 12 09:44:45 2025
+
+
+
+*** Finished processing NC program file p:\Project\Hummingbird\W5269NS01002\W5269NS01002A\Trimill VU 3019\W5269NS01002A20.h
+Wed Nov 12 09:44:45 2025
+
+******************************************************************************************************************************
+Toolpath File : p:\Project\Hummingbird\W5269NS01002\W5269NS01002A\Trimill VU 3019\W5269NS01002A20.h
+
+                                  Tool Summary
+                                 ==============
+
+Seq.  Record                                                    Tool Description                              Cutter Height  Cutter Stick Out  Time        Air Time    Air Time %  Cut Distance  Distance
+------------------------------------------------------------------------------------------------------------------------------
+   1    37: 36 TOOL CALL "BH02600000400353" Z S12243 DL+0 DR+0  BH02600000400353: GUH-6405-BHF2.6_H100PL100X  40             40                0:01:08     0:00:57     84%         569.684       15500.635924
+==============================================================================================================================
+      Total Time:                                                                                                                              0:01:08     0:00:57     84%         569.684       15500.635924
+
+Number of Errors: 0
+Number of Warnings: 0
+Total cycle time since last rewind: 5:30:05
+Total air time since last rewind: 1:55:55 (35)%
+******************************************************************************************************************************
+
+
+*** Processing NC program file p:\Project\Hummingbird\W5269NS01002\W5269NS01002A\Trimill VU 3019\W5269NS01002A21.h
+Wed Nov 12 09:44:45 2025
+
+
+
+*** Finished processing NC program file p:\Project\Hummingbird\W5269NS01002\W5269NS01002A\Trimill VU 3019\W5269NS01002A21.h
+Wed Nov 12 09:44:48 2025
+
+******************************************************************************************************************************
+Toolpath File : p:\Project\Hummingbird\W5269NS01002\W5269NS01002A\Trimill VU 3019\W5269NS01002A21.h
+
+                                  Tool Summary
+                                 ==============
+
+Seq.  Record                                                   Tool Description                              Cutter Height  Cutter Stick Out  Time        Air Time    Air Time %  Cut Distance  Distance
+------------------------------------------------------------------------------------------------------------------------------
+   1    37: 36 TOOL CALL "LE19000000480318" Z S5142 DL+0 DR+0  LE19000000480318: KOM-VL-Letoro_H100W16L100X  48             48                0:12:02     0:06:47     56%         13879.215938  163080.557586
+==============================================================================================================================
+      Total Time:                                                                                                                             0:12:02     0:06:47     56%         13879.215938  163080.557586
+
+Number of Errors: 0
+Number of Warnings: 0
+Total cycle time since last rewind: 5:44:14
+Total air time since last rewind: 2:04:49 (36)%
+******************************************************************************************************************************
+
+
+*** Processing NC program file p:\Project\Hummingbird\W5269NS01002\W5269NS01002A\Trimill VU 3019\W5269NS01002A22.h
+Wed Nov 12 09:44:48 2025
+
+
+
+*** Finished processing NC program file p:\Project\Hummingbird\W5269NS01002\W5269NS01002A\Trimill VU 3019\W5269NS01002A22.h
+Wed Nov 12 09:44:48 2025
+
+******************************************************************************************************************************
+Toolpath File : p:\Project\Hummingbird\W5269NS01002\W5269NS01002A\Trimill VU 3019\W5269NS01002A22.h
+
+                                  Tool Summary
+                                 ==============
+
+Seq.  Record                                                   Tool Description                             Cutter Height  Cutter Stick Out  Time        Air Time    Air Time %  Cut Distance  Distance
+------------------------------------------------------------------------------------------------------------------------------
+   1    37: 36 TOOL CALL "KW16000000630353" Z S1001 DL+0 DR+0  KW16000000630353: GUH-5678-KPF16_H100PL100X  63             63                0:01:44     0:01:04     61%         495.9         20524.135571
+==============================================================================================================================
+      Total Time:                                                                                                                            0:01:44     0:01:04     61%         495.9         20524.135571
+
+Number of Errors: 0
+Number of Warnings: 0
+Total cycle time since last rewind: 5:48:05
+Total air time since last rewind: 2:08:00 (37)%
+******************************************************************************************************************************
+
+
+*** Processing NC program file p:\Project\Hummingbird\W5269NS01002\W5269NS01002A\Trimill VU 3019\W5269NS01002A23.h
+Wed Nov 12 09:44:48 2025
+
+
+
+*** Finished processing NC program file p:\Project\Hummingbird\W5269NS01002\W5269NS01002A\Trimill VU 3019\W5269NS01002A23.h
+Wed Nov 12 09:44:49 2025
+
+******************************************************************************************************************************
+Toolpath File : p:\Project\Hummingbird\W5269NS01002\W5269NS01002A\Trimill VU 3019\W5269NS01002A23.h
+
+                                  Tool Summary
+                                 ==============
+
+Seq.  Record                                                   Tool Description                            Cutter Height  Cutter Stick Out  Time        Air Time    Air Time %  Cut Distance  Distance
+------------------------------------------------------------------------------------------------------------------------------
+   1    37: 36 TOOL CALL "KW08000000400316" Z S1003 DL+0 DR+0  KW08000000400316: GUH-5678-KPF8_H100W8L80X  40.5           40.5              0:01:56     0:00:58     50%         509.9         16421.076877
+==============================================================================================================================
+      Total Time:                                                                                                                           0:01:56     0:00:58     50%         509.9         16421.076877
+
+Number of Errors: 0
+Number of Warnings: 0
+Total cycle time since last rewind: 5:52:08
+Total air time since last rewind: 2:11:04 (37)%
+******************************************************************************************************************************
+
+
+*** Processing NC program file p:\Project\Hummingbird\W5269NS01002\W5269NS01002A\Trimill VU 3019\W5269NS01002A24.h
+Wed Nov 12 09:44:49 2025
+
+
+
+*** Finished processing NC program file p:\Project\Hummingbird\W5269NS01002\W5269NS01002A\Trimill VU 3019\W5269NS01002A24.h
+Wed Nov 12 09:44:50 2025
+
+******************************************************************************************************************************
+Toolpath File : p:\Project\Hummingbird\W5269NS01002\W5269NS01002A\Trimill VU 3019\W5269NS01002A24.h
+
+                                  Tool Summary
+                                 ==============
+
+Seq.  Record                                                   Tool Description                           Cutter Height  Cutter Stick Out  Time        Air Time    Air Time %  Cut Distance  Distance
+------------------------------------------------------------------------------------------------------------------------------
+   1    37: 36 TOOL CALL "MM21700000820318" Z S1600 DL+0 DR+0  MM21700000820318: ATO-MM-M30_H100W16L100X  82.5           82.5              0:07:49     0:02:52     37%         2280.880338   42057.776137
+==============================================================================================================================
+      Total Time:                                                                                                                          0:07:49     0:02:52     37%         2280.880338   42057.776137
+
+Number of Errors: 0
+Number of Warnings: 0
+Total cycle time since last rewind: 6:02:03
+Total air time since last rewind: 2:16:03 (38)%
+******************************************************************************************************************************
+
+
+*** Processing NC program file p:\Project\Hummingbird\W5269NS01002\W5269NS01002A\Trimill VU 3019\W5269NS01002A25.h
+Wed Nov 12 09:44:50 2025
+
+
+
+*** Finished processing NC program file p:\Project\Hummingbird\W5269NS01002\W5269NS01002A\Trimill VU 3019\W5269NS01002A25.h
+Wed Nov 12 09:44:50 2025
+
+******************************************************************************************************************************
+Toolpath File : p:\Project\Hummingbird\W5269NS01002\W5269NS01002A\Trimill VU 3019\W5269NS01002A25.h
+
+                                  Tool Summary
+                                 ==============
+
+Seq.  Record                                                   Tool Description                           Cutter Height  Cutter Stick Out  Time        Air Time    Air Time %  Cut Distance  Distance
+------------------------------------------------------------------------------------------------------------------------------
+   1    37: 36 TOOL CALL "TD21000001280032" Z S1516 DL+0 DR+0  TD21000001280032: TGT-TDR-TF21_H100W25L95  127.999997     128               0:02:03     0:02:03     100%        563.9         19458.819046
+==============================================================================================================================
+      Total Time:                                                                                                                          0:02:03     0:02:03     100%        563.9         19458.819046
+
+Number of Errors: 0
+Number of Warnings: 0
+Total cycle time since last rewind: 6:06:12
+Total air time since last rewind: 2:20:13 (38)%
+******************************************************************************************************************************
+
+
+*** Processing NC program file p:\Project\Hummingbird\W5269NS01002\W5269NS01002A\Trimill VU 3019\W5269NS01002A26.h
+Wed Nov 12 09:44:50 2025
+
+
+
+*** Finished processing NC program file p:\Project\Hummingbird\W5269NS01002\W5269NS01002A\Trimill VU 3019\W5269NS01002A26.h
+Wed Nov 12 09:44:51 2025
+
+******************************************************************************************************************************
+Toolpath File : p:\Project\Hummingbird\W5269NS01002\W5269NS01002A\Trimill VU 3019\W5269NS01002A26.h
+
+                                  Tool Summary
+                                 ==============
+
+Seq.  Record                                                 Tool Description                              Cutter Height  Cutter Stick Out  Time        Air Time    Air Time %  Cut Distance  Distance
+------------------------------------------------------------------------------------------------------------------------------
+   1    37: 36 TOOL CALL "MH16600000570353" Z S96 DL+0 DR+0  MH16600000570353: GUH-965-MF-G3_8_H100PL100X  57             57                0:03:56     0:02:39     68%         788.988       28792.954438
+==============================================================================================================================
+      Total Time:                                                                                                                           0:03:56     0:02:39     68%         788.988       28792.954438
+
+Number of Errors: 0
+Number of Warnings: 0
+Total cycle time since last rewind: 6:12:15
+Total air time since last rewind: 2:24:59 (39)%
+******************************************************************************************************************************
+
+
+*** Processing NC program file p:\Project\Hummingbird\W5269NS01002\W5269NS01002A\Trimill VU 3019\W5269NS01002A27.h
+Wed Nov 12 09:44:51 2025
+
+
+
+******************** TOOLPATH ERROR REPORT ********************
+Error for line 80, Filename: W5269NS01002A27.h
+73 L X0 Y37 R0 F MAX M99
+Error: Plunge distance of tool "MH24000001120353" loaded in component "Tool" exceeds tool's Flute Length at line (80) 73 L X0 Y37 R0 F MAX M99
+
+
+******************** TOOLPATH ERROR REPORT ********************
+Error for line 81, Filename: W5269NS01002A27.h
+74 L X0 Y-63 R0 F MAX M99
+Error: Plunge distance of tool "MH24000001120353" loaded in component "Tool" exceeds tool's Flute Length at line (81) 74 L X0 Y-63 R0 F MAX M99
+
+
+*** Finished processing NC program file p:\Project\Hummingbird\W5269NS01002\W5269NS01002A\Trimill VU 3019\W5269NS01002A27.h
+Wed Nov 12 09:44:51 2025
+
+******************************************************************************************************************************
+Toolpath File : p:\Project\Hummingbird\W5269NS01002\W5269NS01002A\Trimill VU 3019\W5269NS01002A27.h
+
+                                  Tool Summary
+                                 ==============
+
+Seq.  Record                                                  Tool Description                              Cutter Height  Cutter Stick Out  Time        Air Time    Air Time %  Cut Distance  Distance
+------------------------------------------------------------------------------------------------------------------------------
+   1    37: 36 TOOL CALL "MH24000001120353" Z S106 DL+0 DR+0  MH24000001120353: GUH-5738-MF-M24_H100PL100X  108            108               0:01:38     0:01:21     82%         645.9         19459.162328
+==============================================================================================================================
+      Total Time:                                                                                                                            0:01:38     0:01:21     82%         645.9         19459.162328
+
+Number of Errors: 2
+Number of Warnings: 0
+Total cycle time since last rewind: 6:16:00
+Total air time since last rewind: 2:28:26 (39)%
+******************************************************************************************************************************
+
+
+*** Processing NC program file p:\Project\Hummingbird\W5269NS01002\W5269NS01002A\Trimill VU 3019\W5269NS01002A28.h
+Wed Nov 12 09:44:51 2025
+
+
+
+*** Finished processing NC program file p:\Project\Hummingbird\W5269NS01002\W5269NS01002A\Trimill VU 3019\W5269NS01002A28.h
+Wed Nov 12 09:44:51 2025
+
+******************************************************************************************************************************
+Toolpath File : p:\Project\Hummingbird\W5269NS01002\W5269NS01002A\Trimill VU 3019\W5269NS01002A28.h
+
+                                  Tool Summary
+                                 ==============
+
+Seq.  Record                                                   Tool Description                              Cutter Height  Cutter Stick Out  Time        Air Time    Air Time %  Cut Distance  Distance
+------------------------------------------------------------------------------------------------------------------------------
+   1    37: 36 TOOL CALL "TF10300000960007" Z S2163 DL+0 DR+0  TF10300000960007: ISC-CSF10.3-8xD_H100H20L90  96             96                0:01:24     0:01:24     100%        577.9         20646.406048
+==============================================================================================================================
+      Total Time:                                                                                                                             0:01:24     0:01:24     100%        577.9         20646.406048
+
+Number of Errors: 0
+Number of Warnings: 0
+Total cycle time since last rewind: 6:19:30
+Total air time since last rewind: 2:31:57 (40)%
+******************************************************************************************************************************
+
+
+*** Processing NC program file p:\Project\Hummingbird\W5269NS01002\W5269NS01002A\Trimill VU 3019\W5269NS01002A29.h
+Wed Nov 12 09:44:51 2025
+
+
+
+******************** TOOLPATH ERROR REPORT ********************
+Error for line 80, Filename: W5269NS01002A29.h
+73 L X395 Y-56 R0 F MAX M99
+Error: Plunge distance of tool "MH12000000730353" loaded in component "Tool" exceeds tool's Flute Length at line (80) 73 L X395 Y-56 R0 F MAX M99
+
+
+******************** TOOLPATH ERROR REPORT ********************
+Error for line 81, Filename: W5269NS01002A29.h
+74 L X395 Y56 R0 F MAX M99
+Error: Plunge distance of tool "MH12000000730353" loaded in component "Tool" exceeds tool's Flute Length at line (81) 74 L X395 Y56 R0 F MAX M99
+
+
+******************** TOOLPATH ERROR REPORT ********************
+Error for line 82, Filename: W5269NS01002A29.h
+75 L X-395 Y56 R0 F MAX M99
+Error: Plunge distance of tool "MH12000000730353" loaded in component "Tool" exceeds tool's Flute Length at line (82) 75 L X-395 Y56 R0 F MAX M99
+
+
+******************** TOOLPATH ERROR REPORT ********************
+Error for line 83, Filename: W5269NS01002A29.h
+76 L X-395 Y-56 R0 F MAX M99
+Error: Plunge distance of tool "MH12000000730353" loaded in component "Tool" exceeds tool's Flute Length at line (83) 76 L X-395 Y-56 R0 F MAX M99
+
+
+*** Finished processing NC program file p:\Project\Hummingbird\W5269NS01002\W5269NS01002A\Trimill VU 3019\W5269NS01002A29.h
+Wed Nov 12 09:44:51 2025
+
+******************************************************************************************************************************
+Toolpath File : p:\Project\Hummingbird\W5269NS01002\W5269NS01002A\Trimill VU 3019\W5269NS01002A29.h
+
+                                  Tool Summary
+                                 ==============
+
+Seq.  Record                                                  Tool Description                              Cutter Height  Cutter Stick Out  Time        Air Time    Air Time %  Cut Distance  Distance
+------------------------------------------------------------------------------------------------------------------------------
+   1    37: 36 TOOL CALL "MH12000000730353" Z S159 DL+0 DR+0  MH12000000730353: GUH-4630-MF_M12_H100PL100X  68             68                0:01:47     0:01:25     80%         661.9         20644.201524
+==============================================================================================================================
+      Total Time:                                                                                                                            0:01:47     0:01:25     80%         661.9         20644.201524
+
+Number of Errors: 4
+Number of Warnings: 0
+Total cycle time since last rewind: 6:23:24
+Total air time since last rewind: 2:35:29 (41)%
+******************************************************************************************************************************
+
+
+*** Processing NC program file p:\Project\Hummingbird\W5269NS01002\W5269NS01002A\Trimill VU 3019\W5269NS01002A30.h
+Wed Nov 12 09:44:51 2025
+
+
+
+*** Finished processing NC program file p:\Project\Hummingbird\W5269NS01002\W5269NS01002A\Trimill VU 3019\W5269NS01002A30.h
+Wed Nov 12 09:44:52 2025
+
+******************************************************************************************************************************
+Toolpath File : p:\Project\Hummingbird\W5269NS01002\W5269NS01002A\Trimill VU 3019\W5269NS01002A30.h
+
+                                  Tool Summary
+                                 ==============
+
+Seq.  Record                                                   Tool Description                             Cutter Height  Cutter Stick Out  Time        Air Time    Air Time %  Cut Distance  Distance
+------------------------------------------------------------------------------------------------------------------------------
+   1    37: 36 TOOL CALL "BH03400000410058" Z S7490 DL+0 DR+0  BH03400000410058: GUH-5512-BHF3.4_H100Z6L85  40.999999      41                0:01:03     0:01:03     100%        513.9         15140.019903
+==============================================================================================================================
+      Total Time:                                                                                                                            0:01:03     0:01:03     100%        513.9         15140.019903
+
+Number of Errors: 0
+Number of Warnings: 0
+Total cycle time since last rewind: 6:26:33
+Total air time since last rewind: 2:38:38 (41)%
+******************************************************************************************************************************
+
+
+*** Processing NC program file p:\Project\Hummingbird\W5269NS01002\W5269NS01002A\Trimill VU 3019\W5269NS01002A31.h
+Wed Nov 12 09:44:52 2025
+
+
+
+*** Finished processing NC program file p:\Project\Hummingbird\W5269NS01002\W5269NS01002A\Trimill VU 3019\W5269NS01002A31.h
+Wed Nov 12 09:44:52 2025
+
+******************************************************************************************************************************
+Toolpath File : p:\Project\Hummingbird\W5269NS01002\W5269NS01002A\Trimill VU 3019\W5269NS01002A31.h
+
+                                  Tool Summary
+                                 ==============
+
+Seq.  Record                                                  Tool Description                             Cutter Height  Cutter Stick Out  Time        Air Time    Air Time %  Cut Distance  Distance
+------------------------------------------------------------------------------------------------------------------------------
+   1    37: 36 TOOL CALL "MH04000000320353" Z S477 DL+0 DR+0  MH04000000320353: GUH-4630-MF_M4_H100PL100X  31.5           31.5              0:01:09     0:01:03     91%         533.9         15133.087108
+==============================================================================================================================
+      Total Time:                                                                                                                           0:01:09     0:01:03     91%         533.9         15133.087108
+
+Number of Errors: 0
+Number of Warnings: 0
+Total cycle time since last rewind: 6:29:49
+Total air time since last rewind: 2:41:48 (42)%
+******************************************************************************************************************************
+
+
+*** Processing NC program file p:\Project\Hummingbird\W5269NS01002\W5269NS01002A\Trimill VU 3019\W5269NS01002A32.h
+Wed Nov 12 09:44:52 2025
+
+
+
+*** Finished processing NC program file p:\Project\Hummingbird\W5269NS01002\W5269NS01002A\Trimill VU 3019\W5269NS01002A32.h
+Wed Nov 12 09:44:52 2025
+
+******************************************************************************************************************************
+Toolpath File : p:\Project\Hummingbird\W5269NS01002\W5269NS01002A\Trimill VU 3019\W5269NS01002A32.h
+
+                                  Tool Summary
+                                 ==============
+
+Seq.  Record                                                    Tool Description                              Cutter Height  Cutter Stick Out  Time        Air Time    Air Time %  Cut Distance  Distance
+------------------------------------------------------------------------------------------------------------------------------
+   1    37: 36 TOOL CALL "BH02600000400353" Z S12243 DL+0 DR+0  BH02600000400353: GUH-6405-BHF2.6_H100PL100X  40             40                0:01:06     0:01:06     100%        549.9         15461.067924
+==============================================================================================================================
+      Total Time:                                                                                                                              0:01:06     0:01:06     100%        549.9         15461.067924
+
+Number of Errors: 0
+Number of Warnings: 0
+Total cycle time since last rewind: 6:33:02
+Total air time since last rewind: 2:45:00 (42)%
+******************************************************************************************************************************
+
+
+*** Processing NC program file p:\Project\Hummingbird\W5269NS01002\W5269NS01002A\Trimill VU 3019\W5269NS01002A33.h
+Wed Nov 12 09:44:52 2025
+
+
+
+*** Finished processing NC program file p:\Project\Hummingbird\W5269NS01002\W5269NS01002A\Trimill VU 3019\W5269NS01002A33.h
+Wed Nov 12 09:44:53 2025
+
+******************************************************************************************************************************
+Toolpath File : p:\Project\Hummingbird\W5269NS01002\W5269NS01002A\Trimill VU 3019\W5269NS01002A33.h
+
+                                  Tool Summary
+                                 ==============
+
+Seq.  Record                                                  Tool Description                             Cutter Height  Cutter Stick Out  Time        Air Time    Air Time %  Cut Distance  Distance
+------------------------------------------------------------------------------------------------------------------------------
+   1    37: 36 TOOL CALL "MH03000000280353" Z S637 DL+0 DR+0  MH03000000280353: GUH-4630-MF_M3_H100PL100X  26.5           26.5              0:01:17     0:01:07     86%         573.9         15407.425636
+==============================================================================================================================
+      Total Time:                                                                                                                           0:01:17     0:01:07     86%         573.9         15407.425636
+
+Number of Errors: 0
+Number of Warnings: 0
+Total cycle time since last rewind: 6:36:26
+Total air time since last rewind: 2:48:14 (42)%
+******************************************************************************************************************************
+
+
+*** Processing NC program file p:\Project\Hummingbird\W5269NS01002\W5269NS01002A\Trimill VU 3019\W5269NS01002A34.h
+Wed Nov 12 09:44:53 2025
+
+
+
+*** Finished processing NC program file p:\Project\Hummingbird\W5269NS01002\W5269NS01002A\Trimill VU 3019\W5269NS01002A34.h
+Wed Nov 12 09:44:53 2025
+
+******************************************************************************************************************************
+Toolpath File : p:\Project\Hummingbird\W5269NS01002\W5269NS01002A\Trimill VU 3019\W5269NS01002A34.h
+
+                                  Tool Summary
+                                 ==============
+
+Seq.  Record                                                    Tool Description                                     Cutter Height  Cutter Stick Out  Time        Air Time    Air Time %  Cut Distance  Distance
+------------------------------------------------------------------------------------------------------------------------------
+   1    37: 36 TOOL CALL "GG01000500250074" Z S14000 DL+0 DR+0  GG01000500250074: FRA-SP0140-G1R0.5-L25_H100ZM6L130  25.000001      25                0:01:45     0:01:27     82%         562.679501    7737.196702
+==============================================================================================================================
+      Total Time:                                                                                                                                     0:01:45     0:01:27     82%         562.679501    7737.196702
+
+Number of Errors: 0
+Number of Warnings: 0
+Total cycle time since last rewind: 6:40:17
+Total air time since last rewind: 2:51:47 (43)%
+******************************************************************************************************************************
+
+
+*** Processing NC program file p:\Project\Hummingbird\W5269NS01002\W5269NS01002A\Trimill VU 3019\W5269NS01002A35.h
+Wed Nov 12 09:44:53 2025
+
+
+
+*** Finished processing NC program file p:\Project\Hummingbird\W5269NS01002\W5269NS01002A\Trimill VU 3019\W5269NS01002A35.h
+Wed Nov 12 09:44:58 2025
+
+******************************************************************************************************************************
+Toolpath File : p:\Project\Hummingbird\W5269NS01002\W5269NS01002A\Trimill VU 3019\W5269NS01002A35.h
+
+                                  Tool Summary
+                                 ==============
+
+Seq.  Record                                                    Tool Description                                        Cutter Height  Cutter Stick Out  Time        Air Time    Air Time %  Cut Distance  Distance
+------------------------------------------------------------------------------------------------------------------------------
+   1    37: 36 TOOL CALL "GB02001000250074" Z S14000 DL+0 DR+0  GB02001000250074: FRA-SP0140-G2R1-N-ES-L25_H100ZM6L130  24.999999      25                0:03:04     0:01:48     59%         3728.542748   36262.292033
+==============================================================================================================================
+      Total Time:                                                                                                                                        0:03:04     0:01:48     59%         3728.542748   36262.292033
+
+Number of Errors: 0
+Number of Warnings: 0
+Total cycle time since last rewind: 6:45:28
+Total air time since last rewind: 2:55:42 (43)%
+******************************************************************************************************************************
+
+Wed Nov 12 09:47:38 2025
+END-OF-FILE
+
