@@ -92,6 +92,28 @@ function logBox(title, color = 'cyan') {
 // Track all running processes
 const processes = [];
 
+// Setup demo data - copy employees from source_data to Dashboard public folder
+function setupDemoData() {
+  try {
+    const sourceFile = path.join(__dirname, 'test-data', 'source_data', 'employees.json');
+    const publicFolder = path.join(__dirname, '..', 'BRK_CNC_Dashboard', 'public', 'test-data', 'source_data');
+    const targetFile = path.join(publicFolder, 'employees.json');
+    
+    if (fs.existsSync(sourceFile)) {
+      // Ensure public folder exists
+      if (!fs.existsSync(publicFolder)) {
+        fs.mkdirSync(publicFolder, { recursive: true });
+      }
+      
+      // Copy employee data to public folder so it can be served
+      fs.copyFileSync(sourceFile, targetFile);
+      log('✅ Demo employee data copied to Dashboard public folder', 'green');
+    }
+  } catch (error) {
+    log(`⚠️  Failed to copy demo data: ${error.message}`, 'yellow');
+  }
+}
+
 function startProcess(name, cmd, args, cwd, color = 'white') {
   return new Promise((resolve, reject) => {
     log(`🚀 Starting ${name}...`, 'cyan');
@@ -296,6 +318,9 @@ async function main() {
   }
   
   try {
+    // Setup demo data (copy employee file to public folder)
+    setupDemoData();
+    
     // Start backends (they always run normally)
     await startBackends();
     
