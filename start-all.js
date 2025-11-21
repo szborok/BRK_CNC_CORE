@@ -19,9 +19,10 @@ const IS_WINDOWS = process.platform === 'win32';
 // Port assignments
 const PORTS = {
   DASHBOARD: 3000,      // Vite dev server
-  JSON_SCANNER: 3001,
+  JSON_SCANNER: 3001,   // File search/collection service
   TOOL_MANAGER: 3002,
-  CLAMPING_PLATE: 3003
+  CLAMPING_PLATE: 3003,
+  JSON_ANALYZER: 3005   // Quality control analysis service
 };
 
 // Kill any existing processes on our ports
@@ -243,8 +244,20 @@ async function startBackends() {
     processes.push(clampingPlate);
     await new Promise(r => setTimeout(r, 1500));
     
+    // JSONAnalyzer (port 3005) - Quality control rule engine
+    const jsonAnalyzer = await startProcess(
+      'JSONAnalyzer',
+      NODE_PATH,
+      ['server/index.js'],
+      path.join(root, 'BRK_CNC_JSONAnalyzer'),
+      'magenta'
+    );
+    processes.push(jsonAnalyzer);
+    await new Promise(r => setTimeout(r, 1500));
+    
     logBox('BACKENDS READY', 'green');
     log(`✅ JSONScanner:          http://localhost:${PORTS.JSON_SCANNER}/api/status`, 'green');
+    log(`✅ JSONAnalyzer:         http://localhost:${PORTS.JSON_ANALYZER}/api/status`, 'green');
     log(`✅ ToolManager:          http://localhost:${PORTS.TOOL_MANAGER}/api/status`, 'green');
     log(`✅ ClampingPlateManager: http://localhost:${PORTS.CLAMPING_PLATE}/api/health`, 'green');
     console.log('');
