@@ -31,5 +31,8 @@
   "devDependencies": {
     "husky": "^9.1.7",
     "lint-staged": "^16.2.6"
+  },
+  "dependencies": {
+    "axios": "^1.13.2"
   }
 }

@@ -73,6 +73,7 @@ const c = {
   green: '\x1b[32m',
   yellow: '\x1b[33m',
   blue: '\x1b[34m',
+  magenta: '\x1b[35m',
   cyan: '\x1b[36m',
   white: '\x1b[37m',
 };
@@ -108,7 +109,7 @@ function setupDemoData() {
       
       // Copy employee data to public folder so it can be served
       fs.copyFileSync(sourceFile, targetFile);
-      log('✅ Demo employee data copied to Dashboard public folder', 'green');
+      // Silent copy - no need to log
     }
   } catch (error) {
     log(`⚠️  Failed to copy demo data: ${error.message}`, 'yellow');
@@ -117,7 +118,16 @@ function setupDemoData() {
 
 function startProcess(name, cmd, args, cwd, color = 'white') {
   return new Promise((resolve, reject) => {
-    log(`🚀 Starting ${name}...`, 'cyan');
+    // Don't log "Starting..." here - parent already logged "waiting for ready"
+    
+    // Create log file stream
+    const logDir = path.join(__dirname, 'logs');
+    if (!fs.existsSync(logDir)) {
+      fs.mkdirSync(logDir, { recursive: true });
+    }
+    const logFile = path.join(logDir, `${name.replace(/\s+/g, '_')}.log`);
+    const logStream = fs.createWriteStream(logFile, { flags: 'a' });
+    logStream.write(`\n\n=== Started at ${new Date().toISOString()} ===\n`);
     
     const proc = spawn(cmd, args, {
       cwd,
@@ -131,9 +141,19 @@ function startProcess(name, cmd, args, cwd, color = 'white') {
     // Capture stdout - SHOW ALL OUTPUT
     proc.stdout.on('data', (data) => {
       const output = data.toString();
+      logStream.write(output); // Write raw output to log file
+      
       output.split('\n').forEach(line => {
         if (line.trim()) {
-          console.log(`${c[color]}[${name}]${c.reset} ${line}`);
+          // Color-code log level tags in the message
+          let coloredLine = line
+            .replace(/\[ERROR\]/g, `${c.red}[ERROR]${c.reset}`)
+            .replace(/\[WARN\]/g, `${c.yellow}[WARN]${c.reset}`)
+            .replace(/\[WARNING\]/g, `${c.yellow}[WARNING]${c.reset}`)
+            .replace(/\[INFO\]/g, `${c.cyan}[INFO]${c.reset}`)
+            .replace(/\[DEBUG\]/g, `${c.dim}[DEBUG]${c.reset}`);
+          
+          console.log(`${c[color]}[${name}]${c.reset} ${coloredLine}`);
         }
       });
 
@@ -156,6 +176,8 @@ function startProcess(name, cmd, args, cwd, color = 'white') {
     // Capture stderr - SHOW ALL OUTPUT
     proc.stderr.on('data', (data) => {
       const output = data.toString();
+      logStream.write(output); // Write raw output to log file
+      
       output.split('\n').forEach(line => {
         if (line.trim()) {
           // Show all stderr, but highlight actual errors in red
@@ -176,6 +198,7 @@ function startProcess(name, cmd, args, cwd, color = 'white') {
     });
 
     proc.on('exit', (code) => {
+      logStream.end();
       if (code !== 0 && !started) {
         const msg = startupError || `Exited with code ${code}`;
         log(`❌ ${name} startup failed: ${msg}`, 'red');
@@ -200,7 +223,8 @@ async function startBackends() {
     // Note: __dirname is BRK_CNC_CORE, so services are at path.join(__dirname, '..', 'ServiceName')
     const root = path.join(__dirname, '..');
     
-    // Dashboard Backend (port 3000) - Config API
+    // Dashboard Backend (port 3004) - Config API - MUST START FIRST
+    log('⏳ Dashboard Backend...', 'cyan');
     const dashboardBackend = await startProcess(
       'Dashboard-Backend',
       NODE_PATH,
@@ -209,51 +233,50 @@ async function startBackends() {
       'magenta'
     );
     processes.push(dashboardBackend);
-    await new Promise(r => setTimeout(r, 1500));
     
-    // JSONScanner (port 3001) - Start API server only (idle until configured by Dashboard)
+    // JSONScanner (port 3001) - WAIT for it to be fully ready
+    log('⏳ JSONScanner...', 'cyan');
     const jsonScanner = await startProcess(
       'JSONScanner',
       NODE_PATH,
       ['server/index.js'],
       path.join(root, 'BRK_CNC_JSONScanner'),
-      'green'
+      'cyan'
     );
     processes.push(jsonScanner);
-    await new Promise(r => setTimeout(r, 1500));
     
-    // ToolManager (port 3002) - Start API server only (idle until configured by Dashboard)
-    const toolManager = await startProcess(
-      'ToolManager',
-      NODE_PATH,
-      ['server/index.js'],
-      path.join(root, 'BRK_CNC_ToolManager'),
-      'yellow'
-    );
-    processes.push(toolManager);
-    await new Promise(r => setTimeout(r, 1500));
-    
-    // ClampingPlateManager (port 3003) - Start API server only
-    const clampingPlate = await startProcess(
-      'ClampingPlateManager',
-      NODE_PATH,
-      ['main.js', '--serve'],
-      path.join(root, 'BRK_CNC_ClampingPlateManager'),
-      'blue'
-    );
-    processes.push(clampingPlate);
-    await new Promise(r => setTimeout(r, 1500));
-    
-    // JSONAnalyzer (port 3005) - Quality control rule engine
+    // JSONAnalyzer (port 3005) - MUST be ready before Scanner triggers it
+    log('⏳ JSONAnalyzer...', 'cyan');
     const jsonAnalyzer = await startProcess(
       'JSONAnalyzer',
       NODE_PATH,
       ['server/index.js'],
       path.join(root, 'BRK_CNC_JSONAnalyzer'),
-      'magenta'
+      'white'
     );
     processes.push(jsonAnalyzer);
-    await new Promise(r => setTimeout(r, 1500));
+    
+    // ToolManager (port 3002) - WAIT for full startup
+    log('⏳ ToolManager...', 'cyan');
+    const toolManager = await startProcess(
+      'ToolManager',
+      NODE_PATH,
+      ['server/index.js'],
+      path.join(root, 'BRK_CNC_ToolManager'),
+      'magenta'
+    );
+    processes.push(toolManager);
+    
+    // ClampingPlateManager (port 3003) - Only initializes on FIRST run
+    log('⏳ ClampingPlateManager...', 'cyan');
+    const clampingPlate = await startProcess(
+      'ClampingPlateManager',
+      NODE_PATH,
+      ['main.js', '--serve'],
+      path.join(root, 'BRK_CNC_ClampingPlateManager'),
+      'dim'
+    );
+    processes.push(clampingPlate);
     
     logBox('BACKENDS READY', 'green');
     log(`✅ JSONScanner:          http://localhost:${PORTS.JSON_SCANNER}/api/status`, 'green');
@@ -337,9 +360,8 @@ async function main() {
     // Start backends (they always run normally)
     await startBackends();
     
-    // Wait for backends to initialize
-    log('⏳ Waiting for backend initialization (5s)...', 'cyan');
-    await new Promise(r => setTimeout(r, 5000));
+    // All backends are now ready - no additional wait needed
+    log('✅ All backends fully initialized and ready', 'green');
     
     // Start dashboard (handles first-time vs restart automatically)
     await startDashboard();
@@ -384,10 +406,35 @@ async function main() {
     log('   → No wizard needed - direct to login', 'dim');
     console.log('');
     
-    log('🔄 BACKEND AUTO-PROCESSING:', 'cyan');
-    log('   • JSONScanner: Scans every 60s for new CNC JSON files', 'dim');
-    log('   • ToolManager: Processes Excel files every 60s', 'dim');
-    log('   • ClampingPlateManager: Web service (plates.json)', 'dim');
+    // Start AutoRun processor if enabled and config exists
+    const configPath = path.join(__dirname, 'unified.config.json');
+    if (fs.existsSync(configPath)) {
+      const AutoRunProcessor = require('./AutoRunProcessor');
+      const config = require('./unified.config.json');
+      
+      if (config.features?.autoScan?.enabled) {
+        log('🤖 Starting AutoRun processor...', 'cyan');
+        const autoRun = new AutoRunProcessor({
+          watchIntervalMs: (config.features.autoScan.interval || 60) * 1000,
+          sourcePath: path.join(__dirname, 'test-data', 'source_data', 'json_files')
+        });
+        autoRun.start();
+        console.log('');
+      }
+      
+      log('🔄 AUTOMATION:', 'cyan');
+      if (config.features?.autoScan?.enabled) {
+        log('   • AutoRun watches source folder every 60s', 'dim');
+        log('   • Triggers: JSONScanner → JSONAnalyzer → ToolManager', 'dim');
+        log('   • All services run in MANUAL mode (no auto-scan)', 'dim');
+      } else {
+        log('   • AutoRun disabled - all services manual trigger only', 'dim');
+      }
+    } else {
+      log('🔄 AUTOMATION:', 'cyan');
+      log('   • AutoRun disabled - awaiting first-time setup', 'dim');
+    }
+    log('   • ClampingPlateManager: Web service only', 'dim');
     console.log('');
     
     log('⚠️  To shutdown: Press Ctrl+C', 'yellow');

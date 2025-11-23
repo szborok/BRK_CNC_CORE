@@ -31,10 +31,8 @@
     "platesManager": {
       "enabled": true,
       "mode": "auto",
-      "dataPath": "",
-      "plateDatabase": "",
       "modelsPath": "../BRK_CNC_CORE/test-data/source_data/clamping_plates/models",
-      "plateInfoFile": "../BRK_CNC_CORE/test-data/source_data/clamping_plates/Készülékek.xlsx"
+      "plateInfoFile": "../BRK_CNC_CORE/test-data/source_data/clamping_plates/info/Készülékek.xlsx"
     }
   },
   "authentication": {
@@ -42,15 +40,15 @@
     "employeeFile": "../BRK_CNC_CORE/test-data/source_data/employees.json"
   },
   "storage": {
+    "mode": "simple",
     "basePath": "../BRK_CNC_CORE/test-data/working_data",
     "logsPath": "../BRK_CNC_CORE/test-data/working_data/Logs",
     "backupPath": "../BRK_CNC_CORE/test-data/working_data/Backups",
     "tempPath": "../BRK_CNC_CORE/test-data/working_data",
-    "outputPath": "",
-    "mode": "simple"
+    "outputPath": "../BRK_CNC_CORE/test-data/working_data/BRK CNC Management Dashboard/output"
   },
   "features": {
-    "themeMode": "system",
+    "themeMode": "dark",
     "notifications": {
       "enabled": true,
       "showTaskCompletion": true,
@@ -70,6 +68,6 @@
   },
   "companyLogo": "/api/placeholder/150/150",
   "configVersion": "1.0.0",
-  "savedAt": "2025-11-20T21:14:25.112Z",
+  "savedAt": "2025-11-23T22:18:02.207Z",
   "savedBy": "Dashboard"
 }
