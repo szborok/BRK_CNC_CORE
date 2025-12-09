@@ -42262,3 +42262,250 @@ Context: {
   userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 Edg/143.0.0.0',
   ip: '::1'
 }
+
+
+=== Started at 2025-12-09T15:09:17.045Z ===
+🔧 ClampingPlateManager - Backend Service
+========================================
+Mode: Production
+Port: 3003
+
+🌐 Starting web service...
+✅ Plates data found
+🔧 [PlateService] Initializing...
+🔍 [PlateService] Loading plates from DataManager...
+🔍 [PlateService] DataManager returned: { hasData: true, isArray: true, length: 38 }
+✅ [PlateService] Stored 38 plates in memory
+✅ [PlateService] Loaded 38 plates from storage
+🌐 API server running at http://localhost:3003
+📚 API endpoints:
+   GET  /api/plates          - Get all plates
+   GET  /api/plates/:id      - Get specific plate
+   POST /api/plates/:id      - Update plate
+   GET  /api/work-orders     - Get work orders
+   POST /api/work-orders     - Create work order
+   GET  /api/stats           - Get operational stats
+   GET  /api/previews/:file  - Get preview image
+   GET  /api/health          - Health check
+[2025-12-09T15:09:20.519Z] INFO: Configuration updated from Dashboard
+Context: {
+  testMode: true,
+  autoMode: false,
+  workingFolder: '../BRK_CNC_CORE/test-data/working_data',
+  platesPath: '../BRK_CNC_CORE/test-data/source_data/clamping_plates/models'
+}
+[2025-12-09T15:09:20.519Z] INFO: POST /api/config
+Context: {
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 Edg/143.0.0.0',
+  ip: '::1'
+}
+[2025-12-09T15:09:30.486Z] INFO: GET /api/plates
+Context: {
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 Edg/143.0.0.0',
+  ip: '::1'
+}
+[2025-12-09T15:09:40.497Z] INFO: GET /api/plates
+Context: {
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 Edg/143.0.0.0',
+  ip: '::1'
+}
+[2025-12-09T15:09:51.050Z] INFO: GET /api/plates
+Context: {
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 Edg/143.0.0.0',
+  ip: '::1'
+}
+[2025-12-09T15:10:01.050Z] INFO: GET /api/plates
+Context: {
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 Edg/143.0.0.0',
+  ip: '::1'
+}
+[2025-12-09T15:10:10.484Z] INFO: GET /api/plates
+Context: {
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 Edg/143.0.0.0',
+  ip: '::1'
+}
+[2025-12-09T15:10:20.480Z] INFO: GET /api/plates
+Context: {
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 Edg/143.0.0.0',
+  ip: '::1'
+}
+[2025-12-09T15:10:31.051Z] INFO: GET /api/plates
+Context: {
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 Edg/143.0.0.0',
+  ip: '::1'
+}
+[2025-12-09T15:10:41.051Z] INFO: GET /api/plates
+Context: {
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 Edg/143.0.0.0',
+  ip: '::1'
+}
+[2025-12-09T15:10:51.051Z] INFO: GET /api/plates
+Context: {
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 Edg/143.0.0.0',
+  ip: '::1'
+}
+[2025-12-09T15:11:01.042Z] INFO: GET /api/plates
+Context: {
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 Edg/143.0.0.0',
+  ip: '::1'
+}
+[2025-12-09T15:11:11.053Z] INFO: GET /api/plates
+Context: {
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 Edg/143.0.0.0',
+  ip: '::1'
+}
+[2025-12-09T15:11:21.036Z] INFO: GET /api/plates
+Context: {
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 Edg/143.0.0.0',
+  ip: '::1'
+}
+[2025-12-09T15:11:31.049Z] INFO: GET /api/plates
+Context: {
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 Edg/143.0.0.0',
+  ip: '::1'
+}
+[2025-12-09T15:12:21.047Z] INFO: GET /api/plates
+Context: {
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 Edg/143.0.0.0',
+  ip: '::1'
+}
+[2025-12-09T15:13:21.045Z] INFO: GET /api/plates
+Context: {
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 Edg/143.0.0.0',
+  ip: '::1'
+}
+[2025-12-09T15:14:21.045Z] INFO: GET /api/plates
+Context: {
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 Edg/143.0.0.0',
+  ip: '::1'
+}
+[2025-12-09T15:15:21.028Z] INFO: GET /api/plates
+Context: {
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 Edg/143.0.0.0',
+  ip: '::1'
+}
+[2025-12-09T15:16:21.022Z] INFO: GET /api/plates
+Context: {
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 Edg/143.0.0.0',
+  ip: '::1'
+}
+[2025-12-09T15:17:21.030Z] INFO: GET /api/plates
+Context: {
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 Edg/143.0.0.0',
+  ip: '::1'
+}
+[2025-12-09T15:18:21.029Z] INFO: GET /api/plates
+Context: {
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 Edg/143.0.0.0',
+  ip: '::1'
+}
+[2025-12-09T15:19:21.017Z] INFO: GET /api/plates
+Context: {
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 Edg/143.0.0.0',
+  ip: '::1'
+}
+[2025-12-09T15:20:21.020Z] INFO: GET /api/plates
+Context: {
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 Edg/143.0.0.0',
+  ip: '::1'
+}
+[2025-12-09T15:21:21.015Z] INFO: GET /api/plates
+Context: {
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 Edg/143.0.0.0',
+  ip: '::1'
+}
+[2025-12-09T15:22:21.018Z] INFO: GET /api/plates
+Context: {
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 Edg/143.0.0.0',
+  ip: '::1'
+}
+[2025-12-09T15:23:21.004Z] INFO: GET /api/plates
+Context: {
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 Edg/143.0.0.0',
+  ip: '::1'
+}
+[2025-12-09T15:24:21.000Z] INFO: GET /api/plates
+Context: {
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 Edg/143.0.0.0',
+  ip: '::1'
+}
+[2025-12-09T15:25:20.998Z] INFO: GET /api/plates
+Context: {
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 Edg/143.0.0.0',
+  ip: '::1'
+}
+[2025-12-09T15:26:20.992Z] INFO: GET /api/plates
+Context: {
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 Edg/143.0.0.0',
+  ip: '::1'
+}
+[2025-12-09T15:27:20.994Z] INFO: GET /api/plates
+Context: {
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 Edg/143.0.0.0',
+  ip: '::1'
+}
+[2025-12-09T15:28:20.992Z] INFO: GET /api/plates
+Context: {
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 Edg/143.0.0.0',
+  ip: '::1'
+}
+[2025-12-09T15:29:20.986Z] INFO: GET /api/plates
+Context: {
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 Edg/143.0.0.0',
+  ip: '::1'
+}
+[2025-12-09T15:30:20.983Z] INFO: GET /api/plates
+Context: {
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 Edg/143.0.0.0',
+  ip: '::1'
+}
+[2025-12-09T15:31:20.984Z] INFO: GET /api/plates
+Context: {
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 Edg/143.0.0.0',
+  ip: '::1'
+}
+[2025-12-09T15:32:20.982Z] INFO: GET /api/plates
+Context: {
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 Edg/143.0.0.0',
+  ip: '::1'
+}
+[2025-12-09T15:33:20.979Z] INFO: GET /api/plates
+Context: {
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 Edg/143.0.0.0',
+  ip: '::1'
+}
+[2025-12-09T15:34:20.974Z] INFO: GET /api/plates
+Context: {
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 Edg/143.0.0.0',
+  ip: '::1'
+}
+[2025-12-09T15:35:20.975Z] INFO: GET /api/plates
+Context: {
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 Edg/143.0.0.0',
+  ip: '::1'
+}
+[2025-12-09T15:36:20.976Z] INFO: GET /api/plates
+Context: {
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 Edg/143.0.0.0',
+  ip: '::1'
+}
+[2025-12-09T15:37:20.970Z] INFO: GET /api/plates
+Context: {
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 Edg/143.0.0.0',
+  ip: '::1'
+}
+[2025-12-09T15:38:20.971Z] INFO: GET /api/plates
+Context: {
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 Edg/143.0.0.0',
+  ip: '::1'
+}
+[2025-12-09T15:39:20.970Z] INFO: GET /api/plates
+Context: {
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 Edg/143.0.0.0',
+  ip: '::1'
+}
+[2025-12-09T15:40:20.972Z] INFO: GET /api/plates
+Context: {
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 Edg/143.0.0.0',
+  ip: '::1'
+}
