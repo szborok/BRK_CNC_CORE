@@ -8,16 +8,23 @@ const axios = require('axios');
 
 class AutoRunProcessor {
   constructor(config) {
+    if (!config || typeof config !== 'object') {
+      throw new Error('[AutoRunProcessor] Config is required');
+    }
+    if (!config.sourcePath) {
+      throw new Error('[AutoRunProcessor] config.sourcePath is required');
+    }
+    
     this.config = config;
     this.isRunning = false;
     this.watchIntervalMs = config.watchIntervalMs || 60000; // 1 minute default
     this.lastScanTime = null;
     this.watchInterval = null;
     
-    // Service endpoints
+    // Service endpoints (match actual port assignments in start-all.js)
     this.services = {
-      jsonScanner: { url: 'http://localhost:3000', enabled: true },
-      jsonAnalyzer: { url: 'http://localhost:3001', enabled: true },
+      jsonScanner: { url: 'http://localhost:3001', enabled: true },
+      jsonAnalyzer: { url: 'http://localhost:3005', enabled: true },
       toolManager: { url: 'http://localhost:3002', enabled: true },
       clampingPlateManager: { url: 'http://localhost:3003', enabled: false } // Manual only
     };
@@ -28,29 +35,36 @@ class AutoRunProcessor {
    */
   start() {
     if (this.isRunning) {
-      console.log('⚠️  AutoRun processor already running');
+      console.log('[AutoRun] ⚠️  Processor already running');
       return;
     }
 
-    console.log('🤖 Starting AutoRun processor...');
-    console.log(`   Watch interval: ${this.watchIntervalMs / 1000}s`);
-    console.log(`   Source path: ${this.config.sourcePath}`);
+    console.log('[AutoRun] 🤖 Starting processor...');
+    console.log(`[AutoRun]    Watch interval: ${this.watchIntervalMs / 1000}s`);
+    console.log(`[AutoRun]    Source path: ${this.config.sourcePath}`);
     
     this.isRunning = true;
     
     // Run initial scan
     this.runScanCycle().catch(err => {
-      console.error('❌ Initial scan failed:', err.message);
+      console.error(`[AutoRun] ❌ Initial scan failed: ${err.message}`, {
+        error: err.stack,
+        sourcePath: this.config.sourcePath
+      });
     });
     
     // Set up interval for continuous watching
     this.watchInterval = setInterval(() => {
       this.runScanCycle().catch(err => {
-        console.error('❌ Scan cycle failed:', err.message);
+        console.error(`[AutoRun] ❌ Scan cycle failed: ${err.message}`, {
+          error: err.stack,
+          lastScanTime: this.lastScanTime,
+          sourcePath: this.config.sourcePath
+        });
       });
     }, this.watchIntervalMs);
     
-    console.log('✅ AutoRun processor started');
+    console.log('[AutoRun] ✅ Processor started');
   }
 
   /**
@@ -61,7 +75,7 @@ class AutoRunProcessor {
       return;
     }
 
-    console.log('🛑 Stopping AutoRun processor...');
+    console.log('[AutoRun] 🛑 Stopping processor...');
     
     if (this.watchInterval) {
       clearInterval(this.watchInterval);
@@ -69,7 +83,7 @@ class AutoRunProcessor {
     }
     
     this.isRunning = false;
-    console.log('✅ AutoRun processor stopped');
+    console.log('[AutoRun] ✅ Processor stopped');
   }
 
   /**
@@ -77,7 +91,7 @@ class AutoRunProcessor {
    */
   async runScanCycle() {
     const cycleStart = Date.now();
-    console.log(`\n🔄 Starting scan cycle at ${new Date().toLocaleTimeString()}`);
+    console.log(`[AutoRun] \n🔄 Starting scan cycle at ${new Date().toLocaleTimeString()}`);
     
     const results = {
       jsonScanner: null,
@@ -90,28 +104,28 @@ class AutoRunProcessor {
       const hasNewFiles = await this.checkForNewFiles();
       
       if (!hasNewFiles) {
-        console.log('ℹ️  No new files detected, skipping cycle');
+        console.log('[AutoRun] ℹ️  No new files detected, skipping cycle');
         this.lastScanTime = cycleStart;
         return;
       }
       
-      console.log('📁 New files detected, starting processing pipeline...');
+      console.log('[AutoRun] 📁 New files detected, starting processing pipeline...');
       
       // Step 2: Trigger JSONScanner
       if (this.services.jsonScanner.enabled) {
-        console.log('1️⃣  JSONScanner: Processing files...');
+        console.log('[AutoRun] 1️⃣  JSONScanner: Processing files...');
         results.jsonScanner = await this.triggerService('jsonScanner', '/api/scan');
       }
       
       // Step 3: Trigger JSONAnalyzer (after scanner completes)
       if (this.services.jsonAnalyzer.enabled) {
-        console.log('2️⃣  JSONAnalyzer: Running rules...');
+        console.log('[AutoRun] 2️⃣  JSONAnalyzer: Running rules...');
         results.jsonAnalyzer = await this.triggerService('jsonAnalyzer', '/api/analyze');
       }
       
       // Step 4: Trigger ToolManager (after analyzer completes)
       if (this.services.toolManager.enabled) {
-        console.log('3️⃣  ToolManager: Scanning tools...');
+        console.log('[AutoRun] 3️⃣  ToolManager: Scanning tools...');
         results.toolManager = await this.triggerService('toolManager', '/api/scan');
       }
       
@@ -119,20 +133,24 @@ class AutoRunProcessor {
       const duration = ((Date.now() - cycleStart) / 1000).toFixed(2);
       
       // Report results
-      console.log(`\n📊 Scan Cycle Results (${duration}s):`);
+      console.log(`[AutoRun] \n📊 Scan Cycle Results (${duration}s):`);
       if (results.jsonScanner) {
-        console.log(`   JSONScanner:   ${results.jsonScanner.message || 'Completed'}`);
+        console.log(`[AutoRun]    JSONScanner:   ${results.jsonScanner.message || 'Completed'}`);
       }
       if (results.jsonAnalyzer) {
-        console.log(`   JSONAnalyzer:  ${results.jsonAnalyzer.message || 'Completed'}`);
+        console.log(`[AutoRun]    JSONAnalyzer:  ${results.jsonAnalyzer.message || 'Completed'}`);
       }
       if (results.toolManager) {
-        console.log(`   ToolManager:   ${results.toolManager.message || 'Completed'}`);
+        console.log(`[AutoRun]    ToolManager:   ${results.toolManager.message || 'Completed'}`);
       }
-      console.log(`✅ Pipeline completed\n`);
+      console.log(`[AutoRun] ✅ Pipeline completed\n`);
       
     } catch (error) {
-      console.error('❌ Scan cycle error:', error.message);
+      console.error(`[AutoRun] ❌ Scan cycle error: ${error.message}`, {
+        error: error.stack,
+        cycleStart,
+        duration: ((Date.now() - cycleStart) / 1000).toFixed(2)
+      });
     }
   }
 
@@ -142,7 +160,7 @@ class AutoRunProcessor {
   async checkForNewFiles() {
     try {
       if (!fs.existsSync(this.config.sourcePath)) {
-        console.warn(`⚠️  Source path not found: ${this.config.sourcePath}`);
+        console.warn(`[AutoRun] ⚠️  Source path not found: ${this.config.sourcePath}`);
         return false;
       }
       
@@ -158,7 +176,10 @@ class AutoRunProcessor {
       return stats.latestTime > this.lastScanTime;
       
     } catch (error) {
-      console.error('Error checking for new files:', error.message);
+      console.error(`[AutoRun] ❌ Error checking for new files: ${error.message}`, {
+        error: error.stack,
+        sourcePath: this.config.sourcePath
+      });
       return false;
     }
   }
@@ -204,7 +225,7 @@ class AutoRunProcessor {
     const service = this.services[serviceName];
     
     if (!service || !service.enabled) {
-      console.log(`   ⏭️  ${serviceName} disabled, skipping`);
+      console.log(`[AutoRun]    ⏭️  ${serviceName} disabled, skipping`);
       return null;
     }
     
@@ -218,12 +239,20 @@ class AutoRunProcessor {
       return response.data;
       
     } catch (error) {
+      const context = {
+        serviceName,
+        url: service.url,
+        endpoint,
+        errorCode: error.code,
+        errorStack: error.stack
+      };
+      
       if (error.code === 'ECONNREFUSED') {
-        console.error(`   ❌ ${serviceName} not running at ${service.url}`);
+        console.error(`[AutoRun]    ❌ ${serviceName} not running at ${service.url}`, context);
       } else if (error.code === 'ETIMEDOUT') {
-        console.error(`   ⏱️  ${serviceName} timeout (operation may still be running)`);
+        console.error(`[AutoRun]    ⏱️  ${serviceName} timeout (operation may still be running)`, context);
       } else {
-        console.error(`   ❌ ${serviceName} error:`, error.message);
+        console.error(`[AutoRun]    ❌ ${serviceName} error: ${error.message}`, context);
       }
       throw error;
     }
@@ -245,7 +274,7 @@ class AutoRunProcessor {
    * Trigger immediate scan (manual override)
    */
   async triggerManualScan() {
-    console.log('🔧 Manual scan triggered');
+    console.log('[AutoRun] 🔧 Manual scan triggered');
     await this.runScanCycle();
   }
 }

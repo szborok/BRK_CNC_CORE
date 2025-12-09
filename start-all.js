@@ -193,7 +193,9 @@ function startProcess(name, cmd, args, cwd, color = 'white') {
 
     // Handle process errors
     proc.on('error', (err) => {
+      const context = { name, cwd, cmd, args: args.join(' '), error: err.stack };
       log(`❌ ${name} failed to start: ${err.message}`, 'red');
+      console.error(`[start-all] Error context:`, JSON.stringify(context, null, 2));
       if (!started) reject(new Error(`${name}: ${err.message}`));
     });
 
@@ -201,7 +203,9 @@ function startProcess(name, cmd, args, cwd, color = 'white') {
       logStream.end();
       if (code !== 0 && !started) {
         const msg = startupError || `Exited with code ${code}`;
+        const context = { name, exitCode: code, cwd, cmd, args: args.join(' ') };
         log(`❌ ${name} startup failed: ${msg}`, 'red');
+        console.error(`[start-all] Exit context:`, JSON.stringify(context, null, 2));
         reject(new Error(`${name}: ${msg}`));
       }
     });
@@ -286,6 +290,12 @@ async function startBackends() {
     console.log('');
     
   } catch (error) {
+    const context = {
+      error: error.message,
+      stack: error.stack,
+      processes: processes.map(p => p.name)
+    };
+    console.error('[start-all] Backend startup failed:', JSON.stringify(context, null, 2));
     throw new Error(`Backend startup failed: ${error.message}`);
   }
 }
@@ -310,14 +320,25 @@ function cleanup() {
   console.log('');
   logBox('SHUTTING DOWN', 'yellow');
   
+  const errors = [];
+  
   processes.forEach(({ name, proc }) => {
-    log(`🛑 Stopping ${name}...`, 'yellow');
-    proc.kill();
+    try {
+      log(`🛑 Stopping ${name}...`, 'yellow');
+      proc.kill();
+    } catch (err) {
+      errors.push({ name, error: err.message });
+      log(`⚠️  Failed to stop ${name}: ${err.message}`, 'yellow');
+    }
   });
+  
+  if (errors.length > 0) {
+    console.error('[start-all] Cleanup errors:', JSON.stringify(errors, null, 2));
+  }
   
   log('✅ All services stopped', 'green');
   console.log('');
-  process.exit(0);
+  process.exit(errors.length > 0 ? 1 : 0);
 }
 
 async function main() {
@@ -354,6 +375,13 @@ async function main() {
   }
   
   try {
+    // Validate Node version
+    const nodeVersion = process.version;
+    const majorVersion = parseInt(nodeVersion.slice(1).split('.')[0]);
+    if (majorVersion < 14) {
+      throw new Error(`Node.js >= 14 required, found ${nodeVersion}`);
+    }
+    
     // Setup demo data (copy employee file to public folder)
     setupDemoData();
     
@@ -407,23 +435,37 @@ async function main() {
     console.log('');
     
     // Start AutoRun processor if enabled and config exists
-    const configPath = path.join(__dirname, 'unified.config.json');
+    const configPath = path.join(__dirname, 'BRK_SETUP_WIZARD_CONFIG.json');
+    let config = null;
     if (fs.existsSync(configPath)) {
-      const AutoRunProcessor = require('./AutoRunProcessor');
-      const config = require('./unified.config.json');
-      
-      if (config.features?.autoScan?.enabled) {
-        log('🤖 Starting AutoRun processor...', 'cyan');
-        const autoRun = new AutoRunProcessor({
-          watchIntervalMs: (config.features.autoScan.interval || 60) * 1000,
-          sourcePath: path.join(__dirname, 'test-data', 'source_data', 'json_files')
-        });
-        autoRun.start();
-        console.log('');
+      try {
+        const AutoRunProcessor = require('./AutoRunProcessor');
+        config = JSON.parse(fs.readFileSync(configPath, 'utf8'));
+        
+        if (config.features?.autoScan?.enabled) {
+          log('🤖 Starting AutoRun processor...', 'cyan');
+          const sourcePath = path.join(__dirname, 'test-data', 'source_data', 'json_files');
+          
+          // Validate source path exists
+          if (!fs.existsSync(sourcePath)) {
+            log(`⚠️  AutoRun source path not found: ${sourcePath}`, 'yellow');
+            log('   AutoRun disabled - create source path to enable', 'yellow');
+          } else {
+            const autoRun = new AutoRunProcessor({
+              watchIntervalMs: (config.features.autoScan.interval || 60) * 1000,
+              sourcePath
+            });
+            autoRun.start();
+          }
+          console.log('');
+        }
+      } catch (err) {
+        log(`⚠️  Failed to start AutoRun: ${err.message}`, 'yellow');
+        console.error('[start-all] AutoRun error:', err.stack);
       }
       
       log('🔄 AUTOMATION:', 'cyan');
-      if (config.features?.autoScan?.enabled) {
+      if (config?.features?.autoScan?.enabled) {
         log('   • AutoRun watches source folder every 60s', 'dim');
         log('   • Triggers: JSONScanner → JSONAnalyzer → ToolManager', 'dim');
         log('   • All services run in MANUAL mode (no auto-scan)', 'dim');
@@ -460,6 +502,14 @@ async function main() {
   } catch (error) {
     console.log('');
     log(`❌ STARTUP FAILED: ${error.message}`, 'red');
+    console.error('[start-all] Startup error context:', {
+      error: error.message,
+      stack: error.stack,
+      nodeVersion: process.version,
+      platform: process.platform,
+      cwd: process.cwd(),
+      startedProcesses: processes.map(p => p.name)
+    });
     console.log('');
     log('Cleaning up...', 'yellow');
     cleanup();
@@ -470,5 +520,11 @@ async function main() {
 // Run
 main().catch(err => {
   log(`❌ Fatal error: ${err.message}`, 'red');
+  console.error('[start-all] Fatal error context:', {
+    error: err.message,
+    stack: err.stack,
+    nodeVersion: process.version,
+    platform: process.platform
+  });
   process.exit(1);
 });

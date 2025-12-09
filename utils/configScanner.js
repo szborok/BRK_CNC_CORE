@@ -7,83 +7,23 @@ const fs = require('fs');
 const path = require('path');
 const os = require('os');
 
-const CONFIG_FILENAME = 'brk-cnc-system.config.json';
+const CONFIG_FILENAME = 'BRK_SETUP_WIZARD_CONFIG.json';
 
 /**
- * Search locations (in priority order)
+ * Get the canonical config path
+ * Always stores in BRK_CNC_CORE/config directory
  */
-function getSearchPaths() {
-  const homeDir = os.homedir();
-  const platform = process.platform;
-  
-  const paths = [
-    // 1. Current working directory
-    process.cwd(),
-    
-    // 2. Parent directory (BRK_CNC_CORE level)
-    path.join(process.cwd(), '..'),
-    path.join(process.cwd(), '..', 'BRK_CNC_CORE'),
-    
-    // 3. User's home directory
-    homeDir,
-    
-    // 4. User's Documents
-    path.join(homeDir, 'Documents'),
-    path.join(homeDir, 'Documents', 'BRK CNC System'),
-  ];
-  
-  // Platform-specific paths
-  if (platform === 'win32') {
-    // Windows
-    paths.push(
-      path.join(process.env.APPDATA || '', 'BRK_CNC_System'),
-      path.join(process.env.LOCALAPPDATA || '', 'BRK_CNC_System'),
-      path.join(process.env.ProgramData || 'C:\\ProgramData', 'BRK_CNC_System'),
-      'C:\\Program Files\\BRK CNC System',
-      'C:\\Program Files (x86)\\BRK CNC System'
-    );
-  } else if (platform === 'darwin') {
-    // macOS
-    paths.push(
-      path.join(homeDir, 'Library', 'Application Support', 'BRK_CNC_System'),
-      path.join(homeDir, 'Library', 'Mobile Documents', 'com~apple~CloudDocs'),
-      path.join(homeDir, 'Library', 'Mobile Documents', 'com~apple~CloudDocs', 'Documents'),
-      '/Applications/BRK CNC System',
-      '/Library/Application Support/BRK_CNC_System'
-    );
-  } else {
-    // Linux/Unix
-    paths.push(
-      path.join(homeDir, '.config', 'brk-cnc-system'),
-      path.join(homeDir, '.local', 'share', 'brk-cnc-system'),
-      '/etc/brk-cnc-system',
-      '/opt/brk-cnc-system',
-      '/usr/local/share/brk-cnc-system'
-    );
-  }
-  
-  // Filter out non-existent base paths (but keep them for potential creation)
-  return paths;
+function getConfigPath() {
+  return path.join(__dirname, '..', 'config', CONFIG_FILENAME);
 }
 
 /**
- * Find config file by searching common locations
+ * Find config file - always check BRK_CNC_CORE/config first
  * @returns {string|null} Path to config file or null if not found
  */
 function findConfigFile() {
-  const searchPaths = getSearchPaths();
-  
-  for (const searchPath of searchPaths) {
-    const configPath = path.join(searchPath, CONFIG_FILENAME);
-    
-    if (fs.existsSync(configPath)) {
-      console.log(`✅ Found config at: ${configPath}`);
-      return configPath;
-    }
-  }
-  
-  console.warn(`⚠️ Config file not found in ${searchPaths.length} locations`);
-  return null;
+  const configPath = getConfigPath();
+  return fs.existsSync(configPath) ? configPath : null;
 }
 
 /**
@@ -94,7 +34,7 @@ function loadConfig() {
   const configPath = findConfigFile();
   
   if (!configPath) {
-    return null;
+    return { success: false, error: 'Config file not found', configPath: null, config: null };
   }
   
   try {
@@ -102,28 +42,35 @@ function loadConfig() {
     const config = JSON.parse(configContent);
     
     if (!config.isConfigured) {
-      console.warn('⚠️ Config file exists but setup not completed');
-      return null;
+      return { 
+        success: false, 
+        error: 'Setup not completed', 
+        configPath, 
+        config: null 
+      };
     }
     
-    console.log(`✅ Loaded config for: ${config.company?.name || 'Unknown Company'}`);
-    return config;
+    return { success: true, configPath, config, error: null };
   } catch (error) {
     const err = /** @type {Error} */ (error);
-    console.error(`❌ Failed to load config: ${err.message}`);
-    return null;
+    return { 
+      success: false, 
+      error: `Failed to parse config: ${err.message}`, 
+      configPath, 
+      config: null 
+    };
   }
 }
 
 /**
  * Save config to filesystem
+ * Always saves to BRK_CNC_CORE/config directory
  * @param {Object} config - Configuration object
- * @param {string} [targetPath] - Optional target path (defaults to first search path)
- * @returns {boolean} Success
+ * @returns {Object} Result with success, configPath, error
  */
-function saveConfig(config, targetPath) {
+function saveConfig(config) {
   try {
-    const configPath = targetPath || path.join(getSearchPaths()[0], CONFIG_FILENAME);
+    const configPath = getConfigPath();
     
     // Ensure directory exists
     const dir = path.dirname(configPath);
@@ -132,19 +79,21 @@ function saveConfig(config, targetPath) {
     }
     
     fs.writeFileSync(configPath, JSON.stringify(config, null, 2), 'utf8');
-    console.log(`✅ Config saved to: ${configPath}`);
-    return true;
+    return { success: true, configPath, error: null };
   } catch (error) {
     const err = /** @type {Error} */ (error);
-    console.error(`❌ Failed to save config: ${err.message}`);
-    return false;
+    return { 
+      success: false, 
+      configPath: getConfigPath(), 
+      error: `Failed to save config: ${err.message}` 
+    };
   }
 }
 
 module.exports = {
   CONFIG_FILENAME,
+  getConfigPath,
   findConfigFile,
   loadConfig,
-  saveConfig,
-  getSearchPaths
+  saveConfig
 };

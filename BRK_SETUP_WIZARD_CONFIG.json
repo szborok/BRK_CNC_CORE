@@ -8,29 +8,26 @@
     "clampingPlateManager": true
   },
   "modules": {
-    "jsonAnalyzer": {
-      "enabled": true,
-      "mode": "auto",
-      "dataPath": "../BRK_CNC_CORE/test-data/source_data/json_files",
-      "autoProcessing": true
+    "jsonScanner": {
+      "autoMode": true,
+      "scanPath": "../BRK_CNC_CORE/test-data/source_data/json_files"
     },
-    "matrixTools": {
-      "enabled": true,
-      "mode": "auto",
-      "dataPath": "../BRK_CNC_CORE/test-data/source_data/matrix_excel_files",
+    "jsonAnalyzer": {
+      "autoMode": true,
+      "dataPath": "../BRK_CNC_CORE/test-data/source_data/json_files"
+    },
+    "toolManager": {
+      "autoMode": true,
+      "excelPath": "../BRK_CNC_CORE/train-data/matrix_tools",
       "inventoryFile": "../BRK_CNC_CORE/test-data/source_data/matrix_excel_files/E-Cut,MFC,XF,XFeed készlet.xlsx",
-      "features": {
-        "excelProcessing": true,
-        "jsonScanning": true
-      },
+      "dataPath": "../BRK_CNC_CORE/test-data/source_data/matrix_excel_files",
       "paths": {
         "excelInputPath": "../BRK_CNC_CORE/test-data/source_data/matrix_excel_files",
         "jsonInputPath": "../BRK_CNC_CORE/test-data/source_data/json_files"
       }
     },
-    "platesManager": {
-      "enabled": true,
-      "mode": "auto",
+    "clampingPlateManager": {
+      "autoMode": true,
       "modelsPath": "../BRK_CNC_CORE/test-data/source_data/clamping_plates/models",
       "plateInfoFile": "../BRK_CNC_CORE/test-data/source_data/clamping_plates/info/Készülékek.xlsx"
     }
@@ -48,7 +45,7 @@
     "outputPath": "../BRK_CNC_CORE/test-data/working_data/BRK CNC Management Dashboard/output"
   },
   "features": {
-    "themeMode": "dark",
+    "themeMode": "system",
     "notifications": {
       "enabled": true,
       "showTaskCompletion": true,
@@ -68,6 +65,6 @@
   },
   "companyLogo": "/api/placeholder/150/150",
   "configVersion": "1.0.0",
-  "savedAt": "2025-11-23T22:18:02.207Z",
+  "savedAt": "2025-11-24T19:51:29.542Z",
   "savedBy": "Dashboard"
 }
