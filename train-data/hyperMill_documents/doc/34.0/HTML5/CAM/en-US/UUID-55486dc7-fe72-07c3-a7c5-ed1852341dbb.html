@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="x-ua-compatible" content="IE=edge" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="search" content="default" />
+  <meta name="use.ic" content="no" />
+  <meta name="tocstandalone" content="yes" />
+  <script type="text/javascript">
+  //<![CDATA[
+                        var index;
+                        var contentLanguage = 'en-US';
+                        var enterKey = 'select';
+                        
+                                        var anchoroption = true;
+                                var instantsearch_minlength = 1;
+                                                
+                                var fuse_threshold = 0.3;
+                        
+                                        var local_csh = false;
+                                
+                        var useanchorlinks = false;
+  //]]>
+  </script>
+  <title>dialog control functions</title>
+  <link rel="stylesheet" type="text/css" href="../css/docbook.css" />
+  <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" href="../css/bootstrap-theme.min.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style-common.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style-responsive.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style-print.css" />
+  <link rel="stylesheet" type="text/css" href="../css/font-awesome.css" />
+  <link rel="stylesheet" type="text/css" href="../css/custom.css" />
+  <link rel="stylesheet" type="text/css" href="../css/layout-custom-style.css" />
+  <script src="../js/jquery-1.10.2.min.js" type="text/javascript"></script>
+  <script src="../js/jquery-ui-1.10.3.custom.min.js" type="text/javascript"></script>
+  <script src="../js/bootstrap.min.js" type="text/javascript"></script>
+  <script src="../js/purl.js" type="text/javascript"></script>
+  <script src="../js/jquery.event.move.js" type="text/javascript"></script>
+  <script src="../js/jquery.event.swipe.js" type="text/javascript"></script>
+  <script src="../js/jquery.sticky.js" type="text/javascript"></script>
+  <script src="../js/respond.min.js" type="text/javascript"></script>
+  <script src="../js/script.js" type="text/javascript"></script>
+  <script src="js/toc.js" type="text/javascript"></script>
+  <script src="../js/create-toc.js" type="text/javascript"></script>
+  <script src="../js/clipboard.min.js" type="text/javascript"></script>
+  <script src="../js/fuse.min.js" type="text/javascript"></script>
+  <script src="../js/jquery.mark.min.js" type="text/javascript"></script>
+  <script src="../js/html5.fuse.search.js" type="text/javascript"></script>
+  <script src="js/fuzzydata.js" type="text/javascript"></script>
+  <script src="../js/csh.js" type="text/javascript"></script>
+  <script src="../js/highlight-mergehtml-plugin.js" type="text/javascript"></script>
+  <meta name="generator" content="Paligo" />
+  <link rel="prev" href="UUID-b6c5bbd1-d04d-bb9f-102b-5ef4d48e31e8.html#id76710" title="Dialogs" />
+  <link rel="next" href="UUID-21c5eafa-7f4b-ff7c-e385-65118fea6b15.html" title="Dialog positioning" />
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js?config=TeX-MML-AM_CHTML" async="async"></script>
+  <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+  <script type="text/javascript" src="../js/cookie-consent.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  <script type="text/javascript">
+  //<![CDATA[
+                        $(document).on('ready ajaxComplete', function() {
+                                
+                                hljs.addPlugin(mergeHTMLPlugin);
+                                hljs.configure({'ignoreUnescapedHTML': true});
+                                
+                                $('pre:not(.embedcode)').each(function() {
+                                        /**
+                                         * @type {string}
+                                         */
+                                        var language = $(this).data('language');
+
+                                        if (language === 'plaintext' || language === 'text') {
+                                                $(this).addClass(language).addClass('hljs');
+                                                return true;
+                                        }
+                                        else {
+                                                var clone = this.cloneNode(true);
+                                                hljs.highlightElement(clone);
+                                                $(this).empty().append($(clone).contents());
+                                                $(this).attr("class", $(clone).attr("class"));
+                                        }
+                                });
+                        });
+  //]]>
+  </script>
+  <style type="text/css">
+  /*<![CDATA[*/
+            div.skipnav {
+            }
+            div.skipnav a {
+                position: fixed;
+                left: -10000px;
+                top: 1.5em;
+                width: 1px;
+                height: 1px;
+                overflow: hidden;
+            }
+            div.skipnav a:focus, div.skipnav a:active, div.skipnav a:hover {
+                background: white;
+                color: black;
+                box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.5);
+                position: fixed;
+                left: 2em;
+                top: 1.5em;
+                width: auto;
+                height: auto;
+                overflow: visible;
+                text-decoration: underline;
+                z-index: 99999; /* has to be higher than the side panel */
+    }
+  /*]]>*/
+  </style>
+</head>
+<body data-link-prefix="">
+  <div class="skipnav">
+    <a href="#content-wrapper">Skip to main content</a>
+  </div>
+  <div id="page" class="clearfix">
+    <div id="header">
+      <div class="container">
+        <div id="logotype-container" class="pull-left">
+          <a href="../index.html"><img id="logotype-pageheader" src="../css/image/corporate-logo.png" alt="Corporate logotype" data-role="logotype" /></a>
+        </div>
+        <div id="pagetools-container" class="pull-right">
+          <ul id="page-tools">
+            <li class="page-tools-search"><input placeholder="Search" type="text" class="form-control" aria-label="Search" id="search" /></li>
+            <li class="page-tools-print">
+              <a href="javascript:window.print();"><span class="tool-label">Print</span><span class="glyphicon glyphicon-print"></span></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <h1 id="publication-title">CAM</h1>
+    <div id="subheader-sticky-wrapper" class="sticky-wrapper">
+      <div id="subheader">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3 toc-title">
+              <h2><a class="prev nav-icon hidden-lg hidden-md" href="UUID-b6c5bbd1-d04d-bb9f-102b-5ef4d48e31e8.html#id76710"><span class="glyphicon glyphicon-chevron-left"></span></a> <a href="#toc" class="hidden mobile-nav-toggle"><span class="glyphicon glyphicon-list"></span>Table of Contents</a><span class="toc-label">Table of
+              Contents</span><a class="next nav-icon hidden-lg hidden-md" href="UUID-21c5eafa-7f4b-ff7c-e385-65118fea6b15.html"><span class="glyphicon glyphicon-chevron-right"></span></a></h2>
+            </div>
+            <div class="col-md-9 breadcrumb-container">
+              <ul class="breadcrumb">
+                <li class="breadcrumb-link">
+                  <span class="glyphicon glyphicon-home"></span>&nbsp;<a href="index-en-US.html">CAM</a>
+                </li>
+                <li class="breadcrumb-link">
+                  <a href="UUID-607650a7-e4a9-65f0-88ef-d0902d55d3e3.html">User interface</a>
+                </li>
+                <li class="breadcrumb-link">
+                  <a href="UUID-b6c5bbd1-d04d-bb9f-102b-5ef4d48e31e8.html">Job definition dialogs</a>
+                </li>
+                <li class="breadcrumb-node">dialog control functions</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="main-content">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 toc-container" id="toc-wrapper">
+            <div id="toc-placeholder">
+              <div id="toc-standalone-placeholder"></div>
+            </div>
+          </div>
+          <div class="col-md-9 content-container" id="content-wrapper">
+            <a accesskey="p" class="prev pull-left prev visible-lg visible-md" id="header-navigation-prev" href="UUID-b6c5bbd1-d04d-bb9f-102b-5ef4d48e31e8.html#id76710"><span class="glyphicon glyphicon-circle-arrow-left"></span>Prev</a><a accesskey="n" class="pull-right next visible-lg visible-md" id="header-navigation-next" href=
+            "UUID-21c5eafa-7f4b-ff7c-e385-65118fea6b15.html">Next<span class="glyphicon glyphicon-circle-arrow-right"></span></a>
+            <div id="topic-content">
+              <section xml:lang="en-US" lang="en-US" dir="ltr" class="section internal" data-origin-id="UUID-25d2213c-8e99-4ddd-45ff-190274c13503" data-publication-date="" id="UUID-55486dc7-fe72-07c3-a7c5-ed1852341dbb">
+                <div class="titlepage">
+                  <div>
+                    <div class="title">
+                      <h1 class="title" style="clear: both"><span class="formal-title">dialog control functions</span></h1>
+                    </div>
+                  </div>
+                </div>
+                <p>The general dialog control functions can be accessed via icons (only in <span class="guilabel">Modal</span>) mode or via the shortcut menu.</p>
+                <p>Shortcut menu: Position the mouse pointer in the left half of the input dialog header, then right-click. The content depends on the input dialog and the selected mode for dialog control (modal/modeless).</p>
+                <div class="informaltable table-responsive">
+                  <table class="informaltable">
+                    <colgroup>
+                      <col style="width:12%;" />
+                      <col style="width:39%;" />
+                      <col style="width:49%;" />
+                    </colgroup>
+                    <thead>
+                      <tr>
+                        <th class="th">
+                          <p>Icon</p>
+                        </th>
+                        <th class="th">
+                          <p>Function</p>
+                        </th>
+                        <th class="th">
+                          <p>Description</p>
+                        </th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="td">
+                          <div class="mediaobject"><img src="image/uuid-24b3bc0a-8e1f-4daa-63d5-4eb45a20980a.svg" style="" alt="icons_job_def_settings_page_ok.svg" /></div>
+                        </td>
+                        <td valign="middle" class="td align-middle">
+                          <p>Ok</p>
+                        </td>
+                        <td class="td">
+                          <p>Save the entries and close the dialog.</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="td">
+                          <div class="mediaobject"><img src="image/uuid-12fbc0f3-c249-fbfd-d17f-af6a66623dcb.svg" style="" alt="icons_job_def_settings_page_cancel.svg" /></div>
+                        </td>
+                        <td valign="middle" class="td align-middle">
+                          <p>Cancel</p>
+                        </td>
+                        <td class="td">
+                          <p>Discard the entries and close the dialog.</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="td">
+                          <div class="mediaobject"><img src="image/uuid-b9386bfd-984b-63c7-e8d7-afa88cb9a2f0.svg" style="" alt="icons_job_def_settings_page_apply.svg" /></div>
+                        </td>
+                        <td valign="middle" class="td align-middle">
+                          <p>Apply</p>
+                        </td>
+                        <td class="td">
+                          <p>Save entries; dialog stays open.</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="td">
+                          <div class="mediaobject"><img src="image/uuid-928e247e-6e6b-1f3a-4e4e-cb470f9f9a3e.svg" style="" alt="icons_job_def_settings_page_reset.svg" /></div>
+                        </td>
+                        <td valign="middle" class="td align-middle">
+                          <p>Reset</p>
+                        </td>
+                        <td class="td">
+                          <p>Discard the entries; the dialog stays open.</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="td">
+                          <div class="mediaobject"><img src="image/uuid-2d902076-3ddd-7abf-d00e-47f0ad7596e9.svg" style="" alt="icons_job_def_settings_page_calculate.svg" /></div>
+                        </td>
+                        <td valign="middle" class="td align-middle">
+                          <p>Calculate</p>
+                        </td>
+                        <td class="td">
+                          <p>Calculate toolpaths (job) or create 3DF file ( <span class="italic">hyper</span>MILL Converter).</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="td">
+                          <div class="mediaobject"><img src="image/uuid-a3e3c637-d56b-1b04-d16c-7478957a96bf.svg" style="" alt="icons_job_def_settings_page_safe_as_default.svg" /></div>
+                        </td>
+                        <td valign="middle" class="td align-middle">
+                          <p>Save As Default</p>
+                        </td>
+                        <td class="td">
+                          <p>Save the entries as user-defined default settings in the Global Working Space under <span class="guilabel">metric.cfg</span> or <span class="guilabel">inch.cfg</span>.</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="td">
+                          <div class="mediaobject"><img src="image/uuid-7ee89da0-f847-cbd0-b9d8-96519e4f53c7.svg" style="" alt="icons_job_def_settings_page_help.svg" /></div>
+                        </td>
+                        <td valign="middle" class="td align-middle">
+                          <p>Help</p>
+                        </td>
+                        <td class="td">
+                          <p>Open the online help.</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="td"></td>
+                        <td valign="middle" class="td align-middle">
+                          <p>Messages</p>
+                        </td>
+                        <td class="td">
+                          <p>Display job and calculation information.</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="td"></td>
+                        <td valign="middle" class="td align-middle">
+                          <p>Set workplane to clearance plane</p>
+                        </td>
+                        <td class="td">
+                          <p>Set the current workplane to the clearance plane.</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="td"></td>
+                        <td valign="middle" class="td align-middle">
+                          <p>Internal simulation</p>
+                        </td>
+                        <td class="td">
+                          <p>Start the internal simulation</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="td"></td>
+                        <td valign="middle" class="td align-middle">
+                          <p>Reset workplane</p>
+                        </td>
+                        <td class="td">
+                          <p>Reset the original workplane.</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="td"></td>
+                        <td valign="middle" class="td align-middle">
+                          <p>Temporary/permanent feedbacks</p>
+                        </td>
+                        <td class="td">
+                          <p>Control the graphical feedback during the job definition.</p>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </section>
+              <div class="footer-content">
+                <div class="section-toc section-toc-after">
+                  <div class="section-toc-title">
+                    <span class="section-toc-title-delimiter">:</span>
+                  </div>
+                </div>
+              </div>
+              <footer></footer>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="x-ua-compatible" content="IE=edge" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="search" content="default" />
+  <meta name="use.ic" content="no" />
+  <meta name="tocstandalone" content="yes" />
+  <script type="text/javascript">
+  //<![CDATA[
+                        var index;
+                        var contentLanguage = 'en-US';
+                        var enterKey = 'select';
+                        
+                                        var anchoroption = true;
+                                var instantsearch_minlength = 1;
+                                                
+                                var fuse_threshold = 0.3;
+                        
+                                        var local_csh = false;
+                                
+                        var useanchorlinks = false;
+  //]]>
+  </script>
+  <title>Strategy</title>
+  <link rel="stylesheet" type="text/css" href="../css/docbook.css" />
+  <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" href="../css/bootstrap-theme.min.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style-common.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style-responsive.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style-print.css" />
+  <link rel="stylesheet" type="text/css" href="../css/font-awesome.css" />
+  <link rel="stylesheet" type="text/css" href="../css/custom.css" />
+  <link rel="stylesheet" type="text/css" href="../css/layout-custom-style.css" />
+  <script src="../js/jquery-1.10.2.min.js" type="text/javascript"></script>
+  <script src="../js/jquery-ui-1.10.3.custom.min.js" type="text/javascript"></script>
+  <script src="../js/bootstrap.min.js" type="text/javascript"></script>
+  <script src="../js/purl.js" type="text/javascript"></script>
+  <script src="../js/jquery.event.move.js" type="text/javascript"></script>
+  <script src="../js/jquery.event.swipe.js" type="text/javascript"></script>
+  <script src="../js/jquery.sticky.js" type="text/javascript"></script>
+  <script src="../js/respond.min.js" type="text/javascript"></script>
+  <script src="../js/script.js" type="text/javascript"></script>
+  <script src="js/toc.js" type="text/javascript"></script>
+  <script src="../js/create-toc.js" type="text/javascript"></script>
+  <script src="../js/clipboard.min.js" type="text/javascript"></script>
+  <script src="../js/fuse.min.js" type="text/javascript"></script>
+  <script src="../js/jquery.mark.min.js" type="text/javascript"></script>
+  <script src="../js/html5.fuse.search.js" type="text/javascript"></script>
+  <script src="js/fuzzydata.js" type="text/javascript"></script>
+  <script src="../js/csh.js" type="text/javascript"></script>
+  <script src="../js/highlight-mergehtml-plugin.js" type="text/javascript"></script>
+  <meta name="generator" content="Paligo" />
+  <link rel="prev" href="UUID-5e816378-adba-5fdb-7c80-0f4332c76b49.html#id111340" title="Feedrate options" />
+  <link rel="next" href="UUID-6271641d-cc8f-0e86-516a-4fa9316339bc.html#id111358" title="Chamfer mode" />
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js?config=TeX-MML-AM_CHTML" async="async"></script>
+  <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+  <script type="text/javascript" src="../js/cookie-consent.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  <script type="text/javascript">
+  //<![CDATA[
+                        $(document).on('ready ajaxComplete', function() {
+                                
+                                hljs.addPlugin(mergeHTMLPlugin);
+                                hljs.configure({'ignoreUnescapedHTML': true});
+                                
+                                $('pre:not(.embedcode)').each(function() {
+                                        /**
+                                         * @type {string}
+                                         */
+                                        var language = $(this).data('language');
+
+                                        if (language === 'plaintext' || language === 'text') {
+                                                $(this).addClass(language).addClass('hljs');
+                                                return true;
+                                        }
+                                        else {
+                                                var clone = this.cloneNode(true);
+                                                hljs.highlightElement(clone);
+                                                $(this).empty().append($(clone).contents());
+                                                $(this).attr("class", $(clone).attr("class"));
+                                        }
+                                });
+                        });
+  //]]>
+  </script>
+  <style type="text/css">
+  /*<![CDATA[*/
+            div.skipnav {
+            }
+            div.skipnav a {
+                position: fixed;
+                left: -10000px;
+                top: 1.5em;
+                width: 1px;
+                height: 1px;
+                overflow: hidden;
+            }
+            div.skipnav a:focus, div.skipnav a:active, div.skipnav a:hover {
+                background: white;
+                color: black;
+                box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.5);
+                position: fixed;
+                left: 2em;
+                top: 1.5em;
+                width: auto;
+                height: auto;
+                overflow: visible;
+                text-decoration: underline;
+                z-index: 99999; /* has to be higher than the side panel */
+    }
+  /*]]>*/
+  </style>
+</head>
+<body data-link-prefix="">
+  <div class="skipnav">
+    <a href="#content-wrapper">Skip to main content</a>
+  </div>
+  <div id="page" class="clearfix">
+    <div id="header">
+      <div class="container">
+        <div id="logotype-container" class="pull-left">
+          <a href="../index.html"><img id="logotype-pageheader" src="../css/image/corporate-logo.png" alt="Corporate logotype" data-role="logotype" /></a>
+        </div>
+        <div id="pagetools-container" class="pull-right">
+          <ul id="page-tools">
+            <li class="page-tools-search"><input placeholder="Search" type="text" class="form-control" aria-label="Search" id="search" /></li>
+            <li class="page-tools-print">
+              <a href="javascript:window.print();"><span class="tool-label">Print</span><span class="glyphicon glyphicon-print"></span></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <h1 id="publication-title">CAM</h1>
+    <div id="subheader-sticky-wrapper" class="sticky-wrapper">
+      <div id="subheader">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3 toc-title">
+              <h2><a class="prev nav-icon hidden-lg hidden-md" href="UUID-5e816378-adba-5fdb-7c80-0f4332c76b49.html#id111340"><span class="glyphicon glyphicon-chevron-left"></span></a> <a href="#toc" class="hidden mobile-nav-toggle"><span class="glyphicon glyphicon-list"></span>Table of Contents</a><span class="toc-label">Table of
+              Contents</span><a class="next nav-icon hidden-lg hidden-md" href="UUID-6271641d-cc8f-0e86-516a-4fa9316339bc.html#id111358"><span class="glyphicon glyphicon-chevron-right"></span></a></h2>
+            </div>
+            <div class="col-md-9 breadcrumb-container">
+              <ul class="breadcrumb">
+                <li class="breadcrumb-link">
+                  <span class="glyphicon glyphicon-home"></span>&nbsp;<a href="index-en-US.html">CAM</a>
+                </li>
+                <li class="breadcrumb-link">
+                  <a href="UUID-afd1a7c2-b2fe-2ba0-9ef0-962197581f36.html">2D Machining</a>
+                </li>
+                <li class="breadcrumb-link">
+                  <a href="UUID-4a20930a-2be4-72a4-f585-975a410c533f.html">Chamfer Milling on 3D Model</a>
+                </li>
+                <li class="breadcrumb-node">Strategy</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="main-content">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 toc-container" id="toc-wrapper">
+            <div id="toc-placeholder">
+              <div id="toc-standalone-placeholder"></div>
+            </div>
+          </div>
+          <div class="col-md-9 content-container" id="content-wrapper">
+            <a accesskey="p" class="prev pull-left prev visible-lg visible-md" id="header-navigation-prev" href="UUID-5e816378-adba-5fdb-7c80-0f4332c76b49.html#id111340"><span class="glyphicon glyphicon-circle-arrow-left"></span>Prev</a><a accesskey="n" class="pull-right next visible-lg visible-md" id="header-navigation-next" href=
+            "UUID-6271641d-cc8f-0e86-516a-4fa9316339bc.html#id111358">Next<span class="glyphicon glyphicon-circle-arrow-right"></span></a>
+            <div id="topic-content">
+              <section xml:lang="en-US" lang="en-US" dir="ltr" class="section" data-origin-id="UUID-396d4a60-b878-b59c-e353-ed0ca2f79465" data-publication-date="" id="UUID-6271641d-cc8f-0e86-516a-4fa9316339bc">
+                <div class="titlepage">
+                  <div>
+                    <div class="title">
+                      <h1 class="title" style="clear: both"><span class="formal-title">Strategy</span></h1>
+                    </div>
+                  </div>
+                </div>
+                <section dir="ltr" class="section internal" data-origin-id="" data-publication-date="" id="id111358">
+                  <div class="titlepage">
+                    <div>
+                      <div class="title">
+                        <h2 class="title" style="clear: both"><span class="formal-title">Chamfer mode</span></h2>
+                      </div>
+                    </div>
+                  </div>
+                  <p><span class="guilabel">Modelled chamfer</span> (1): The height of the chamfer is defined by the model geometry.</p>
+                  <p><span class="guilabel">Deburr / chamfer sharp edges</span> (2): The height of the chamfer is defined on the Parameters dialog page.</p>
+                  <div class="mediaobject">
+                    <table class="image-viewport" style="border-collapse:collapse;border:0; width:461px;">
+                      <tr style="height: 248px">
+                        <td style="padding:0;"><img src="image/uuid-cc1c7323-f498-9704-7a77-13e4029e6522.png" style="max-width: 461px; max-height: 248px;" alt="2D_fasenfraesen_3DModell_fasenmodus.png" /></td>
+                      </tr>
+                    </table>
+                  </div>
+                  <p>The following describes the two machining strategies using several examples and definitions with different parameters.</p>
+                </section>
+                <section dir="ltr" class="section internal" data-origin-id="" data-publication-date="" id="UUID-6271641d-cc8f-0e86-516a-4fa9316339bc_id179PCC00G57">
+                  <div class="titlepage">
+                    <div>
+                      <div class="title">
+                        <h2 class="title" style="clear: both"><span class="formal-title">Example 1</span></h2>
+                      </div>
+                    </div>
+                  </div>
+                  <p>(A) Chamfer mode: Modelled chamfer, Path compensation: Center path, Nominal diameter of the Tool dialog page.</p>
+                  <p>(1) Defined contour, (2) Model, (3) Tool diameter, (4) Nominal diameter.</p>
+                  <p>(B) When entering a value or changing the default value T:Ndia on the Parameters dialog page, the Nominal diameter of the Tool dialog page will no longer be used.</p>
+                  <p>(1) Defined contour, (2) Model, (3) Tool diameter, (4) Nominal diameter.</p>
+                  <div class="mediaobject">
+                    <table class="image-viewport" style="border-collapse:collapse;border:0; width:461px;">
+                      <tr style="height: 284px">
+                        <td style="padding:0;"><img src="image/uuid-a49bab23-4f74-4220-af26-5dcee5923f7e.svg" style="max-width: 461px; max-height: 284px;" alt="2D_fasenfraesen_3DModell_beispiele.svg" /></td>
+                      </tr>
+                    </table>
+                  </div>
+                </section>
+                <section dir="ltr" class="section internal" data-origin-id="" data-publication-date="" id="UUID-6271641d-cc8f-0e86-516a-4fa9316339bc_id179PCC00G7O">
+                  <div class="titlepage">
+                    <div>
+                      <div class="title">
+                        <h2 class="title" style="clear: both"><span class="formal-title">Example 2:</span></h2>
+                      </div>
+                    </div>
+                  </div>
+                  <p>Chamfer mode: Deburr / chamfer sharp edges, Path compensation: Center path. An infeed step is defined for the Vertical stepdown. The chamfer height specifies the number of infeeds.</p>
+                  <p>(1) Defined contour, (2) Infeed step, (3) Chamfer height, (4) Finishing allowance.</p>
+                  <div class="mediaobject">
+                    <table class="image-viewport" style="border-collapse:collapse;border:0; width:461px;">
+                      <tr style="height: 248px">
+                        <td style="padding:0;"><img src="image/uuid-8c3144e4-30e5-bab3-2068-5b1499cd526c.svg" style="max-width: 461px; max-height: 248px;" alt="2D_fasenfraesen_3DModell_beispiel2.svg" /></td>
+                      </tr>
+                    </table>
+                  </div>
+                </section>
+                <section dir="ltr" class="section internal" data-origin-id="" data-publication-date="" id="UUID-6271641d-cc8f-0e86-516a-4fa9316339bc_id179PCC00GL3">
+                  <div class="titlepage">
+                    <div>
+                      <div class="title">
+                        <h2 class="title" style="clear: both"><span class="formal-title">Example 3</span></h2>
+                      </div>
+                    </div>
+                  </div>
+                  <p>Chamfer mode: Deburr / chamfer sharp edges, Retract mode: Production mode. In case of a potential collision, a retraction is executed as the shortest possible link between the infeeds.</p>
+                  <p>(1) Defined contour, (2) Axial clearance, (3) Lateral clearance.</p>
+                  <div class="mediaobject">
+                    <table class="image-viewport" style="border-collapse:collapse;border:0; width:461px;">
+                      <tr style="height: 248px">
+                        <td style="padding:0;"><img src="image/uuid-4dfa45f4-71c5-e9b5-3c22-ce83457c4312.svg" style="max-width: 461px; max-height: 248px;" alt="2D_fasenfraesen_3DModell_beispiel3.svg" /></td>
+                      </tr>
+                    </table>
+                  </div>
+                </section>
+                <section dir="ltr" class="section internal" data-origin-id="" data-publication-date="" id="UUID-6271641d-cc8f-0e86-516a-4fa9316339bc_id179PCC00GKZ">
+                  <div class="titlepage">
+                    <div>
+                      <div class="title">
+                        <h2 class="title" style="clear: both"><span class="formal-title">Example 5</span></h2>
+                      </div>
+                    </div>
+                  </div>
+                  <p>Chamfer mode: Deburr / chamfer sharp edges.</p>
+                  <p>(1) Stop surfaces: model areas that may not be violated, (2) Contour.</p>
+                  <div class="mediaobject">
+                    <table class="image-viewport" style="border-collapse:collapse;border:0; width:461px;">
+                      <tr style="height: 248px">
+                        <td style="padding:0;"><img src="image/uuid-2bfee2d7-d54e-9a46-8216-09e47e613732.svg" style="max-width: 461px; max-height: 248px;" alt="2D_fasenfraesen_3DModell_beispiel4.svg" /></td>
+                      </tr>
+                    </table>
+                  </div>
+                  <p id="UUID-6271641d-cc8f-0e86-516a-4fa9316339bc_para-idm53110119349192">To avoid ‘unnecessary’ error messages when machining with the <span class="guilabel">Deburr / chamfer sharp edges</span> strategy, the collision check has been changed, based on the geometry of the <span class="guilabel">Chamfered cutter</span> tool type.
+                  The chamfer of the tool may now violate the component when deburring with the chamfer without an error message being generated.</p>
+                </section>
+                <section dir="ltr" class="section internal" data-origin-id="" data-publication-date="" id="UUID-6271641d-cc8f-0e86-516a-4fa9316339bc_section-idm53237820528534">
+                  <div class="titlepage">
+                    <div>
+                      <div class="title">
+                        <h2 class="title" style="clear: both"><span class="formal-title">Toolpath fillets</span></h2>
+                      </div>
+                    </div>
+                  </div>
+                  <p><span class="guilabel">Fillet interior corners</span>: Smooth filleting (rounding) of internal milling paths at the corners of contour pockets or islands (1).</p>
+                  <div class="mediaobject"><img src="image/uuid-86459589-a7e0-9fe5-5ca6-ac3c863f9d83.svg" style="" alt="2D_fasenfraesen_3DModell_innenecken.svg" /></div>
+                </section>
+                <section dir="ltr" class="section" data-origin-id="" data-publication-date="" id="UUID-6271641d-cc8f-0e86-516a-4fa9316339bc_section-idm4640490348648032378214505252">
+                  <div class="titlepage">
+                    <div>
+                      <div class="title">
+                        <h2 class="title" style="clear: both"><span class="formal-title">Edge behavior</span></h2>
+                      </div>
+                    </div>
+                  </div>
+                  <p>Defines the behavior of the tool at the outer edges of the model.</p>
+                  <p><span class="guilabel">Break edge</span>: Use the <span class="guilabel">Chamfer</span> option (1) to chamfer the edges or the <span class="guilabel">Rounding</span> option (2) to round the edge.</p>
+                  <p><span class="guilabel">Length</span>: Length of the chamfer or fillet.</p>
+                  <p><span class="guilabel">Max. corner angle</span>: Maximum angle between two contour elements up to which the edge is to be broken.</p>
+                  <div class="mediaobject"><img src="image/uuid-36ea8404-0e81-545b-5e90-8659b2cda5de.svg" style="" alt="2D_Fasenfraesen_3DModell_Kanten_brechen.svg" /></div>
+                  <p><span class="bold"><strong>Example</strong></span>: Edge angle on the component: 150°, Max. corner angle defined: 130°. Edge is not broken, all edges less than or equal to 130° are broken.</p>
+                </section>
+              </section>
+              <div class="footer-content">
+                <div class="section-toc section-toc-after">
+                  <div class="section-toc-title">
+                    <span class="section-toc-title-delimiter">:</span>
+                  </div>
+                </div>
+              </div>
+              <footer></footer>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

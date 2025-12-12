@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="x-ua-compatible" content="IE=edge" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="search" content="default" />
+  <meta name="use.ic" content="no" />
+  <meta name="tocstandalone" content="yes" />
+  <script type="text/javascript">
+  //<![CDATA[
+                        var index;
+                        var contentLanguage = 'en-US';
+                        var enterKey = 'select';
+                        
+                                        var anchoroption = true;
+                                var instantsearch_minlength = 1;
+                                                
+                                var fuse_threshold = 0.3;
+                        
+                                        var local_csh = false;
+                                
+                        var useanchorlinks = false;
+  //]]>
+  </script>
+  <title>Create turning area from model</title>
+  <link rel="stylesheet" type="text/css" href="../css/docbook.css" />
+  <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" href="../css/bootstrap-theme.min.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style-common.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style-responsive.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style-print.css" />
+  <link rel="stylesheet" type="text/css" href="../css/font-awesome.css" />
+  <link rel="stylesheet" type="text/css" href="../css/custom.css" />
+  <link rel="stylesheet" type="text/css" href="../css/layout-custom-style.css" />
+  <script src="../js/jquery-1.10.2.min.js" type="text/javascript"></script>
+  <script src="../js/jquery-ui-1.10.3.custom.min.js" type="text/javascript"></script>
+  <script src="../js/bootstrap.min.js" type="text/javascript"></script>
+  <script src="../js/purl.js" type="text/javascript"></script>
+  <script src="../js/jquery.event.move.js" type="text/javascript"></script>
+  <script src="../js/jquery.event.swipe.js" type="text/javascript"></script>
+  <script src="../js/jquery.sticky.js" type="text/javascript"></script>
+  <script src="../js/respond.min.js" type="text/javascript"></script>
+  <script src="../js/script.js" type="text/javascript"></script>
+  <script src="js/toc.js" type="text/javascript"></script>
+  <script src="../js/create-toc.js" type="text/javascript"></script>
+  <script src="../js/clipboard.min.js" type="text/javascript"></script>
+  <script src="../js/fuse.min.js" type="text/javascript"></script>
+  <script src="../js/jquery.mark.min.js" type="text/javascript"></script>
+  <script src="../js/html5.fuse.search.js" type="text/javascript"></script>
+  <script src="js/fuzzydata.js" type="text/javascript"></script>
+  <script src="../js/csh.js" type="text/javascript"></script>
+  <script src="../js/highlight-mergehtml-plugin.js" type="text/javascript"></script>
+  <meta name="generator" content="Paligo" />
+  <link rel="prev" href="UUID-a9837f28-8df0-7144-40e7-efa1b3283950.html" title="Define turning area" />
+  <link rel="next" href="UUID-a294872d-307f-e23e-6481-10feb00d1cee.html" title="Define fixture" />
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js?config=TeX-MML-AM_CHTML" async="async"></script>
+  <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+  <script type="text/javascript" src="../js/cookie-consent.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  <script type="text/javascript">
+  //<![CDATA[
+                        $(document).on('ready ajaxComplete', function() {
+                                
+                                hljs.addPlugin(mergeHTMLPlugin);
+                                hljs.configure({'ignoreUnescapedHTML': true});
+                                
+                                $('pre:not(.embedcode)').each(function() {
+                                        /**
+                                         * @type {string}
+                                         */
+                                        var language = $(this).data('language');
+
+                                        if (language === 'plaintext' || language === 'text') {
+                                                $(this).addClass(language).addClass('hljs');
+                                                return true;
+                                        }
+                                        else {
+                                                var clone = this.cloneNode(true);
+                                                hljs.highlightElement(clone);
+                                                $(this).empty().append($(clone).contents());
+                                                $(this).attr("class", $(clone).attr("class"));
+                                        }
+                                });
+                        });
+  //]]>
+  </script>
+  <style type="text/css">
+  /*<![CDATA[*/
+            div.skipnav {
+            }
+            div.skipnav a {
+                position: fixed;
+                left: -10000px;
+                top: 1.5em;
+                width: 1px;
+                height: 1px;
+                overflow: hidden;
+            }
+            div.skipnav a:focus, div.skipnav a:active, div.skipnav a:hover {
+                background: white;
+                color: black;
+                box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.5);
+                position: fixed;
+                left: 2em;
+                top: 1.5em;
+                width: auto;
+                height: auto;
+                overflow: visible;
+                text-decoration: underline;
+                z-index: 99999; /* has to be higher than the side panel */
+    }
+  /*]]>*/
+  </style>
+</head>
+<body data-link-prefix="">
+  <div class="skipnav">
+    <a href="#content-wrapper">Skip to main content</a>
+  </div>
+  <div id="page" class="clearfix">
+    <div id="header">
+      <div class="container">
+        <div id="logotype-container" class="pull-left">
+          <a href="../index.html"><img id="logotype-pageheader" src="../css/image/corporate-logo.png" alt="Corporate logotype" data-role="logotype" /></a>
+        </div>
+        <div id="pagetools-container" class="pull-right">
+          <ul id="page-tools">
+            <li class="page-tools-search"><input placeholder="Search" type="text" class="form-control" aria-label="Search" id="search" /></li>
+            <li class="page-tools-print">
+              <a href="javascript:window.print();"><span class="tool-label">Print</span><span class="glyphicon glyphicon-print"></span></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <h1 id="publication-title">CAM</h1>
+    <div id="subheader-sticky-wrapper" class="sticky-wrapper">
+      <div id="subheader">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3 toc-title">
+              <h2><a class="prev nav-icon hidden-lg hidden-md" href="UUID-a9837f28-8df0-7144-40e7-efa1b3283950.html"><span class="glyphicon glyphicon-chevron-left"></span></a> <a href="#toc" class="hidden mobile-nav-toggle"><span class="glyphicon glyphicon-list"></span>Table of Contents</a><span class="toc-label">Table of Contents</span><a class=
+              "next nav-icon hidden-lg hidden-md" href="UUID-a294872d-307f-e23e-6481-10feb00d1cee.html"><span class="glyphicon glyphicon-chevron-right"></span></a></h2>
+            </div>
+            <div class="col-md-9 breadcrumb-container">
+              <ul class="breadcrumb">
+                <li class="breadcrumb-link">
+                  <span class="glyphicon glyphicon-home"></span>&nbsp;<a href="index-en-US.html">CAM</a>
+                </li>
+                <li class="breadcrumb-link">
+                  <a href="UUID-0751db51-8b5b-ae49-1904-dce4b8c92263.html">Basics of CAM editing</a>
+                </li>
+                <li class="breadcrumb-link">
+                  <a href="UUID-2d98bf0b-6539-9785-c084-8712b249541c.html">Collision check preparations</a>
+                </li>
+                <li class="breadcrumb-node">Create turning area from model</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="main-content">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 toc-container" id="toc-wrapper">
+            <div id="toc-placeholder">
+              <div id="toc-standalone-placeholder"></div>
+            </div>
+          </div>
+          <div class="col-md-9 content-container" id="content-wrapper">
+            <a accesskey="p" class="prev pull-left prev visible-lg visible-md" id="header-navigation-prev" href="UUID-a9837f28-8df0-7144-40e7-efa1b3283950.html"><span class="glyphicon glyphicon-circle-arrow-left"></span>Prev</a><a accesskey="n" class="pull-right next visible-lg visible-md" id="header-navigation-next" href=
+            "UUID-a294872d-307f-e23e-6481-10feb00d1cee.html">Next<span class="glyphicon glyphicon-circle-arrow-right"></span></a>
+            <div id="topic-content">
+              <section xml:lang="en-US" lang="en-US" dir="ltr" class="section" data-origin-id="UUID-a04be357-9f5e-43df-376f-461afa974598" data-publication-date="" id="UUID-c24ffb56-b480-5059-b36f-d2edea7a81ab">
+                <div class="titlepage">
+                  <div>
+                    <div class="title">
+                      <h1 class="title" style="clear: both"><span class="formal-title">Create turning area from model</span></h1>
+                    </div>
+                  </div>
+                </div>
+                <p><span xml:lang="de" lang="de" dir="ltr" class="guilabel">Frame for turning axis</span></p>
+                <p>Select a frame for the turning axis from the list.</p>
+                <p>Define the <span class="guilabel">Color</span> and <span class="guilabel">Layer</span> of the turning contour. Select <span class="guilabel">Use model colors</span> to adopt the current colors from the model.</p>
+                <p>Define the resolution (fineness) of the turning area under <span class="guimenu">Surfaces</span> → <span class="guisubmenu">Resolution</span>.</p>
+                <div class="informaltable table-responsive">
+                  <table style="width:100%;" class="informaltable">
+                    <colgroup>
+                      <col style="width:12%;" />
+                      <col style="width:88%;" />
+                    </colgroup>
+                    <tbody>
+                      <tr>
+                        <td class="td">
+                          <div class="mediaobject"><img src="image/uuid-f7166df0-d0bf-7b2f-a31a-0626f5481c04.svg" style="" alt="sel_surface.svg" /></div>
+                        </td>
+                        <td class="td">
+                          <p><span class="guilabel">Select surfaces</span> or a solid. <span class="italic">hyper</span>MILL automatically creates a turning contour that defines the turning area. An entry is created in the <span class="italic">hyper</span>MILL browser and a Contour feature is created in the feature browser.</p>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </section>
+              <div class="footer-content">
+                <div class="section-toc section-toc-after">
+                  <div class="section-toc-title">
+                    <span class="section-toc-title-delimiter">:</span>
+                  </div>
+                </div>
+              </div>
+              <footer></footer>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

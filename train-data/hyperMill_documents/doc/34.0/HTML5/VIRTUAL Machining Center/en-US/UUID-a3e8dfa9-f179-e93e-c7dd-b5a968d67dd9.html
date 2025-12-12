@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="x-ua-compatible" content="IE=edge" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="search" content="default" />
+  <meta name="use.ic" content="no" />
+  <meta name="tocstandalone" content="yes" />
+  <script type="text/javascript">
+  //<![CDATA[
+                        var index;
+                        var contentLanguage = 'en-US';
+                        var enterKey = 'select';
+                        
+                                        var anchoroption = true;
+                                var instantsearch_minlength = 1;
+                                                
+                                var fuse_threshold = 0.3;
+                        
+                                        var local_csh = false;
+                                
+                        var useanchorlinks = false;
+  //]]>
+  </script>
+  <title>Collision check options</title>
+  <link rel="stylesheet" type="text/css" href="../css/docbook.css" />
+  <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" href="../css/bootstrap-theme.min.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style-common.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style-responsive.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style-print.css" />
+  <link rel="stylesheet" type="text/css" href="../css/font-awesome.css" />
+  <link rel="stylesheet" type="text/css" href="../css/custom.css" />
+  <link rel="stylesheet" type="text/css" href="../css/layout-custom-style.css" />
+  <script src="../js/jquery-1.10.2.min.js" type="text/javascript"></script>
+  <script src="../js/jquery-ui-1.10.3.custom.min.js" type="text/javascript"></script>
+  <script src="../js/bootstrap.min.js" type="text/javascript"></script>
+  <script src="../js/purl.js" type="text/javascript"></script>
+  <script src="../js/jquery.event.move.js" type="text/javascript"></script>
+  <script src="../js/jquery.event.swipe.js" type="text/javascript"></script>
+  <script src="../js/jquery.sticky.js" type="text/javascript"></script>
+  <script src="../js/respond.min.js" type="text/javascript"></script>
+  <script src="../js/script.js" type="text/javascript"></script>
+  <script src="js/toc.js" type="text/javascript"></script>
+  <script src="../js/create-toc.js" type="text/javascript"></script>
+  <script src="../js/clipboard.min.js" type="text/javascript"></script>
+  <script src="../js/fuse.min.js" type="text/javascript"></script>
+  <script src="../js/jquery.mark.min.js" type="text/javascript"></script>
+  <script src="../js/html5.fuse.search.js" type="text/javascript"></script>
+  <script src="js/fuzzydata.js" type="text/javascript"></script>
+  <script src="../js/csh.js" type="text/javascript"></script>
+  <script src="../js/highlight-mergehtml-plugin.js" type="text/javascript"></script>
+  <meta name="generator" content="Paligo" />
+  <link rel="prev" href="UUID-cdd160cf-80d1-9037-bbe9-eb7ed0dac89f.html" title="5.4.&nbsp;Collision check and material removal" />
+  <link rel="next" href="UUID-a3e8dfa9-f179-e93e-c7dd-b5a968d67dd9.html#UUID-a3e8dfa9-f179-e93e-c7dd-b5a968d67dd9_section-idm232086329494874" title="Limits for part contact" />
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML" async="async"></script>
+  <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+  <script type="text/javascript" src="../js/cookie-consent.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  <script type="text/javascript">
+  //<![CDATA[
+                        $(document).on('ready ajaxComplete', function() {
+                                
+                                hljs.addPlugin(mergeHTMLPlugin);
+                                hljs.configure({'ignoreUnescapedHTML': true});
+                                
+                                $('pre:not(.embedcode)').each(function() {
+                                        /**
+                                         * @type {string}
+                                         */
+                                        var language = $(this).data('language');
+
+                                        if (language === 'plaintext' || language === 'text') {
+                                                $(this).addClass(language).addClass('hljs');
+                                                return true;
+                                        }
+                                        else {
+                                                var clone = this.cloneNode(true);
+                                                hljs.highlightElement(clone);
+                                                $(this).empty().append($(clone).contents());
+                                                $(this).attr("class", $(clone).attr("class"));
+                                        }
+                                });
+                        });
+  //]]>
+  </script>
+  <style type="text/css">
+  /*<![CDATA[*/
+            div.skipnav {
+            }
+            div.skipnav a {
+                position: fixed;
+                left: -10000px;
+                top: 1.5em;
+                width: 1px;
+                height: 1px;
+                overflow: hidden;
+            }
+            div.skipnav a:focus, div.skipnav a:active, div.skipnav a:hover {
+                background: white;
+                color: black;
+                box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.5);
+                position: fixed;
+                left: 2em;
+                top: 1.5em;
+                width: auto;
+                height: auto;
+                overflow: visible;
+                text-decoration: underline;
+                z-index: 99999; /* has to be higher than the side panel */
+    }
+  /*]]>*/
+  </style>
+</head>
+<body data-link-prefix="">
+  <div class="skipnav">
+    <a href="#content-wrapper">Skip to main content</a>
+  </div>
+  <div id="page" class="clearfix">
+    <div id="header">
+      <div class="container">
+        <div id="logotype-container" class="pull-left">
+          <a href="../index.html"><img id="logotype-pageheader" src="../css/image/corporate-logo.png" alt="Corporate logotype" data-role="logotype" /></a>
+        </div>
+        <div id="pagetools-container" class="pull-right">
+          <ul id="page-tools">
+            <li class="page-tools-search"><input placeholder="Search" type="text" class="form-control" aria-label="Search" id="search" /></li>
+            <li class="page-tools-print">
+              <a href="javascript:window.print();"><span class="tool-label">Print</span><span class="glyphicon glyphicon-print"></span></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <h1 id="publication-title"><span xml:lang="de" lang="de" dir="ltr" class="phrase"><span class="application">VIRTUAL Machining Center</span></span></h1>
+    <div id="subheader-sticky-wrapper" class="sticky-wrapper">
+      <div id="subheader">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3 toc-title">
+              <h2><a class="prev nav-icon hidden-lg hidden-md" href="UUID-cdd160cf-80d1-9037-bbe9-eb7ed0dac89f.html"><span class="glyphicon glyphicon-chevron-left"></span></a> <a href="#toc" class="hidden mobile-nav-toggle"><span class="glyphicon glyphicon-list"></span>Table of Contents</a><span class="toc-label">Table of Contents</span><a class=
+              "next nav-icon hidden-lg hidden-md" href="UUID-a3e8dfa9-f179-e93e-c7dd-b5a968d67dd9.html#UUID-a3e8dfa9-f179-e93e-c7dd-b5a968d67dd9_section-idm232086329494874"><span class="glyphicon glyphicon-chevron-right"></span></a></h2>
+            </div>
+            <div class="col-md-9 breadcrumb-container">
+              <ul class="breadcrumb">
+                <li class="breadcrumb-link">
+                  <span class="glyphicon glyphicon-home"></span>&nbsp;<a href="index-en-US.html"><span xml:lang="de" lang="de" dir="ltr" class="phrase"><span class="application">VIRTUAL Machining Center</span></span></a>
+                </li>
+                <li class="breadcrumb-link">
+                  <a href="UUID-bceb38e7-6115-818d-662d-36fc55903bbc.html">Program run (simulation)</a>
+                </li>
+                <li class="breadcrumb-link">
+                  <a href="UUID-cdd160cf-80d1-9037-bbe9-eb7ed0dac89f.html">Collision check and material removal</a>
+                </li>
+                <li class="breadcrumb-node">Collision check options</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="main-content">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 toc-container" id="toc-wrapper">
+            <div id="toc-placeholder">
+              <div id="toc-standalone-placeholder"></div>
+            </div>
+          </div>
+          <div class="col-md-9 content-container" id="content-wrapper">
+            <a accesskey="p" class="prev pull-left prev visible-lg visible-md" id="header-navigation-prev" href="UUID-cdd160cf-80d1-9037-bbe9-eb7ed0dac89f.html"><span class="glyphicon glyphicon-circle-arrow-left"></span>Prev</a><a accesskey="n" class="pull-right next visible-lg visible-md" id="header-navigation-next" href=
+            "UUID-a3e8dfa9-f179-e93e-c7dd-b5a968d67dd9.html#UUID-a3e8dfa9-f179-e93e-c7dd-b5a968d67dd9_section-idm232086329494874">Next<span class="glyphicon glyphicon-circle-arrow-right"></span></a>
+            <div id="topic-content">
+              <section xml:lang="en-US" lang="en-US" dir="ltr" class="section" data-origin-id="UUID-b08ce744-7754-f285-2d31-5ff25cb1f8ad" data-publication-date="" id="UUID-a3e8dfa9-f179-e93e-c7dd-b5a968d67dd9">
+                <div class="titlepage">
+                  <div>
+                    <div class="title">
+                      <h1 class="title" style="clear: both"><span class="formal-title">Collision check options</span></h1>
+                    </div>
+                  </div>
+                </div>
+                <p>Use the following options to control the collision check.</p>
+                <div dir="ltr" class="note">
+                  <h3 class="title">Note</h3>
+                  <p>The tolerance values/limit values for the still permissible contact of the tool with the part/stock must be in reasonable proportion to the size of the tool used. OPEN MIND recommends defining these values no larger than half the tool diameter.</p>
+                </div>
+                <p><span class="guilabel">Check tool against model</span>: Checks the tool against the model.</p>
+                <p><span class="guilabel">Check holder/shaft/core against model</span>: Holder, shank and tool core are checked against the model.</p>
+                <p><span class="guilabel">Always check G0</span>: The rapid traverse check is activated by default. If the <span class="guilabel">Check tool against model</span> function is deactivated, the check for all fast travel movements can also be optionally switched off. This can make it easier to approve an NC file in certain situations
+                (for example, when machining non-modelled areas).</p>
+                <p><span class="guilabel">Check stock</span>: Checks tool and holder against the stock.</p>
+                <p><span class="guilabel">Remove detached stock</span>: Only available if <span class="guilabel">Check stock</span> is enabled. If this function is activated, a check is performed during the collision check and the simulation to see whether there is a stock area that has no contact with the defined milling area (model). If this is
+                the case, the stock is automatically removed during the simulation and the collision check.</p>
+                <p></p>
+                <p><span class="guilabel">Consider core diameter for milling tools</span>: The tool tip is checked for collisions with the stock, taking the core diameter into account.</p>
+                <section dir="ltr" class="section" data-origin-id="" data-publication-date="" id="UUID-a3e8dfa9-f179-e93e-c7dd-b5a968d67dd9_section-idm232086329494874">
+                  <div class="titlepage">
+                    <div>
+                      <div class="title">
+                        <h2 class="title" style="clear: both"><span class="formal-title">Limits for part contact</span></h2>
+                      </div>
+                    </div>
+                  </div>
+                  <p>Use <span class="guilabel">G0 tip limit</span> / <span class="guilabel">G1 tip limit</span> to set the limit value for the still permitted contact of the tool tip with the model in G0 and G1 movements. If a larger value is detected during the test, a message is generated.</p>
+                </section>
+                <section dir="ltr" class="section" data-origin-id="" data-publication-date="" id="UUID-a3e8dfa9-f179-e93e-c7dd-b5a968d67dd9_section-5da0364b18867-idm45831498885184">
+                  <div class="titlepage">
+                    <div>
+                      <div class="title">
+                        <h2 class="title" style="clear: both"><span class="formal-title">Part allowance</span></h2>
+                      </div>
+                    </div>
+                  </div>
+                  <p><span class="guilabel">Use part allowance</span>: Activate if a part allowance should be defined for the collision check. The part allowance is then defined either using the settings in the job (if the <span class="guilabel">Use job settings</span> option has been activated) or it can be entered directly under <span class=
+                  "guilabel">Allowance</span>. The tool shape is offset in all directions by the entered value. If -0.01 is entered, a ball mill D10 becomes a ball mill D9.98 during the collision check.</p>
+                  <p><span class="guilabel">Use job settings</span>: Enabled by default. The values defined in the job for allowance, allowance XY and allowance Z are used for the collision check.</p>
+                  <div dir="ltr" class="tip">
+                    <h3 class="title">Tip</h3>
+                    <p>A check is also performed to see whether a negative allowance is defined or the <span class="guilabel">Chamfer height</span> parameter is defined for the <span class="guilabel">Chamfer Milling on 3D Model</span> cycle. As a component violation is desired here, <span class="bold"><strong>no</strong></span> collision message
+                    is output in these cases.</p>
+                  </div>
+                  <p>If the <span class="guilabel">Use job settings</span> option has not been activated, the value for the <span class="guilabel">Allowance</span> can be entered directly. The value that is entered is offset on the shank diameter. If -0.01 is entered, the diameter of the shank is reduced by 0.02 (shank radius -0.01).</p>
+                  <p><span class="guilabel">Only tip</span>: The allowance is only applied to the tool tip (to be activated if, for example, only a small area at the bottom of a cavity is to be machined with a negative allowance).</p>
+                  <p><span class="guilabel">Whole tool</span>: The stock allowance is applied to the entire tool (including thickened shank and holder) (to be activated if, for example, a complete steep area is to be machined from top to bottom with a negative allowance).</p>
+                </section>
+                <section dir="ltr" class="section" data-origin-id="" data-publication-date="" id="UUID-a3e8dfa9-f179-e93e-c7dd-b5a968d67dd9_section-5da0372d02ab3-idm45304091560272">
+                  <div class="titlepage">
+                    <div>
+                      <div class="title">
+                        <h2 class="title" style="clear: both"><span class="formal-title">Stock contact</span></h2>
+                      </div>
+                    </div>
+                  </div>
+                  <p><span class="guilabel">Allow thin shank contact</span>: Activate to use a tool where the shank and cutting edge have been defined with the same diameter. The tool shank may touch the stock. No collision message is output. Use for imprecisely defined tool geometries.</p>
+                  <p><span class="guilabel">derive from stock model resolution</span>: Activate to use a tool where the shank and cutting edge have been defined with the same diameter. Situations in which there is a distance of 0 between the stock and shank are not regarded as a collision. The tolerance required for the collision check is
+                  automatically derived from the stock tolerance if the function is activated.</p>
+                  <p>If the function is not activated, the value for the tolerance can be entered directly. The value that is entered is offset on the shank diameter. If -0.01 is entered, the diameter of the shank is reduced by 0.02 (shank radius -0.01).</p>
+                </section>
+                <section dir="ltr" class="section" data-origin-id="" data-publication-date="" id="UUID-a3e8dfa9-f179-e93e-c7dd-b5a968d67dd9_section-5da03756c9d98-idm45304091206288">
+                  <div class="titlepage">
+                    <div>
+                      <div class="title">
+                        <h2 class="title" style="clear: both"><span class="formal-title">Part contact</span></h2>
+                      </div>
+                    </div>
+                  </div>
+                  <p><span class="guilabel">Allow thin shank contact</span>: Activate to use a tool where the shank and cutting edge have been defined with the same diameter. The tool shank may touch the part. No collision message is output. Use for imprecisely defined tool geometries.</p>
+                  <p><span class="guilabel">derive from job settings</span>: Activate to use a tool where the shank and cutting edge have been defined with the same diameter. Situations in which there is a distance of 0 between the part and shank are not regarded as a collision. The tolerance required for the collision check is automatically
+                  derived from the calculation tolerance in the <span class="emphasis"><em>hyper</em></span>MIL job if the function is activated.</p>
+                  <p>If the function is not activated, the value for the tolerance can be entered directly. The value that is entered is offset on the shank diameter. If -0.01 is entered, the diameter of the shank is reduced by 0.02 (shank radius -0.01).</p>
+                </section>
+                <section dir="ltr" class="section" data-origin-id="" data-publication-date="" id="UUID-a3e8dfa9-f179-e93e-c7dd-b5a968d67dd9_section-idm4539725296228832502789640158">
+                  <div class="titlepage">
+                    <div>
+                      <div class="title">
+                        <h2 class="title" style="clear: both"><span class="formal-title">Tool safety distance to fixture</span></h2>
+                      </div>
+                    </div>
+                  </div>
+                  <p>Clearance distance to be maintained between the tool and the fixture (exception: touch probe).</p>
+                  <p><span class="guilabel">Use hyperMILL settings</span>: The default value is defined in the <span class="phrase"><span class="application"><span class="emphasis"><em>hyper</em></span>MILL</span></span> dialog <span class="guimenuitem">Joblist</span> → <span class="guisubmenu">Models</span> → <span class=
+                  "guisubmenu">Fixtures</span> → <span class="guisubmenu">Tool safe distance</span>.</p>
+                </section>
+                <section dir="ltr" class="section" data-origin-id="" data-publication-date="" id="UUID-a3e8dfa9-f179-e93e-c7dd-b5a968d67dd9_section-idm4536671227577632502790565436">
+                  <div class="titlepage">
+                    <div>
+                      <div class="title">
+                        <h2 class="title" style="clear: both"><span class="formal-title">Tool safety distance for MCS movements</span></h2>
+                      </div>
+                    </div>
+                  </div>
+                  <p>Safety distance of the tool to be maintained for movements in the machine coordinate system (MCS, M91, ..).</p>
+                  <p><span class="guilabel">Use VM configuration setting</span>: The default value is defined in the VM configuration (<span class="guimenuitem">Tool length tolerance</span> → <span class="guimenuitem">Upper tolerance</span>).</p>
+                </section>
+                <section dir="ltr" class="section" data-origin-id="" data-publication-date="" id="UUID-a3e8dfa9-f179-e93e-c7dd-b5a968d67dd9_section-idm232088175309836">
+                  <div class="titlepage">
+                    <div>
+                      <div class="title">
+                        <h2 class="title" style="clear: both"><span class="formal-title">Further collision check options</span></h2>
+                      </div>
+                    </div>
+                  </div>
+                  <p><span class="guilabel">Resolution</span>: Set the accuracy for the collision check.</p>
+                  <p><span class="guilabel">Stop on first collision</span>: During the collision check, the program stops at the first collision found.</p>
+                  <p><span class="guilabel">Save As Default</span>: The settings for the collision check are saved across machines and simulations (for the <span class="phrase"><span class="application">VIRTUAL Machining Center</span></span>, the <span class="phrase"><span class="application">SIMULATION Center</span></span> and the toolpath
+                  preview). Saving is user-specific. It is still possible to temporarily change settings by confirming with <span class="guilabel">OK</span>.</p>
+                  <div dir="ltr" class="note">
+                    <h3 class="title">Note</h3>
+                    <p>OPEN MIND advises against saving deactivated collision-critical settings such as <span class="guilabel">Check tool against model</span>, <span class="guilabel">Check holder/shaft/core against model</span> or <span class="guilabel">Check stock</span> as defaults.</p>
+                    <p>Please contact your OPEN MIND support team if you would like to save company-wide standards.</p>
+                  </div>
+                </section>
+              </section>
+              <div class="footer-content">
+                <div class="section-toc section-toc-after">
+                  <div class="section-toc-title">
+                    <span class="section-toc-title-delimiter">:</span>
+                  </div>
+                </div>
+              </div>
+              <footer></footer>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="x-ua-compatible" content="IE=edge" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="search" content="default" />
+  <meta name="use.ic" content="no" />
+  <meta name="tocstandalone" content="yes" />
+  <script type="text/javascript">
+  //<![CDATA[
+                        var index;
+                        var contentLanguage = 'en-US';
+                        var enterKey = 'select';
+                        
+                                        var anchoroption = true;
+                                var instantsearch_minlength = 1;
+                                                
+                                var fuse_threshold = 0.3;
+                        
+                                        var local_csh = false;
+                                
+                        var useanchorlinks = false;
+  //]]>
+  </script>
+  <title>5-axis parameters</title>
+  <link rel="stylesheet" type="text/css" href="../css/docbook.css" />
+  <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" href="../css/bootstrap-theme.min.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style-common.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style-responsive.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style-print.css" />
+  <link rel="stylesheet" type="text/css" href="../css/font-awesome.css" />
+  <link rel="stylesheet" type="text/css" href="../css/custom.css" />
+  <link rel="stylesheet" type="text/css" href="../css/layout-custom-style.css" />
+  <script src="../js/jquery-1.10.2.min.js" type="text/javascript"></script>
+  <script src="../js/jquery-ui-1.10.3.custom.min.js" type="text/javascript"></script>
+  <script src="../js/bootstrap.min.js" type="text/javascript"></script>
+  <script src="../js/purl.js" type="text/javascript"></script>
+  <script src="../js/jquery.event.move.js" type="text/javascript"></script>
+  <script src="../js/jquery.event.swipe.js" type="text/javascript"></script>
+  <script src="../js/jquery.sticky.js" type="text/javascript"></script>
+  <script src="../js/respond.min.js" type="text/javascript"></script>
+  <script src="../js/script.js" type="text/javascript"></script>
+  <script src="js/toc.js" type="text/javascript"></script>
+  <script src="../js/create-toc.js" type="text/javascript"></script>
+  <script src="../js/clipboard.min.js" type="text/javascript"></script>
+  <script src="../js/fuse.min.js" type="text/javascript"></script>
+  <script src="../js/jquery.mark.min.js" type="text/javascript"></script>
+  <script src="../js/html5.fuse.search.js" type="text/javascript"></script>
+  <script src="js/fuzzydata.js" type="text/javascript"></script>
+  <script src="../js/csh.js" type="text/javascript"></script>
+  <script src="../js/highlight-mergehtml-plugin.js" type="text/javascript"></script>
+  <meta name="generator" content="Paligo" />
+  <link rel="prev" href="UUID-1db35270-601c-2bf3-3528-6aa06ac3574e.html#id136841" title="Vertical settings" />
+  <link rel="next" href="UUID-aa6f6897-a094-0994-233b-1c3d7bdfe61d.html#UUID-aa6f6897-a094-0994-233b-1c3d7bdfe61d_UUID-973263e0-cb87-4c6b-718b-126c74aa27af" title="Toolpath smoothing" />
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js?config=TeX-MML-AM_CHTML" async="async"></script>
+  <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+  <script type="text/javascript" src="../js/cookie-consent.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  <script type="text/javascript">
+  //<![CDATA[
+                        $(document).on('ready ajaxComplete', function() {
+                                
+                                hljs.addPlugin(mergeHTMLPlugin);
+                                hljs.configure({'ignoreUnescapedHTML': true});
+                                
+                                $('pre:not(.embedcode)').each(function() {
+                                        /**
+                                         * @type {string}
+                                         */
+                                        var language = $(this).data('language');
+
+                                        if (language === 'plaintext' || language === 'text') {
+                                                $(this).addClass(language).addClass('hljs');
+                                                return true;
+                                        }
+                                        else {
+                                                var clone = this.cloneNode(true);
+                                                hljs.highlightElement(clone);
+                                                $(this).empty().append($(clone).contents());
+                                                $(this).attr("class", $(clone).attr("class"));
+                                        }
+                                });
+                        });
+  //]]>
+  </script>
+  <style type="text/css">
+  /*<![CDATA[*/
+            div.skipnav {
+            }
+            div.skipnav a {
+                position: fixed;
+                left: -10000px;
+                top: 1.5em;
+                width: 1px;
+                height: 1px;
+                overflow: hidden;
+            }
+            div.skipnav a:focus, div.skipnav a:active, div.skipnav a:hover {
+                background: white;
+                color: black;
+                box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.5);
+                position: fixed;
+                left: 2em;
+                top: 1.5em;
+                width: auto;
+                height: auto;
+                overflow: visible;
+                text-decoration: underline;
+                z-index: 99999; /* has to be higher than the side panel */
+    }
+  /*]]>*/
+  </style>
+</head>
+<body data-link-prefix="">
+  <div class="skipnav">
+    <a href="#content-wrapper">Skip to main content</a>
+  </div>
+  <div id="page" class="clearfix">
+    <div id="header">
+      <div class="container">
+        <div id="logotype-container" class="pull-left">
+          <a href="../index.html"><img id="logotype-pageheader" src="../css/image/corporate-logo.png" alt="Corporate logotype" data-role="logotype" /></a>
+        </div>
+        <div id="pagetools-container" class="pull-right">
+          <ul id="page-tools">
+            <li class="page-tools-search"><input placeholder="Search" type="text" class="form-control" aria-label="Search" id="search" /></li>
+            <li class="page-tools-print">
+              <a href="javascript:window.print();"><span class="tool-label">Print</span><span class="glyphicon glyphicon-print"></span></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <h1 id="publication-title">CAM</h1>
+    <div id="subheader-sticky-wrapper" class="sticky-wrapper">
+      <div id="subheader">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3 toc-title">
+              <h2><a class="prev nav-icon hidden-lg hidden-md" href="UUID-1db35270-601c-2bf3-3528-6aa06ac3574e.html#id136841"><span class="glyphicon glyphicon-chevron-left"></span></a> <a href="#toc" class="hidden mobile-nav-toggle"><span class="glyphicon glyphicon-list"></span>Table of Contents</a><span class="toc-label">Table of
+              Contents</span><a class="next nav-icon hidden-lg hidden-md" href="UUID-aa6f6897-a094-0994-233b-1c3d7bdfe61d.html#UUID-aa6f6897-a094-0994-233b-1c3d7bdfe61d_UUID-973263e0-cb87-4c6b-718b-126c74aa27af"><span class="glyphicon glyphicon-chevron-right"></span></a></h2>
+            </div>
+            <div class="col-md-9 breadcrumb-container">
+              <ul class="breadcrumb">
+                <li class="breadcrumb-link">
+                  <span class="glyphicon glyphicon-home"></span>&nbsp;<a href="index-en-US.html">CAM</a>
+                </li>
+                <li class="breadcrumb-link">
+                  <a href="UUID-612c317b-197f-d0fa-8b72-ad4799e69646.html">5X Machining</a>
+                </li>
+                <li class="breadcrumb-link">
+                  <a href="UUID-7809443f-a21f-8115-0fbb-7b81bb1280cf.html">Blade Milling</a>
+                </li>
+                <li class="breadcrumb-link">
+                  <a href="UUID-66cd46ab-00fc-cea8-de05-bfa5d9380a39.html">Swarf Cutting</a>
+                </li>
+                <li class="breadcrumb-node">5-axis parameters</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="main-content">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 toc-container" id="toc-wrapper">
+            <div id="toc-placeholder">
+              <div id="toc-standalone-placeholder"></div>
+            </div>
+          </div>
+          <div class="col-md-9 content-container" id="content-wrapper">
+            <a accesskey="p" class="prev pull-left prev visible-lg visible-md" id="header-navigation-prev" href="UUID-1db35270-601c-2bf3-3528-6aa06ac3574e.html#id136841"><span class="glyphicon glyphicon-circle-arrow-left"></span>Prev</a><a accesskey="n" class="pull-right next visible-lg visible-md" id="header-navigation-next" href=
+            "UUID-aa6f6897-a094-0994-233b-1c3d7bdfe61d.html#UUID-aa6f6897-a094-0994-233b-1c3d7bdfe61d_UUID-973263e0-cb87-4c6b-718b-126c74aa27af">Next<span class="glyphicon glyphicon-circle-arrow-right"></span></a>
+            <div id="topic-content">
+              <section xml:lang="en-US" lang="en-US" dir="ltr" class="section" data-origin-id="UUID-d1534bc9-d646-9e88-6001-d972f7b3129a" data-publication-date="" id="UUID-aa6f6897-a094-0994-233b-1c3d7bdfe61d">
+                <div class="titlepage">
+                  <div>
+                    <div class="title">
+                      <h1 class="title" style="clear: both"><span class="formal-title">5-axis parameters</span></h1>
+                    </div>
+                  </div>
+                </div>
+                <section xml:lang="en-US" lang="en-US" dir="ltr" class="section internal" data-origin-id="" data-publication-date="" id="UUID-aa6f6897-a094-0994-233b-1c3d7bdfe61d_UUID-973263e0-cb87-4c6b-718b-126c74aa27af">
+                  <div class="titlepage">
+                    <div>
+                      <div class="title">
+                        <h2 class="title" style="clear: both"><span class="formal-title">Toolpath smoothing</span></h2>
+                      </div>
+                    </div>
+                  </div>
+                  <p><span class="guilabel">Use drive surfaces</span>: The user can control the movement of the tool (primarily its orientation) using the drive surfaces by defining smoother surfaces with continuous seamless transitions. Starting from the tool position in the drive surface, the tool is then retracted to the top of the model
+                  (3df).</p>
+                  <p><span class="guilabel">Additional axial distance</span> : If the distance of the drive surfaces to the original blade surfaces is greater than the corner radius of the tool, the tool no longer touches the blade surfaces at this point. A message is output during the calculation. In this case, the axial position of the tool must
+                  be corrected by a negative value - into the blade - (from where the tool is then retracted to the top).</p>
+                  <p><span class="guilabel">Tilt smoothing</span>: A local erratic change to the rotary movement of the tool around the Z axis is smoothed locally.</p>
+                  <p><span class="guilabel">Internal surface interpolation</span> <span class="italic">: hyper</span>MILL calculates a separate drive surface for the pressure and suction side, which is used to optimize the movement of the tool, based on the values you specified for the <span class="guilabel">Number of slices</span> and the
+                  <span class="guilabel">Number of points per side</span>.</p>
+                  <p>The stronger the blade is twisted along the X axis and/or the stronger the edges are curved, the more cuts are needed.</p>
+                  <p>The number of points per cut controls the accuracy with which the aerodynamic profile of the blade surfaces is approached. The more non-symmetrical the profile curvature in the suction and pressure side (in particular for extreme curvatures near the edges), the greater the number of points per cut. The number of points does
+                  not affect the accuracy of the output.</p>
+                </section>
+                <section dir="ltr" class="section internal" data-origin-id="" data-publication-date="" id="id136871">
+                  <div class="titlepage">
+                    <div>
+                      <div class="title">
+                        <h2 class="title" style="clear: both"><span class="formal-title">Tilt angle</span></h2>
+                      </div>
+                    </div>
+                  </div>
+                  <p><span class="guilabel">Tilt angle control</span>: Additional slope angle to the side surfaces.</p>
+                  <p>This is important if there is still a larger allowance present on the hub surface. In this manner, the turbine blade can be machined close to the flank without touching the flank surface.</p>
+                  <p>Normally a tilt angle of 0 degrees is used for calculation. To ensure better milling conditions, a smaller angle-value can be defined.</p>
+                  <div class="mediaobject">
+                    <table class="image-viewport" style="border-collapse:collapse;border:0; ;">
+                      <tr style="height: 195px">
+                        <td style="padding:0;"><img src="image/uuid-8eb39166-8379-d459-63f5-ab76e180ccdd.svg" style="max-height: 195px;" alt="5X_turbinenschaufel_seitenneigung.svg" /></td>
+                      </tr>
+                    </table>
+                  </div>
+                </section>
+                <section xml:lang="en-US" lang="en-US" dir="ltr" class="section internal" data-origin-id="" data-publication-date="" id="UUID-aa6f6897-a094-0994-233b-1c3d7bdfe61d_UUID-32b7f66f-6ca4-7ed6-2077-df253a3910b5">
+                  <div class="titlepage">
+                    <div>
+                      <div class="title">
+                        <h2 class="title" style="clear: both"><span class="formal-title">Feedrate control</span></h2>
+                      </div>
+                    </div>
+                  </div>
+                  <p><span class="guilabel">Feedrate control</span>: You should activate this option to compensate excessive machine axis acceleration on the edges of the blade surfaces.</p>
+                  <p><span class="guilabel">Feedrate reference distance</span> (1): Distance of a reference point on the tool axis to the tool center point for which the specified working feedrate applies.</p>
+                  <p>The feedrate output is determined based on the ratio of the paths travelled by the tool reference point, on the one hand, and the point on the tool axis that is moved, on the other hand. For concave surfaces, a smaller working feedrate is therefore output automatically for every point.</p>
+                  <div class="mediaobject">
+                    <table class="image-viewport" style="border-collapse:collapse;border:0; width:461px;">
+                      <tr>
+                        <td style="padding:0;"><img src="image/uuid-7721a1fe-c970-7c5f-072f-d285da570170.svg" style="max-width: 461px;" alt="5X_turbinenschaufel_vorschub_referenz_abstand.svg" /></td>
+                      </tr>
+                    </table>
+                  </div>
+                </section>
+              </section>
+              <div class="footer-content">
+                <div class="section-toc section-toc-after">
+                  <div class="section-toc-title">
+                    <span class="section-toc-title-delimiter">:</span>
+                  </div>
+                </div>
+              </div>
+              <footer></footer>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

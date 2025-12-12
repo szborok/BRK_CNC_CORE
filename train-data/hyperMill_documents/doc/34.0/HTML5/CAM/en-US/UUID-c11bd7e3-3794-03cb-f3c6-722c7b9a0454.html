@@ -1,0 +1,1301 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="x-ua-compatible" content="IE=edge" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="search" content="default" />
+  <meta name="use.ic" content="no" />
+  <meta name="tocstandalone" content="yes" />
+  <script type="text/javascript">
+  //<![CDATA[
+                        var index;
+                        var contentLanguage = 'en-US';
+                        var enterKey = 'select';
+                        
+                                        var anchoroption = true;
+                                var instantsearch_minlength = 1;
+                                                
+                                var fuse_threshold = 0.3;
+                        
+                                        var local_csh = false;
+                                
+                        var useanchorlinks = false;
+  //]]>
+  </script>
+  <title>Simulation tab</title>
+  <link rel="stylesheet" type="text/css" href="../css/docbook.css" />
+  <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" href="../css/bootstrap-theme.min.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style-common.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style-responsive.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style-print.css" />
+  <link rel="stylesheet" type="text/css" href="../css/font-awesome.css" />
+  <link rel="stylesheet" type="text/css" href="../css/custom.css" />
+  <link rel="stylesheet" type="text/css" href="../css/layout-custom-style.css" />
+  <script src="../js/jquery-1.10.2.min.js" type="text/javascript"></script>
+  <script src="../js/jquery-ui-1.10.3.custom.min.js" type="text/javascript"></script>
+  <script src="../js/bootstrap.min.js" type="text/javascript"></script>
+  <script src="../js/purl.js" type="text/javascript"></script>
+  <script src="../js/jquery.event.move.js" type="text/javascript"></script>
+  <script src="../js/jquery.event.swipe.js" type="text/javascript"></script>
+  <script src="../js/jquery.sticky.js" type="text/javascript"></script>
+  <script src="../js/respond.min.js" type="text/javascript"></script>
+  <script src="../js/script.js" type="text/javascript"></script>
+  <script src="js/toc.js" type="text/javascript"></script>
+  <script src="../js/create-toc.js" type="text/javascript"></script>
+  <script src="../js/clipboard.min.js" type="text/javascript"></script>
+  <script src="../js/fuse.min.js" type="text/javascript"></script>
+  <script src="../js/jquery.mark.min.js" type="text/javascript"></script>
+  <script src="../js/html5.fuse.search.js" type="text/javascript"></script>
+  <script src="js/fuzzydata.js" type="text/javascript"></script>
+  <script src="../js/csh.js" type="text/javascript"></script>
+  <script src="../js/highlight-mergehtml-plugin.js" type="text/javascript"></script>
+  <meta name="generator" content="Paligo" />
+  <link rel="prev" href="UUID-ae5c5448-be8c-2cf0-a6b0-5d55ee41ba73.html" title="Machine properties / NC file properties" />
+  <link rel="next" href="UUID-c11bd7e3-3794-03cb-f3c6-722c7b9a0454.html#id148639" title="Machine origin" />
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js?config=TeX-MML-AM_CHTML" async="async"></script>
+  <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+  <script type="text/javascript" src="../js/cookie-consent.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  <script type="text/javascript">
+  //<![CDATA[
+                        $(document).on('ready ajaxComplete', function() {
+                                
+                                hljs.addPlugin(mergeHTMLPlugin);
+                                hljs.configure({'ignoreUnescapedHTML': true});
+                                
+                                $('pre:not(.embedcode)').each(function() {
+                                        /**
+                                         * @type {string}
+                                         */
+                                        var language = $(this).data('language');
+
+                                        if (language === 'plaintext' || language === 'text') {
+                                                $(this).addClass(language).addClass('hljs');
+                                                return true;
+                                        }
+                                        else {
+                                                var clone = this.cloneNode(true);
+                                                hljs.highlightElement(clone);
+                                                $(this).empty().append($(clone).contents());
+                                                $(this).attr("class", $(clone).attr("class"));
+                                        }
+                                });
+                        });
+  //]]>
+  </script>
+  <style type="text/css">
+  /*<![CDATA[*/
+            div.skipnav {
+            }
+            div.skipnav a {
+                position: fixed;
+                left: -10000px;
+                top: 1.5em;
+                width: 1px;
+                height: 1px;
+                overflow: hidden;
+            }
+            div.skipnav a:focus, div.skipnav a:active, div.skipnav a:hover {
+                background: white;
+                color: black;
+                box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.5);
+                position: fixed;
+                left: 2em;
+                top: 1.5em;
+                width: auto;
+                height: auto;
+                overflow: visible;
+                text-decoration: underline;
+                z-index: 99999; /* has to be higher than the side panel */
+    }
+  /*]]>*/
+  </style>
+</head>
+<body data-link-prefix="">
+  <div class="skipnav">
+    <a href="#content-wrapper">Skip to main content</a>
+  </div>
+  <div id="page" class="clearfix">
+    <div id="header">
+      <div class="container">
+        <div id="logotype-container" class="pull-left">
+          <a href="../index.html"><img id="logotype-pageheader" src="../css/image/corporate-logo.png" alt="Corporate logotype" data-role="logotype" /></a>
+        </div>
+        <div id="pagetools-container" class="pull-right">
+          <ul id="page-tools">
+            <li class="page-tools-search"><input placeholder="Search" type="text" class="form-control" aria-label="Search" id="search" /></li>
+            <li class="page-tools-print">
+              <a href="javascript:window.print();"><span class="tool-label">Print</span><span class="glyphicon glyphicon-print"></span></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <h1 id="publication-title">CAM</h1>
+    <div id="subheader-sticky-wrapper" class="sticky-wrapper">
+      <div id="subheader">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3 toc-title">
+              <h2><a class="prev nav-icon hidden-lg hidden-md" href="UUID-ae5c5448-be8c-2cf0-a6b0-5d55ee41ba73.html"><span class="glyphicon glyphicon-chevron-left"></span></a> <a href="#toc" class="hidden mobile-nav-toggle"><span class="glyphicon glyphicon-list"></span>Table of Contents</a><span class="toc-label">Table of Contents</span><a class=
+              "next nav-icon hidden-lg hidden-md" href="UUID-c11bd7e3-3794-03cb-f3c6-722c7b9a0454.html#id148639"><span class="glyphicon glyphicon-chevron-right"></span></a></h2>
+            </div>
+            <div class="col-md-9 breadcrumb-container">
+              <ul class="breadcrumb">
+                <li class="breadcrumb-link">
+                  <span class="glyphicon glyphicon-home"></span>&nbsp;<a href="index-en-US.html">CAM</a>
+                </li>
+                <li class="breadcrumb-link">
+                  <a href="UUID-56b42c1f-4725-0b56-0bdf-0ee2de68a013.html"><span class="italic">hyper</span>VIEW</a>
+                </li>
+                <li class="breadcrumb-link">
+                  <a href="UUID-34375f5b-485a-151c-3c00-3d20e2deb5f9.html">Browser functions</a>
+                </li>
+                <li class="breadcrumb-node">Simulation tab</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="main-content">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 toc-container" id="toc-wrapper">
+            <div id="toc-placeholder">
+              <div id="toc-standalone-placeholder"></div>
+            </div>
+          </div>
+          <div class="col-md-9 content-container" id="content-wrapper">
+            <a accesskey="p" class="prev pull-left prev visible-lg visible-md" id="header-navigation-prev" href="UUID-ae5c5448-be8c-2cf0-a6b0-5d55ee41ba73.html"><span class="glyphicon glyphicon-circle-arrow-left"></span>Prev</a><a accesskey="n" class="pull-right next visible-lg visible-md" id="header-navigation-next" href=
+            "UUID-c11bd7e3-3794-03cb-f3c6-722c7b9a0454.html#id148639">Next<span class="glyphicon glyphicon-circle-arrow-right"></span></a>
+            <div id="topic-content">
+              <section xml:lang="en-US" lang="en-US" dir="ltr" class="section" data-origin-id="UUID-342446e6-b14a-9c9b-eac4-0e41017c15f5" data-publication-date="" id="UUID-c11bd7e3-3794-03cb-f3c6-722c7b9a0454">
+                <div class="titlepage">
+                  <div>
+                    <div class="title">
+                      <h1 class="title" style="clear: both"><span class="formal-title">Simulation tab</span></h1>
+                    </div>
+                  </div>
+                </div>
+                <p>Simulate NC jobs. To control the simulation, set the machine origin, configure the display of the machine, tool and model and configure the collision check.</p>
+                <section dir="ltr" class="section internal" data-origin-id="" data-publication-date="" id="id148639">
+                  <div class="titlepage">
+                    <div>
+                      <div class="title">
+                        <h2 class="title" style="clear: both"><span class="formal-title">Machine origin</span></h2>
+                      </div>
+                    </div>
+                  </div>
+                  <p>Select the machine origin from the list. The toolpaths and model are aligned to the origin.</p>
+                </section>
+                <section dir="ltr" class="section internal" data-origin-id="" data-publication-date="" id="id148642">
+                  <div class="titlepage">
+                    <div>
+                      <div class="title">
+                        <h2 class="title" style="clear: both"><span class="formal-title">Status</span></h2>
+                      </div>
+                    </div>
+                  </div>
+                  <p>List of all simulated jobs. Information no the tool number, tool geometry and coolant.</p>
+                </section>
+                <section dir="ltr" class="section internal" data-origin-id="" data-publication-date="" id="UUID-c11bd7e3-3794-03cb-f3c6-722c7b9a0454_id179S80U09U8">
+                  <div class="titlepage">
+                    <div>
+                      <div class="title">
+                        <h2 class="title" style="clear: both"><span class="formal-title">Select solutions for rotary axes</span></h2>
+                      </div>
+                    </div>
+                  </div>
+                  <p>Depending on the machine kinematics, there may be several approach and retract paths for different tools. Select the most suitable solution in the dialog.</p>
+                  <p>The availability of a machine model is a prerequisite to calculate possible rotary axis solutions. If these solutions will also be used by a postprocessor, the machine model and the postprocessor must be synchronized. Please contact your OPEN MIND dealer to arrange this. Implementation may involve adapting your postprocessor
+                  and this might incur a fee.</p>
+                  <div class="informaltable table-responsive">
+                    <table style="width:100%;" class="informaltable">
+                      <colgroup>
+                        <col style="width:12%;" />
+                        <col style="width:88%;" />
+                      </colgroup>
+                      <tbody>
+                        <tr>
+                          <td class="td">
+                            <div class="mediaobject">
+                              <table class="image-viewport" style="border-collapse:collapse;border:0; ;">
+                                <tr style="height: 48px">
+                                  <td style="padding:0;"><img src="image/uuid-628aa206-9f7e-de64-d2d7-10d6156125a8.svg" style="max-height: 48px;" alt="solutions_rotary_axes.svg" /></td>
+                                </tr>
+                              </table>
+                            </div>
+                          </td>
+                          <td valign="middle" class="td align-middle">
+                            <p>Open the <span class="guilabel">Solutions</span> dialog</p>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <p><span class="guilabel">Toolpath</span>: Shows the job.</p>
+                  <p><span class="guilabel">Solution</span>: All possible solutions for the selected job as calculated by <span class="italic">hyper</span>VIEW. If you have machines with serration, possibly more than two solutions are found. In this case, the number of offered solutions depends on the defined Maximum deviation (degree) for
+                  tilting, which can be defined in the Machine Properties dialog, 4/5-Axes category.</p>
+                  <p><span class="guilabel">Deviation</span>: Real value for the tilt deviation.</p>
+                  <div dir="ltr" class="note">
+                    <h3 class="title">Note</h3>
+                    <p>In some types of machines (such as those with parallel rotary axes), one of the rotary axes may need to have a fixed position.</p>
+                  </div>
+                </section>
+                <section dir="ltr" class="section internal" data-origin-id="" data-publication-date="" id="UUID-c11bd7e3-3794-03cb-f3c6-722c7b9a0454_id179S80U091S">
+                  <div class="titlepage">
+                    <div>
+                      <div class="title">
+                        <h2 class="title" style="clear: both"><span class="formal-title">Enable a solution</span></h2>
+                      </div>
+                    </div>
+                  </div>
+                  <p>Double-click the <span class="guilabel">Solutions</span> column to enable and use a solution. The solution will be shown in a bold font. The selected solution is then used in the simulation, but not for NC output. To also have the active solution used for NC output, you must save the active solution first.</p>
+                </section>
+                <section dir="ltr" class="section internal" data-origin-id="" data-publication-date="" id="UUID-c11bd7e3-3794-03cb-f3c6-722c7b9a0454_id179S80U09LB">
+                  <div class="titlepage">
+                    <div>
+                      <div class="title">
+                        <h2 class="title" style="clear: both"><span class="formal-title">Save active solutions.</span></h2>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="informaltable table-responsive">
+                    <table style="width:100%;" class="informaltable">
+                      <colgroup>
+                        <col style="width:11%;" />
+                        <col style="width:89%;" />
+                      </colgroup>
+                      <tbody>
+                        <tr>
+                          <td class="td">
+                            <div class="mediaobject">
+                              <table class="image-viewport" style="border-collapse:collapse;border:0; ;">
+                                <tr style="height: 48px">
+                                  <td style="padding:0;"><img src="image/uuid-0e560ee8-6cc2-db8c-222e-738229b25c6c.svg" style="max-height: 48px;" alt="hview_save_res.svg" /></td>
+                                </tr>
+                              </table>
+                            </div>
+                          </td>
+                          <td class="td">
+                            <p>Save the active solutions for all jobs. These will be stored after closing the program and remain available the next time the program is started. An exception to this is if the job was recalculated in <span class="italic">hyper</span>MILL.</p>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div class="informaltable table-responsive">
+                    <table style="width:100%;" class="informaltable">
+                      <colgroup>
+                        <col style="width:11%;" />
+                        <col style="width:89%;" />
+                      </colgroup>
+                      <tbody>
+                        <tr>
+                          <td class="td">
+                            <div class="mediaobject">
+                              <table class="image-viewport" style="border-collapse:collapse;border:0; ;">
+                                <tr style="height: 48px">
+                                  <td style="padding:0;"><img src="image/uuid-b5705e3a-de36-69d4-0419-f0bad491d443.svg" style="max-height: 48px;" alt="delete_r.svg" /></td>
+                                </tr>
+                              </table>
+                            </div>
+                          </td>
+                          <td valign="middle" class="td align-middle">
+                            <p>Delete the active solutions.</p>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <p>After switching to the Simulation tab at least once, the stored solutions are shown as a tooltip for the corresponding toolpath in the <span class="italic">hyper</span>VIEW browser.</p>
+                </section>
+                <section dir="ltr" class="section internal" data-origin-id="" data-publication-date="" id="UUID-c11bd7e3-3794-03cb-f3c6-722c7b9a0454_id179S80U09TD">
+                  <div class="titlepage">
+                    <div>
+                      <div class="title">
+                        <h2 class="title" style="clear: both"><span class="formal-title">Application of active solutions</span></h2>
+                      </div>
+                    </div>
+                  </div>
+                  <p>On the <span class="italic">hyper</span>VIEW menu, click <span class="guimenu">Options</span> → <span class="guimenuitem">NC-File</span>. Select the desired option under <span class="guilabel">Stored solutions</span> and close the dialog with <span class="guilabel">OK</span>.</p>
+                  <p>Delete stored solution</p>
+                  <p>To delete the stored solution, select a toolpath in the <span class="italic">hyper</span>VIEW job browser, and select the <span class="guilabel">Delete stored solution</span> function from the shortcut menu. The stored solution for the marked toolpath is deleted.</p>
+                  <p>There are currently no selectable solutions available for jobs containing transformations. OPEN MIND recommends combining jobs containing transformations into a linking job. Please note that to receive a solution selection, the transformations must be defined in the sub-jobs.</p>
+                  <div class="informaltable table-responsive">
+                    <table style="width:100%;" class="informaltable">
+                      <colgroup>
+                        <col style="width:11%;" />
+                        <col style="width:89%;" />
+                      </colgroup>
+                      <tbody>
+                        <tr>
+                          <td class="td">
+                            <div class="mediaobject">
+                              <table class="image-viewport" style="border-collapse:collapse;border:0; ;">
+                                <tr style="height: 48px">
+                                  <td style="padding:0;"><img src="image/uuid-1f4df423-9d71-2d52-0f34-acd9cb45e875.svg" style="max-height: 48px;" alt="hview_axis_locked.svg" /></td>
+                                </tr>
+                              </table>
+                            </div>
+                          </td>
+                          <td valign="middle" class="td align-middle">
+                            <p>Display the fixed rotary axis. You can specify the corresponding angle directly in the box (double-click). After the angle has been entered, the available solutions are recalculated.</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="td">
+                            <div class="mediaobject">
+                              <table class="image-viewport" style="border-collapse:collapse;border:0; ;">
+                                <tr style="height: 48px">
+                                  <td style="padding:0;"><img src="image/uuid-fed3594f-6ee8-8e85-517c-4dcb2aff042a.svg" style="max-height: 48px;" alt="limit_switches.svg" /></td>
+                                </tr>
+                              </table>
+                            </div>
+                          </td>
+                          <td valign="middle" class="td align-middle">
+                            <p>Compare the available and used workspace.</p>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </section>
+                <section dir="ltr" class="section internal" data-origin-id="" data-publication-date="" id="UUID-c11bd7e3-3794-03cb-f3c6-722c7b9a0454_id179S80U09VW">
+                  <div class="titlepage">
+                    <div>
+                      <div class="title">
+                        <h2 class="title" style="clear: both"><span class="formal-title">Available and Used Workspace</span></h2>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="informaltable table-responsive">
+                    <table style="width:100%;" class="informaltable">
+                      <colgroup>
+                        <col style="width:11%;" />
+                        <col style="width:89%;" />
+                      </colgroup>
+                      <tbody>
+                        <tr>
+                          <td class="td">
+                            <div class="mediaobject">
+                              <table class="image-viewport" style="border-collapse:collapse;border:0; ;">
+                                <tr style="height: 48px">
+                                  <td style="padding:0;"><img src="image/uuid-7a79d671-5cb7-88cf-5aa7-d3cd1f21d44f.svg" style="max-height: 48px;" alt="workspace_error.svg" /></td>
+                                </tr>
+                              </table>
+                            </div>
+                          </td>
+                          <td class="td">
+                            <p>Open the <span class="guilabel">Available and Used Workspace</span> dialog. You will need a special authorization code to be able to control the defined workspace correctly. Please contact your OPEN MIND dealer to arrange this.</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="td">
+                            <div class="mediaobject">
+                              <table class="image-viewport" style="border-collapse:collapse;border:0; ;">
+                                <tr style="height: 48px">
+                                  <td style="padding:0;"><img src="image/uuid-98dd19de-09cf-7afe-256e-6b066af8d078.svg" style="max-height: 48px;" alt="hview_play.svg" /></td>
+                                </tr>
+                              </table>
+                            </div>
+                          </td>
+                          <td valign="middle" class="td align-middle">
+                            <p>Display the active reference point.</p>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <section dir="ltr" class="section internal" data-origin-id="" data-publication-date="" id="id148759">
+                    <div class="titlepage">
+                      <div>
+                        <div class="title">
+                          <h3 class="title"><span class="formal-title">Workspace</span></h3>
+                        </div>
+                      </div>
+                    </div>
+                    <p><span class="guilabel">Limit switch</span>: Available workspace of the machine model.</p>
+                    <p><span class="guilabel">Min</span> / <span class="guilabel">Max</span>: Workspace used in the simulation. All displayed values refer to the defined reference point. Violations of the available workspace are displayed in red. Additionally, the difference values between the used and available workspace can be shown.</p>
+                  </section>
+                  <section dir="ltr" class="section internal" data-origin-id="" data-publication-date="" id="id148766">
+                    <div class="titlepage">
+                      <div>
+                        <div class="title">
+                          <h3 class="title"><span class="formal-title">Machine origin</span></h3>
+                        </div>
+                      </div>
+                    </div>
+                    <p><span class="guilabel">Find best fit</span>: Looks for the machine origin that produces no workspace violation or the smallest possible workspace violation.</p>
+                    <p><span class="guilabel">Define best fit</span>: This function opens the Machine Origins and Reference Points dialog and displays the automatically defined Best Fit location in a blue color.</p>
+                    <div class="informaltable table-responsive">
+                      <table style="width:100%;" class="informaltable">
+                        <colgroup>
+                          <col style="width:11%;" />
+                          <col style="width:89%;" />
+                        </colgroup>
+                        <tbody>
+                          <tr>
+                            <td class="td">
+                              <div class="mediaobject">
+                                <table class="image-viewport" style="border-collapse:collapse;border:0; ;">
+                                  <tr style="height: 48px">
+                                    <td style="padding:0;"><img src="image/uuid-f707ef8c-6c64-7693-0d3f-2a66c7c69339.svg" style="max-height: 48px;" alt="insert_row.svg" /></td>
+                                  </tr>
+                                </table>
+                              </div>
+                            </td>
+                            <td valign="middle" class="td align-middle">
+                              <p>Insert a new origin/reference point</p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="td">
+                              <div class="mediaobject">
+                                <table class="image-viewport" style="border-collapse:collapse;border:0; ;">
+                                  <tr style="height: 48px">
+                                    <td style="padding:0;"><img src="image/uuid-246bed96-7cf4-aad7-9bef-fd819b14a3b0.svg" style="max-height: 48px;" alt="edit_report.svg" /></td>
+                                  </tr>
+                                </table>
+                              </div>
+                            </td>
+                            <td valign="middle" class="td align-middle">
+                              <p>Edit an origin/reference point</p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="td">
+                              <div class="mediaobject">
+                                <table class="image-viewport" style="border-collapse:collapse;border:0; ;">
+                                  <tr style="height: 48px">
+                                    <td style="padding:0;"><img src="image/uuid-e3e780de-a84b-7e96-f8a9-3048f7127ee4.svg" style="max-height: 48px;" alt="delete_segment.svg" /></td>
+                                  </tr>
+                                </table>
+                              </div>
+                            </td>
+                            <td valign="middle" class="td align-middle">
+                              <p>Delete an origin/reference point</p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="td">
+                              <div class="mediaobject">
+                                <table class="image-viewport" style="border-collapse:collapse;border:0; ;">
+                                  <tr style="height: 48px">
+                                    <td style="padding:0;"><img src="image/uuid-08419558-145b-6128-12cf-588f714d52d1.svg" style="max-height: 48px;" alt="activate_mach.svg" /></td>
+                                  </tr>
+                                </table>
+                              </div>
+                            </td>
+                            <td valign="middle" class="td align-middle">
+                              <p>Activate an origin/reference point</p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="td">
+                              <div class="mediaobject">
+                                <table class="image-viewport" style="border-collapse:collapse;border:0; ;">
+                                  <tr style="height: 48px">
+                                    <td style="padding:0;"><img src="image/uuid-f37ec291-75e6-781a-d677-635db03c1cad.svg" style="max-height: 48px;" alt="hyperView.svg" /></td>
+                                  </tr>
+                                </table>
+                              </div>
+                            </td>
+                            <td valign="middle" class="td align-middle">
+                              <p>Insert the origin from current machine position. Set reference point from current machine position.</p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="td">
+                              <div class="mediaobject">
+                                <table class="image-viewport" style="border-collapse:collapse;border:0; ;">
+                                  <tr style="height: 48px">
+                                    <td style="padding:0;"><img src="image/uuid-898d6aa9-6b4b-6e77-411d-b5e7ef17e35a.svg" style="max-height: 48px;" alt="move_mach_mod_to_pos.svg" /></td>
+                                  </tr>
+                                </table>
+                              </div>
+                            </td>
+                            <td valign="middle" class="td align-middle">
+                              <p>Move the machine to the selected origin/reference point</p>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <div dir="ltr" class="note">
+                      <h3 class="title">Note</h3>
+                      <p>Legal notice regarding the use of machine models for machine simulation. The terms of the End-User License Agreement are also valid here. OPEN MIND does not warrant in any way situations where incorrect data and incorrect information delivered by the licensee have lead to the creation of an incorrect machine tool model.
+                      Licensee shall make an incoming inspection immediately after the delivery of each machine tool model.</p>
+                    </div>
+                    <p><span class="guilabel">Use selected</span>: The currently set machine origin is used.</p>
+                    <div class="informaltable table-responsive">
+                      <table style="width:100%;" class="informaltable">
+                        <colgroup>
+                          <col style="width:11%;" />
+                          <col style="width:89%;" />
+                        </colgroup>
+                        <tbody>
+                          <tr>
+                            <td class="td">
+                              <div class="mediaobject">
+                                <table class="image-viewport" style="border-collapse:collapse;border:0; ;">
+                                  <tr style="height: 48px">
+                                    <td style="padding:0;"><img src="image/uuid-ea63b045-4281-31f5-88e3-a671d353f57f.svg" style="max-height: 48px;" alt="hm_copy.svg" /></td>
+                                  </tr>
+                                </table>
+                              </div>
+                            </td>
+                            <td valign="middle" class="td align-middle">
+                              <p>Copy the maximum and minimum values displayed to the clipboard.</p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="td">
+                              <div class="mediaobject">
+                                <table class="image-viewport" style="border-collapse:collapse;border:0; ;">
+                                  <tr style="height: 48px">
+                                    <td style="padding:0;"><img src="image/uuid-bea1ab5e-d4bc-0f61-2b0a-fa3d6434eb97.svg" style="max-height: 48px;" alt="hview_coll_check_opt.svg" /></td>
+                                  </tr>
+                                </table>
+                              </div>
+                            </td>
+                            <td valign="middle" class="td align-middle">
+                              <p>Open the <span class="guilabel">Collision check options</span> dialog.</p>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <p><span class="guilabel">Enable</span>: List of available checking options. Enable the desired option. Only those options that are useful for the NC job to be simulated are available. However, all options are available within the Machine properties in the Collision check dialog.</p>
+                    <p><span class="guilabel">Tool against model</span>: If this option is selected, only the non-cutting part of the tool will be considered in <span class="italic">hyper</span>VIEW. This is defined using the Cutting length parameter of the tool. If the Cutting length has the value 0, it will be assumed that the entire tool
+                    cuts.</p>
+                    <p>When the collision check is enabled, all G0 traversing movements are checked against the model, whereby the tool and holder can be checked separately. G1 traversing movements are not checked against the model.</p>
+                    <p>Double click an entry in the <span class="guilabel">Max. increment</span> list to specify the accuracy of the collision check. Note that higher levels of accuracy will slow down the simulation.</p>
+                    <p>Double-click an entry in the <span class="guilabel">Color</span> list to define the color used to display detected collisions during simulation.</p>
+                    <p><span class="guilabel">Tool against model</span>: If this option is selected, only the non-cutting part of the tool will be considered in <span class="italic">hyper</span>VIEW. This is defined using the Cutting length parameter of the tool. If the Cutting length has the value 0, it will be assumed that the entire tool
+                    cuts.</p>
+                    <p>All of the options provided in this dialog can also be edited via the respective shortcut menu. This way, you can modify the overall definitions for the list entries. You can also enable/disable collision checking for all of the list entries.</p>
+                    <p><span class="guilabel">Shaft allowance</span>: During simulation, the tool shaft is increased/decreased (positive/negative values) by the specified shaft allowance. This helps to reveal collisions in complex situations where the shaft is required to have a minimum distance to the part.</p>
+                    <div class="informaltable table-responsive">
+                      <table style="width:100%;" class="informaltable">
+                        <colgroup>
+                          <col style="width:11%;" />
+                          <col style="width:89%;" />
+                        </colgroup>
+                        <tbody>
+                          <tr>
+                            <td class="td">
+                              <div class="mediaobject">
+                                <table class="image-viewport" style="border-collapse:collapse;border:0; ;">
+                                  <tr style="height: 48px">
+                                    <td style="padding:0;"><img src="image/uuid-dece29b9-88d3-9f31-91d8-7f6d8257daeb.svg" style="max-height: 48px;" alt="collisions.svg" /></td>
+                                  </tr>
+                                </table>
+                              </div>
+                            </td>
+                            <td valign="middle" class="td align-middle">
+                              <p><span class="guilabel">Show collision status</span>: Display collisions that were detected during the simulation in a list.</p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="td">
+                              <div class="mediaobject">
+                                <table class="image-viewport" style="border-collapse:collapse;border:0; ;">
+                                  <tr style="height: 48px">
+                                    <td style="padding:0;"><img src="image/uuid-ca172659-825a-5e14-ad73-d446b18e522c.svg" style="max-height: 48px;" alt="hview_show_tool.svg" /></td>
+                                  </tr>
+                                </table>
+                              </div>
+                            </td>
+                            <td class="td">
+                              <p><span class="guilabel">Show properties of the active toolpath's tool</span>: Display an overview of all the tool parameters. This dialog is the same as the dialog available from the Toolpaths shortcut menu in the <span class="italic">hyper</span>VIEW browser.</p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="td">
+                              <div class="mediaobject">
+                                <table class="image-viewport" style="border-collapse:collapse;border:0; ;">
+                                  <tr style="height: 48px">
+                                    <td style="padding:0;"><img src="image/uuid-aea0eeb2-8354-e19a-be76-062005b7d2da.svg" style="max-height: 48px;" alt="toolptah_prop.svg" /></td>
+                                  </tr>
+                                </table>
+                              </div>
+                            </td>
+                            <td class="td">
+                              <p><span class="guilabel">Show properties of the active toolpath</span>: Display the parameters of the currently simulated toolpath. This dialog is the same as the dialog available from the Toolpaths shortcut menu in the <span class="italic">hyper</span>VIEW browser.</p>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <p>In contrast to the dialogs available on the shortcut menu (NC-Jobs tab), the parameters in the two dialogs on the Simulation tab serve only to provide a better overview and cannot be edited.</p>
+                  </section>
+                </section>
+                <section dir="ltr" class="section internal" data-origin-id="" data-publication-date="" id="UUID-c11bd7e3-3794-03cb-f3c6-722c7b9a0454_id179S80U09JK">
+                  <div class="titlepage">
+                    <div>
+                      <div class="title">
+                        <h2 class="title" style="clear: both"><span class="formal-title">Control the simulation</span></h2>
+                      </div>
+                    </div>
+                  </div>
+                  <section dir="ltr" class="section internal" data-origin-id="" data-publication-date="" id="id148893">
+                    <div class="titlepage">
+                      <div>
+                        <div class="title">
+                          <h3 class="title"><span class="formal-title">Setup</span></h3>
+                        </div>
+                      </div>
+                    </div>
+                    <p><span class="guilabel">Stop simulation</span>: In some situations, the simulation can be stopped automatically. Set the corresponding switches to <span class="guilabel">On</span> if the simulation is to be stopped.</p>
+                    <p><span class="guilabel">M0</span>: Stop at the next halt marker.</p>
+                    <p><span class="guilabel">TC</span>: Stop at the next tool change.</p>
+                    <p><span class="guilabel">Coll</span>: Stop at the next detected collision.</p>
+                    <p><span class="guilabel">LS</span>: Stop at the limit switch.</p>
+                    <p>Use <span class="guilabel">Continuous</span> to simulate the tool movements continuously; this is done in <span class="guilabel">Step Mode</span> in single steps corresponding to the toolpath.</p>
+                    <p><span class="guilabel">Override</span>: Please use the scroll bar to control the simulation speed. In continuous mode, you can freely control the speed. In step mode, you cannot select a value below 1x.</p>
+                  </section>
+                  <section dir="ltr" class="section internal" data-origin-id="" data-publication-date="" id="id148911">
+                    <div class="titlepage">
+                      <div>
+                        <div class="title">
+                          <h3 class="title"><span class="formal-title">Override</span></h3>
+                        </div>
+                      </div>
+                    </div>
+                    <p>Use the slide control to set the speed of the simulation.</p>
+                  </section>
+                  <section dir="ltr" class="section internal" data-origin-id="" data-publication-date="" id="id148914">
+                    <div class="titlepage">
+                      <div>
+                        <div class="title">
+                          <h3 class="title"><span class="formal-title">Animation control</span></h3>
+                        </div>
+                      </div>
+                    </div>
+                    <p>Control the simulation.</p>
+                    <div class="informaltable table-responsive">
+                      <table style="width:100%;" class="informaltable">
+                        <colgroup>
+                          <col style="width:11%;" />
+                          <col style="width:89%;" />
+                        </colgroup>
+                        <tbody>
+                          <tr>
+                            <td class="td">
+                              <p><span class="inlinemediaobject"><img style="max-width: 10px;" src="image/uuid-7ae7e889-7840-f7a0-afe0-66ee8dfd73f1.png" alt="Animationskontrolle_zu1.png" /></span></p>
+                            </td>
+                            <td class="td">
+                              <p>Go back to first toolpath</p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="td">
+                              <p><span class="inlinemediaobject"><img style="max-width: 15px;" src="image/uuid-16e25e17-645b-7082-aa6c-5af956748c71.png" alt="Animationskontrolle_job.png" /></span></p>
+                            </td>
+                            <td class="td">
+                              <p>Previous toolpath</p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="td">
+                              <p><span class="inlinemediaobject"><img style="max-width: 15px;" src="image/uuid-42c043f9-0ac9-7287-3fc2-3a459e0572a6.png" alt="Animationskontrolle_schnellrueck.png" /></span></p>
+                            </td>
+                            <td class="td">
+                              <p>Fast backward</p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="td">
+                              <p><span class="inlinemediaobject"><img style="max-width: 15px;" src="image/uuid-915c52d8-2e12-f6da-86e8-325bb6da4eca.png" alt="Animationskontrolle_rueck.png" /></span></p>
+                            </td>
+                            <td class="td">
+                              <p>Backward</p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="td">
+                              <p><span class="inlinemediaobject"><img style="max-width: 15px;" src="image/uuid-e1b15cc0-6387-8540-65dc-9dce6e944e1e.png" alt="Animationskontrolle_stopp.png" /></span></p>
+                            </td>
+                            <td class="td">
+                              <p>Stop</p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="td">
+                              <p><span class="inlinemediaobject"><img style="max-width: 15px;" src="image/uuid-3ddbd085-999d-f982-640d-a3e4ada2d521.png" alt="Animationskontrolle_vor.png" /></span></p>
+                            </td>
+                            <td class="td">
+                              <p>Forward</p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="td">
+                              <p><span class="inlinemediaobject"><img style="max-width: 15px;" src="image/uuid-d49f36d1-c80e-0e41-28e3-f2c736872d81.png" alt="Animationskontrolle_schnellvor.png" /></span></p>
+                            </td>
+                            <td class="td">
+                              <p>Fast forward</p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="td">
+                              <p><span class="inlinemediaobject"><img style="max-width: 15px;" src="image/uuid-31cb9b9c-e8c4-78f2-57f2-7cfd81c6efc4.png" alt="forward_to_move.png" /></span></p>
+                            </td>
+                            <td class="td">
+                              <p>Forward to movement no.</p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="td">
+                              <p><span class="inlinemediaobject"><img style="max-width: 15px;" src="image/uuid-cee9d6fc-b96e-179a-794b-cbc685ebee7f.png" alt="Animationskontrolle_nextjob.png" /></span></p>
+                            </td>
+                            <td class="td">
+                              <p>Next toolpath</p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="td">
+                              <p><span class="inlinemediaobject"><img style="max-width: 15px;" src="image/uuid-f036b19a-a596-4abe-4df8-3246e02c2b5b.png" alt="Animationskontrolle_end.png" /></span></p>
+                            </td>
+                            <td class="td">
+                              <p>Go to end of last toolpath</p>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </section>
+                </section>
+                <section dir="ltr" class="section internal" data-origin-id="" data-publication-date="" id="UUID-c11bd7e3-3794-03cb-f3c6-722c7b9a0454_id179S80U0955">
+                  <div class="titlepage">
+                    <div>
+                      <div class="title">
+                        <h2 class="title" style="clear: both"><span class="formal-title">Configure the display in the simulation</span></h2>
+                      </div>
+                    </div>
+                  </div>
+                  <section dir="ltr" class="section internal" data-origin-id="" data-publication-date="" id="id149004">
+                    <div class="titlepage">
+                      <div>
+                        <div class="title">
+                          <h3 class="title"><span class="formal-title">Mode</span></h3>
+                        </div>
+                      </div>
+                    </div>
+                    <p>Configure the display for material (removal), model, machine, tool and toolpath.</p>
+                    <div class="informaltable table-responsive">
+                      <table class="informaltable">
+                        <colgroup>
+                          <col style="width:11%;" />
+                          <col style="width:89%;" />
+                        </colgroup>
+                        <tbody>
+                          <tr>
+                            <td class="td">
+                              <div class="mediaobject">
+                                <table class="image-viewport" style="border-collapse:collapse;border:0; ;">
+                                  <tr style="height: 48px">
+                                    <td style="padding:0;"><img src="image/uuid-e65b99ee-c276-9041-a756-72ee9ab8936f.svg" style="max-height: 48px;" alt="hview_no_mat_remov.svg" /></td>
+                                  </tr>
+                                </table>
+                              </div>
+                            </td>
+                            <td valign="middle" class="td align-middle">
+                              <p>Material removal simulation disabled. Open the <span class="guilabel">Create stock</span> dialog. Define the shape and display for the stock.</p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="td">
+                              <div class="mediaobject">
+                                <table class="image-viewport" style="border-collapse:collapse;border:0; ;">
+                                  <tr style="height: 48px">
+                                    <td style="padding:0;"><img src="image/uuid-5b9ba36e-5dd1-f898-1a53-e73387a0b0d2.svg" style="max-height: 48px;" alt="hview_mat_remov.svg" /></td>
+                                  </tr>
+                                </table>
+                              </div>
+                            </td>
+                            <td valign="middle" class="td align-middle">
+                              <p>Material removal simulation enabled (only if a stockmodel has been defined).</p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="td">
+                              <div class="mediaobject">
+                                <table class="image-viewport" style="border-collapse:collapse;border:0; ;">
+                                  <tr style="height: 48px">
+                                    <td style="padding:0;"><img src="image/uuid-5b9ba36e-5dd1-f898-1a53-e73387a0b0d2.svg" style="max-height: 48px;" alt="hview_mat_remov.svg" /></td>
+                                  </tr>
+                                </table>
+                              </div>
+                            </td>
+                            <td valign="middle" class="td align-middle">
+                              <p>Material removal shaded</p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="td">
+                              <div class="mediaobject">
+                                <table class="image-viewport" style="border-collapse:collapse;border:0; ;">
+                                  <tr style="height: 48px">
+                                    <td style="padding:0;"><img src="image/uuid-9269eb92-d92f-e036-4966-a829f559f7aa.svg" style="max-height: 48px;" alt="hview_mat_remov_trans.svg" /></td>
+                                  </tr>
+                                </table>
+                              </div>
+                            </td>
+                            <td valign="middle" class="td align-middle">
+                              <p>Material removal transparent</p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="td">
+                              <div class="mediaobject">
+                                <table class="image-viewport" style="border-collapse:collapse;border:0; ;">
+                                  <tr style="height: 48px">
+                                    <td style="padding:0;"><img src="image/uuid-a1f18167-6e4e-f5f8-688f-e9f767a62329.svg" style="max-height: 48px;" alt="hview_mat_remov_wire.svg" /></td>
+                                  </tr>
+                                </table>
+                              </div>
+                            </td>
+                            <td valign="middle" class="td align-middle">
+                              <p>Material removal wireframe</p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="td">
+                              <div class="mediaobject">
+                                <table class="image-viewport" style="border-collapse:collapse;border:0; ;">
+                                  <tr style="height: 48px">
+                                    <td style="padding:0;"><img src="image/uuid-0e560ee8-6cc2-db8c-222e-738229b25c6c.svg" style="max-height: 48px;" alt="hview_save_res.svg" /></td>
+                                  </tr>
+                                </table>
+                              </div>
+                            </td>
+                            <td valign="middle" class="td align-middle">
+                              <p>Save the result of the material removal simulation in the <code class="filename">*.stl</code>, <code class="filename">*.vis</code> or <code class="filename">*.omg</code> format.</p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="td">
+                              <div class="mediaobject">
+                                <table class="image-viewport" style="border-collapse:collapse;border:0; ;">
+                                  <tr style="height: 48px">
+                                    <td style="padding:0;"><img src="image/uuid-729437cd-62ff-2e28-9fd9-b798f963d722.svg" style="max-height: 48px;" alt="hview_mod.svg" /></td>
+                                  </tr>
+                                </table>
+                              </div>
+                            </td>
+                            <td valign="middle" class="td align-middle">
+                              <p>Model shaded.</p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="td">
+                              <div class="mediaobject">
+                                <table class="image-viewport" style="border-collapse:collapse;border:0; ;">
+                                  <tr style="height: 48px">
+                                    <td style="padding:0;"><img src="image/uuid-37081061-7805-0d29-e738-9bebc1ae6536.svg" style="max-height: 48px;" alt="hview_mod_trans.svg" /></td>
+                                  </tr>
+                                </table>
+                              </div>
+                            </td>
+                            <td valign="middle" class="td align-middle">
+                              <p>Model transparent.</p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="td">
+                              <div class="mediaobject">
+                                <table class="image-viewport" style="border-collapse:collapse;border:0; ;">
+                                  <tr style="height: 48px">
+                                    <td style="padding:0;"><img src="image/uuid-9bb66d32-2bce-a7c7-3f5e-f836027ca8c1.svg" style="max-height: 48px;" alt="hview_mod_wire.svg" /></td>
+                                  </tr>
+                                </table>
+                              </div>
+                            </td>
+                            <td valign="middle" class="td align-middle">
+                              <p>Model wireframe.</p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="td">
+                              <div class="mediaobject">
+                                <table class="image-viewport" style="border-collapse:collapse;border:0; ;">
+                                  <tr style="height: 48px">
+                                    <td style="padding:0;"><img src="image/uuid-eb9c0be4-0aad-ca5c-4f46-b24c5a92ef47.svg" style="max-height: 48px;" alt="hview_mod_not_vis.svg" /></td>
+                                  </tr>
+                                </table>
+                              </div>
+                            </td>
+                            <td valign="middle" class="td align-middle">
+                              <p>Model invisible.</p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="td">
+                              <div class="mediaobject"><img src="image/uuid-4449d5d7-5b1b-1153-83a8-4a0e85dfa9a6.svg" style="" alt="hview_no_coll_check.svg" /></div>
+                            </td>
+                            <td valign="middle" class="td align-middle">
+                              <p>Automatic collision checking disabled.</p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="td">
+                              <div class="mediaobject">
+                                <table class="image-viewport" style="border-collapse:collapse;border:0; ;">
+                                  <tr style="height: 48px">
+                                    <td style="padding:0;"><img src="image/uuid-cd1e8cfd-a944-9b7c-9571-8167c48506c6.svg" style="max-height: 48px;" alt="hview_coll_check.svg" /></td>
+                                  </tr>
+                                </table>
+                              </div>
+                            </td>
+                            <td valign="middle" class="td align-middle">
+                              <p>Automatic collision checking enabled.</p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="td">
+                              <div class="mediaobject">
+                                <table class="image-viewport" style="border-collapse:collapse;border:0; ;">
+                                  <tr style="height: 48px">
+                                    <td style="padding:0;"><img src="image/uuid-bea1ab5e-d4bc-0f61-2b0a-fa3d6434eb97.svg" style="max-height: 48px;" alt="hview_coll_check_opt.svg" /></td>
+                                  </tr>
+                                </table>
+                              </div>
+                            </td>
+                            <td valign="middle" class="td align-middle">
+                              <p>Enable collision checking to include the activated checks. A reverse simulation is not possible.</p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="td">
+                              <div class="mediaobject">
+                                <table class="image-viewport" style="border-collapse:collapse;border:0; ;">
+                                  <tr style="height: 48px">
+                                    <td style="padding:0;"><img src="image/uuid-1cacd5d5-0a77-261d-c796-db75ba8ec1e2.svg" style="max-height: 48px;" alt="hview_mach_struc.svg" /></td>
+                                  </tr>
+                                </table>
+                              </div>
+                            </td>
+                            <td valign="middle" class="td align-middle">
+                              <p>Open the <span class="guilabel">Machine structure</span> dialog.</p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="td">
+                              <div class="mediaobject">
+                                <table class="image-viewport" style="border-collapse:collapse;border:0; ;">
+                                  <tr style="height: 48px">
+                                    <td style="padding:0;"><img src="image/uuid-95199c75-5f9d-346c-fc49-ecf39ff94cd4.svg" style="max-height: 48px;" alt="hview_mach_vis.svg" /></td>
+                                  </tr>
+                                </table>
+                              </div>
+                            </td>
+                            <td valign="middle" class="td align-middle">
+                              <p>Machine component visible.</p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="td">
+                              <div class="mediaobject">
+                                <table class="image-viewport" style="border-collapse:collapse;border:0; ;">
+                                  <tr style="height: 48px">
+                                    <td style="padding:0;"><img src="image/uuid-e133e850-5b22-0c10-c0c0-f8cda4a578cc.svg" style="max-height: 48px;" alt="hview_mach_not_vis.svg" /></td>
+                                  </tr>
+                                </table>
+                              </div>
+                            </td>
+                            <td valign="middle" class="td align-middle">
+                              <p>Machine component invisible.</p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="td">
+                              <div class="mediaobject">
+                                <table class="image-viewport" style="border-collapse:collapse;border:0; ;">
+                                  <tr style="height: 48px">
+                                    <td style="padding:0;"><img src="image/uuid-f3d34ae5-870b-1345-6f83-984f972de829.svg" style="max-height: 48px;" alt="hview_all_mach_vis.svg" /></td>
+                                  </tr>
+                                </table>
+                              </div>
+                            </td>
+                            <td valign="middle" class="td align-middle">
+                              <p>Show all machine components.</p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="td">
+                              <div class="mediaobject">
+                                <table class="image-viewport" style="border-collapse:collapse;border:0; ;">
+                                  <tr style="height: 48px">
+                                    <td style="padding:0;"><img src="image/uuid-57afa3af-882e-5ba0-b7d6-21c68755e875.svg" style="max-height: 48px;" alt="hview_all_mach_not_vis.svg" /></td>
+                                  </tr>
+                                </table>
+                              </div>
+                            </td>
+                            <td valign="middle" class="td align-middle">
+                              <p>Hide all machine components.</p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="td">
+                              <div class="mediaobject">
+                                <table class="image-viewport" style="border-collapse:collapse;border:0; ;">
+                                  <tr style="height: 48px">
+                                    <td style="padding:0;"><img src="image/uuid-f980c7da-08b8-89fb-5b21-c2b201c43c79.svg" style="max-height: 48px;" alt="hview_tool.svg" /></td>
+                                  </tr>
+                                </table>
+                              </div>
+                            </td>
+                            <td valign="middle" class="td align-middle">
+                              <p>Tool shaded</p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="td">
+                              <div class="mediaobject">
+                                <table class="image-viewport" style="border-collapse:collapse;border:0; ;">
+                                  <tr style="height: 48px">
+                                    <td style="padding:0;"><img src="image/uuid-3579f93d-85e2-0a3a-24ba-29b8623c23b7.svg" style="max-height: 48px;" alt="hview_tool_trans.svg" /></td>
+                                  </tr>
+                                </table>
+                              </div>
+                            </td>
+                            <td valign="middle" class="td align-middle">
+                              <p>Tool transparent</p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="td">
+                              <div class="mediaobject">
+                                <table class="image-viewport" style="border-collapse:collapse;border:0; ;">
+                                  <tr style="height: 48px">
+                                    <td style="padding:0;"><img src="image/uuid-62b0a710-fadf-2ffe-e1a2-d554e6fd895b.svg" style="max-height: 48px;" alt="hview_tool_wire.svg" /></td>
+                                  </tr>
+                                </table>
+                              </div>
+                            </td>
+                            <td valign="middle" class="td align-middle">
+                              <p>Tool as wireframe</p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="td">
+                              <div class="mediaobject">
+                                <table class="image-viewport" style="border-collapse:collapse;border:0; ;">
+                                  <tr style="height: 48px">
+                                    <td style="padding:0;"><img src="image/uuid-4cb76a54-3646-6e9e-6147-36a14850e1ae.svg" style="max-height: 48px;" alt="hview_no_tool.svg" /></td>
+                                  </tr>
+                                </table>
+                              </div>
+                            </td>
+                            <td valign="middle" class="td align-middle">
+                              <p>Tool invisible</p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="td">
+                              <div class="mediaobject">
+                                <table class="image-viewport" style="border-collapse:collapse;border:0; ;">
+                                  <tr style="height: 48px">
+                                    <td style="padding:0;"><img src="image/uuid-03426555-15e8-f28e-c9fc-82736cc09515.svg" style="max-height: 48px;" alt="hview_all_toolpath.svg" /></td>
+                                  </tr>
+                                </table>
+                              </div>
+                            </td>
+                            <td valign="middle" class="td align-middle">
+                              <p>Display all toolpaths.</p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="td">
+                              <div class="mediaobject">
+                                <table class="image-viewport" style="border-collapse:collapse;border:0; ;">
+                                  <tr style="height: 48px">
+                                    <td style="padding:0;"><img src="image/uuid-aa06fee5-4259-042e-c250-a742d10bbfd1.svg" style="max-height: 48px;" alt="hview_toolpath_job.svg" /></td>
+                                  </tr>
+                                </table>
+                              </div>
+                            </td>
+                            <td valign="middle" class="td align-middle">
+                              <p>Only display the current toolpath.</p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="td">
+                              <div class="mediaobject">
+                                <table class="image-viewport" style="border-collapse:collapse;border:0; ;">
+                                  <tr style="height: 48px">
+                                    <td style="padding:0;"><img src="image/uuid-d7d655d3-0ef7-7b49-a04a-320f005a12fb.svg" style="max-height: 48px;" alt="hview_toolpath_move.svg" /></td>
+                                  </tr>
+                                </table>
+                              </div>
+                            </td>
+                            <td valign="middle" class="td align-middle">
+                              <p>Only display the current tool movement.</p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="td">
+                              <div class="mediaobject">
+                                <table class="image-viewport" style="border-collapse:collapse;border:0; ;">
+                                  <tr style="height: 48px">
+                                    <td style="padding:0;"><img src="image/uuid-7d691eb1-2a65-9ddf-2ce3-4edc5e5d6f39.svg" style="max-height: 48px;" alt="hview_no_toolpath.svg" /></td>
+                                  </tr>
+                                </table>
+                              </div>
+                            </td>
+                            <td valign="middle" class="td align-middle">
+                              <p>Do not display any toolpaths.</p>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <p><span class="guilabel">Clears all conflicts</span>: All of the conflicts displayed in the simulation (collisions and workspace violations) are deleted. This applies to the toolpaths as well as to all other visible elements in the simulation (model, machine, etc.).</p>
+                    <p><span class="guilabel">Collisions Visible</span>: Select this option to display the affected parts (machine, model, and so on) in the defined color.</p>
+                    <p><span class="guilabel">Clears collisions</span>: All of the collisions displayed in the simulation are deleted.</p>
+                    <p><span class="guilabel">Linear Axes Conflicts Visible</span>: Violations of the maximum permissible workspace are displayed in the defined color.</p>
+                    <p><span class="guilabel">Clears linear axes conflicts</span>: All of the displayed conflicts (see above) are deleted from the simulation.</p>
+                    <p><span class="guilabel">Rotary Axes Conflicts Visible</span>: Positions where the values of the machine's rotary axes are not permitted are displayed in the defined color.</p>
+                    <p>Example: A rotary axis may only move between +90° and -90°.</p>
+                    <p><span class="guilabel">Clears rotary axes conflicts</span>: All of the displayed conflicts are deleted from the simulation.</p>
+                    <div class="informaltable table-responsive">
+                      <table style="width:100%;" class="informaltable">
+                        <colgroup>
+                          <col style="width:11%;" />
+                          <col style="width:89%;" />
+                        </colgroup>
+                        <tbody>
+                          <tr>
+                            <td class="td">
+                              <div class="mediaobject">
+                                <table class="image-viewport" style="border-collapse:collapse;border:0; ;">
+                                  <tr style="height: 48px">
+                                    <td style="padding:0;"><img src="image/uuid-ba10d464-a7d3-dabe-0c94-f16cd59ec054.svg" style="max-height: 48px;" alt="hview_mach_struc2.svg" /></td>
+                                  </tr>
+                                </table>
+                              </div>
+                            </td>
+                            <td class="td">
+                              <p>Open the <span class="guilabel">Machine structure</span> dialog.</p>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <p><span class="guilabel">Part</span>: Display components available for the machine model.</p>
+                    <p><span class="guilabel">color</span>: Define the color for the machine component. Double-click the component line, then click the triangle icon to open the color selection dialog and select the required color.</p>
+                    <p><span class="guilabel">Display</span>: Define the display option for the machine component. Double-click the component line, then click the line to show the available options (Shaded, Transparent, Wireframe) and select one. Use the machine component shortcut menu (right-click) to unify the visibility, display and color for
+                    all components. Alternatively, control the visibility using the <span class="guilabel">Show all</span> and <span class="guilabel">Hide all</span> buttons.</p>
+                    <div class="informaltable table-responsive">
+                      <table style="width:100%;" class="informaltable">
+                        <colgroup>
+                          <col style="width:11%;" />
+                          <col style="width:89%;" />
+                        </colgroup>
+                        <tbody>
+                          <tr>
+                            <td class="td">
+                              <div class="mediaobject">
+                                <table class="image-viewport" style="border-collapse:collapse;border:0; ;">
+                                  <tr style="height: 48px">
+                                    <td style="padding:0;"><img src="image/uuid-ba95683f-ae19-9ad2-1de7-89afdb07b8ae.svg" style="max-height: 48px;" alt="sim_val_display.svg" /></td>
+                                  </tr>
+                                </table>
+                              </div>
+                            </td>
+                            <td valign="middle" class="td align-middle">
+                              <p>Open the <span class="guilabel">Simulation info</span> dialog.</p>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <p>The following parameters are displayed:</p>
+                  </section>
+                  <section dir="ltr" class="section internal" data-origin-id="" data-publication-date="" id="id149249">
+                    <div class="titlepage">
+                      <div>
+                        <div class="title">
+                          <h3 class="title"><span class="formal-title">General</span></h3>
+                        </div>
+                      </div>
+                    </div>
+                    <p>Movement no. / all, movement type, machining time.</p>
+                    <p>You can also obtain this information and the tool change times from the Statistics shortcut menu of the Toolpaths entry on the <span class="italic">hyper</span>VIEW browser &gt; NC-Jobs tab.</p>
+                  </section>
+                  <section dir="ltr" class="section internal" data-origin-id="" data-publication-date="" id="id149254">
+                    <div class="titlepage">
+                      <div>
+                        <div class="title">
+                          <h3 class="title"><span class="formal-title">Position</span></h3>
+                        </div>
+                      </div>
+                    </div>
+                    <p>The current position of the tool (X, Y, Z), the workspaces defined for each direction as well as workspace violations.</p>
+                  </section>
+                  <section dir="ltr" class="section internal" data-origin-id="" data-publication-date="" id="id149257">
+                    <div class="titlepage">
+                      <div>
+                        <div class="title">
+                          <h3 class="title"><span class="formal-title">Rotary axes</span></h3>
+                        </div>
+                      </div>
+                    </div>
+                    <p>The movements of the Rotation axes (if available on the respective machine model) and their workspaces.</p>
+                  </section>
+                  <section dir="ltr" class="section internal" data-origin-id="" data-publication-date="" id="id149260">
+                    <div class="titlepage">
+                      <div>
+                        <div class="title">
+                          <h3 class="title"><span class="formal-title">Tool vector</span></h3>
+                        </div>
+                      </div>
+                    </div>
+                    <p>For turning cycles, display is extended by adding the turning-specific tool vector parameters (U, V, W), as well as the feedrate and spindle RPM.</p>
+                  </section>
+                  <section dir="ltr" class="section internal" data-origin-id="" data-publication-date="" id="id149263">
+                    <div class="titlepage">
+                      <div>
+                        <div class="title">
+                          <h3 class="title"><span class="formal-title">Technology</span></h3>
+                        </div>
+                      </div>
+                    </div>
+                    <p>Displaying the tool position and workspace in the Simulation Info dialog box</p>
+                    <div class="mediaobject">
+                      <table class="image-viewport" style="border-collapse:collapse;border:0; width:461px;">
+                        <tr>
+                          <td style="padding:0;"><img src="image/uuid-027aa622-7892-efc2-ec0e-c33b7ca9942e.png" style="max-width: 461px;" alt="hyperVIEW_werkzeug_arbeitsraum.png" /></td>
+                        </tr>
+                      </table>
+                    </div>
+                    <p>(1) Maximum start and end points that were reached in the current simulation.</p>
+                    <p>(2) Defined workspace.</p>
+                    <p>(3) Current position of the tool.</p>
+                    <p>(4) Workspace violation.</p>
+                  </section>
+                </section>
+              </section>
+              <div class="footer-content">
+                <div class="section-toc section-toc-after">
+                  <div class="section-toc-title">
+                    <span class="section-toc-title-delimiter">:</span>
+                  </div>
+                </div>
+              </div>
+              <footer></footer>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

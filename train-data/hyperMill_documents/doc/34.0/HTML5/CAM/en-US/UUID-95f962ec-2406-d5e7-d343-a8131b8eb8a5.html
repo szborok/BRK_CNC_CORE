@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="x-ua-compatible" content="IE=edge" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="search" content="default" />
+  <meta name="use.ic" content="no" />
+  <meta name="tocstandalone" content="yes" />
+  <script type="text/javascript">
+  //<![CDATA[
+                        var index;
+                        var contentLanguage = 'en-US';
+                        var enterKey = 'select';
+                        
+                                        var anchoroption = true;
+                                var instantsearch_minlength = 1;
+                                                
+                                var fuse_threshold = 0.3;
+                        
+                                        var local_csh = false;
+                                
+                        var useanchorlinks = false;
+  //]]>
+  </script>
+  <title>Strategy</title>
+  <link rel="stylesheet" type="text/css" href="../css/docbook.css" />
+  <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" href="../css/bootstrap-theme.min.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style-common.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style-responsive.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style-print.css" />
+  <link rel="stylesheet" type="text/css" href="../css/font-awesome.css" />
+  <link rel="stylesheet" type="text/css" href="../css/custom.css" />
+  <link rel="stylesheet" type="text/css" href="../css/layout-custom-style.css" />
+  <script src="../js/jquery-1.10.2.min.js" type="text/javascript"></script>
+  <script src="../js/jquery-ui-1.10.3.custom.min.js" type="text/javascript"></script>
+  <script src="../js/bootstrap.min.js" type="text/javascript"></script>
+  <script src="../js/purl.js" type="text/javascript"></script>
+  <script src="../js/jquery.event.move.js" type="text/javascript"></script>
+  <script src="../js/jquery.event.swipe.js" type="text/javascript"></script>
+  <script src="../js/jquery.sticky.js" type="text/javascript"></script>
+  <script src="../js/respond.min.js" type="text/javascript"></script>
+  <script src="../js/script.js" type="text/javascript"></script>
+  <script src="js/toc.js" type="text/javascript"></script>
+  <script src="../js/create-toc.js" type="text/javascript"></script>
+  <script src="../js/clipboard.min.js" type="text/javascript"></script>
+  <script src="../js/fuse.min.js" type="text/javascript"></script>
+  <script src="../js/jquery.mark.min.js" type="text/javascript"></script>
+  <script src="../js/html5.fuse.search.js" type="text/javascript"></script>
+  <script src="js/fuzzydata.js" type="text/javascript"></script>
+  <script src="../js/csh.js" type="text/javascript"></script>
+  <script src="../js/highlight-mergehtml-plugin.js" type="text/javascript"></script>
+  <meta name="generator" content="Paligo" />
+  <link rel="prev" href="UUID-ea15bfde-07a7-f0f4-c34c-c2627ceeaeb9.html" title="Tools" />
+  <link rel="next" href="UUID-95f962ec-2406-d5e7-d343-a8131b8eb8a5.html#UUID-95f962ec-2406-d5e7-d343-a8131b8eb8a5_UUID-0cba06c5-98a6-44b3-7502-8ee374943522" title="Infeed strategy" />
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js?config=TeX-MML-AM_CHTML" async="async"></script>
+  <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+  <script type="text/javascript" src="../js/cookie-consent.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  <script type="text/javascript">
+  //<![CDATA[
+                        $(document).on('ready ajaxComplete', function() {
+                                
+                                hljs.addPlugin(mergeHTMLPlugin);
+                                hljs.configure({'ignoreUnescapedHTML': true});
+                                
+                                $('pre:not(.embedcode)').each(function() {
+                                        /**
+                                         * @type {string}
+                                         */
+                                        var language = $(this).data('language');
+
+                                        if (language === 'plaintext' || language === 'text') {
+                                                $(this).addClass(language).addClass('hljs');
+                                                return true;
+                                        }
+                                        else {
+                                                var clone = this.cloneNode(true);
+                                                hljs.highlightElement(clone);
+                                                $(this).empty().append($(clone).contents());
+                                                $(this).attr("class", $(clone).attr("class"));
+                                        }
+                                });
+                        });
+  //]]>
+  </script>
+  <style type="text/css">
+  /*<![CDATA[*/
+            div.skipnav {
+            }
+            div.skipnav a {
+                position: fixed;
+                left: -10000px;
+                top: 1.5em;
+                width: 1px;
+                height: 1px;
+                overflow: hidden;
+            }
+            div.skipnav a:focus, div.skipnav a:active, div.skipnav a:hover {
+                background: white;
+                color: black;
+                box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.5);
+                position: fixed;
+                left: 2em;
+                top: 1.5em;
+                width: auto;
+                height: auto;
+                overflow: visible;
+                text-decoration: underline;
+                z-index: 99999; /* has to be higher than the side panel */
+    }
+  /*]]>*/
+  </style>
+</head>
+<body data-link-prefix="">
+  <div class="skipnav">
+    <a href="#content-wrapper">Skip to main content</a>
+  </div>
+  <div id="page" class="clearfix">
+    <div id="header">
+      <div class="container">
+        <div id="logotype-container" class="pull-left">
+          <a href="../index.html"><img id="logotype-pageheader" src="../css/image/corporate-logo.png" alt="Corporate logotype" data-role="logotype" /></a>
+        </div>
+        <div id="pagetools-container" class="pull-right">
+          <ul id="page-tools">
+            <li class="page-tools-search"><input placeholder="Search" type="text" class="form-control" aria-label="Search" id="search" /></li>
+            <li class="page-tools-print">
+              <a href="javascript:window.print();"><span class="tool-label">Print</span><span class="glyphicon glyphicon-print"></span></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <h1 id="publication-title">CAM</h1>
+    <div id="subheader-sticky-wrapper" class="sticky-wrapper">
+      <div id="subheader">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3 toc-title">
+              <h2><a class="prev nav-icon hidden-lg hidden-md" href="UUID-ea15bfde-07a7-f0f4-c34c-c2627ceeaeb9.html"><span class="glyphicon glyphicon-chevron-left"></span></a> <a href="#toc" class="hidden mobile-nav-toggle"><span class="glyphicon glyphicon-list"></span>Table of Contents</a><span class="toc-label">Table of Contents</span><a class=
+              "next nav-icon hidden-lg hidden-md" href="UUID-95f962ec-2406-d5e7-d343-a8131b8eb8a5.html#UUID-95f962ec-2406-d5e7-d343-a8131b8eb8a5_UUID-0cba06c5-98a6-44b3-7502-8ee374943522"><span class="glyphicon glyphicon-chevron-right"></span></a></h2>
+            </div>
+            <div class="col-md-9 breadcrumb-container">
+              <ul class="breadcrumb">
+                <li class="breadcrumb-link">
+                  <span class="glyphicon glyphicon-home"></span>&nbsp;<a href="index-en-US.html">CAM</a>
+                </li>
+                <li class="breadcrumb-link">
+                  <a href="UUID-4c32e00e-243c-8e49-1e15-a8a644637a71.html">3D Machining</a>
+                </li>
+                <li class="breadcrumb-link">
+                  <a href="UUID-d374eff6-a048-f99f-c2cf-73dcbb03ea42.html">Profile Finishing</a>
+                </li>
+                <li class="breadcrumb-node">Strategy</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="main-content">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 toc-container" id="toc-wrapper">
+            <div id="toc-placeholder">
+              <div id="toc-standalone-placeholder"></div>
+            </div>
+          </div>
+          <div class="col-md-9 content-container" id="content-wrapper">
+            <a accesskey="p" class="prev pull-left prev visible-lg visible-md" id="header-navigation-prev" href="UUID-ea15bfde-07a7-f0f4-c34c-c2627ceeaeb9.html"><span class="glyphicon glyphicon-circle-arrow-left"></span>Prev</a><a accesskey="n" class="pull-right next visible-lg visible-md" id="header-navigation-next" href=
+            "UUID-95f962ec-2406-d5e7-d343-a8131b8eb8a5.html#UUID-95f962ec-2406-d5e7-d343-a8131b8eb8a5_UUID-0cba06c5-98a6-44b3-7502-8ee374943522">Next<span class="glyphicon glyphicon-circle-arrow-right"></span></a>
+            <div id="topic-content">
+              <section xml:lang="en-US" lang="en-US" dir="ltr" class="section" data-origin-id="UUID-ce963116-f2f6-25aa-6dd7-31bb688708d5" data-publication-date="" id="UUID-95f962ec-2406-d5e7-d343-a8131b8eb8a5">
+                <div class="titlepage">
+                  <div>
+                    <div class="title">
+                      <h1 class="title" style="clear: both"><span class="formal-title">Strategy</span></h1>
+                    </div>
+                  </div>
+                </div>
+                <section xml:lang="en-US" lang="en-US" dir="ltr" class="section internal" data-origin-id="" data-publication-date="" id="UUID-95f962ec-2406-d5e7-d343-a8131b8eb8a5_UUID-0cba06c5-98a6-44b3-7502-8ee374943522">
+                  <div class="titlepage">
+                    <div>
+                      <div class="title">
+                        <h2 class="title" style="clear: both"><span class="formal-title">Infeed strategy</span></h2>
+                      </div>
+                    </div>
+                  </div>
+                  <p>The following are defined in the infeed strategy area:</p>
+                  <div class="itemizedlist">
+                    <ul class="itemizedlist" style="list-style-type: disc;">
+                      <li class="listitem">
+                        <p>The profile of the tool movements via a profile definition (standard profiles, free profiles).</p>
+                      </li>
+                      <li class="listitem">
+                        <p>The type of cut for the tool (Ascending, Descending, Ascending and descending)</p>
+                      </li>
+                      <li class="listitem">
+                        <p>The infeed mode between the end point of the first milling path and the start point of the following milling path.</p>
+                      </li>
+                    </ul>
+                  </div>
+                  <p>The options that are available in the Profile definition, Type of cut and Infeed mode areas are explained in the following sections using examples.</p>
+                  <p>If a profile has not been defined, the defined boundary (strategy: Boundary curve) or the boundary for the defined milling surfaces (strategy: Milling surfaces) is used automatically as the profile.</p>
+                  <p>When the <span class="guilabel">X axis</span> and <span class="guilabel">Y axis</span> options are used, the X or Y axis of the frame is used as the guide curve.</p>
+                  <p>With all the other options, the guide curves are freely definable, which allows the milling paths to be optimally adapted to the surface.</p>
+                  <p><span class="guilabel">Machining angle</span>: Enter the angle of rotation required for machining.</p>
+                  <div class="mediaobject">
+                    <table class="image-viewport" style="border-collapse:collapse;border:0; width:461px;">
+                      <tr style="height: 212px">
+                        <td style="padding:0;"><img src="image/uuid-eb13db79-a1b1-d66f-fb19-d4f09623ed23.svg" style="max-width: 461px; max-height: 212px;" alt="3D_profilschlichten_bearbeitungswinkel.svg" /></td>
+                      </tr>
+                    </table>
+                  </div>
+                  <p>The machining and infeed directions are based on the guide curves. This setting is the standard setting.</p>
+                  <div class="informalfigure">
+                    <div class="mediaobject">
+                      <table class="image-viewport" style="border-collapse:collapse;border:0; width:638px;">
+                        <tr>
+                          <td style="padding:0;"><img src="image/uuid-021e7ae4-e303-491f-0d05-90939de2762c.svg" style="max-width: 638px;" alt="3D_profilschlichten_zustellrichtung.svg" /></td>
+                        </tr>
+                      </table>
+                    </div>
+                  </div>
+                </section>
+                <section xml:lang="en-US" lang="en-US" dir="ltr" class="section internal" data-origin-id="" data-publication-date="" id="UUID-95f962ec-2406-d5e7-d343-a8131b8eb8a5_UUID-dc84a8bc-b1ce-d22d-320e-2101b2fc9bb9">
+                  <div class="titlepage">
+                    <div>
+                      <div class="title">
+                        <h2 class="title" style="clear: both"><span class="formal-title">Reverse direction</span></h2>
+                      </div>
+                    </div>
+                  </div>
+                  <p>Both the milling and infeed direction can be customized in order to make optimal adjustments to the milling paths to the surface.</p>
+                  <p><span class="guilabel">Milling path</span>: Reverses the machining direction.</p>
+                  <p><span class="guilabel">Horizontal stepover</span>: Reverses the infeed direction.</p>
+                  <p>Via the selected directions the starting point of machining is defined as well.</p>
+                </section>
+                <section xml:lang="en-US" lang="en-US" dir="ltr" class="section internal" data-origin-id="" data-publication-date="" id="UUID-95f962ec-2406-d5e7-d343-a8131b8eb8a5_UUID-3fd2e961-6a47-ed6a-2fba-51e281c0a130">
+                  <div class="titlepage">
+                    <div>
+                      <div class="title">
+                        <h2 class="title" style="clear: both"><span class="formal-title">X axis, Y axis</span></h2>
+                      </div>
+                    </div>
+                  </div>
+                  <p>The machining area is to be limited via a boundary. The guide curve for machining is the X axis. In the default setting, the first milling path runs in the positive X direction and the first infeed movement is executed to the left of this, that is, in the positive Y direction.</p>
+                  <div class="mediaobject">
+                    <table class="image-viewport" style="border-collapse:collapse;border:0; width:461px;">
+                      <tr style="height: 216px">
+                        <td style="padding:0;"><img src="image/uuid-48c18401-e408-30a5-0e10-d1c775f98af6.svg" style="max-width: 461px; max-height: 216px;" alt="3D_profilschlichten_standardprofil.svg" /></td>
+                      </tr>
+                    </table>
+                  </div>
+                  <section dir="ltr" class="section internal" data-origin-id="" data-publication-date="" id="id114598">
+                    <div class="titlepage">
+                      <div>
+                        <div class="title">
+                          <h3 class="title"><span class="formal-title">Reverse direction</span></h3>
+                        </div>
+                      </div>
+                    </div>
+                    <p>Infeed strategy <span class="guilabel">X axis</span> (A), <span class="guilabel">Y axis</span> (B), Zigzag direct machining.</p>
+                    <p>(1) Without reversal, (2) <span class="guilabel">Milling path</span> reversed, (3) <span class="guilabel">Horizontal stepover</span> reversed, (4) Both directions reversed.</p>
+                    <div class="informalfigure">
+                      <div class="mediaobject">
+                        <table class="image-viewport" style="border-collapse:collapse;border:0; width:638px;">
+                          <tr style="height: 266px">
+                            <td style="padding:0;"><img src="image/uuid-9e185c3e-84b5-a475-1bfc-a0f96c2310f7.svg" style="max-width: 638px; max-height: 266px;" alt="3D_iso_bearbeitung_richtung_umkehren1.svg" /></td>
+                          </tr>
+                        </table>
+                      </div>
+                    </div>
+                    <div class="informalfigure">
+                      <div class="mediaobject">
+                        <table class="image-viewport" style="border-collapse:collapse;border:0; width:638px;">
+                          <tr style="height: 266px">
+                            <td style="padding:0;"><img src="image/uuid-56f77ce4-d5cb-d465-adf8-fdce0f10599d.svg" style="max-width: 638px; max-height: 266px;" alt="3D_profilschlichten_richtung_umkehren2.svg" /></td>
+                          </tr>
+                        </table>
+                      </div>
+                    </div>
+                  </section>
+                  <section dir="ltr" class="section internal" data-origin-id="" data-publication-date="" id="id114614">
+                    <div class="titlepage">
+                      <div>
+                        <div class="title">
+                          <h3 class="title"><span class="formal-title">XY optimization</span></h3>
+                        </div>
+                      </div>
+                    </div>
+                    <p>Areas that are not optimally machined with the selected profile direction (X or Y axis) can be optionally machined in a further operation in the opposite profile direction. The XY optimization can either be carried out without considering the surface steepness (option: <span class="guilabel">Standard</span>) or dependent on
+                    the slope (option: <span class="guilabel">Slope mode</span>).</p>
+                    <p><span class="bold"><strong>Example</strong></span>: The following options are enabled in the example:</p>
+                    <p>The machining area was limited by means of <span class="guilabel">Milling surfaces</span> and an automatic milling surface extension.</p>
+                    <div class="informalfigure" id="UUID-95f962ec-2406-d5e7-d343-a8131b8eb8a5_figure-idm231994567244406">
+                      <div class="mediaobject">
+                        <table class="image-viewport" style="border-collapse:collapse;border:0; width:638px;">
+                          <tr>
+                            <td style="padding:0;"><img src="image/uuid-b7bb4785-077b-7c95-2db6-50e8e2a3c322.png" style="max-width: 638px;" alt="3D_profilschlichten_strategie_xy_optimierung_Neigungsabhaengig_bea_bereich.png" /></td>
+                          </tr>
+                        </table>
+                      </div>
+                    </div>
+                    <p>The <span class="guilabel">X axis</span> option is activated as the infeed strategy.</p>
+                    <p>The <span class="guimenuitem">Machining mode</span> → <span class="guisubmenu">Slope mode</span> option is enabled by default for the <span class="guimenuitem">XY optimization</span> → <span class="guisubmenu">Slope mode</span> function. The slope angle for the surface steepness is set to 50° (option: <span class=
+                    "guilabel">To</span>).</p>
+                    <p><span class="guilabel">Off</span>: No XY optimization takes place.</p>
+                    <div class="informalfigure" id="UUID-95f962ec-2406-d5e7-d343-a8131b8eb8a5_figure-idm231992991724196">
+                      <div class="mediaobject">
+                        <table class="image-viewport" style="border-collapse:collapse;border:0; width:638px;">
+                          <tr>
+                            <td style="padding:0;"><img src="image/uuid-9392d550-7690-0be8-dfe6-ae1cddd0091c.png" style="max-width: 638px;" alt="3D_profilschlichten_strategie_xy_optimierung_aus.png" /></td>
+                          </tr>
+                        </table>
+                      </div>
+                    </div>
+                    <p><span class="guilabel">Standard</span>: In order to completely machine even the steep areas, an additional operation is optionally carried out in the opposite direction to the selected profile direction. Slope-dependent machining is not possible. <span class="guilabel">Before</span> is used to perform the optimization first,
+                    that is, machining takes place in the opposite direction to the selected profile direction and then in the standard direction, using the <span class="guilabel">After</span> option, the optimization is performed after the standard machining.</p>
+                    <div class="informalfigure" id="UUID-95f962ec-2406-d5e7-d343-a8131b8eb8a5_figure-idm231993040696852">
+                      <div class="informalfigure" id="UUID-95f962ec-2406-d5e7-d343-a8131b8eb8a5_figure-idm231993047179963">
+                        <div class="mediaobject">
+                          <table class="image-viewport" style="border-collapse:collapse;border:0; width:638px;">
+                            <tr>
+                              <td style="padding:0;"><img src="image/uuid-15f7323a-26e5-e62d-0877-7c9acded48e6.png" style="max-width: 638px;" alt="3D_profilschlichten_strategie_xy_optimierung_standard_vor_nach.png" /></td>
+                            </tr>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                    <p>If the <span class="guilabel">Only optimization</span> option is selected, no machining takes place in the standard direction.</p>
+                    <div class="informalfigure" id="UUID-95f962ec-2406-d5e7-d343-a8131b8eb8a5_figure-idm231993071858657">
+                      <div class="mediaobject">
+                        <table class="image-viewport" style="border-collapse:collapse;border:0; width:638px;">
+                          <tr>
+                            <td style="padding:0;"><img src="image/uuid-d9ebaa7e-7970-74f9-ae43-ccf80c822a38.png" style="max-width: 638px;" alt="3D_profilschlichten_strategie_xy_optimierung_standard_nur_opt.png" /></td>
+                          </tr>
+                        </table>
+                      </div>
+                    </div>
+                    <p><span class="guilabel">Slope mode</span>: As in the case of the standard option, an additional operation can be optionally defined. Here, machining is carried out dependent on the surface slope, which is measured orthogonally to the machining direction.</p>
+                    <p>In the <span class="guilabel">Basic path</span>, any pitches are accepted in the machining direction, orthogonally only up to the angle that is defined in the <span class="guilabel">To</span> option. Steeply sloping or rising surfaces transverse to the machining direction are therefore not machined in this step. In the
+                    optimization step, the areas omitted in the basic toolpath are machined with a separate toolpath, so that complete machining is easily achieved.</p>
+                    <p>Optimization either takes place before (option: <span class="guilabel">Before</span>) or after the machining (option: <span class="guilabel">After</span>).</p>
+                    <div class="informalfigure" id="UUID-95f962ec-2406-d5e7-d343-a8131b8eb8a5_figure-idm231993089822616">
+                      <div class="mediaobject">
+                        <table class="image-viewport" style="border-collapse:collapse;border:0; width:638px;">
+                          <tr>
+                            <td style="padding:0;"><img src="image/uuid-7ec10f5b-8e54-7935-05e8-357dd16c9bef.png" style="max-width: 638px;" alt="3D_profilschlichten_strategie_xy_optimierung_Neigungsabhaengig_vor_nach.png" /></td>
+                          </tr>
+                        </table>
+                      </div>
+                    </div>
+                    <p><span class="guilabel">Only optimization</span>: Machining of the steep surface areas.</p>
+                    <div class="informalfigure" id="UUID-95f962ec-2406-d5e7-d343-a8131b8eb8a5_figure-idm231993081478611">
+                      <div class="mediaobject">
+                        <table class="image-viewport" style="border-collapse:collapse;border:0; width:638px;">
+                          <tr>
+                            <td style="padding:0;"><img src="image/uuid-b81d6fb0-261a-5276-d072-1a34cbdc7117.png" style="max-width: 638px;" alt="3D_profilschlichten_strategie_xy_optimierung_Neigungsabhaengig_nur_opt.png" /></td>
+                          </tr>
+                        </table>
+                      </div>
+                    </div>
+                    <p>When the <span class="guilabel">Basic path only</span> option is used, no optimization is performed, which means that the machining can also be split into two different jobs.</p>
+                    <div class="informalfigure" id="UUID-95f962ec-2406-d5e7-d343-a8131b8eb8a5_figure-idm231993093468201">
+                      <div class="mediaobject">
+                        <table class="image-viewport" style="border-collapse:collapse;border:0; width:638px;">
+                          <tr>
+                            <td style="padding:0;"><img src="image/uuid-fa71d852-514f-37de-4ab0-a38208da4947.png" style="max-width: 638px;" alt="3D_profilschlichten_strategie_xy_optimierung_Neigungsabhaengig_nur_basis.png" /></td>
+                          </tr>
+                        </table>
+                      </div>
+                    </div>
+                    <p>Machining takes place in the transition area between steep and non-steep areas <span class="bold"><strong>always</strong></span> with a smooth overlap (the <span class="guilabel">Smooth overlap</span> option is enabled by default).</p>
+                  </section>
+                  <section dir="ltr" class="section internal" data-origin-id="" data-publication-date="" id="id114685">
+                    <div class="titlepage">
+                      <div>
+                        <div class="title">
+                          <h3 class="title"><span class="formal-title">Machining mode</span></h3>
+                        </div>
+                      </div>
+                    </div>
+                    <p>The machining of surfaces with a large slope angle frequently leads to unsatisfactory results during Profile Finishing as a large amount of rest material remains. To save machining time, steep surface areas can be optionally excluded from machining, in dependence on their slope, by specifying a maximum surface slope
+                    angle.</p>
+                    <p><span class="guilabel">Slope mode</span>: Enable if slope-dependent machining should take place and use <span class="guilabel">From</span> to define the lower limit and <span class="guilabel">To</span> to define the upper limit of the surface slope of the surfaces to be machined.</p>
+                    <div dir="ltr" class="note">
+                      <h3 class="title">Note</h3>
+                      <p>Slope-dependent machining is only possible with bullnose end mills and ball mills.</p>
+                    </div>
+                    <p><span class="guilabel">Grouping toolpaths</span>: Machining areas are combined and the number of fast travel movements is reduced, particularly in the case of nested boundaries or in slope-dependent machining, if several milling areas have been defined.</p>
+                    <p>(1) Option not activated, (2) Option activated.</p>
+                    <div class="informalfigure">
+                      <div class="mediaobject">
+                        <table class="image-viewport" style="border-collapse:collapse;border:0; width:638px;">
+                          <tr style="height: 249px">
+                            <td style="padding:0;"><img src="image/uuid-babcedd9-b9e1-0997-71d6-ac51731918e6.svg" style="max-width: 638px; max-height: 249px;" alt="3D_profilschlichten_werkzeugwege_sortieren.svg" /></td>
+                          </tr>
+                        </table>
+                      </div>
+                    </div>
+                    <p><span class="guilabel">Smooth overlap</span>: Only available for slope dependent machining. Enable if you want the toolpaths of flat and steep areas to overlap. The overlap (1) ensures a very high level of surface quality in the transition area between flat and steep surfaces. (2) Transition area activated, (3) Transition
+                    area not activated.</p>
+                    <p>The overlap area is visualized in the graphic for illustrative purposes only. This area is not graphically highlighted in the model.</p>
+                    <p>(4) 3D Profile Finishing, (5) 3D Z Level Shape Finishing</p>
+                    <div class="informalfigure">
+                      <div class="mediaobject">
+                        <table class="image-viewport" style="border-collapse:collapse;border:0; width:638px;">
+                          <tr>
+                            <td style="padding:0;"><img src="image/uuid-260901b9-3911-79b6-50ae-a4670ffe583d.svg" style="max-width: 638px;" alt="3D_profilschlichten_neigungsabhaengig_uebergang.svg" /></td>
+                          </tr>
+                        </table>
+                      </div>
+                    </div>
+                  </section>
+                </section>
+                <section xml:lang="en-US" lang="en-US" dir="ltr" class="section internal" data-origin-id="" data-publication-date="" id="UUID-95f962ec-2406-d5e7-d343-a8131b8eb8a5_UUID-ab9ee33d-27d0-1ace-c478-a7a1d1ba0bdf">
+                  <div class="titlepage">
+                    <div>
+                      <div class="title">
+                        <h2 class="title" style="clear: both"><span class="formal-title">Offset</span></h2>
+                      </div>
+                    </div>
+                  </div>
+                  <p>A free profile is used as guide curve (1). The toolpaths are computed according to the horizontal stepover and are equidistant to the course and length of the guide curve. For open guide curves, the machining area is limited with a boundary (2). In the default setting, the first milling path runs in the direction of the guide
+                  curve and the first infeed movement is executed to the left of the first milling path.</p>
+                  <div class="mediaobject">
+                    <table class="image-viewport" style="border-collapse:collapse;border:0; width:461px;">
+                      <tr style="height: 248px">
+                        <td style="padding:0;"><img src="image/uuid-b078afc0-536d-0c95-1ab7-e2dddb971b60.svg" style="max-width: 461px; max-height: 248px;" alt="3D_profilschlichten_zustellstrategie_offset.svg" /></td>
+                      </tr>
+                    </table>
+                  </div>
+                  <p>With closed guide curves, machining is from the outside in (1). In the default setting, it is from the inside out (2). If the boundary is a closed guide curve, you can execute 3D pocketing.</p>
+                  <div class="mediaobject">
+                    <table class="image-viewport" style="border-collapse:collapse;border:0; width:461px;">
+                      <tr style="height: 266px">
+                        <td style="padding:0;"><img src="image/uuid-6c2148c1-6211-3484-6ba0-636615c1b9ce.svg" style="max-width: 461px; max-height: 266px;" alt="3D_profilschlichten_geschlossene_leitlinie.svg" /></td>
+                      </tr>
+                    </table>
+                  </div>
+                </section>
+                <section xml:lang="en-US" lang="en-US" dir="ltr" class="section internal" data-origin-id="" data-publication-date="" id="UUID-95f962ec-2406-d5e7-d343-a8131b8eb8a5_UUID-3ac0f524-2f50-b1f4-c816-02e0065126ee">
+                  <div class="titlepage">
+                    <div>
+                      <div class="title">
+                        <h2 class="title" style="clear: both"><span class="formal-title">Normal</span></h2>
+                      </div>
+                    </div>
+                  </div>
+                  <p>Profiles are calculated perpendicular to the guide curve (1). The limiting boundary determines the profile length (2). In the default setting, the first milling path runs in the direction of the normal to the left of the guide curve and the horizontal stepover is executed in the direction of the guide curve. Particularly
+                  suitable for rest material areas in steep surfaces or recessed grounds.</p>
+                  <p>A strong bend in the guide curve can result in overlaps of the normal line profiles.</p>
+                  <div class="mediaobject">
+                    <table class="image-viewport" style="border-collapse:collapse;border:0; width:461px;">
+                      <tr style="height: 248px">
+                        <td style="padding:0;"><img src="image/uuid-48bacbe6-ba3b-c5dd-0848-8104b6652217.svg" style="max-width: 461px; max-height: 248px;" alt="3D_profilschlichten_normalenprofil.svg" /></td>
+                      </tr>
+                    </table>
+                  </div>
+                </section>
+                <section xml:lang="en-US" lang="en-US" dir="ltr" class="section internal" data-origin-id="" data-publication-date="" id="UUID-95f962ec-2406-d5e7-d343-a8131b8eb8a5_UUID-aeb125df-834d-3a54-4957-b4d7df86d4bf">
+                  <div class="titlepage">
+                    <div>
+                      <div class="title">
+                        <h2 class="title" style="clear: both"><span class="formal-title">Ruled</span></h2>
+                      </div>
+                    </div>
+                  </div>
+                  <p>Ruled profiles require two guide curves that do not intersect and that have the same direction.</p>
+                  <section dir="ltr" class="section internal" data-origin-id="" data-publication-date="" id="id114729">
+                    <div class="titlepage">
+                      <div>
+                        <div class="title">
+                          <h3 class="title"><span class="formal-title">Reverse direction</span></h3>
+                        </div>
+                      </div>
+                    </div>
+                    <p>If the guide curves are in an opposed direction, reverse the direction of one guide curve using the <span class="guilabel">1st profile</span> or <span class="guilabel">2nd profile</span> option.</p>
+                    <p>In the default setting, the first milling path runs from the inner (shorter) to the outer (longer) guide curve (1) and the horizontal stepover is applied to the outer (longer) guide curve (2).</p>
+                    <div class="mediaobject">
+                      <table class="image-viewport" style="border-collapse:collapse;border:0; width:461px;">
+                        <tr style="height: 212px">
+                          <td style="padding:0;"><img src="image/uuid-3a0b3acd-9e93-aa0c-5077-fac945789fcb.svg" style="max-width: 461px; max-height: 212px;" alt="3D_profilschlichten_regelprofil.svg" /></td>
+                        </tr>
+                      </table>
+                    </div>
+                    <p>This type of machining defines a natural limitation between the two guide curves. In addition, a defined boundary limits the machining area.</p>
+                    <p>Use the tool reference parameters (Boundary dialog page) to control the behavior of the tool at the guide curves. A boundary does not have to be defined.</p>
+                    <p>Application areas: Finishing of corners, Machining of symmetrical parts.</p>
+                    <p>If the internal guideline is defined as a point, and the outer guideline as a closed contour, machining is executed radially (1).</p>
+                    <div class="mediaobject">
+                      <table class="image-viewport" style="border-collapse:collapse;border:0; width:638px;">
+                        <tr style="height: 248px">
+                          <td style="padding:0;"><img src="image/uuid-98a06f5b-e5b1-97c9-61c9-91c5ddff0163.svg" style="max-width: 638px; max-height: 248px;" alt="3D_profilschlichten_strahlenfoermige_bearbeitung.svg" /></td>
+                        </tr>
+                      </table>
+                    </div>
+                  </section>
+                </section>
+                <section xml:lang="en-US" lang="en-US" dir="ltr" class="section internal" data-origin-id="" data-publication-date="" id="UUID-95f962ec-2406-d5e7-d343-a8131b8eb8a5_UUID-a35b7973-6b1e-4443-39c6-9d6d6a03780c">
+                  <div class="titlepage">
+                    <div>
+                      <div class="title">
+                        <h2 class="title" style="clear: both"><span class="formal-title">Flow profile</span></h2>
+                      </div>
+                    </div>
+                  </div>
+                  <p>Two guide curves (1, 2), which do not intersect and that have the same direction, are to be defined as profiles. If the guide curves are in an opposed direction, reverse the direction of one guide curve.</p>
+                  <div class="mediaobject">
+                    <table class="image-viewport" style="border-collapse:collapse;border:0; width:461px;">
+                      <tr style="height: 199px">
+                        <td style="padding:0;"><img src="image/uuid-599687ee-225b-79a4-f10e-573f2e16a349.svg" style="max-width: 461px; max-height: 199px;" alt="3D_profilschlichten_fliessend.svg" /></td>
+                      </tr>
+                    </table>
+                  </div>
+                  <section dir="ltr" class="section internal" data-origin-id="" data-publication-date="" id="id114751">
+                    <div class="titlepage">
+                      <div>
+                        <div class="title">
+                          <h3 class="title"><span class="formal-title">Reverse direction</span></h3>
+                        </div>
+                      </div>
+                    </div>
+                    <p>If the guide curves are in an opposed direction, reverse the direction of one guide curve using the <span class="guilabel">1st profile</span> or <span class="guilabel">2nd profile</span> option.</p>
+                    <p>In the case of closed curves, the start positions must be aligned, that is, are not displaced from one another. In the default setting, the first milling path runs on the inner (shorter) guide curve and the first infeed is executed to the left of the first milling path.</p>
+                  </section>
+                  <section dir="ltr" class="section internal" data-origin-id="" data-publication-date="" id="id114757">
+                    <div class="titlepage">
+                      <div>
+                        <div class="title">
+                          <h3 class="title"><span class="formal-title">Synchronize toolpaths</span></h3>
+                        </div>
+                      </div>
+                    </div>
+                    <p><span class="guilabel">synchronization lines</span> (1, 2): <span class="guilabel"></span>Connection lines or curves between the two guide curves (3, 4) that influence the calculation of the distances on the inner guide curve. Surface machining can be controlled and the infeed (stepover) distance adjusted, via a variable
+                    arrangement of the synchronization lines.</p>
+                    <div class="mediaobject">
+                      <table class="image-viewport" style="border-collapse:collapse;border:0; width:461px;">
+                        <tr style="height: 216px">
+                          <td style="padding:0;"><img src="image/uuid-8053d404-5043-e922-70af-c786790f2421.svg" style="max-width: 461px; max-height: 216px;" alt="3D_profilschlichten_bahnen_synchronisieren.svg" /></td>
+                        </tr>
+                      </table>
+                    </div>
+                  </section>
+                </section>
+                <section xml:lang="en-US" lang="en-US" dir="ltr" class="section internal" data-origin-id="" data-publication-date="" id="UUID-95f962ec-2406-d5e7-d343-a8131b8eb8a5_UUID-841c2f11-b86d-a590-9a8a-56e8f0704fc3">
+                  <div class="titlepage">
+                    <div>
+                      <div class="title">
+                        <h2 class="title" style="clear: both"><span class="formal-title">Guide curve</span></h2>
+                      </div>
+                    </div>
+                  </div>
+                  <p>Machining on a guide curve or in a narrow strip parallel to a guide curve. Any 2D or 3D curves and splines can be used as guide curves. More than one guide curve are permitted per cycle. The guide curve is treated as the positive X axis.</p>
+                  <div class="mediaobject">
+                    <table class="image-viewport" style="border-collapse:collapse;border:0; width:461px;">
+                      <tr style="height: 248px">
+                        <td style="padding:0;"><img src="image/uuid-cc9e7f02-dcc4-691f-7e46-bef491a3e113.svg" style="max-width: 461px; max-height: 248px;" alt="3D_profilschlichten_leitkurve.svg" /></td>
+                      </tr>
+                    </table>
+                  </div>
+                  <section dir="ltr" class="section internal" data-origin-id="" data-publication-date="" id="id114771">
+                    <div class="titlepage">
+                      <div>
+                        <div class="title">
+                          <h3 class="title"><span class="formal-title">Offset area</span></h3>
+                        </div>
+                      </div>
+                    </div>
+                    <p>Use the <span class="guilabel">from</span> and <span class="guilabel">to</span> parameters to define a positive (X+) or negative (X-) distance to the guide curve, within which machining will take place. If <span class="guilabel">from</span> and <span class="guilabel">to</span> are identical, only one path is machined.</p>
+                    <div class="informalfigure">
+                      <div class="mediaobject"><img src="image/uuid-e4943de6-b755-845d-240d-d4166027e26b.svg" style="" alt="3D_profilschlichten_leitkurve_offsetbereich.svg" /></div>
+                    </div>
+                  </section>
+                </section>
+                <section xml:lang="en-US" lang="en-US" dir="ltr" class="section internal" data-origin-id="" data-publication-date="" id="UUID-95f962ec-2406-d5e7-d343-a8131b8eb8a5_UUID-32bca07a-a66e-147f-fe65-e994eac28536">
+                  <div class="titlepage">
+                    <div>
+                      <div class="title">
+                        <h2 class="title" style="clear: both"><span class="formal-title">Pocket</span></h2>
+                      </div>
+                    </div>
+                  </div>
+                  <p>Pre-machined pockets are finished with the pocket profile. Closed 3D contours can be used as the profile. One or more pocket profiles can be defined per cycle. When pocket profiles are inside one another, island detection is automatic.</p>
+                  <p><span class="guilabel">Fillet radius</span>: Changes in direction within the toolpaths are rounded with the specified radius.</p>
+                  <p>Pocket profiles are always machined contour-parallel with climb or conventional milling.</p>
+                  <section dir="ltr" class="section internal" data-origin-id="" data-publication-date="" id="id114788">
+                    <div class="titlepage">
+                      <div>
+                        <div class="title">
+                          <h3 class="title"><span class="formal-title">Infeed direction</span></h3>
+                        </div>
+                      </div>
+                    </div>
+                    <p>Use the <span class="guilabel">Inside-out</span> or <span class="guilabel">Outside-in</span> parameter to adapt the infeed direction to the contour to be machined.</p>
+                  </section>
+                  <section dir="ltr" class="section internal" data-origin-id="" data-publication-date="" id="id114793">
+                    <div class="titlepage">
+                      <div>
+                        <div class="title">
+                          <h3 class="title"><span class="formal-title">Cutting mode</span></h3>
+                        </div>
+                      </div>
+                    </div>
+                    <p>Use the <span class="guilabel">Climb milling</span> or <span class="guilabel">Conventional milling</span> parameter to adapt the cutting mode to the contour to be machined.</p>
+                  </section>
+                  <section dir="ltr" class="section internal" data-origin-id="" data-publication-date="" id="id114798">
+                    <div class="titlepage">
+                      <div>
+                        <div class="title">
+                          <h3 class="title"><span class="formal-title">Pre-machined contour</span></h3>
+                        </div>
+                      </div>
+                    </div>
+                    <p><span class="guilabel">Offset</span> (1): Existing material width on the machining contour in connection with pre-machined pockets.</p>
+                    <div class="mediaobject">
+                      <table class="image-viewport" style="border-collapse:collapse;border:0; width:461px;">
+                        <tr style="height: 212px">
+                          <td style="padding:0;"><img src="image/uuid-e4a2ec92-943c-6171-77b9-5b2cc09f850c.svg" style="max-width: 461px; max-height: 212px;" alt="3D_profilschlichten_taschenprofil.svg" /></td>
+                        </tr>
+                      </table>
+                    </div>
+                  </section>
+                </section>
+                <section xml:lang="en-US" lang="en-US" dir="ltr" class="section internal" data-origin-id="" data-publication-date="" id="UUID-95f962ec-2406-d5e7-d343-a8131b8eb8a5_UUID-a979078e-62f3-b4fd-828f-43c8090a6b68">
+                  <div class="titlepage">
+                    <div>
+                      <div class="title">
+                        <h2 class="title" style="clear: both"><span class="formal-title">Type of cut</span></h2>
+                      </div>
+                    </div>
+                  </div>
+                  <p>When the type of cut is set to <span class="guilabel">Ascending</span>, upward cutting takes place. Application: Roughing close to the surface to remove material (allowance) from a preceding roughing operation (1).</p>
+                  <p>When the type of cut is set to <span class="guilabel">Descending</span>, drill cutting takes place. Application: Recess machining of steep walls (2).</p>
+                  <p>When the type of cut is set to <span class="guilabel">Up and down</span>, the milling path follows the surface (3) of the model. Standard method for Finishing. The type of cut does not apply to pocket profile.</p>
+                  <div class="informalfigure">
+                    <div class="mediaobject">
+                      <table class="image-viewport" style="border-collapse:collapse;border:0; ;">
+                        <tr style="height: 249px">
+                          <td style="padding:0;"><img src="image/uuid-621643fd-c2b0-92e4-ff8b-fee75adc1e56.svg" style="max-height: 249px;" alt="3D_profilschlichten_schnittart.svg" /></td>
+                        </tr>
+                      </table>
+                    </div>
+                  </div>
+                </section>
+                <section xml:lang="en-US" lang="en-US" dir="ltr" class="section internal" data-origin-id="" data-publication-date="" id="UUID-95f962ec-2406-d5e7-d343-a8131b8eb8a5_UUID-7f4e4c5d-b622-c681-3bb7-38478810e46e">
+                  <div class="titlepage">
+                    <div>
+                      <div class="title">
+                        <h2 class="title" style="clear: both"><span class="formal-title">Infeed mode</span></h2>
+                      </div>
+                    </div>
+                  </div>
+                  <p>The infeed mode describes the type of horizontal stepover between the end point of a milling path and the start point of the following path. The Infeed mode does not apply to the Pocket profile.</p>
+                  <p>With the options <span class="guilabel">Zigzag direct</span> and <span class="guilabel">Zigzag smooth</span>, the machining direction changes after each passed profile. An approach macro is used for the infeed to the first milling path and a retract macro is used for retraction after the last milling path.</p>
+                  <div class="mediaobject">
+                    <table class="image-viewport" style="border-collapse:collapse;border:0; ;">
+                      <tr style="height: 233px">
+                        <td style="padding:0;"><img src="image/uuid-26e4d931-a0d8-21b3-8133-97f1c555dfec.svg" style="max-height: 233px;" alt="3D_profilschlichten_zustellmodus_zickzack.svg" /></td>
+                      </tr>
+                    </table>
+                  </div>
+                  <div dir="ltr" class="note">
+                    <h3 class="title">Note</h3>
+                    <p>If the linear movement would cause damage to the workpiece, the system guides the tool with surface contact (no material being removed) around the workpiece.</p>
+                  </div>
+                  <p><span class="guilabel">Zigzag direct</span>: If no return macro is enabled (1), the infeed movement is carried out on the shortest path in the machining feedrate (G1) on the surface. If a return macro is enabled (2), every retract and infeed movement is corrected by the selected retract and approach macro. Depending on the
+                  defined retract mode, the horizontal stepover occurs at the clearance distance in G1 or at the clearance plane in G0.</p>
+                  <div class="informalfigure">
+                    <div class="mediaobject">
+                      <table class="image-viewport" style="border-collapse:collapse;border:0; ;">
+                        <tr style="height: 249px">
+                          <td style="padding:0;"><img src="image/uuid-96706165-36db-0f00-c25f-3924beecfcce.svg" style="max-height: 249px;" alt="3D_profilschlichten_zustellmodus_zickzack2.svg" /></td>
+                        </tr>
+                      </table>
+                    </div>
+                  </div>
+                  <p><span class="guilabel">Zigzag smooth</span>: The infeed between the milling paths is the shape of loop. These loops reduce jolting and the mechanical load on the machine is reduced. This strategy is primarily intended for high-speed milling. The limiting boundary may be traversed when moving along the loops.</p>
+                  <div class="informalfigure">
+                    <div class="mediaobject">
+                      <table class="image-viewport" style="border-collapse:collapse;border:0; ;">
+                        <tr style="height: 216px">
+                          <td style="padding:0;"><img src="image/uuid-43870ccd-c27d-3d0f-2198-1503e5420b0d.svg" style="max-height: 216px;" alt="3D_profilschlichten_zustellmodus_zickzack3.svg" /></td>
+                        </tr>
+                      </table>
+                    </div>
+                  </div>
+                  <p>With the <span class="guilabel">Diagonal</span> and <span class="guilabel">Parallel</span> options, the machining direction is always the same and defined by the profile direction. The horizontal stepover is performed relative to the defined retract mode to the security clearance in G1 or security plane in G0. Each retract and
+                  infeed movement is corrected by the selected approach and retract macro.</p>
+                  <p>When the <span class="guilabel">Diagonal</span> option (1) is used, the infeed is diagonal from the end point to the next start point. When the <span class="guilabel">Parallel</span> (2) option is used, the tool initially retracts parallel to the generated milling path to the start point of the (vertical) infeed movement. This
+                  is followed by a horizontal stepover using the shortest distance possible.</p>
+                  <div class="informalfigure">
+                    <div class="mediaobject">
+                      <table class="image-viewport" style="border-collapse:collapse;border:0; width:598px;">
+                        <tr style="height: 251px">
+                          <td style="padding:0;"><img src="image/uuid-4be96b82-0028-dca4-6e5a-d85471a79373.svg" style="max-width: 598px; max-height: 251px;" alt="3D_profilschlichten_zustellmodus_oneway.svg" /></td>
+                        </tr>
+                      </table>
+                    </div>
+                  </div>
+                </section>
+              </section>
+              <div class="footer-content">
+                <div class="section-toc section-toc-after">
+                  <div class="section-toc-title">
+                    <span class="section-toc-title-delimiter">:</span>
+                  </div>
+                </div>
+              </div>
+              <footer></footer>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

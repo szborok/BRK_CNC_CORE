@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="x-ua-compatible" content="IE=edge" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="search" content="default" />
+  <meta name="use.ic" content="no" />
+  <meta name="tocstandalone" content="yes" />
+  <script type="text/javascript">
+  //<![CDATA[
+                        var index;
+                        var contentLanguage = 'en-US';
+                        var enterKey = 'select';
+                        
+                                        var anchoroption = true;
+                                var instantsearch_minlength = 1;
+                                                
+                                var fuse_threshold = 0.3;
+                        
+                                        var local_csh = false;
+                                
+                        var useanchorlinks = false;
+  //]]>
+  </script>
+  <title>Create geometry with the geometry editor</title>
+  <link rel="stylesheet" type="text/css" href="../css/docbook.css" />
+  <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" href="../css/bootstrap-theme.min.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style-common.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style-responsive.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style-print.css" />
+  <link rel="stylesheet" type="text/css" href="../css/font-awesome.css" />
+  <link rel="stylesheet" type="text/css" href="../css/custom.css" />
+  <link rel="stylesheet" type="text/css" href="../css/layout-custom-style.css" />
+  <script src="../js/jquery-1.10.2.min.js" type="text/javascript"></script>
+  <script src="../js/jquery-ui-1.10.3.custom.min.js" type="text/javascript"></script>
+  <script src="../js/bootstrap.min.js" type="text/javascript"></script>
+  <script src="../js/purl.js" type="text/javascript"></script>
+  <script src="../js/jquery.event.move.js" type="text/javascript"></script>
+  <script src="../js/jquery.event.swipe.js" type="text/javascript"></script>
+  <script src="../js/jquery.sticky.js" type="text/javascript"></script>
+  <script src="../js/respond.min.js" type="text/javascript"></script>
+  <script src="../js/script.js" type="text/javascript"></script>
+  <script src="js/toc.js" type="text/javascript"></script>
+  <script src="../js/create-toc.js" type="text/javascript"></script>
+  <script src="../js/clipboard.min.js" type="text/javascript"></script>
+  <script src="../js/fuse.min.js" type="text/javascript"></script>
+  <script src="../js/jquery.mark.min.js" type="text/javascript"></script>
+  <script src="../js/html5.fuse.search.js" type="text/javascript"></script>
+  <script src="js/fuzzydata.js" type="text/javascript"></script>
+  <script src="../js/csh.js" type="text/javascript"></script>
+  <script src="../js/highlight-mergehtml-plugin.js" type="text/javascript"></script>
+  <meta name="generator" content="Paligo" />
+  <link rel="prev" href="UUID-980f9177-7858-be46-cc35-8c87146e762e.html#UUID-980f9177-7858-be46-cc35-8c87146e762e_section-idm53110631692778" title="KM4X" />
+  <link rel="next" href="UUID-f6738cf7-7587-10da-da6c-512a7e30b218.html" title="12.18.&nbsp;Define NC tool" />
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js?config=TeX-MML-AM_CHTML" async="async"></script>
+  <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+  <script type="text/javascript" src="../js/cookie-consent.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  <script type="text/javascript">
+  //<![CDATA[
+                        $(document).on('ready ajaxComplete', function() {
+                                
+                                hljs.addPlugin(mergeHTMLPlugin);
+                                hljs.configure({'ignoreUnescapedHTML': true});
+                                
+                                $('pre:not(.embedcode)').each(function() {
+                                        /**
+                                         * @type {string}
+                                         */
+                                        var language = $(this).data('language');
+
+                                        if (language === 'plaintext' || language === 'text') {
+                                                $(this).addClass(language).addClass('hljs');
+                                                return true;
+                                        }
+                                        else {
+                                                var clone = this.cloneNode(true);
+                                                hljs.highlightElement(clone);
+                                                $(this).empty().append($(clone).contents());
+                                                $(this).attr("class", $(clone).attr("class"));
+                                        }
+                                });
+                        });
+  //]]>
+  </script>
+  <style type="text/css">
+  /*<![CDATA[*/
+            div.skipnav {
+            }
+            div.skipnav a {
+                position: fixed;
+                left: -10000px;
+                top: 1.5em;
+                width: 1px;
+                height: 1px;
+                overflow: hidden;
+            }
+            div.skipnav a:focus, div.skipnav a:active, div.skipnav a:hover {
+                background: white;
+                color: black;
+                box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.5);
+                position: fixed;
+                left: 2em;
+                top: 1.5em;
+                width: auto;
+                height: auto;
+                overflow: visible;
+                text-decoration: underline;
+                z-index: 99999; /* has to be higher than the side panel */
+    }
+  /*]]>*/
+  </style>
+</head>
+<body data-link-prefix="">
+  <div class="skipnav">
+    <a href="#content-wrapper">Skip to main content</a>
+  </div>
+  <div id="page" class="clearfix">
+    <div id="header">
+      <div class="container">
+        <div id="logotype-container" class="pull-left">
+          <a href="../index.html"><img id="logotype-pageheader" src="../css/image/corporate-logo.png" alt="Corporate logotype" data-role="logotype" /></a>
+        </div>
+        <div id="pagetools-container" class="pull-right">
+          <ul id="page-tools">
+            <li class="page-tools-search"><input placeholder="Search" type="text" class="form-control" aria-label="Search" id="search" /></li>
+            <li class="page-tools-print">
+              <a href="javascript:window.print();"><span class="tool-label">Print</span><span class="glyphicon glyphicon-print"></span></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <h1 id="publication-title">CAM</h1>
+    <div id="subheader-sticky-wrapper" class="sticky-wrapper">
+      <div id="subheader">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3 toc-title">
+              <h2><a class="prev nav-icon hidden-lg hidden-md" href="UUID-980f9177-7858-be46-cc35-8c87146e762e.html#UUID-980f9177-7858-be46-cc35-8c87146e762e_section-idm53110631692778"><span class="glyphicon glyphicon-chevron-left"></span></a> <a href="#toc" class="hidden mobile-nav-toggle"><span class="glyphicon glyphicon-list"></span>Table of
+              Contents</a><span class="toc-label">Table of Contents</span><a class="next nav-icon hidden-lg hidden-md" href="UUID-f6738cf7-7587-10da-da6c-512a7e30b218.html"><span class="glyphicon glyphicon-chevron-right"></span></a></h2>
+            </div>
+            <div class="col-md-9 breadcrumb-container">
+              <ul class="breadcrumb">
+                <li class="breadcrumb-link">
+                  <span class="glyphicon glyphicon-home"></span>&nbsp;<a href="index-en-US.html">CAM</a>
+                </li>
+                <li class="breadcrumb-link">
+                  <a href="UUID-51eaf0e4-7ec1-8210-187c-12cd10b54a1d.html">Tool database</a>
+                </li>
+                <li class="breadcrumb-link">
+                  <a href="UUID-a9dfed15-20c2-139c-09ca-9bf93cb51056.html">Define holder/extension</a>
+                </li>
+                <li class="breadcrumb-node">Create geometry with the geometry editor</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="main-content">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 toc-container" id="toc-wrapper">
+            <div id="toc-placeholder">
+              <div id="toc-standalone-placeholder"></div>
+            </div>
+          </div>
+          <div class="col-md-9 content-container" id="content-wrapper">
+            <a accesskey="p" class="prev pull-left prev visible-lg visible-md" id="header-navigation-prev" href="UUID-980f9177-7858-be46-cc35-8c87146e762e.html#UUID-980f9177-7858-be46-cc35-8c87146e762e_section-idm53110631692778"><span class="glyphicon glyphicon-circle-arrow-left"></span>Prev</a><a accesskey="n" class=
+            "pull-right next visible-lg visible-md" id="header-navigation-next" href="UUID-f6738cf7-7587-10da-da6c-512a7e30b218.html">Next<span class="glyphicon glyphicon-circle-arrow-right"></span></a>
+            <div id="topic-content">
+              <section xml:lang="en-US" lang="en-US" dir="ltr" class="section" data-origin-id="UUID-2dd80139-4536-5e06-9a2d-f09d88623de5" data-publication-date="" id="UUID-95cfc547-c27b-5f7c-2d93-1913f3df8e3a">
+                <div class="titlepage">
+                  <div>
+                    <div class="title">
+                      <h1 class="title" style="clear: both"><span class="formal-title">Create geometry with the geometry editor</span></h1>
+                    </div>
+                  </div>
+                </div>
+                <p>Use the geometry editor to create freely definable <span class="guilabel">geometries</span> for tool components.</p>
+                <div class="informaltable table-responsive">
+                  <table style="width:100%;" class="informaltable">
+                    <colgroup>
+                      <col style="width:12%;" />
+                      <col style="width:88%;" />
+                    </colgroup>
+                    <tbody>
+                      <tr>
+                        <td class="td">
+                          <div class="mediaobject">
+                            <table class="image-viewport" style="border-collapse:collapse;border:0; ;">
+                              <tr style="height: 48px">
+                                <td style="padding:0;"><img src="image/uuid-493e3ae2-9051-d42b-d553-23ce768ce766.svg" style="max-height: 48px;" alt="new_tool_geo.svg" /></td>
+                              </tr>
+                            </table>
+                          </div>
+                        </td>
+                        <td class="td">
+                          <p>To do this, click the <span class="guilabel">Geometry</span> line in the data view of the component and then click the icon.</p>
+                          <p>Specify a <span class="guilabel">name</span> for the geometry and define whether you want the geometry to be <span class="guilabel">active</span> and whether a <span class="guilabel">coupling</span> exists.</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="td">
+                          <div class="mediaobject">
+                            <table class="image-viewport" style="border-collapse:collapse;border:0; ;">
+                              <tr style="height: 48px">
+                                <td style="padding:0;"><img src="image/uuid-1e8c2c24-5e24-0d69-4cf7-79a3d0f93f33.svg" style="max-height: 48px;" alt="hm_edit_tool_type_edit_geo.svg" /></td>
+                              </tr>
+                            </table>
+                          </div>
+                        </td>
+                        <td class="td">
+                          <p>To edit a geometry, click the icon and open the geometry editor.</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="td">
+                          <div class="mediaobject">
+                            <table class="image-viewport" style="border-collapse:collapse;border:0; ;">
+                              <tr style="height: 48px">
+                                <td style="padding:0;"><img src="image/uuid-4cccfda8-1180-8634-59dc-74481a5b50ad.svg" style="max-height: 48px;" alt="del_tool_geo.svg" /></td>
+                              </tr>
+                            </table>
+                          </div>
+                        </td>
+                        <td class="td">
+                          <p>Click the icon to delete a geometry.</p>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div dir="ltr" class="note">
+                  <h3 class="title">Note</h3>
+                  <p>Only one geometry can be active for each component. You cannot delete an active geometry.</p>
+                </div>
+                <p>The geometry editor comprises an input area for defining line segments and a graphical preview (2D). To add a geometry, right-click in the input area and specify the <span class="guilabel">Height</span> for the <span class="guilabel">Origin</span> and the <span class="guilabel">Diameter</span> and <span class=
+                "guilabel">Height</span> for the line segment. Add a line segment using the Paste shortcut menu.</p>
+                <div dir="ltr" class="note">
+                  <h3 class="title">Note</h3>
+                  <p>As the component geometries are always rotationally symmetrical models, you can uniquely define a line segment by simply defining a Diameter and Height. The radius is displayed in the graphical preview.</p>
+                </div>
+                <div dir="ltr" class="warning">
+                  <h3 class="title">Warning</h3>
+                  <p>Component geometries must not contain any undercuts in the X direction.</p>
+                </div>
+                <p>Select the checkbox in the <span class="guilabel">Report</span> column to copy the line segment to a report. The first and last line segment are always selected by default, so that they are output in a report.</p>
+                <p>If the check box in the Report column is enabled, its dimensions are also displayed in the geometry editor. The same also applies to the components Spindle, Holder and Extension.</p>
+                <p>To edit or delete a line segment, right-click in the input area and select <span class="guilabel">Edit</span> or <span class="guilabel">Delete</span>.</p>
+                <div class="informaltable table-responsive">
+                  <table style="width:100%;" class="informaltable">
+                    <colgroup>
+                      <col style="width:12%;" />
+                      <col style="width:88%;" />
+                    </colgroup>
+                    <tbody>
+                      <tr>
+                        <td class="td">
+                          <div class="mediaobject">
+                            <table class="image-viewport" style="border-collapse:collapse;border:0; ;">
+                              <tr style="height: 48px">
+                                <td style="padding:0;"><img src="image/uuid-99135ffe-7609-672e-8093-235abdd0fe7e.svg" style="max-height: 48px;" alt="search_item.svg" /></td>
+                              </tr>
+                            </table>
+                          </div>
+                        </td>
+                        <td class="td">
+                          <p><span class="guilabel">Load</span>: Load a contour from a <code class="filename">*dxf</code> file.</p>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <p>The following requirements must be met in order to be able to correctly load the <code class="filename">dxf</code> file:</p>
+                <div class="itemizedlist">
+                  <ul class="itemizedlist" style="list-style-type: disc;">
+                    <li class="listitem">
+                      <p>The contour must be on layer 1,</p>
+                    </li>
+                    <li class="listitem">
+                      <p>the contour must be closed,</p>
+                    </li>
+                    <li class="listitem">
+                      <p>both halves must be present for rotating bodies.</p>
+                    </li>
+                    <li class="listitem">
+                      <p>The axis must be horizontally aligned.</p>
+                    </li>
+                  </ul>
+                </div>
+                <div class="informaltable table-responsive">
+                  <table style="width:100%;" class="informaltable">
+                    <colgroup>
+                      <col style="width:12%;" />
+                      <col style="width:88%;" />
+                    </colgroup>
+                    <thead>
+                      <tr>
+                        <td class="td">
+                          <div class="mediaobject">
+                            <table class="image-viewport" style="border-collapse:collapse;border:0; ;">
+                              <tr style="height: 48px">
+                                <td style="padding:0;"><img src="image/uuid-2b87d689-c818-d2d7-d9b8-e141ca7b3359.svg" style="max-height: 48px;" alt="hm_edit_tool_type_insert_tool.svg" /></td>
+                              </tr>
+                            </table>
+                          </div>
+                        </td>
+                        <td class="td">
+                          <p><span class="guilabel">Insert</span>: Insert a contour in the <code class="filename">*.omx</code> format and import freely defined tool geometries directly from <span class="emphasis"><em>hyper</em></span>MILL, for example.</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="td">
+                          <div class="mediaobject"><img src="image/uuid-244e1435-c051-c1d9-6d79-5aaba15b0817.svg" style="" alt="copy.svg" /></div>
+                        </td>
+                        <td class="td">
+                          <p><span class="guilabel">Copy</span>: Copy a contour from the database to the clipboard.</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="td">
+                          <div class="mediaobject">
+                            <table class="image-viewport" style="border-collapse:collapse;border:0; ;">
+                              <tr style="height: 48px">
+                                <td style="padding:0;"><img src="image/uuid-e0e38ea2-2a93-09d5-d382-54134492c9bd.svg" style="max-height: 48px;" alt="mirror_item.svg" /></td>
+                              </tr>
+                            </table>
+                          </div>
+                        </td>
+                        <td class="td">
+                          <p><span class="guilabel">Mirror</span>: Mirror a contour.</p>
+                        </td>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="td">
+                          <div class="mediaobject"><img src="image/uuid-b5705e3a-de36-69d4-0419-f0bad491d443.svg" style="" alt="delete_r.svg" /></div>
+                        </td>
+                        <td class="td">
+                          <p><span class="guilabel">Delete</span>: Delete a contour.</p>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <p>Complete your entries by clicking <span class="guilabel">OK</span>. A contour is now displayed in the graphical preview as a 3D bounding geometry.</p>
+              </section>
+              <div class="footer-content">
+                <div class="section-toc section-toc-after">
+                  <div class="section-toc-title">
+                    <span class="section-toc-title-delimiter">:</span>
+                  </div>
+                </div>
+              </div>
+              <footer></footer>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

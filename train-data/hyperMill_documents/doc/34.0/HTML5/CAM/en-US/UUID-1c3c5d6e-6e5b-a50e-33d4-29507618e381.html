@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="x-ua-compatible" content="IE=edge" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="search" content="default" />
+  <meta name="use.ic" content="no" />
+  <meta name="tocstandalone" content="yes" />
+  <script type="text/javascript">
+  //<![CDATA[
+                        var index;
+                        var contentLanguage = 'en-US';
+                        var enterKey = 'select';
+                        
+                                        var anchoroption = true;
+                                var instantsearch_minlength = 1;
+                                                
+                                var fuse_threshold = 0.3;
+                        
+                                        var local_csh = false;
+                                
+                        var useanchorlinks = false;
+  //]]>
+  </script>
+  <title>NC</title>
+  <link rel="stylesheet" type="text/css" href="../css/docbook.css" />
+  <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" href="../css/bootstrap-theme.min.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style-common.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style-responsive.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style-print.css" />
+  <link rel="stylesheet" type="text/css" href="../css/font-awesome.css" />
+  <link rel="stylesheet" type="text/css" href="../css/custom.css" />
+  <link rel="stylesheet" type="text/css" href="../css/layout-custom-style.css" />
+  <script src="../js/jquery-1.10.2.min.js" type="text/javascript"></script>
+  <script src="../js/jquery-ui-1.10.3.custom.min.js" type="text/javascript"></script>
+  <script src="../js/bootstrap.min.js" type="text/javascript"></script>
+  <script src="../js/purl.js" type="text/javascript"></script>
+  <script src="../js/jquery.event.move.js" type="text/javascript"></script>
+  <script src="../js/jquery.event.swipe.js" type="text/javascript"></script>
+  <script src="../js/jquery.sticky.js" type="text/javascript"></script>
+  <script src="../js/respond.min.js" type="text/javascript"></script>
+  <script src="../js/script.js" type="text/javascript"></script>
+  <script src="js/toc.js" type="text/javascript"></script>
+  <script src="../js/create-toc.js" type="text/javascript"></script>
+  <script src="../js/clipboard.min.js" type="text/javascript"></script>
+  <script src="../js/fuse.min.js" type="text/javascript"></script>
+  <script src="../js/jquery.mark.min.js" type="text/javascript"></script>
+  <script src="../js/html5.fuse.search.js" type="text/javascript"></script>
+  <script src="js/fuzzydata.js" type="text/javascript"></script>
+  <script src="../js/csh.js" type="text/javascript"></script>
+  <script src="../js/highlight-mergehtml-plugin.js" type="text/javascript"></script>
+  <meta name="generator" content="Paligo" />
+  <link rel="prev" href="UUID-83bec830-1dca-1226-7497-4036726b5516.html" title="Turning" />
+  <link rel="next" href="UUID-35e0ba53-2270-72c0-4a26-fa4e6a117e83.html" title="Postprocessor" />
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js?config=TeX-MML-AM_CHTML" async="async"></script>
+  <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+  <script type="text/javascript" src="../js/cookie-consent.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  <script type="text/javascript">
+  //<![CDATA[
+                        $(document).on('ready ajaxComplete', function() {
+                                
+                                hljs.addPlugin(mergeHTMLPlugin);
+                                hljs.configure({'ignoreUnescapedHTML': true});
+                                
+                                $('pre:not(.embedcode)').each(function() {
+                                        /**
+                                         * @type {string}
+                                         */
+                                        var language = $(this).data('language');
+
+                                        if (language === 'plaintext' || language === 'text') {
+                                                $(this).addClass(language).addClass('hljs');
+                                                return true;
+                                        }
+                                        else {
+                                                var clone = this.cloneNode(true);
+                                                hljs.highlightElement(clone);
+                                                $(this).empty().append($(clone).contents());
+                                                $(this).attr("class", $(clone).attr("class"));
+                                        }
+                                });
+                        });
+  //]]>
+  </script>
+  <style type="text/css">
+  /*<![CDATA[*/
+            div.skipnav {
+            }
+            div.skipnav a {
+                position: fixed;
+                left: -10000px;
+                top: 1.5em;
+                width: 1px;
+                height: 1px;
+                overflow: hidden;
+            }
+            div.skipnav a:focus, div.skipnav a:active, div.skipnav a:hover {
+                background: white;
+                color: black;
+                box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.5);
+                position: fixed;
+                left: 2em;
+                top: 1.5em;
+                width: auto;
+                height: auto;
+                overflow: visible;
+                text-decoration: underline;
+                z-index: 99999; /* has to be higher than the side panel */
+    }
+  /*]]>*/
+  </style>
+</head>
+<body data-link-prefix="">
+  <div class="skipnav">
+    <a href="#content-wrapper">Skip to main content</a>
+  </div>
+  <div id="page" class="clearfix">
+    <div id="header">
+      <div class="container">
+        <div id="logotype-container" class="pull-left">
+          <a href="../index.html"><img id="logotype-pageheader" src="../css/image/corporate-logo.png" alt="Corporate logotype" data-role="logotype" /></a>
+        </div>
+        <div id="pagetools-container" class="pull-right">
+          <ul id="page-tools">
+            <li class="page-tools-search"><input placeholder="Search" type="text" class="form-control" aria-label="Search" id="search" /></li>
+            <li class="page-tools-print">
+              <a href="javascript:window.print();"><span class="tool-label">Print</span><span class="glyphicon glyphicon-print"></span></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <h1 id="publication-title">CAM</h1>
+    <div id="subheader-sticky-wrapper" class="sticky-wrapper">
+      <div id="subheader">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3 toc-title">
+              <h2><a class="prev nav-icon hidden-lg hidden-md" href="UUID-83bec830-1dca-1226-7497-4036726b5516.html"><span class="glyphicon glyphicon-chevron-left"></span></a> <a href="#toc" class="hidden mobile-nav-toggle"><span class="glyphicon glyphicon-list"></span>Table of Contents</a><span class="toc-label">Table of Contents</span><a class=
+              "next nav-icon hidden-lg hidden-md" href="UUID-35e0ba53-2270-72c0-4a26-fa4e6a117e83.html"><span class="glyphicon glyphicon-chevron-right"></span></a></h2>
+            </div>
+            <div class="col-md-9 breadcrumb-container">
+              <ul class="breadcrumb">
+                <li class="breadcrumb-link">
+                  <span class="glyphicon glyphicon-home"></span>&nbsp;<a href="index-en-US.html">CAM</a>
+                </li>
+                <li class="breadcrumb-link">
+                  <a href="UUID-0751db51-8b5b-ae49-1904-dce4b8c92263.html">Basics of CAM editing</a>
+                </li>
+                <li class="breadcrumb-link">
+                  <a href="UUID-aeb94185-7a19-29aa-6f91-3af4af99b68d.html">Structure CAM project</a>
+                </li>
+                <li class="breadcrumb-link">
+                  <a href="UUID-62da9202-974f-8755-9a36-833feced0ae4.html">Job list</a>
+                </li>
+                <li class="breadcrumb-link">
+                  <a href="UUID-58bfe622-a35b-5c93-8d9c-74fca4c552b7.html">The Job list dialog</a>
+                </li>
+                <li class="breadcrumb-node">NC</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="main-content">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 toc-container" id="toc-wrapper">
+            <div id="toc-placeholder">
+              <div id="toc-standalone-placeholder"></div>
+            </div>
+          </div>
+          <div class="col-md-9 content-container" id="content-wrapper">
+            <a accesskey="p" class="prev pull-left prev visible-lg visible-md" id="header-navigation-prev" href="UUID-83bec830-1dca-1226-7497-4036726b5516.html"><span class="glyphicon glyphicon-circle-arrow-left"></span>Prev</a><a accesskey="n" class="pull-right next visible-lg visible-md" id="header-navigation-next" href=
+            "UUID-35e0ba53-2270-72c0-4a26-fa4e6a117e83.html">Next<span class="glyphicon glyphicon-circle-arrow-right"></span></a>
+            <div id="topic-content">
+              <section xml:lang="en-US" lang="en-US" dir="ltr" class="section internal" data-origin-id="UUID-48ac82bd-361f-7700-7447-70641a7be86a" data-publication-date="" id="UUID-1c3c5d6e-6e5b-a50e-33d4-29507618e381">
+                <div class="titlepage">
+                  <div>
+                    <div class="title">
+                      <h1 class="title" style="clear: both"><span class="formal-title">NC</span></h1>
+                    </div>
+                  </div>
+                </div>
+                <div dir="ltr" class="note" id="UUID-1c3c5d6e-6e5b-a50e-33d4-29507618e381_note-idm53224690267380">
+                  <h3 class="title">Note</h3>
+                  <p>The functions <span class="guilabel">Origin ID (NCS)</span> and <span class="guilabel">NC safety</span> are available with a license for the <span class="phrase"><span class="application">VIRTUAL Machining Center</span></span> or the <span class="phrase"><span class="application">VIRTUAL Machining Optimizer</span></span>.
+                  Please contact your OPEN MIND partner.</p>
+                </div>
+                <section dir="ltr" class="section" data-origin-id="" data-publication-date="" id="UUID-1c3c5d6e-6e5b-a50e-33d4-29507618e381_section-idm232246893919221">
+                  <div class="titlepage">
+                    <div>
+                      <div class="title">
+                        <h2 class="title" style="clear: both"><span class="formal-title">Origin ID (NCS)</span></h2>
+                      </div>
+                    </div>
+                  </div>
+                  <p><span class="guilabel">Use global definition</span>: Enable to use the default settings of the VIRTUAL Machining postprocessor for creating the NC file. The origin used is displayed, an adjustment is not possible.</p>
+                  <p><span class="guilabel">Use manual definition</span>: Activate to define a job list-specific origin. Select or enter the origin directly from the list.</p>
+                  <p><span class="guilabel">No origin output</span>: No origin is output in the NC program.</p>
+                </section>
+                <section dir="ltr" class="section" data-origin-id="" data-publication-date="" id="UUID-1c3c5d6e-6e5b-a50e-33d4-29507618e381_section-idm232272895451584">
+                  <div class="titlepage">
+                    <div>
+                      <div class="title">
+                        <h2 class="title" style="clear: both"><span class="formal-title">NC safety / Postprocessor safe positions</span></h2>
+                      </div>
+                    </div>
+                  </div>
+                  <p>When the <span class="guilabel">Postprocessor safe positions</span> option is used, fixed positions in the machine coordinate system are used to ensure NC safety.</p>
+                  <p>The positions are stored in the postprocessor configuration and are approached, in particular, for safe positioning (by moving linear and rotary axes). When approaching the positions, the NC file switches to machine coordinates (for example <code class="filename">M91</code> for Heidenhain, <code class="filename">SUPA</code>
+                  for Siemens).</p>
+                  <p></p>
+                </section>
+                <section dir="ltr" class="section" data-origin-id="" data-publication-date="" id="UUID-1c3c5d6e-6e5b-a50e-33d4-29507618e381_section-5d24aee9344c6-idm45315550265408">
+                  <div class="titlepage">
+                    <div>
+                      <div class="title">
+                        <h2 class="title" style="clear: both"><span class="formal-title">NC safety / General safety</span></h2>
+                      </div>
+                    </div>
+                  </div>
+                  <p>Use different safety functions (clearance distance/clearance plane) to enable collision-free machining on the machine.</p>
+                  <div class="itemizedlist">
+                    <ul class="itemizedlist" style="list-style-type: disc;">
+                      <li class="listitem">
+                        <p>(A): Machining with short tool. Linking movements take place at the level of the <span class="guilabel">Security plane</span>, see <span class="guimenuitem">General safety</span> → <span class="guisubmenu">Security plane</span>.</p>
+                      </li>
+                      <li class="listitem">
+                        <p>(B): Machining with very long tool. The <span class="guilabel">2D Curve</span> is used to guide the tool, see <span class="guimenuitem">NC safety - interactive</span> → <span class="guisubmenu">2D Curve</span>. Linking movements take place at the <span class="guilabel">Linking height</span>, see <span class=
+                        "guimenuitem">NC safety - interactive</span> → <span class="guisubmenu">Linking height</span>.</p>
+                      </li>
+                    </ul>
+                  </div>
+                  <p>If the <span class="guilabel">Prefer general safety</span> function is activated, <span class="phrase"><span class="application"><span class="emphasis"><em>hyper</em></span>MILL</span></span> automatically decides between variants (A) and (B), whereby (A) is generally used so long as the tool length is sufficiently short and
+                  the Z axis limits are not violated. Otherwise, variant (B) is used.</p>
+                  <div class="informaltable table-responsive" id="UUID-1c3c5d6e-6e5b-a50e-33d4-29507618e381_informaltable-idm53212292399544">
+                    <table style="width:100%;" class="informaltable">
+                      <colgroup>
+                        <col style="width:15%;" />
+                        <col style="width:85%;" />
+                      </colgroup>
+                      <tbody>
+                        <tr>
+                          <td class="td">
+                            <p><span class="bold"><strong>Example</strong></span></p>
+                          </td>
+                          <td class="td">
+                            <p>BC kinematics, Contouring using 3D Free Path Milling, (1) Contours to be machined, (2) <span class="guilabel">2D Curve</span> for guiding the tool, (3) <span class="guilabel">Security plane</span>, (4) <span class="guilabel">Linking height</span>.</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td colspan="2" class="td">
+                            <div class="informalfigure" id="UUID-1c3c5d6e-6e5b-a50e-33d4-29507618e381_figure-idm232125817470259">
+                              <div class="mediaobject"><img src="image/uuid-5f3dbe05-30d6-8562-6e94-1839e496d084.svg" style="" alt="VM_nc_sicherheit_allgemeine_sicherheit_03.svg" /></div>
+                            </div>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <p><span class="guilabel">Axial security distance</span>: Distance to be maintained between the tool and part in the axial direction. The defined value is taken into account when the <span class="guilabel">Optimize clearance plane</span> option is enabled.</p>
+                  <div class="informaltable table-responsive" id="UUID-1c3c5d6e-6e5b-a50e-33d4-29507618e381_informaltable-idm53126355586128">
+                    <table style="width:100%;" class="informaltable">
+                      <colgroup>
+                        <col style="width:15%;" />
+                        <col style="width:85%;" />
+                      </colgroup>
+                      <tbody>
+                        <tr>
+                          <td class="td">
+                            <p><span class="bold"><strong>Example</strong></span></p>
+                          </td>
+                          <td class="td">
+                            <p>BC kinematics, (1) Height of the clearance plane.</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td colspan="2" class="td">
+                            <div class="informalfigure" id="UUID-1c3c5d6e-6e5b-a50e-33d4-29507618e381_figure-5d2c382dee594-idm45315546998880">
+                              <div class="mediaobject">
+                                <table class="image-viewport" style="border-collapse:collapse;border:0; width:598px;">
+                                  <tr style="height: 266px">
+                                    <td style="padding:0;"><img src="image/uuid-8871cda0-9a3e-ce33-079d-f66cf8e7ead4.svg" style="max-width: 598px; max-height: 266px;" alt="VM_nc_sicherheit_sicherheitsabstand.svg" /></td>
+                                  </tr>
+                                </table>
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <p><span class="guilabel">Security plane</span>: The height of the security plane is calculated to the given clamping position. The value should be selected so that all rotary axes of the machine can be moved without a collision.</p>
+                  <p>For table-head, head-head kinematics as well as for kinematics with more than 5 axes, the direction of the security plane can be defined.</p>
+                  <div class="informaltable table-responsive" id="UUID-1c3c5d6e-6e5b-a50e-33d4-29507618e381_informaltable-idm53126355502640">
+                    <table style="width:100%;" class="informaltable">
+                      <colgroup>
+                        <col style="width:15%;" />
+                        <col style="width:85%;" />
+                      </colgroup>
+                      <tbody>
+                        <tr>
+                          <td class="td">
+                            <p><span class="bold"><strong>Example</strong></span></p>
+                          </td>
+                          <td class="td">
+                            <p>BC kinematics, (1) Height of the security plane (2) Side view, (3) Top view, B axis rotated by 90 degrees.</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td colspan="2" class="td">
+                            <div class="informalfigure" id="UUID-1c3c5d6e-6e5b-a50e-33d4-29507618e381_figure-5d274860f2609-idm45601211662336">
+                              <div class="mediaobject">
+                                <table class="image-viewport" style="border-collapse:collapse;border:0; width:598px;">
+                                  <tr style="height: 349px">
+                                    <td style="padding:0;"><img src="image/uuid-1f8cc449-e13b-3449-c88f-3053187d76c4.svg" style="max-width: 598px; max-height: 349px;" alt="VM_nc_sicherheit_sicherheitsebene.svg" /></td>
+                                  </tr>
+                                </table>
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <p><span class="guilabel">Optimize clearance plane</span>: When generating the NC file, the NC Optimizer trims the rapids from and to the <span class="phrase"><span class="application"><span class="emphasis"><em>hyper</em></span>MILL</span></span> job clearance plane to the mandatory length. This avoids problems due to end
+                  position violations.</p>
+                  <div class="informaltable table-responsive">
+                    <table style="width:100%;" class="informaltable">
+                      <colgroup>
+                        <col style="width:15%;" />
+                        <col style="width:85%;" />
+                      </colgroup>
+                      <tbody>
+                        <tr>
+                          <td class="td">
+                            <p><span class="bold"><strong>Example</strong></span></p>
+                          </td>
+                          <td class="td">
+                            <p>BC kinematics, (1) Clearance plane not optimized, X axis limit exceeded, (2) Clearance plane optimized, X axis limit maintained, (3) Linking movement.</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td colspan="2" class="td">
+                            <div class="informalfigure" id="UUID-1c3c5d6e-6e5b-a50e-33d4-29507618e381_figure-5d2c36cb2bad5-idm45315547015552">
+                              <div class="mediaobject">
+                                <table class="image-viewport" style="border-collapse:collapse;border:0; ;">
+                                  <tr style="height: 332px">
+                                    <td style="padding:0;"><img src="image/uuid-93b927fb-129a-6bfe-3057-007f6be7515c.svg" style="max-height: 332px;" alt="VM_nc_sicherheit_sicherheitsebene_optimieren.svg" /></td>
+                                  </tr>
+                                </table>
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <p><span class="guilabel">Smooth linking</span>: Optionally, the link rapids, including connections with alternating inclination, are made using a natural movement that is adapted to the machine kinematics. The optimization of the <span class="phrase"><span class="application"><span class=
+                  "emphasis"><em>hyper</em></span>MILL</span></span> job clearance planes is automatically activated during smooth linking.</p>
+                  <p><span class="guilabel">Use dynamic stock:</span>&nbsp;Only available if the&nbsp;<span class="guilabel">Smooth linking</span>&nbsp;function is activated. An updated stock is created for each job in the job list, which is considered for linking movements so that they are collision-free. The function is deactivated by default.
+                  Longer calculation times result when generating the NC file.</p>
+                </section>
+                <section dir="ltr" class="section" data-origin-id="" data-publication-date="" id="UUID-1c3c5d6e-6e5b-a50e-33d4-29507618e381_section-idm231916825045968">
+                  <div class="titlepage">
+                    <div>
+                      <div class="title">
+                        <h2 class="title" style="clear: both"><span class="formal-title">NC safety - interactive</span></h2>
+                      </div>
+                    </div>
+                  </div>
+                  <p>Use manually generated 2D curves to enable collision-free machining on the machine.</p>
+                  <div dir="ltr" class="note">
+                    <h3 class="title">Note</h3>
+                    <p>The functions for <span class="guilabel">NC safety - interactive</span> are available with an appropriate license for the <span class="phrase"><span class="application">VIRTUAL Machining Center</span></span> or the <span class="phrase"><span class="application">VIRTUAL Machining Optimizer</span></span>. Please contact your
+                    OPEN MIND partner.</p>
+                  </div>
+                  <p><span class="guilabel">Active</span>: Activate the functions for interactive safety.</p>
+                  <p><span class="guilabel">Prefer general safety</span>: Activate for machining operations in which collision safety must be guaranteed regardless of the model geometry and the tools used. The function combines the following strategies:</p>
+                  <section dir="ltr" class="section" data-origin-id="" data-publication-date="" id="UUID-1c3c5d6e-6e5b-a50e-33d4-29507618e381_section-idm231916826402274">
+                    <div class="titlepage">
+                      <div>
+                        <div class="title">
+                          <h3 class="title"><span class="formal-title">2D Curve</span></h3>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="informaltable table-responsive">
+                      <table style="width:100%;" class="informaltable">
+                        <colgroup>
+                          <col style="width:12%;" />
+                          <col style="width:88%;" />
+                        </colgroup>
+                        <tbody>
+                          <tr>
+                            <td class="td">
+                              <div class="mediaobject"><img src="image/uuid-1096281f-ad0a-bd30-8824-824e5d3c9c16.svg" style="" alt="icons_dialog_sel_contour.svg" /></div>
+                            </td>
+                            <td class="td">
+                              <p><span class="guilabel">Profiles</span>: Select the 2D curves that can be used to create a collision-free linking movement between two part machining operations.</p>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <p><span class="guilabel">Linking height</span>: Define the height of the linking movement, starting from the clamping position.</p>
+                    <div class="informaltable table-responsive" id="UUID-1c3c5d6e-6e5b-a50e-33d4-29507618e381_informaltable-idm53197902413844">
+                      <table style="width:100%;" class="informaltable">
+                        <colgroup>
+                          <col style="width:15%;" />
+                          <col style="width:85%;" />
+                        </colgroup>
+                        <tbody>
+                          <tr>
+                            <td class="td">
+                              <p><span class="bold"><strong>Example</strong></span></p>
+                            </td>
+                            <td class="td">
+                              <p>BC kinematics: Machine with strongly limited Z axis (large component, long tool).</p>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </section>
+                </section>
+                <section dir="ltr" class="section" data-origin-id="" data-publication-date="" id="UUID-1c3c5d6e-6e5b-a50e-33d4-29507618e381_section-idm232272905295999">
+                  <div class="titlepage">
+                    <div>
+                      <div class="title">
+                        <h2 class="title" style="clear: both"><span class="formal-title">NC safety / Optimized tunnel logic</span></h2>
+                      </div>
+                    </div>
+                  </div>
+                  <div dir="ltr" class="note">
+                    <h3 class="title">Note</h3>
+                    <p>The <span class="guilabel">Optimized tunnel logic</span> function is specially developed for machines with two rotary axes in the table and the possibility of collision-safe positioning of the tool and spindle by retreating into a tunnel with the Z axis. When approaching and retracting for NC jobs, all axes except Z are
+                    positioned in a rapid traverse block, which significantly reduces non-productive times.</p>
+                  </div>
+                  <div class="informalfigure" id="UUID-1c3c5d6e-6e5b-a50e-33d4-29507618e381_figure-idm456737615788003235758192309">
+                    <div class="mediaobject">
+                      <table class="image-viewport" style="border-collapse:collapse;border:0; width:450px;">
+                        <tr style="height: 358px">
+                          <td style="padding:0;"><img src="image/uuid-6f438fbf-b50b-2df3-5dc8-c4b3c021a5b8.svg" style="max-width: 450px; max-height: 358px;" alt="VM_optimierte_tunnellogik_02.svg" /></td>
+                        </tr>
+                      </table>
+                    </div>
+                  </div>
+                  <p id="UUID-1c3c5d6e-6e5b-a50e-33d4-29507618e381_para-idm53274099877740"><span class="guilabel">Axial security distance</span>: Distance to be maintained for the tool in the axial direction</p>
+                  <p>If the <span class="guilabel">Optimize clearance plane</span> and <span class="guilabel">Smooth linking</span> functions are not activated, the defined axial security distance is maintained to the highest point of the initial stock model of the job list, to the part and to the fixture during linking movements between the jobs
+                  without a change of inclination.</p>
+                  <p>If the&nbsp;<span class="guilabel">Smooth linking</span>&nbsp;function is not activated, only the start stockmodel is considered during collision check.</p>
+                  <p id="UUID-1c3c5d6e-6e5b-a50e-33d4-29507618e381_para-idm53274100706490">When changing the inclination, a maximum retraction takes place in the direction of the tool axis up to the tunnel position.</p>
+                  <p>Fast travel movements from and to the <span class="phrase"><span class="application"><span class="emphasis"><em>hyper</em></span>MILL</span></span> job clearance plane are automatically adjusted.</p>
+                  <p><span class="guilabel">Optimize clearance plane</span>: If the <span class="guilabel">Optimize clearance plane</span> function is activated, the defined axial security distance is maintained to the highest point of the initial stock model of the job list, to the part and to the fixture during linking movements between the jobs
+                  without a change of inclination.</p>
+                  <p>When changing the inclination, the axial security distance to the initial stock model of the job list, to the part and to the fixture is maintained.</p>
+                  <p>Fast travel movements from and to the <span class="phrase"><span class="application"><span class="emphasis"><em>hyper</em></span>MILL</span></span> job clearance plane are automatically adjusted.</p>
+                  <p><span class="guilabel">Smooth linking</span>: Optionally, the link rapids, including connections with alternating inclination, are made using a natural movement that is adapted to the machine kinematics. The optimization of the <span class="phrase"><span class="application"><span class=
+                  "emphasis"><em>hyper</em></span>MILL</span></span> job clearance planes is automatically activated during smooth linking.</p>
+                  <p>If the <span class="guilabel">Smooth linking</span> function is activated, the axial security distance is maintained to the component and to the fixture for all linking movements between the jobs.</p>
+                  <p>Fast travel movements from and to the <span class="phrase"><span class="application"><span class="emphasis"><em>hyper</em></span>MILL</span></span> job clearance plane are automatically adjusted.</p>
+                </section>
+                <section dir="ltr" class="section" data-origin-id="" data-publication-date="" id="UUID-1c3c5d6e-6e5b-a50e-33d4-29507618e381_section-idm53258592813296">
+                  <div class="titlepage">
+                    <div>
+                      <div class="title">
+                        <h2 class="title" style="clear: both"><span class="formal-title">NC safety / optimized table table logic</span></h2>
+                      </div>
+                    </div>
+                  </div>
+                  <div dir="ltr" class="note">
+                    <h3 class="title">Note</h3>
+                    <p>The <span class="guilabel">Optimized table table logic</span> function is available for all machines with two rotary axes in the table.</p>
+                  </div>
+                  <p><span class="bold"><strong>Example of use</strong></span>: <span class="guilabel">Smooth linking</span> and <span class="guilabel">Optimize clearance plane</span> are enabled.</p>
+                  <div class="mediaobject">
+                    <table class="image-viewport" style="border-collapse:collapse;border:0; width:450px;">
+                      <tr style="height: 360px">
+                        <td style="padding:0;"><img src="image/uuid-3fc51221-4d8e-d196-304d-0b2c7cc8b429.svg" style="max-width: 450px; max-height: 360px;" alt="NcTableTableSafety.svg" /></td>
+                      </tr>
+                    </table>
+                  </div>
+                  <p><span class="guilabel">Axial security distance</span>: Distance to be maintained for the tool in the axial direction</p>
+                  <p>If the <span class="guilabel">Optimize clearance plane</span> and <span class="guilabel">Smooth linking</span> functions are not activated, the defined axial security distance is maintained to the highest point of the initial stock model of the job list, to the part and to the fixture during linking movements between the jobs
+                  without a change of inclination.</p>
+                  <p>If the&nbsp;<span class="guilabel">Smooth linking</span>&nbsp;function is not activated, only the start stockmodel is considered during collision check.</p>
+                  <p>When changing the inclination, a maximum retraction (minus the <span class="guimenuitem">Tool length tolerance</span> → <span class="guisubmenu">Upper tolerance</span>) takes place in the direction of the tool axis.</p>
+                  <p>Fast travel movements from and to the <span class="phrase"><span class="application"><span class="emphasis"><em>hyper</em></span>MILL</span></span> job clearance plane are automatically adjusted.</p>
+                  <div class="informalfigure" id="UUID-1c3c5d6e-6e5b-a50e-33d4-29507618e381_figure-idm4585546687894432594547938996">
+                    <div class="mediaobject">
+                      <table class="image-viewport" style="border-collapse:collapse;border:0; width:638px;">
+                        <tr style="height: 382px">
+                          <td style="padding:0;"><img src="image/uuid-634a2643-8db2-f5a4-2990-179e83881a04.svg" style="max-width: 638px; max-height: 382px;" alt="VM_NC_optimizer_tisch_tisch_standard1.svg" /></td>
+                        </tr>
+                      </table>
+                    </div>
+                  </div>
+                  <p><span class="guilabel">Optimize clearance plane</span>: If the <span class="guilabel">Optimize clearance plane</span> function is activated, the defined axial security distance is maintained to the highest point of the initial stock model of the job list, to the component and to the fixture during linking movements between the
+                  jobs without a change of inclination.</p>
+                  <p>When changing the inclination, the axial security distance to the initial stock model of the job list, to the part and to the fixture is maintained.</p>
+                  <p>Fast travel movements from and to the <span class="phrase"><span class="application"><span class="emphasis"><em>hyper</em></span>MILL</span></span> job clearance plane are automatically adjusted.</p>
+                  <div class="informalfigure" id="UUID-1c3c5d6e-6e5b-a50e-33d4-29507618e381_figure-idm4604663956155232594549812611">
+                    <div class="mediaobject">
+                      <table class="image-viewport" style="border-collapse:collapse;border:0; width:638px;">
+                        <tr style="height: 309px">
+                          <td style="padding:0;"><img src="image/uuid-ba1a76ba-ad12-01b7-7bcd-564f832ba06d.svg" style="max-width: 638px; max-height: 309px;" alt="VM_NC_optimizer_tisch_tisch_optimiert1.svg" /></td>
+                        </tr>
+                      </table>
+                    </div>
+                  </div>
+                  <p><span class="guilabel">Smooth linking</span>: Optionally, the link rapids, including connections with alternating inclination, are made using a natural movement that is adapted to the machine kinematics. The optimization of the <span class="phrase"><span class="application"><span class=
+                  "emphasis"><em>hyper</em></span>MILL</span></span> job clearance planes is automatically activated during smooth linking.</p>
+                  <p>If the <span class="guilabel">Smooth linking</span> function is activated, the axial security distance is maintained to the component and to the fixture for all linking movements between the jobs.</p>
+                  <p>Fast travel movements from and to the <span class="phrase"><span class="application"><span class="emphasis"><em>hyper</em></span>MILL</span></span> job clearance plane are automatically adjusted.</p>
+                  <div class="informalfigure" id="UUID-1c3c5d6e-6e5b-a50e-33d4-29507618e381_figure-idm4521673486790432594551896109">
+                    <div class="mediaobject">
+                      <table class="image-viewport" style="border-collapse:collapse;border:0; width:638px;">
+                        <tr style="height: 309px">
+                          <td style="padding:0;"><img src="image/uuid-b769dcbe-68ad-c769-8999-16a82b42f731.svg" style="max-width: 638px; max-height: 309px;" alt="VM_NC_optimizer_tisch_tisch_sanft1.svg" /></td>
+                        </tr>
+                      </table>
+                    </div>
+                  </div>
+                </section>
+                <section dir="ltr" class="section" data-origin-id="" data-publication-date="" id="UUID-1c3c5d6e-6e5b-a50e-33d4-29507618e381_section-idm53322341329430">
+                  <div class="titlepage">
+                    <div>
+                      <div class="title">
+                        <h2 class="title" style="clear: both"><span class="formal-title">Collision avoidance when changing solutions – <span class="phrase"><span class="application">Virtual Machine</span></span> configuration</span></h2>
+                      </div>
+                    </div>
+                  </div>
+                  <p><span class="bold"><strong>Initial situation</strong></span>: Collision avoidance for component, fixture, stock model, machine table against machine housing/frame when changing solutions.</p>
+                  <p>Collisions are prevented when changing solutions between two machining operations by activating the <span class="guilabel">Check machine body</span> option and <span class="guilabel">Rewind safe axis</span> option in the <span class="phrase"><span class="application">Virtual Machine</span></span> configuration. This is
+                  achieved by an additional movement in the linear axis.</p>
+                  <p>The axis in which the additional movement of the linear axis is to take place is to be selected as the <span class="guilabel">Rewind safe axis</span>.</p>
+                  <p>It is advisable to activate the functionality for machining oversized components on machines with at least one linear axis and rotary axis in the machine table. This is also recommended for machines in which the machine table can collide with the machine housing/frame when moving the rotary axis.</p>
+                  <p>In order to carry out the optimization safely, it is necessary that the component is clamped on the real machine identically to how it was collision-checked in the virtual machine.</p>
+                  <div class="informaltable table-responsive">
+                    <table style="width:100%;" class="informaltable">
+                      <tbody>
+                        <tr>
+                          <td colspan="2" class="td">
+                            <p><span class="guilabel">Rewind safe axis</span> not activated in the <span class="phrase"><span class="application">Virtual Machine</span></span> configuration.</p>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div class="mediaobject" id="UUID-1c3c5d6e-6e5b-a50e-33d4-29507618e381_mediaobject-idm53336350306310">
+                    <div class="video-container">
+                      <div class="videoobject">
+                        <iframe title="" style="border:0;" allow="fullscreen *" src="https://www.youtube.com/embed/01dzdQrY1zU?rel=0"></iframe>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="informaltable table-responsive" id="UUID-1c3c5d6e-6e5b-a50e-33d4-29507618e381_informaltable-idm53336350344678">
+                    <table style="width:100%;" class="informaltable">
+                      <tbody>
+                        <tr>
+                          <td colspan="2" class="td">
+                            <p id="UUID-1c3c5d6e-6e5b-a50e-33d4-29507618e381_para-idm51668175172341"><span class="guilabel">Rewind safe axis</span> activated in the <span class="phrase"><span class="application">Virtual Machine</span></span> configuration.</p>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div class="mediaobject" id="UUID-1c3c5d6e-6e5b-a50e-33d4-29507618e381_mediaobject-idm53336350369350">
+                    <div class="video-container">
+                      <div class="videoobject">
+                        <iframe title="" style="border:0;" allow="fullscreen *" src="https://www.youtube.com/embed/c8Gr6wNIFmA?rel=0"></iframe>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+              </section>
+              <div class="footer-content">
+                <div class="section-toc section-toc-after">
+                  <div class="section-toc-title">
+                    <span class="section-toc-title-delimiter">:</span>
+                  </div>
+                </div>
+              </div>
+              <footer></footer>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

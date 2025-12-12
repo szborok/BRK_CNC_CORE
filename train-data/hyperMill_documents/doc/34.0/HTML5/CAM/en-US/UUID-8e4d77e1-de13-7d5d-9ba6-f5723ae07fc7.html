@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="x-ua-compatible" content="IE=edge" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="search" content="default" />
+  <meta name="use.ic" content="no" />
+  <meta name="tocstandalone" content="yes" />
+  <script type="text/javascript">
+  //<![CDATA[
+                        var index;
+                        var contentLanguage = 'en-US';
+                        var enterKey = 'select';
+                        
+                                        var anchoroption = true;
+                                var instantsearch_minlength = 1;
+                                                
+                                var fuse_threshold = 0.3;
+                        
+                                        var local_csh = false;
+                                
+                        var useanchorlinks = false;
+  //]]>
+  </script>
+  <title>15.7. NLopt</title>
+  <link rel="stylesheet" type="text/css" href="../css/docbook.css" />
+  <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" href="../css/bootstrap-theme.min.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style-common.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style-responsive.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style-print.css" />
+  <link rel="stylesheet" type="text/css" href="../css/font-awesome.css" />
+  <link rel="stylesheet" type="text/css" href="../css/custom.css" />
+  <link rel="stylesheet" type="text/css" href="../css/layout-custom-style.css" />
+  <script src="../js/jquery-1.10.2.min.js" type="text/javascript"></script>
+  <script src="../js/jquery-ui-1.10.3.custom.min.js" type="text/javascript"></script>
+  <script src="../js/bootstrap.min.js" type="text/javascript"></script>
+  <script src="../js/purl.js" type="text/javascript"></script>
+  <script src="../js/jquery.event.move.js" type="text/javascript"></script>
+  <script src="../js/jquery.event.swipe.js" type="text/javascript"></script>
+  <script src="../js/jquery.sticky.js" type="text/javascript"></script>
+  <script src="../js/respond.min.js" type="text/javascript"></script>
+  <script src="../js/script.js" type="text/javascript"></script>
+  <script src="js/toc.js" type="text/javascript"></script>
+  <script src="../js/create-toc.js" type="text/javascript"></script>
+  <script src="../js/clipboard.min.js" type="text/javascript"></script>
+  <script src="../js/fuse.min.js" type="text/javascript"></script>
+  <script src="../js/jquery.mark.min.js" type="text/javascript"></script>
+  <script src="../js/html5.fuse.search.js" type="text/javascript"></script>
+  <script src="js/fuzzydata.js" type="text/javascript"></script>
+  <script src="../js/csh.js" type="text/javascript"></script>
+  <script src="../js/highlight-mergehtml-plugin.js" type="text/javascript"></script>
+  <meta name="generator" content="Paligo" />
+  <link rel="prev" href="UUID-3b22e6cf-2b6d-35e2-719f-df43b81b769e.html" title="15.6.&nbsp;Microsoft Public License (MS-PL)" />
+  <link rel="next" href="UUID-8e4d77e1-de13-7d5d-9ba6-f5723ae07fc7.html#UUID-8e4d77e1-de13-7d5d-9ba6-f5723ae07fc7_section-idm231882493333933" title="README" />
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js?config=TeX-MML-AM_CHTML" async="async"></script>
+  <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+  <script type="text/javascript" src="../js/cookie-consent.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  <script type="text/javascript">
+  //<![CDATA[
+                        $(document).on('ready ajaxComplete', function() {
+                                
+                                hljs.addPlugin(mergeHTMLPlugin);
+                                hljs.configure({'ignoreUnescapedHTML': true});
+                                
+                                $('pre:not(.embedcode)').each(function() {
+                                        /**
+                                         * @type {string}
+                                         */
+                                        var language = $(this).data('language');
+
+                                        if (language === 'plaintext' || language === 'text') {
+                                                $(this).addClass(language).addClass('hljs');
+                                                return true;
+                                        }
+                                        else {
+                                                var clone = this.cloneNode(true);
+                                                hljs.highlightElement(clone);
+                                                $(this).empty().append($(clone).contents());
+                                                $(this).attr("class", $(clone).attr("class"));
+                                        }
+                                });
+                        });
+  //]]>
+  </script>
+  <style type="text/css">
+  /*<![CDATA[*/
+            div.skipnav {
+            }
+            div.skipnav a {
+                position: fixed;
+                left: -10000px;
+                top: 1.5em;
+                width: 1px;
+                height: 1px;
+                overflow: hidden;
+            }
+            div.skipnav a:focus, div.skipnav a:active, div.skipnav a:hover {
+                background: white;
+                color: black;
+                box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.5);
+                position: fixed;
+                left: 2em;
+                top: 1.5em;
+                width: auto;
+                height: auto;
+                overflow: visible;
+                text-decoration: underline;
+                z-index: 99999; /* has to be higher than the side panel */
+    }
+  /*]]>*/
+  </style>
+</head>
+<body data-link-prefix="">
+  <div class="skipnav">
+    <a href="#content-wrapper">Skip to main content</a>
+  </div>
+  <div id="page" class="clearfix">
+    <div id="header">
+      <div class="container">
+        <div id="logotype-container" class="pull-left">
+          <a href="../index.html"><img id="logotype-pageheader" src="../css/image/corporate-logo.png" alt="Corporate logotype" data-role="logotype" /></a>
+        </div>
+        <div id="pagetools-container" class="pull-right">
+          <ul id="page-tools">
+            <li class="page-tools-search"><input placeholder="Search" type="text" class="form-control" aria-label="Search" id="search" /></li>
+            <li class="page-tools-print">
+              <a href="javascript:window.print();"><span class="tool-label">Print</span><span class="glyphicon glyphicon-print"></span></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <h1 id="publication-title">CAM</h1>
+    <div id="subheader-sticky-wrapper" class="sticky-wrapper">
+      <div id="subheader">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3 toc-title">
+              <h2><a class="prev nav-icon hidden-lg hidden-md" href="UUID-3b22e6cf-2b6d-35e2-719f-df43b81b769e.html"><span class="glyphicon glyphicon-chevron-left"></span></a> <a href="#toc" class="hidden mobile-nav-toggle"><span class="glyphicon glyphicon-list"></span>Table of Contents</a><span class="toc-label">Table of Contents</span><a class=
+              "next nav-icon hidden-lg hidden-md" href="UUID-8e4d77e1-de13-7d5d-9ba6-f5723ae07fc7.html#UUID-8e4d77e1-de13-7d5d-9ba6-f5723ae07fc7_section-idm231882493333933"><span class="glyphicon glyphicon-chevron-right"></span></a></h2>
+            </div>
+            <div class="col-md-9 breadcrumb-container">
+              <ul class="breadcrumb">
+                <li class="breadcrumb-link">
+                  <span class="glyphicon glyphicon-home"></span>&nbsp;<a href="index-en-US.html">CAM</a>
+                </li>
+                <li class="breadcrumb-link">
+                  <a href="UUID-bb67fcc5-fba4-9826-34f7-99d929f98a24.html">Third Party Software Terms</a>
+                </li>
+                <li class="breadcrumb-node">NLopt</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="main-content">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 toc-container" id="toc-wrapper">
+            <div id="toc-placeholder">
+              <div id="toc-standalone-placeholder"></div>
+            </div>
+          </div>
+          <div class="col-md-9 content-container" id="content-wrapper">
+            <a accesskey="p" class="prev pull-left prev visible-lg visible-md" id="header-navigation-prev" href="UUID-3b22e6cf-2b6d-35e2-719f-df43b81b769e.html"><span class="glyphicon glyphicon-circle-arrow-left"></span>Zurück</a><a accesskey="n" class="pull-right next visible-lg visible-md" id="header-navigation-next" href=
+            "UUID-8e4d77e1-de13-7d5d-9ba6-f5723ae07fc7.html#UUID-8e4d77e1-de13-7d5d-9ba6-f5723ae07fc7_section-idm231882493333933">Weiter<span class="glyphicon glyphicon-circle-arrow-right"></span></a>
+            <div id="topic-content">
+              <section xml:lang="de" lang="de" dir="ltr" class="section" data-origin-id="UUID-e09d1ac9-fa35-33ed-0103-e14ee5322bbe" data-publication-date="" id="UUID-8e4d77e1-de13-7d5d-9ba6-f5723ae07fc7">
+                <div class="titlepage">
+                  <div>
+                    <div class="title">
+                      <h1 class="title" style="clear: both"><span class="formal-number">15.7</span><span class="formal-label-delimiter">.</span> <span class="formal-title">NLopt</span></h1>
+                    </div>
+                  </div>
+                </div>
+                <section dir="ltr" class="section" data-origin-id="" data-publication-date="" id="UUID-8e4d77e1-de13-7d5d-9ba6-f5723ae07fc7_section-idm231882493333933">
+                  <div class="titlepage">
+                    <div>
+                      <div class="title">
+                        <h2 class="title" style="clear: both"><span class="formal-title">README</span></h2>
+                      </div>
+                    </div>
+                  </div>
+                  <p>NLopt is a library for nonlinear local and global optimization, for functions with and without gradient information. It is designed as as simple, unified interface and packaging of several free/open-source nonlinear optimization libraries.</p>
+                  <p>The latest release and a complete manual may be found at the NLopt home page: http://ab-initio.mit.edu/nlopt</p>
+                  <p>It is compiled and installed with the standard GNU autoconf/automake commands:</p>
+                  <p>./configure</p>
+                  <p>make</p>
+                  <p>make install</p>
+                  <p>See `./configure --help` or the `INSTALL` file for other options. To build the latest development sources:</p>
+                  <p>git clone git://github.com/stevengj/nlopt</p>
+                  <p>cd nlopt</p>
+                  <p>sh autogen.sh</p>
+                  <p>make</p>
+                  <p>(To build from git, you will need GNU autoconf, automake, and libtool installed, along with SWIG and Unix tools such as m4, perl, and sed.)</p>
+                  <p>Once it is installed, `#include &lt;nlopt.h&gt;` in your C/C++ programs and link it with `-lnlopt -lm`. You may need to use the C++ compiler to link in order to include the C++ libraries (which are used internally by NLopt, even though it has a C API).</p>
+                  <p>The minimization function, `nlopt_minimize`, is described in the [man page](http://en.wikipedia.org/wiki/Man_page) (`api/nlopt_minimize.3`, which is installed by `make install`. See also the manual on our web page.</p>
+                  <p>There are also interfaces for Fortran, Python, Matlab, Octave, OCaml, GNU Guile, GNU R, Lua, and Julia. Interfaces for other languages may be added in the future.</p>
+                </section>
+                <section dir="ltr" class="section" data-origin-id="" data-publication-date="" id="UUID-8e4d77e1-de13-7d5d-9ba6-f5723ae07fc7_section-idm231882493748339">
+                  <div class="titlepage">
+                    <div>
+                      <div class="title">
+                        <h2 class="title" style="clear: both"><span class="formal-title">COPYRIGHT</span></h2>
+                      </div>
+                    </div>
+                  </div>
+                  <p>/* Copyright (c) 2007-2014 Massachusetts Institute of Technology</p>
+                  <p>*</p>
+                  <p>* Permission is hereby granted, free of charge, to any person obtaining</p>
+                  <p>* a copy of this software and associated documentation files (the</p>
+                  <p>* "Software"), to deal in the Software without restriction, including</p>
+                  <p>* without limitation the rights to use, copy, modify, merge, publish,</p>
+                  <p>* distribute, sublicense, and/or sell copies of the Software, and to</p>
+                  <p>* permit persons to whom the Software is furnished to do so, subject to</p>
+                  <p>* the following conditions:</p>
+                  <p>*</p>
+                  <p>* The above copyright notice and this permission notice shall be</p>
+                  <p>* included in all copies or substantial portions of the Software.</p>
+                  <p>*</p>
+                  <p>* THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,</p>
+                  <p>* EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF</p>
+                  <p>* MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND</p>
+                  <p>* NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE</p>
+                  <p>* LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION</p>
+                  <p>* OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION</p>
+                  <p>* WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</p>
+                  <p>*/</p>
+                </section>
+                <section dir="ltr" class="section" data-origin-id="" data-publication-date="" id="UUID-8e4d77e1-de13-7d5d-9ba6-f5723ae07fc7_section-idm231882494185553">
+                  <div class="titlepage">
+                    <div>
+                      <div class="title">
+                        <h2 class="title" style="clear: both"><span class="formal-title">COPYING</span></h2>
+                      </div>
+                    </div>
+                  </div>
+                  <p>NLopt combines several free/open-source nonlinear optimization libraries by various authors. See the COPYING, COPYRIGHT, and README files in the subdirectories for the original copyright and licensing information of these packages.</p>
+                  <p>The compiled NLopt library, i.e. the combined work of all of the included optimization routines, is licensed under the conjunction of all of these licensing terms. Currently, the most restrictive terms are for the code in the "luksan" directory, which is licensed under the GNU Lesser General Public License (GNU LGPL), version
+                  2.1 or later (see luksan/COPYRIGHT).</p>
+                  <p>That means that the compiled NLopt library is governed by the terms of the LGPL.</p>
+                  <p>---------------------------------------------------------------------------</p>
+                  <p>Other portions of NLopt, including any modifications to the abovementioned packages, are licensed under the standard "MIT License:"</p>
+                  <p>Copyright (c) 2007-2011 Massachusetts Institute of Technology</p>
+                  <p>Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the
+                  Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:</p>
+                  <p>The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.</p>
+                  <p>THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
+                  OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</p>
+                </section>
+              </section>
+              <div class="footer-content">
+                <div class="section-toc section-toc-after">
+                  <div class="section-toc-title">
+                    <span class="section-toc-title-delimiter">:</span>
+                  </div>
+                </div>
+              </div>
+              <footer></footer>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

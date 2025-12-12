@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="x-ua-compatible" content="IE=edge" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="search" content="default" />
+  <meta name="use.ic" content="no" />
+  <meta name="tocstandalone" content="yes" />
+  <script type="text/javascript">
+  //<![CDATA[
+                        var index;
+                        var contentLanguage = 'en-US';
+                        var enterKey = 'select';
+                        
+                                        var anchoroption = true;
+                                var instantsearch_minlength = 1;
+                                                
+                                var fuse_threshold = 0.3;
+                        
+                                        var local_csh = false;
+                                
+                        var useanchorlinks = false;
+  //]]>
+  </script>
+  <title>The CAD model</title>
+  <link rel="stylesheet" type="text/css" href="../css/docbook.css" />
+  <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" href="../css/bootstrap-theme.min.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style-common.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style-responsive.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style-print.css" />
+  <link rel="stylesheet" type="text/css" href="../css/font-awesome.css" />
+  <link rel="stylesheet" type="text/css" href="../css/custom.css" />
+  <link rel="stylesheet" type="text/css" href="../css/layout-custom-style.css" />
+  <script src="../js/jquery-1.10.2.min.js" type="text/javascript"></script>
+  <script src="../js/jquery-ui-1.10.3.custom.min.js" type="text/javascript"></script>
+  <script src="../js/bootstrap.min.js" type="text/javascript"></script>
+  <script src="../js/purl.js" type="text/javascript"></script>
+  <script src="../js/jquery.event.move.js" type="text/javascript"></script>
+  <script src="../js/jquery.event.swipe.js" type="text/javascript"></script>
+  <script src="../js/jquery.sticky.js" type="text/javascript"></script>
+  <script src="../js/respond.min.js" type="text/javascript"></script>
+  <script src="../js/script.js" type="text/javascript"></script>
+  <script src="js/toc.js" type="text/javascript"></script>
+  <script src="../js/create-toc.js" type="text/javascript"></script>
+  <script src="../js/clipboard.min.js" type="text/javascript"></script>
+  <script src="../js/fuse.min.js" type="text/javascript"></script>
+  <script src="../js/jquery.mark.min.js" type="text/javascript"></script>
+  <script src="../js/html5.fuse.search.js" type="text/javascript"></script>
+  <script src="js/fuzzydata.js" type="text/javascript"></script>
+  <script src="../js/csh.js" type="text/javascript"></script>
+  <script src="../js/highlight-mergehtml-plugin.js" type="text/javascript"></script>
+  <meta name="generator" content="Paligo" />
+  <link rel="prev" href="UUID-6af0c709-5a66-c45f-636e-357be3016359.html#id76776" title="3D and 5-axis machining" />
+  <link rel="next" href="UUID-a1acfe5e-1598-d972-7fd9-a19b6f2b521f.html#UUID-a1acfe5e-1598-d972-7fd9-a19b6f2b521f_UUID-3ef2bcb7-263b-8802-d764-182023365f8e" title="Negative allowances" />
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js?config=TeX-MML-AM_CHTML" async="async"></script>
+  <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+  <script type="text/javascript" src="../js/cookie-consent.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  <script type="text/javascript">
+  //<![CDATA[
+                        $(document).on('ready ajaxComplete', function() {
+                                
+                                hljs.addPlugin(mergeHTMLPlugin);
+                                hljs.configure({'ignoreUnescapedHTML': true});
+                                
+                                $('pre:not(.embedcode)').each(function() {
+                                        /**
+                                         * @type {string}
+                                         */
+                                        var language = $(this).data('language');
+
+                                        if (language === 'plaintext' || language === 'text') {
+                                                $(this).addClass(language).addClass('hljs');
+                                                return true;
+                                        }
+                                        else {
+                                                var clone = this.cloneNode(true);
+                                                hljs.highlightElement(clone);
+                                                $(this).empty().append($(clone).contents());
+                                                $(this).attr("class", $(clone).attr("class"));
+                                        }
+                                });
+                        });
+  //]]>
+  </script>
+  <style type="text/css">
+  /*<![CDATA[*/
+            div.skipnav {
+            }
+            div.skipnav a {
+                position: fixed;
+                left: -10000px;
+                top: 1.5em;
+                width: 1px;
+                height: 1px;
+                overflow: hidden;
+            }
+            div.skipnav a:focus, div.skipnav a:active, div.skipnav a:hover {
+                background: white;
+                color: black;
+                box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.5);
+                position: fixed;
+                left: 2em;
+                top: 1.5em;
+                width: auto;
+                height: auto;
+                overflow: visible;
+                text-decoration: underline;
+                z-index: 99999; /* has to be higher than the side panel */
+    }
+  /*]]>*/
+  </style>
+</head>
+<body data-link-prefix="">
+  <div class="skipnav">
+    <a href="#content-wrapper">Skip to main content</a>
+  </div>
+  <div id="page" class="clearfix">
+    <div id="header">
+      <div class="container">
+        <div id="logotype-container" class="pull-left">
+          <a href="../index.html"><img id="logotype-pageheader" src="../css/image/corporate-logo.png" alt="Corporate logotype" data-role="logotype" /></a>
+        </div>
+        <div id="pagetools-container" class="pull-right">
+          <ul id="page-tools">
+            <li class="page-tools-search"><input placeholder="Search" type="text" class="form-control" aria-label="Search" id="search" /></li>
+            <li class="page-tools-print">
+              <a href="javascript:window.print();"><span class="tool-label">Print</span><span class="glyphicon glyphicon-print"></span></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <h1 id="publication-title">CAM</h1>
+    <div id="subheader-sticky-wrapper" class="sticky-wrapper">
+      <div id="subheader">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3 toc-title">
+              <h2><a class="prev nav-icon hidden-lg hidden-md" href="UUID-6af0c709-5a66-c45f-636e-357be3016359.html#id76776"><span class="glyphicon glyphicon-chevron-left"></span></a> <a href="#toc" class="hidden mobile-nav-toggle"><span class="glyphicon glyphicon-list"></span>Table of Contents</a><span class="toc-label">Table of
+              Contents</span><a class="next nav-icon hidden-lg hidden-md" href="UUID-a1acfe5e-1598-d972-7fd9-a19b6f2b521f.html#UUID-a1acfe5e-1598-d972-7fd9-a19b6f2b521f_UUID-3ef2bcb7-263b-8802-d764-182023365f8e"><span class="glyphicon glyphicon-chevron-right"></span></a></h2>
+            </div>
+            <div class="col-md-9 breadcrumb-container">
+              <ul class="breadcrumb">
+                <li class="breadcrumb-link">
+                  <span class="glyphicon glyphicon-home"></span>&nbsp;<a href="index-en-US.html">CAM</a>
+                </li>
+                <li class="breadcrumb-link">
+                  <a href="UUID-0751db51-8b5b-ae49-1904-dce4b8c92263.html">Basics of CAM editing</a>
+                </li>
+                <li class="breadcrumb-link">
+                  <a href="UUID-6af0c709-5a66-c45f-636e-357be3016359.html">Prepare manufacturing geometry</a>
+                </li>
+                <li class="breadcrumb-node">The CAD model</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="main-content">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 toc-container" id="toc-wrapper">
+            <div id="toc-placeholder">
+              <div id="toc-standalone-placeholder"></div>
+            </div>
+          </div>
+          <div class="col-md-9 content-container" id="content-wrapper">
+            <a accesskey="p" class="prev pull-left prev visible-lg visible-md" id="header-navigation-prev" href="UUID-6af0c709-5a66-c45f-636e-357be3016359.html#id76776"><span class="glyphicon glyphicon-circle-arrow-left"></span>Prev</a><a accesskey="n" class="pull-right next visible-lg visible-md" id="header-navigation-next" href=
+            "UUID-a1acfe5e-1598-d972-7fd9-a19b6f2b521f.html#UUID-a1acfe5e-1598-d972-7fd9-a19b6f2b521f_UUID-3ef2bcb7-263b-8802-d764-182023365f8e">Next<span class="glyphicon glyphicon-circle-arrow-right"></span></a>
+            <div id="topic-content">
+              <section xml:lang="en-US" lang="en-US" dir="ltr" class="section" data-origin-id="UUID-ddad5939-082a-b3ba-2c0a-85af55a53cca" data-publication-date="" id="UUID-a1acfe5e-1598-d972-7fd9-a19b6f2b521f">
+                <div class="titlepage">
+                  <div>
+                    <div class="title">
+                      <h1 class="title" style="clear: both"><span class="formal-title">The CAD model</span></h1>
+                    </div>
+                  </div>
+                </div>
+                <p>The basis for the creation of an NC program for 3D machining is the CAD model created in the CAD program and consisting of surfaces and/or solids. It contains all areas to be machined, as well as adjacent areas that are not to be machined in order to optimize the machining procedure and the collision check. 2D or 3D lines that
+                are used as limitation contours or leading curves for profiles during the job definition.</p>
+                <section dir="ltr" class="simplesect internal" id="UUID-a1acfe5e-1598-d972-7fd9-a19b6f2b521f_id17A4DG0G046">
+                  <div class="titlepage">
+                    <div>
+                      <div>
+                        <h2 class="title" style="clear: both"><span class="formal-title">Surface gaps</span></h2>
+                      </div>
+                    </div>
+                  </div>
+                  <p>Make sure that no gaps arise between adjacent surfaces or between adjacent surfaces and solids during model creation. Large surface gaps can cause unwanted nose-diving of the cutter in the course of machining. Gaps with a size below the used cutter radius are not critical.</p>
+                </section>
+                <section dir="ltr" class="simplesect internal" id="UUID-a1acfe5e-1598-d972-7fd9-a19b6f2b521f_id17A4DG0G0FH">
+                  <div class="titlepage">
+                    <div>
+                      <div>
+                        <h2 class="title" style="clear: both"><span class="formal-title">Overlapping surfaces</span></h2>
+                      </div>
+                    </div>
+                  </div>
+                  <p>Overlapping surfaces can result in unwanted rest material areas. These areas cannot be removed by Automatic rest material recognition, as they are not the result of too large cutter diameters but of intersecting surfaces.</p>
+                  <div class="mediaobject"><img src="image/uuid-c48b06a4-2f1a-93d5-94e3-5990aa8dd161.png" style="" alt="3D_basis_ueberschneidende_flaechen.png" /></div>
+                  <p>In the course of, and after creating machining cycles, the CAD model must neither be moved nor changed in its position in space.</p>
+                </section>
+                <section xml:lang="en-US" lang="en-US" dir="ltr" class="section" data-origin-id="" data-publication-date="" id="UUID-a1acfe5e-1598-d972-7fd9-a19b6f2b521f_UUID-3ef2bcb7-263b-8802-d764-182023365f8e">
+                  <div class="titlepage">
+                    <div>
+                      <div class="title">
+                        <h2 class="title" style="clear: both"><span class="formal-title">Negative allowances</span></h2>
+                      </div>
+                    </div>
+                  </div>
+                  <p>The following restriction applies to all cycles: If the sum of the allowances is negative, the sum total must be less than the Tool radius - Machining tolerance.</p>
+                  <p>Example:</p>
+                  <p>Tool radius = 5.00 mm</p>
+                  <p>Machining tolerance = 0.01 mm</p>
+                  <p>Allowance = -3.0mm</p>
+                  <p>Additional allowance XY must be greater than -1.99 mm, e.g. 1.98, because</p>
+                  <p>|-3.00 mm +(-1.98 mm)| &lt; 5.00 mm -0.01 mm</p>
+                  <p>In this context, the area-based allowance is also taken into account as an allowance in the <span class="guimenuitem">Milling area</span> → <span class="guisubmenu">definition</span>. If several values are defined here, only the smallest value is taken into account.</p>
+                </section>
+              </section>
+              <div class="footer-content">
+                <div class="section-toc section-toc-after">
+                  <div class="section-toc-title">
+                    <span class="section-toc-title-delimiter">:</span>
+                  </div>
+                </div>
+              </div>
+              <footer></footer>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="x-ua-compatible" content="IE=edge" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="search" content="default" />
+  <meta name="use.ic" content="no" />
+  <meta name="tocstandalone" content="yes" />
+  <script type="text/javascript">
+  //<![CDATA[
+                        var index;
+                        var contentLanguage = 'en-US';
+                        var enterKey = 'select';
+                        
+                                        var anchoroption = true;
+                                var instantsearch_minlength = 1;
+                                                
+                                var fuse_threshold = 0.3;
+                        
+                                        var local_csh = false;
+                                
+                        var useanchorlinks = false;
+  //]]>
+  </script>
+  <title>Input dialog: General</title>
+  <link rel="stylesheet" type="text/css" href="../css/docbook.css" />
+  <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" href="../css/bootstrap-theme.min.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style-common.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style-responsive.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style-print.css" />
+  <link rel="stylesheet" type="text/css" href="../css/font-awesome.css" />
+  <link rel="stylesheet" type="text/css" href="../css/custom.css" />
+  <link rel="stylesheet" type="text/css" href="../css/layout-custom-style.css" />
+  <script src="../js/jquery-1.10.2.min.js" type="text/javascript"></script>
+  <script src="../js/jquery-ui-1.10.3.custom.min.js" type="text/javascript"></script>
+  <script src="../js/bootstrap.min.js" type="text/javascript"></script>
+  <script src="../js/purl.js" type="text/javascript"></script>
+  <script src="../js/jquery.event.move.js" type="text/javascript"></script>
+  <script src="../js/jquery.event.swipe.js" type="text/javascript"></script>
+  <script src="../js/jquery.sticky.js" type="text/javascript"></script>
+  <script src="../js/respond.min.js" type="text/javascript"></script>
+  <script src="../js/script.js" type="text/javascript"></script>
+  <script src="js/toc.js" type="text/javascript"></script>
+  <script src="../js/create-toc.js" type="text/javascript"></script>
+  <script src="../js/clipboard.min.js" type="text/javascript"></script>
+  <script src="../js/fuse.min.js" type="text/javascript"></script>
+  <script src="../js/jquery.mark.min.js" type="text/javascript"></script>
+  <script src="../js/html5.fuse.search.js" type="text/javascript"></script>
+  <script src="js/fuzzydata.js" type="text/javascript"></script>
+  <script src="../js/csh.js" type="text/javascript"></script>
+  <script src="../js/highlight-mergehtml-plugin.js" type="text/javascript"></script>
+  <meta name="generator" content="Paligo" />
+  <link rel="prev" href="UUID-0731353e-eaf3-b73e-7c7f-2b75fbc80bbe.html" title="Define job" />
+  <link rel="next" href="UUID-23f2e244-b804-e34e-0323-ed963b827770.html#id76816" title="Job information" />
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js?config=TeX-MML-AM_CHTML" async="async"></script>
+  <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+  <script type="text/javascript" src="../js/cookie-consent.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  <script type="text/javascript">
+  //<![CDATA[
+                        $(document).on('ready ajaxComplete', function() {
+                                
+                                hljs.addPlugin(mergeHTMLPlugin);
+                                hljs.configure({'ignoreUnescapedHTML': true});
+                                
+                                $('pre:not(.embedcode)').each(function() {
+                                        /**
+                                         * @type {string}
+                                         */
+                                        var language = $(this).data('language');
+
+                                        if (language === 'plaintext' || language === 'text') {
+                                                $(this).addClass(language).addClass('hljs');
+                                                return true;
+                                        }
+                                        else {
+                                                var clone = this.cloneNode(true);
+                                                hljs.highlightElement(clone);
+                                                $(this).empty().append($(clone).contents());
+                                                $(this).attr("class", $(clone).attr("class"));
+                                        }
+                                });
+                        });
+  //]]>
+  </script>
+  <style type="text/css">
+  /*<![CDATA[*/
+            div.skipnav {
+            }
+            div.skipnav a {
+                position: fixed;
+                left: -10000px;
+                top: 1.5em;
+                width: 1px;
+                height: 1px;
+                overflow: hidden;
+            }
+            div.skipnav a:focus, div.skipnav a:active, div.skipnav a:hover {
+                background: white;
+                color: black;
+                box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.5);
+                position: fixed;
+                left: 2em;
+                top: 1.5em;
+                width: auto;
+                height: auto;
+                overflow: visible;
+                text-decoration: underline;
+                z-index: 99999; /* has to be higher than the side panel */
+    }
+  /*]]>*/
+  </style>
+</head>
+<body data-link-prefix="">
+  <div class="skipnav">
+    <a href="#content-wrapper">Skip to main content</a>
+  </div>
+  <div id="page" class="clearfix">
+    <div id="header">
+      <div class="container">
+        <div id="logotype-container" class="pull-left">
+          <a href="../index.html"><img id="logotype-pageheader" src="../css/image/corporate-logo.png" alt="Corporate logotype" data-role="logotype" /></a>
+        </div>
+        <div id="pagetools-container" class="pull-right">
+          <ul id="page-tools">
+            <li class="page-tools-search"><input placeholder="Search" type="text" class="form-control" aria-label="Search" id="search" /></li>
+            <li class="page-tools-print">
+              <a href="javascript:window.print();"><span class="tool-label">Print</span><span class="glyphicon glyphicon-print"></span></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <h1 id="publication-title">CAM</h1>
+    <div id="subheader-sticky-wrapper" class="sticky-wrapper">
+      <div id="subheader">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3 toc-title">
+              <h2><a class="prev nav-icon hidden-lg hidden-md" href="UUID-0731353e-eaf3-b73e-7c7f-2b75fbc80bbe.html"><span class="glyphicon glyphicon-chevron-left"></span></a> <a href="#toc" class="hidden mobile-nav-toggle"><span class="glyphicon glyphicon-list"></span>Table of Contents</a><span class="toc-label">Table of Contents</span><a class=
+              "next nav-icon hidden-lg hidden-md" href="UUID-23f2e244-b804-e34e-0323-ed963b827770.html#id76816"><span class="glyphicon glyphicon-chevron-right"></span></a></h2>
+            </div>
+            <div class="col-md-9 breadcrumb-container">
+              <ul class="breadcrumb">
+                <li class="breadcrumb-link">
+                  <span class="glyphicon glyphicon-home"></span>&nbsp;<a href="index-en-US.html">CAM</a>
+                </li>
+                <li class="breadcrumb-link">
+                  <a href="UUID-0751db51-8b5b-ae49-1904-dce4b8c92263.html">Basics of CAM editing</a>
+                </li>
+                <li class="breadcrumb-link">
+                  <a href="UUID-aeb94185-7a19-29aa-6f91-3af4af99b68d.html">Structure CAM project</a>
+                </li>
+                <li class="breadcrumb-link">
+                  <a href="UUID-0731353e-eaf3-b73e-7c7f-2b75fbc80bbe.html">Define job</a>
+                </li>
+                <li class="breadcrumb-node">Input dialog: General</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="main-content">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 toc-container" id="toc-wrapper">
+            <div id="toc-placeholder">
+              <div id="toc-standalone-placeholder"></div>
+            </div>
+          </div>
+          <div class="col-md-9 content-container" id="content-wrapper">
+            <a accesskey="p" class="prev pull-left prev visible-lg visible-md" id="header-navigation-prev" href="UUID-0731353e-eaf3-b73e-7c7f-2b75fbc80bbe.html"><span class="glyphicon glyphicon-circle-arrow-left"></span>Prev</a><a accesskey="n" class="pull-right next visible-lg visible-md" id="header-navigation-next" href=
+            "UUID-23f2e244-b804-e34e-0323-ed963b827770.html#id76816">Next<span class="glyphicon glyphicon-circle-arrow-right"></span></a>
+            <div id="topic-content">
+              <section xml:lang="en-US" lang="en-US" dir="ltr" class="section internal" data-origin-id="UUID-11cb92b4-0c37-cce1-8119-6214c64d167b" data-publication-date="" id="UUID-23f2e244-b804-e34e-0323-ed963b827770">
+                <div class="titlepage">
+                  <div>
+                    <div class="title">
+                      <h1 class="title" style="clear: both"><span class="formal-title">Input dialog: General</span></h1>
+                    </div>
+                  </div>
+                </div>
+                <p>Define job-specific details for identification and display purposes.</p>
+                <section dir="ltr" class="section internal" data-origin-id="" data-publication-date="" id="id76816">
+                  <div class="titlepage">
+                    <div>
+                      <div class="title">
+                        <h2 class="title" style="clear: both"><span class="formal-title">Job information</span></h2>
+                      </div>
+                    </div>
+                  </div>
+                  <p>Define the job name.</p>
+                  <p><span class="guilabel">Name</span>, <span class="guilabel">Comment</span>: Enter a name and, if required, a comment. Name patterns can be defined for both elements.</p>
+                  <div dir="ltr" class="note">
+                    <h3 class="title">Note</h3>
+                    <p>If <span class="guilabel">Name</span> and/or <span class="guilabel">Comment</span> are changed, <span class="bold"><strong>no</strong></span> recalculation of the toolpath file is required. The changed designations are automatically transferred to the toolpath file.</p>
+                  </div>
+                  <section xml:lang="en-US" lang="en-US" dir="ltr" class="section internal" data-origin-id="" data-publication-date="" id="UUID-23f2e244-b804-e34e-0323-ed963b827770_UUID-4a7b6128-700e-d5f4-3973-78e52dc1ac41">
+                    <div class="titlepage">
+                      <div>
+                        <div class="title">
+                          <h3 class="title"><span class="formal-title">Use name patterns for jobs and comments</span></h3>
+                        </div>
+                      </div>
+                    </div>
+                    <p>Use any job parameters to create name patterns for naming jobs and comments. Proceed as follows:</p>
+                    <div class="orderedlist">
+                      <ol class="orderedlist" type="1">
+                        <li class="listitem">
+                          <p><span class="inlinemediaobject"><img src="image/uuid-bc3396d5-dd71-aabe-fb5d-b570e7793b8e.png" alt="formel.png" /></span> Click the icon to open the <span class="guilabel">Define name pattern</span> dialog and enable the <span class="guilabel">Use pattern</span> function.</p>
+                        </li>
+                        <li class="listitem">
+                          <p><span class="inlinemediaobject"><img src="image/uuid-bc3396d5-dd71-aabe-fb5d-b570e7793b8e.png" alt="formel.png" /></span> Click the icon under <span class="guilabel">Name pattern</span> to select an entry from the Job, Frame, Tool, Machining or Parameter areas.</p>
+                        </li>
+                      </ol>
+                    </div>
+                    <p>Any combinations of parameters and free text are possible. The selected entries are displayed in a preview in the <span class="guilabel">Preview</span> line.</p>
+                    <p>Parameter values that are used change dynamically.</p>
+                    <p>Any other job parameters are available in addition to the standard available parameters.</p>
+                    <div dir="ltr" class="tip" id="UUID-23f2e244-b804-e34e-0323-ed963b827770_tip-idm51660909463361">
+                      <h3 class="title">Tip</h3>
+                      <p><span class="bold"><strong>Using a job list comment in the job</strong></span></p>
+                      <p>Simply go to <span class="guimenuitem">Job information</span> → <span class="guisubmenu">Comment</span>, open the <span class="guilabel">Define name pattern</span> dialog and select the required comment in the <span class="guimenuitem">Name pattern</span> → <span class="guisubmenu">Job list</span> option. This will
+                      directly apply the comment from the job list to the job.</p>
+                    </div>
+                  </section>
+                  <section xml:lang="en-US" lang="en-US" dir="ltr" class="section internal" data-origin-id="" data-publication-date="" id="UUID-23f2e244-b804-e34e-0323-ed963b827770_UUID-52ba95b6-a3ef-a444-42a3-5ca90c3a0264">
+                    <div class="titlepage">
+                      <div>
+                        <div class="title">
+                          <h3 class="title"><span class="formal-title">Using any job parameters in the name pattern</span></h3>
+                        </div>
+                      </div>
+                    </div>
+                    <p>Proceed as follows to use any job parameters in the name pattern:</p>
+                    <div class="orderedlist">
+                      <ol class="orderedlist" type="1">
+                        <li class="listitem">
+                          <p>Select the parameter in the job definition.</p>
+                        </li>
+                        <li class="listitem">
+                          <p><span class="keycap keycap-graphical"><strong>CTRL</strong></span> key + right-click.</p>
+                        </li>
+                        <li class="listitem">
+                          <p>Use the <span class="guilabel">Copy property name to clipboard</span> function on the shortcut menu.</p>
+                        </li>
+                        <li class="listitem">
+                          <p>In the <span class="guilabel">Use name pattern</span> dialog, use the <span class="guimenu">Parameters</span> → <span class="guimenuitem">Paste property name from clipboard</span> function to use the parameter in the name pattern.</p>
+                        </li>
+                      </ol>
+                    </div>
+                    <div class="informaltable table-responsive">
+                      <table style="width:100%;" class="informaltable">
+                        <colgroup>
+                          <col style="width:12%;" />
+                          <col style="width:88%;" />
+                        </colgroup>
+                        <tbody>
+                          <tr>
+                            <td class="td">
+                              <div class="mediaobject">
+                                <table class="image-viewport" style="border-collapse:collapse;border:0; ;">
+                                  <tr style="height: 48px">
+                                    <td style="padding:0;"><img src="image/uuid-a21dca54-cb7a-509a-43a3-9baa875b973c.svg" style="max-height: 48px;" alt="hm_save_stock.svg" /></td>
+                                  </tr>
+                                </table>
+                              </div>
+                            </td>
+                            <td class="td">
+                              <p>Click the icon to save the name pattern for this job. You can also save a name pattern as a default, see Dialog control functions.</p>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </section>
+                  <p><span class="guilabel">ID</span>: The identification number is set by the system and does not change even when the job sequence is changed. Click <span class="guilabel">Set job IDs</span> on the joblist shortcut menu to set new job ID numbers.</p>
+                  <p><span class="guilabel">Generate NC file</span>: Enabled by default. An NC file is generated for the cycle if the <span class="guilabel">Generate NC file</span> function is used on the shortcut menu of the job in <span class="italic">hyper</span>MILL or in <span class="italic">hyper</span>VIEW.</p>
+                  <div dir="ltr" class="important">
+                    <h3 class="title">Important</h3>
+                    <p><span class="guilabel">Generate NC file</span>: 3D and 5X Rework Machining – linking job – compound job</p>
+                    <p>Initial situation: Reference job: <span class="guilabel">Generate NC file</span> is deactivated. Rework Machining: <span class="guilabel">Generate NC file</span> is activated.</p>
+                    <div class="orderedlist">
+                      <ol class="orderedlist" type="1">
+                        <li class="listitem">
+                          <p>Reference job and related Rework job are used within a Linking job. Generate NC file is automatically disabled in both jobs.</p>
+                        </li>
+                        <li class="listitem">
+                          <p>Reference job and related Rework job are moved from the Linking job into a Compound job. By doing so, the Generate NC file option is automatically enabled in both jobs. It has to be manually disabled within the Reference job again.</p>
+                        </li>
+                      </ol>
+                    </div>
+                  </div>
+                  <p><span class="guilabel">Use for additive</span>: Activate if the cycle is to be used as a reference cycle for additive manufacturing. For further information on additive manufacturing and the possible reference cycles, see section <span class="guimenuitem">5X Machining</span> → <span class="guisubmenu">Additive
+                  Manufacturing</span>.</p>
+                  <div dir="ltr" class="note notice">
+                    <h3 class="title">Note</h3>
+                    <p>The function <span class="guilabel">Use for additive</span> is only available if the cycle can be used as a reference cycle for additive manufacturing.</p>
+                  </div>
+                </section>
+                <section xml:lang="en-US" lang="en-US" dir="ltr" class="section internal" data-origin-id="" data-publication-date="" id="UUID-23f2e244-b804-e34e-0323-ed963b827770_UUID-cceffc09-d9ce-d714-29f1-96ee462f8163">
+                  <div class="titlepage">
+                    <div>
+                      <div class="title">
+                        <h2 class="title" style="clear: both"><span class="formal-title">Tool feedback</span></h2>
+                      </div>
+                    </div>
+                  </div>
+                  <p>If the feedback display is activated, the tool, tool holder and tool head are shown by default:</p>
+                  <div class="itemizedlist">
+                    <ul class="itemizedlist" style="list-style-type: disc;">
+                      <li class="listitem">
+                        <p>at the zero point of the WCS if the tool is defined in the browser.</p>
+                      </li>
+                      <li class="listitem">
+                        <p>at the zero point of the selected frame if the tool is defined directly in the Job dialog.</p>
+                      </li>
+                    </ul>
+                  </div>
+                  <p>For checking purposes, the tool position can be relocated on a job-specific basis. To do this, switch to the <span class="guilabel">General</span> dialog page in the job definition input dialog.</p>
+                  <div class="informaltable table-responsive">
+                    <table style="width:100%;" class="informaltable">
+                      <colgroup>
+                        <col style="width:12%;" />
+                        <col style="width:88%;" />
+                      </colgroup>
+                      <tbody>
+                        <tr>
+                          <td class="td">
+                            <div class="mediaobject">
+                              <table class="image-viewport" style="border-collapse:collapse;border:0; ;">
+                                <tr style="height: 48px">
+                                  <td style="padding:0;"><img src="image/uuid-1936d240-0f80-7e6e-505f-94ad48cd2741.svg" style="max-height: 48px;" alt="sel_point.svg" /></td>
+                                </tr>
+                              </table>
+                            </div>
+                          </td>
+                          <td class="td">
+                            <p id="UUID-23f2e244-b804-e34e-0323-ed963b827770_para-idm53321827585862"><span class="guilabel">Base point</span>: Right-click the icon to define the position of the tool tip.</p>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <p><span class="guilabel">Tool holder</span>: If defined, the tool holder and tool head are displayed along with the tool. The tool feedback can also be placed at any location.</p>
+                  <div class="informaltable table-responsive">
+                    <table style="width:100%;" class="informaltable">
+                      <colgroup>
+                        <col style="width:12%;" />
+                        <col style="width:88%;" />
+                      </colgroup>
+                      <tbody>
+                        <tr>
+                          <td class="td">
+                            <div class="mediaobject">
+                              <table class="image-viewport" style="border-collapse:collapse;border:0; ;">
+                                <tr style="height: 48px">
+                                  <td style="padding:0;"><img src="image/uuid-1936d240-0f80-7e6e-505f-94ad48cd2741.svg" style="max-height: 48px;" alt="sel_point.svg" /></td>
+                                </tr>
+                              </table>
+                            </div>
+                          </td>
+                          <td class="td">
+                            <p>Right-click the icon, choose <span class="guilabel">Point and direction</span>. The selected <span class="guilabel">Base point</span> determines the position. The selected <span class="guilabel">point on axis</span> defines the orientation of the tool.</p>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </section>
+                <section xml:lang="en-US" lang="en-US" dir="ltr" class="section internal" data-origin-id="" data-publication-date="" id="UUID-23f2e244-b804-e34e-0323-ed963b827770_UUID-99371e09-09c0-e432-c10e-9de40aeb4a1b">
+                  <div class="titlepage">
+                    <div>
+                      <div class="title">
+                        <h2 class="title" style="clear: both"><span class="formal-title">Toolpath visualization</span></h2>
+                      </div>
+                    </div>
+                  </div>
+                  <p><span class="guilabel">Use global colors</span>: Use the global color definitions from the Setup hyperMILL dialog ( <span class="guimenu">Document</span> → <span class="guisubmenu">Feedbacks</span> → <span class="guisubmenu">Colors</span>). Disable this option if other colors should be used for the job.</p>
+                  <p><span class="guilabel">G0</span> / <span class="guilabel">G1</span>: Set the colors for rapid tool movements (G0) and infeed movements (G1).</p>
+                  <p><span class="guilabel">Point</span>: Define the size and color for displaying the toolpath points.</p>
+                  <p><span class="guilabel">Show NC-Path</span>: The calculated NC path is also displayed in addition to the toolpath. The colors for rapid tool movements (G0) and infeed movements (G1) can be defined.</p>
+                  <div dir="ltr" class="note notice">
+                    <h3 class="title">Note</h3>
+                    <p>The <span class="guilabel">Show NC-Path</span> function is available for the following cycles: Thread Milling, Helical Drilling, Pocket Milling, Contour Milling, Contour Milling on 3D Model, T-Slot Milling on 3D Model, Chamfer Milling on 3D Model, Contour Grinding on 3D Model, Turning: Finishing, Groove Finishing, Face
+                    Groove Finishing.</p>
+                  </div>
+                  <p><span class="guilabel">Show clipped paths</span>: Show the parts of the toolpaths that are in collision (clipped). Specify the color for clipped areas.</p>
+                  <div dir="ltr" class="note notice">
+                    <h3 class="title">Note</h3>
+                    <p>The <span class="guilabel">Show clipped paths</span> function is not available for all cycles.</p>
+                  </div>
+                  <p id="UUID-23f2e244-b804-e34e-0323-ed963b827770_para-idm53125143165378"><span class="guilabel">Tool axis</span> / <span class="guilabel">Collision</span>: Define the display size and color for the tool axis and collisions.</p>
+                </section>
+                <section dir="ltr" class="section" data-origin-id="" data-publication-date="" id="UUID-23f2e244-b804-e34e-0323-ed963b827770_section-idm23468726597525">
+                  <div class="titlepage">
+                    <div>
+                      <div class="title">
+                        <h2 class="title" style="clear: both"><span class="formal-title">Stock chain</span></h2>
+                      </div>
+                    </div>
+                  </div>
+                  <p><span class="guilabel">Use global resolution</span>: Activate to adopt the accuracy for the stock model calculation from the <span class="guimenuitem">Job list</span> → <span class="guisubmenu">Settings</span> → <span class="guisubmenu">Stock chain</span>. If a different accuracy is required for the job, deactivate the
+                  function and define a value for <span class="guilabel">Resolution</span>.</p>
+                  <p><span class="guilabel">Exclude from stock chain</span>: Activate if no stock model calculation is to be carried out for the job.</p>
+                  <p>If the <span class="guimenuitem">Job information</span> → <span class="guisubmenu">Generate NC file</span> function is activated, the <span class="guilabel">Allow stock without NC</span> function can be used to perform a stock model calculation for the job.</p>
+                </section>
+              </section>
+              <div class="footer-content">
+                <div class="section-toc section-toc-after">
+                  <div class="section-toc-title">
+                    <span class="section-toc-title-delimiter">:</span>
+                  </div>
+                </div>
+              </div>
+              <footer></footer>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

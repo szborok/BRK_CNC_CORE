@@ -1,0 +1,981 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="x-ua-compatible" content="IE=edge" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="search" content="default" />
+  <meta name="use.ic" content="no" />
+  <meta name="tocstandalone" content="yes" />
+  <script type="text/javascript">
+  //<![CDATA[
+                        var index;
+                        var contentLanguage = 'en-US';
+                        var enterKey = 'select';
+                        
+                                        var anchoroption = true;
+                                var instantsearch_minlength = 1;
+                                                
+                                var fuse_threshold = 0.3;
+                        
+                                        var local_csh = false;
+                                
+                        var useanchorlinks = false;
+  //]]>
+  </script>
+  <title>Machine properties / NC file properties</title>
+  <link rel="stylesheet" type="text/css" href="../css/docbook.css" />
+  <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" href="../css/bootstrap-theme.min.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style-common.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style-responsive.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style-print.css" />
+  <link rel="stylesheet" type="text/css" href="../css/font-awesome.css" />
+  <link rel="stylesheet" type="text/css" href="../css/custom.css" />
+  <link rel="stylesheet" type="text/css" href="../css/layout-custom-style.css" />
+  <script src="../js/jquery-1.10.2.min.js" type="text/javascript"></script>
+  <script src="../js/jquery-ui-1.10.3.custom.min.js" type="text/javascript"></script>
+  <script src="../js/bootstrap.min.js" type="text/javascript"></script>
+  <script src="../js/purl.js" type="text/javascript"></script>
+  <script src="../js/jquery.event.move.js" type="text/javascript"></script>
+  <script src="../js/jquery.event.swipe.js" type="text/javascript"></script>
+  <script src="../js/jquery.sticky.js" type="text/javascript"></script>
+  <script src="../js/respond.min.js" type="text/javascript"></script>
+  <script src="../js/script.js" type="text/javascript"></script>
+  <script src="js/toc.js" type="text/javascript"></script>
+  <script src="../js/create-toc.js" type="text/javascript"></script>
+  <script src="../js/clipboard.min.js" type="text/javascript"></script>
+  <script src="../js/fuse.min.js" type="text/javascript"></script>
+  <script src="../js/jquery.mark.min.js" type="text/javascript"></script>
+  <script src="../js/html5.fuse.search.js" type="text/javascript"></script>
+  <script src="js/fuzzydata.js" type="text/javascript"></script>
+  <script src="../js/csh.js" type="text/javascript"></script>
+  <script src="../js/highlight-mergehtml-plugin.js" type="text/javascript"></script>
+  <meta name="generator" content="Paligo" />
+  <link rel="prev" href="UUID-6660add6-8226-1b0f-15e6-9b9555aa5eca.html#UUID-6660add6-8226-1b0f-15e6-9b9555aa5eca_id179SA0300K0" title="Simulation of compound jobs" />
+  <link rel="next" href="UUID-c11bd7e3-3794-03cb-f3c6-722c7b9a0454.html" title="Simulation tab" />
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js?config=TeX-MML-AM_CHTML" async="async"></script>
+  <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+  <script type="text/javascript" src="../js/cookie-consent.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  <script type="text/javascript">
+  //<![CDATA[
+                        $(document).on('ready ajaxComplete', function() {
+                                
+                                hljs.addPlugin(mergeHTMLPlugin);
+                                hljs.configure({'ignoreUnescapedHTML': true});
+                                
+                                $('pre:not(.embedcode)').each(function() {
+                                        /**
+                                         * @type {string}
+                                         */
+                                        var language = $(this).data('language');
+
+                                        if (language === 'plaintext' || language === 'text') {
+                                                $(this).addClass(language).addClass('hljs');
+                                                return true;
+                                        }
+                                        else {
+                                                var clone = this.cloneNode(true);
+                                                hljs.highlightElement(clone);
+                                                $(this).empty().append($(clone).contents());
+                                                $(this).attr("class", $(clone).attr("class"));
+                                        }
+                                });
+                        });
+  //]]>
+  </script>
+  <style type="text/css">
+  /*<![CDATA[*/
+            div.skipnav {
+            }
+            div.skipnav a {
+                position: fixed;
+                left: -10000px;
+                top: 1.5em;
+                width: 1px;
+                height: 1px;
+                overflow: hidden;
+            }
+            div.skipnav a:focus, div.skipnav a:active, div.skipnav a:hover {
+                background: white;
+                color: black;
+                box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.5);
+                position: fixed;
+                left: 2em;
+                top: 1.5em;
+                width: auto;
+                height: auto;
+                overflow: visible;
+                text-decoration: underline;
+                z-index: 99999; /* has to be higher than the side panel */
+    }
+  /*]]>*/
+  </style>
+</head>
+<body data-link-prefix="">
+  <div class="skipnav">
+    <a href="#content-wrapper">Skip to main content</a>
+  </div>
+  <div id="page" class="clearfix">
+    <div id="header">
+      <div class="container">
+        <div id="logotype-container" class="pull-left">
+          <a href="../index.html"><img id="logotype-pageheader" src="../css/image/corporate-logo.png" alt="Corporate logotype" data-role="logotype" /></a>
+        </div>
+        <div id="pagetools-container" class="pull-right">
+          <ul id="page-tools">
+            <li class="page-tools-search"><input placeholder="Search" type="text" class="form-control" aria-label="Search" id="search" /></li>
+            <li class="page-tools-print">
+              <a href="javascript:window.print();"><span class="tool-label">Print</span><span class="glyphicon glyphicon-print"></span></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <h1 id="publication-title">CAM</h1>
+    <div id="subheader-sticky-wrapper" class="sticky-wrapper">
+      <div id="subheader">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3 toc-title">
+              <h2><a class="prev nav-icon hidden-lg hidden-md" href="UUID-6660add6-8226-1b0f-15e6-9b9555aa5eca.html#UUID-6660add6-8226-1b0f-15e6-9b9555aa5eca_id179SA0300K0"><span class="glyphicon glyphicon-chevron-left"></span></a> <a href="#toc" class="hidden mobile-nav-toggle"><span class="glyphicon glyphicon-list"></span>Table of
+              Contents</a><span class="toc-label">Table of Contents</span><a class="next nav-icon hidden-lg hidden-md" href="UUID-c11bd7e3-3794-03cb-f3c6-722c7b9a0454.html"><span class="glyphicon glyphicon-chevron-right"></span></a></h2>
+            </div>
+            <div class="col-md-9 breadcrumb-container">
+              <ul class="breadcrumb">
+                <li class="breadcrumb-link">
+                  <span class="glyphicon glyphicon-home"></span>&nbsp;<a href="index-en-US.html">CAM</a>
+                </li>
+                <li class="breadcrumb-link">
+                  <a href="UUID-56b42c1f-4725-0b56-0bdf-0ee2de68a013.html"><span class="italic">hyper</span>VIEW</a>
+                </li>
+                <li class="breadcrumb-link">
+                  <a href="UUID-34375f5b-485a-151c-3c00-3d20e2deb5f9.html">Browser functions</a>
+                </li>
+                <li class="breadcrumb-link">
+                  <a href="UUID-6660add6-8226-1b0f-15e6-9b9555aa5eca.html">NC-Jobs tab</a>
+                </li>
+                <li class="breadcrumb-node">Machine properties / NC file properties</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="main-content">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 toc-container" id="toc-wrapper">
+            <div id="toc-placeholder">
+              <div id="toc-standalone-placeholder"></div>
+            </div>
+          </div>
+          <div class="col-md-9 content-container" id="content-wrapper">
+            <a accesskey="p" class="prev pull-left prev visible-lg visible-md" id="header-navigation-prev" href="UUID-6660add6-8226-1b0f-15e6-9b9555aa5eca.html#UUID-6660add6-8226-1b0f-15e6-9b9555aa5eca_id179SA0300K0"><span class="glyphicon glyphicon-circle-arrow-left"></span>Prev</a><a accesskey="n" class="pull-right next visible-lg visible-md"
+            id="header-navigation-next" href="UUID-c11bd7e3-3794-03cb-f3c6-722c7b9a0454.html">Next<span class="glyphicon glyphicon-circle-arrow-right"></span></a>
+            <div id="topic-content">
+              <section xml:lang="en-US" lang="en-US" dir="ltr" class="section internal" data-origin-id="UUID-da349d4d-85c6-3e29-cbf6-a9a0bf0b3d50" data-publication-date="" id="UUID-ae5c5448-be8c-2cf0-a6b0-5d55ee41ba73">
+                <div class="titlepage">
+                  <div>
+                    <div class="title">
+                      <h1 class="title" style="clear: both"><span class="formal-title">Machine properties / NC file properties</span></h1>
+                    </div>
+                  </div>
+                </div>
+                <p>Use the two dialogs to specify which parameters are included in the generation of NC files.</p>
+                <p>Note that the data entered in the <span class="guilabel">Machine properties</span> dialog is saved as part of the machine definition. You can define additional machine-specific information such as name, postprocessor or origins. When you create a new NC job, all of the properties of the current machine are imported.</p>
+                <p>You can use the <span class="guilabel">NC-File properties</span> dialog to overwrite specific machine definition properties.</p>
+                <section dir="ltr" class="simplesect internal" id="UUID-ae5c5448-be8c-2cf0-a6b0-5d55ee41ba73_id179S80U07D5">
+                  <div class="titlepage">
+                    <div>
+                      <div>
+                        <h2 class="title" style="clear: both"><span class="formal-title">General</span></h2>
+                      </div>
+                    </div>
+                  </div>
+                  <p><span class="guilabel">Name</span>/ <span class="guilabel">Type</span>: Enter machine designation and type.</p>
+                  <p><span class="guilabel">Adaptor</span>: Set the machine adaptor.</p>
+                </section>
+                <section dir="ltr" class="simplesect" id="UUID-ae5c5448-be8c-2cf0-a6b0-5d55ee41ba73_simplesect-idm232310784784144">
+                  <div class="titlepage">
+                    <div>
+                      <div>
+                        <h2 class="title" style="clear: both"><span class="formal-title">Only available for postprocessor technology</span></h2>
+                      </div>
+                    </div>
+                  </div>
+                  <p><span class="guilabel">Postprocessor can use stored solutions</span>: Activated automatically when the postprocessor and machine are coordinated.</p>
+                  <p><span class="guilabel">Postprocessor</span></p>
+                  <div class="informaltable table-responsive">
+                    <table style="width:100%;" class="informaltable">
+                      <colgroup>
+                        <col style="width:12%;" />
+                        <col style="width:88%;" />
+                      </colgroup>
+                      <thead>
+                        <tr>
+                          <td class="td">
+                            <div class="mediaobject">
+                              <table class="image-viewport" style="border-collapse:collapse;border:0; ;">
+                                <tr style="height: 48px">
+                                  <td style="padding:0;"><img src="image/uuid-b9b8af14-c916-0706-342a-13b02a2aab3f.svg" style="max-height: 48px;" alt="select_folder.svg" /></td>
+                                </tr>
+                              </table>
+                            </div>
+                          </td>
+                          <td class="td">
+                            <p>Select the postprocessor file (<code class="filename">*.oma</code> file).</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td colspan="2" class="td">
+                            <div dir="ltr" class="note">
+                              <h3 class="title">Note</h3>
+                              <p>OPEN MIND recommends that you manage all postprocessor files in the Global working space.</p>
+                              <pre class="screen">C:\Users\Public\Documents\OPEN MIND\hyperVIEW</pre>
+                              <p>You can no longer manage files in the</p>
+                              <pre class="screen">C:\ProgramData\OPENMIND\hyperVIEW</pre>
+                              <p>folder due to compatibility issues with Windows User Account Control (UAC).</p>
+                              <p>You can also use a postprocessor in a shared network. In this case, you should always save the <code class="filename">*.def</code> file as a write-protected file in order to protect it from unwanted changes.</p>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="td">
+                            <div class="mediaobject">
+                              <table class="image-viewport" style="border-collapse:collapse;border:0; ;">
+                                <tr style="height: 48px">
+                                  <td style="padding:0;"><img src="image/uuid-3a8c170a-fce2-17bb-6b63-6c3bf6456119.svg" style="max-height: 48px;" alt="icon_pp_conf.svg" /></td>
+                                </tr>
+                              </table>
+                            </div>
+                          </td>
+                          <td class="td">
+                            <p>Configure the postprocessor.</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="td">
+                            <div class="mediaobject">
+                              <table class="image-viewport" style="border-collapse:collapse;border:0; ;">
+                                <tr style="height: 48px">
+                                  <td style="padding:0;"><img src="image/uuid-4adaaf67-3919-3b1a-82d1-3c12acdfe245.svg" style="max-height: 48px;" alt="pp_info.svg" /></td>
+                                </tr>
+                              </table>
+                            </div>
+                          </td>
+                          <td class="td">
+                            <p>Show information about postprocessor.</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="td">
+                            <div class="mediaobject">
+                              <table class="image-viewport" style="border-collapse:collapse;border:0; ;">
+                                <tr style="height: 48px">
+                                  <td style="padding:0;"><img src="image/uuid-ea63b045-4281-31f5-88e3-a671d353f57f.svg" style="max-height: 48px;" alt="hm_copy.svg" /></td>
+                                </tr>
+                              </table>
+                            </div>
+                          </td>
+                          <td class="td">
+                            <p>Copy information on the postprocessor to the Windows clipboard and, if necessary, make it available to your OPEN MIND partner. To do this, paste the information stored in the clipboard into an e-mail.</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td colspan="2" class="td">
+                            <p><span class="guilabel">Model mode</span>: Select the required model mode of the machine simulation.</p>
+                            <p><span class="guilabel">Modell file</span></p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="td">
+                            <div class="mediaobject">
+                              <table class="image-viewport" style="border-collapse:collapse;border:0; ;">
+                                <tr style="height: 48px">
+                                  <td style="padding:0;"><img src="image/uuid-b9b8af14-c916-0706-342a-13b02a2aab3f.svg" style="max-height: 48px;" alt="select_folder.svg" /></td>
+                                </tr>
+                              </table>
+                            </div>
+                          </td>
+                          <td class="td">
+                            <p>Select a machine model file (<code class="filename">*.mmf</code>, <code class="filename">*.mmb</code> or <code class="filename">*.vmm</code>).</p>
+                          </td>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td class="td">
+                            <div class="mediaobject">
+                              <table class="image-viewport" style="border-collapse:collapse;border:0; ;">
+                                <tr style="height: 48px">
+                                  <td style="padding:0;"><img src="image/uuid-3a8c170a-fce2-17bb-6b63-6c3bf6456119.svg" style="max-height: 48px;" alt="icon_pp_conf.svg" /></td>
+                                </tr>
+                              </table>
+                            </div>
+                          </td>
+                          <td class="td">
+                            <p>Configure the machine model.</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="td">
+                            <div class="mediaobject">
+                              <table class="image-viewport" style="border-collapse:collapse;border:0; ;">
+                                <tr style="height: 48px">
+                                  <td style="padding:0;"><img src="image/uuid-4adaaf67-3919-3b1a-82d1-3c12acdfe245.svg" style="max-height: 48px;" alt="pp_info.svg" /></td>
+                                </tr>
+                              </table>
+                            </div>
+                          </td>
+                          <td class="td">
+                            <p>Show information on the machine model.</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="td">
+                            <div class="mediaobject">
+                              <table class="image-viewport" style="border-collapse:collapse;border:0; ;">
+                                <tr style="height: 48px">
+                                  <td style="padding:0;"><img src="image/uuid-ea63b045-4281-31f5-88e3-a671d353f57f.svg" style="max-height: 48px;" alt="hm_copy.svg" /></td>
+                                </tr>
+                              </table>
+                            </div>
+                          </td>
+                          <td class="td">
+                            <p>Copy information on the machine model to the Windows clipboard and, if necessary, make it available to your OPEN MIND partner. To do this, paste the information stored in the clipboard into an e-mail.</p>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </section>
+                <section dir="ltr" class="simplesect" id="UUID-ae5c5448-be8c-2cf0-a6b0-5d55ee41ba73_simplesect-idm232310787495329">
+                  <div class="titlepage">
+                    <div>
+                      <div>
+                        <h2 class="title" style="clear: both"><span class="formal-title">Only available for <span class="phrase"><span class="application">Virtual Machine</span></span> technology</span></h2>
+                      </div>
+                    </div>
+                  </div>
+                  <p><span class="guilabel">Use machine adaptor in macros</span>: This function is activated by default and must be deactivated if macros are used for which no adaptor has been defined. The function is deactivated by default when creating a new <span class="phrase"><span class="application">Virtual Machine</span></span>.</p>
+                  <p><span class="guilabel"><span class="phrase"><span class="application">Virtual Machine</span></span></span>: Enable to use a <span class="phrase"><span class="application">Virtual Machine</span></span> that has been preconfigured by OPEN MIND. For more information on this, please contact your OPEN MIND partner.</p>
+                  <p><span class="guilabel">Use</span>: If you want to use the NC Optimizer for this <span class="phrase"><span class="application">Virtual Machine</span></span>.</p>
+                  <p><span class="guilabel"><span class="phrase"><span class="application">Virtual Machine</span></span> directory</span></p>
+                  <div class="informaltable table-responsive">
+                    <table style="width:100%;" class="informaltable">
+                      <colgroup>
+                        <col style="width:12%;" />
+                        <col style="width:88%;" />
+                      </colgroup>
+                      <thead>
+                        <tr>
+                          <td class="td">
+                            <div class="mediaobject">
+                              <table class="image-viewport" style="border-collapse:collapse;border:0; ;">
+                                <tr style="height: 48px">
+                                  <td style="padding:0;"><img src="image/uuid-b9b8af14-c916-0706-342a-13b02a2aab3f.svg" style="max-height: 48px;" alt="select_folder.svg" /></td>
+                                </tr>
+                              </table>
+                            </div>
+                          </td>
+                          <td class="td">
+                            <p>Select the <span class="phrase"><span class="application">Virtual Machine</span></span> directory.</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="td">
+                            <div class="mediaobject">
+                              <table class="image-viewport" style="border-collapse:collapse;border:0; ;">
+                                <tr style="height: 48px">
+                                  <td style="padding:0;"><img src="image/uuid-3a8c170a-fce2-17bb-6b63-6c3bf6456119.svg" style="max-height: 48px;" alt="icon_pp_conf.svg" /></td>
+                                </tr>
+                              </table>
+                            </div>
+                          </td>
+                          <td class="td">
+                            <p>Edit the active configuration.</p>
+                          </td>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td class="td">
+                            <div class="mediaobject">
+                              <table class="image-viewport" style="border-collapse:collapse;border:0; ;">
+                                <tr style="height: 48px">
+                                  <td style="padding:0;"><img src="image/uuid-4adaaf67-3919-3b1a-82d1-3c12acdfe245.svg" style="max-height: 48px;" alt="pp_info.svg" /></td>
+                                </tr>
+                              </table>
+                            </div>
+                          </td>
+                          <td class="td">
+                            <p>Show information about the <span class="phrase"><span class="application">Virtual Machine</span></span>.</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="td">
+                            <div class="mediaobject">
+                              <table class="image-viewport" style="border-collapse:collapse;border:0; ;">
+                                <tr style="height: 48px">
+                                  <td style="padding:0;"><img src="image/uuid-ea63b045-4281-31f5-88e3-a671d353f57f.svg" style="max-height: 48px;" alt="hm_copy.svg" /></td>
+                                </tr>
+                              </table>
+                            </div>
+                          </td>
+                          <td class="td">
+                            <p>Copy information on the <span class="phrase"><span class="application">Virtual Machine</span></span> to the Windows clipboard and, if necessary, make it available to your OPEN MIND partner. To do this, paste the information stored in the clipboard into an e-mail.</p>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <p><span class="guilabel"><span class="phrase"><span class="application">Virtual Machine</span></span> version</span>: The current <span class="phrase"><span class="application">Virtual Machine</span></span> version is displayed.</p>
+                  <p><span class="guilabel"><span class="phrase"><span class="application">Virtual Machine</span></span> configuration</span>: Select the configuration of the <span class="phrase"><span class="application">Virtual Machine</span></span>.</p>
+                  <div class="informaltable table-responsive">
+                    <table style="width:100%;" class="informaltable">
+                      <colgroup>
+                        <col style="width:12%;" />
+                        <col style="width:88%;" />
+                      </colgroup>
+                      <tbody>
+                        <tr>
+                          <td valign="top" class="td align-top">
+                            <div class="mediaobject">
+                              <table class="image-viewport" style="border-collapse:collapse;border:0; ;">
+                                <tr style="height: 48px">
+                                  <td style="padding:0;"><img src="image/uuid-556f0b37-d78f-8ed0-a026-65606217c047.svg" style="max-height: 48px;" alt="sync_fold.svg" /></td>
+                                </tr>
+                              </table>
+                            </div>
+                          </td>
+                          <td class="td">
+                            <p><span class="guilabel">Fixed with tool database</span>: When the machine is selected in the job list, a check is performed to determine whether the database that is assigned to the VIRTUAL machine in the <span class="guilabel">Machine properties</span> dialog matches the database selected in the project (<span class=
+                            "phrase"><span class="application"><span class="emphasis"><em>hyper</em></span>MILL</span></span>- Settings - dialog page <span class="guilabel">Database</span>) is selected. If this is not the case, the following message is displayed: Tool database does not match VM, continue? With <span class="guilabel">No</span>
+                            another Virtual Machine can be selected in the <span class="guilabel">Machine administration</span> dialog.</p>
+                            <p>Before the NC file is created, it is checked again whether the database selected in <span class="guilabel">Machine properties</span> dialog matches the database selected in the project. If they do not match, a corresponding message is displayed again. If you select <span class="guilabel">No,</span> no NC file is
+                            created.</p>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <p><span class="guilabel">External simulation</span>: VERICUT is available as an external simulation program.</p>
+                </section>
+                <section dir="ltr" class="simplesect internal" id="UUID-ae5c5448-be8c-2cf0-a6b0-5d55ee41ba73_id179S80U07UI">
+                  <div class="titlepage">
+                    <div>
+                      <div>
+                        <h2 class="title" style="clear: both"><span class="formal-title">Origins</span></h2>
+                      </div>
+                    </div>
+                  </div>
+                  <p>Select the <span class="guilabel">Enabled</span> checkbox and select an origin table file ( <code class="filename">.odf</code>) via the <span class="guilabel">Origin table</span> entry. Origin table files are located in the directory:</p>
+                  <pre class="screen">C:\Users\Public\Documents\OPENMIND\mdf</pre>
+                  <div class="informaltable table-responsive">
+                    <table class="informaltable">
+                      <colgroup>
+                        <col style="width:12%;" />
+                        <col style="width:88%;" />
+                      </colgroup>
+                      <tbody>
+                        <tr>
+                          <td class="td">
+                            <div class="mediaobject">
+                              <table class="image-viewport" style="border-collapse:collapse;border:0; ;">
+                                <tr style="height: 48px">
+                                  <td style="padding:0;"><img src="image/uuid-b9b8af14-c916-0706-342a-13b02a2aab3f.svg" style="max-height: 48px;" alt="select_folder.svg" /></td>
+                                </tr>
+                              </table>
+                            </div>
+                          </td>
+                          <td class="td">
+                            <p>Select an <code class="filename">*.odf</code> file.</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="td">
+                            <div class="mediaobject"><img src="image/uuid-2f9796f9-1485-ee33-0587-517e8435acaf.svg" style="" alt="edit_mach.svg" /></div>
+                          </td>
+                          <td class="td">
+                            <p>Edit the origin table file. The origin definition in the machine administration is only available with the proper license and postprocessor.</p>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </section>
+                <section dir="ltr" class="simplesect internal" id="UUID-ae5c5448-be8c-2cf0-a6b0-5d55ee41ba73_id179S80U082W">
+                  <div class="titlepage">
+                    <div>
+                      <div>
+                        <h2 class="title" style="clear: both"><span class="formal-title">NC-File</span></h2>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="informaltable table-responsive">
+                    <table style="width:100%;" class="informaltable">
+                      <colgroup>
+                        <col style="width:12%;" />
+                        <col style="width:88%;" />
+                      </colgroup>
+                      <tbody>
+                        <tr>
+                          <td class="td">
+                            <div class="mediaobject">
+                              <table class="image-viewport" style="border-collapse:collapse;border:0; ;">
+                                <tr style="height: 48px">
+                                  <td style="padding:0;"><img src="image/uuid-b9b8af14-c916-0706-342a-13b02a2aab3f.svg" style="max-height: 48px;" alt="select_folder.svg" /></td>
+                                </tr>
+                              </table>
+                            </div>
+                          </td>
+                          <td class="td">
+                            <p>Select a target folder for new NC file.</p>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <p>Specify the <span class="guilabel">file name</span> and <span class="guilabel">file extension</span> for the NC file created in the postprocessor run. The name of the NC file is also used when a new NC job is created.</p>
+                  <p><span class="guilabel">Write comments to NC file</span>: Enable to add comments to the NC file.</p>
+                  <p><span class="guilabel">Prologue</span>, <span class="guilabel">Epilogue</span>: Text that is output at the beginning and end of the NC file.</p>
+                  <p><span class="guilabel">DNC start</span> / <span class="guilabel">DNC end</span>: Information that is not processed by the postprocessor itself, but by programs that are invoked after the postprocessor run (for example, management tools for NC files).</p>
+                  <p>Variables can also be used to transfer information to the <span class="guilabel">Prologue</span>, <span class="guilabel">Epilogue</span>, <span class="guilabel">DNC start</span> and <span class="guilabel">DNC end</span> areas in the NC file. Click the <span class="inlinemediaobject"><img src=
+                  "image/uuid-4584caf4-bdb2-1b57-613d-2e7ec901e326.png" alt="mach_prop_sel_var.png" /></span> icon at the end of the row to display all available variables and click a variable to transfer it to the NC file. The following variables are available:</p>
+                  <div class="informaltable table-responsive">
+                    <table class="informaltable">
+                      <colgroup>
+                        <col style="width:50%;" />
+                        <col style="width:50%;" />
+                      </colgroup>
+                      <tbody>
+                        <tr>
+                          <td class="td">
+                            <p>Version &gt; Version</p>
+                          </td>
+                          <td class="td">
+                            <p><code class="filename">&lt;VERSION&gt;</code></p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="td">
+                            <p>Version &gt; Postprocessor version</p>
+                          </td>
+                          <td class="td">
+                            <p><code class="filename">&lt;OMA_VERSION&gt;</code></p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="td">
+                            <p>Version &gt; Postprocessor program version</p>
+                          </td>
+                          <td class="td">
+                            <p><code class="filename">&lt;PRUN_VERSION&gt;</code></p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="td">
+                            <p>Date/Time &gt; Creation (day)</p>
+                          </td>
+                          <td class="td">
+                            <p><code class="filename">&lt;DAY&gt;</code></p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="td">
+                            <p>Date/Time &gt; Creation (month)</p>
+                          </td>
+                          <td class="td">
+                            <p><code class="filename">&lt;MONTH&gt;</code></p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="td">
+                            <p>Date/Time &gt; Creation (year)</p>
+                          </td>
+                          <td class="td">
+                            <p><code class="filename">&lt;YEAR&gt;</code></p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="td">
+                            <p>Date/Time &gt; Creation (hour)</p>
+                          </td>
+                          <td class="td">
+                            <p><code class="filename">&lt;HOUR&gt;</code></p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="td">
+                            <p>Date/Time &gt; Creation (minute)</p>
+                          </td>
+                          <td class="td">
+                            <p><code class="filename">&lt;MINUTE&gt;</code></p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="td">
+                            <p>Date/Time &gt; Creation (second)</p>
+                          </td>
+                          <td class="td">
+                            <p><code class="filename">&lt;SECOND&gt;</code></p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="td">
+                            <p>Job list &gt; NCS name</p>
+                          </td>
+                          <td class="td">
+                            <p><code class="filename">&lt;NCS_NAME&gt;</code></p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="td">
+                            <p>Job list &gt; NCS comment</p>
+                          </td>
+                          <td class="td">
+                            <p><code class="filename">&lt;NCS_COMMENT&gt;</code></p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="td">
+                            <p>Job list &gt; Material</p>
+                          </td>
+                          <td class="td">
+                            <p><code class="filename">&lt;MATERIAL&gt;</code></p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="td">
+                            <p>Job list &gt; Fixture name</p>
+                          </td>
+                          <td class="td">
+                            <p><code class="filename">&lt;FIXTURE_NAME&gt;</code></p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="td">
+                            <p>Job list &gt; Job list comment 1-10</p>
+                          </td>
+                          <td class="td">
+                            <p><code class="filename">&lt;JOBLIST_COMMENT_1&gt;</code> ... <code class="filename">&lt;JOBLIST_COMMENT_10&gt;</code></p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="td">
+                            <p>Job list &gt; Job list name</p>
+                          </td>
+                          <td class="td">
+                            <p><code class="filename">&lt;JOBLIST_NAME&gt;</code></p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="td">
+                            <p>Machine &gt; Name</p>
+                          </td>
+                          <td class="td">
+                            <p><code class="filename">&lt;MACHINE_NAME&gt;</code></p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="td">
+                            <p>Machine &gt; Type</p>
+                          </td>
+                          <td class="td">
+                            <p><code class="filename">&lt;MACHINE_TYPE&gt;</code></p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="td">
+                            <p>Machine &gt; Adaptor</p>
+                          </td>
+                          <td class="td">
+                            <p><code class="filename">&lt;MACHINE_ADAPTOR&gt;</code></p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="td">
+                            <p>Machine &gt; Model name</p>
+                          </td>
+                          <td class="td">
+                            <p><code class="filename">&lt;MACHINE_MODEL_NAME&gt;</code></p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="td">
+                            <p>Machine &gt; Model path</p>
+                          </td>
+                          <td class="td">
+                            <p><code class="filename">&lt;MACHINE_MODEL_PATH&gt;</code></p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="td">
+                            <p>Statistics &gt; Total machining time - hours</p>
+                          </td>
+                          <td class="td">
+                            <p><code class="filename">&lt;TOTAL_TIME_H&gt;</code></p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="td">
+                            <p>Statistics &gt; Total machining time - minutes</p>
+                          </td>
+                          <td class="td">
+                            <p><code class="filename">&lt;TOTAL_TIME_M&gt;</code></p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="td">
+                            <p>Statistics &gt; Total machining time - seconds</p>
+                          </td>
+                          <td class="td">
+                            <p><code class="filename">&lt;TOTAL_TIME_S&gt;</code></p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="td">
+                            <p>NC &gt; Path</p>
+                          </td>
+                          <td class="td">
+                            <p><code class="filename">&lt;NCPATH&gt;</code></p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="td">
+                            <p>NC &gt; File</p>
+                          </td>
+                          <td class="td">
+                            <p><code class="filename">&lt;NCFILE&gt;</code></p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="td">
+                            <p>NC &gt; File name</p>
+                          </td>
+                          <td class="td">
+                            <p><code class="filename">&lt;NCFILE_NAME&gt;</code></p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="td">
+                            <p>CAD &gt; Path</p>
+                          </td>
+                          <td class="td">
+                            <p><code class="filename">&lt;CAD_PATH&gt;</code></p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="td">
+                            <p>CAD &gt; File</p>
+                          </td>
+                          <td class="td">
+                            <p><code class="filename">&lt;CAD_FILE&gt;</code></p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="td">
+                            <p>CAD &gt; File name</p>
+                          </td>
+                          <td class="td">
+                            <p><code class="filename">&lt;CAD_FILENAME&gt;</code></p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="td">
+                            <p>CAD &gt; File path</p>
+                          </td>
+                          <td class="td">
+                            <p><code class="filename">&lt;CAD_FILEPATH&gt;</code></p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="td">
+                            <p>Other &gt; User</p>
+                          </td>
+                          <td class="td">
+                            <p><code class="filename">&lt;USER&gt;</code></p>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <p>If the <span class="guilabel">Use POF-File name of first loaded tool path as default for NC-File</span> option is selected on the <span class="guimenu">Options</span> → <span class="guimenuitem">NC-File</span> menu, the name specified for an NC file in the <span class="guilabel">Machine properties</span> dialog is replaced
+                  with the name of the initially loaded toolpath.</p>
+                </section>
+                <section dir="ltr" class="simplesect internal" id="UUID-ae5c5448-be8c-2cf0-a6b0-5d55ee41ba73_id179S80U08DB">
+                  <div class="titlepage">
+                    <div>
+                      <div>
+                        <h2 class="title" style="clear: both"><span class="formal-title">Job mode</span></h2>
+                      </div>
+                    </div>
+                  </div>
+                  <p><span class="guilabel">One NC file per job</span>: Select this option if a separate NC file is to be generated for each toolpath. Otherwise, all toolpath files will be written to a single NC file during the postprocessor run. The job name or job list name is used here. If a separate NC file is written for each toolpath, the
+                  rule for file name generation is applied when the respective NC file is generated.</p>
+                  <p><span class="guilabel">Compound job as single job</span>: A separate NC file is generated for a compound job.</p>
+                  <p><span class="guilabel">Rule for file name generation</span>: Any combination of numbers and characters may be entered. The pre-defined parameters for the job list name, job name, job ID and counter are also available.</p>
+                  <p><span class="guilabel">Start of counter</span>: The generated files are numbered consecutively, beginning with the first number specified (n; n+1; n+2).</p>
+                  <p><span class="guilabel">Increment to job ID</span>: Amount of incremental job ID increase.</p>
+                  <p><span class="guilabel">Number format</span>: The <code class="filename">%d</code> format corresponds to the <span class="command"><strong>printf</strong></span> C<sup>++</sup> command.</p>
+                </section>
+                <section dir="ltr" class="simplesect internal" id="UUID-ae5c5448-be8c-2cf0-a6b0-5d55ee41ba73_id179S80U08KC">
+                  <div class="titlepage">
+                    <div>
+                      <div>
+                        <h2 class="title" style="clear: both"><span class="formal-title">Numbers</span></h2>
+                      </div>
+                    </div>
+                  </div>
+                  <p><span class="guilabel">First program number</span> / <span class="guilabel">First block number</span>: For program and block numbering, you can specify the first number as well as the required <span class="guilabel">increment</span> (depending on which postprocessor is selected).</p>
+                </section>
+                <section dir="ltr" class="simplesect internal" id="UUID-ae5c5448-be8c-2cf0-a6b0-5d55ee41ba73_id179S80U08IF">
+                  <div class="titlepage">
+                    <div>
+                      <div>
+                        <h2 class="title" style="clear: both"><span class="formal-title">Tool</span></h2>
+                      </div>
+                    </div>
+                  </div>
+                  <p><span class="guilabel">Type of tool change</span>: Tools can be changed manually or automatically. Tool change position : If the tool is changed manually, you need to enter the corresponding position here.</p>
+                  <p><span class="guilabel">Go to position before first tool change</span>: The position of the manual tool change is also considered/approached for the first tool.</p>
+                  <p><span class="guilabel">Time for automatic tool change</span>: Enter the time available for automatic tool changing.</p>
+                </section>
+                <section dir="ltr" class="simplesect internal" id="UUID-ae5c5448-be8c-2cf0-a6b0-5d55ee41ba73_id179S80U08P8">
+                  <div class="titlepage">
+                    <div>
+                      <div>
+                        <h2 class="title" style="clear: both"><span class="formal-title">Positions</span></h2>
+                      </div>
+                    </div>
+                  </div>
+                  <p><span class="guilabel">Start of machining</span> X/Y/Z and <span class="guilabel">End of machining</span> X/Y/Z: If required for control, enter the tool position at the start and end of machining.</p>
+                </section>
+                <section dir="ltr" class="simplesect internal" id="UUID-ae5c5448-be8c-2cf0-a6b0-5d55ee41ba73_id179S80U08L2">
+                  <div class="titlepage">
+                    <div>
+                      <div>
+                        <h2 class="title" style="clear: both"><span class="formal-title">4/5 axes</span></h2>
+                      </div>
+                    </div>
+                  </div>
+                  <p><span class="guilabel">Rotation axis X, Y, Z</span>: Center position of rotation axis in NCS.</p>
+                  <p><span class="guilabel">Clearance radius</span> / <span class="guilabel">Clearance distance</span>: Define the clearance radius for machines with more than three axes. Define the clearance between the tool and the rotation axis or workpiece (when indexing).</p>
+                  <p><span class="guilabel">Clearance height</span>: Z position of the tool before tilting.</p>
+                  <p><span class="guilabel">Axis interpolation</span>: Specify the angle or vector (great circle).</p>
+                  <p><span class="guilabel">Max. deviation (degree)</span>: Enter a value.</p>
+                  <div dir="ltr" class="note">
+                    <h3 class="title">Note</h3>
+                    <p>The evaluation of this parameter is PP-specific.</p>
+                  </div>
+                </section>
+                <section dir="ltr" class="simplesect internal" id="UUID-ae5c5448-be8c-2cf0-a6b0-5d55ee41ba73_id179S80U08AR">
+                  <div class="titlepage">
+                    <div>
+                      <div>
+                        <h2 class="title" style="clear: both"><span class="formal-title">Limits</span></h2>
+                      </div>
+                    </div>
+                  </div>
+                  <p><span class="guilabel">Maximum rapid feedrate</span> / <span class="guilabel">Maximum machining feedrate</span> / <span class="guilabel">Maximal spindle RPM</span> / <span class="guilabel">Maximum file size</span> / <span class="guilabel">Maximum number of NC-Lines</span>: If the toolpath file ( <code class=
+                  "filename">*.pof</code>) contains large values for the above parameters, they are automatically reduced to the maximum values specified here if the corresponding option is selected.</p>
+                  <p>Withdraw and retract movements and machine stop are entered prior to separation.</p>
+                </section>
+                <section dir="ltr" class="simplesect internal" id="UUID-ae5c5448-be8c-2cf0-a6b0-5d55ee41ba73_id179S80U08IR">
+                  <div class="titlepage">
+                    <div>
+                      <div>
+                        <h2 class="title" style="clear: both"><span class="formal-title">Cylinder Barrel</span></h2>
+                      </div>
+                    </div>
+                  </div>
+                  <p>Settings in this category are only required in the specific case of 2.5D cylinder barrel machining. This requires a special postprocessor.</p>
+                </section>
+                <section dir="ltr" class="simplesect internal" id="UUID-ae5c5448-be8c-2cf0-a6b0-5d55ee41ba73_id179S80U087V">
+                  <div class="titlepage">
+                    <div>
+                      <div>
+                        <h2 class="title" style="clear: both"><span class="formal-title">Program halt</span></h2>
+                      </div>
+                    </div>
+                  </div>
+                  <p>Enter commands in the NC file that trigger a program halt at critical points.</p>
+                  <p>Under <span class="guilabel">Mode</span>, specify whether these commands should be inserted before or after a tool change.</p>
+                  <p><span class="guilabel">Commands</span>: Enter the commands you want to insert in the NC file.</p>
+                </section>
+                <section dir="ltr" class="simplesect internal" id="UUID-ae5c5448-be8c-2cf0-a6b0-5d55ee41ba73_id179S80U08MT">
+                  <div class="titlepage">
+                    <div>
+                      <div>
+                        <h2 class="title" style="clear: both"><span class="formal-title">NCS transformation</span></h2>
+                      </div>
+                    </div>
+                  </div>
+                  <p>Define a predetermined offset for the NCS. First, the rotation is executed, followed by the displacement. Thus, a displacement refers to the rotated NCS. A warning is issued in this context when loading data in <span class="italic">hyper</span>VIEW and during the postprocessor run.</p>
+                  <p>Select the <span class="guilabel">Enabled</span> checkbox to turn the NCS transformation on. <span class="guilabel">X offset</span> moves the NCS in the direction of the X axis, <span class="guilabel">Y offset</span> in the direction of the Y axis and <span class="guilabel">Z offset</span> in the direction of the Z axis. A
+                  value must be entered for the required distance. <span class="guilabel">Rotary axis</span> determines the axis of the NCS around which the NCS is to be turned. <span class="guilabel">Rotation angle</span> defines the value for the rotation. It is applied only if the <span class="guilabel">rotation axis</span> has the value
+                  <span class="guilabel">x</span>, <span class="guilabel">y</span> or <span class="guilabel">z</span>.</p>
+                </section>
+                <section dir="ltr" class="simplesect internal" id="UUID-ae5c5448-be8c-2cf0-a6b0-5d55ee41ba73_id179S80U08CU">
+                  <div class="titlepage">
+                    <div>
+                      <div>
+                        <h2 class="title" style="clear: both"><span class="formal-title">Collision check</span></h2>
+                      </div>
+                    </div>
+                  </div>
+                  <p>Only available in the <span class="guilabel">Machine properties</span> dialog.</p>
+                  <p>Collision check options for the simulation. Select the <span class="guilabel">Enabled</span> checkbox below the required option in order to enable it. <span class="guilabel">Tolerance</span> and <span class="guilabel">color</span> can be specified for each individual option. All other information, such as machine, stock and so
+                  on, are taken from the first NC job in the <span class="italic">hyper</span>VIEW browser.</p>
+                </section>
+                <section dir="ltr" class="simplesect" id="UUID-ae5c5448-be8c-2cf0-a6b0-5d55ee41ba73_simplesect-idm23207788974826">
+                  <div class="titlepage">
+                    <div>
+                      <div>
+                        <h2 class="title" style="clear: both"><span class="formal-title">Machine simulation</span></h2>
+                      </div>
+                    </div>
+                  </div>
+                  <p><span class="guilabel">Collision check mode</span>: Only available with a standard postprocessor. Use the <span class="guilabel">Off</span>, <span class="guilabel">On</span> and <span class="guilabel">Head against table</span> options to control collision checking between the machine components for machine models in
+                  <code class="filename">*.mmb</code> format.</p>
+                  <p><span class="guilabel">Off</span>: The movements between the machine components are <span class="bold"><strong>not</strong></span> checked for collisions.</p>
+                  <p><span class="guilabel">On</span>: The movements between the machine components are checked for collisions.</p>
+                  <p><span class="guilabel">Head against table</span> Only the movements between the head and the table of the machine are checked for collisions.</p>
+                </section>
+                <section dir="ltr" class="simplesect" id="UUID-ae5c5448-be8c-2cf0-a6b0-5d55ee41ba73_simplesect-5d318affae2b2-idm45764255662640">
+                  <div class="titlepage">
+                    <div>
+                      <div>
+                        <h2 class="title" style="clear: both"><span class="formal-title">Tool spindle alignment</span></h2>
+                      </div>
+                    </div>
+                  </div>
+                  <p><span class="guilabel">Arbitrary tool spindle alignment</span>: When this option is enabled, the tool spindle angle is not checked during the postprocessor run.</p>
+                  <p>When the option is disabled, the tool spindle alignment is checked during the postprocessor run in relation to the orientation of the X axis of the job frame. If the tool spindle alignment deviates, a message appears, indicating by how many degrees it deviates.</p>
+                  <div dir="ltr" class="note">
+                    <h3 class="title">Note</h3>
+                    <p>In the context of performing <span class="guilabel">back boring</span> actions, this function is used to check whether the alignment of the tool spindle of <span class="guilabel">turning tools</span> is identical to the alignment of the X axis of the job frame before the tool moves eccentrically into and out of the hole.</p>
+                  </div>
+                </section>
+              </section>
+              <div class="footer-content">
+                <div class="section-toc section-toc-after">
+                  <div class="section-toc-title">
+                    <span class="section-toc-title-delimiter">:</span>
+                  </div>
+                </div>
+              </div>
+              <footer></footer>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

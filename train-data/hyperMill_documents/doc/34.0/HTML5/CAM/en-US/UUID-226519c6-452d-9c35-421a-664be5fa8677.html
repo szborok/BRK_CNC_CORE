@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="x-ua-compatible" content="IE=edge" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="search" content="default" />
+  <meta name="use.ic" content="no" />
+  <meta name="tocstandalone" content="yes" />
+  <script type="text/javascript">
+  //<![CDATA[
+                        var index;
+                        var contentLanguage = 'en-US';
+                        var enterKey = 'select';
+                        
+                                        var anchoroption = true;
+                                var instantsearch_minlength = 1;
+                                                
+                                var fuse_threshold = 0.3;
+                        
+                                        var local_csh = false;
+                                
+                        var useanchorlinks = false;
+  //]]>
+  </script>
+  <title>Define and apply transformations</title>
+  <link rel="stylesheet" type="text/css" href="../css/docbook.css" />
+  <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" href="../css/bootstrap-theme.min.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style-common.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style-responsive.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style-print.css" />
+  <link rel="stylesheet" type="text/css" href="../css/font-awesome.css" />
+  <link rel="stylesheet" type="text/css" href="../css/custom.css" />
+  <link rel="stylesheet" type="text/css" href="../css/layout-custom-style.css" />
+  <script src="../js/jquery-1.10.2.min.js" type="text/javascript"></script>
+  <script src="../js/jquery-ui-1.10.3.custom.min.js" type="text/javascript"></script>
+  <script src="../js/bootstrap.min.js" type="text/javascript"></script>
+  <script src="../js/purl.js" type="text/javascript"></script>
+  <script src="../js/jquery.event.move.js" type="text/javascript"></script>
+  <script src="../js/jquery.event.swipe.js" type="text/javascript"></script>
+  <script src="../js/jquery.sticky.js" type="text/javascript"></script>
+  <script src="../js/respond.min.js" type="text/javascript"></script>
+  <script src="../js/script.js" type="text/javascript"></script>
+  <script src="js/toc.js" type="text/javascript"></script>
+  <script src="../js/create-toc.js" type="text/javascript"></script>
+  <script src="../js/clipboard.min.js" type="text/javascript"></script>
+  <script src="../js/fuse.min.js" type="text/javascript"></script>
+  <script src="../js/jquery.mark.min.js" type="text/javascript"></script>
+  <script src="../js/html5.fuse.search.js" type="text/javascript"></script>
+  <script src="js/fuzzydata.js" type="text/javascript"></script>
+  <script src="../js/csh.js" type="text/javascript"></script>
+  <script src="../js/highlight-mergehtml-plugin.js" type="text/javascript"></script>
+  <meta name="generator" content="Paligo" />
+  <link rel="prev" href="UUID-d214f654-13ff-db54-08b4-1c9b6f019bbc.html#UUID-d214f654-13ff-db54-08b4-1c9b6f019bbc_UUID-f5bdee4a-ff1c-13c0-b64b-bba652bb4ee2" title="Examples" />
+  <link rel="next" href="UUID-226519c6-452d-9c35-421a-664be5fa8677.html#UUID-226519c6-452d-9c35-421a-664be5fa8677_id179TB0M0LRS" title="Define" />
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js?config=TeX-MML-AM_CHTML" async="async"></script>
+  <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+  <script type="text/javascript" src="../js/cookie-consent.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  <script type="text/javascript">
+  //<![CDATA[
+                        $(document).on('ready ajaxComplete', function() {
+                                
+                                hljs.addPlugin(mergeHTMLPlugin);
+                                hljs.configure({'ignoreUnescapedHTML': true});
+                                
+                                $('pre:not(.embedcode)').each(function() {
+                                        /**
+                                         * @type {string}
+                                         */
+                                        var language = $(this).data('language');
+
+                                        if (language === 'plaintext' || language === 'text') {
+                                                $(this).addClass(language).addClass('hljs');
+                                                return true;
+                                        }
+                                        else {
+                                                var clone = this.cloneNode(true);
+                                                hljs.highlightElement(clone);
+                                                $(this).empty().append($(clone).contents());
+                                                $(this).attr("class", $(clone).attr("class"));
+                                        }
+                                });
+                        });
+  //]]>
+  </script>
+  <style type="text/css">
+  /*<![CDATA[*/
+            div.skipnav {
+            }
+            div.skipnav a {
+                position: fixed;
+                left: -10000px;
+                top: 1.5em;
+                width: 1px;
+                height: 1px;
+                overflow: hidden;
+            }
+            div.skipnav a:focus, div.skipnav a:active, div.skipnav a:hover {
+                background: white;
+                color: black;
+                box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.5);
+                position: fixed;
+                left: 2em;
+                top: 1.5em;
+                width: auto;
+                height: auto;
+                overflow: visible;
+                text-decoration: underline;
+                z-index: 99999; /* has to be higher than the side panel */
+    }
+  /*]]>*/
+  </style>
+</head>
+<body data-link-prefix="">
+  <div class="skipnav">
+    <a href="#content-wrapper">Skip to main content</a>
+  </div>
+  <div id="page" class="clearfix">
+    <div id="header">
+      <div class="container">
+        <div id="logotype-container" class="pull-left">
+          <a href="../index.html"><img id="logotype-pageheader" src="../css/image/corporate-logo.png" alt="Corporate logotype" data-role="logotype" /></a>
+        </div>
+        <div id="pagetools-container" class="pull-right">
+          <ul id="page-tools">
+            <li class="page-tools-search"><input placeholder="Search" type="text" class="form-control" aria-label="Search" id="search" /></li>
+            <li class="page-tools-print">
+              <a href="javascript:window.print();"><span class="tool-label">Print</span><span class="glyphicon glyphicon-print"></span></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <h1 id="publication-title">CAM</h1>
+    <div id="subheader-sticky-wrapper" class="sticky-wrapper">
+      <div id="subheader">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3 toc-title">
+              <h2><a class="prev nav-icon hidden-lg hidden-md" href="UUID-d214f654-13ff-db54-08b4-1c9b6f019bbc.html#UUID-d214f654-13ff-db54-08b4-1c9b6f019bbc_UUID-f5bdee4a-ff1c-13c0-b64b-bba652bb4ee2"><span class="glyphicon glyphicon-chevron-left"></span></a> <a href="#toc" class="hidden mobile-nav-toggle"><span class=
+              "glyphicon glyphicon-list"></span>Table of Contents</a><span class="toc-label">Table of Contents</span><a class="next nav-icon hidden-lg hidden-md" href="UUID-226519c6-452d-9c35-421a-664be5fa8677.html#UUID-226519c6-452d-9c35-421a-664be5fa8677_id179TB0M0LRS"><span class="glyphicon glyphicon-chevron-right"></span></a></h2>
+            </div>
+            <div class="col-md-9 breadcrumb-container">
+              <ul class="breadcrumb">
+                <li class="breadcrumb-link">
+                  <span class="glyphicon glyphicon-home"></span>&nbsp;<a href="index-en-US.html">CAM</a>
+                </li>
+                <li class="breadcrumb-link">
+                  <a href="UUID-0751db51-8b5b-ae49-1904-dce4b8c92263.html">Basics of CAM editing</a>
+                </li>
+                <li class="breadcrumb-link">
+                  <a href="UUID-d214f654-13ff-db54-08b4-1c9b6f019bbc.html">Transformations</a>
+                </li>
+                <li class="breadcrumb-node">Define and apply transformations</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="main-content">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 toc-container" id="toc-wrapper">
+            <div id="toc-placeholder">
+              <div id="toc-standalone-placeholder"></div>
+            </div>
+          </div>
+          <div class="col-md-9 content-container" id="content-wrapper">
+            <a accesskey="p" class="prev pull-left prev visible-lg visible-md" id="header-navigation-prev" href="UUID-d214f654-13ff-db54-08b4-1c9b6f019bbc.html#UUID-d214f654-13ff-db54-08b4-1c9b6f019bbc_UUID-f5bdee4a-ff1c-13c0-b64b-bba652bb4ee2"><span class="glyphicon glyphicon-circle-arrow-left"></span>Prev</a><a accesskey="n" class=
+            "pull-right next visible-lg visible-md" id="header-navigation-next" href="UUID-226519c6-452d-9c35-421a-664be5fa8677.html#UUID-226519c6-452d-9c35-421a-664be5fa8677_id179TB0M0LRS">Next<span class="glyphicon glyphicon-circle-arrow-right"></span></a>
+            <div id="topic-content">
+              <section xml:lang="en-US" lang="en-US" dir="ltr" class="section" data-origin-id="UUID-22433244-b69f-5594-4800-e5a13a0d6063" data-publication-date="" id="UUID-226519c6-452d-9c35-421a-664be5fa8677">
+                <div class="titlepage">
+                  <div>
+                    <div class="title">
+                      <h1 class="title" style="clear: both"><span class="formal-title">Define and apply transformations</span></h1>
+                    </div>
+                  </div>
+                </div>
+                <p>Define transformations and apply them in a job.</p>
+                <section dir="ltr" class="section internal" data-origin-id="" data-publication-date="" id="UUID-226519c6-452d-9c35-421a-664be5fa8677_id179TB0M0LRS">
+                  <div class="titlepage">
+                    <div>
+                      <div class="title">
+                        <h2 class="title" style="clear: both"><span class="formal-title">Define</span></h2>
+                      </div>
+                    </div>
+                  </div>
+                  <p>To define a transformation, switch to the <span class="guilabel">Frames</span> tab in the <span class="italic">hyper</span>MILL browser and select the desired transformation from the shortcut menu in the <span class="guilabel">Transformation</span> area or create a new transformation.</p>
+                </section>
+                <section dir="ltr" class="section internal" data-origin-id="" data-publication-date="" id="UUID-226519c6-452d-9c35-421a-664be5fa8677_id179TB0M0LMM">
+                  <div class="titlepage">
+                    <div>
+                      <div class="title">
+                        <h2 class="title" style="clear: both"><span class="formal-title">Apply it to a job</span></h2>
+                      </div>
+                    </div>
+                  </div>
+                  <p>In order to apply a transformation in a job, change to the <span class="guilabel">Transformation</span> dialog page and select the <span class="guilabel">Active</span> checkbox.</p>
+                  <p>Now select the type of transformation under <span class="guilabel">Selection</span> and then click the <span class="inlinemediaobject"><img src="image/uuid-c8bf4a5e-4012-c20a-b0dd-53d91c735bbf.PNG" alt="new_trans.PNG" /></span> icon to select a transformation or click the <span class="inlinemediaobject"><img src=
+                  "image/uuid-c17461a6-d5ec-6f5a-88a7-28995ce8fef1.png" alt="edit_trans.png" /></span> icon to create a new transformation.</p>
+                  <div dir="ltr" class="note">
+                    <h3 class="title">Note</h3>
+                    <p id="UUID-226519c6-452d-9c35-421a-664be5fa8677_para-idm53125163753390">For toolpaths generated by a transformation, no precise safety check will be carried out. Collisions with a sufficiently small overlap may not be recognized under certain circumstances. Please check the geometric conditions and parameters of the
+                    transformation carefully before machining.</p>
+                  </div>
+                </section>
+                <section dir="ltr" class="section" data-origin-id="" data-publication-date="" id="UUID-226519c6-452d-9c35-421a-664be5fa8677_section-idm461673740250723159716849125">
+                  <div class="titlepage">
+                    <div>
+                      <div class="title">
+                        <h2 class="title" style="clear: both"><span class="formal-title">Output origin</span></h2>
+                      </div>
+                    </div>
+                  </div>
+                  <p>Available if the <span class="guilabel">Allow multiple origins</span> option has been enabled in the job list (<span class="guilabel">Job list settings</span> dialog page).</p>
+                  <p>Select the required origin from the list or click the icon (1) to define a new origin. Click the icon (2) to modify an origin.</p>
+                  <div class="mediaobject"><img src="image/uuid-955eee42-e2be-3bcb-bdfb-8a6c30b26b17.png" style="" alt="output_origin.png" /></div>
+                </section>
+                <section dir="ltr" class="section" data-origin-id="" data-publication-date="" id="UUID-226519c6-452d-9c35-421a-664be5fa8677_section-idm4623774723985631597184644242">
+                  <div class="titlepage">
+                    <div>
+                      <div class="title">
+                        <h2 class="title" style="clear: both"><span class="formal-title">Mirror mode</span></h2>
+                      </div>
+                    </div>
+                  </div>
+                  <div dir="ltr" class="note notice">
+                    <h3 class="title">Note</h3>
+                    <p>The <span class="guilabel">Mirror mode</span> option is available if the <span class="guimenuitem">Manufacturing parameters</span> → <span class="guisubmenu">Copy</span> function is enabled for the mirroring.</p>
+                  </div>
+                  <p>Enable <span class="guilabel">Mirror path</span> to only mirror the toolpath and not the geometry.</p>
+                  <p><span class="bold"><strong>Advantages</strong></span>: Improved performance, easy to use.</p>
+                  <p><span class="bold"><strong>Limitations</strong></span>: <span class="guilabel">Climb milling</span> becomes <span class="guilabel">Conventional milling</span> and vice versa, no collision check is performed, not available for compound job or job list, but only for an individual job.</p>
+                </section>
+              </section>
+              <div class="footer-content">
+                <div class="section-toc section-toc-after">
+                  <div class="section-toc-title">
+                    <span class="section-toc-title-delimiter">:</span>
+                  </div>
+                </div>
+              </div>
+              <footer></footer>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="x-ua-compatible" content="IE=edge" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="search" content="default" />
+  <meta name="use.ic" content="no" />
+  <meta name="tocstandalone" content="yes" />
+  <script type="text/javascript">
+  //<![CDATA[
+                        var index;
+                        var contentLanguage = 'en-US';
+                        var enterKey = 'select';
+                        
+                                        var anchoroption = true;
+                                var instantsearch_minlength = 1;
+                                                
+                                var fuse_threshold = 0.3;
+                        
+                                        var local_csh = false;
+                                
+                        var useanchorlinks = false;
+  //]]>
+  </script>
+  <title>Defining a linking job</title>
+  <link rel="stylesheet" type="text/css" href="../css/docbook.css" />
+  <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" href="../css/bootstrap-theme.min.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style-common.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style-responsive.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style-print.css" />
+  <link rel="stylesheet" type="text/css" href="../css/font-awesome.css" />
+  <link rel="stylesheet" type="text/css" href="../css/custom.css" />
+  <link rel="stylesheet" type="text/css" href="../css/layout-custom-style.css" />
+  <script src="../js/jquery-1.10.2.min.js" type="text/javascript"></script>
+  <script src="../js/jquery-ui-1.10.3.custom.min.js" type="text/javascript"></script>
+  <script src="../js/bootstrap.min.js" type="text/javascript"></script>
+  <script src="../js/purl.js" type="text/javascript"></script>
+  <script src="../js/jquery.event.move.js" type="text/javascript"></script>
+  <script src="../js/jquery.event.swipe.js" type="text/javascript"></script>
+  <script src="../js/jquery.sticky.js" type="text/javascript"></script>
+  <script src="../js/respond.min.js" type="text/javascript"></script>
+  <script src="../js/script.js" type="text/javascript"></script>
+  <script src="js/toc.js" type="text/javascript"></script>
+  <script src="../js/create-toc.js" type="text/javascript"></script>
+  <script src="../js/clipboard.min.js" type="text/javascript"></script>
+  <script src="../js/fuse.min.js" type="text/javascript"></script>
+  <script src="../js/jquery.mark.min.js" type="text/javascript"></script>
+  <script src="../js/html5.fuse.search.js" type="text/javascript"></script>
+  <script src="js/fuzzydata.js" type="text/javascript"></script>
+  <script src="../js/csh.js" type="text/javascript"></script>
+  <script src="../js/highlight-mergehtml-plugin.js" type="text/javascript"></script>
+  <meta name="generator" content="Paligo" />
+  <link rel="prev" href="UUID-3c7a6b01-c61b-035b-e7d4-af189170f03a.html#UUID-3c7a6b01-c61b-035b-e7d4-af189170f03a_id17A4E0J0GKU" title="Requirements" />
+  <link rel="next" href="UUID-dfd98181-3410-96e3-7f19-f656ec9b4efc.html#UUID-dfd98181-3410-96e3-7f19-f656ec9b4efc_id17A4E0J0GE2" title="Add job to a linking job" />
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js?config=TeX-MML-AM_CHTML" async="async"></script>
+  <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+  <script type="text/javascript" src="../js/cookie-consent.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  <script type="text/javascript">
+  //<![CDATA[
+                        $(document).on('ready ajaxComplete', function() {
+                                
+                                hljs.addPlugin(mergeHTMLPlugin);
+                                hljs.configure({'ignoreUnescapedHTML': true});
+                                
+                                $('pre:not(.embedcode)').each(function() {
+                                        /**
+                                         * @type {string}
+                                         */
+                                        var language = $(this).data('language');
+
+                                        if (language === 'plaintext' || language === 'text') {
+                                                $(this).addClass(language).addClass('hljs');
+                                                return true;
+                                        }
+                                        else {
+                                                var clone = this.cloneNode(true);
+                                                hljs.highlightElement(clone);
+                                                $(this).empty().append($(clone).contents());
+                                                $(this).attr("class", $(clone).attr("class"));
+                                        }
+                                });
+                        });
+  //]]>
+  </script>
+  <style type="text/css">
+  /*<![CDATA[*/
+            div.skipnav {
+            }
+            div.skipnav a {
+                position: fixed;
+                left: -10000px;
+                top: 1.5em;
+                width: 1px;
+                height: 1px;
+                overflow: hidden;
+            }
+            div.skipnav a:focus, div.skipnav a:active, div.skipnav a:hover {
+                background: white;
+                color: black;
+                box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.5);
+                position: fixed;
+                left: 2em;
+                top: 1.5em;
+                width: auto;
+                height: auto;
+                overflow: visible;
+                text-decoration: underline;
+                z-index: 99999; /* has to be higher than the side panel */
+    }
+  /*]]>*/
+  </style>
+</head>
+<body data-link-prefix="">
+  <div class="skipnav">
+    <a href="#content-wrapper">Skip to main content</a>
+  </div>
+  <div id="page" class="clearfix">
+    <div id="header">
+      <div class="container">
+        <div id="logotype-container" class="pull-left">
+          <a href="../index.html"><img id="logotype-pageheader" src="../css/image/corporate-logo.png" alt="Corporate logotype" data-role="logotype" /></a>
+        </div>
+        <div id="pagetools-container" class="pull-right">
+          <ul id="page-tools">
+            <li class="page-tools-search"><input placeholder="Search" type="text" class="form-control" aria-label="Search" id="search" /></li>
+            <li class="page-tools-print">
+              <a href="javascript:window.print();"><span class="tool-label">Print</span><span class="glyphicon glyphicon-print"></span></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <h1 id="publication-title">CAM</h1>
+    <div id="subheader-sticky-wrapper" class="sticky-wrapper">
+      <div id="subheader">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3 toc-title">
+              <h2><a class="prev nav-icon hidden-lg hidden-md" href="UUID-3c7a6b01-c61b-035b-e7d4-af189170f03a.html#UUID-3c7a6b01-c61b-035b-e7d4-af189170f03a_id17A4E0J0GKU"><span class="glyphicon glyphicon-chevron-left"></span></a> <a href="#toc" class="hidden mobile-nav-toggle"><span class="glyphicon glyphicon-list"></span>Table of
+              Contents</a><span class="toc-label">Table of Contents</span><a class="next nav-icon hidden-lg hidden-md" href="UUID-dfd98181-3410-96e3-7f19-f656ec9b4efc.html#UUID-dfd98181-3410-96e3-7f19-f656ec9b4efc_id17A4E0J0GE2"><span class="glyphicon glyphicon-chevron-right"></span></a></h2>
+            </div>
+            <div class="col-md-9 breadcrumb-container">
+              <ul class="breadcrumb">
+                <li class="breadcrumb-link">
+                  <span class="glyphicon glyphicon-home"></span>&nbsp;<a href="index-en-US.html">CAM</a>
+                </li>
+                <li class="breadcrumb-link">
+                  <a href="UUID-0751db51-8b5b-ae49-1904-dce4b8c92263.html">Basics of CAM editing</a>
+                </li>
+                <li class="breadcrumb-link">
+                  <a href="UUID-aeb94185-7a19-29aa-6f91-3af4af99b68d.html">Structure CAM project</a>
+                </li>
+                <li class="breadcrumb-link">
+                  <a href="UUID-3c7a6b01-c61b-035b-e7d4-af189170f03a.html">Linking job</a>
+                </li>
+                <li class="breadcrumb-node">Defining a linking job</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="main-content">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 toc-container" id="toc-wrapper">
+            <div id="toc-placeholder">
+              <div id="toc-standalone-placeholder"></div>
+            </div>
+          </div>
+          <div class="col-md-9 content-container" id="content-wrapper">
+            <a accesskey="p" class="prev pull-left prev visible-lg visible-md" id="header-navigation-prev" href="UUID-3c7a6b01-c61b-035b-e7d4-af189170f03a.html#UUID-3c7a6b01-c61b-035b-e7d4-af189170f03a_id17A4E0J0GKU"><span class="glyphicon glyphicon-circle-arrow-left"></span>Prev</a><a accesskey="n" class="pull-right next visible-lg visible-md"
+            id="header-navigation-next" href="UUID-dfd98181-3410-96e3-7f19-f656ec9b4efc.html#UUID-dfd98181-3410-96e3-7f19-f656ec9b4efc_id17A4E0J0GE2">Next<span class="glyphicon glyphicon-circle-arrow-right"></span></a>
+            <div id="topic-content">
+              <section xml:lang="en-US" lang="en-US" dir="ltr" class="section internal" data-origin-id="UUID-21627ffd-ef79-3e89-e463-a89d1d9d262c" data-publication-date="" id="UUID-dfd98181-3410-96e3-7f19-f656ec9b4efc">
+                <div class="titlepage">
+                  <div>
+                    <div class="title">
+                      <h1 class="title" style="clear: both"><span class="formal-title">Defining a linking job</span></h1>
+                    </div>
+                  </div>
+                </div>
+                <p>Right-click and select the <span class="guimenu">New</span> → <span class="guimenuitem">Linking job</span> / <span class="guimenu">New</span> → <span class="guimenuitem">Linking job turning</span> function.</p>
+                <section dir="ltr" class="section internal" data-origin-id="" data-publication-date="" id="UUID-dfd98181-3410-96e3-7f19-f656ec9b4efc_id17A4E0J0GE2">
+                  <div class="titlepage">
+                    <div>
+                      <div class="title">
+                        <h2 class="title" style="clear: both"><span class="formal-title">Add job to a linking job</span></h2>
+                      </div>
+                    </div>
+                  </div>
+                  <p>Select the job(s) and then select the <span class="guilabel">Add to linking job</span> function on the shortcut menu or hold down the <span class="guilabel">SHIFT</span> key to move the jobs to the previously created <span class="guilabel">linking job</span>.</p>
+                </section>
+                <section dir="ltr" class="section internal" data-origin-id="" data-publication-date="" id="UUID-dfd98181-3410-96e3-7f19-f656ec9b4efc_id17A4E0J0G5V">
+                  <div class="titlepage">
+                    <div>
+                      <div class="title">
+                        <h2 class="title" style="clear: both"><span class="formal-title">The Linking job dialog</span></h2>
+                      </div>
+                    </div>
+                  </div>
+                  <p>Linking jobs are defined on the following dialog pages: Tool, Parameters, Setup, Feature, Transformation, General and NC.</p>
+                </section>
+                <section dir="ltr" class="section internal" data-origin-id="" data-publication-date="" id="UUID-dfd98181-3410-96e3-7f19-f656ec9b4efc_id17A4E0J0GIA">
+                  <div class="titlepage">
+                    <div>
+                      <div class="title">
+                        <h2 class="title" style="clear: both"><span class="formal-title">Tool dialog page</span></h2>
+                      </div>
+                    </div>
+                  </div>
+                  <p>All of the jobs combined into a linking job must contain the same tool. This also applies to <span class="guilabel">2D mode</span> and <span class="guilabel">5X mode</span>.</p>
+                </section>
+                <section xml:lang="en-US" lang="en-US" dir="ltr" class="section internal" data-origin-id="" data-publication-date="" id="UUID-dfd98181-3410-96e3-7f19-f656ec9b4efc_UUID-5c6e39b6-cfd1-6245-50fe-093286d2c082">
+                  <div class="titlepage">
+                    <div>
+                      <div class="title">
+                        <h2 class="title" style="clear: both"><span class="formal-title">Parameters dialog page</span></h2>
+                      </div>
+                    </div>
+                  </div>
+                  <p><span xml:lang="de" lang="de" dir="ltr" class="guilabel">Linking mode</span></p>
+                  <p>The following linking methods may be used:</p>
+                  <p><span class="guilabel">2D</span>: Linking of 2D, 3D, drill jobs and turning jobs that share the same frame orientation.</p>
+                  <p><span class="guilabel">5X</span>: Linking of 3D and 5-axis jobs. It is also possible to link the 2D cycles Pocket Milling and Rest Machining in 5X mode.</p>
+                  <p><span xml:lang="de" lang="de" dir="ltr" class="guilabel">Rapids</span></p>
+                  <p>Specify the mode for the fast travel movements (rapids) of linked individual jobs.</p>
+                  <p><span class="guilabel">Skip first and last</span>: Skip the first infeed movement and last retract movement of the individual sub-jobs.</p>
+                  <p><span class="guilabel">Keep all rapids</span>: Keep all infeed and retract movements of sub-jobs within the linking job.</p>
+                  <section dir="ltr" class="section" data-origin-id="" data-publication-date="" id="UUID-dfd98181-3410-96e3-7f19-f656ec9b4efc_section-idm234738860128663">
+                    <div class="titlepage">
+                      <div>
+                        <div class="title">
+                          <h3 class="title"><span class="formal-title">Clearance mode</span></h3>
+                        </div>
+                      </div>
+                    </div>
+                    <p><span class="guilabel">Planar</span>/ <span class="guilabel">Radial</span>: Specify how the toolpaths of the linked sub-jobs are linked. (1) Planar, (2) Radial.</p>
+                    <div class="mediaobject">
+                      <table class="image-viewport" style="border-collapse:collapse;border:0; width:461px;">
+                        <tr style="height: 248px">
+                          <td style="padding:0;"><img src="image/uuid-f1f242e7-f033-9810-0d74-dcc91a2e1343.svg" style="max-width: 461px; max-height: 248px;" alt="grundlagen_linkingjob_sicherheitsmodus.svg" /></td>
+                        </tr>
+                      </table>
+                    </div>
+                  </section>
+                </section>
+                <section dir="ltr" class="section" data-origin-id="" data-publication-date="" id="UUID-dfd98181-3410-96e3-7f19-f656ec9b4efc_section-idm53270332225798">
+                  <div class="titlepage">
+                    <div>
+                      <div class="title">
+                        <h2 class="title" style="clear: both"><span class="formal-title">Rapid smoothing</span></h2>
+                      </div>
+                    </div>
+                  </div>
+                  <p>Available for the Clearance distance retract mode. Enable the <span class="guilabel">High speed</span> option to activate Rapid smoothing (1).</p>
+                  <div class="mediaobject">
+                    <table class="image-viewport" style="border-collapse:collapse;border:0; ;">
+                      <tr style="height: 282px">
+                        <td style="padding:0;"><img src="image/uuid-27d4f737-2cd2-0f76-978e-79e175e6aa8a.svg" style="max-height: 282px;" alt="grundlagen_eilgang_glaettung.svg" /></td>
+                      </tr>
+                    </table>
+                  </div>
+                  <p>When machining in <span class="guilabel">5X mode</span>, the linking movements are defined without abrupt changes of direction. The <span class="guilabel">Smooth factor</span> affects the shape of the smoothed movement as a ratio of the length of the connection line (2) to the required "height" of the movement (3). If the
+                  selected smooth factor potentially leads to a collision, the movement is automatically rendered collision free.</p>
+                  <p>The <span class="guilabel">Clearance distance</span> retract mode must be active. The <span class="guilabel">Linking movement</span> with the <span class="guilabel">Distance angle limit</span> ( <span class="guilabel">Setup</span> dialog page) must match the rapid smoothing.</p>
+                </section>
+                <section xml:lang="en-US" lang="en-US" dir="ltr" class="section internal" data-origin-id="" data-publication-date="" id="UUID-dfd98181-3410-96e3-7f19-f656ec9b4efc_UUID-df8eb14d-8b9d-bbfd-ee66-aa893ae548e9">
+                  <div class="titlepage">
+                    <div>
+                      <div class="title">
+                        <h2 class="title" style="clear: both"><span class="formal-title">Transformation dialog page</span></h2>
+                      </div>
+                    </div>
+                  </div>
+                  <p>The current transformation is executed by calculating the linking job and all copies are linked to collision-checked rapid link movements. A 5-axis compatible NC file is output.</p>
+                  <div class="informaltable table-responsive">
+                    <table style="width:100%;" class="informaltable">
+                      <colgroup>
+                        <col style="width:15%;" align="left" />
+                        <col style="width:85%;" align="left" />
+                      </colgroup>
+                      <tbody>
+                        <tr valign="top">
+                          <td align="left" class="td">
+                            <p><span xml:lang="de" lang="de" dir="ltr" class="bold"><strong>Example</strong></span>:</p>
+                          </td>
+                          <td align="left" class="td">
+                            <p>Complete machining of a closed pocket with inclined walls in 5X linking mode without a tool change. The following jobs are combined in the linking job:</p>
+                            <div class="itemizedlist">
+                              <ul class="itemizedlist" style="list-style-type: disc;">
+                                <li class="listitem">
+                                  <p>3D Free Path Milling,</p>
+                                </li>
+                                <li class="listitem">
+                                  <p>5X Rest Machining, 3D Profile Finishing and</p>
+                                </li>
+                                <li class="listitem">
+                                  <p>5X SWARF Cutting 1 Curve.</p>
+                                </li>
+                              </ul>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td colspan="2" align="left" class="td">
+                            <div class="mediaobject">
+                              <table class="image-viewport" style="border-collapse:collapse;border:0; width:461px;">
+                                <tr style="height: 266px">
+                                  <td style="padding:0;"><img src="image/uuid-2952a1e3-31aa-8d40-c5ae-28573c840f2d.svg" style="max-width: 461px; max-height: 266px;" alt="grundlagen_5X_linkingjob.svg" /></td>
+                                </tr>
+                              </table>
+                            </div>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </section>
+              </section>
+              <div class="footer-content">
+                <div class="section-toc section-toc-after">
+                  <div class="section-toc-title">
+                    <span class="section-toc-title-delimiter">:</span>
+                  </div>
+                </div>
+              </div>
+              <footer></footer>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

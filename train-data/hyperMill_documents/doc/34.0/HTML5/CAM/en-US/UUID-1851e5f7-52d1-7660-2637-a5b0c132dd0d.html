@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="x-ua-compatible" content="IE=edge" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="search" content="default" />
+  <meta name="use.ic" content="no" />
+  <meta name="tocstandalone" content="yes" />
+  <script type="text/javascript">
+  //<![CDATA[
+                        var index;
+                        var contentLanguage = 'en-US';
+                        var enterKey = 'select';
+                        
+                                        var anchoroption = true;
+                                var instantsearch_minlength = 1;
+                                                
+                                var fuse_threshold = 0.3;
+                        
+                                        var local_csh = false;
+                                
+                        var useanchorlinks = false;
+  //]]>
+  </script>
+  <title>Set up machine simulation</title>
+  <link rel="stylesheet" type="text/css" href="../css/docbook.css" />
+  <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" href="../css/bootstrap-theme.min.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style-common.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style-responsive.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style-print.css" />
+  <link rel="stylesheet" type="text/css" href="../css/font-awesome.css" />
+  <link rel="stylesheet" type="text/css" href="../css/custom.css" />
+  <link rel="stylesheet" type="text/css" href="../css/layout-custom-style.css" />
+  <script src="../js/jquery-1.10.2.min.js" type="text/javascript"></script>
+  <script src="../js/jquery-ui-1.10.3.custom.min.js" type="text/javascript"></script>
+  <script src="../js/bootstrap.min.js" type="text/javascript"></script>
+  <script src="../js/purl.js" type="text/javascript"></script>
+  <script src="../js/jquery.event.move.js" type="text/javascript"></script>
+  <script src="../js/jquery.event.swipe.js" type="text/javascript"></script>
+  <script src="../js/jquery.sticky.js" type="text/javascript"></script>
+  <script src="../js/respond.min.js" type="text/javascript"></script>
+  <script src="../js/script.js" type="text/javascript"></script>
+  <script src="js/toc.js" type="text/javascript"></script>
+  <script src="../js/create-toc.js" type="text/javascript"></script>
+  <script src="../js/clipboard.min.js" type="text/javascript"></script>
+  <script src="../js/fuse.min.js" type="text/javascript"></script>
+  <script src="../js/jquery.mark.min.js" type="text/javascript"></script>
+  <script src="../js/html5.fuse.search.js" type="text/javascript"></script>
+  <script src="js/fuzzydata.js" type="text/javascript"></script>
+  <script src="../js/csh.js" type="text/javascript"></script>
+  <script src="../js/highlight-mergehtml-plugin.js" type="text/javascript"></script>
+  <meta name="generator" content="Paligo" />
+  <link rel="prev" href="UUID-78b95f78-0c41-a3fa-5eaf-4e9a33d52aa1.html" title="Generate NC program" />
+  <link rel="next" href="UUID-1851e5f7-52d1-7660-2637-a5b0c132dd0d.html#id146668" title="Animation control" />
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js?config=TeX-MML-AM_CHTML" async="async"></script>
+  <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+  <script type="text/javascript" src="../js/cookie-consent.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  <script type="text/javascript">
+  //<![CDATA[
+                        $(document).on('ready ajaxComplete', function() {
+                                
+                                hljs.addPlugin(mergeHTMLPlugin);
+                                hljs.configure({'ignoreUnescapedHTML': true});
+                                
+                                $('pre:not(.embedcode)').each(function() {
+                                        /**
+                                         * @type {string}
+                                         */
+                                        var language = $(this).data('language');
+
+                                        if (language === 'plaintext' || language === 'text') {
+                                                $(this).addClass(language).addClass('hljs');
+                                                return true;
+                                        }
+                                        else {
+                                                var clone = this.cloneNode(true);
+                                                hljs.highlightElement(clone);
+                                                $(this).empty().append($(clone).contents());
+                                                $(this).attr("class", $(clone).attr("class"));
+                                        }
+                                });
+                        });
+  //]]>
+  </script>
+  <style type="text/css">
+  /*<![CDATA[*/
+            div.skipnav {
+            }
+            div.skipnav a {
+                position: fixed;
+                left: -10000px;
+                top: 1.5em;
+                width: 1px;
+                height: 1px;
+                overflow: hidden;
+            }
+            div.skipnav a:focus, div.skipnav a:active, div.skipnav a:hover {
+                background: white;
+                color: black;
+                box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.5);
+                position: fixed;
+                left: 2em;
+                top: 1.5em;
+                width: auto;
+                height: auto;
+                overflow: visible;
+                text-decoration: underline;
+                z-index: 99999; /* has to be higher than the side panel */
+    }
+  /*]]>*/
+  </style>
+</head>
+<body data-link-prefix="">
+  <div class="skipnav">
+    <a href="#content-wrapper">Skip to main content</a>
+  </div>
+  <div id="page" class="clearfix">
+    <div id="header">
+      <div class="container">
+        <div id="logotype-container" class="pull-left">
+          <a href="../index.html"><img id="logotype-pageheader" src="../css/image/corporate-logo.png" alt="Corporate logotype" data-role="logotype" /></a>
+        </div>
+        <div id="pagetools-container" class="pull-right">
+          <ul id="page-tools">
+            <li class="page-tools-search"><input placeholder="Search" type="text" class="form-control" aria-label="Search" id="search" /></li>
+            <li class="page-tools-print">
+              <a href="javascript:window.print();"><span class="tool-label">Print</span><span class="glyphicon glyphicon-print"></span></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <h1 id="publication-title">CAM</h1>
+    <div id="subheader-sticky-wrapper" class="sticky-wrapper">
+      <div id="subheader">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3 toc-title">
+              <h2><a class="prev nav-icon hidden-lg hidden-md" href="UUID-78b95f78-0c41-a3fa-5eaf-4e9a33d52aa1.html"><span class="glyphicon glyphicon-chevron-left"></span></a> <a href="#toc" class="hidden mobile-nav-toggle"><span class="glyphicon glyphicon-list"></span>Table of Contents</a><span class="toc-label">Table of Contents</span><a class=
+              "next nav-icon hidden-lg hidden-md" href="UUID-1851e5f7-52d1-7660-2637-a5b0c132dd0d.html#id146668"><span class="glyphicon glyphicon-chevron-right"></span></a></h2>
+            </div>
+            <div class="col-md-9 breadcrumb-container">
+              <ul class="breadcrumb">
+                <li class="breadcrumb-link">
+                  <span class="glyphicon glyphicon-home"></span>&nbsp;<a href="index-en-US.html">CAM</a>
+                </li>
+                <li class="breadcrumb-link">
+                  <a href="UUID-56b42c1f-4725-0b56-0bdf-0ee2de68a013.html"><span class="italic">hyper</span>VIEW</a>
+                </li>
+                <li class="breadcrumb-link">
+                  <a href="UUID-c3807e33-01cc-66fb-1609-518b29479a51.html">Important workflows</a>
+                </li>
+                <li class="breadcrumb-node">Set up machine simulation</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="main-content">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 toc-container" id="toc-wrapper">
+            <div id="toc-placeholder">
+              <div id="toc-standalone-placeholder"></div>
+            </div>
+          </div>
+          <div class="col-md-9 content-container" id="content-wrapper">
+            <a accesskey="p" class="prev pull-left prev visible-lg visible-md" id="header-navigation-prev" href="UUID-78b95f78-0c41-a3fa-5eaf-4e9a33d52aa1.html"><span class="glyphicon glyphicon-circle-arrow-left"></span>Prev</a><a accesskey="n" class="pull-right next visible-lg visible-md" id="header-navigation-next" href=
+            "UUID-1851e5f7-52d1-7660-2637-a5b0c132dd0d.html#id146668">Next<span class="glyphicon glyphicon-circle-arrow-right"></span></a>
+            <div id="topic-content">
+              <section xml:lang="en-US" lang="en-US" dir="ltr" class="section" data-origin-id="UUID-07dc645d-1e3f-8e16-b048-990adeb2df56" data-publication-date="" id="UUID-1851e5f7-52d1-7660-2637-a5b0c132dd0d">
+                <div class="titlepage">
+                  <div>
+                    <div class="title">
+                      <h1 class="title" style="clear: both"><span class="formal-title">Set up machine simulation</span></h1>
+                    </div>
+                  </div>
+                </div>
+                <p>Proceed as follows to set up the machine simulation:</p>
+                <div class="procedure">
+                  <ol class="procedure" type="1">
+                    <li class="step">
+                      <p>Define machine.</p>
+                    </li>
+                    <li class="step">
+                      <p>Create an NC job and insert toolpath.</p>
+                    </li>
+                    <li class="step">
+                      <p>Define the machine simulation conditions. To do this, switch to the <span class="guilabel">Simulation</span> tab in the browser and specify the required settings.</p>
+                    </li>
+                  </ol>
+                </div>
+                <div dir="ltr" class="note">
+                  <h3 class="title">Note</h3>
+                  <p>Machine origin: If you select the <span class="guilabel">Automatic</span> option, the parts used and the toolpaths will be positioned automatically. Use Machine Setup to define other origins.</p>
+                </div>
+                <section dir="ltr" class="section internal" data-origin-id="" data-publication-date="" id="id146668">
+                  <div class="titlepage">
+                    <div>
+                      <div class="title">
+                        <h2 class="title" style="clear: both"><span class="formal-title">Animation control</span></h2>
+                      </div>
+                    </div>
+                  </div>
+                  <p><span class="guilabel">C</span>: All tool movements of the respective job are simulated.</p>
+                  <p><span class="guilabel">G1</span>: Only tool movements on the G1 plane are simulated.</p>
+                  <p><span class="guilabel">G0</span>: Only tool movements on the G0 plane are simulated.</p>
+                  <p>If you set the (Program) halt option to <span class="guilabel">On</span>, the simulation will be stopped at the point specified in the NC file.</p>
+                </section>
+                <section dir="ltr" class="section internal" data-origin-id="" data-publication-date="" id="id146678">
+                  <div class="titlepage">
+                    <div>
+                      <div class="title">
+                        <h2 class="title" style="clear: both"><span class="formal-title">Mode</span></h2>
+                      </div>
+                    </div>
+                  </div>
+                  <p>If you want to perform a material removal simulation, define a stockmodel.</p>
+                  <div class="informaltable table-responsive">
+                    <table class="informaltable">
+                      <colgroup>
+                        <col style="width:11%;" />
+                        <col style="width:89%;" />
+                      </colgroup>
+                      <tbody>
+                        <tr>
+                          <td class="td">
+                            <div class="mediaobject">
+                              <table class="image-viewport" style="border-collapse:collapse;border:0; ;">
+                                <tr style="height: 48px">
+                                  <td style="padding:0;"><img src="image/uuid-e65b99ee-c276-9041-a756-72ee9ab8936f.svg" style="max-height: 48px;" alt="hview_no_mat_remov.svg" /></td>
+                                </tr>
+                              </table>
+                            </div>
+                          </td>
+                          <td valign="middle" class="td align-middle">
+                            <p>Material removal simulation disabled. Open the <span class="guilabel">Create stock</span> dialog. Define the shape and display for the stock.</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="td">
+                            <div class="mediaobject">
+                              <table class="image-viewport" style="border-collapse:collapse;border:0; ;">
+                                <tr style="height: 48px">
+                                  <td style="padding:0;"><img src="image/uuid-5b9ba36e-5dd1-f898-1a53-e73387a0b0d2.svg" style="max-height: 48px;" alt="hview_mat_remov.svg" /></td>
+                                </tr>
+                              </table>
+                            </div>
+                          </td>
+                          <td valign="middle" class="td align-middle">
+                            <p>Material removal simulation enabled (only if a stockmodel has been defined).</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="td">
+                            <div class="mediaobject">
+                              <table class="image-viewport" style="border-collapse:collapse;border:0; ;">
+                                <tr style="height: 48px">
+                                  <td style="padding:0;"><img src="image/uuid-5b9ba36e-5dd1-f898-1a53-e73387a0b0d2.svg" style="max-height: 48px;" alt="hview_mat_remov.svg" /></td>
+                                </tr>
+                              </table>
+                            </div>
+                          </td>
+                          <td valign="middle" class="td align-middle">
+                            <p>Material removal shaded</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="td">
+                            <div class="mediaobject">
+                              <table class="image-viewport" style="border-collapse:collapse;border:0; ;">
+                                <tr style="height: 48px">
+                                  <td style="padding:0;"><img src="image/uuid-9269eb92-d92f-e036-4966-a829f559f7aa.svg" style="max-height: 48px;" alt="hview_mat_remov_trans.svg" /></td>
+                                </tr>
+                              </table>
+                            </div>
+                          </td>
+                          <td valign="middle" class="td align-middle">
+                            <p>Material removal transparent</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="td">
+                            <div class="mediaobject">
+                              <table class="image-viewport" style="border-collapse:collapse;border:0; ;">
+                                <tr style="height: 48px">
+                                  <td style="padding:0;"><img src="image/uuid-a1f18167-6e4e-f5f8-688f-e9f767a62329.svg" style="max-height: 48px;" alt="hview_mat_remov_wire.svg" /></td>
+                                </tr>
+                              </table>
+                            </div>
+                          </td>
+                          <td valign="middle" class="td align-middle">
+                            <p>Material removal wireframe</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="td">
+                            <div class="mediaobject">
+                              <table class="image-viewport" style="border-collapse:collapse;border:0; ;">
+                                <tr style="height: 48px">
+                                  <td style="padding:0;"><img src="image/uuid-0e560ee8-6cc2-db8c-222e-738229b25c6c.svg" style="max-height: 48px;" alt="hview_save_res.svg" /></td>
+                                </tr>
+                              </table>
+                            </div>
+                          </td>
+                          <td valign="middle" class="td align-middle">
+                            <p>Save the result of the material removal simulation in the <code class="filename">*.stl</code>, <code class="filename">*.vis</code> or <code class="filename">*.omg</code> format.</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="td">
+                            <div class="mediaobject">
+                              <table class="image-viewport" style="border-collapse:collapse;border:0; ;">
+                                <tr style="height: 48px">
+                                  <td style="padding:0;"><img src="image/uuid-729437cd-62ff-2e28-9fd9-b798f963d722.svg" style="max-height: 48px;" alt="hview_mod.svg" /></td>
+                                </tr>
+                              </table>
+                            </div>
+                          </td>
+                          <td valign="middle" class="td align-middle">
+                            <p>Model shaded.</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="td">
+                            <div class="mediaobject">
+                              <table class="image-viewport" style="border-collapse:collapse;border:0; ;">
+                                <tr style="height: 48px">
+                                  <td style="padding:0;"><img src="image/uuid-37081061-7805-0d29-e738-9bebc1ae6536.svg" style="max-height: 48px;" alt="hview_mod_trans.svg" /></td>
+                                </tr>
+                              </table>
+                            </div>
+                          </td>
+                          <td valign="middle" class="td align-middle">
+                            <p>Model transparent.</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="td">
+                            <div class="mediaobject">
+                              <table class="image-viewport" style="border-collapse:collapse;border:0; ;">
+                                <tr style="height: 48px">
+                                  <td style="padding:0;"><img src="image/uuid-9bb66d32-2bce-a7c7-3f5e-f836027ca8c1.svg" style="max-height: 48px;" alt="hview_mod_wire.svg" /></td>
+                                </tr>
+                              </table>
+                            </div>
+                          </td>
+                          <td valign="middle" class="td align-middle">
+                            <p>Model wireframe.</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="td">
+                            <div class="mediaobject">
+                              <table class="image-viewport" style="border-collapse:collapse;border:0; ;">
+                                <tr style="height: 48px">
+                                  <td style="padding:0;"><img src="image/uuid-eb9c0be4-0aad-ca5c-4f46-b24c5a92ef47.svg" style="max-height: 48px;" alt="hview_mod_not_vis.svg" /></td>
+                                </tr>
+                              </table>
+                            </div>
+                          </td>
+                          <td valign="middle" class="td align-middle">
+                            <p>Model invisible.</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="td">
+                            <div class="mediaobject"><img src="image/uuid-4449d5d7-5b1b-1153-83a8-4a0e85dfa9a6.svg" style="" alt="hview_no_coll_check.svg" /></div>
+                          </td>
+                          <td valign="middle" class="td align-middle">
+                            <p>Automatic collision checking disabled.</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="td">
+                            <div class="mediaobject">
+                              <table class="image-viewport" style="border-collapse:collapse;border:0; ;">
+                                <tr style="height: 48px">
+                                  <td style="padding:0;"><img src="image/uuid-cd1e8cfd-a944-9b7c-9571-8167c48506c6.svg" style="max-height: 48px;" alt="hview_coll_check.svg" /></td>
+                                </tr>
+                              </table>
+                            </div>
+                          </td>
+                          <td valign="middle" class="td align-middle">
+                            <p>Automatic collision checking enabled.</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="td">
+                            <div class="mediaobject">
+                              <table class="image-viewport" style="border-collapse:collapse;border:0; ;">
+                                <tr style="height: 48px">
+                                  <td style="padding:0;"><img src="image/uuid-bea1ab5e-d4bc-0f61-2b0a-fa3d6434eb97.svg" style="max-height: 48px;" alt="hview_coll_check_opt.svg" /></td>
+                                </tr>
+                              </table>
+                            </div>
+                          </td>
+                          <td valign="middle" class="td align-middle">
+                            <p>Enable collision checking to include the activated checks. A reverse simulation is not possible.</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="td">
+                            <div class="mediaobject">
+                              <table class="image-viewport" style="border-collapse:collapse;border:0; ;">
+                                <tr style="height: 48px">
+                                  <td style="padding:0;"><img src="image/uuid-1cacd5d5-0a77-261d-c796-db75ba8ec1e2.svg" style="max-height: 48px;" alt="hview_mach_struc.svg" /></td>
+                                </tr>
+                              </table>
+                            </div>
+                          </td>
+                          <td valign="middle" class="td align-middle">
+                            <p>Open the <span class="guilabel">Machine structure</span> dialog.</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="td">
+                            <div class="mediaobject">
+                              <table class="image-viewport" style="border-collapse:collapse;border:0; ;">
+                                <tr style="height: 48px">
+                                  <td style="padding:0;"><img src="image/uuid-95199c75-5f9d-346c-fc49-ecf39ff94cd4.svg" style="max-height: 48px;" alt="hview_mach_vis.svg" /></td>
+                                </tr>
+                              </table>
+                            </div>
+                          </td>
+                          <td valign="middle" class="td align-middle">
+                            <p>Machine component visible.</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="td">
+                            <div class="mediaobject">
+                              <table class="image-viewport" style="border-collapse:collapse;border:0; ;">
+                                <tr style="height: 48px">
+                                  <td style="padding:0;"><img src="image/uuid-e133e850-5b22-0c10-c0c0-f8cda4a578cc.svg" style="max-height: 48px;" alt="hview_mach_not_vis.svg" /></td>
+                                </tr>
+                              </table>
+                            </div>
+                          </td>
+                          <td valign="middle" class="td align-middle">
+                            <p>Machine component invisible.</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="td">
+                            <div class="mediaobject">
+                              <table class="image-viewport" style="border-collapse:collapse;border:0; ;">
+                                <tr style="height: 48px">
+                                  <td style="padding:0;"><img src="image/uuid-f3d34ae5-870b-1345-6f83-984f972de829.svg" style="max-height: 48px;" alt="hview_all_mach_vis.svg" /></td>
+                                </tr>
+                              </table>
+                            </div>
+                          </td>
+                          <td valign="middle" class="td align-middle">
+                            <p>Show all machine components.</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="td">
+                            <div class="mediaobject">
+                              <table class="image-viewport" style="border-collapse:collapse;border:0; ;">
+                                <tr style="height: 48px">
+                                  <td style="padding:0;"><img src="image/uuid-57afa3af-882e-5ba0-b7d6-21c68755e875.svg" style="max-height: 48px;" alt="hview_all_mach_not_vis.svg" /></td>
+                                </tr>
+                              </table>
+                            </div>
+                          </td>
+                          <td valign="middle" class="td align-middle">
+                            <p>Hide all machine components.</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="td">
+                            <div class="mediaobject">
+                              <table class="image-viewport" style="border-collapse:collapse;border:0; ;">
+                                <tr style="height: 48px">
+                                  <td style="padding:0;"><img src="image/uuid-f980c7da-08b8-89fb-5b21-c2b201c43c79.svg" style="max-height: 48px;" alt="hview_tool.svg" /></td>
+                                </tr>
+                              </table>
+                            </div>
+                          </td>
+                          <td valign="middle" class="td align-middle">
+                            <p>Tool shaded</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="td">
+                            <div class="mediaobject">
+                              <table class="image-viewport" style="border-collapse:collapse;border:0; ;">
+                                <tr style="height: 48px">
+                                  <td style="padding:0;"><img src="image/uuid-3579f93d-85e2-0a3a-24ba-29b8623c23b7.svg" style="max-height: 48px;" alt="hview_tool_trans.svg" /></td>
+                                </tr>
+                              </table>
+                            </div>
+                          </td>
+                          <td valign="middle" class="td align-middle">
+                            <p>Tool transparent</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="td">
+                            <div class="mediaobject">
+                              <table class="image-viewport" style="border-collapse:collapse;border:0; ;">
+                                <tr style="height: 48px">
+                                  <td style="padding:0;"><img src="image/uuid-62b0a710-fadf-2ffe-e1a2-d554e6fd895b.svg" style="max-height: 48px;" alt="hview_tool_wire.svg" /></td>
+                                </tr>
+                              </table>
+                            </div>
+                          </td>
+                          <td valign="middle" class="td align-middle">
+                            <p>Tool as wireframe</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="td">
+                            <div class="mediaobject">
+                              <table class="image-viewport" style="border-collapse:collapse;border:0; ;">
+                                <tr style="height: 48px">
+                                  <td style="padding:0;"><img src="image/uuid-4cb76a54-3646-6e9e-6147-36a14850e1ae.svg" style="max-height: 48px;" alt="hview_no_tool.svg" /></td>
+                                </tr>
+                              </table>
+                            </div>
+                          </td>
+                          <td valign="middle" class="td align-middle">
+                            <p>Tool invisible</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="td">
+                            <div class="mediaobject">
+                              <table class="image-viewport" style="border-collapse:collapse;border:0; ;">
+                                <tr style="height: 48px">
+                                  <td style="padding:0;"><img src="image/uuid-03426555-15e8-f28e-c9fc-82736cc09515.svg" style="max-height: 48px;" alt="hview_all_toolpath.svg" /></td>
+                                </tr>
+                              </table>
+                            </div>
+                          </td>
+                          <td valign="middle" class="td align-middle">
+                            <p>Display all toolpaths.</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="td">
+                            <div class="mediaobject">
+                              <table class="image-viewport" style="border-collapse:collapse;border:0; ;">
+                                <tr style="height: 48px">
+                                  <td style="padding:0;"><img src="image/uuid-aa06fee5-4259-042e-c250-a742d10bbfd1.svg" style="max-height: 48px;" alt="hview_toolpath_job.svg" /></td>
+                                </tr>
+                              </table>
+                            </div>
+                          </td>
+                          <td valign="middle" class="td align-middle">
+                            <p>Only display the current toolpath.</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="td">
+                            <div class="mediaobject">
+                              <table class="image-viewport" style="border-collapse:collapse;border:0; ;">
+                                <tr style="height: 48px">
+                                  <td style="padding:0;"><img src="image/uuid-d7d655d3-0ef7-7b49-a04a-320f005a12fb.svg" style="max-height: 48px;" alt="hview_toolpath_move.svg" /></td>
+                                </tr>
+                              </table>
+                            </div>
+                          </td>
+                          <td valign="middle" class="td align-middle">
+                            <p>Only display the current tool movement.</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="td">
+                            <div class="mediaobject">
+                              <table class="image-viewport" style="border-collapse:collapse;border:0; ;">
+                                <tr style="height: 48px">
+                                  <td style="padding:0;"><img src="image/uuid-7d691eb1-2a65-9ddf-2ce3-4edc5e5d6f39.svg" style="max-height: 48px;" alt="hview_no_toolpath.svg" /></td>
+                                </tr>
+                              </table>
+                            </div>
+                          </td>
+                          <td valign="middle" class="td align-middle">
+                            <p>Do not display any toolpaths.</p>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <p>An activated machine model is required to display the machine.</p>
+                </section>
+              </section>
+              <div class="footer-content">
+                <div class="section-toc section-toc-after">
+                  <div class="section-toc-title">
+                    <span class="section-toc-title-delimiter">:</span>
+                  </div>
+                </div>
+              </div>
+              <footer></footer>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

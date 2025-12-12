@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="x-ua-compatible" content="IE=edge" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="search" content="default" />
+  <meta name="use.ic" content="no" />
+  <meta name="tocstandalone" content="yes" />
+  <script type="text/javascript">
+  //<![CDATA[
+                        var index;
+                        var contentLanguage = 'en-US';
+                        var enterKey = 'select';
+                        
+                                        var anchoroption = true;
+                                var instantsearch_minlength = 1;
+                                                
+                                var fuse_threshold = 0.3;
+                        
+                                        var local_csh = false;
+                                
+                        var useanchorlinks = false;
+  //]]>
+  </script>
+  <title>Calculation rules and their meaning</title>
+  <link rel="stylesheet" type="text/css" href="../css/docbook.css" />
+  <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" href="../css/bootstrap-theme.min.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style-common.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style-responsive.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style-print.css" />
+  <link rel="stylesheet" type="text/css" href="../css/font-awesome.css" />
+  <link rel="stylesheet" type="text/css" href="../css/custom.css" />
+  <link rel="stylesheet" type="text/css" href="../css/layout-custom-style.css" />
+  <script src="../js/jquery-1.10.2.min.js" type="text/javascript"></script>
+  <script src="../js/jquery-ui-1.10.3.custom.min.js" type="text/javascript"></script>
+  <script src="../js/bootstrap.min.js" type="text/javascript"></script>
+  <script src="../js/purl.js" type="text/javascript"></script>
+  <script src="../js/jquery.event.move.js" type="text/javascript"></script>
+  <script src="../js/jquery.event.swipe.js" type="text/javascript"></script>
+  <script src="../js/jquery.sticky.js" type="text/javascript"></script>
+  <script src="../js/respond.min.js" type="text/javascript"></script>
+  <script src="../js/script.js" type="text/javascript"></script>
+  <script src="js/toc.js" type="text/javascript"></script>
+  <script src="../js/create-toc.js" type="text/javascript"></script>
+  <script src="../js/clipboard.min.js" type="text/javascript"></script>
+  <script src="../js/fuse.min.js" type="text/javascript"></script>
+  <script src="../js/jquery.mark.min.js" type="text/javascript"></script>
+  <script src="../js/html5.fuse.search.js" type="text/javascript"></script>
+  <script src="js/fuzzydata.js" type="text/javascript"></script>
+  <script src="../js/csh.js" type="text/javascript"></script>
+  <script src="../js/highlight-mergehtml-plugin.js" type="text/javascript"></script>
+  <meta name="generator" content="Paligo" />
+  <link rel="prev" href="UUID-cf787a85-e767-ad3a-2008-5ffeba9ffd0f.html" title="Type of cut parameter and associated calculation rules" />
+  <link rel="next" href="UUID-d570183b-780e-f50b-eb0c-f8d28bcf0b0e.html" title="Cutting classes and materials" />
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js?config=TeX-MML-AM_CHTML" async="async"></script>
+  <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+  <script type="text/javascript" src="../js/cookie-consent.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  <script type="text/javascript">
+  //<![CDATA[
+                        $(document).on('ready ajaxComplete', function() {
+                                
+                                hljs.addPlugin(mergeHTMLPlugin);
+                                hljs.configure({'ignoreUnescapedHTML': true});
+                                
+                                $('pre:not(.embedcode)').each(function() {
+                                        /**
+                                         * @type {string}
+                                         */
+                                        var language = $(this).data('language');
+
+                                        if (language === 'plaintext' || language === 'text') {
+                                                $(this).addClass(language).addClass('hljs');
+                                                return true;
+                                        }
+                                        else {
+                                                var clone = this.cloneNode(true);
+                                                hljs.highlightElement(clone);
+                                                $(this).empty().append($(clone).contents());
+                                                $(this).attr("class", $(clone).attr("class"));
+                                        }
+                                });
+                        });
+  //]]>
+  </script>
+  <style type="text/css">
+  /*<![CDATA[*/
+            div.skipnav {
+            }
+            div.skipnav a {
+                position: fixed;
+                left: -10000px;
+                top: 1.5em;
+                width: 1px;
+                height: 1px;
+                overflow: hidden;
+            }
+            div.skipnav a:focus, div.skipnav a:active, div.skipnav a:hover {
+                background: white;
+                color: black;
+                box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.5);
+                position: fixed;
+                left: 2em;
+                top: 1.5em;
+                width: auto;
+                height: auto;
+                overflow: visible;
+                text-decoration: underline;
+                z-index: 99999; /* has to be higher than the side panel */
+    }
+  /*]]>*/
+  </style>
+</head>
+<body data-link-prefix="">
+  <div class="skipnav">
+    <a href="#content-wrapper">Skip to main content</a>
+  </div>
+  <div id="page" class="clearfix">
+    <div id="header">
+      <div class="container">
+        <div id="logotype-container" class="pull-left">
+          <a href="../index.html"><img id="logotype-pageheader" src="../css/image/corporate-logo.png" alt="Corporate logotype" data-role="logotype" /></a>
+        </div>
+        <div id="pagetools-container" class="pull-right">
+          <ul id="page-tools">
+            <li class="page-tools-search"><input placeholder="Search" type="text" class="form-control" aria-label="Search" id="search" /></li>
+            <li class="page-tools-print">
+              <a href="javascript:window.print();"><span class="tool-label">Print</span><span class="glyphicon glyphicon-print"></span></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <h1 id="publication-title">CAM</h1>
+    <div id="subheader-sticky-wrapper" class="sticky-wrapper">
+      <div id="subheader">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3 toc-title">
+              <h2><a class="prev nav-icon hidden-lg hidden-md" href="UUID-cf787a85-e767-ad3a-2008-5ffeba9ffd0f.html"><span class="glyphicon glyphicon-chevron-left"></span></a> <a href="#toc" class="hidden mobile-nav-toggle"><span class="glyphicon glyphicon-list"></span>Table of Contents</a><span class="toc-label">Table of Contents</span><a class=
+              "next nav-icon hidden-lg hidden-md" href="UUID-d570183b-780e-f50b-eb0c-f8d28bcf0b0e.html"><span class="glyphicon glyphicon-chevron-right"></span></a></h2>
+            </div>
+            <div class="col-md-9 breadcrumb-container">
+              <ul class="breadcrumb">
+                <li class="breadcrumb-link">
+                  <span class="glyphicon glyphicon-home"></span>&nbsp;<a href="index-en-US.html">CAM</a>
+                </li>
+                <li class="breadcrumb-link">
+                  <a href="UUID-51eaf0e4-7ec1-8210-187c-12cd10b54a1d.html">Tool database</a>
+                </li>
+                <li class="breadcrumb-link">
+                  <a href="UUID-0dcc7c01-5f35-bd09-9bda-c7b51a52b52e.html">Tool series and technology templates</a>
+                </li>
+                <li class="breadcrumb-link">
+                  <a href="UUID-6eaefcfe-bd98-7d9a-4684-47bf40c30c4d.html">Define technology template</a>
+                </li>
+                <li class="breadcrumb-node">Calculation rules and their meaning</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="main-content">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 toc-container" id="toc-wrapper">
+            <div id="toc-placeholder">
+              <div id="toc-standalone-placeholder"></div>
+            </div>
+          </div>
+          <div class="col-md-9 content-container" id="content-wrapper">
+            <a accesskey="p" class="prev pull-left prev visible-lg visible-md" id="header-navigation-prev" href="UUID-cf787a85-e767-ad3a-2008-5ffeba9ffd0f.html"><span class="glyphicon glyphicon-circle-arrow-left"></span>Prev</a><a accesskey="n" class="pull-right next visible-lg visible-md" id="header-navigation-next" href=
+            "UUID-d570183b-780e-f50b-eb0c-f8d28bcf0b0e.html">Next<span class="glyphicon glyphicon-circle-arrow-right"></span></a>
+            <div id="topic-content">
+              <section xml:lang="en-US" lang="en-US" dir="ltr" class="section" data-origin-id="UUID-71532271-7722-09ec-014c-8fcf0ca4cebf" data-publication-date="" id="UUID-85570498-f5a1-8d66-97cd-2a8f35675d31">
+                <div class="titlepage">
+                  <div>
+                    <div class="title">
+                      <h1 class="title" style="clear: both"><span class="formal-title">Calculation rules and their meaning</span></h1>
+                    </div>
+                  </div>
+                </div>
+                <div class="informaltable table-responsive">
+                  <table style="width:100%;" class="informaltable">
+                    <colgroup>
+                      <col style="width:50%;" />
+                      <col style="width:50%;" />
+                    </colgroup>
+                    <thead>
+                      <tr>
+                        <th class="th">
+                          <p>Calculation rule</p>
+                        </th>
+                        <th class="th">
+                          <p>Meaning</p>
+                        </th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td valign="top" class="td align-top">
+                          <p><span class="guilabel">Feedrate * factor</span></p>
+                        </td>
+                        <td valign="top" class="td align-top">
+                          <p>Define the axial feedrate, for example, based on the regular feedrate using a factor. The feedrate of the individual tool is always taken into account.</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td valign="top" class="td align-top">
+                          <p><span class="guilabel">Constant</span></p>
+                        </td>
+                        <td class="td">
+                          <p>Use <span class="guilabel">Constant</span> to set a specific parameter to a constant value for all tools in a tool series. The value applies to all tools.</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td valign="top" class="td align-top">
+                          <p><span class="guilabel">Tool diameter sample table</span></p>
+                        </td>
+                        <td valign="top" class="td align-top">
+                          <p>Use the <span class="guilabel">Tool diameter sample table</span> to define specific values for individual diameters. The value range between two examples is interpolated linearly.</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td colspan="2" class="td">
+                          <div dir="ltr" class="important" id="UUID-85570498-f5a1-8d66-97cd-2a8f35675d31_important-idm4511346999289634101396162676">
+                            <h3 class="title">Important</h3>
+                            <p>Only the range between the smallest and largest diameter is defined!</p>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td valign="top" colspan="2" class="td align-top">
+                          <div class="mediaobject"><img src="image/uuid-f745f151-b01a-ca6f-58d4-052b3f79acbf.svg" style="" alt="tool_diameter_sample_table2.png" /></div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td valign="top" class="td align-top">
+                          <p><span class="guilabel">Tool diameter and corner radius sample table</span></p>
+                        </td>
+                        <td valign="top" class="td align-top">
+                          <p>Use the <span class="guilabel">Tool diameter and corner radius sample table</span> to define specific values for individual diameter/corner radius combinations. The value range between the minimum and maximum values is interpolated.</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td colspan="2" class="td">
+                          <div dir="ltr" class="important" id="UUID-85570498-f5a1-8d66-97cd-2a8f35675d31_important-idm4557094769729634101396511727">
+                            <h3 class="title">Important</h3>
+                            <p>Only the range between the smallest and largest values is defined!</p>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td valign="top" colspan="2" class="td align-top">
+                          <div class="mediaobject"><img src="image/uuid-c5877f95-6224-46a6-6f39-ad1202d96da9.svg" style="" alt="tool_diameter_corner_radius_sample_table.svg" /></div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td valign="top" class="td align-top">
+                          <p><span class="guilabel">Tool diameter and pitch sample table</span></p>
+                        </td>
+                        <td class="td">
+                          <p>Only available in the&nbsp;<span class="guilabel">Tapping</span>&nbsp;type of cut. Use the&nbsp;<span class="guilabel">Tool diameter and pitch sample table</span>&nbsp;to define specific values for individual diameter/pitch combinations. The value range between the minimum and maximum values is interpolated.</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td valign="top" class="td align-top">
+                          <p><span class="guilabel">Tool diameter * factor</span></p>
+                        </td>
+                        <td valign="top" class="td align-top">
+                          <p>Based on the tool diameter, use a factor to define the value for the <span class="guilabel">F/edge</span> parameter, for example. The diameter of the individual tool is taken into account.</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td valign="top" class="td align-top">
+                          <p><span class="guilabel">Cutting length * factor</span></p>
+                        </td>
+                        <td class="td">
+                          <p>Based on the cutting length of the tool, use a factor to define the value for the <span class="guilabel">Infeed length max</span> parameter, for example. The cutting length of the individual tool is taken into account.</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td valign="top" class="td align-top">
+                          <p><span class="guilabel">Standard material removal rate * factor</span></p>
+                        </td>
+                        <td valign="top" class="td align-top">
+                          <p>The calculation rule is only available for the <span class="guilabel">Standard roughing</span> type of cut.</p>
+                          <p>The F/edge for full cuts is derived on the basis of the material removal rate during the standard roughing cut. The feedrate can also be reduced using a factor.</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td valign="top" class="td align-top">
+                          <p><span class="guilabel">Standard adjusted speed formula</span></p>
+                        </td>
+                        <td valign="top" class="td align-top">
+                          <p>The calculation rule is only available for the <span class="guilabel">Trochoidal roughing</span> type of cut.</p>
+                          <p>Due to the reduced lateral infeed during trochoidal roughing, the tool life increases. The cutting speed is increased accordingly to such an extent that the tool life is maintained in relation to the tool’s reference technology.</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td colspan="2" class="td">
+                          <div dir="ltr" class="important" id="UUID-85570498-f5a1-8d66-97cd-2a8f35675d31_important-idm4568407640571234101396960205">
+                            <h3 class="title">Important</h3>
+                            <p>The <span class="guilabel">Cutting speed formula</span> calculation rule allows tool manufacturers to use their own formulas to adjust the cutting speed.</p>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td valign="top" class="td align-top">
+                          <p><span class="guilabel">Standard chip thinning formula</span></p>
+                        </td>
+                        <td valign="top" class="td align-top">
+                          <p>Use to keep the chip section constant depending on the lateral infeed (Ae).</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td colspan="2" class="td">
+                          <div dir="ltr" class="important" id="UUID-85570498-f5a1-8d66-97cd-2a8f35675d31_important-idm4568407455363234101397690628">
+                            <h3 class="title">Important</h3>
+                            <p>The <span class="guilabel">Feedrate per edge formula</span> calculation rule allows tool manufacturers to use their own formulas to adjust the mean chip section.</p>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td valign="top" class="td align-top">
+                          <p><span class="guilabel">Stepover formula</span></p>
+                        </td>
+                        <td valign="top" class="td align-top">
+                          <p>Use to calculate the <span class="guilabel">Constant stepdown</span>, the <span class="guilabel">Constant stepover</span>, or the <span class="guilabel">3D stepover</span> based on the <span class="guilabel">Scallop height</span> parameter.</p>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </section>
+              <div class="footer-content">
+                <div class="section-toc section-toc-after">
+                  <div class="section-toc-title">
+                    <span class="section-toc-title-delimiter">:</span>
+                  </div>
+                </div>
+              </div>
+              <footer></footer>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

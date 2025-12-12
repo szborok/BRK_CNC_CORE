@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="x-ua-compatible" content="IE=edge" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="search" content="default" />
+  <meta name="use.ic" content="no" />
+  <meta name="tocstandalone" content="yes" />
+  <script type="text/javascript">
+  //<![CDATA[
+                        var index;
+                        var contentLanguage = 'en-US';
+                        var enterKey = 'select';
+                        
+                                        var anchoroption = true;
+                                var instantsearch_minlength = 1;
+                                                
+                                var fuse_threshold = 0.3;
+                        
+                                        var local_csh = false;
+                                
+                        var useanchorlinks = false;
+  //]]>
+  </script>
+  <title>Intelligent macros</title>
+  <link rel="stylesheet" type="text/css" href="../css/docbook.css" />
+  <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" href="../css/bootstrap-theme.min.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style-common.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style-responsive.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style-print.css" />
+  <link rel="stylesheet" type="text/css" href="../css/font-awesome.css" />
+  <link rel="stylesheet" type="text/css" href="../css/custom.css" />
+  <link rel="stylesheet" type="text/css" href="../css/layout-custom-style.css" />
+  <script src="../js/jquery-1.10.2.min.js" type="text/javascript"></script>
+  <script src="../js/jquery-ui-1.10.3.custom.min.js" type="text/javascript"></script>
+  <script src="../js/bootstrap.min.js" type="text/javascript"></script>
+  <script src="../js/purl.js" type="text/javascript"></script>
+  <script src="../js/jquery.event.move.js" type="text/javascript"></script>
+  <script src="../js/jquery.event.swipe.js" type="text/javascript"></script>
+  <script src="../js/jquery.sticky.js" type="text/javascript"></script>
+  <script src="../js/respond.min.js" type="text/javascript"></script>
+  <script src="../js/script.js" type="text/javascript"></script>
+  <script src="js/toc.js" type="text/javascript"></script>
+  <script src="../js/create-toc.js" type="text/javascript"></script>
+  <script src="../js/clipboard.min.js" type="text/javascript"></script>
+  <script src="../js/fuse.min.js" type="text/javascript"></script>
+  <script src="../js/jquery.mark.min.js" type="text/javascript"></script>
+  <script src="../js/html5.fuse.search.js" type="text/javascript"></script>
+  <script src="js/fuzzydata.js" type="text/javascript"></script>
+  <script src="../js/csh.js" type="text/javascript"></script>
+  <script src="../js/highlight-mergehtml-plugin.js" type="text/javascript"></script>
+  <meta name="generator" content="Paligo" />
+  <link rel="prev" href="UUID-3f453f91-590d-90a1-933e-e8af13cff15f.html#UUID-3f453f91-590d-90a1-933e-e8af13cff15f_id179LE0B40LB" title="User interface" />
+  <link rel="next" href="UUID-10e0c401-ad02-0727-436e-1b0e2255126f.html#UUID-10e0c401-ad02-0727-436e-1b0e2255126f_id179LE0B5030" title="Define rule" />
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js?config=TeX-MML-AM_CHTML" async="async"></script>
+  <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+  <script type="text/javascript" src="../js/cookie-consent.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  <script type="text/javascript">
+  //<![CDATA[
+                        $(document).on('ready ajaxComplete', function() {
+                                
+                                hljs.addPlugin(mergeHTMLPlugin);
+                                hljs.configure({'ignoreUnescapedHTML': true});
+                                
+                                $('pre:not(.embedcode)').each(function() {
+                                        /**
+                                         * @type {string}
+                                         */
+                                        var language = $(this).data('language');
+
+                                        if (language === 'plaintext' || language === 'text') {
+                                                $(this).addClass(language).addClass('hljs');
+                                                return true;
+                                        }
+                                        else {
+                                                var clone = this.cloneNode(true);
+                                                hljs.highlightElement(clone);
+                                                $(this).empty().append($(clone).contents());
+                                                $(this).attr("class", $(clone).attr("class"));
+                                        }
+                                });
+                        });
+  //]]>
+  </script>
+  <style type="text/css">
+  /*<![CDATA[*/
+            div.skipnav {
+            }
+            div.skipnav a {
+                position: fixed;
+                left: -10000px;
+                top: 1.5em;
+                width: 1px;
+                height: 1px;
+                overflow: hidden;
+            }
+            div.skipnav a:focus, div.skipnav a:active, div.skipnav a:hover {
+                background: white;
+                color: black;
+                box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.5);
+                position: fixed;
+                left: 2em;
+                top: 1.5em;
+                width: auto;
+                height: auto;
+                overflow: visible;
+                text-decoration: underline;
+                z-index: 99999; /* has to be higher than the side panel */
+    }
+  /*]]>*/
+  </style>
+</head>
+<body data-link-prefix="">
+  <div class="skipnav">
+    <a href="#content-wrapper">Skip to main content</a>
+  </div>
+  <div id="page" class="clearfix">
+    <div id="header">
+      <div class="container">
+        <div id="logotype-container" class="pull-left">
+          <a href="../index.html"><img id="logotype-pageheader" src="../css/image/corporate-logo.png" alt="Corporate logotype" data-role="logotype" /></a>
+        </div>
+        <div id="pagetools-container" class="pull-right">
+          <ul id="page-tools">
+            <li class="page-tools-search"><input placeholder="Search" type="text" class="form-control" aria-label="Search" id="search" /></li>
+            <li class="page-tools-print">
+              <a href="javascript:window.print();"><span class="tool-label">Print</span><span class="glyphicon glyphicon-print"></span></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <h1 id="publication-title">CAM</h1>
+    <div id="subheader-sticky-wrapper" class="sticky-wrapper">
+      <div id="subheader">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3 toc-title">
+              <h2><a class="prev nav-icon hidden-lg hidden-md" href="UUID-3f453f91-590d-90a1-933e-e8af13cff15f.html#UUID-3f453f91-590d-90a1-933e-e8af13cff15f_id179LE0B40LB"><span class="glyphicon glyphicon-chevron-left"></span></a> <a href="#toc" class="hidden mobile-nav-toggle"><span class="glyphicon glyphicon-list"></span>Table of
+              Contents</a><span class="toc-label">Table of Contents</span><a class="next nav-icon hidden-lg hidden-md" href="UUID-10e0c401-ad02-0727-436e-1b0e2255126f.html#UUID-10e0c401-ad02-0727-436e-1b0e2255126f_id179LE0B5030"><span class="glyphicon glyphicon-chevron-right"></span></a></h2>
+            </div>
+            <div class="col-md-9 breadcrumb-container">
+              <ul class="breadcrumb">
+                <li class="breadcrumb-link">
+                  <span class="glyphicon glyphicon-home"></span>&nbsp;<a href="index-en-US.html">CAM</a>
+                </li>
+                <li class="breadcrumb-link">
+                  <a href="UUID-045be457-706d-a14f-f9a1-00787a4eb50a.html">Feature and macro technology</a>
+                </li>
+                <li class="breadcrumb-link">
+                  <a href="UUID-2b09e07f-eac1-34bd-6947-bf192f8ebb83.html">Macro technology</a>
+                </li>
+                <li class="breadcrumb-node">Intelligent macros</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="main-content">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 toc-container" id="toc-wrapper">
+            <div id="toc-placeholder">
+              <div id="toc-standalone-placeholder"></div>
+            </div>
+          </div>
+          <div class="col-md-9 content-container" id="content-wrapper">
+            <a accesskey="p" class="prev pull-left prev visible-lg visible-md" id="header-navigation-prev" href="UUID-3f453f91-590d-90a1-933e-e8af13cff15f.html#UUID-3f453f91-590d-90a1-933e-e8af13cff15f_id179LE0B40LB"><span class="glyphicon glyphicon-circle-arrow-left"></span>Prev</a><a accesskey="n" class="pull-right next visible-lg visible-md"
+            id="header-navigation-next" href="UUID-10e0c401-ad02-0727-436e-1b0e2255126f.html#UUID-10e0c401-ad02-0727-436e-1b0e2255126f_id179LE0B5030">Next<span class="glyphicon glyphicon-circle-arrow-right"></span></a>
+            <div id="topic-content">
+              <section xml:lang="en-US" lang="en-US" dir="ltr" class="section" data-origin-id="UUID-5a5fc537-60db-634e-60d2-e516d5e37b3a" data-publication-date="" id="UUID-10e0c401-ad02-0727-436e-1b0e2255126f">
+                <div class="titlepage">
+                  <div>
+                    <div class="title">
+                      <h1 class="title" style="clear: both"><span class="formal-title">Intelligent macros</span></h1>
+                    </div>
+                  </div>
+                </div>
+                <div dir="ltr" class="note">
+                  <h3 class="title">Note</h3>
+                  <p>Macros link machining strategies and tools with geometric information. Intelligent macros also include rules that evaluate geometric information and define when a machining strategy is executed. Intelligent macros are available for all types of features.</p>
+                </div>
+                <p>Initial situation: The workpiece to be machined contains many holes of various depths, diameters and sink types. A typical procedure in production may then be as follows:</p>
+                <div class="orderedlist">
+                  <ol class="orderedlist" type="1">
+                    <li class="listitem">
+                      <p>Using Feature Mapping, the drilling geometries are recognized automatically and saved as a feature.</p>
+                    </li>
+                    <li class="listitem">
+                      <p>The assignment of the machining methods of these features (jobs) and the saving as a macro are initially done manually.</p>
+                    </li>
+                    <li class="listitem">
+                      <p>The rules are now defined in the next step. They determine which part of a macro is to be executed under specific conditions.</p>
+                    </li>
+                  </ol>
+                </div>
+                <section dir="ltr" class="section internal" data-origin-id="" data-publication-date="" id="UUID-10e0c401-ad02-0727-436e-1b0e2255126f_id179LE0B5030">
+                  <div class="titlepage">
+                    <div>
+                      <div class="title">
+                        <h2 class="title" style="clear: both"><span class="formal-title">Define rule</span></h2>
+                      </div>
+                    </div>
+                  </div>
+                  <p>To define a rule for an intelligent macro:</p>
+                  <div class="procedure">
+                    <ol class="procedure" type="1">
+                      <li class="step">
+                        <p>Open the macro database and select the macro for which you wish to define a rule.</p>
+                      </li>
+                      <li class="step">
+                        <p>Right-click and select <span class="guilabel">Free feature parameter</span>.</p>
+                      </li>
+                      <li class="step">
+                        <p>Specify the parameters you want to free. When you do this, the link between feature parameters and macros is severed so that you can then use the parameters for the purpose of rule definition.</p>
+                      </li>
+                      <li class="step">
+                        <p>Now open the job to which you wish to assign a rule by double-clicking the job entry in the lower area of the macro database (macro jobs).</p>
+                      </li>
+                      <li class="step">
+                        <p>On the <span class="guilabel">Rule</span> dialog tab, click the <span class="guilabel">Job active</span> entry and then click the icon <span class="inlinemediaobject"><img src="image/uuid-94380e41-913f-7a0e-b03a-59324c1509bd.png" alt="new_rule.png" /></span>.</p>
+                      </li>
+                      <li class="step">
+                        <p>Set the conditions for enabling a machining mode (of a job) based on simple IF-THEN rules.</p>
+                      </li>
+                    </ol>
+                  </div>
+                  <p>A part of the macro name is then displayed in square brackets (example: F:D8[Through]). This indicates that parameters have been freed.</p>
+                  <div class="mediaobject">
+                    <table class="image-viewport" style="border-collapse:collapse;border:0; width:445px;">
+                      <tr style="height: 232px">
+                        <td style="padding:0;"><img src="image/uuid-f70d1e29-f00b-86fc-1984-5878edf97006.png" style="max-width: 445px; max-height: 232px;" alt="rule_def_ui.png" /></td>
+                      </tr>
+                    </table>
+                  </div>
+                  <p>Feature parameters and formulas can be used to define macro rules.</p>
+                  <div dir="ltr" class="note">
+                    <h3 class="title">Note</h3>
+                    <p>With the aid of formulas, tool parameters (such as <code class="filename">T:Rad</code>, <code class="filename">T:Len</code>, <code class="filename">T:GageLen</code>, <code class="filename">T:TipAng</code>) and user variables (such as <code class="filename">F:H</code>, <code class="filename">F:R</code>, <code class=
+                    "filename">F:LD</code>) are available for rule definition.</p>
+                  </div>
+                  <p>Once you have confirmed your entries, the job will be marked in the macro database with <code class="filename">[R]</code> = Rule. Example: <code class="filename">[R] Simple Drilling</code>.</p>
+                  <p>If all geometries in the model and strategies necessary for machining have been specified as part of the rules and if the corresponding macros have been saved in the macro database, they will be available for cross-model application.</p>
+                  <p>Upon application of the macros, <span class="italic">hyper</span>MILL automatically provides for each geometry the correct machining sequence and thus enables the automatic machining of the models to be machined.</p>
+                </section>
+                <section dir="ltr" class="section internal" data-origin-id="" data-publication-date="" id="UUID-10e0c401-ad02-0727-436e-1b0e2255126f_id179LE0B50TG">
+                  <div class="titlepage">
+                    <div>
+                      <div class="title">
+                        <h2 class="title" style="clear: both"><span class="formal-title">Copy and paste rule</span></h2>
+                      </div>
+                    </div>
+                  </div>
+                  <p>Use the <span class="guilabel">Copy rule to clipboard</span> / <span class="guilabel">Paste rule</span> functions on the macro shortcut menu to copy and paste macro rules between different macro jobs.</p>
+                </section>
+              </section>
+              <div class="footer-content">
+                <div class="section-toc section-toc-after">
+                  <div class="section-toc-title">
+                    <span class="section-toc-title-delimiter">:</span>
+                  </div>
+                </div>
+              </div>
+              <footer></footer>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

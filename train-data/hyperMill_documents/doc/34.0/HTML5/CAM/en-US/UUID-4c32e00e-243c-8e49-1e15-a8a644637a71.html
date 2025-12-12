@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="x-ua-compatible" content="IE=edge" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="search" content="default" />
+  <meta name="use.ic" content="no" />
+  <meta name="tocstandalone" content="yes" />
+  <script type="text/javascript">
+  //<![CDATA[
+                        var index;
+                        var contentLanguage = 'en-US';
+                        var enterKey = 'select';
+                        
+                                        var anchoroption = true;
+                                var instantsearch_minlength = 1;
+                                                
+                                var fuse_threshold = 0.3;
+                        
+                                        var local_csh = false;
+                                
+                        var useanchorlinks = false;
+  //]]>
+  </script>
+  <title>10.&nbsp;3D Machining</title>
+  <link rel="stylesheet" type="text/css" href="../css/docbook.css" />
+  <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" href="../css/bootstrap-theme.min.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style-common.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style-responsive.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style-print.css" />
+  <link rel="stylesheet" type="text/css" href="../css/font-awesome.css" />
+  <link rel="stylesheet" type="text/css" href="../css/custom.css" />
+  <link rel="stylesheet" type="text/css" href="../css/layout-custom-style.css" />
+  <script src="../js/jquery-1.10.2.min.js" type="text/javascript"></script>
+  <script src="../js/jquery-ui-1.10.3.custom.min.js" type="text/javascript"></script>
+  <script src="../js/bootstrap.min.js" type="text/javascript"></script>
+  <script src="../js/purl.js" type="text/javascript"></script>
+  <script src="../js/jquery.event.move.js" type="text/javascript"></script>
+  <script src="../js/jquery.event.swipe.js" type="text/javascript"></script>
+  <script src="../js/jquery.sticky.js" type="text/javascript"></script>
+  <script src="../js/respond.min.js" type="text/javascript"></script>
+  <script src="../js/script.js" type="text/javascript"></script>
+  <script src="js/toc.js" type="text/javascript"></script>
+  <script src="../js/create-toc.js" type="text/javascript"></script>
+  <script src="../js/clipboard.min.js" type="text/javascript"></script>
+  <script src="../js/fuse.min.js" type="text/javascript"></script>
+  <script src="../js/jquery.mark.min.js" type="text/javascript"></script>
+  <script src="../js/html5.fuse.search.js" type="text/javascript"></script>
+  <script src="js/fuzzydata.js" type="text/javascript"></script>
+  <script src="../js/csh.js" type="text/javascript"></script>
+  <script src="../js/highlight-mergehtml-plugin.js" type="text/javascript"></script>
+  <meta name="generator" content="Paligo" />
+  <link rel="prev" href="UUID-f0d5a4a3-d706-f56a-adaf-188d40e87a63.html#id113046" title="NC parameters" />
+  <link rel="next" href="UUID-4c32e00e-243c-8e49-1e15-a8a644637a71.html#id113093" title="10.1.&nbsp;Available machining cycles" />
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js?config=TeX-MML-AM_CHTML" async="async"></script>
+  <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+  <script type="text/javascript" src="../js/cookie-consent.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  <script type="text/javascript">
+  //<![CDATA[
+                        $(document).on('ready ajaxComplete', function() {
+                                
+                                hljs.addPlugin(mergeHTMLPlugin);
+                                hljs.configure({'ignoreUnescapedHTML': true});
+                                
+                                $('pre:not(.embedcode)').each(function() {
+                                        /**
+                                         * @type {string}
+                                         */
+                                        var language = $(this).data('language');
+
+                                        if (language === 'plaintext' || language === 'text') {
+                                                $(this).addClass(language).addClass('hljs');
+                                                return true;
+                                        }
+                                        else {
+                                                var clone = this.cloneNode(true);
+                                                hljs.highlightElement(clone);
+                                                $(this).empty().append($(clone).contents());
+                                                $(this).attr("class", $(clone).attr("class"));
+                                        }
+                                });
+                        });
+  //]]>
+  </script>
+  <style type="text/css">
+  /*<![CDATA[*/
+            div.skipnav {
+            }
+            div.skipnav a {
+                position: fixed;
+                left: -10000px;
+                top: 1.5em;
+                width: 1px;
+                height: 1px;
+                overflow: hidden;
+            }
+            div.skipnav a:focus, div.skipnav a:active, div.skipnav a:hover {
+                background: white;
+                color: black;
+                box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.5);
+                position: fixed;
+                left: 2em;
+                top: 1.5em;
+                width: auto;
+                height: auto;
+                overflow: visible;
+                text-decoration: underline;
+                z-index: 99999; /* has to be higher than the side panel */
+    }
+  /*]]>*/
+  </style>
+</head>
+<body data-link-prefix="">
+  <div class="skipnav">
+    <a href="#content-wrapper">Skip to main content</a>
+  </div>
+  <div id="page" class="clearfix">
+    <div id="header">
+      <div class="container">
+        <div id="logotype-container" class="pull-left">
+          <a href="../index.html"><img id="logotype-pageheader" src="../css/image/corporate-logo.png" alt="Corporate logotype" data-role="logotype" /></a>
+        </div>
+        <div id="pagetools-container" class="pull-right">
+          <ul id="page-tools">
+            <li class="page-tools-search"><input placeholder="Search" type="text" class="form-control" aria-label="Search" id="search" /></li>
+            <li class="page-tools-print">
+              <a href="javascript:window.print();"><span class="tool-label">Print</span><span class="glyphicon glyphicon-print"></span></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <h1 id="publication-title">CAM</h1>
+    <div id="subheader-sticky-wrapper" class="sticky-wrapper">
+      <div id="subheader">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3 toc-title">
+              <h2><a class="prev nav-icon hidden-lg hidden-md" href="UUID-f0d5a4a3-d706-f56a-adaf-188d40e87a63.html#id113046"><span class="glyphicon glyphicon-chevron-left"></span></a> <a href="#toc" class="hidden mobile-nav-toggle"><span class="glyphicon glyphicon-list"></span>Table of Contents</a><span class="toc-label">Table of
+              Contents</span><a class="next nav-icon hidden-lg hidden-md" href="UUID-4c32e00e-243c-8e49-1e15-a8a644637a71.html#id113093"><span class="glyphicon glyphicon-chevron-right"></span></a></h2>
+            </div>
+            <div class="col-md-9 breadcrumb-container">
+              <ul class="breadcrumb">
+                <li class="breadcrumb-link">
+                  <span class="glyphicon glyphicon-home"></span>&nbsp;<a href="index-en-US.html">CAM</a>
+                </li>
+                <li class="breadcrumb-node">3D Machining</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="main-content">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 toc-container" id="toc-wrapper">
+            <div id="toc-placeholder">
+              <div id="toc-standalone-placeholder"></div>
+            </div>
+          </div>
+          <div class="col-md-9 content-container" id="content-wrapper">
+            <a accesskey="p" class="prev pull-left prev visible-lg visible-md" id="header-navigation-prev" href="UUID-f0d5a4a3-d706-f56a-adaf-188d40e87a63.html#id113046"><span class="glyphicon glyphicon-circle-arrow-left"></span>Prev</a><a accesskey="n" class="pull-right next visible-lg visible-md" id="header-navigation-next" href=
+            "UUID-4c32e00e-243c-8e49-1e15-a8a644637a71.html#id113093">Next<span class="glyphicon glyphicon-circle-arrow-right"></span></a>
+            <div id="topic-content">
+              <section xml:lang="en-US" lang="en-US" dir="ltr" class="section" data-origin-id="UUID-01f1a0f7-c30b-2070-0572-5a4abc12c454" data-publication-date="" id="UUID-4c32e00e-243c-8e49-1e15-a8a644637a71">
+                <div class="titlepage">
+                  <div>
+                    <div class="title">
+                      <h1 class="title" style="clear: both"><span class="formal-number">10</span><span class="formal-label-delimiter">.</span> <span class="formal-title">3D Machining</span></h1>
+                    </div>
+                  </div>
+                </div>
+                <section dir="ltr" class="section internal" data-origin-id="" data-publication-date="" id="id113093">
+                  <div class="titlepage">
+                    <div>
+                      <div class="title">
+                        <h2 class="title" style="clear: both"><span class="formal-number">10.1</span><span class="formal-label-delimiter">.</span> <span class="formal-title">Available machining cycles</span></h2>
+                      </div>
+                    </div>
+                  </div>
+                  <p><a class="link linktype-component" href="UUID-77540003-727f-557d-4770-c9d8c55957b2.html" title="10.15.&nbsp;Arbitrary Stock Roughing">Arbitrary Stock Roughing</a>: Z constant stock removal for stock models of any shape with the option of stock model update. Machining proceeds parallel to the specified contour or parallel to
+                  axis.</p>
+                  <p><a class="link linktype-component" href="UUID-a0196934-2851-097b-8e4b-d711317dda71.html" title="10.8.&nbsp;Optimized Roughing">Optimized Roughing</a>: Roughing and rest roughing of any workpieces. Calculate toolpaths for standard pocket shapes such as rectangular and circular pockets. The model geometry and stock model
+                  geometry will be taken into consideration to calculate highly efficient toolpaths and reduce direction changes ("high speed cutting"). Machine remaining rest material areas based on the generated "resulting stock".</p>
+                  <p><a class="link" href="urn:resource:component:98575" target="_blank">Profile Finishing</a>: Allows multi-surface, collision-free milling with different guide curve strategies; optional slope-dependent machining. XY optimized machining is offered for the X axis and Y axis machining profiles.</p>
+                  <p><a class="link linktype-component" href="UUID-dfd08470-c6fe-8a6c-96e7-0763c4f4d472.html" title="10.16.&nbsp;Z Level Finishing">Z Level Finishing</a>: Z constant finishing with optional slope-dependent machining. By adapting the vertical stepdown values to the surface flow especially for steep surfaces, unnecessary fine infeed
+                  increments are avoided and an optimal line distance is thus guaranteed.</p>
+                  <p><a class="link linktype-component" href="UUID-3dc1209c-5655-bb50-7aa4-17ad8a143f7a.html" title="10.10.&nbsp;Z Level Shape Finishing">Z Level Shape Finishing</a>: Z-Level machining for steep areas. Optionally, plane machining can be replaced by cuts parallel to any shape.</p>
+                  <p><a class="link" href="urn:resource:component:98595" target="_blank">Iso Machining</a>: The milling paths follow the ISO lines (U, V) so that the toolpaths are optimally adapted to the surface curve.</p>
+                  <p><a class="link linktype-component" href="UUID-5414b600-7934-4cc1-0bc4-676057e846e1.html" title="10.12.&nbsp;Free Path Milling">Free Path Milling</a>: Milling of freely defined 3D contours. Multiple vertical stepdown and ramped transition between milling paths are possible.</p>
+                  <p><a class="link linktype-component" href="UUID-9d0f32a9-d88e-1537-b5bd-6e89abb308fe.html" title="10.13.&nbsp;Plane Machining">Plane Machining</a>: Face Milling of planar surfaces with pocket strategy. Automatic plane level detection or manual selection of surfaces. The stockmodel can be used for trimming.</p>
+                  <p><a class="link linktype-component" href="UUID-e77676cc-6704-0d13-fedb-18b9ffbc3ff1.html" title="10.17.&nbsp;Complete Finishing">Complete Finishing</a>: Z constant finishing with automatic pocket-shaped machining of flat areas.</p>
+                  <p><a class="link linktype-component" href="UUID-49263c17-1d94-4552-88fc-df113a9d5858.html" title="10.18.&nbsp;Equidistant Finishing">Equidistant Finishing</a>: Finishing with constant infeed on surface; particularly suitable for high-speed milling. Machining takes place equidistantly within a closed guide curve or flowing
+                  between two guide curves.</p>
+                  <p><a class="link linktype-component" href="UUID-3b920452-1b67-6663-5b7f-f4e852cde7b2.html" title="10.24.&nbsp;Form Pocket">Form Pocket</a>: Finishing of pockets with free-form floor.</p>
+                  <p><a class="link linktype-component" href="UUID-2abe0fd3-a226-03cf-1775-97477c840277.html" title="10.19.&nbsp;Automatic Rest Machining">Automatic Rest Machining</a>: Targeted rework machining of individual rest material areas left during a finishing cycle.</p>
+                  <p><a class="xref linktype-component" href="UUID-32d35677-66c1-0c35-c32d-782120773555.html" title="10.20.&nbsp;Corner Rest Machining"><span class="xreftitle">Corner Rest Machining</span></a>: Optimized removal of rest material in vertical corners and adjacent bottom surfaces within pocket and pocket-like geometries with constant
+                  corner radii.</p>
+                  <p><a class="link linktype-component" href="UUID-951dae35-b874-655a-da84-bd310bd789d5.html" title="10.21.&nbsp;Cutting edge">Cutting Edge</a>: Optimized machining of cutting edges using curve-based pre-roughing (strategy: manual curve) in 3D mode, followed by rest machining in 2D mode (strategy: reference cycle).</p>
+                  <p><a class="link linktype-component" href="UUID-5532667e-87fc-eb6b-1e4e-dd8ba6bb16c3.html" title="10.25.&nbsp;Pencil Milling">Pencil Milling</a>: Automatic detection and machining of grooves.</p>
+                  <p><a class="link linktype-component" href="UUID-1e6cc1f5-313a-f6a2-ecd2-9ec47c799ccc.html" title="10.22.&nbsp;Rework Machining">Rework Machining</a>: Machining of pre-calculated toolpaths from a reference job where the toolpaths could not be machined due to detected collisions. For the rework machining, a different tool is
+                  applied to avoid the previously detected collision areas from the reference job.</p>
+                  <p><a class="link linktype-component" href="UUID-5c4761c1-e842-a7df-a585-6d1ad73c0979.html" title="10.23.&nbsp;Rib / Groove Machining">Rib / Groove Machining</a>: Roughing and finishing of ribs and grooves or limited groups thereof in one job for side surfaces and floor areas respectively.</p>
+                </section>
+              </section>
+              <div class="footer-content">
+                <div class="section-toc section-toc-after">
+                  <div class="section-toc-title">
+                    <span class="section-toc-title-delimiter">:</span>
+                  </div>
+                </div>
+              </div>
+              <footer></footer>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

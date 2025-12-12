@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="x-ua-compatible" content="IE=edge" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="search" content="default" />
+  <meta name="use.ic" content="no" />
+  <meta name="tocstandalone" content="yes" />
+  <script type="text/javascript">
+  //<![CDATA[
+                        var index;
+                        var contentLanguage = 'en-US';
+                        var enterKey = 'select';
+                        
+                                        var anchoroption = true;
+                                var instantsearch_minlength = 1;
+                                                
+                                var fuse_threshold = 0.3;
+                        
+                                        var local_csh = false;
+                                
+                        var useanchorlinks = false;
+  //]]>
+  </script>
+  <title>Optimization</title>
+  <link rel="stylesheet" type="text/css" href="../css/docbook.css" />
+  <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" href="../css/bootstrap-theme.min.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style-common.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style-responsive.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style-print.css" />
+  <link rel="stylesheet" type="text/css" href="../css/font-awesome.css" />
+  <link rel="stylesheet" type="text/css" href="../css/custom.css" />
+  <link rel="stylesheet" type="text/css" href="../css/layout-custom-style.css" />
+  <script src="../js/jquery-1.10.2.min.js" type="text/javascript"></script>
+  <script src="../js/jquery-ui-1.10.3.custom.min.js" type="text/javascript"></script>
+  <script src="../js/bootstrap.min.js" type="text/javascript"></script>
+  <script src="../js/purl.js" type="text/javascript"></script>
+  <script src="../js/jquery.event.move.js" type="text/javascript"></script>
+  <script src="../js/jquery.event.swipe.js" type="text/javascript"></script>
+  <script src="../js/jquery.sticky.js" type="text/javascript"></script>
+  <script src="../js/respond.min.js" type="text/javascript"></script>
+  <script src="../js/script.js" type="text/javascript"></script>
+  <script src="js/toc.js" type="text/javascript"></script>
+  <script src="../js/create-toc.js" type="text/javascript"></script>
+  <script src="../js/clipboard.min.js" type="text/javascript"></script>
+  <script src="../js/fuse.min.js" type="text/javascript"></script>
+  <script src="../js/jquery.mark.min.js" type="text/javascript"></script>
+  <script src="../js/html5.fuse.search.js" type="text/javascript"></script>
+  <script src="js/fuzzydata.js" type="text/javascript"></script>
+  <script src="../js/csh.js" type="text/javascript"></script>
+  <script src="../js/highlight-mergehtml-plugin.js" type="text/javascript"></script>
+  <meta name="generator" content="Paligo" />
+  <link rel="prev" href="UUID-6de6f073-5f9c-2aaf-6b85-69d2ada7bb6b.html" title="General" />
+  <link rel="next" href="UUID-a69a77da-7de5-a8e6-3715-e68ce3936107.html" title="Solutions" />
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js?config=TeX-MML-AM_CHTML" async="async"></script>
+  <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+  <script type="text/javascript" src="../js/cookie-consent.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  <script type="text/javascript">
+  //<![CDATA[
+                        $(document).on('ready ajaxComplete', function() {
+                                
+                                hljs.addPlugin(mergeHTMLPlugin);
+                                hljs.configure({'ignoreUnescapedHTML': true});
+                                
+                                $('pre:not(.embedcode)').each(function() {
+                                        /**
+                                         * @type {string}
+                                         */
+                                        var language = $(this).data('language');
+
+                                        if (language === 'plaintext' || language === 'text') {
+                                                $(this).addClass(language).addClass('hljs');
+                                                return true;
+                                        }
+                                        else {
+                                                var clone = this.cloneNode(true);
+                                                hljs.highlightElement(clone);
+                                                $(this).empty().append($(clone).contents());
+                                                $(this).attr("class", $(clone).attr("class"));
+                                        }
+                                });
+                        });
+  //]]>
+  </script>
+  <style type="text/css">
+  /*<![CDATA[*/
+            div.skipnav {
+            }
+            div.skipnav a {
+                position: fixed;
+                left: -10000px;
+                top: 1.5em;
+                width: 1px;
+                height: 1px;
+                overflow: hidden;
+            }
+            div.skipnav a:focus, div.skipnav a:active, div.skipnav a:hover {
+                background: white;
+                color: black;
+                box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.5);
+                position: fixed;
+                left: 2em;
+                top: 1.5em;
+                width: auto;
+                height: auto;
+                overflow: visible;
+                text-decoration: underline;
+                z-index: 99999; /* has to be higher than the side panel */
+    }
+  /*]]>*/
+  </style>
+</head>
+<body data-link-prefix="">
+  <div class="skipnav">
+    <a href="#content-wrapper">Skip to main content</a>
+  </div>
+  <div id="page" class="clearfix">
+    <div id="header">
+      <div class="container">
+        <div id="logotype-container" class="pull-left">
+          <a href="../index.html"><img id="logotype-pageheader" src="../css/image/corporate-logo.png" alt="Corporate logotype" data-role="logotype" /></a>
+        </div>
+        <div id="pagetools-container" class="pull-right">
+          <ul id="page-tools">
+            <li class="page-tools-search"><input placeholder="Search" type="text" class="form-control" aria-label="Search" id="search" /></li>
+            <li class="page-tools-print">
+              <a href="javascript:window.print();"><span class="tool-label">Print</span><span class="glyphicon glyphicon-print"></span></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <h1 id="publication-title">CAM</h1>
+    <div id="subheader-sticky-wrapper" class="sticky-wrapper">
+      <div id="subheader">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3 toc-title">
+              <h2><a class="prev nav-icon hidden-lg hidden-md" href="UUID-6de6f073-5f9c-2aaf-6b85-69d2ada7bb6b.html"><span class="glyphicon glyphicon-chevron-left"></span></a> <a href="#toc" class="hidden mobile-nav-toggle"><span class="glyphicon glyphicon-list"></span>Table of Contents</a><span class="toc-label">Table of Contents</span><a class=
+              "next nav-icon hidden-lg hidden-md" href="UUID-a69a77da-7de5-a8e6-3715-e68ce3936107.html"><span class="glyphicon glyphicon-chevron-right"></span></a></h2>
+            </div>
+            <div class="col-md-9 breadcrumb-container">
+              <ul class="breadcrumb">
+                <li class="breadcrumb-link">
+                  <span class="glyphicon glyphicon-home"></span>&nbsp;<a href="index-en-US.html">CAM</a>
+                </li>
+                <li class="breadcrumb-link">
+                  <a href="UUID-0751db51-8b5b-ae49-1904-dce4b8c92263.html">Basics of CAM editing</a>
+                </li>
+                <li class="breadcrumb-link">
+                  <a href="UUID-aeb94185-7a19-29aa-6f91-3af4af99b68d.html">Structure CAM project</a>
+                </li>
+                <li class="breadcrumb-link">
+                  <a href="UUID-0731353e-eaf3-b73e-7c7f-2b75fbc80bbe.html">Define job</a>
+                </li>
+                <li class="breadcrumb-link">
+                  <a href="UUID-9e046def-8052-c20b-fa68-b9b72be80912.html">Input dialog: NC</a>
+                </li>
+                <li class="breadcrumb-node">Optimization</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="main-content">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 toc-container" id="toc-wrapper">
+            <div id="toc-placeholder">
+              <div id="toc-standalone-placeholder"></div>
+            </div>
+          </div>
+          <div class="col-md-9 content-container" id="content-wrapper">
+            <a accesskey="p" class="prev pull-left prev visible-lg visible-md" id="header-navigation-prev" href="UUID-6de6f073-5f9c-2aaf-6b85-69d2ada7bb6b.html"><span class="glyphicon glyphicon-circle-arrow-left"></span>Prev</a><a accesskey="n" class="pull-right next visible-lg visible-md" id="header-navigation-next" href=
+            "UUID-a69a77da-7de5-a8e6-3715-e68ce3936107.html">Next<span class="glyphicon glyphicon-circle-arrow-right"></span></a>
+            <div id="topic-content">
+              <section xml:lang="en-US" lang="en-US" dir="ltr" class="section" data-origin-id="UUID-1ec3f8b3-40f9-f927-ab35-695b66e31d3f" data-publication-date="" id="UUID-c97266c9-299b-17f7-ff44-73bb4ce6099c">
+                <div class="titlepage">
+                  <div>
+                    <div class="title">
+                      <h1 class="title" style="clear: both"><span class="formal-title">Optimization</span></h1>
+                    </div>
+                  </div>
+                </div>
+                <p><span class="guilabel">Mode</span>: Set the mode for optimizing the NC program.</p>
+                <p><span class="guilabel">Off</span>: The NC program is not optimized.</p>
+                <section xml:lang="en-US" lang="en-US" dir="ltr" class="section" data-origin-id="" data-publication-date="" id="UUID-c97266c9-299b-17f7-ff44-73bb4ce6099c_UUID-e420619e-d06e-13c4-7dfa-04b00021ea6c">
+                  <div class="titlepage">
+                    <div>
+                      <div class="title">
+                        <h2 class="title" style="clear: both"><span class="formal-title">Solution optimizer options</span></h2>
+                      </div>
+                    </div>
+                  </div>
+                  <p>When the <span class="guilabel">Use NC Optimizer</span> option is selected, the calculated NC program is divided between the axes that exist in the machine. This way, collision situations and axis limitations are automatically taken into account so that a checked toolpath is generated on the machine.</p>
+                  <div dir="ltr" class="note">
+                    <h3 class="title">Note</h3>
+                    <p>The <span class="guilabel">NC Optimizer</span> function is available with an appropriate license for the <span class="phrase"><span class="application">VIRTUAL Machining Optimizer</span></span>. Please contact your OPEN MIND partner.</p>
+                    <p>OPEN MIND strongly recommends that you use the <span class="guilabel">NC Optimizer</span> for:</p>
+                    <div class="itemizedlist">
+                      <ul style="list-style-type: disc;" class="itemizedlist">
+                        <li class="listitem">
+                          <p>5-axis machining with rotary axes that do not rotate endlessly</p>
+                        </li>
+                      </ul>
+                    </div>
+                    <p>OPEN MIND recommends that you use the <span class="guilabel">NC Optimizer</span> for:</p>
+                    <div class="itemizedlist">
+                      <ul style="list-style-type: disc;" class="itemizedlist">
+                        <li class="listitem">
+                          <p>5-axis simultaneous applications</p>
+                        </li>
+                        <li class="listitem">
+                          <p>Machines that cannot move over the table center</p>
+                        </li>
+                        <li class="listitem">
+                          <p>Machines with an asymmetrical traversing range of the primary rotary axes (for example, from -7° to 180° or from -120° to 30°)</p>
+                        </li>
+                        <li class="listitem">
+                          <p>Machines in the production environment (small-scale/large-scale production)</p>
+                        </li>
+                        <li class="listitem">
+                          <p>Components that largely fill the available workspace and therefore restrict the traversing range of the axes</p>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <section dir="ltr" class="section" data-origin-id="" data-publication-date="" id="UUID-c97266c9-299b-17f7-ff44-73bb4ce6099c_section-5ca75af7854cb-idm46756711854656">
+                    <div class="titlepage">
+                      <div>
+                        <div class="title">
+                          <h3 class="title"><span class="formal-title">Local NC Optimizer settings</span></h3>
+                        </div>
+                      </div>
+                    </div>
+                    <p>For the <span class="guilabel">Interpolation</span>, <span class="guilabel">Rewind</span>, <span class="guilabel">Pole</span> and <span class="guilabel">Relink</span> areas, specify whether the VIRTUAL Machining global settings (option: <span class="guilabel">Use global definition:</span>) or the local settings of the job
+                    (option: <span class="guilabel">Use local definition</span>) should be used to create the NC file.</p>
+                    <section dir="ltr" class="section" data-origin-id="" data-publication-date="" id="UUID-c97266c9-299b-17f7-ff44-73bb4ce6099c_section-5ca75c646a87d-idm45800402981040">
+                      <div class="titlepage">
+                        <div>
+                          <div class="title">
+                            <h4 class="title"><span class="formal-title">Interpolation</span></h4>
+                          </div>
+                        </div>
+                      </div>
+                      <p><span class="guilabel">Max. rotation angle G1</span>: Specify the maximum permissible rotation angle of the machine axes for G1 movements.</p>
+                      <p><span class="guilabel">Max. rotation angle G0</span>: Specify the maximum permissible rotation angle of the machine axes for G0 movements.</p>
+                    </section>
+                    <section dir="ltr" class="section" data-origin-id="" data-publication-date="" id="UUID-c97266c9-299b-17f7-ff44-73bb4ce6099c_section-5ca75fe0d7da2-idm45800402739104">
+                      <div class="titlepage">
+                        <div>
+                          <div class="title">
+                            <h4 class="title"><span class="formal-title">Rewind</span></h4>
+                          </div>
+                        </div>
+                      </div>
+                      <p><span class="guilabel">Allow split at G0 (for 3D Jobs)</span>: If the linking movements within a job cannot be implemented without a collision for 3D operations, the NC Optimizer changes the movements with the help of a rotary axis. Requirement: RTCP is activated.</p>
+                      <div class="informaltable table-responsive" id="UUID-c97266c9-299b-17f7-ff44-73bb4ce6099c_informaltable-idm53126403344004">
+                        <table style="width:100%;" class="informaltable">
+                          <colgroup>
+                            <col style="width:15%;" />
+                            <col style="width:85%;" />
+                          </colgroup>
+                          <tbody>
+                            <tr valign="top">
+                              <td class="td">
+                                <p><span class="bold"><strong>Example</strong></span></p>
+                              </td>
+                              <td class="td">
+                                <p>BC kinematics: 3D Free Path Milling, collision avoidance by rotating the C axis by 180 degrees.</p>
+                                <p>(1) Collision: C axis not rotated, (2) No collision: C axis rotated.</p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td colspan="2" class="td">
+                                <div class="informalfigure" id="UUID-c97266c9-299b-17f7-ff44-73bb4ce6099c_figure-5d2db43135983-idm46279912077696">
+                                  <div class="mediaobject">
+                                    <table class="image-viewport" style="border-collapse:collapse;border:0; ;">
+                                      <tr style="height: 332px">
+                                        <td style="padding:0;"><img src="image/uuid-dfb792b8-2b7d-9cd5-d43d-da7cb7a45c78.svg" style="max-height: 332px;" alt="VM_nc_optimizer_repositioning.svg" /></td>
+                                      </tr>
+                                    </table>
+                                  </div>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <p><span class="guilabel">Allow split G1 movements</span>: Enable for machines with head kinematics and limited axis.</p>
+                      <div class="informaltable table-responsive" id="UUID-c97266c9-299b-17f7-ff44-73bb4ce6099c_informaltable-idm53126403615410">
+                        <table style="width:100%;" class="informaltable">
+                          <colgroup>
+                            <col style="width:15%;" />
+                            <col style="width:85%;" />
+                          </colgroup>
+                          <tbody>
+                            <tr valign="top">
+                              <td class="td">
+                                <p><span class="bold"><strong>Example</strong></span></p>
+                              </td>
+                              <td class="td">
+                                <p>AC kinematics: 5X Z Level Finishing, a rewind around the C axis takes place after each Z-level infeed.</p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td colspan="2" class="td">
+                                <div class="mediaobject">
+                                  <table class="image-viewport" style="border-collapse:collapse;border:0; ;">
+                                    <tr style="height: 432px">
+                                      <td style="padding:0;"><img src="image/uuid-a0d0d0c5-0f2d-aa1a-0523-3208dab26dd0.svg" style="max-height: 432px;" alt="VM_NC_optimizer_rewind.svg" /></td>
+                                    </tr>
+                                  </table>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <p>As the tool moves away from the part in a local rewind movement and then approaches the part again after the rewind movement in order to continue the machining, this movement is implemented with an overlap.</p>
+                      <p>The overlap can be controlled with the following parameters:</p>
+                      <p><span class="guilabel">Blending distance factor</span>: Defines the value of the lateral pushing away from the component as a factor of the machine tolerance.</p>
+                      <p><span class="guilabel">Blending length factor</span>: Defines the blending length as a factor of the tool diameter.</p>
+                    </section>
+                    <section dir="ltr" class="section" data-origin-id="" data-publication-date="" id="UUID-c97266c9-299b-17f7-ff44-73bb4ce6099c_section-5ca760d4563e1-idm45800402982432">
+                      <div class="titlepage">
+                        <div>
+                          <div class="title">
+                            <h4 class="title"><span class="formal-title">Pole</span></h4>
+                          </div>
+                        </div>
+                      </div>
+                      <p><span class="guilabel">Solution inc. angle</span>: Define the angle increment as part of the solution search for machining operations at the pole. Default = 90 degrees.</p>
+                      <div class="mediaobject">
+                        <table class="image-viewport" style="border-collapse:collapse;border:0; width:461px;">
+                          <tr style="height: 199px">
+                            <td style="padding:0;"><img src="image/uuid-ae0a0fc3-5f3c-8c27-6aa4-7cf7754f8364.svg" style="max-width: 461px; max-height: 199px;" alt="VM_NC_optimizer_pol.svg" /></td>
+                          </tr>
+                        </table>
+                      </div>
+                    </section>
+                    <section dir="ltr" class="section" data-origin-id="" data-publication-date="" id="UUID-c97266c9-299b-17f7-ff44-73bb4ce6099c_section-5d234b834e19e-idm45601214248752">
+                      <div class="titlepage">
+                        <div>
+                          <div class="title">
+                            <h4 class="title"><span class="formal-title">Relink</span></h4>
+                          </div>
+                        </div>
+                      </div>
+                      <p>The original infeed movements within jobs are removed and connected again as specified by the NC Optimizer. The optimized infeed movements are collision-free and are executed as linear movements on the shortest possible path.</p>
+                    </section>
+                  </section>
+                  <section dir="ltr" class="section" data-origin-id="" data-publication-date="" id="UUID-c97266c9-299b-17f7-ff44-73bb4ce6099c_section-idm4584939335587233223393779869">
+                    <div class="titlepage">
+                      <div>
+                        <div class="title">
+                          <h3 class="title"><span class="formal-title">Collision avoidance during rewind - <span class="phrase"><span class="application">Virtual Machine</span></span> configuration</span></h3>
+                        </div>
+                      </div>
+                    </div>
+                    <p><span class="bold"><strong>Initial situation</strong></span>: Collision avoidance for component, fixture, stock model, machine table against machine housing/frame during rewind movements.</p>
+                    <p>By activating the options <span class="guilabel">Check machine body</span> and <span class="guilabel">Rewind save axis</span> in the <span class="phrase"><span class="application">Virtual Machine</span></span> configuration, collisions during rewind movements are avoided. This is done by an additional movement in the linear
+                    axis within the rewind movement.</p>
+                    <p>The axis in which the additional movement of the linear axis is to take place is to be selected as the <span class="guilabel">Rewind safe axis</span>.</p>
+                    <p>It is advisable to activate the functionality for machining oversized components on machines with at least one linear axis and rotary axis in the machine table. This is also recommended for machines in which the machine table can collide with the machine housing/frame when moving the rotary axis.</p>
+                    <p>In order to carry out this optimization safely, it is necessary that the component is clamped on the real machine identically to how it was collision-checked in the virtual machine.</p>
+                  </section>
+                </section>
+              </section>
+              <div class="footer-content">
+                <div class="section-toc section-toc-after">
+                  <div class="section-toc-title">
+                    <span class="section-toc-title-delimiter">:</span>
+                  </div>
+                </div>
+              </div>
+              <footer></footer>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="x-ua-compatible" content="IE=edge" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="search" content="default" />
+  <meta name="use.ic" content="no" />
+  <meta name="tocstandalone" content="yes" />
+  <script type="text/javascript">
+  //<![CDATA[
+                        var index;
+                        var contentLanguage = 'en-US';
+                        var enterKey = 'select';
+                        
+                                        var anchoroption = true;
+                                var instantsearch_minlength = 1;
+                                                
+                                var fuse_threshold = 0.3;
+                        
+                                        var local_csh = false;
+                                
+                        var useanchorlinks = false;
+  //]]>
+  </script>
+  <title>Contours</title>
+  <link rel="stylesheet" type="text/css" href="../css/docbook.css" />
+  <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" href="../css/bootstrap-theme.min.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style-common.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style-responsive.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style-print.css" />
+  <link rel="stylesheet" type="text/css" href="../css/font-awesome.css" />
+  <link rel="stylesheet" type="text/css" href="../css/custom.css" />
+  <link rel="stylesheet" type="text/css" href="../css/layout-custom-style.css" />
+  <script src="../js/jquery-1.10.2.min.js" type="text/javascript"></script>
+  <script src="../js/jquery-ui-1.10.3.custom.min.js" type="text/javascript"></script>
+  <script src="../js/bootstrap.min.js" type="text/javascript"></script>
+  <script src="../js/purl.js" type="text/javascript"></script>
+  <script src="../js/jquery.event.move.js" type="text/javascript"></script>
+  <script src="../js/jquery.event.swipe.js" type="text/javascript"></script>
+  <script src="../js/jquery.sticky.js" type="text/javascript"></script>
+  <script src="../js/respond.min.js" type="text/javascript"></script>
+  <script src="../js/script.js" type="text/javascript"></script>
+  <script src="js/toc.js" type="text/javascript"></script>
+  <script src="../js/create-toc.js" type="text/javascript"></script>
+  <script src="../js/clipboard.min.js" type="text/javascript"></script>
+  <script src="../js/fuse.min.js" type="text/javascript"></script>
+  <script src="../js/jquery.mark.min.js" type="text/javascript"></script>
+  <script src="../js/html5.fuse.search.js" type="text/javascript"></script>
+  <script src="js/fuzzydata.js" type="text/javascript"></script>
+  <script src="../js/csh.js" type="text/javascript"></script>
+  <script src="../js/highlight-mergehtml-plugin.js" type="text/javascript"></script>
+  <meta name="generator" content="Paligo" />
+  <link rel="prev" href="UUID-c297482c-dff2-d6d9-f472-fa824aa66d83.html" title="9.3.&nbsp;Pocket Milling" />
+  <link rel="next" href="UUID-2ecf5895-1505-9b59-f966-abc85410e20c.html#UUID-2ecf5895-1505-9b59-f966-abc85410e20c_UUID-1ad8e783-bd65-ad35-5f7e-8925610b349b" title="Contour selection" />
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js?config=TeX-MML-AM_CHTML" async="async"></script>
+  <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+  <script type="text/javascript" src="../js/cookie-consent.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  <script type="text/javascript">
+  //<![CDATA[
+                        $(document).on('ready ajaxComplete', function() {
+                                
+                                hljs.addPlugin(mergeHTMLPlugin);
+                                hljs.configure({'ignoreUnescapedHTML': true});
+                                
+                                $('pre:not(.embedcode)').each(function() {
+                                        /**
+                                         * @type {string}
+                                         */
+                                        var language = $(this).data('language');
+
+                                        if (language === 'plaintext' || language === 'text') {
+                                                $(this).addClass(language).addClass('hljs');
+                                                return true;
+                                        }
+                                        else {
+                                                var clone = this.cloneNode(true);
+                                                hljs.highlightElement(clone);
+                                                $(this).empty().append($(clone).contents());
+                                                $(this).attr("class", $(clone).attr("class"));
+                                        }
+                                });
+                        });
+  //]]>
+  </script>
+  <style type="text/css">
+  /*<![CDATA[*/
+            div.skipnav {
+            }
+            div.skipnav a {
+                position: fixed;
+                left: -10000px;
+                top: 1.5em;
+                width: 1px;
+                height: 1px;
+                overflow: hidden;
+            }
+            div.skipnav a:focus, div.skipnav a:active, div.skipnav a:hover {
+                background: white;
+                color: black;
+                box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.5);
+                position: fixed;
+                left: 2em;
+                top: 1.5em;
+                width: auto;
+                height: auto;
+                overflow: visible;
+                text-decoration: underline;
+                z-index: 99999; /* has to be higher than the side panel */
+    }
+  /*]]>*/
+  </style>
+</head>
+<body data-link-prefix="">
+  <div class="skipnav">
+    <a href="#content-wrapper">Skip to main content</a>
+  </div>
+  <div id="page" class="clearfix">
+    <div id="header">
+      <div class="container">
+        <div id="logotype-container" class="pull-left">
+          <a href="../index.html"><img id="logotype-pageheader" src="../css/image/corporate-logo.png" alt="Corporate logotype" data-role="logotype" /></a>
+        </div>
+        <div id="pagetools-container" class="pull-right">
+          <ul id="page-tools">
+            <li class="page-tools-search"><input placeholder="Search" type="text" class="form-control" aria-label="Search" id="search" /></li>
+            <li class="page-tools-print">
+              <a href="javascript:window.print();"><span class="tool-label">Print</span><span class="glyphicon glyphicon-print"></span></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <h1 id="publication-title">CAM</h1>
+    <div id="subheader-sticky-wrapper" class="sticky-wrapper">
+      <div id="subheader">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3 toc-title">
+              <h2><a class="prev nav-icon hidden-lg hidden-md" href="UUID-c297482c-dff2-d6d9-f472-fa824aa66d83.html"><span class="glyphicon glyphicon-chevron-left"></span></a> <a href="#toc" class="hidden mobile-nav-toggle"><span class="glyphicon glyphicon-list"></span>Table of Contents</a><span class="toc-label">Table of Contents</span><a class=
+              "next nav-icon hidden-lg hidden-md" href="UUID-2ecf5895-1505-9b59-f966-abc85410e20c.html#UUID-2ecf5895-1505-9b59-f966-abc85410e20c_UUID-1ad8e783-bd65-ad35-5f7e-8925610b349b"><span class="glyphicon glyphicon-chevron-right"></span></a></h2>
+            </div>
+            <div class="col-md-9 breadcrumb-container">
+              <ul class="breadcrumb">
+                <li class="breadcrumb-link">
+                  <span class="glyphicon glyphicon-home"></span>&nbsp;<a href="index-en-US.html">CAM</a>
+                </li>
+                <li class="breadcrumb-link">
+                  <a href="UUID-afd1a7c2-b2fe-2ba0-9ef0-962197581f36.html">2D Machining</a>
+                </li>
+                <li class="breadcrumb-link">
+                  <a href="UUID-c297482c-dff2-d6d9-f472-fa824aa66d83.html">Pocket Milling</a>
+                </li>
+                <li class="breadcrumb-node">Contours</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="main-content">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 toc-container" id="toc-wrapper">
+            <div id="toc-placeholder">
+              <div id="toc-standalone-placeholder"></div>
+            </div>
+          </div>
+          <div class="col-md-9 content-container" id="content-wrapper">
+            <a accesskey="p" class="prev pull-left prev visible-lg visible-md" id="header-navigation-prev" href="UUID-c297482c-dff2-d6d9-f472-fa824aa66d83.html"><span class="glyphicon glyphicon-circle-arrow-left"></span>Prev</a><a accesskey="n" class="pull-right next visible-lg visible-md" id="header-navigation-next" href=
+            "UUID-2ecf5895-1505-9b59-f966-abc85410e20c.html#UUID-2ecf5895-1505-9b59-f966-abc85410e20c_UUID-1ad8e783-bd65-ad35-5f7e-8925610b349b">Next<span class="glyphicon glyphicon-circle-arrow-right"></span></a>
+            <div id="topic-content">
+              <section xml:lang="en-US" lang="en-US" dir="ltr" class="section" data-origin-id="UUID-2de19632-bf99-b3c1-ec8e-d6e980059594" data-publication-date="" id="UUID-2ecf5895-1505-9b59-f966-abc85410e20c">
+                <div class="titlepage">
+                  <div>
+                    <div class="title">
+                      <h1 class="title" style="clear: both"><span class="formal-title">Contours</span></h1>
+                    </div>
+                  </div>
+                </div>
+                <p>Define machining contours, the vertical machining area and cycle-specific contour parameters.</p>
+                <div dir="ltr" class="warning">
+                  <h3 class="title">Warning</h3>
+                  <p>Ensure that the tool is only in contact with the model geometry on one side (1). The tool diameter must not correspond exactly with the model geometry to be machined (2).</p>
+                </div>
+                <div class="informalfigure">
+                  <div class="mediaobject">
+                    <table class="image-viewport" style="border-collapse:collapse;border:0; width:638px;">
+                      <tr>
+                        <td style="padding:0;"><img src="image/uuid-d19af435-cd56-4035-3ed5-fe9051c0d194.svg" style="max-width: 638px;" alt="2D_bearbeitung_minimaler_taschenradius.svg" /></td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+                <section xml:lang="en-US" lang="en-US" dir="ltr" class="section internal" data-origin-id="" data-publication-date="" id="UUID-2ecf5895-1505-9b59-f966-abc85410e20c_UUID-1ad8e783-bd65-ad35-5f7e-8925610b349b">
+                  <div class="titlepage">
+                    <div>
+                      <div class="title">
+                        <h2 class="title" style="clear: both"><span class="formal-title">Contour selection</span></h2>
+                      </div>
+                    </div>
+                  </div>
+                  <p>Each cycle allows machining of several pockets, each with several islands.</p>
+                  <p>Geometric information from the Pocket feature can also be used as contours.</p>
+                  <p>The contours must exist as: closed polylines (2D), circles, ellipses or splines. The order of contour selection is arbitrary. Pockets and islands are recognized automatically. All external contours are pocket contours that are machined from the inside. Multiple adjacent pockets can be machined in one single job step.</p>
+                  <p>To manually define the top and bottom, the cycle offers the options <span class="guilabel">Absolute (jobframe)</span>, <span class="guilabel">Top of contour</span>, <span class="guilabel">Bottom of contour</span>.</p>
+                  <section dir="ltr" class="section internal" data-origin-id="" data-publication-date="" id="UUID-2ecf5895-1505-9b59-f966-abc85410e20c_id179PCC00F33">
+                    <div class="titlepage">
+                      <div>
+                        <div class="title">
+                          <h3 class="title"><span class="formal-title">Examples:</span></h3>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="itemizedlist">
+                      <ul class="itemizedlist" style="list-style-type: disc;">
+                        <li class="listitem">
+                          <p><span class="bold"><strong>Different tops</strong></span>: In the following example, for the four adjacent pockets with different tops but the same absolute bottom, take the <span class="guilabel">Bottom</span> (1) directly from the model as an absolute value related to the job frame by clicking the icon <span class=
+                          "inlinemediaobject"><img src="image/uuid-4edadad8-5119-0a88-3f8c-747bcdddec81.svg" alt="icon_sel_point.svg" /></span> and the <span class="guilabel">Top</span> (2) using the option <span class="guilabel">Top of contour</span> and entering the value manually.</p>
+                          <div class="informalfigure" id="UUID-2ecf5895-1505-9b59-f966-abc85410e20c_figure-idm4609846899852833192231079626">
+                            <div class="mediaobject"><img src="image/uuid-02071282-725e-72a0-b833-be5464398056.svg" style="" alt="2D_taschenbearbeitung_taschenkonturen.svg" /></div>
+                          </div>
+                        </li>
+                        <li class="listitem">
+                          <p><span class="bold"><strong>Island / inner pocket</strong></span>: In the following example, it is an <span class="bold"><strong>island</strong></span> (A) or <span class="bold"><strong>inner pocket</strong></span> (B).</p>
+                          <div class="informaltable table-responsive">
+                            <table style="width:100%;" class="informaltable">
+                              <colgroup>
+                                <col style="width:12%;" />
+                                <col style="width:88%;" />
+                              </colgroup>
+                              <tbody>
+                                <tr>
+                                  <td class="td">
+                                    <div class="mediaobject">
+                                      <table class="image-viewport" style="border-collapse:collapse;border:0; ;">
+                                        <tr style="height: 48px">
+                                          <td style="padding:0;"><img src="image/uuid-1936d240-0f80-7e6e-505f-94ad48cd2741.svg" style="max-height: 48px;" alt="sel_point.svg" /></td>
+                                        </tr>
+                                      </table>
+                                    </div>
+                                  </td>
+                                  <td class="td">
+                                    <p>(A) <span class="guilabel">Top</span> and <span class="guilabel">Bottom</span> are defined by selecting the contour at the bottom of the pocket (1). Then take the value for the top directly from the model by point selection and with the help of the <span class="guilabel">Absolute (jobframe)</span> option.</p>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                          <p>(B) The top definition is made by selecting the contour at the top of the pocket (1). Then define the bottom using the option <span class="guilabel">Relative to top</span> (2) and manually entering the bottom.</p>
+                          <div class="informalfigure" id="UUID-2ecf5895-1505-9b59-f966-abc85410e20c_figure-idm4599935220091233193800774072">
+                            <div class="mediaobject"><img src="image/uuid-56f62a36-b164-89ed-1561-9cbaf0c2d1f0.svg" style="" alt="2D_taschenbearbeitung_inseln_taschen_neu.svg" /></div>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </section>
+                </section>
+                <section xml:lang="en-US" lang="en-US" dir="ltr" class="section internal" data-origin-id="" data-publication-date="" id="UUID-2ecf5895-1505-9b59-f966-abc85410e20c_UUID-b8024e76-0c7c-d453-2a3c-2d3ee6ae28fe">
+                  <div class="titlepage">
+                    <div>
+                      <div class="title">
+                        <h2 class="title" style="clear: both"><span class="formal-title">Contour attributes</span></h2>
+                      </div>
+                    </div>
+                  </div>
+                  <p>To define contour attributes (top, bottom), select the machining contour in the contour list. By making multiple selections in this contour list, you can quickly define the same top and bottom values for several contours.</p>
+                  <p>Use the following buttons to change the order of selected contours or delete a contour. (1) To the top, (2) Up, (3) Delete, (4) Down, (5) To the bottom.</p>
+                  <div class="mediaobject" id="UUID-2ecf5895-1505-9b59-f966-abc85410e20c_mediaobject-idm53072641173928">
+                    <table class="image-viewport" style="border-collapse:collapse;border:0; width:105px;">
+                      <tr>
+                        <td style="padding:0;"><img src="image/uuid-f4b67702-3142-ce06-d596-71e64ed51ee1.PNG" style="max-width: 105px;" alt="transform_target_ref.PNG" /></td>
+                      </tr>
+                    </table>
+                  </div>
+                </section>
+                <section dir="ltr" class="section internal" data-origin-id="" data-publication-date="" id="UUID-2ecf5895-1505-9b59-f966-abc85410e20c_id179PCC00F27">
+                  <div class="titlepage">
+                    <div>
+                      <div class="title">
+                        <h2 class="title" style="clear: both"><span class="formal-title">Machining of open pockets</span></h2>
+                      </div>
+                    </div>
+                  </div>
+                  <p>To machine an open pocket, link the job with a Pocket feature. The starting point in this process is outside of the pocket, so that the entire machining process for the pocket can be carried out.</p>
+                  <div class="mediaobject">
+                    <table class="image-viewport" style="border-collapse:collapse;border:0; width:531px;">
+                      <tr style="height: 248px">
+                        <td style="padding:0;"><img src="image/uuid-c6ce4876-2816-99f0-4347-4cbbf2d6d3d5.svg" style="max-width: 531px; max-height: 248px;" alt="2D_taschenbearbeitung_offene_tasche.svg" /></td>
+                      </tr>
+                    </table>
+                  </div>
+                  <p><span class="guilabel">Open areas</span>: Define the open areas of the pocket.</p>
+                  <p><span class="guilabel">Add through three points</span>: Select start point, end point and a further point on the contour.</p>
+                  <p><span class="guilabel">Add through curves</span>: Select curves.</p>
+                  <div dir="ltr" class="note">
+                    <h3 class="title">Note</h3>
+                    <p>Updates of pocket contours created by means of parametric V-sketch are adopted during a recalculation in the cycle, however, this does not apply to <span class="guilabel">Open areas</span>.</p>
+                  </div>
+                  <section xml:lang="en-US" lang="en-US" dir="ltr" class="section internal" data-origin-id="" data-publication-date="" id="UUID-2ecf5895-1505-9b59-f966-abc85410e20c_UUID-84df133c-42b6-5c81-60e4-783ebbc59843">
+                    <div class="titlepage">
+                      <div>
+                        <div class="title">
+                          <h3 class="title"><span class="formal-title">Plunge points</span></h3>
+                        </div>
+                      </div>
+                    </div>
+                    <p><span class="guilabel">Use plunge point</span>: For <span class="guilabel">2D mode</span> (dialog page <span class="guilabel">Strategy</span>), define either a single global plunge point or several plunge points by means of contour.</p>
+                    <p><span class="bold"><strong>Plunge point</strong></span>: Define a separate plunge point for each pocket/contour. The global plunge point is supported by the Generic Pocket feature. A plunge point is not possible if the pocket contains open areas.</p>
+                    <p><span class="bold"><strong>No plunge point selected</strong></span>: The optimum starting point for machining the selected contour pockets is determined automatically. If it is not possible to reach all machining areas from one plunge point, the program automatically looks for additional plunge points. Rapid infeed between
+                    plunge points takes place across the clearance plane.</p>
+                    <div class="mediaobject">
+                      <table class="image-viewport" style="border-collapse:collapse;border:0; width:461px;">
+                        <tr style="height: 284px">
+                          <td style="padding:0;"><img src="image/uuid-deae79f5-68a8-1708-3103-1df8e60a70a6.svg" style="max-width: 461px; max-height: 284px;" alt="2D_taschenbearbeitung_automatischer_eintauchpunkt.svg" /></td>
+                        </tr>
+                      </table>
+                    </div>
+                    <p><span class="bold"><strong>Plunge point note</strong></span>: Since the user-defined plunge point is <span class="bold"><strong>not</strong></span> collision checked, you must ensure that collisions will not occur. User-defined plunge point and stock mode are mutually exclusive.</p>
+                    <p>The tool moves exactly to the specified plunge point and then machines from there to the center. The pocket will always be cleared from the inside out.</p>
+                    <div class="mediaobject">
+                      <table class="image-viewport" style="border-collapse:collapse;border:0; width:461px;">
+                        <tr style="height: 284px">
+                          <td style="padding:0;"><img src="image/uuid-7b3b04a9-fbcd-e3c5-54d1-771d60a1b296.svg" style="max-width: 461px; max-height: 284px;" alt="2D_taschenbearbeitung_benutzerdefinierter_eintauchpunkt.svg" /></td>
+                        </tr>
+                      </table>
+                    </div>
+                    <p>In stock mode, machining always proceeds from the outside in.</p>
+                    <div class="mediaobject">
+                      <table class="image-viewport" style="border-collapse:collapse;border:0; width:461px;">
+                        <tr style="height: 284px">
+                          <td style="padding:0;"><img src="image/uuid-1e33abea-452f-5881-4f39-16805b2fc5e3.svg" style="max-width: 461px; max-height: 284px;" alt="2D_taschenbearbeitung_bearbeitungsrichtung.svg" /></td>
+                        </tr>
+                      </table>
+                    </div>
+                    <p>If the plunge point is outside the pocket contour, the tool moves into the contour pocket along the shortest path (G1).</p>
+                    <div dir="ltr" class="warning">
+                      <h3 class="title">Warning</h3>
+                      <p>Danger of collision!</p>
+                    </div>
+                    <p>Contours that the tool cannot reach from the user-defined plunge point cannot be machined.</p>
+                    <div class="mediaobject">
+                      <table class="image-viewport" style="border-collapse:collapse;border:0; width:461px;">
+                        <tr style="height: 248px">
+                          <td style="padding:0;"><img src="image/uuid-4c4d33c0-1649-7f72-8920-f5f7aec70b5e.svg" style="max-width: 461px; max-height: 248px;" alt="2D_taschenbearbeitung_benutzerdefinierter_eintauchpunkt2.svg" /></td>
+                        </tr>
+                      </table>
+                    </div>
+                  </section>
+                  <section dir="ltr" class="section internal" data-origin-id="" data-publication-date="" id="id109134">
+                    <div class="titlepage">
+                      <div>
+                        <div class="title">
+                          <h3 class="title"><span class="formal-title">Reference job</span></h3>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="informaltable table-responsive">
+                      <table style="width:100%;" class="informaltable">
+                        <colgroup>
+                          <col style="width:12%;" />
+                          <col style="width:88%;" />
+                        </colgroup>
+                        <tbody>
+                          <tr>
+                            <td class="td">
+                              <div class="mediaobject">
+                                <table class="image-viewport" style="border-collapse:collapse;border:0; ;">
+                                  <tr style="height: 48px">
+                                    <td style="padding:0;"><img src="image/uuid-3c68fe2a-8609-b8b8-ad43-3cfdbcb1bdab.svg" style="max-height: 48px;" alt="sel_ref_job.svg" /></td>
+                                  </tr>
+                                </table>
+                              </div>
+                            </td>
+                            <td class="td">
+                              <p>In <span class="guilabel">2D mode</span>, define the plunge points by selecting a reference job. Prerequisites: <span class="guilabel">High Performance Mode</span> has been enabled and the orientation of the frame’s Z axis in the reference job corresponds to the orientation of the Z axis of the pocket
+                              machining.</p>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </section>
+                  <section dir="ltr" class="section internal" data-origin-id="" data-publication-date="" id="id109150">
+                    <div class="titlepage">
+                      <div>
+                        <div class="title">
+                          <h3 class="title"><span class="formal-title">Optimization</span></h3>
+                        </div>
+                      </div>
+                    </div>
+                    <p><span class="guilabel">Sort contours</span>: Select this option to sort the traversing movements between the pocket contours according to the shortest distance in each case. By default, the traversing movements are performed according to the selection order of the pocket contours. Available for 2D mode, 3D mode and Stock
+                    mode as well as for the Use adaptive pocket option and MAXX Machining.</p>
+                  </section>
+                </section>
+              </section>
+              <div class="footer-content">
+                <div class="section-toc section-toc-after">
+                  <div class="section-toc-title">
+                    <span class="section-toc-title-delimiter">:</span>
+                  </div>
+                </div>
+              </div>
+              <footer></footer>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

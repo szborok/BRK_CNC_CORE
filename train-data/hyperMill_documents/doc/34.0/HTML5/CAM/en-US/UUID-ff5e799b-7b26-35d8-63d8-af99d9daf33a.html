@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="x-ua-compatible" content="IE=edge" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="search" content="default" />
+  <meta name="use.ic" content="no" />
+  <meta name="tocstandalone" content="yes" />
+  <script type="text/javascript">
+  //<![CDATA[
+                        var index;
+                        var contentLanguage = 'en-US';
+                        var enterKey = 'select';
+                        
+                                        var anchoroption = true;
+                                var instantsearch_minlength = 1;
+                                                
+                                var fuse_threshold = 0.3;
+                        
+                                        var local_csh = false;
+                                
+                        var useanchorlinks = false;
+  //]]>
+  </script>
+  <title>High Performance</title>
+  <link rel="stylesheet" type="text/css" href="../css/docbook.css" />
+  <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" href="../css/bootstrap-theme.min.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style-common.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style-responsive.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style-print.css" />
+  <link rel="stylesheet" type="text/css" href="../css/font-awesome.css" />
+  <link rel="stylesheet" type="text/css" href="../css/custom.css" />
+  <link rel="stylesheet" type="text/css" href="../css/layout-custom-style.css" />
+  <script src="../js/jquery-1.10.2.min.js" type="text/javascript"></script>
+  <script src="../js/jquery-ui-1.10.3.custom.min.js" type="text/javascript"></script>
+  <script src="../js/bootstrap.min.js" type="text/javascript"></script>
+  <script src="../js/purl.js" type="text/javascript"></script>
+  <script src="../js/jquery.event.move.js" type="text/javascript"></script>
+  <script src="../js/jquery.event.swipe.js" type="text/javascript"></script>
+  <script src="../js/jquery.sticky.js" type="text/javascript"></script>
+  <script src="../js/respond.min.js" type="text/javascript"></script>
+  <script src="../js/script.js" type="text/javascript"></script>
+  <script src="js/toc.js" type="text/javascript"></script>
+  <script src="../js/create-toc.js" type="text/javascript"></script>
+  <script src="../js/clipboard.min.js" type="text/javascript"></script>
+  <script src="../js/fuse.min.js" type="text/javascript"></script>
+  <script src="../js/jquery.mark.min.js" type="text/javascript"></script>
+  <script src="../js/html5.fuse.search.js" type="text/javascript"></script>
+  <script src="js/fuzzydata.js" type="text/javascript"></script>
+  <script src="../js/csh.js" type="text/javascript"></script>
+  <script src="../js/highlight-mergehtml-plugin.js" type="text/javascript"></script>
+  <meta name="generator" content="Paligo" />
+  <link rel="prev" href="UUID-93f6c0f2-70ee-bfda-587d-48c4bd8a13fb.html#UUID-93f6c0f2-70ee-bfda-587d-48c4bd8a13fb_UUID-12d9daf5-4944-0f99-feea-8b528486e0b1" title="Toolpath fillets" />
+  <link rel="next" href="UUID-ff5e799b-7b26-35d8-63d8-af99d9daf33a.html#id109268" title="High Performance Roughing" />
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js?config=TeX-MML-AM_CHTML" async="async"></script>
+  <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+  <script type="text/javascript" src="../js/cookie-consent.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  <script type="text/javascript">
+  //<![CDATA[
+                        $(document).on('ready ajaxComplete', function() {
+                                
+                                hljs.addPlugin(mergeHTMLPlugin);
+                                hljs.configure({'ignoreUnescapedHTML': true});
+                                
+                                $('pre:not(.embedcode)').each(function() {
+                                        /**
+                                         * @type {string}
+                                         */
+                                        var language = $(this).data('language');
+
+                                        if (language === 'plaintext' || language === 'text') {
+                                                $(this).addClass(language).addClass('hljs');
+                                                return true;
+                                        }
+                                        else {
+                                                var clone = this.cloneNode(true);
+                                                hljs.highlightElement(clone);
+                                                $(this).empty().append($(clone).contents());
+                                                $(this).attr("class", $(clone).attr("class"));
+                                        }
+                                });
+                        });
+  //]]>
+  </script>
+  <style type="text/css">
+  /*<![CDATA[*/
+            div.skipnav {
+            }
+            div.skipnav a {
+                position: fixed;
+                left: -10000px;
+                top: 1.5em;
+                width: 1px;
+                height: 1px;
+                overflow: hidden;
+            }
+            div.skipnav a:focus, div.skipnav a:active, div.skipnav a:hover {
+                background: white;
+                color: black;
+                box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.5);
+                position: fixed;
+                left: 2em;
+                top: 1.5em;
+                width: auto;
+                height: auto;
+                overflow: visible;
+                text-decoration: underline;
+                z-index: 99999; /* has to be higher than the side panel */
+    }
+  /*]]>*/
+  </style>
+</head>
+<body data-link-prefix="">
+  <div class="skipnav">
+    <a href="#content-wrapper">Skip to main content</a>
+  </div>
+  <div id="page" class="clearfix">
+    <div id="header">
+      <div class="container">
+        <div id="logotype-container" class="pull-left">
+          <a href="../index.html"><img id="logotype-pageheader" src="../css/image/corporate-logo.png" alt="Corporate logotype" data-role="logotype" /></a>
+        </div>
+        <div id="pagetools-container" class="pull-right">
+          <ul id="page-tools">
+            <li class="page-tools-search"><input placeholder="Search" type="text" class="form-control" aria-label="Search" id="search" /></li>
+            <li class="page-tools-print">
+              <a href="javascript:window.print();"><span class="tool-label">Print</span><span class="glyphicon glyphicon-print"></span></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <h1 id="publication-title">CAM</h1>
+    <div id="subheader-sticky-wrapper" class="sticky-wrapper">
+      <div id="subheader">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3 toc-title">
+              <h2><a class="prev nav-icon hidden-lg hidden-md" href="UUID-93f6c0f2-70ee-bfda-587d-48c4bd8a13fb.html#UUID-93f6c0f2-70ee-bfda-587d-48c4bd8a13fb_UUID-12d9daf5-4944-0f99-feea-8b528486e0b1"><span class="glyphicon glyphicon-chevron-left"></span></a> <a href="#toc" class="hidden mobile-nav-toggle"><span class=
+              "glyphicon glyphicon-list"></span>Table of Contents</a><span class="toc-label">Table of Contents</span><a class="next nav-icon hidden-lg hidden-md" href="UUID-ff5e799b-7b26-35d8-63d8-af99d9daf33a.html#id109268"><span class="glyphicon glyphicon-chevron-right"></span></a></h2>
+            </div>
+            <div class="col-md-9 breadcrumb-container">
+              <ul class="breadcrumb">
+                <li class="breadcrumb-link">
+                  <span class="glyphicon glyphicon-home"></span>&nbsp;<a href="index-en-US.html">CAM</a>
+                </li>
+                <li class="breadcrumb-link">
+                  <a href="UUID-afd1a7c2-b2fe-2ba0-9ef0-962197581f36.html">2D Machining</a>
+                </li>
+                <li class="breadcrumb-link">
+                  <a href="UUID-c297482c-dff2-d6d9-f472-fa824aa66d83.html">Pocket Milling</a>
+                </li>
+                <li class="breadcrumb-node">High Performance</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="main-content">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 toc-container" id="toc-wrapper">
+            <div id="toc-placeholder">
+              <div id="toc-standalone-placeholder"></div>
+            </div>
+          </div>
+          <div class="col-md-9 content-container" id="content-wrapper">
+            <a accesskey="p" class="prev pull-left prev visible-lg visible-md" id="header-navigation-prev" href="UUID-93f6c0f2-70ee-bfda-587d-48c4bd8a13fb.html#UUID-93f6c0f2-70ee-bfda-587d-48c4bd8a13fb_UUID-12d9daf5-4944-0f99-feea-8b528486e0b1"><span class="glyphicon glyphicon-circle-arrow-left"></span>Prev</a><a accesskey="n" class=
+            "pull-right next visible-lg visible-md" id="header-navigation-next" href="UUID-ff5e799b-7b26-35d8-63d8-af99d9daf33a.html#id109268">Next<span class="glyphicon glyphicon-circle-arrow-right"></span></a>
+            <div id="topic-content">
+              <section xml:lang="en-US" lang="en-US" dir="ltr" class="section" data-origin-id="UUID-1fab5d40-01d7-de34-d005-4620eb0d2f7f" data-publication-date="" id="UUID-ff5e799b-7b26-35d8-63d8-af99d9daf33a">
+                <div class="titlepage">
+                  <div>
+                    <div class="title">
+                      <h1 class="title" style="clear: both"><span class="formal-title">High Performance</span></h1>
+                    </div>
+                  </div>
+                </div>
+                <section dir="ltr" class="section internal" data-origin-id="" data-publication-date="" id="id109268">
+                  <div class="titlepage">
+                    <div>
+                      <div class="title">
+                        <h2 class="title" style="clear: both"><span class="formal-title">High Performance Roughing</span></h2>
+                      </div>
+                    </div>
+                  </div>
+                  <p><span class="guilabel">High Performance Mode</span>: To use the function, select the <span class="guilabel">High Performance Mode</span> checkbox.</p>
+                  <div class="mediaobject">
+                    <table class="image-viewport" style="border-collapse:collapse;border:0; width:461px;">
+                      <tr style="height: 248px">
+                        <td style="padding:0;"><img src="image/uuid-52e1f9fb-10a8-1226-363e-1fab0a958f30.svg" style="max-width: 461px; max-height: 248px;" alt="2D_taschenbearbeitung_MAXX_machining_auto_spirale.svg" /></td>
+                      </tr>
+                    </table>
+                  </div>
+                  <p><span class="guilabel">Opening cut</span>: enable function when an opening cut should be carried out.</p>
+                  <p><span class="guilabel">Zigzag</span>: enable function when machining with alternating orientation should be enabled.</p>
+                  <p>Two different strategies are available in High Performance Mode: <span class="guilabel">Opening cut</span> and <span class="guilabel">Side mill only</span>.</p>
+                  <p>The following applies to both strategies:</p>
+                  <div class="itemizedlist">
+                    <ul class="itemizedlist" style="list-style-type: disc;">
+                      <li class="listitem">
+                        <p>The toolpaths created with <span class="italic">hyper</span>MILL are optimized in terms of the minimum machining time at maximum removal rate, taking into account dynamic feedrate values for different machining situations.</p>
+                      </li>
+                      <li class="listitem">
+                        <p>The <span class="guilabel">Fillet radius</span> parameter must be at least 5% of the tool diameter.</p>
+                      </li>
+                    </ul>
+                  </div>
+                  <p><span class="guilabel">Opening cut</span> (1): If this option is enabled, narrow, inaccessible areas (A) with several vertical stepdowns (full cut) can be opened. A trochoidal strategy may be used. <span class="italic">hyper</span>MILL determines the most suitable strategy for the particular machining situation internally in
+                  terms of the shortest overall machining time.</p>
+                  <p><span class="guilabel">Side mill only</span> (2): If this option is enabled, no full cut behavior is allowed. Narrow, inaccessible areas (A) are opened with trochoidal movements.</p>
+                </section>
+                <section dir="ltr" class="section internal" data-origin-id="" data-publication-date="" id="id109296">
+                  <div class="titlepage">
+                    <div>
+                      <div class="title">
+                        <h2 class="title" style="clear: both"><span class="formal-title">Reposition</span></h2>
+                      </div>
+                    </div>
+                  </div>
+                  <p>For both strategies (Opening cut and Side mill only) the following applies:</p>
+                  <p><span class="guilabel">Safety</span> (1): axial movement (in the Z direction) away from the plane currently being machined. Default value: <span class="guilabel">Clearance distance</span> * 0.1.</p>
+                  <p><span class="guilabel">Feedrate</span>: Value for the maximum achievable <span class="guilabel">Feedrate</span> for all movements to reposition the tool without material removal.</p>
+                  <div class="mediaobject">
+                    <table class="image-viewport" style="border-collapse:collapse;border:0; width:461px;">
+                      <tr style="height: 177px">
+                        <td style="padding:0;"><img src="image/uuid-005685cc-7dd4-5b12-60e1-094a87cc03d1.svg" style="max-width: 461px; max-height: 177px;" alt="hyperMAXX_neu_positionierung.svg" /></td>
+                      </tr>
+                    </table>
+                  </div>
+                </section>
+                <section dir="ltr" class="section internal" data-origin-id="" data-publication-date="" id="id109308">
+                  <div class="titlepage">
+                    <div>
+                      <div class="title">
+                        <h2 class="title" style="clear: both"><span class="formal-title">Infeed</span></h2>
+                      </div>
+                    </div>
+                  </div>
+                  <p><span class="guilabel">Dense area stepover (factor)</span> (1): The value is multiplied by the <span class="guilabel">Stepover (factor of diameter)</span> (see <span class="guilabel">Parameters</span> dialog page) and defines the lateral infeed for trochoidal movements in narrow, inaccessible areas. A reduction in the
+                  horizontal stepover in narrow areas may be particularly useful for hard materials.</p>
+                  <div class="mediaobject">
+                    <table class="image-viewport" style="border-collapse:collapse;border:0; width:461px;">
+                      <tr style="height: 212px">
+                        <td style="padding:0;"><img src="image/uuid-d58541a9-8166-02a3-edb9-eec21571d7f8.svg" style="max-width: 461px; max-height: 212px;" alt="hyperMAXX_zustellfaktor_enge_bereiche.svg" /></td>
+                      </tr>
+                    </table>
+                  </div>
+                  <p><span class="guilabel">Plunge feedrate</span>: Feedrate for plunge movement ( <span class="guilabel">macros</span>) in pockets that cannot be accessed from outside (closed pockets). <span class="guilabel">Min</span>. Enable <span class="guilabel">feedrate</span> to specify a minimum value for the plunge feedrate.</p>
+                </section>
+                <section dir="ltr" class="section internal" data-origin-id="" data-publication-date="" id="id109322">
+                  <div class="titlepage">
+                    <div>
+                      <div class="title">
+                        <h2 class="title" style="clear: both"><span class="formal-title">Opening cut</span></h2>
+                      </div>
+                    </div>
+                  </div>
+                  <p>For the opening cut, both the <span class="guilabel">vertical stepdown</span> and the <span class="guilabel">feedrate</span> can be adjusted to the particular machining situation.</p>
+                  <p><span class="guilabel">Vertical stepdown</span> (1): The number of stepovers (vertical stepdown) is calculated from the total infeed defined.</p>
+                  <div class="mediaobject">
+                    <table class="image-viewport" style="border-collapse:collapse;border:0; width:461px;">
+                      <tr style="height: 212px">
+                        <td style="padding:0;"><img src="image/uuid-a61c81dd-c8ae-16f4-fc19-f3aaa3c3757b.svg" style="max-width: 461px; max-height: 212px;" alt="hyperMAXX_vert_zustellung_oeffnungsschnitt.svg" /></td>
+                      </tr>
+                    </table>
+                  </div>
+                  <p>Example: If the total infeed is 2 and the vertical stepdown for the opening cut is 0.5, machining occurs in 4 infeeds.</p>
+                  <p><span class="guilabel">Feedrate</span>: value for the maximum achievable feedrate for the opening cut.</p>
+                  <p>Enable <span class="guilabel">min. feedrate</span> to specify a minimum value for the opening cut feedrate.</p>
+                  <div dir="ltr" class="note">
+                    <h3 class="title">Note</h3>
+                    <p>A change in the feedrate for the opening cut may change the machining strategy for narrow areas (trochoidal &gt; full cut). <span class="italic">hyper</span>MILL determines the most suitable strategy internally in terms of the shortest overall machining time, taking into account the feedrate value.</p>
+                  </div>
+                </section>
+                <section dir="ltr" class="section internal" data-origin-id="" data-publication-date="" id="id109340">
+                  <div class="titlepage">
+                    <div>
+                      <div class="title">
+                        <h2 class="title" style="clear: both"><span class="formal-title">Entry feedrate</span></h2>
+                      </div>
+                    </div>
+                  </div>
+                  <p>A targeted feedrate adjustment at the moment of entry into the material can be especially useful with hard workpiece materials.</p>
+                  <p><span class="guilabel">Factor side entry</span> regulates the lateral approach (not when the position is tangential to the contour) from outside and is referenced to the feedrate XY of the tool.</p>
+                  <p><span class="guilabel">Factor plunge entry</span> affects the helical or ramp plunge into the material from above. This factor is calculated with plunge feedrate.</p>
+                </section>
+                <section dir="ltr" class="section internal" data-origin-id="" data-publication-date="" id="id109347">
+                  <div class="titlepage">
+                    <div>
+                      <div class="title">
+                        <h2 class="title" style="clear: both"><span class="formal-title">Zigzag feedrate</span></h2>
+                      </div>
+                    </div>
+                  </div>
+                  <p><span class="guilabel">Feedrate</span>: Factor that influences the feedrate of the opposite direction. If climb milling is chosen as cutting mode, the opposite direction feedrate, i.e., the conventional milling feedrate, is reduced by the specified factor. The 0.8 factor equates to a feedrate reduction of 20%.</p>
+                  <p>The following restrictions apply in <span class="guilabel">High Performance Mode</span>:</p>
+                  <p>Dialog page <span class="guilabel">Tool</span></p>
+                  <p><span class="guilabel">Corner fillet radius</span> must be greater than 0.05* tool diameter. In the case of tools with a core, the core diameter must be smaller than 0.9* tool diameter, and smaller than the flat part of the tool. <span class="guilabel">Ball endmills</span> with core are not permitted. For <span class=
+                  "guilabel">bullnose end mills</span>, the following applies: core diameter *0.5 must be smaller than the radius - corner radius.</p>
+                  <p>Dialog page <span class="guilabel">Strategy</span></p>
+                  <p>Plunge points are not supported. The <span class="guilabel">Use adaptive pocket</span> option is not available. No G2/G3 movements can be generated in the <span class="guilabel">3D Mode</span>.</p>
+                  <p>Dialog page <span class="guilabel">Parameters</span></p>
+                  <p><span class="guilabel">Fillet all toolpaths</span> is enabled by default. The <span class="guilabel">Radius for horizontal infeed</span> parameter is not available. The negative stock allowance XY must not be greater than 0.25 * tool diameter in the <span class="guilabel">2D mode</span> / <span class="guilabel">Stock
+                  mode</span>.</p>
+                  <p>The conditions that govern the <span class="guilabel">3D Mode</span> depend on the tool type:</p>
+                  <p><span class="guilabel">Endmill</span>: no negative XY allowance allowed. If (stock allowance XY - stock allowance Z) &lt; 0, the absolute value of this difference must be smaller than the tool radius.</p>
+                  <p><span class="guilabel">Ball endmill</span>: Absolute value of the negative stock allowance XY &lt; tool radius. Stock allowance XY must be greater than stock allowance Z.</p>
+                  <p><span class="guilabel">Bullnose endmill</span>: negative stock allowance is only permitted up to the absolute value &lt;= corner radius. If (stock allowance XY - stock allowance Z) &lt; 0, the absolute value of this difference must be smaller than (radius - corner radius) of the tool.</p>
+                  <p>The retract mode is set to retraction plane.</p>
+                  <p>Dialog page <span class="guilabel">Macros</span></p>
+                  <p>Only the <span class="guilabel">Ramp</span> or <span class="guilabel">Helical</span> plunge macro is available as a macro. When using the <span class="guilabel">Helical</span> plunge macro, the helix radius of the cycle is calculated automatically. The <span class="guilabel">angle</span> must be greater than 0.01.</p>
+                </section>
+              </section>
+              <div class="footer-content">
+                <div class="section-toc section-toc-after">
+                  <div class="section-toc-title">
+                    <span class="section-toc-title-delimiter">:</span>
+                  </div>
+                </div>
+              </div>
+              <footer></footer>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

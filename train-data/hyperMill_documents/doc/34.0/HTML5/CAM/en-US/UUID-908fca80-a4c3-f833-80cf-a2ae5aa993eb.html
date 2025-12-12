@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="x-ua-compatible" content="IE=edge" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="search" content="default" />
+  <meta name="use.ic" content="no" />
+  <meta name="tocstandalone" content="yes" />
+  <script type="text/javascript">
+  //<![CDATA[
+                        var index;
+                        var contentLanguage = 'en-US';
+                        var enterKey = 'select';
+                        
+                                        var anchoroption = true;
+                                var instantsearch_minlength = 1;
+                                                
+                                var fuse_threshold = 0.3;
+                        
+                                        var local_csh = false;
+                                
+                        var useanchorlinks = false;
+  //]]>
+  </script>
+  <title>Strategy</title>
+  <link rel="stylesheet" type="text/css" href="../css/docbook.css" />
+  <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" href="../css/bootstrap-theme.min.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style-common.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style-responsive.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style-print.css" />
+  <link rel="stylesheet" type="text/css" href="../css/font-awesome.css" />
+  <link rel="stylesheet" type="text/css" href="../css/custom.css" />
+  <link rel="stylesheet" type="text/css" href="../css/layout-custom-style.css" />
+  <script src="../js/jquery-1.10.2.min.js" type="text/javascript"></script>
+  <script src="../js/jquery-ui-1.10.3.custom.min.js" type="text/javascript"></script>
+  <script src="../js/bootstrap.min.js" type="text/javascript"></script>
+  <script src="../js/purl.js" type="text/javascript"></script>
+  <script src="../js/jquery.event.move.js" type="text/javascript"></script>
+  <script src="../js/jquery.event.swipe.js" type="text/javascript"></script>
+  <script src="../js/jquery.sticky.js" type="text/javascript"></script>
+  <script src="../js/respond.min.js" type="text/javascript"></script>
+  <script src="../js/script.js" type="text/javascript"></script>
+  <script src="js/toc.js" type="text/javascript"></script>
+  <script src="../js/create-toc.js" type="text/javascript"></script>
+  <script src="../js/clipboard.min.js" type="text/javascript"></script>
+  <script src="../js/fuse.min.js" type="text/javascript"></script>
+  <script src="../js/jquery.mark.min.js" type="text/javascript"></script>
+  <script src="../js/html5.fuse.search.js" type="text/javascript"></script>
+  <script src="js/fuzzydata.js" type="text/javascript"></script>
+  <script src="../js/csh.js" type="text/javascript"></script>
+  <script src="../js/highlight-mergehtml-plugin.js" type="text/javascript"></script>
+  <meta name="generator" content="Paligo" />
+  <link rel="prev" href="UUID-c7ffe1db-dfc8-23bb-3d2d-9a7cdeaa5d65.html#id97956" title="behavior in sharp corners" />
+  <link rel="next" href="UUID-908fca80-a4c3-f833-80cf-a2ae5aa993eb.html#id97980" title="Cutting side" />
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js?config=TeX-MML-AM_CHTML" async="async"></script>
+  <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+  <script type="text/javascript" src="../js/cookie-consent.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  <script type="text/javascript">
+  //<![CDATA[
+                        $(document).on('ready ajaxComplete', function() {
+                                
+                                hljs.addPlugin(mergeHTMLPlugin);
+                                hljs.configure({'ignoreUnescapedHTML': true});
+                                
+                                $('pre:not(.embedcode)').each(function() {
+                                        /**
+                                         * @type {string}
+                                         */
+                                        var language = $(this).data('language');
+
+                                        if (language === 'plaintext' || language === 'text') {
+                                                $(this).addClass(language).addClass('hljs');
+                                                return true;
+                                        }
+                                        else {
+                                                var clone = this.cloneNode(true);
+                                                hljs.highlightElement(clone);
+                                                $(this).empty().append($(clone).contents());
+                                                $(this).attr("class", $(clone).attr("class"));
+                                        }
+                                });
+                        });
+  //]]>
+  </script>
+  <style type="text/css">
+  /*<![CDATA[*/
+            div.skipnav {
+            }
+            div.skipnav a {
+                position: fixed;
+                left: -10000px;
+                top: 1.5em;
+                width: 1px;
+                height: 1px;
+                overflow: hidden;
+            }
+            div.skipnav a:focus, div.skipnav a:active, div.skipnav a:hover {
+                background: white;
+                color: black;
+                box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.5);
+                position: fixed;
+                left: 2em;
+                top: 1.5em;
+                width: auto;
+                height: auto;
+                overflow: visible;
+                text-decoration: underline;
+                z-index: 99999; /* has to be higher than the side panel */
+    }
+  /*]]>*/
+  </style>
+</head>
+<body data-link-prefix="">
+  <div class="skipnav">
+    <a href="#content-wrapper">Skip to main content</a>
+  </div>
+  <div id="page" class="clearfix">
+    <div id="header">
+      <div class="container">
+        <div id="logotype-container" class="pull-left">
+          <a href="../index.html"><img id="logotype-pageheader" src="../css/image/corporate-logo.png" alt="Corporate logotype" data-role="logotype" /></a>
+        </div>
+        <div id="pagetools-container" class="pull-right">
+          <ul id="page-tools">
+            <li class="page-tools-search"><input placeholder="Search" type="text" class="form-control" aria-label="Search" id="search" /></li>
+            <li class="page-tools-print">
+              <a href="javascript:window.print();"><span class="tool-label">Print</span><span class="glyphicon glyphicon-print"></span></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <h1 id="publication-title">CAM</h1>
+    <div id="subheader-sticky-wrapper" class="sticky-wrapper">
+      <div id="subheader">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3 toc-title">
+              <h2><a class="prev nav-icon hidden-lg hidden-md" href="UUID-c7ffe1db-dfc8-23bb-3d2d-9a7cdeaa5d65.html#id97956"><span class="glyphicon glyphicon-chevron-left"></span></a> <a href="#toc" class="hidden mobile-nav-toggle"><span class="glyphicon glyphicon-list"></span>Table of Contents</a><span class="toc-label">Table of
+              Contents</span><a class="next nav-icon hidden-lg hidden-md" href="UUID-908fca80-a4c3-f833-80cf-a2ae5aa993eb.html#id97980"><span class="glyphicon glyphicon-chevron-right"></span></a></h2>
+            </div>
+            <div class="col-md-9 breadcrumb-container">
+              <ul class="breadcrumb">
+                <li class="breadcrumb-link">
+                  <span class="glyphicon glyphicon-home"></span>&nbsp;<a href="index-en-US.html">CAM</a>
+                </li>
+                <li class="breadcrumb-link">
+                  <a href="UUID-8c123174-82e7-0c9b-1966-9af033907055.html">Turning</a>
+                </li>
+                <li class="breadcrumb-link">
+                  <a href="UUID-103a65e7-2365-f88d-1344-6e79af0e36d8.html">Groove Finishing</a>
+                </li>
+                <li class="breadcrumb-node">Strategy</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="main-content">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 toc-container" id="toc-wrapper">
+            <div id="toc-placeholder">
+              <div id="toc-standalone-placeholder"></div>
+            </div>
+          </div>
+          <div class="col-md-9 content-container" id="content-wrapper">
+            <a accesskey="p" class="prev pull-left prev visible-lg visible-md" id="header-navigation-prev" href="UUID-c7ffe1db-dfc8-23bb-3d2d-9a7cdeaa5d65.html#id97956"><span class="glyphicon glyphicon-circle-arrow-left"></span>Prev</a><a accesskey="n" class="pull-right next visible-lg visible-md" id="header-navigation-next" href=
+            "UUID-908fca80-a4c3-f833-80cf-a2ae5aa993eb.html#id97980">Next<span class="glyphicon glyphicon-circle-arrow-right"></span></a>
+            <div id="topic-content">
+              <section xml:lang="en-US" lang="en-US" dir="ltr" class="section" data-origin-id="UUID-9ef0667f-b339-2995-fc7a-24f37cfa77a6" data-publication-date="" id="UUID-908fca80-a4c3-f833-80cf-a2ae5aa993eb">
+                <div class="titlepage">
+                  <div>
+                    <div class="title">
+                      <h1 class="title" style="clear: both"><span class="formal-title">Strategy</span></h1>
+                    </div>
+                  </div>
+                </div>
+                <p><span class="guilabel">Finishing</span>: Fine machining, in which the material left by the preceding roughing operations is removed.</p>
+                <div class="mediaobject">
+                  <table class="image-viewport" style="border-collapse:collapse;border:0; width:461px;">
+                    <tr style="height: 212px">
+                      <td style="padding:0;"><img src="image/uuid-eab1c6ce-93c7-0098-94b7-2d10d6df6cdc.svg" style="max-width: 461px; max-height: 212px;" alt="drehen_einstech_schlichten_strategie.svg" /></td>
+                    </tr>
+                  </table>
+                </div>
+                <section dir="ltr" class="section internal" data-origin-id="" data-publication-date="" id="id97980">
+                  <div class="titlepage">
+                    <div>
+                      <div class="title">
+                        <h2 class="title" style="clear: both"><span class="formal-title">Cutting side</span></h2>
+                      </div>
+                    </div>
+                  </div>
+                  <p><span class="guilabel">Inside</span> (1) / <span class="guilabel">Outside</span> (2): The external shape of a workpiece is created by using the Outside option and the internal shape by using the Inside option.</p>
+                  <div class="mediaobject">
+                    <table class="image-viewport" style="border-collapse:collapse;border:0; width:461px;">
+                      <tr style="height: 248px">
+                        <td style="padding:0;"><img src="image/uuid-f669b4ca-1937-df16-f688-6a8e0a0d5af2.svg" style="max-width: 461px; max-height: 248px;" alt="drehen_einstech_schlichten_schnittseite.svg" /></td>
+                      </tr>
+                    </table>
+                  </div>
+                </section>
+                <section dir="ltr" class="section internal" data-origin-id="" data-publication-date="" id="id97988">
+                  <div class="titlepage">
+                    <div>
+                      <div class="title">
+                        <h2 class="title" style="clear: both"><span class="formal-title">Infeed direction</span></h2>
+                      </div>
+                    </div>
+                  </div>
+                  <p><span class="guilabel">To left</span> (1)/ <span class="guilabel">To right</span> (2): Machining is performed from right to left or from left to right in the direction of the axis of the turning surface.</p>
+                  <div class="mediaobject">
+                    <table class="image-viewport" style="border-collapse:collapse;border:0; width:638px;">
+                      <tr>
+                        <td style="padding:0;"><img src="image/uuid-16e681b7-fce4-0ca6-2529-6bd870def622.svg" style="max-width: 638px;" alt="drehen_einstech_schlichten_zustellrichtung.svg" /></td>
+                      </tr>
+                    </table>
+                  </div>
+                </section>
+                <section dir="ltr" class="section internal" data-origin-id="" data-publication-date="" id="id97996">
+                  <div class="titlepage">
+                    <div>
+                      <div class="title">
+                        <h2 class="title" style="clear: both"><span class="formal-title">Options</span></h2>
+                      </div>
+                    </div>
+                  </div>
+                  <p><span class="guilabel">Radial / axial limit</span>: Limits the machining area of the tool used in the radial or axial direction.</p>
+                  <p><span class="guilabel">Enable path compensation</span>: When this option is activated, path compensation is handled by the controller, that is, the cutting radius is calculated by the controller (G41 and G42). If this option is not enabled, the cutting radius is calculated beforehand in <span class=
+                  "italic">hyper</span>MILL.</p>
+                  <p><span class="guilabel">Change reference side</span>: The reference side of the recessing tool changes (left/right) during machining. Only available if path compensation is enabled.</p>
+                </section>
+                <section dir="ltr" class="section internal" data-origin-id="" data-publication-date="" id="id98005">
+                  <div class="titlepage">
+                    <div>
+                      <div class="title">
+                        <h2 class="title" style="clear: both"><span class="formal-title">Machining mode</span></h2>
+                      </div>
+                    </div>
+                  </div>
+                  <p>Limit machining to selected areas.</p>
+                  <p>Flat and steep areas are separated from each other by a slope angle. 0° corresponds to parallel to the turning axis and 90° is perpendicular to the turning axis.</p>
+                  <p><span class="guilabel">Off</span>: Steep and flat areas of the defined contour are machined (1).</p>
+                  <p><span class="guilabel">Steep areas</span>: Only the steep areas of the defined contour are machined (2).</p>
+                  <p><span class="guilabel">Flat areas</span>: Only the flat areas of the defined contour are machined (3).</p>
+                  <div class="informalfigure">
+                    <div class="mediaobject">
+                      <table class="image-viewport" style="border-collapse:collapse;border:0; width:638px;">
+                        <tr>
+                          <td style="padding:0;"><img src="image/uuid-a9678421-ff1a-0407-9fd1-79fcb51f2a97.svg" style="max-width: 638px;" alt="drehen_einstech_schlichten_bearbeitungsmethode.svg" /></td>
+                        </tr>
+                      </table>
+                    </div>
+                  </div>
+                </section>
+                <section dir="ltr" class="section internal" data-origin-id="" data-publication-date="" id="id98019">
+                  <div class="titlepage">
+                    <div>
+                      <div class="title">
+                        <h2 class="title" style="clear: both"><span class="formal-title">Radial compensation</span></h2>
+                      </div>
+                    </div>
+                  </div>
+                  <p><span class="guilabel">Pre-plunge</span>: During finishing, the tool is plunged at the transition of the defined contour from the axial to the radial direction. Removing material here prevents the tool from engaging with two sides of the insert at the same time in the following machining step. The <span class=
+                  "guilabel">Pre-plunge</span> option also supports smaller retraction movements.</p>
+                  <div class="informalfigure">
+                    <div class="mediaobject">
+                      <table class="image-viewport" style="border-collapse:collapse;border:0; width:638px;">
+                        <tr>
+                          <td style="padding:0;"><img src="image/uuid-74293d5f-75cb-0d69-41b1-c55e29c0bb66.svg" style="max-width: 638px;" alt="drehen_vorstechen.svg" /></td>
+                        </tr>
+                      </table>
+                    </div>
+                  </div>
+                </section>
+                <section dir="ltr" class="section internal" data-origin-id="" data-publication-date="" id="id98028">
+                  <div class="titlepage">
+                    <div>
+                      <div class="title">
+                        <h2 class="title" style="clear: both"><span class="formal-title">Type of cut</span></h2>
+                      </div>
+                    </div>
+                  </div>
+                  <p><span class="guilabel">Finishing one direction</span>: Material is removed with up and down movements. Since upward movements on vertical walls can lead to a risk of collision between the tool holder and the stockmodel geometry, not all geometries can be machined.</p>
+                  <div class="mediaobject">
+                    <table class="image-viewport" style="border-collapse:collapse;border:0; width:461px;">
+                      <tr style="height: 230px">
+                        <td style="padding:0;"><img src="image/uuid-bacf56ac-b57a-14cf-57cd-0f9053466272.svg" style="max-width: 461px; max-height: 230px;" alt="drehen_einstechen_schlichten_eine_richtung.svg" /></td>
+                      </tr>
+                    </table>
+                  </div>
+                  <p><span class="guilabel">Downward</span>: Material is removed with downward movements only.</p>
+                  <p><span class="guilabel">Side allowance</span> (1): Allowance in Z direction.</p>
+                  <p><span class="guilabel">Overlap</span> (2): A path overlap to avoid collision with perpendicular walls (residual stock). The value should always be slightly larger than the radius of the tool.</p>
+                  <div class="informalfigure">
+                    <div class="mediaobject">
+                      <table class="image-viewport" style="border-collapse:collapse;border:0; width:638px;">
+                        <tr>
+                          <td style="padding:0;"><img src="image/uuid-a3568f97-6727-6f65-bd85-658ac4bbf03e.svg" style="max-width: 638px;" alt="drehen_einstechen_seit_aufmass_ueberlappung.svg" /></td>
+                        </tr>
+                      </table>
+                    </div>
+                  </div>
+                </section>
+              </section>
+              <div class="footer-content">
+                <div class="section-toc section-toc-after">
+                  <div class="section-toc-title">
+                    <span class="section-toc-title-delimiter">:</span>
+                  </div>
+                </div>
+              </div>
+              <footer></footer>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="x-ua-compatible" content="IE=edge" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="search" content="default" />
+  <meta name="use.ic" content="no" />
+  <meta name="tocstandalone" content="yes" />
+  <script type="text/javascript">
+  //<![CDATA[
+                        var index;
+                        var contentLanguage = 'en-US';
+                        var enterKey = 'select';
+                        
+                                        var anchoroption = true;
+                                var instantsearch_minlength = 1;
+                                                
+                                var fuse_threshold = 0.3;
+                        
+                                        var local_csh = false;
+                                
+                        var useanchorlinks = false;
+  //]]>
+  </script>
+  <title>Define tool in a job</title>
+  <link rel="stylesheet" type="text/css" href="../css/docbook.css" />
+  <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" href="../css/bootstrap-theme.min.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style-common.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style-responsive.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style-print.css" />
+  <link rel="stylesheet" type="text/css" href="../css/font-awesome.css" />
+  <link rel="stylesheet" type="text/css" href="../css/custom.css" />
+  <link rel="stylesheet" type="text/css" href="../css/layout-custom-style.css" />
+  <script src="../js/jquery-1.10.2.min.js" type="text/javascript"></script>
+  <script src="../js/jquery-ui-1.10.3.custom.min.js" type="text/javascript"></script>
+  <script src="../js/bootstrap.min.js" type="text/javascript"></script>
+  <script src="../js/purl.js" type="text/javascript"></script>
+  <script src="../js/jquery.event.move.js" type="text/javascript"></script>
+  <script src="../js/jquery.event.swipe.js" type="text/javascript"></script>
+  <script src="../js/jquery.sticky.js" type="text/javascript"></script>
+  <script src="../js/respond.min.js" type="text/javascript"></script>
+  <script src="../js/script.js" type="text/javascript"></script>
+  <script src="js/toc.js" type="text/javascript"></script>
+  <script src="../js/create-toc.js" type="text/javascript"></script>
+  <script src="../js/clipboard.min.js" type="text/javascript"></script>
+  <script src="../js/fuse.min.js" type="text/javascript"></script>
+  <script src="../js/jquery.mark.min.js" type="text/javascript"></script>
+  <script src="../js/html5.fuse.search.js" type="text/javascript"></script>
+  <script src="js/fuzzydata.js" type="text/javascript"></script>
+  <script src="../js/csh.js" type="text/javascript"></script>
+  <script src="../js/highlight-mergehtml-plugin.js" type="text/javascript"></script>
+  <meta name="generator" content="Paligo" />
+  <link rel="prev" href="UUID-e88269a4-6119-c8d2-bf1b-10ef12890234.html" title="Define turning tool" />
+  <link rel="next" href="UUID-ec461cf6-848f-19df-0890-65ab25993fcc.html#id76770" title="" />
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js?config=TeX-MML-AM_CHTML" async="async"></script>
+  <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+  <script type="text/javascript" src="../js/cookie-consent.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  <script type="text/javascript">
+  //<![CDATA[
+                        $(document).on('ready ajaxComplete', function() {
+                                
+                                hljs.addPlugin(mergeHTMLPlugin);
+                                hljs.configure({'ignoreUnescapedHTML': true});
+                                
+                                $('pre:not(.embedcode)').each(function() {
+                                        /**
+                                         * @type {string}
+                                         */
+                                        var language = $(this).data('language');
+
+                                        if (language === 'plaintext' || language === 'text') {
+                                                $(this).addClass(language).addClass('hljs');
+                                                return true;
+                                        }
+                                        else {
+                                                var clone = this.cloneNode(true);
+                                                hljs.highlightElement(clone);
+                                                $(this).empty().append($(clone).contents());
+                                                $(this).attr("class", $(clone).attr("class"));
+                                        }
+                                });
+                        });
+  //]]>
+  </script>
+  <style type="text/css">
+  /*<![CDATA[*/
+            div.skipnav {
+            }
+            div.skipnav a {
+                position: fixed;
+                left: -10000px;
+                top: 1.5em;
+                width: 1px;
+                height: 1px;
+                overflow: hidden;
+            }
+            div.skipnav a:focus, div.skipnav a:active, div.skipnav a:hover {
+                background: white;
+                color: black;
+                box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.5);
+                position: fixed;
+                left: 2em;
+                top: 1.5em;
+                width: auto;
+                height: auto;
+                overflow: visible;
+                text-decoration: underline;
+                z-index: 99999; /* has to be higher than the side panel */
+    }
+  /*]]>*/
+  </style>
+</head>
+<body data-link-prefix="">
+  <div class="skipnav">
+    <a href="#content-wrapper">Skip to main content</a>
+  </div>
+  <div id="page" class="clearfix">
+    <div id="header">
+      <div class="container">
+        <div id="logotype-container" class="pull-left">
+          <a href="../index.html"><img id="logotype-pageheader" src="../css/image/corporate-logo.png" alt="Corporate logotype" data-role="logotype" /></a>
+        </div>
+        <div id="pagetools-container" class="pull-right">
+          <ul id="page-tools">
+            <li class="page-tools-search"><input placeholder="Search" type="text" class="form-control" aria-label="Search" id="search" /></li>
+            <li class="page-tools-print">
+              <a href="javascript:window.print();"><span class="tool-label">Print</span><span class="glyphicon glyphicon-print"></span></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <h1 id="publication-title">CAM</h1>
+    <div id="subheader-sticky-wrapper" class="sticky-wrapper">
+      <div id="subheader">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3 toc-title">
+              <h2><a class="prev nav-icon hidden-lg hidden-md" href="UUID-e88269a4-6119-c8d2-bf1b-10ef12890234.html"><span class="glyphicon glyphicon-chevron-left"></span></a> <a href="#toc" class="hidden mobile-nav-toggle"><span class="glyphicon glyphicon-list"></span>Table of Contents</a><span class="toc-label">Table of Contents</span><a class=
+              "next nav-icon hidden-lg hidden-md" href="UUID-ec461cf6-848f-19df-0890-65ab25993fcc.html#id76770"><span class="glyphicon glyphicon-chevron-right"></span></a></h2>
+            </div>
+            <div class="col-md-9 breadcrumb-container">
+              <ul class="breadcrumb">
+                <li class="breadcrumb-link">
+                  <span class="glyphicon glyphicon-home"></span>&nbsp;<a href="index-en-US.html">CAM</a>
+                </li>
+                <li class="breadcrumb-link">
+                  <a href="UUID-0751db51-8b5b-ae49-1904-dce4b8c92263.html">Basics of CAM editing</a>
+                </li>
+                <li class="breadcrumb-link">
+                  <a href="UUID-288a81df-e730-2f52-ecde-db580f959db0.html">Tool management</a>
+                </li>
+                <li class="breadcrumb-node">Define tool in a job</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="main-content">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 toc-container" id="toc-wrapper">
+            <div id="toc-placeholder">
+              <div id="toc-standalone-placeholder"></div>
+            </div>
+          </div>
+          <div class="col-md-9 content-container" id="content-wrapper">
+            <a accesskey="p" class="prev pull-left prev visible-lg visible-md" id="header-navigation-prev" href="UUID-e88269a4-6119-c8d2-bf1b-10ef12890234.html"><span class="glyphicon glyphicon-circle-arrow-left"></span>Prev</a><a accesskey="n" class="pull-right next visible-lg visible-md" id="header-navigation-next" href=
+            "UUID-ec461cf6-848f-19df-0890-65ab25993fcc.html#id76770">Next<span class="glyphicon glyphicon-circle-arrow-right"></span></a>
+            <div id="topic-content">
+              <section xml:lang="en-US" lang="en-US" dir="ltr" class="section" data-origin-id="UUID-81de6bc8-69d5-fa25-d3fd-84d6f581083b" data-publication-date="" id="UUID-ec461cf6-848f-19df-0890-65ab25993fcc">
+                <div class="titlepage">
+                  <div>
+                    <div class="title">
+                      <h1 class="title" style="clear: both"><span class="formal-title">Define tool in a job</span></h1>
+                    </div>
+                  </div>
+                </div>
+                <div class="procedure">
+                  <ol class="procedure" type="1">
+                    <li class="step">
+                      <p>Create the required job and switch to the <span class="guilabel">Tools</span> dialogue page.</p>
+                    </li>
+                    <li class="step">
+                      <p>Select the tool type (1) and a defined tool (2).</p>
+                    </li>
+                  </ol>
+                </div>
+                <div class="mediaobject">
+                  <table class="image-viewport" style="border-collapse:collapse;border:0; ;">
+                    <tr style="height: 76px">
+                      <td style="padding:0;"><img src="image/uuid-03a856dd-6ff2-c862-b776-cf969344c025.svg" style="max-height: 76px;" alt="select_tooltyp_2025.svg" /></td>
+                    </tr>
+                  </table>
+                </div>
+                <section dir="ltr" class="section" data-origin-id="" data-publication-date="" id="id76770">
+                  <div class="titlepage"></div>
+                  <div class="informaltable table-responsive">
+                    <table style="width:100%;" class="informaltable">
+                      <colgroup>
+                        <col style="width:12%;" />
+                        <col style="width:88%;" />
+                      </colgroup>
+                      <tbody>
+                        <tr>
+                          <td class="td">
+                            <div class="mediaobject"><img src="image/uuid-e5e727ca-4311-1464-96f8-5c0ef54e0a26.svg" style="" alt="hm_document_tools_fromTool_DB.svg" /></div>
+                          </td>
+                          <td class="td">
+                            <p>Select NC tool from external tools database.</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="td">
+                            <div class="mediaobject"><img src="image/uuid-5720f9ff-2bce-52fa-44a7-3a5fa119ebe9.svg" style="" alt="hm_document_tools_tool_def.svg" /></div>
+                          </td>
+                          <td class="td">
+                            <p>Create a new document tool</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="td">
+                            <div class="mediaobject"><img src="image/uuid-97f953c1-4424-d4f0-018a-9f27c523ff9d.svg" style="" alt="hm_edit_tool_type_edit_nctool.svg" /></div>
+                          </td>
+                          <td class="td">
+                            <p>Edit a document tool</p>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </section>
+                <section dir="ltr" class="section" data-origin-id="" data-publication-date="" id="UUID-ec461cf6-848f-19df-0890-65ab25993fcc_section-idm234752518285144">
+                  <div class="titlepage">
+                    <div>
+                      <div class="title">
+                        <h2 class="title" style="clear: both"><span class="formal-title">Turning with turret</span></h2>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="informaltable table-responsive">
+                    <table style="width:100%;" class="informaltable">
+                      <colgroup>
+                        <col style="width:12%;" />
+                        <col style="width:88%;" />
+                      </colgroup>
+                      <tbody>
+                        <tr>
+                          <td class="td">
+                            <div class="mediaobject"><img src="image/uuid-773605c5-c52d-5e80-bbee-372ddcdd2d1d.svg" style="" alt="hm_filter_open_filter.svg" /></div>
+                          </td>
+                          <td class="td">
+                            <p>Available if a machine with turret for turning jobs is defined in the job list. Only the mounted tools are displayed in the tool selection list.</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="td">
+                            <div class="mediaobject"><img src="image/uuid-afb5f33b-8d6e-43a9-f531-4148467b3ca8.svg" style="" alt="hm_filter_open_filter_turret_tools_all.svg" /></div>
+                          </td>
+                          <td class="td">
+                            <p>Available if a machine with turret for turning jobs is defined in the job list. All defined tools are displayed in the tool selection list.</p>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </section>
+                <section dir="ltr" class="section internal" data-origin-id="" data-publication-date="" id="id76771">
+                  <div class="titlepage">
+                    <div>
+                      <div class="title">
+                        <h2 class="title" style="clear: both"><span class="formal-title">Cutting profile</span></h2>
+                      </div>
+                    </div>
+                  </div>
+                  <p>Technology data defined for the tool used in the job is displayed in the cutting profile.</p>
+                  <section dir="ltr" class="section" data-origin-id="" data-publication-date="" id="UUID-ec461cf6-848f-19df-0890-65ab25993fcc_section-idm234750930972866">
+                    <div class="titlepage">
+                      <div>
+                        <div class="title">
+                          <h3 class="title"><span class="formal-title">Tools included in a tool series</span></h3>
+                        </div>
+                      </div>
+                    </div>
+                    <p><span class="guilabel">Profile mode</span>: The cutting profile parameters are defined in the technology template of the tool series. For information on creating a tool series, see section <span class="guimenuitem">OPEN MIND tool database</span> → <span class="guisubmenu">Tool series and Technology templates</span>.</p>
+                    <p>Select the profile mode <span class="guilabel">Static (compatible)</span> if a type of cut suitable for machining is available for the tool. The parameters of the cutting profile correspond to the standard parameters of the tool.</p>
+                    <p><span class="guilabel">Type of cut</span>: The type of cut is taken from the series definition of the tool. This is defined in the tool database for the material used.</p>
+                    <p>Select the <span class="guilabel">Manual</span> profile mode if no suitable type of cut is available for the tool. The parameters of the cutting profile correspond to the standard parameters of the tool.</p>
+                    <p>In addition, in profile mode <span class="guilabel">Manual</span> it is possible to use the technology of any available type of cut. To do this, select the desired type of cut from the list of cut types.</p>
+                    <p>When switching from profile mode <span class="guilabel">Static (compatible)</span> to profile mode <span class="guilabel">Manual</span>, the parameters of the previously set type of cut are transferred to the cutting profile.</p>
+                  </section>
+                  <section dir="ltr" class="section" data-origin-id="" data-publication-date="" id="UUID-ec461cf6-848f-19df-0890-65ab25993fcc_section-idm234750941734758">
+                    <div class="titlepage">
+                      <div>
+                        <div class="title">
+                          <h3 class="title"><span class="formal-title">Tools that are not included in a tool series</span></h3>
+                        </div>
+                      </div>
+                    </div>
+                    <p><span class="guilabel">Usage</span>: If the tool does not have any cutting profiles stored for the material selected in the job list, the&nbsp;<span class="guilabel">Invariant</span>&nbsp;cutting profile is used.</p>
+                    <p>If the same material as in the job list is defined and multiple usages are defined, then these may be selected in the Cutting profile.</p>
+                    <p><span class="guilabel">Use formula</span>: If technology parameters for document tools are defined by means of a formula, the formula and the respective value of the parameter are displayed and saved.</p>
+                    <p><span class="bold"><strong>Meaning of the icons</strong></span></p>
+                    <div class="mediaobject"><img src="image/uuid-0aa7445c-bc6c-21ac-90eb-ef26a56a8df6.svg" style="" alt="Werkzeug_Schneidprofil.svg" /></div>
+                    <p>(1) The value in the cutting profile corresponds to the value in the technology data of the tool. The value can be changed with a factor. To do so, select the field and enter the required factor.</p>
+                    <p>(2) The value in the cutting profile is adjusted by a factor.</p>
+                    <p>(3) The value in the cutting profile has been adjusted and is no longer linked to the technology data of the tool. Place the mouse pointer over the changed value to display the value of the technology data.</p>
+                    <p>(4) The value in the cutting profile has exceeded the limit defined in the technology data and was automatically reset to the limit.</p>
+                    <p>(5) Click the button to remove the link between the value in the cutting profile and the technology data value. The cutting profile value can now be adjusted as required without changing the value in the technology data and vice versa.</p>
+                    <p>(6) Click the button to restore the link between the cutting profile and technology data. The value in the cutting profile is then overwritten again by the value in the technology data.</p>
+                  </section>
+                </section>
+                <section dir="ltr" class="section internal" data-origin-id="" data-publication-date="" id="id76772">
+                  <div class="titlepage">
+                    <div>
+                      <div class="title">
+                        <h2 class="title" style="clear: both"><span class="formal-title">Location</span></h2>
+                      </div>
+                    </div>
+                  </div>
+                  <p>Only available for <span class="guilabel">Turning tools</span>. Select the desired location under <span class="guilabel">Name</span>. A location comprises a set of the following parameters: tool angle, tool reference, cutting edge position, and reference angle.</p>
+                </section>
+                <section dir="ltr" class="section internal" data-origin-id="" data-publication-date="" id="id76773">
+                  <div class="titlepage">
+                    <div>
+                      <div class="title">
+                        <h2 class="title" style="clear: both"><span class="formal-title">Tool reference</span></h2>
+                      </div>
+                    </div>
+                  </div>
+                  <p><span class="guilabel">Enable</span>: Select the checkbox and select a defined reference point under <span class="guilabel">Name</span>. Applies only to T-slot cutters, for which two reference points (Tip and Disc top) are available by default.</p>
+                  <p><span class="guilabel">Tool reference</span>: The reference point defined in the tool dialog will be displayed, but cannot be edited.</p>
+                </section>
+                <div xml:lang="en-US" lang="en-US" dir="ltr" class="sidebar" id="UUID-ec461cf6-848f-19df-0890-65ab25993fcc_UUID-c1198147-bc34-4758-58e7-cadc80f6b507">
+                  <p><span class="guilabel">Consider corner radius</span>: Function not enabled (1). The infeed distance is based on the total tool diameter. When working with bullnose endmills, material ridges may remain. Function enabled (2): The infeed distance is based on the tool's inner shank (shank diameter – 2x corner radius). Material
+                  ridges are avoided.</p>
+                  <div class="mediaobject">
+                    <table class="image-viewport" style="border-collapse:collapse;border:0; width:638px;">
+                      <tr style="height: 230px">
+                        <td style="padding:0;"><img src="image/uuid-20f36a3c-c3d6-90ec-eb51-5ec82783ee2a.svg" style="max-width: 638px; max-height: 230px;" alt="3D_schruppen_eckenradius.svg" /></td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+                <div xml:lang="en-US" lang="en-US" dir="ltr" class="sidebar" id="UUID-ec461cf6-848f-19df-0890-65ab25993fcc_UUID-d83f9414-b6aa-30c8-3652-e67b8d7a31b8">
+                  <p>The following applies to tools in the <span class="guilabel">3D Automatic Rest Machining</span> cycle:</p>
+                </div>
+                <div xml:lang="en-US" lang="en-US" dir="ltr" class="sidebar internal" id="UUID-ec461cf6-848f-19df-0890-65ab25993fcc_UUID-7dbf67ce-a768-c562-5824-c8b97df9014b">
+                  <div class="titlepage">
+                    <div>
+                      <div>
+                        <div class="sidebar-title">
+                          Reference
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <p>The reference tool is used for the calculation of the rest material areas.</p>
+                  <p><span class="guilabel">Type</span>: Type of reference tool may be different from type of machining tool. When the Rest material reference cycle option is enabled, the previously unmachined rest material area is selected as the area to be machined.</p>
+                  <p><span class="guilabel">Diameter</span>: A requirement is: Reference tool &gt; machining tool.</p>
+                  <div dir="ltr" class="note">
+                    <h3 class="title">Note</h3>
+                    <p>If you select bullnose end mill as a reference tool type, machining is only possible in entire part mode!</p>
+                  </div>
+                </div>
+                <section dir="ltr" class="section internal" data-origin-id="" data-publication-date="" id="id76774">
+                  <div class="titlepage">
+                    <div>
+                      <div class="title">
+                        <h2 class="title" style="clear: both"><span class="formal-title">Frame</span></h2>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="informaltable table-responsive">
+                    <table style="width:100%;" class="informaltable">
+                      <colgroup>
+                        <col style="width:12%;" />
+                        <col style="width:88%;" />
+                      </colgroup>
+                      <tbody>
+                        <tr>
+                          <td class="td">
+                            <div class="mediaobject"><img src="image/uuid-7e82f66a-3deb-c5ff-0819-874f6166f891.svg" style="" alt="hm_edit_tool_type_frame_get_presel.svg" /></div>
+                          </td>
+                          <td class="td">
+                            <p><span class="guilabel">Get preselection</span>: Preselect a frame or origin from the list of frames/origins for job definition.</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="td">
+                            <div class="mediaobject"><img src="image/uuid-430e0ffe-329d-abf9-b035-ddf87a35dcce.svg" style="" alt="hm_edit_tool_type_new_frame.svg" /></div>
+                          </td>
+                          <td class="td">
+                            <p>Define frame</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="td">
+                            <div class="mediaobject"><img src="image/uuid-83f41900-61aa-c035-dca4-eb5b8fe54f35.svg" style="" alt="hm_edit_tool_type_change_frame.svg" /></div>
+                          </td>
+                          <td class="td">
+                            <p>Change frame</p>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <p><span class="guilabel">Free angle</span>: Defines the minimum angle to be maintained between the tool insert and the calculated toolpath (1). Defining a free angle automatically calculates the tool plunge angle. (2) Turning contour, (3) Turning model.</p>
+                  <div class="mediaobject"><img src="image/uuid-bfcd544a-a9b1-72d3-6210-442bebe24965.svg" style="" alt="drehen_werkzeug_freiwinkel.svg" /></div>
+                </section>
+                <section xml:lang="en-US" lang="en-US" dir="ltr" class="section internal" data-origin-id="" data-publication-date="" id="UUID-ec461cf6-848f-19df-0890-65ab25993fcc_UUID-04a97281-9f5d-de02-a628-224ae9f9b6ad">
+                  <div class="titlepage">
+                    <div>
+                      <div class="title">
+                        <h2 class="title" style="clear: both"><span class="formal-title">Free geometry</span></h2>
+                      </div>
+                    </div>
+                  </div>
+                  <p><span class="guilabel">Use free tip geometry for collision check</span>: Enable if the free tip geometry (1) and not the parametric tip geometry (2) should be used to calculate the toolpath, for collision checking and simulation.</p>
+                  <div class="informaltable table-responsive">
+                    <table style="width:100%;" class="informaltable">
+                      <colgroup>
+                        <col style="width:15%;" />
+                        <col style="width:85%;" />
+                      </colgroup>
+                      <tbody>
+                        <tr>
+                          <td valign="top" class="td align-top">
+                            <p><span class="bold"><strong>Example</strong></span></p>
+                          </td>
+                          <td class="td">
+                            <p id="UUID-ec461cf6-848f-19df-0890-65ab25993fcc_para-idm53128285603000">(A) Function not enabled, the tool geometry is in collision with the model geometry.</p>
+                            <p id="UUID-ec461cf6-848f-19df-0890-65ab25993fcc_para-idm53128285615914">(B) Function enabled, no toolpath generated due to collision of the model geometry with the tool geometry.</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td colspan="2" class="td">
+                            <div class="mediaobject">
+                              <table class="image-viewport" style="border-collapse:collapse;border:0; ;">
+                                <tr style="height: 266px">
+                                  <td style="padding:0;"><img src="image/uuid-9d54e918-c156-2633-7c6c-2b0fc4cae57b.svg" style="max-height: 266px;" alt="2D_zyklen_frei_definierte__werkzeugschneide_kollisionskontrolle.svg" /></td>
+                                </tr>
+                              </table>
+                            </div>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div dir="ltr" class="note notice">
+                    <h3 class="title">Supported cycles</h3>
+                    <p>The <span class="guilabel">Use free tip geometry for collision check</span> function is currently available for the following cycles: Contour Milling on 3D Model, Playback Milling and Plunge Milling.</p>
+                  </div>
+                  <p><span class="guilabel">Use free tip geometry for calculation</span>: Enable to use the freely defined tool tip for toolpath calculation and simulation.</p>
+                  <div class="informaltable table-responsive">
+                    <table style="width:100%;" class="informaltable">
+                      <colgroup>
+                        <col style="width:15%;" />
+                        <col style="width:85%;" />
+                      </colgroup>
+                      <tbody>
+                        <tr>
+                          <td valign="top" class="td align-top">
+                            <p><span class="bold"><strong>Example</strong></span></p>
+                          </td>
+                          <td class="td">
+                            <p><span class="guilabel">3D Profile Finishing</span> cycle</p>
+                            <p>(1) Function not enabled (distance tool–model = 0.1).</p>
+                            <p>(2) Function enabled (distance tool–model = 0.0).</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td colspan="2" class="td">
+                            <div class="informalfigure" id="UUID-ec461cf6-848f-19df-0890-65ab25993fcc_figure-5d3ae915bd846-idm45315539288288">
+                              <div class="mediaobject"><img src="image/uuid-e8742442-55af-26fe-c87d-27fdd32095f9.svg" style="" alt="grundlagen_frei_def_schneide_berech.svg" /></div>
+                            </div>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div dir="ltr" class="note notice">
+                    <h3 class="title">Supported cycles / Restrictions</h3>
+                    <p id="UUID-ec461cf6-848f-19df-0890-65ab25993fcc_para-idm53321467242696">The <span class="guilabel">Use free tip geometry for calculation</span> function is currently available for the following cycles: 3D Profile Finishing, 3D Z Level Shape Finishing, 3D Optimized Roughing, 5X Rework Machining, 5X Swarf Cutting one Curve, 5X
+                    Tangent Machining and 5X Cutting Edge Plunge.</p>
+                    <p id="UUID-ec461cf6-848f-19df-0890-65ab25993fcc_para-idm53321467255904">The <span class="guilabel">Use free tip geometry for calculation</span> option cannot be used in combination with the <span class="guilabel">High precision surface mode</span> function (<span class="guilabel">Settings</span> dialog page).</p>
+                  </div>
+                </section>
+                <section dir="ltr" class="section" data-origin-id="" data-publication-date="" id="UUID-ec461cf6-848f-19df-0890-65ab25993fcc_section-idm234750926783722">
+                  <div class="titlepage">
+                    <div>
+                      <div class="title">
+                        <h2 class="title" style="clear: both"><span class="formal-title">Additional functions</span></h2>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="informaltable table-responsive">
+                    <table style="width:100%;" class="informaltable">
+                      <colgroup>
+                        <col style="width:12%;" />
+                        <col style="width:88%;" />
+                      </colgroup>
+                      <tbody>
+                        <tr>
+                          <td class="td">
+                            <div class="mediaobject"><img src="image/uuid-530867ec-37e9-ec9e-d2fa-89790fe4a5fb.svg" style="" alt="3D_view_tool.svg" /></div>
+                          </td>
+                          <td class="td">
+                            <p>Enable 3D view for the tool</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="td">
+                            <div class="mediaobject"><img src="image/uuid-23e53dca-dd66-0875-7351-a92dd3d47750.svg" style="" alt="hm_edit_tool_type_free_para_geo.svg" /></div>
+                          </td>
+                          <td class="td">
+                            <p>Show freely defined tool geometry</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="td">
+                            <div class="mediaobject"><img src="image/uuid-4009c0c6-f022-5a85-0d3a-222938a26e23.svg" style="" alt="hm_edit_tool_type_spindle_speed_limit.svg" /></div>
+                          </td>
+                          <td class="td">
+                            <p>Limit spindle speed.</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="td">
+                            <div class="mediaobject"><img src="image/uuid-fd16e9ea-bb1d-acff-48e9-057cece66870.svg" style="" alt="hm_doc_tool_formula.svg" /></div>
+                          </td>
+                          <td class="td">
+                            <p>Define technology parameters using a formula</p>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </section>
+              </section>
+              <div class="footer-content">
+                <div class="section-toc section-toc-after">
+                  <div class="section-toc-title">
+                    <span class="section-toc-title-delimiter">:</span>
+                  </div>
+                </div>
+              </div>
+              <footer></footer>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

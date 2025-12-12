@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="x-ua-compatible" content="IE=edge" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="search" content="default" />
+  <meta name="use.ic" content="no" />
+  <meta name="tocstandalone" content="yes" />
+  <script type="text/javascript">
+  //<![CDATA[
+                        var index;
+                        var contentLanguage = 'en-US';
+                        var enterKey = 'select';
+                        
+                                        var anchoroption = true;
+                                var instantsearch_minlength = 1;
+                                                
+                                var fuse_threshold = 0.3;
+                        
+                                        var local_csh = false;
+                                
+                        var useanchorlinks = false;
+  //]]>
+  </script>
+  <title>Application dialog page</title>
+  <link rel="stylesheet" type="text/css" href="../css/docbook.css" />
+  <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" href="../css/bootstrap-theme.min.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style-common.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style-responsive.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style-print.css" />
+  <link rel="stylesheet" type="text/css" href="../css/font-awesome.css" />
+  <link rel="stylesheet" type="text/css" href="../css/custom.css" />
+  <link rel="stylesheet" type="text/css" href="../css/layout-custom-style.css" />
+  <script src="../js/jquery-1.10.2.min.js" type="text/javascript"></script>
+  <script src="../js/jquery-ui-1.10.3.custom.min.js" type="text/javascript"></script>
+  <script src="../js/bootstrap.min.js" type="text/javascript"></script>
+  <script src="../js/purl.js" type="text/javascript"></script>
+  <script src="../js/jquery.event.move.js" type="text/javascript"></script>
+  <script src="../js/jquery.event.swipe.js" type="text/javascript"></script>
+  <script src="../js/jquery.sticky.js" type="text/javascript"></script>
+  <script src="../js/respond.min.js" type="text/javascript"></script>
+  <script src="../js/script.js" type="text/javascript"></script>
+  <script src="js/toc.js" type="text/javascript"></script>
+  <script src="../js/create-toc.js" type="text/javascript"></script>
+  <script src="../js/clipboard.min.js" type="text/javascript"></script>
+  <script src="../js/fuse.min.js" type="text/javascript"></script>
+  <script src="../js/jquery.mark.min.js" type="text/javascript"></script>
+  <script src="../js/html5.fuse.search.js" type="text/javascript"></script>
+  <script src="js/fuzzydata.js" type="text/javascript"></script>
+  <script src="../js/csh.js" type="text/javascript"></script>
+  <script src="../js/highlight-mergehtml-plugin.js" type="text/javascript"></script>
+  <meta name="generator" content="Paligo" />
+  <link rel="prev" href="UUID-8dfebf04-e775-39de-81d7-e78bae4f56c0.html#UUID-8dfebf04-e775-39de-81d7-e78bae4f56c0_UUID-84ec0bc8-3037-93be-028d-2dd9f477bbaf" title="Color table" />
+  <link rel="next" href="UUID-ef2f339c-bee7-bd7f-8fef-4568bf9a108f.html#id76731" title="Dialogs" />
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js?config=TeX-MML-AM_CHTML" async="async"></script>
+  <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+  <script type="text/javascript" src="../js/cookie-consent.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  <script type="text/javascript">
+  //<![CDATA[
+                        $(document).on('ready ajaxComplete', function() {
+                                
+                                hljs.addPlugin(mergeHTMLPlugin);
+                                hljs.configure({'ignoreUnescapedHTML': true});
+                                
+                                $('pre:not(.embedcode)').each(function() {
+                                        /**
+                                         * @type {string}
+                                         */
+                                        var language = $(this).data('language');
+
+                                        if (language === 'plaintext' || language === 'text') {
+                                                $(this).addClass(language).addClass('hljs');
+                                                return true;
+                                        }
+                                        else {
+                                                var clone = this.cloneNode(true);
+                                                hljs.highlightElement(clone);
+                                                $(this).empty().append($(clone).contents());
+                                                $(this).attr("class", $(clone).attr("class"));
+                                        }
+                                });
+                        });
+  //]]>
+  </script>
+  <style type="text/css">
+  /*<![CDATA[*/
+            div.skipnav {
+            }
+            div.skipnav a {
+                position: fixed;
+                left: -10000px;
+                top: 1.5em;
+                width: 1px;
+                height: 1px;
+                overflow: hidden;
+            }
+            div.skipnav a:focus, div.skipnav a:active, div.skipnav a:hover {
+                background: white;
+                color: black;
+                box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.5);
+                position: fixed;
+                left: 2em;
+                top: 1.5em;
+                width: auto;
+                height: auto;
+                overflow: visible;
+                text-decoration: underline;
+                z-index: 99999; /* has to be higher than the side panel */
+    }
+  /*]]>*/
+  </style>
+</head>
+<body data-link-prefix="">
+  <div class="skipnav">
+    <a href="#content-wrapper">Skip to main content</a>
+  </div>
+  <div id="page" class="clearfix">
+    <div id="header">
+      <div class="container">
+        <div id="logotype-container" class="pull-left">
+          <a href="../index.html"><img id="logotype-pageheader" src="../css/image/corporate-logo.png" alt="Corporate logotype" data-role="logotype" /></a>
+        </div>
+        <div id="pagetools-container" class="pull-right">
+          <ul id="page-tools">
+            <li class="page-tools-search"><input placeholder="Search" type="text" class="form-control" aria-label="Search" id="search" /></li>
+            <li class="page-tools-print">
+              <a href="javascript:window.print();"><span class="tool-label">Print</span><span class="glyphicon glyphicon-print"></span></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <h1 id="publication-title">CAM</h1>
+    <div id="subheader-sticky-wrapper" class="sticky-wrapper">
+      <div id="subheader">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3 toc-title">
+              <h2><a class="prev nav-icon hidden-lg hidden-md" href="UUID-8dfebf04-e775-39de-81d7-e78bae4f56c0.html#UUID-8dfebf04-e775-39de-81d7-e78bae4f56c0_UUID-84ec0bc8-3037-93be-028d-2dd9f477bbaf"><span class="glyphicon glyphicon-chevron-left"></span></a> <a href="#toc" class="hidden mobile-nav-toggle"><span class=
+              "glyphicon glyphicon-list"></span>Table of Contents</a><span class="toc-label">Table of Contents</span><a class="next nav-icon hidden-lg hidden-md" href="UUID-ef2f339c-bee7-bd7f-8fef-4568bf9a108f.html#id76731"><span class="glyphicon glyphicon-chevron-right"></span></a></h2>
+            </div>
+            <div class="col-md-9 breadcrumb-container">
+              <ul class="breadcrumb">
+                <li class="breadcrumb-link">
+                  <span class="glyphicon glyphicon-home"></span>&nbsp;<a href="index-en-US.html">CAM</a>
+                </li>
+                <li class="breadcrumb-link">
+                  <a href="UUID-0751db51-8b5b-ae49-1904-dce4b8c92263.html">Basics of CAM editing</a>
+                </li>
+                <li class="breadcrumb-link">
+                  <a href="UUID-1c87fc7a-5991-5777-1a2f-50ff8b4b9a61.html">Specifying the basic settings</a>
+                </li>
+                <li class="breadcrumb-node">Application dialog page</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="main-content">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 toc-container" id="toc-wrapper">
+            <div id="toc-placeholder">
+              <div id="toc-standalone-placeholder"></div>
+            </div>
+          </div>
+          <div class="col-md-9 content-container" id="content-wrapper">
+            <a accesskey="p" class="prev pull-left prev visible-lg visible-md" id="header-navigation-prev" href="UUID-8dfebf04-e775-39de-81d7-e78bae4f56c0.html#UUID-8dfebf04-e775-39de-81d7-e78bae4f56c0_UUID-84ec0bc8-3037-93be-028d-2dd9f477bbaf"><span class="glyphicon glyphicon-circle-arrow-left"></span>Prev</a><a accesskey="n" class=
+            "pull-right next visible-lg visible-md" id="header-navigation-next" href="UUID-ef2f339c-bee7-bd7f-8fef-4568bf9a108f.html#id76731">Next<span class="glyphicon glyphicon-circle-arrow-right"></span></a>
+            <div id="topic-content">
+              <section xml:lang="en-US" lang="en-US" dir="ltr" class="section" data-origin-id="UUID-c8b091bb-ddcb-cbfb-bb20-5f5fd892743a" data-publication-date="" id="UUID-ef2f339c-bee7-bd7f-8fef-4568bf9a108f">
+                <div class="titlepage">
+                  <div>
+                    <div class="title">
+                      <h1 class="title" style="clear: both"><span class="formal-title">Application dialog page</span></h1>
+                    </div>
+                  </div>
+                </div>
+                <section dir="ltr" class="section internal" data-origin-id="" data-publication-date="" id="id76731">
+                  <div class="titlepage">
+                    <div>
+                      <div class="title">
+                        <h2 class="title" style="clear: both"><span class="formal-title">Dialogs</span></h2>
+                      </div>
+                    </div>
+                  </div>
+                  <p>Define the dialog control mode (Modal/Modeless) as well as the dialog tabs display mode (text/icons).</p>
+                  <p><span class="guilabel">Show tooltips</span>: Show the tooltips.</p>
+                </section>
+                <section dir="ltr" class="section internal" data-origin-id="" data-publication-date="" id="id76732">
+                  <div class="titlepage">
+                    <div>
+                      <div class="title">
+                        <h2 class="title" style="clear: both"><span class="formal-title">Message mode</span></h2>
+                      </div>
+                    </div>
+                  </div>
+                  <p>Specify the information to be displayed as messages during job definition. These settings do not relate to message windows you call up manually. Each message mode (Severe errors, Errors, Severe warnings, Warnings, Infos) automatically includes the respective next ‘level’.</p>
+                </section>
+                <section dir="ltr" class="section internal" data-origin-id="" data-publication-date="" id="id76733">
+                  <div class="titlepage">
+                    <div>
+                      <div class="title">
+                        <h2 class="title" style="clear: both"><span class="formal-title">Model check</span></h2>
+                      </div>
+                    </div>
+                  </div>
+                  <p><span class="guilabel">Automatic</span>: Changes to the CAD model trigger a consistency check between the defined jobs and the CAD model. If automatic model checking is switched off, it can be performed separately for each job via the job or joblist’s shortcut menu. Regardless of this setting, a model check is always carried
+                  out before generating the toolpaths.</p>
+                </section>
+                <section dir="ltr" class="section internal" data-origin-id="" data-publication-date="" id="id76734">
+                  <div class="titlepage">
+                    <div>
+                      <div class="title">
+                        <h2 class="title" style="clear: both"><span class="formal-title">Licensing</span></h2>
+                      </div>
+                    </div>
+                  </div>
+                  <p><span class="guilabel">License status</span>: Shows the status of your <span class="italic">hyper</span>MILL licenses.</p>
+                  <p><span class="guilabel">All products</span>: Locked and available products are displayed.</p>
+                  <p><span class="guilabel">Locked products</span>: Only locked products are displayed.</p>
+                  <p><span class="guilabel">Licensed products</span>: Only available (and licensed) products are displayed.</p>
+                  <p>If you work with network licenses, you can reserve specific licenses for your computer when you start <span class="italic">hyper</span>MILL. Select the product that you want to lock and enable the <span class="guilabel">Lock on start</span> option.</p>
+                  <p>For more information on network installations, refer to the installation guide for your product.</p>
+                  <p><span class="guilabel">Show locked products only:</span> When you create a new job, only those products that are available for your computer (locked products) are displayed.</p>
+                </section>
+                <section dir="ltr" class="section internal" data-origin-id="" data-publication-date="" id="id76735">
+                  <div class="titlepage">
+                    <div>
+                      <div class="title">
+                        <h2 class="title" style="clear: both"><span class="formal-title">2D compatibility</span></h2>
+                      </div>
+                    </div>
+                  </div>
+                  <p><span class="guilabel">Limit 2D jobs to NCS</span>: You cannot select frames in 2D jobs. Select this setting if you are only going to program on the NCS (program zero point) and your postprocessor is not suitable for multi-axis indexing.</p>
+                </section>
+                <section dir="ltr" class="section internal" data-origin-id="" data-publication-date="" id="id76736">
+                  <div class="titlepage">
+                    <div>
+                      <div class="title">
+                        <h2 class="title" style="clear: both"><span class="formal-title">Default paths</span></h2>
+                      </div>
+                    </div>
+                  </div>
+                  <p>Paths for saving files generated with <span class="italic">hyper</span>MILL. Use the following icons to make changes.</p>
+                  <div class="informaltable table-responsive">
+                    <table style="width:100%;" class="informaltable">
+                      <colgroup>
+                        <col style="width:12%;" />
+                        <col style="width:88%;" />
+                      </colgroup>
+                      <tbody>
+                        <tr>
+                          <td class="td">
+                            <div class="mediaobject">
+                              <table class="image-viewport" style="border-collapse:collapse;border:0; ;">
+                                <tr style="height: 48px">
+                                  <td style="padding:0;"><img src="image/uuid-7557098a-3575-7924-b611-8a9e25276d89.svg" style="max-height: 48px;" alt="icons_brows_bot_add_del.svg" /></td>
+                                </tr>
+                              </table>
+                            </div>
+                          </td>
+                          <td valign="middle" class="td align-middle">
+                            <p>Add/remove directory.</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="td">
+                            <div class="mediaobject">
+                              <table class="image-viewport" style="border-collapse:collapse;border:0; ;">
+                                <tr style="height: 48px">
+                                  <td style="padding:0;"><img src="image/uuid-9327bb02-fb54-c1da-ff21-e23418149739.svg" style="max-height: 48px;" alt="icons_brows_bot_select_folder.svg" /></td>
+                                </tr>
+                              </table>
+                            </div>
+                          </td>
+                          <td valign="middle" class="td align-middle">
+                            <p>Change path.</p>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <p><span class="guilabel">Global Working Space</span>: Location for storing all data that is generated by <span class="italic">hyper</span>MILL (toolpaths, models, databases and so on). Changes are possible only using the <span class="italic">hyper</span>MILL SettingsWizard (hmInit.exe).</p>
+                  <p><span class="guilabel">hyperMILL search path</span>: The directories are set by default but can be changed if required. Once paths have been correctly set here, only the name of each file needs to be entered for all further processes.</p>
+                  <p><span class="guilabel">Temporary files</span>: Only temporary files needed within the program, including, for example, boundary files ( <code class="filename">*.bnd</code>), profile files ( <code class="filename">*.prf</code>) and calculation files for individual cycles ( <code class="filename">*.omx</code>).</p>
+                  <p><span class="guilabel">Configuration files</span>: User-specific default settings.</p>
+                  <p><span class="guilabel">Projects</span>: Files will be stored in this directory if you have selected the <span class="guilabel">Project directories</span> option on the Document dialog page of the Setup <span class="italic">hyper</span>MILL dialog.</p>
+                  <p><span class="guilabel">3DF files</span>: Directory for polyhedron files (mathematical collision models for calculating toolpaths).</p>
+                  <p><span class="guilabel">Hmrep files</span>: Directory for temporary geometry data.</p>
+                  <p><span class="guilabel">Stock files</span>: Directory for stock files in <code class="filename">*.STL</code> or <code class="filename">*.VIS</code> format.</p>
+                  <p><span class="guilabel">Toolpaths</span>: Directory for toolpaths with information that is required to generate an NC program.</p>
+                  <p><span class="guilabel">Backup files</span>: Directory for <code class="filename">*.hyperMILL</code>backup files.</p>
+                  <p><span class="guilabel">Report files</span>: Directory for report files with messages output from the program during toolpath calculation (error messages, warnings and so on).</p>
+                  <p><span class="guilabel">NC files</span>: Directory for NC files (postprocessor run).</p>
+                  <p><span class="guilabel">Export- / Import files</span>: Directory for the exported or imported jobs of a job list.</p>
+                  <p><span class="guilabel">Macros</span>: Directory for macro files.</p>
+                  <p><span class="guilabel">CPF files</span>: Directory for Customized Process Feature files.</p>
+                  <p><span class="guilabel">Programming tasks</span>: This is only shown if the corresponding license has been purchased and after launching tire machining.</p>
+                  <p><span class="guilabel">AddIns</span>: Not used currently.</p>
+                  <p><span class="bold"><strong><span class="phrase"><span class="application">AUTOMATION Center</span></span>:</strong></span> Default path to store data generated or used by the <span class="phrase"><span class="application">AUTOMATION Center</span></span>, such as fixtures, features, stock models or reports.</p>
+                  <p><span class="guilabel">Turret setup</span>: Directory for saving exported turret setup.</p>
+                </section>
+                <section dir="ltr" class="section internal" data-origin-id="" data-publication-date="" id="id76737">
+                  <div class="titlepage">
+                    <div>
+                      <div class="title">
+                        <h2 class="title" style="clear: both"><span class="formal-title">Performance</span></h2>
+                      </div>
+                    </div>
+                  </div>
+                  <p><span class="guilabel">Use all CPU resources for cycle computing</span>: The majority of cycles support multi-core processors and perform calculations in parallel. If this option is selected, all of your computer's CPU resources will be used for cycle computing. Please note that the simultaneous use of <span class=
+                  "italic">hyper</span>MILL for interactive work during a calculation may slow down the system. If the option is not selected, a part of your computer's CPU resources will be available during cycle computing for simultaneous <span class="italic">hyper</span>MILL use, which means that toolpath calculation may be slowed down as a
+                  result.</p>
+                </section>
+                <section dir="ltr" class="section internal" data-origin-id="" data-publication-date="" id="id76738">
+                  <div class="titlepage">
+                    <div>
+                      <div class="title">
+                        <h2 class="title" style="clear: both"><span class="formal-title">Backup</span></h2>
+                      </div>
+                    </div>
+                  </div>
+                  <p>The <span class="guilabel">Activate</span> option allows <span class="italic">hyper</span>MILL to create backup copies of the CAD model files used ( <code class="filename">*.hmc</code> / <code class="filename">*.e3</code>). Backup files are created as:</p>
+                  <p><code xml:lang="de" lang="de" dir="ltr" class="filename">[Original file name]_ [n].hmc.hyperMILL</code></p>
+                  <p>To open a backup file in <span class="italic">hyper</span>MILL, change the file extension to <code class="filename">*.hmc</code> / <code class="filename">*.e3</code>.</p>
+                  <p><span class="guilabel">Number of backup copies per document</span>: Specifies the number of backup copies per CAD model file. At present, you can create up to 999 backup copies. Each time you save the model file, a backup copy is created. Once the maximum number of backup copies is reached, the backup copy created first is
+                  overwritten.</p>
+                  <p><span class="guilabel">Save backup in user-defined folder</span>: Backup files are saved in a user-defined directory. This directory is either the directory displayed under <span class="guimenu">Default paths</span> → <span class="guisubmenu">Backup files</span> or (if the <span class="guilabel">Project directories</span>
+                  option has been enabled on the <span class="guilabel">Document</span> dialog page) in the corresponding <span class="guilabel">project directory</span>.</p>
+                  <p><span class="guilabel">Save backup in same folder as original</span>: Backup files are saved in the same folder as the original file.</p>
+                </section>
+              </section>
+              <div class="footer-content">
+                <div class="section-toc section-toc-after">
+                  <div class="section-toc-title">
+                    <span class="section-toc-title-delimiter">:</span>
+                  </div>
+                </div>
+              </div>
+              <footer></footer>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

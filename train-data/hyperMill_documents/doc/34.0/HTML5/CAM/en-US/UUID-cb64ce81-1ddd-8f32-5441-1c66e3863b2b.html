@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="x-ua-compatible" content="IE=edge" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="search" content="default" />
+  <meta name="use.ic" content="no" />
+  <meta name="tocstandalone" content="yes" />
+  <script type="text/javascript">
+  //<![CDATA[
+                        var index;
+                        var contentLanguage = 'en-US';
+                        var enterKey = 'select';
+                        
+                                        var anchoroption = true;
+                                var instantsearch_minlength = 1;
+                                                
+                                var fuse_threshold = 0.3;
+                        
+                                        var local_csh = false;
+                                
+                        var useanchorlinks = false;
+  //]]>
+  </script>
+  <title>5 axes</title>
+  <link rel="stylesheet" type="text/css" href="../css/docbook.css" />
+  <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" href="../css/bootstrap-theme.min.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style-common.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style-responsive.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style-print.css" />
+  <link rel="stylesheet" type="text/css" href="../css/font-awesome.css" />
+  <link rel="stylesheet" type="text/css" href="../css/custom.css" />
+  <link rel="stylesheet" type="text/css" href="../css/layout-custom-style.css" />
+  <script src="../js/jquery-1.10.2.min.js" type="text/javascript"></script>
+  <script src="../js/jquery-ui-1.10.3.custom.min.js" type="text/javascript"></script>
+  <script src="../js/bootstrap.min.js" type="text/javascript"></script>
+  <script src="../js/purl.js" type="text/javascript"></script>
+  <script src="../js/jquery.event.move.js" type="text/javascript"></script>
+  <script src="../js/jquery.event.swipe.js" type="text/javascript"></script>
+  <script src="../js/jquery.sticky.js" type="text/javascript"></script>
+  <script src="../js/respond.min.js" type="text/javascript"></script>
+  <script src="../js/script.js" type="text/javascript"></script>
+  <script src="js/toc.js" type="text/javascript"></script>
+  <script src="../js/create-toc.js" type="text/javascript"></script>
+  <script src="../js/clipboard.min.js" type="text/javascript"></script>
+  <script src="../js/fuse.min.js" type="text/javascript"></script>
+  <script src="../js/jquery.mark.min.js" type="text/javascript"></script>
+  <script src="../js/html5.fuse.search.js" type="text/javascript"></script>
+  <script src="js/fuzzydata.js" type="text/javascript"></script>
+  <script src="../js/csh.js" type="text/javascript"></script>
+  <script src="../js/highlight-mergehtml-plugin.js" type="text/javascript"></script>
+  <meta name="generator" content="Paligo" />
+  <link rel="prev" href="UUID-aae0ac21-2e61-aa53-a6cc-1a49ed585995.html#id133238" title="Safety" />
+  <link rel="next" href="UUID-cb64ce81-1ddd-8f32-5441-1c66e3863b2b.html#id133252" title="Inclination strategy" />
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js?config=TeX-MML-AM_CHTML" async="async"></script>
+  <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+  <script type="text/javascript" src="../js/cookie-consent.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  <script type="text/javascript">
+  //<![CDATA[
+                        $(document).on('ready ajaxComplete', function() {
+                                
+                                hljs.addPlugin(mergeHTMLPlugin);
+                                hljs.configure({'ignoreUnescapedHTML': true});
+                                
+                                $('pre:not(.embedcode)').each(function() {
+                                        /**
+                                         * @type {string}
+                                         */
+                                        var language = $(this).data('language');
+
+                                        if (language === 'plaintext' || language === 'text') {
+                                                $(this).addClass(language).addClass('hljs');
+                                                return true;
+                                        }
+                                        else {
+                                                var clone = this.cloneNode(true);
+                                                hljs.highlightElement(clone);
+                                                $(this).empty().append($(clone).contents());
+                                                $(this).attr("class", $(clone).attr("class"));
+                                        }
+                                });
+                        });
+  //]]>
+  </script>
+  <style type="text/css">
+  /*<![CDATA[*/
+            div.skipnav {
+            }
+            div.skipnav a {
+                position: fixed;
+                left: -10000px;
+                top: 1.5em;
+                width: 1px;
+                height: 1px;
+                overflow: hidden;
+            }
+            div.skipnav a:focus, div.skipnav a:active, div.skipnav a:hover {
+                background: white;
+                color: black;
+                box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.5);
+                position: fixed;
+                left: 2em;
+                top: 1.5em;
+                width: auto;
+                height: auto;
+                overflow: visible;
+                text-decoration: underline;
+                z-index: 99999; /* has to be higher than the side panel */
+    }
+  /*]]>*/
+  </style>
+</head>
+<body data-link-prefix="">
+  <div class="skipnav">
+    <a href="#content-wrapper">Skip to main content</a>
+  </div>
+  <div id="page" class="clearfix">
+    <div id="header">
+      <div class="container">
+        <div id="logotype-container" class="pull-left">
+          <a href="../index.html"><img id="logotype-pageheader" src="../css/image/corporate-logo.png" alt="Corporate logotype" data-role="logotype" /></a>
+        </div>
+        <div id="pagetools-container" class="pull-right">
+          <ul id="page-tools">
+            <li class="page-tools-search"><input placeholder="Search" type="text" class="form-control" aria-label="Search" id="search" /></li>
+            <li class="page-tools-print">
+              <a href="javascript:window.print();"><span class="tool-label">Print</span><span class="glyphicon glyphicon-print"></span></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <h1 id="publication-title">CAM</h1>
+    <div id="subheader-sticky-wrapper" class="sticky-wrapper">
+      <div id="subheader">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3 toc-title">
+              <h2><a class="prev nav-icon hidden-lg hidden-md" href="UUID-aae0ac21-2e61-aa53-a6cc-1a49ed585995.html#id133238"><span class="glyphicon glyphicon-chevron-left"></span></a> <a href="#toc" class="hidden mobile-nav-toggle"><span class="glyphicon glyphicon-list"></span>Table of Contents</a><span class="toc-label">Table of
+              Contents</span><a class="next nav-icon hidden-lg hidden-md" href="UUID-cb64ce81-1ddd-8f32-5441-1c66e3863b2b.html#id133252"><span class="glyphicon glyphicon-chevron-right"></span></a></h2>
+            </div>
+            <div class="col-md-9 breadcrumb-container">
+              <ul class="breadcrumb">
+                <li class="breadcrumb-link">
+                  <span class="glyphicon glyphicon-home"></span>&nbsp;<a href="index-en-US.html">CAM</a>
+                </li>
+                <li class="breadcrumb-link">
+                  <a href="UUID-612c317b-197f-d0fa-8b72-ad4799e69646.html">5X Machining</a>
+                </li>
+                <li class="breadcrumb-link">
+                  <a href="UUID-6ecec7ba-7b8e-f18d-e4e5-e5bf1f989b6a.html">Surface Milling</a>
+                </li>
+                <li class="breadcrumb-link">
+                  <a href="UUID-af9ec674-4b62-ba74-d1c8-8f9aa0da226b.html">Tangent Machining</a>
+                </li>
+                <li class="breadcrumb-node">5 axes</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="main-content">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 toc-container" id="toc-wrapper">
+            <div id="toc-placeholder">
+              <div id="toc-standalone-placeholder"></div>
+            </div>
+          </div>
+          <div class="col-md-9 content-container" id="content-wrapper">
+            <a accesskey="p" class="prev pull-left prev visible-lg visible-md" id="header-navigation-prev" href="UUID-aae0ac21-2e61-aa53-a6cc-1a49ed585995.html#id133238"><span class="glyphicon glyphicon-circle-arrow-left"></span>Prev</a><a accesskey="n" class="pull-right next visible-lg visible-md" id="header-navigation-next" href=
+            "UUID-cb64ce81-1ddd-8f32-5441-1c66e3863b2b.html#id133252">Next<span class="glyphicon glyphicon-circle-arrow-right"></span></a>
+            <div id="topic-content">
+              <section xml:lang="en-US" lang="en-US" dir="ltr" class="section" data-origin-id="UUID-1c4995d1-5b84-01d0-7364-1388ce6b4ca5" data-publication-date="" id="UUID-cb64ce81-1ddd-8f32-5441-1c66e3863b2b">
+                <div class="titlepage">
+                  <div>
+                    <div class="title">
+                      <h1 class="title" style="clear: both"><span class="formal-title">5 axes</span></h1>
+                    </div>
+                  </div>
+                </div>
+                <section dir="ltr" class="section internal" data-origin-id="" data-publication-date="" id="id133252">
+                  <div class="titlepage">
+                    <div>
+                      <div class="title">
+                        <h2 class="title" style="clear: both"><span class="formal-title">Inclination strategy</span></h2>
+                      </div>
+                    </div>
+                  </div>
+                  <p>Define the mode for the tool inclination.</p>
+                  <p>Use the <span class="guilabel">Iso</span> option (1) to set the tool orientation to the Iso lines of the surface (A).</p>
+                  <p>Select <span class="guilabel">Normal to curve</span> mode (2) if the tool should be aligned along the normals of the toolpath (B).</p>
+                  <p><span class="guilabel">Radial Z</span> (3) is the preferred selection for machining rotationally symmetrical models. The tool is aligned to the Z axis of the frame (C).</p>
+                  <div class="informalfigure">
+                    <div class="mediaobject">
+                      <table class="image-viewport" style="border-collapse:collapse;border:0; ;">
+                        <tr style="height: 266px">
+                          <td style="padding:0;"><img src="image/uuid-fb113185-7919-356e-577f-bef219034636.svg" style="max-height: 266px;" alt="5X_tangentialbearbeitung_5Achsen_anstellstrategie.svg" /></td>
+                        </tr>
+                      </table>
+                    </div>
+                  </div>
+                </section>
+                <section dir="ltr" class="section internal" data-origin-id="" data-publication-date="" id="id133265">
+                  <div class="titlepage">
+                    <div>
+                      <div class="title">
+                        <h2 class="title" style="clear: both"><span class="formal-title">Tilt parameters</span></h2>
+                      </div>
+                    </div>
+                  </div>
+                  <p>Control the inclination depending on the tool type.</p>
+                  <p>For barrel tools and lollipops, use <span class="guimenuitem">Tilt parameters</span> → <span class="guisubmenu">Contact parameters</span> to specify the contact point of the tool with the surface to be machined. The permissible value range is from 0 to 1. A setting of 1 will guide the tool along the surface based on the upper
+                  contact point (1) of the barrel radius (2). A setting of 0 will guide the tool based on the lower contact point (3) of the barrel radius.</p>
+                  <p>Activate the <span class="guilabel">Dynamic contact point</span> option in order to dynamically adjust the tool inclination to the surface to be machined.</p>
+                  <p>The contact point of the tool with the machining surface can vary between the <span class="guilabel">Contact parameter</span> (1) and the <span class="guilabel">Contact end parameter</span> (3). The permissible value range is between 0 and 1 for both parameters. A setting of 1 will guide the tool along the surface based on the
+                  upper contact point (1), a setting of 0 along the lower contact point (3).</p>
+                  <p>The current contact point is calculated automatically between the two values and enables optimum utilization of the tool insert shape. Hub fillet machining is also possible.</p>
+                  <p>Use the <span class="guilabel">Lead angle</span> to specify the tool inclination (4) in the infeed direction (5).</p>
+                  <div class="informalfigure">
+                    <div class="mediaobject">
+                      <table class="image-viewport" style="border-collapse:collapse;border:0; ;">
+                        <tr style="height: 266px">
+                          <td style="padding:0;"><img src="image/uuid-f7d7e591-4aad-714e-1557-eb293035e646.svg" style="max-height: 266px;" alt="5X_tangentialbearbeitung_5achsen_anstellparameter.svg" /></td>
+                        </tr>
+                      </table>
+                    </div>
+                  </div>
+                  <p>For ball mills, end mills and bullnose end mills, use the <span class="guilabel">Tilt angle</span> (1) to specify the tool inclination with reference to the surface to be machined. Use the <span class="guilabel">Lead angle</span> (2) to specify the tool inclination in the infeed direction (3).</p>
+                  <p>Use the <span class="guilabel">Contact offset</span> (4) to move the (contact point) of the tool in the direction of the tool axis. The advantage of this is that surfaces can be efficiently finished tangentially, even when using a standard tool (end mill).</p>
+                  <div class="informalfigure">
+                    <div class="mediaobject">
+                      <table class="image-viewport" style="border-collapse:collapse;border:0; ;">
+                        <tr style="height: NaNpx">
+                          <td style="padding:0;"><img src="image/uuid-11a15f05-066d-82ce-5b06-bce9c5c864ba.svg" style="max-height: NaNpx;" alt="5X_tangentialbearbeitung_5achsen_anstellparameter_kugelfraeser.svg" /></td>
+                        </tr>
+                      </table>
+                    </div>
+                  </div>
+                </section>
+                <section dir="ltr" class="section internal" data-origin-id="" data-publication-date="" id="id133293">
+                  <div class="titlepage">
+                    <div>
+                      <div class="title">
+                        <h2 class="title" style="clear: both"><span class="formal-title">Collision avoidance</span></h2>
+                      </div>
+                    </div>
+                  </div>
+                  <p>Enable the <span class="guilabel">Collision avoidance</span> option to automatically adjust the inclination of the tool in the case of a possible collision. If machining without a collision is not possible, the toolpath is only calculated and executed up to the collision event.</p>
+                  <p>Use the <span class="guilabel">Adjust lead angle</span> to change the lead angle of the tool to avoid collisions, and use Avoid angle (1) to specify by how many degrees the tool is permitted to adjust the lead angle. (2) Collision avoidance not enabled.</p>
+                  <div class="informalfigure">
+                    <div class="mediaobject">
+                      <table class="image-viewport" style="border-collapse:collapse;border:0; ;">
+                        <tr style="height: 299px">
+                          <td style="padding:0;"><img src="image/uuid-8f478141-7993-646d-300f-1096bd11109a.svg" style="max-height: 299px;" alt="5X_tangentialbearbeitung_5Achsen_kollisionsvermeidung.svg" /></td>
+                        </tr>
+                      </table>
+                    </div>
+                  </div>
+                  <p>Use <span class="guilabel">Adjust tilt angle (contact point)</span> to adjust the tilt angle dependent on the surface slope using the contact point.</p>
+                </section>
+              </section>
+              <div class="footer-content">
+                <div class="section-toc section-toc-after">
+                  <div class="section-toc-title">
+                    <span class="section-toc-title-delimiter">:</span>
+                  </div>
+                </div>
+              </div>
+              <footer></footer>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

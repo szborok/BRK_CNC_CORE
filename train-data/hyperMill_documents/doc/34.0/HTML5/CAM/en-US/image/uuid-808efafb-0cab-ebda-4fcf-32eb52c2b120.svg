@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="13cm" height="8cm" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <pattern id="pattern8460" patternTransform="matrix(.034314 .062811 -12.57 6.8674 -29.942 683.08)" xlink:href="#pattern10020"/>
+  <pattern id="pattern10020" patternTransform="matrix(.037862 .069304 -13.87 7.5773 -32.981 765.93)" xlink:href="#pattern5542"/>
+  <pattern id="pattern5542" patternTransform="matrix(.067835 .071971 -10.396 9.7984 -11.429 657.14)" xlink:href="#Strips1_64"/>
+  <pattern id="Strips1_64" width="65" height="1" patternTransform="translate(0) scale(10)" patternUnits="userSpaceOnUse">
+   <rect y="-.5" width="1" height="2"/>
+  </pattern>
+ </defs>
+ <metadata>
+  <rdf:RDF>
+   <cc:Work rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:title/>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <g transform="translate(0 -820.16)">
+  <g>
+   <path d="m12.72 1111.6v-41.579h64.751l57.944-60.821c4.6749-4.813 12.061-9.7688 21.602-9.3864h81.325l-0.22502 111.79z" fill="#d6dfe5" stroke="#4d4d4d" stroke-linecap="round" stroke-linejoin="round" stroke-width=".67654"/>
+   <path d="m13.628 1111.1h225.6" fill="none" stroke="#000" stroke-dasharray="4.26667, 2.13333, 1.06667, 2.13333" stroke-width="1.0667"/>
+   <path d="m153.83 1000.5 84.525-0.5064v-23.406l-82.331 0.50636c-9e-3 0.0442-116.47-77.736-116.56-77.578h-26.869v170.69h65.509l48.66-50.986c5.0805-5.28 15.527-18.053 27.069-18.724z" fill="#7493a7" stroke="#4d4d4d" stroke-linecap="round" stroke-linejoin="round" stroke-width=".67654"/>
+   <path d="m77.798 1070.2v40.96" fill="none" stroke="#4d4d4d" stroke-linecap="round" stroke-linejoin="round" stroke-width=".67654"/>
+  </g>
+  <path d="m238.14 977-82.216 0.34214-116.51-77.738h-26.516l0.24081 169.74 64.683 0.6734 56.908-59.397c5.1634-3.8174 8.873-9.7904 23.894-10.278l79.406-0.45983z" fill="url(#pattern8460)" opacity=".48387" stroke-miterlimit="10"/>
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.6457">
+   <g stroke="#d4aa00">
+    <path d="m133.33 944.67 154.88 0.08c10.865-4.377 9.4434-19.308-0.14741-23.909l-197.37-50.397c-12.632-1.5318-22.796 3.3088-19.599 18.287 6.0989 17.658 34.724 32.919 58.381 32.334l146.85 0.67361c14.295-0.67397 19.161-5.8102 19.535-11.227v-20.209"/>
+    <path d="m90.242 881.22 197.37 63.87c9.5908 4.6016 11.013 19.532 0.14741 23.909h-114.57c-5.6765 0.23455-10.407 0.0178-12.94-1.0021-41.302-24.516-88.963-56.024-92.062-72.527-2.1715-13.679 5.0691-18.534 22.058-14.25z"/>
+    <path d="m106.64 933.43c-6.7513-6.7662-4.3925-13.358-2.4507-17.077 2.7627-4.6642 8.2179-8.5989 18.902-3.9965l60.017 32.39c16.156 8.7443 6.8997 24.401 0.31754 24.451"/>
+    <path d="m114.05 938.83c7.5153 4.8093 12.013 5.3926 19.528 5.8511"/>
+    <path d="m140.87 937.13c-3.7061 5.845-4.2279 12.044-0.31754 18.735"/>
+   </g>
+   <path d="m140.96 936.6v-67.812" stroke="#f00"/>
+   <path d="m295.98 890.75v-21.107" stroke="#f00"/>
+  </g>
+ </g>
+</svg>

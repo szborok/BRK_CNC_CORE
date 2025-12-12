@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="x-ua-compatible" content="IE=edge" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="search" content="default" />
+  <meta name="use.ic" content="no" />
+  <meta name="tocstandalone" content="yes" />
+  <script type="text/javascript">
+  //<![CDATA[
+                        var index;
+                        var contentLanguage = 'en-US';
+                        var enterKey = 'select';
+                        
+                                        var anchoroption = true;
+                                var instantsearch_minlength = 1;
+                                                
+                                var fuse_threshold = 0.3;
+                        
+                                        var local_csh = false;
+                                
+                        var useanchorlinks = false;
+  //]]>
+  </script>
+  <title>11.3.&nbsp;Surface Milling</title>
+  <link rel="stylesheet" type="text/css" href="../css/docbook.css" />
+  <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" href="../css/bootstrap-theme.min.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style-common.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style-responsive.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style-print.css" />
+  <link rel="stylesheet" type="text/css" href="../css/font-awesome.css" />
+  <link rel="stylesheet" type="text/css" href="../css/custom.css" />
+  <link rel="stylesheet" type="text/css" href="../css/layout-custom-style.css" />
+  <script src="../js/jquery-1.10.2.min.js" type="text/javascript"></script>
+  <script src="../js/jquery-ui-1.10.3.custom.min.js" type="text/javascript"></script>
+  <script src="../js/bootstrap.min.js" type="text/javascript"></script>
+  <script src="../js/purl.js" type="text/javascript"></script>
+  <script src="../js/jquery.event.move.js" type="text/javascript"></script>
+  <script src="../js/jquery.event.swipe.js" type="text/javascript"></script>
+  <script src="../js/jquery.sticky.js" type="text/javascript"></script>
+  <script src="../js/respond.min.js" type="text/javascript"></script>
+  <script src="../js/script.js" type="text/javascript"></script>
+  <script src="js/toc.js" type="text/javascript"></script>
+  <script src="../js/create-toc.js" type="text/javascript"></script>
+  <script src="../js/clipboard.min.js" type="text/javascript"></script>
+  <script src="../js/fuse.min.js" type="text/javascript"></script>
+  <script src="../js/jquery.mark.min.js" type="text/javascript"></script>
+  <script src="../js/html5.fuse.search.js" type="text/javascript"></script>
+  <script src="js/fuzzydata.js" type="text/javascript"></script>
+  <script src="../js/csh.js" type="text/javascript"></script>
+  <script src="../js/highlight-mergehtml-plugin.js" type="text/javascript"></script>
+  <meta name="generator" content="Paligo" />
+  <link rel="prev" href="UUID-21fc4eb8-1233-f63a-12f2-fa056f539c7c.html#UUID-21fc4eb8-1233-f63a-12f2-fa056f539c7c_UUID-4cb97274-bd38-747b-f434-bc62f56798a4" title="Advanced 5X" />
+  <link rel="next" href="UUID-6ecec7ba-7b8e-f18d-e4e5-e5bf1f989b6a.html#UUID-6ecec7ba-7b8e-f18d-e4e5-e5bf1f989b6a_UUID-f8c786d6-54ed-72a7-be8c-2b9e466c08ff" title="Overview of cycles" />
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js?config=TeX-MML-AM_CHTML" async="async"></script>
+  <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+  <script type="text/javascript" src="../js/cookie-consent.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  <script type="text/javascript">
+  //<![CDATA[
+                        $(document).on('ready ajaxComplete', function() {
+                                
+                                hljs.addPlugin(mergeHTMLPlugin);
+                                hljs.configure({'ignoreUnescapedHTML': true});
+                                
+                                $('pre:not(.embedcode)').each(function() {
+                                        /**
+                                         * @type {string}
+                                         */
+                                        var language = $(this).data('language');
+
+                                        if (language === 'plaintext' || language === 'text') {
+                                                $(this).addClass(language).addClass('hljs');
+                                                return true;
+                                        }
+                                        else {
+                                                var clone = this.cloneNode(true);
+                                                hljs.highlightElement(clone);
+                                                $(this).empty().append($(clone).contents());
+                                                $(this).attr("class", $(clone).attr("class"));
+                                        }
+                                });
+                        });
+  //]]>
+  </script>
+  <style type="text/css">
+  /*<![CDATA[*/
+            div.skipnav {
+            }
+            div.skipnav a {
+                position: fixed;
+                left: -10000px;
+                top: 1.5em;
+                width: 1px;
+                height: 1px;
+                overflow: hidden;
+            }
+            div.skipnav a:focus, div.skipnav a:active, div.skipnav a:hover {
+                background: white;
+                color: black;
+                box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.5);
+                position: fixed;
+                left: 2em;
+                top: 1.5em;
+                width: auto;
+                height: auto;
+                overflow: visible;
+                text-decoration: underline;
+                z-index: 99999; /* has to be higher than the side panel */
+    }
+  /*]]>*/
+  </style>
+</head>
+<body data-link-prefix="">
+  <div class="skipnav">
+    <a href="#content-wrapper">Skip to main content</a>
+  </div>
+  <div id="page" class="clearfix">
+    <div id="header">
+      <div class="container">
+        <div id="logotype-container" class="pull-left">
+          <a href="../index.html"><img id="logotype-pageheader" src="../css/image/corporate-logo.png" alt="Corporate logotype" data-role="logotype" /></a>
+        </div>
+        <div id="pagetools-container" class="pull-right">
+          <ul id="page-tools">
+            <li class="page-tools-search"><input placeholder="Search" type="text" class="form-control" aria-label="Search" id="search" /></li>
+            <li class="page-tools-print">
+              <a href="javascript:window.print();"><span class="tool-label">Print</span><span class="glyphicon glyphicon-print"></span></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <h1 id="publication-title">CAM</h1>
+    <div id="subheader-sticky-wrapper" class="sticky-wrapper">
+      <div id="subheader">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3 toc-title">
+              <h2><a class="prev nav-icon hidden-lg hidden-md" href="UUID-21fc4eb8-1233-f63a-12f2-fa056f539c7c.html#UUID-21fc4eb8-1233-f63a-12f2-fa056f539c7c_UUID-4cb97274-bd38-747b-f434-bc62f56798a4"><span class="glyphicon glyphicon-chevron-left"></span></a> <a href="#toc" class="hidden mobile-nav-toggle"><span class=
+              "glyphicon glyphicon-list"></span>Table of Contents</a><span class="toc-label">Table of Contents</span><a class="next nav-icon hidden-lg hidden-md" href="UUID-6ecec7ba-7b8e-f18d-e4e5-e5bf1f989b6a.html#UUID-6ecec7ba-7b8e-f18d-e4e5-e5bf1f989b6a_UUID-f8c786d6-54ed-72a7-be8c-2b9e466c08ff"><span class=
+              "glyphicon glyphicon-chevron-right"></span></a></h2>
+            </div>
+            <div class="col-md-9 breadcrumb-container">
+              <ul class="breadcrumb">
+                <li class="breadcrumb-link">
+                  <span class="glyphicon glyphicon-home"></span>&nbsp;<a href="index-en-US.html">CAM</a>
+                </li>
+                <li class="breadcrumb-link">
+                  <a href="UUID-612c317b-197f-d0fa-8b72-ad4799e69646.html">5X Machining</a>
+                </li>
+                <li class="breadcrumb-node">Surface Milling</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="main-content">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 toc-container" id="toc-wrapper">
+            <div id="toc-placeholder">
+              <div id="toc-standalone-placeholder"></div>
+            </div>
+          </div>
+          <div class="col-md-9 content-container" id="content-wrapper">
+            <a accesskey="p" class="prev pull-left prev visible-lg visible-md" id="header-navigation-prev" href="UUID-21fc4eb8-1233-f63a-12f2-fa056f539c7c.html#UUID-21fc4eb8-1233-f63a-12f2-fa056f539c7c_UUID-4cb97274-bd38-747b-f434-bc62f56798a4"><span class="glyphicon glyphicon-circle-arrow-left"></span>Prev</a><a accesskey="n" class=
+            "pull-right next visible-lg visible-md" id="header-navigation-next" href="UUID-6ecec7ba-7b8e-f18d-e4e5-e5bf1f989b6a.html#UUID-6ecec7ba-7b8e-f18d-e4e5-e5bf1f989b6a_UUID-f8c786d6-54ed-72a7-be8c-2b9e466c08ff">Next<span class="glyphicon glyphicon-circle-arrow-right"></span></a>
+            <div id="topic-content">
+              <section xml:lang="en-US" lang="en-US" dir="ltr" class="section" data-origin-id="UUID-d1a68d43-fe47-ed6c-40e1-a7cfbddfc0f0" data-publication-date="" id="UUID-6ecec7ba-7b8e-f18d-e4e5-e5bf1f989b6a">
+                <div class="titlepage">
+                  <div>
+                    <div class="title">
+                      <h1 class="title" style="clear: both"><span class="formal-number">11.3</span><span class="formal-label-delimiter">.</span> <span class="formal-title">Surface Milling</span></h1>
+                    </div>
+                  </div>
+                </div>
+                <p>The cycles of the surface machining package are used for machining slightly curved surfaces and geometries with regular surfaces.</p>
+                <p>The tool inclination is generally determined by the surface normals of the selected surface or guiding surface.</p>
+                <p>All additional elements (points, lines, contours) that determine the milling behavior of the tool must lie on the surfaces to be machined.</p>
+                <section xml:lang="en-US" lang="en-US" dir="ltr" class="section internal" data-origin-id="" data-publication-date="" id="UUID-6ecec7ba-7b8e-f18d-e4e5-e5bf1f989b6a_UUID-f8c786d6-54ed-72a7-be8c-2b9e466c08ff">
+                  <div class="titlepage">
+                    <div>
+                      <div class="title">
+                        <h2 class="title" style="clear: both"><span class="formal-title">Overview of cycles</span></h2>
+                      </div>
+                    </div>
+                  </div>
+                  <p>The cycles of the surface machining package are used for machining slightly curved surfaces and geometries with regular surfaces.</p>
+                  <p>The tool inclination is generally determined by the surface normals of the selected surface or guiding surface.</p>
+                  <p>All additional elements (points, lines, contours) that determine the milling behavior of the tool must lie on the surfaces to be machined.</p>
+                  <p><span class="guilabel">5X Top Milling</span> (1):</p>
+                  <p>Top Milling in which the tool inclination at the contact point is calculated with a freely specifiable slope angle to the surface normals. The toolpaths can be oriented to the X or Y axis or to a freely definable profile.</p>
+                  <p><span class="guilabel">5X Iso Top Milling</span> (2):</p>
+                  <p>Here, the tool inclination at the contact point is calculated with a freely specifiable slope angle to the normal of face in the infeed direction. The toolpaths are oriented to the U or V lines of the surface(s) or the selected synchronization lines.</p>
+                  <p><span class="guilabel">5X Contouring</span> (3):</p>
+                  <p>5X contour machining is particularly suited to shape elements that are milled with a defined tool inclination to the surface, such as grooves, cut edges or engravings. Using optional synchronization lines, the tool inclination can be manually adjusted locally.</p>
+                  <div class="informalfigure">
+                    <div class="mediaobject">
+                      <table class="image-viewport" style="border-collapse:collapse;border:0; ;">
+                        <tr style="height: 233px">
+                          <td style="padding:0;"><img src="image/uuid-5f71970a-47aa-bb9b-0283-630929f0753d.svg" style="max-height: 233px;" alt="5X_flaechenzyklen_ueberblick_01.svg" /></td>
+                        </tr>
+                      </table>
+                    </div>
+                  </div>
+                  <p><span class="guilabel">5X SWARF Cutting 1 Curve</span> (4):</p>
+                  <p>The cycle is used for regular surfaces that permit a milling tool to come into contact with a line. The machining area in the axial direction is defined by a profile curve.</p>
+                  <p>The tool inclination is determined by the surface to be milled. The use of end mills with swarf machining enables short machining times.</p>
+                  <p><span class="guilabel">5X SWARF Cutting 2 Curves</span> (5):</p>
+                  <p>The cycle is used for regular surfaces that permit a milling tool to come into contact with a line. For swarf cutting with two curves, the machining area in the axial direction is also defined by a profile curve.</p>
+                  <p>As opposed to swarf cutting with one curve, the tool inclination here is defined by an additional profile curve. The use of end mills with swarf machining enables short machining times.</p>
+                  <div class="informalfigure">
+                    <div class="mediaobject">
+                      <table class="image-viewport" style="border-collapse:collapse;border:0; ;">
+                        <tr style="height: 233px">
+                          <td style="padding:0;"><img src="image/uuid-be11adf1-34ed-06c5-b63c-b15848ae7797.svg" style="max-height: 233px;" alt="5X_flaechenzyklen_ueberblick_02.svg" /></td>
+                        </tr>
+                      </table>
+                    </div>
+                  </div>
+                  <p><span class="guilabel">5X Shape Offset Roughing</span> (6):</p>
+                  <p>Roughing of slightly curved surfaces with a uniform allowance, whereby the milling path follows the selected drive surfaces. Bottom surfaces may be defined for machining, making individual adjustments possible.</p>
+                  <p><span class="guilabel">5X Shape Offset Finishing</span> (7):</p>
+                  <p>Finishing of slightly curved surfaces with a uniform allowance, whereby the milling path follows the selected drive surfaces Bottom and stop surfaces may be defined for machining, whereby individual adjustments are possible.</p>
+                  <div class="informalfigure">
+                    <div class="mediaobject">
+                      <table class="image-viewport" style="border-collapse:collapse;border:0; width:496px;">
+                        <tr>
+                          <td style="padding:0;"><img src="image/uuid-e92e0976-1705-a5e4-b3e7-f95c2699a38d.png" style="max-width: 496px;" alt="5X_flaechenzyklen_ueberblick_03.png" /></td>
+                        </tr>
+                      </table>
+                    </div>
+                  </div>
+                  <p><span class="guilabel">Tangent Plane Machining</span> <span class="guilabel">(MAXX Machining)</span> (8):</p>
+                  <p>Finishing of planar surfaces with barrel tools. Simple operation through automatic adjustment of the tool inclination to the surface(s) to be milled. The automatic collision check guarantees optimal process safety. A high degree of efficiency through the combination of machining strategies and tool shapes.</p>
+                  <p><span xml:lang="de" lang="de" dir="ltr" class="guilabel">Tangent Machining (9)</span></p>
+                  <p>Tangential finishing of curved surfaces. Definition of the contact point of the tool by automatically generated Iso curves or Z-constant curves. Selection of manually generated curves is optionally possible. Collision avoidance and automatically generated approach and retract macros ensure optimal tool paths.</p>
+                  <div class="informalfigure">
+                    <div class="mediaobject">
+                      <table class="image-viewport" style="border-collapse:collapse;border:0; width:638px;">
+                        <tr>
+                          <td style="padding:0;"><img src="image/uuid-5b2c902f-8932-8497-9f9c-5749ea3821ec.svg" style="max-width: 638px;" alt="5X_tangentiales_ebenenschlichten_tangentialbearbeitung.svg" /></td>
+                        </tr>
+                      </table>
+                    </div>
+                  </div>
+                  <p><span class="guilabel">Prismatic Fillet Finishing</span> (10)</p>
+                  <p>5X Prismatic Fillet Finishing.</p>
+                  <p>Extension of the <span class="guilabel">5X Tangent Plane Machining</span> cycle. Perfect transition to flat areas.</p>
+                  <p>Support for barrel tools.</p>
+                  <p>Reduction of 5-axis movements with the <span class="guilabel">Automatic indexing</span> and <span class="guilabel">Prefer fixed</span> functions.</p>
+                  <div class="mediaobject">
+                    <table class="image-viewport" style="border-collapse:collapse;border:0; width:461px;">
+                      <tr>
+                        <td style="padding:0;"><img src="image/uuid-e87244d5-b5e9-9f49-3b4f-d5186aaf69ec.svg" style="max-width: 461px;" alt="5X_schlichten_prismatischer_verrundungen_ueberblick1.svg" /></td>
+                      </tr>
+                    </table>
+                  </div>
+                </section>
+              </section>
+              <div class="footer-content">
+                <div class="section-toc section-toc-after">
+                  <div class="section-toc-title">
+                    <span class="section-toc-title-delimiter">:</span>
+                  </div>
+                </div>
+              </div>
+              <footer></footer>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

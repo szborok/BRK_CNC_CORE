@@ -1,0 +1,93 @@
+
+
+
+
+
+/* OPEN MIND CSS-Stylesheet für HTML5 PALIGO Ausgabe */
+
+body {
+font-family : "Arial Nova", "Arial Unicode MS", "Yu Gothic UI", sans-serif;
+} 
+
+#pageheader {
+    padding-top: 20px;
+    background-color: #ee7f00;
+    padding: 20px 20px;
+    max-width: 680px;
+    margin: 150px auto 0px;
+    border-radius: 3px 3px 0 0;
+    position: relative;
+}
+
+#publication-title {
+    font-size: 125%;
+    color: #fff;
+    line-height: 2;
+    text-align: left;
+    border-bottom: 1px solid rgb(110,110,120);
+    border-top: 0px solid rgb(110,110,120);
+    background-color: #ee7f00;
+    margin: 0;
+    padding: 0 10px;
+}
+
+
+#main-content .titlepage h1.title {
+	font-size: 165%;
+	color: black;
+	font-weight: normal;
+}
+
+
+#main-content .titlepage h2.title {
+	font-size: 150%;
+	font-weight: normal;
+}
+
+#main-content .titlepage h3.title {
+	font-weight: normal;
+}
+
+
+.table > thead > tr > th {
+	background-color: #eeeeeeff;
+}
+
+div.table-title {
+	font-weight: normal;
+}
+
+.guimenu, .guisubmenu, .guimenuitem{
+    font-weight: bold;
+}
+
+
+.mediaobject table td {
+    padding-right: 50px;
+    text-align: left;
+    vertical-align: top;
+    padding: 10px;
+    font-size: 0.9em;
+    border: none !important;
+}
+
+
+span.guilabel {
+    font-weight: bold;
+}
+
+span.italic {
+    font-style: italic;
+}
+
+em.glossterm { font-style: normal; }
+
+#logotype-pageheader {
+    max-width: 240px;
+    max-height: 120px;
+}
+
+
+
+
+

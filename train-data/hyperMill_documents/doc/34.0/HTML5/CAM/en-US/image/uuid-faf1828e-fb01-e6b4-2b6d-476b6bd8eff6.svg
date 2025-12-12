@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="680.32" height="453.54" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xlink="http://www.w3.org/1999/xlink">
+ <title>Abbildung für OPEN MIND Softwaredokumentation</title>
+ <defs>
+  <marker id="Arrow2Lend" overflow="visible" orient="auto">
+   <path d="m-11.403-4.7329 12.82 4.7141-12.82 4.7141c2.0481-2.7832 2.0363-6.5911 1e-6 -9.4283z" fill-rule="evenodd" stroke-linejoin="round" stroke-width=".73333"/>
+  </marker>
+  <marker id="Arrow2Lstart" overflow="visible" orient="auto">
+   <path d="m11.403 4.7329-12.82-4.7141 12.82-4.7141c-2.0481 2.7832-2.0363 6.5911-1e-6 9.4283z" fill-rule="evenodd" stroke-linejoin="round" stroke-width=".73333"/>
+  </marker>
+  <linearGradient id="linearGradient27572-0" x1="908.66" x2="913.53" y1="1120.8" y2="668.59" gradientTransform="matrix(.44073 0 0 .44064 -271.67 -222.97)" gradientUnits="userSpaceOnUse">
+   <stop stop-color="#fff" offset="0"/>
+   <stop stop-color="#00385e" offset="1"/>
+  </linearGradient>
+  <linearGradient id="linearGradient16405" x1="1245.3" x2="1244.3" y1="-472.31" y2="-334.47" gradientTransform="matrix(-.4805 .16086 -.23325 -.64059 735.66 -261.44)" gradientUnits="userSpaceOnUse">
+   <stop stop-color="#fff" offset="0"/>
+   <stop stop-color="#e6e6e6" offset=".79675"/>
+   <stop stop-color="#969696" offset=".93636"/>
+   <stop stop-color="#292929" offset=".99372"/>
+   <stop offset="1"/>
+  </linearGradient>
+  <linearGradient id="linearGradient16414" x1="1245" x2="1245.9" y1="-500.03" y2="-333.38" gradientTransform="matrix(.1673 .5012 -.64922 .21662 -274.8 -400.82)" gradientUnits="userSpaceOnUse">
+   <stop stop-color="#404040" offset="0"/>
+   <stop stop-color="#4e4e4e" offset=".048529"/>
+   <stop stop-color="#7c7c7c" offset=".097059"/>
+   <stop stop-color="#848484" offset=".14568"/>
+   <stop stop-color="#efefef" offset=".47178"/>
+   <stop stop-color="#7b7b7b" offset=".68686"/>
+   <stop stop-color="#616161" offset=".87372"/>
+   <stop stop-color="#4c4c4c" offset=".91753"/>
+   <stop stop-color="#292929" offset=".96833"/>
+   <stop offset="1"/>
+  </linearGradient>
+  <linearGradient id="linearGradient17228" x1="1245.3" x2="1244.3" y1="-472.31" y2="-334.47" gradientTransform="matrix(-.48729 -.13897 .1699 -.66021 781.46 62.267)" gradientUnits="userSpaceOnUse">
+   <stop stop-color="#fff" offset="0"/>
+   <stop stop-color="#e6e6e6" offset=".79837"/>
+   <stop stop-color="#969696" offset=".89491"/>
+   <stop stop-color="#292929" offset=".99268"/>
+   <stop offset="1"/>
+  </linearGradient>
+  <linearGradient id="linearGradient17237" x1="1245" x2="1245.9" y1="-500.03" y2="-333.38" gradientTransform="matrix(-.14547 .50797 -.65798 -.18835 26.867 -623.93)" gradientUnits="userSpaceOnUse">
+   <stop stop-color="#404040" offset="0"/>
+   <stop stop-color="#4e4e4e" offset=".048529"/>
+   <stop stop-color="#7c7c7c" offset=".097059"/>
+   <stop stop-color="#848484" offset=".14568"/>
+   <stop stop-color="#efefef" offset=".47178"/>
+   <stop stop-color="#7b7b7b" offset=".68686"/>
+   <stop stop-color="#616161" offset=".87372"/>
+   <stop stop-color="#4c4c4c" offset=".91753"/>
+   <stop stop-color="#292929" offset=".96833"/>
+   <stop offset="1"/>
+  </linearGradient>
+  <linearGradient id="linearGradient24234-1-7-1-0-1-2-1">
+   <stop stop-color="#404040" offset="0"/>
+   <stop stop-color="#4e4e4e" offset=".048529"/>
+   <stop stop-color="#7c7c7c" offset=".097059"/>
+   <stop stop-color="#848484" offset=".14568"/>
+   <stop stop-color="#efefef" offset=".47178"/>
+   <stop stop-color="#7b7b7b" offset=".68686"/>
+   <stop stop-color="#616161" offset=".87372"/>
+   <stop stop-color="#4c4c4c" offset=".91753"/>
+   <stop stop-color="#292929" offset=".96833"/>
+   <stop offset="1"/>
+  </linearGradient>
+  <linearGradient id="linearGradient42568" x1="908.66" x2="913.53" y1="1120.8" y2="668.59" gradientTransform="matrix(.44073 0 0 .44064 -270.19 -462.37)" gradientUnits="userSpaceOnUse">
+   <stop stop-color="#fff" offset="0"/>
+   <stop stop-color="#00385e" offset="1"/>
+  </linearGradient>
+  <linearGradient id="linearGradient42570" x1="1245" x2="1245.9" y1="-500.03" y2="-333.38" gradientTransform="matrix(-.12824 .44776 -.58004 -.16603 362.23 -533.19)" gradientUnits="userSpaceOnUse" xlink:href="#linearGradient24234-1-7-1-0-1-2-1"/>
+  <linearGradient id="linearGradient42572" x1="1245.3" x2="1244.3" y1="-472.31" y2="-334.47" gradientTransform="matrix(-.42957 -.12249 .14977 -.58196 1027.4 71.68)" gradientUnits="userSpaceOnUse">
+   <stop stop-color="#fff" offset="0"/>
+   <stop stop-color="#e6e6e6" offset=".84252"/>
+   <stop stop-color="#969696" offset=".90322"/>
+   <stop stop-color="#292929" offset="1"/>
+   <stop offset="1"/>
+  </linearGradient>
+  <linearGradient id="linearGradient42574" x1="1245" x2="1245.9" y1="-500.03" y2="-333.38" gradientTransform="matrix(.16542 .50409 -.65301 .21416 -273.11 -644.06)" gradientUnits="userSpaceOnUse" xlink:href="#linearGradient24234-1-7-1-0-1-2-1"/>
+  <linearGradient id="linearGradient42576" x1="1245.3" x2="1244.3" y1="-472.31" y2="-334.47" gradientTransform="matrix(-.48331 .15904 -.23093 -.64438 740.17 -499.01)" gradientUnits="userSpaceOnUse">
+   <stop stop-color="#fff" offset="0"/>
+   <stop stop-color="#e6e6e6" offset=".84252"/>
+   <stop stop-color="#969696" offset=".90322"/>
+   <stop stop-color="#292929" offset="1"/>
+   <stop offset="1"/>
+  </linearGradient>
+ </defs>
+ <metadata>
+  <rdf:RDF>
+   <cc:Work rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:title>Abbildung für OPEN MIND Softwaredokumentation</dc:title>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>OPEN MIND Technologies AG</dc:title>
+     </cc:Agent>
+    </dc:creator>
+    <dc:rights>
+     <cc:Agent>
+      <dc:title>Alle Rechte vorbehalten.</dc:title>
+     </cc:Agent>
+    </dc:rights>
+    <dc:publisher>
+     <cc:Agent>
+      <dc:title>Technische Redaktion</dc:title>
+     </cc:Agent>
+    </dc:publisher>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <g transform="translate(0 170.08)">
+  <g>
+   <path d="m17.772 274.38v-41.723l13.113-40.968 8.0999-6.6692h52.888c9.7768 9.8859 19.082 22.767 29.064 23.342h17.153c5.1181 0.83904 8.8343 3.6405 12.388 6.6692l9.4102 10.48c2.8448 3.0238 5.9002 5.8135 11.554 5.7164h59.558c3.7703 0.15365 8.4634-2.23 14.77-9.051l31.447-32.393c4.1428-4.3198 9.3735-4.8326 14.77-4.7637l34.782 0.47638-0.47647 89.081" fill="url(#linearGradient27572-0)" fill-rule="evenodd" stroke="#4d4d4d" stroke-width=".67654"/>
+   <path d="m13.02 88.834 25.942 95.664v0.33684" fill="none" stroke="#e327f6" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.4324"/>
+   <path d="m18.021 274.26h307.69" color="#000000" fill="#4d748f" fill-rule="evenodd" stroke="#666" stroke-dasharray="9.87974, 2.46993, 1.23497, 2.46993" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.235"/>
+  </g>
+  <g fill="none" stroke="#d4aa00" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2677">
+   <path d="m45.294 147.52-4.7913 6.1083-0.02719 21.013 52.134-0.28518 9.2903 3.4381 19.772 19.368 18.819-0.2456 13.816 7.1549 19.533 18.173h53.836l45.496-45.774 0.20022-5.911"/>
+   <path d="m168.13 205.39-4.2514 5.3663h73.147l-0.0211-4.2731"/>
+   <path d="m174.35 212.81-3.4046 4.2661h59.69v-4.0742"/>
+   <path d="m160.37 198.94-3.8376 4.8132h87.555l-0.0252-4.2298"/>
+   <path d="m141.17 196.75h109.32l-0.0269-4.2085"/>
+   <path d="m119.46 185.61-3.8125 4.9011 141.24-0.0808-0.0404-4.676"/>
+   <path d="m112.35 178.73-3.7707 4.5307 156.54-0.15713-0.044-4.0129"/>
+   <path d="m352.9 166.01-0.17868 6.5501-3.6926 3.8705-246.6 0.0941 3.7657-4.6187"/>
+   <path d="m45.235 163.12-3.7623 4.5738 152.86-0.13541 151.48 0.0333 5.0022-4.7637 0.0387-5.9674"/>
+   <path d="m45.188 154.7-3.8471 4.908 150.73-0.13549 151.83 0.67286 4.4585-4.5371v-6.9714"/>
+  </g>
+  <g stroke="#000" stroke-linecap="round" stroke-linejoin="round">
+   <path d="m252.79 99.329 12.277 36.781-107.94 36.016-12.277-36.781z" fill="url(#linearGradient16414)" stroke-width=".5291"/>
+   <path d="m238.05 213.53-14.756 4.8693-8.5253-25.831c-1.5884-4.7301-5.4796-5.6312-9.2-7.0712l-47.807-13.256 106.58-35.6-31.704 40.594c-2.9728 4.359-4.2358 7.6403-3.2344 10.713z" fill="url(#linearGradient16405)" stroke-width=".51703"/>
+   <path transform="matrix(.94859 -.31651 .31662 .94855 0 0)" d="m159.33 287.78a10.788 10.93 0 0 1-14.962 2.8568 10.788 10.93 0 0 1-2.8812-15.147 10.788 10.93 0 0 1 14.938-2.9814 10.788 10.93 0 0 1 3.0041 15.123l-8.9959-6.0332z" fill="#ff0" stroke-width=".5291"/>
+  </g>
+  <path d="m228.34 209.08 7 20.725" fill="none" stroke="#000" stroke-width=".1733"/>
+  <path d="m221.49 223.12 20.783-6.9599" fill="none" stroke="#000" stroke-width=".1733"/>
+  <g>
+   <path d="m358.02 100.29-31.333 84.885" fill="#e327f6" fill-rule="evenodd" stroke="#e327f6" stroke-width="1.4324"/>
+   <g stroke="#000" stroke-linecap="round" stroke-linejoin="round">
+    <path d="m179.16 86.849-10.675 37.278-109.4-31.317 10.675-37.278z" fill="url(#linearGradient17237)" stroke-width=".5291"/>
+    <path d="m102.42 172.71-14.924-4.3258 7.5772-26.125c1.365-4.7994-1.3348-7.7423-3.5889-11.033l-31.933-37.96 108.04 30.89-49.107 15.559c-4.9172 1.9147-7.8147 3.907-8.7267 7.0079z" fill="url(#linearGradient17228)" stroke-width=".51703"/>
+    <path transform="matrix(.96138 .27521 -.27531 .96136 0 0)" d="m147.14 147.74a10.788 10.93 0 0 1-14.962 2.8568 10.788 10.93 0 0 1-2.8812-15.147 10.788 10.93 0 0 1 14.939-2.9814 10.788 10.93 0 0 1 3.0041 15.123l-8.9959-6.0332z" fill="#ff0" stroke-width=".5291"/>
+   </g>
+  </g>
+  <g fill="none">
+   <path d="m96.925 163.55-5.9476 21.051" stroke="#000" stroke-width=".1733"/>
+   <path d="m83.333 171.25 21.078 6.0086" stroke="#000" stroke-width=".1733"/>
+   <path d="m116.79 92.876-25.605 91.285" stroke="#e327f6" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.4324"/>
+   <path d="m205.88 137.52 29.504 92.119" stroke="#e327f6" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.4324"/>
+  </g>
+  <path d="m326.22 252.32 0.0974 22.123" fill="#800080" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width=".6517"/>
+  <path d="m344.79 274.4-18.355-0.0788" fill="#800080" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width=".6517"/>
+  <g transform="matrix(.88619 0 0 .88601 1.4643 31.578)">
+   <g fill="#fff" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width=".73547">
+    <path d="m366.49 243.14 3.188 13.196h-6.3759c1.1293-6.6876 3.188-13.196 3.188-13.196z"/>
+    <path d="m394.83 274.07-13.201 3.1671 0.01-6.3759z"/>
+    <circle cx="366.51" cy="273.9" r="3.1705" color="#000000"/>
+   </g>
+   <circle cx="366.51" cy="273.9" r=".32585" color="#000000"/>
+   <text x="370.65506" y="249.82013" fill="#000000" font-family="'Arial Nova', 'Arial Unicode MS', 'Yu Gothic UI', sans-serif" font-size="12.8px" letter-spacing="0px" stroke="#000000" stroke-width="1.0378" word-spacing="0px" style="line-height:0%" xml:space="preserve"><tspan x="370.65506" y="249.82013" fill="#ff0000" font-family="'Arial Nova', 'Arial Unicode MS', 'Yu Gothic UI', sans-serif" font-size="9.1962px" stroke="#000000" stroke-width="1.0378" style="line-height:1.25">X</tspan></text>
+   <text x="389.38266" y="269.94974" fill="#000000" font-family="'Arial Nova', 'Arial Unicode MS', 'Yu Gothic UI', sans-serif" font-size="12.8px" letter-spacing="0px" stroke="#000000" stroke-width="1.0378" word-spacing="0px" style="line-height:0%" xml:space="preserve"><tspan x="389.38266" y="269.94974" fill="#ff0000" font-family="'Arial Nova', 'Arial Unicode MS', 'Yu Gothic UI', sans-serif" font-size="9.1962px" stroke="#000000" stroke-width="1.0378" style="line-height:1.25">Z</tspan></text>
+  </g>
+  <path d="m480.26 26.619-8.7574 16.719 23.287 15.126-27.068-0.5971 0.39804 19.306 37.02-0.19907-26.67 28.461 13.534 14.33 24.282-26.67 2.9855 0.19903-0.39806 37.617 17.913 0.19905v-38.413l2.3884 0.39807 24.481 26.471 13.136-14.131-26.67-28.859 37.219 0.19903 0.19903-19.306-25.177-0.39807 22.391-13.534-10.151-17.316-19.363 12.894v28.827l-14.092 24.638h-27.032l-13.854-24.633 0.0498-28.569z" fill="#969696" stroke="#4d4d4d" stroke-linecap="round" stroke-linejoin="round" stroke-width=".76818"/>
+  <g fill="none" stroke="#4d4d4d" stroke-linecap="round" stroke-linejoin="round" stroke-width=".76818">
+   <rect transform="rotate(29.472)" x="403.96" y="-206.62" width="27.303" height="5.4887"/>
+   <rect x="440.53" y="64.438" width="27.303" height="5.4887"/>
+   <rect transform="rotate(-42.955)" x="251.08" y="410.54" width="27.303" height="5.4887"/>
+   <rect transform="rotate(-90)" x="-158.4" y="524.99" width="27.303" height="5.4887"/>
+   <rect transform="rotate(225.07)" x="-509.76" y="321.26" width="27.303" height="5.4887"/>
+   <rect x="587.41" y="63.997" width="27.303" height="5.4887"/>
+  </g>
+  <g stroke-linecap="round" stroke-linejoin="round">
+   <path d="m492.87-5.5654v31.168l7.0682 6.5093-0.2719 35.356 14.694 25.579 26.575-0.01342 14.527-25.851 7e-3 -35.049 6.8978-6.166v-31.532z" color="#000000" fill="#c8c8c8" stroke="#4d4d4d" stroke-width=".56648"/>
+   <circle cx="527.62" cy="66.014" r="13.756" fill="#969696" stroke="#4d4d4d" stroke-width=".85831"/>
+   <circle cx="451.91" cy="21.201" r="7.1757" fill="#fd0" stroke="#000" stroke-width=".56678"/>
+  </g>
+  <rect transform="matrix(-.86301 .50519 .50519 .86301 0 0)" x="-509.89" y="320.23" width="27.303" height="5.4887" fill="none" stroke="#4d4d4d" stroke-linecap="round" stroke-linejoin="round" stroke-width=".76818"/>
+  <g fill="#fd0" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width=".56678">
+   <circle cx="603.24" cy="20.999" r="7.1757"/>
+   <circle cx="440.44" cy="66.939" r="7.1757"/>
+   <circle cx="465.14" cy="131.33" r="7.1757"/>
+   <circle cx="527.66" cy="158.49" r="7.1757"/>
+   <circle cx="589.38" cy="132.14" r="7.1757"/>
+   <circle cx="614.8" cy="66.774" r="7.1757"/>
+  </g>
+  <g stroke="#4d4d4d">
+   <path d="m626.66 10.196c33.07 54.576 15.636 125.63-38.94 158.7-54.576 33.07-125.63 15.636-158.7-38.94-22.219-36.669-22.307-82.626-0.22725-119.38" fill="none" marker-end="url(#Arrow2Lend)" marker-start="url(#Arrow2Lstart)" stroke-linecap="round" stroke-linejoin="round" stroke-width=".87963"/>
+   <path d="m524.09 68.935 3.4964-2.955-2.9497-3.5357c-1.9465 1.8536-2.2442 4.3917-0.5467 6.4906z" fill="#4d4d4d" stroke-width=".23209"/>
+   <path d="m531.17 63.021-3.4964 2.955 2.9852 3.5508c1.9962-1.8618 2.2383-4.3187 0.5112-6.5058z" fill="#4d4d4d" stroke-width=".23209"/>
+  </g>
+  <g fill="none" stroke="#4d4d4d" stroke-linecap="round" stroke-linejoin="round">
+   <circle transform="rotate(-85.356)" cx="-23.075" cy="531.23" r="4.6445" stroke-miterlimit="9.25" stroke-width=".41545"/>
+   <path d="m430.69 8.0357 96.865 57.95" stroke-dasharray="3.43322, 0.858307, 0.429154, 0.858307" stroke-width=".42915"/>
+   <path d="m625.08 7.8-97.397 58.179" stroke-dasharray="3.43322, 0.858307, 0.429154, 0.858307" stroke-width=".42915"/>
+  </g>
+  <g fill="#000000" font-family="'Arial Nova', 'Arial Unicode MS', 'Yu Gothic UI', sans-serif" letter-spacing="0px" stroke-width="1.3137" word-spacing="0px">
+   <text transform="rotate(33.156)" x="362.20221" y="-240.27097" font-size="15.765px" style="line-height:0%" xml:space="preserve"><tspan x="362.20221" y="-240.27097" font-family="'Arial Nova', 'Arial Unicode MS', 'Yu Gothic UI', sans-serif" font-size="10.488px" stroke-width="1.3137" style="line-height:1.25">B -30</tspan></text>
+   <text transform="rotate(-30.976)" x="504.24377" y="313.84845" font-size="15.765px" style="line-height:0%" xml:space="preserve"><tspan x="504.24377" y="313.84845" font-family="'Arial Nova', 'Arial Unicode MS', 'Yu Gothic UI', sans-serif" font-size="10.488px" stroke-width="1.3137" style="line-height:1.25">B 210</tspan></text>
+   <text x="426.23083" y="55.966553" font-size="15.765px" style="line-height:0%" xml:space="preserve"><tspan x="426.23083" y="55.966553" font-family="'Arial Nova', 'Arial Unicode MS', 'Yu Gothic UI', sans-serif" font-size="10.488px" stroke-width="1.3137" style="line-height:1.25">B 0</tspan></text>
+   <text x="611.37726" y="54.390232" font-size="15.765px" style="line-height:0%" xml:space="preserve"><tspan x="611.37726" y="54.390232" font-family="'Arial Nova', 'Arial Unicode MS', 'Yu Gothic UI', sans-serif" font-size="10.488px" stroke-width="1.3137" style="line-height:1.25">B 180</tspan></text>
+   <text transform="rotate(-43.505)" x="227.70375" y="403.89899" font-size="15.765px" style="line-height:0%" xml:space="preserve"><tspan x="227.70375" y="403.89899" font-family="'Arial Nova', 'Arial Unicode MS', 'Yu Gothic UI', sans-serif" font-size="10.488px" stroke-width="1.3137" style="line-height:1.25">B 45 </tspan></text>
+   <text transform="rotate(42.69)" x="518.90265" y="-316.86362" font-size="10.488px" style="line-height:0%" xml:space="preserve"><tspan x="518.90265" y="-316.86362" style="line-height:1.25">B 135</tspan><tspan x="518.90265" y="-303.75424" style="line-height:1.25"> </tspan></text>
+   <text transform="rotate(90)" x="154.31773" y="-539.7215" font-size="15.765px" style="line-height:0%" xml:space="preserve"><tspan x="154.31773" y="-539.7215" font-family="'Arial Nova', 'Arial Unicode MS', 'Yu Gothic UI', sans-serif" font-size="10.488px" stroke-width="1.3137" style="line-height:1.25">B 90</tspan></text>
+  </g>
+  <g transform="matrix(1.0618 0 0 1.0618 -6.8547 -388.56)">
+   <g transform="translate(480.76 236.71)">
+    <g stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width=".61375">
+     <path d="m22.525 162.71 0.12755 28.961" fill="#800080"/>
+     <path d="m22.559 155.75 3.6977 15.307h-7.3955c1.3098-7.7569 3.6977-15.307 3.6977-15.307z" fill="#fff"/>
+     <path d="m46.839 191.61-24.024-0.10314" fill="#800080"/>
+     <path d="m55.429 191.63-15.312 3.6735 0.01173-7.3955z" fill="#fff"/>
+    </g>
+    <text x="48.021263" y="186.98854" fill="#000000" font-family="'Arial Nova', 'Arial Unicode MS', 'Yu Gothic UI', sans-serif" font-size="12.8px" letter-spacing="0px" stroke="#000000" stroke-width=".86607" word-spacing="0px" style="line-height:0%" xml:space="preserve"><tspan x="48.021263" y="186.98854" fill="#ff0000" font-family="'Arial Nova', 'Arial Unicode MS', 'Yu Gothic UI', sans-serif" font-size="10.667px" stroke="#000000" stroke-width=".86607" style="line-height:1.25">X</tspan></text>
+    <text x="26.649456" y="163.45934" fill="#000000" font-family="'Arial Nova', 'Arial Unicode MS', 'Yu Gothic UI', sans-serif" font-size="12.8px" letter-spacing="0px" stroke="#000000" stroke-width=".86607" word-spacing="0px" style="line-height:0%" xml:space="preserve"><tspan x="26.649456" y="163.45934" fill="#ff0000" font-family="'Arial Nova', 'Arial Unicode MS', 'Yu Gothic UI', sans-serif" font-size="10.667px" stroke="#000000" stroke-width=".86607" style="line-height:1.25">Z</tspan></text>
+    <g transform="translate(-259.28 393.29)">
+     <circle cx="281.86" cy="-201.87" r="3.6775" color="#000000" fill="#fff" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width=".61375"/>
+     <circle cx="281.86" cy="-201.87" r=".37795" color="#000000"/>
+    </g>
+   </g>
+  </g>
+  <g fill-rule="evenodd">
+   <g>
+    <path d="m44.612 127.27h-19.549" color="#000000" fill="#1f638a" stroke="#1f638a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8898"/>
+    <path d="m343.6 135.84h-19.549" color="#000000" fill="#1f638a" stroke="#1f638a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8898"/>
+    <path d="m19.254 34.971v-41.723l13.113-40.968 8.0999-6.6692h52.888c9.7768 9.8859 19.082 22.767 29.064 23.342h17.153c5.1181 0.83904 8.8343 3.6405 12.388 6.6692l9.4102 10.48c2.8448 3.0238 5.9002 5.8135 11.554 5.7164h59.558c3.7703 0.15366 8.4634-2.23 14.77-9.051l31.447-32.393c4.1428-4.3198 9.3735-4.8326 14.77-4.7637l34.782 0.47637-0.47647 89.081" fill="url(#linearGradient42568)" stroke="#4d4d4d" stroke-width=".67654"/>
+   </g>
+   <path d="m19.503 34.857h307.69" color="#000000" fill="#4d748f" stroke="#666" stroke-dasharray="9.87974, 2.46993, 1.23497, 2.46993" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.235"/>
+  </g>
+  <g fill="none" stroke="#d4aa00" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2677">
+   <path d="m46.776-91.889-4.7913 6.1083-0.02719 21.013 52.134-0.28518 9.2903 3.4381 19.772 19.368 18.819-0.2456 13.816 7.1549 19.533 18.173h53.836l45.496-45.774 0.20022-5.911"/>
+   <path d="m169.61-34.01-4.2514 5.3663h73.147l-0.0211-4.2731"/>
+   <path d="m175.83-26.594-3.4046 4.2661h59.69v-4.0742"/>
+   <path d="m161.85-40.465-3.8376 4.8132h87.555l-0.0252-4.2298"/>
+   <path d="m142.65-42.656h109.32l-0.0269-4.2085"/>
+   <path d="m120.94-53.792-3.8125 4.9011 141.24-0.0809-0.0404-4.6759"/>
+   <path d="m113.83-60.669-3.7706 4.5307 156.54-0.15713-0.044-4.0129"/>
+   <path d="m354.38-73.395-0.17868 6.5501-3.6926 3.8705-246.6 0.0941 3.7658-4.6186"/>
+   <path d="m46.717-76.283-3.7623 4.5738 152.86-0.1354 151.48 0.0333 5.0022-4.7638 0.0387-5.9674"/>
+   <path d="m46.67-84.7-3.8471 4.908 150.73-0.13549 151.83 0.67287 4.4585-4.5371v-6.9714"/>
+  </g>
+  <g transform="matrix(.88619 0 0 .88601 2.9461 -207.83)">
+   <path d="m366.46 249.14 0.10996 24.969" fill="#800080" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width=".73547"/>
+   <path d="m387.42 274.06-20.712-0.089" fill="#800080" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width=".73547"/>
+   <g fill="#fff" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width=".73547">
+    <path d="m366.49 243.14 3.188 13.196h-6.3759c1.1293-6.6876 3.188-13.196 3.188-13.196z"/>
+    <path d="m394.83 274.07-13.201 3.1671 0.01-6.3759z"/>
+    <circle cx="366.51" cy="273.9" r="3.1705" color="#000000"/>
+   </g>
+   <circle cx="366.51" cy="273.9" r=".32585" color="#000000"/>
+   <text x="370.65506" y="249.82013" fill="#000000" font-family="'Arial Nova', 'Arial Unicode MS', 'Yu Gothic UI', sans-serif" font-size="12.8px" letter-spacing="0px" stroke="#000000" stroke-width="1.0378" word-spacing="0px" style="line-height:0%" xml:space="preserve"><tspan x="370.65506" y="249.82013" fill="#ff0000" font-family="'Arial Nova', 'Arial Unicode MS', 'Yu Gothic UI', sans-serif" font-size="9.1962px" stroke="#000000" stroke-width="1.0378" style="line-height:1.25">X</tspan></text>
+   <text x="389.38266" y="269.94974" fill="#000000" font-family="'Arial Nova', 'Arial Unicode MS', 'Yu Gothic UI', sans-serif" font-size="12.8px" letter-spacing="0px" stroke="#000000" stroke-width="1.0378" word-spacing="0px" style="line-height:0%" xml:space="preserve"><tspan x="389.38266" y="269.94974" fill="#ff0000" font-family="'Arial Nova', 'Arial Unicode MS', 'Yu Gothic UI', sans-serif" font-size="9.1962px" stroke="#000000" stroke-width="1.0378" style="line-height:1.25">Z</tspan></text>
+  </g>
+  <g transform="matrix(1.1391 .0048315 -.0048315 1.1391 -301.57 -214.98)" opacity=".8634">
+   <path d="m496.49 93.348-9.411 32.859-96.441-27.605 9.411-32.859z" fill="url(#linearGradient42570)" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width=".4645"/>
+   <g stroke="#000">
+    <path d="m428.84 169.03-13.157-3.8131 6.6797-23.028c1.2033-4.2305-1.1767-6.8246-3.1638-9.7255l-28.151-33.461 95.244 27.229-43.291 13.715c-4.3348 1.6878-6.889 3.4439-7.693 6.1773z" fill="url(#linearGradient42572)" stroke-linecap="round" stroke-linejoin="round" stroke-width=".45391"/>
+    <path transform="matrix(.96139 .27519 -.27533 .96135 0 0)" d="m459.8 53.207a9.5104 9.6348 0 0 1-13.19 2.5182 9.5104 9.6348 0 0 1-2.5399-13.352 9.5104 9.6348 0 0 1 13.169-2.628 9.5104 9.6348 0 0 1 2.6482 13.33l-7.9303-5.3182z" fill="#ff0" stroke-linecap="round" stroke-linejoin="round" stroke-width=".4645"/>
+    <g>
+     <path d="m423.99 160.96-5.2431 18.556" fill="none" stroke-width=".15214"/>
+     <path d="m412.01 167.75 18.581 5.2965" fill="none" stroke-width=".15214"/>
+     <circle transform="rotate(26.758)" cx="452.96" cy="-37.39" r="2.0241" stroke-linejoin="round" stroke-width=".65919"/>
+    </g>
+   </g>
+  </g>
+  <g stroke="#000" stroke-linecap="round" stroke-linejoin="round">
+   <path d="m254.1-139.18 12.139 36.993-108.57 35.608-12.139-36.993z" fill="url(#linearGradient42574)" opacity=".8634" stroke-width=".5291"/>
+   <path d="m238.07-24.67-14.842 4.8132-8.4279-25.979c-1.5707-4.7574-5.4733-5.6821-9.2017-7.147l-47.936-13.555 107.2-35.197-32.043 40.596c-3.0074 4.3614-4.2926 7.6494-3.3027 10.74z" fill="url(#linearGradient42576)" opacity=".8634" stroke-width=".51703"/>
+   <path transform="matrix(.9502 -.31163 .31179 .95015 0 0)" d="m235.02 60.67a10.833 10.975 0 0 1-15.024 2.8684 10.833 10.975 0 0 1-2.8931-15.209 10.833 10.975 0 0 1 15-2.9935 10.833 10.975 0 0 1 3.0165 15.184l-9.0331-6.0578z" fill="#ff0" opacity=".8634" stroke-width=".5291"/>
+  </g>
+  <g stroke="#000">
+   <path d="m228.34-29.186 6.9226 20.845" fill="none" opacity=".8634" stroke-width=".1733"/>
+   <path d="m221.38-15.126 20.905-6.8814" fill="none" opacity=".8634" stroke-width=".1733"/>
+   <circle transform="rotate(27.051)" cx="198.13" cy="-122.04" r="2.3056" opacity=".8634" stroke-linejoin="round" stroke-width=".75086"/>
+  </g>
+  <g transform="matrix(1.1391 0 0 1.1391 -462.51 160.62)">
+   <circle cx="584.57" cy="-235.2" r="4.5299" fill="#e327f6"/>
+   <circle cx="584.57" cy="-235.2" r="6.2551" fill="none" stroke="#e327f6" stroke-dasharray="3.62128, 1.20709" stroke-width="1.2071"/>
+  </g>
+  <path d="m202.9-114.89v-20.225" color="#000000" fill="#1f638a" fill-rule="evenodd" stroke="#1f638a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8898"/>
+  <g transform="translate(248.44 -49.399)">
+   <ellipse cx="-44.92" cy="-98.798" rx="13.199" ry="13.469" fill="#1f638a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.0658"/>
+   <text x="-50.761276" y="-91.125885" fill="#000000" font-family="'Arial Nova', 'Arial Unicode MS', 'Yu Gothic UI', sans-serif" font-size="12.8px" letter-spacing="0px" stroke-width="1.0667" word-spacing="0px" style="line-height:0%" xml:space="preserve"><tspan x="-50.761276" y="-91.125885" fill="#ffffff" font-family="'Arial Nova', 'Arial Unicode MS', 'Yu Gothic UI', sans-serif" font-size="21.333px" stroke="#ffffff" stroke-width="1.0667" style="line-height:1.25">1</tspan></text>
+  </g>
+  <g transform="translate(69.979 225.99)">
+   <ellipse cx="-13.718" cy="-98.798" rx="13.199" ry="13.469" fill="#1f638a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.0658"/>
+   <text x="-19.559933" y="-91.125885" fill="#000000" font-family="'Arial Nova', 'Arial Unicode MS', 'Yu Gothic UI', sans-serif" font-size="12.8px" letter-spacing="0px" stroke-width="1.0667" word-spacing="0px" style="line-height:0%" xml:space="preserve"><tspan x="-19.559933" y="-91.125885" fill="#ffffff" font-family="'Arial Nova', 'Arial Unicode MS', 'Yu Gothic UI', sans-serif" font-size="21.333px" stroke="#ffffff" stroke-width="1.0667" style="line-height:1.25">2</tspan></text>
+  </g>
+  <g transform="translate(327.54 234.53)">
+   <ellipse cx="-13.718" cy="-98.798" rx="13.199" ry="13.469" fill="#1f638a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.0658"/>
+   <text x="-19.559933" y="-91.125885" fill="#000000" font-family="'Arial Nova', 'Arial Unicode MS', 'Yu Gothic UI', sans-serif" font-size="12.8px" letter-spacing="0px" stroke-width="1.0667" word-spacing="0px" style="line-height:0%" xml:space="preserve"><tspan x="-19.559933" y="-91.125885" fill="#ffffff" font-family="'Arial Nova', 'Arial Unicode MS', 'Yu Gothic UI', sans-serif" font-size="21.333px" stroke="#ffffff" stroke-width="1.0667" style="line-height:1.25">2</tspan></text>
+  </g>
+ </g>
+</svg>

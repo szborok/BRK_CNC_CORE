@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="x-ua-compatible" content="IE=edge" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="search" content="default" />
+  <meta name="use.ic" content="no" />
+  <meta name="tocstandalone" content="yes" />
+  <script type="text/javascript">
+  //<![CDATA[
+                        var index;
+                        var contentLanguage = 'en-US';
+                        var enterKey = 'select';
+                        
+                                        var anchoroption = true;
+                                var instantsearch_minlength = 1;
+                                                
+                                var fuse_threshold = 0.3;
+                        
+                                        var local_csh = false;
+                                
+                        var useanchorlinks = false;
+  //]]>
+  </script>
+  <title>2.4.&nbsp;Selecting elements in the CAD system</title>
+  <link rel="stylesheet" type="text/css" href="../css/docbook.css" />
+  <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" href="../css/bootstrap-theme.min.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style-common.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style-responsive.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style-print.css" />
+  <link rel="stylesheet" type="text/css" href="../css/font-awesome.css" />
+  <link rel="stylesheet" type="text/css" href="../css/custom.css" />
+  <link rel="stylesheet" type="text/css" href="../css/layout-custom-style.css" />
+  <script src="../js/jquery-1.10.2.min.js" type="text/javascript"></script>
+  <script src="../js/jquery-ui-1.10.3.custom.min.js" type="text/javascript"></script>
+  <script src="../js/bootstrap.min.js" type="text/javascript"></script>
+  <script src="../js/purl.js" type="text/javascript"></script>
+  <script src="../js/jquery.event.move.js" type="text/javascript"></script>
+  <script src="../js/jquery.event.swipe.js" type="text/javascript"></script>
+  <script src="../js/jquery.sticky.js" type="text/javascript"></script>
+  <script src="../js/respond.min.js" type="text/javascript"></script>
+  <script src="../js/script.js" type="text/javascript"></script>
+  <script src="js/toc.js" type="text/javascript"></script>
+  <script src="../js/create-toc.js" type="text/javascript"></script>
+  <script src="../js/clipboard.min.js" type="text/javascript"></script>
+  <script src="../js/fuse.min.js" type="text/javascript"></script>
+  <script src="../js/jquery.mark.min.js" type="text/javascript"></script>
+  <script src="../js/html5.fuse.search.js" type="text/javascript"></script>
+  <script src="js/fuzzydata.js" type="text/javascript"></script>
+  <script src="../js/csh.js" type="text/javascript"></script>
+  <script src="../js/highlight-mergehtml-plugin.js" type="text/javascript"></script>
+  <meta name="generator" content="Paligo" />
+  <link rel="prev" href="UUID-3b02fe50-cf9a-fff0-7b01-25d308b77b98.html#id76714" title="Arithmetical expressions" />
+  <link rel="next" href="UUID-03373c44-ebfa-6c4a-54c0-a249ac77daa7.html#UUID-03373c44-ebfa-6c4a-54c0-a249ac77daa7_UUID-d51f879c-4965-0604-7797-52d8862d8ade" title="Define filter" />
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js?config=TeX-MML-AM_CHTML" async="async"></script>
+  <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+  <script type="text/javascript" src="../js/cookie-consent.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  <script type="text/javascript">
+  //<![CDATA[
+                        $(document).on('ready ajaxComplete', function() {
+                                
+                                hljs.addPlugin(mergeHTMLPlugin);
+                                hljs.configure({'ignoreUnescapedHTML': true});
+                                
+                                $('pre:not(.embedcode)').each(function() {
+                                        /**
+                                         * @type {string}
+                                         */
+                                        var language = $(this).data('language');
+
+                                        if (language === 'plaintext' || language === 'text') {
+                                                $(this).addClass(language).addClass('hljs');
+                                                return true;
+                                        }
+                                        else {
+                                                var clone = this.cloneNode(true);
+                                                hljs.highlightElement(clone);
+                                                $(this).empty().append($(clone).contents());
+                                                $(this).attr("class", $(clone).attr("class"));
+                                        }
+                                });
+                        });
+  //]]>
+  </script>
+  <style type="text/css">
+  /*<![CDATA[*/
+            div.skipnav {
+            }
+            div.skipnav a {
+                position: fixed;
+                left: -10000px;
+                top: 1.5em;
+                width: 1px;
+                height: 1px;
+                overflow: hidden;
+            }
+            div.skipnav a:focus, div.skipnav a:active, div.skipnav a:hover {
+                background: white;
+                color: black;
+                box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.5);
+                position: fixed;
+                left: 2em;
+                top: 1.5em;
+                width: auto;
+                height: auto;
+                overflow: visible;
+                text-decoration: underline;
+                z-index: 99999; /* has to be higher than the side panel */
+    }
+  /*]]>*/
+  </style>
+</head>
+<body data-link-prefix="">
+  <div class="skipnav">
+    <a href="#content-wrapper">Skip to main content</a>
+  </div>
+  <div id="page" class="clearfix">
+    <div id="header">
+      <div class="container">
+        <div id="logotype-container" class="pull-left">
+          <a href="../index.html"><img id="logotype-pageheader" src="../css/image/corporate-logo.png" alt="Corporate logotype" data-role="logotype" /></a>
+        </div>
+        <div id="pagetools-container" class="pull-right">
+          <ul id="page-tools">
+            <li class="page-tools-search"><input placeholder="Search" type="text" class="form-control" aria-label="Search" id="search" /></li>
+            <li class="page-tools-print">
+              <a href="javascript:window.print();"><span class="tool-label">Print</span><span class="glyphicon glyphicon-print"></span></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <h1 id="publication-title">CAM</h1>
+    <div id="subheader-sticky-wrapper" class="sticky-wrapper">
+      <div id="subheader">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3 toc-title">
+              <h2><a class="prev nav-icon hidden-lg hidden-md" href="UUID-3b02fe50-cf9a-fff0-7b01-25d308b77b98.html#id76714"><span class="glyphicon glyphicon-chevron-left"></span></a> <a href="#toc" class="hidden mobile-nav-toggle"><span class="glyphicon glyphicon-list"></span>Table of Contents</a><span class="toc-label">Table of
+              Contents</span><a class="next nav-icon hidden-lg hidden-md" href="UUID-03373c44-ebfa-6c4a-54c0-a249ac77daa7.html#UUID-03373c44-ebfa-6c4a-54c0-a249ac77daa7_UUID-d51f879c-4965-0604-7797-52d8862d8ade"><span class="glyphicon glyphicon-chevron-right"></span></a></h2>
+            </div>
+            <div class="col-md-9 breadcrumb-container">
+              <ul class="breadcrumb">
+                <li class="breadcrumb-link">
+                  <span class="glyphicon glyphicon-home"></span>&nbsp;<a href="index-en-US.html">CAM</a>
+                </li>
+                <li class="breadcrumb-link">
+                  <a href="UUID-607650a7-e4a9-65f0-88ef-d0902d55d3e3.html">User interface</a>
+                </li>
+                <li class="breadcrumb-node">Selecting elements in the CAD system</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="main-content">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 toc-container" id="toc-wrapper">
+            <div id="toc-placeholder">
+              <div id="toc-standalone-placeholder"></div>
+            </div>
+          </div>
+          <div class="col-md-9 content-container" id="content-wrapper">
+            <a accesskey="p" class="prev pull-left prev visible-lg visible-md" id="header-navigation-prev" href="UUID-3b02fe50-cf9a-fff0-7b01-25d308b77b98.html#id76714"><span class="glyphicon glyphicon-circle-arrow-left"></span>Prev</a><a accesskey="n" class="pull-right next visible-lg visible-md" id="header-navigation-next" href=
+            "UUID-03373c44-ebfa-6c4a-54c0-a249ac77daa7.html#UUID-03373c44-ebfa-6c4a-54c0-a249ac77daa7_UUID-d51f879c-4965-0604-7797-52d8862d8ade">Next<span class="glyphicon glyphicon-circle-arrow-right"></span></a>
+            <div id="topic-content">
+              <section xml:lang="en-US" lang="en-US" dir="ltr" class="section" data-origin-id="UUID-745e015d-d040-3e0f-ec90-26cf823214fb" data-publication-date="" id="UUID-03373c44-ebfa-6c4a-54c0-a249ac77daa7">
+                <div class="titlepage">
+                  <div>
+                    <div class="title">
+                      <h1 class="title" style="clear: both"><span class="formal-number">2.4</span><span class="formal-label-delimiter">.</span> <span class="formal-title">Selecting elements in the CAD system</span></h1>
+                    </div>
+                  </div>
+                </div>
+                <p>Elements are selected interactively in the model. Tailored to the requirements of the respective cycle, the following elements can be selected:</p>
+                <p><span class="guilabel">Points</span> (plunge points, drill points),</p>
+                <p><span class="guilabel">Contours</span> and help contours (boundaries, leading curves, lines),</p>
+                <p><span class="guilabel">Surfaces</span> (stop surfaces, surfaces for 3DF generation, and so on).</p>
+                <p>The functions for selecting elements are dependent on the CAD system used.</p>
+                <div class="informaltable table-responsive">
+                  <table style="width:100%;" class="informaltable">
+                    <colgroup>
+                      <col style="width:10%;" />
+                      <col style="width:10%;" />
+                      <col style="width:80%;" />
+                    </colgroup>
+                    <tbody>
+                      <tr>
+                        <td class="td">
+                          <div class="mediaobject">
+                            <table class="image-viewport" style="border-collapse:collapse;border:0; ;">
+                              <tr style="height: 48px">
+                                <td style="padding:0;"><img src="image/uuid-1d1739f8-70d8-446c-8e45-989196971d4b.svg" style="max-height: 48px;" alt="icons_dialog_sel_point.svg" /></td>
+                              </tr>
+                            </table>
+                          </div>
+                        </td>
+                        <td class="td">
+                          <div class="mediaobject">
+                            <table class="image-viewport" style="border-collapse:collapse;border:0; ;">
+                              <tr style="height: 48px">
+                                <td style="padding:0;"><img src="image/uuid-c1ae3058-346c-c7f0-4418-5c8b64d524bc.svg" style="max-height: 48px;" alt="icons_brows_dialog_change_sel_point.svg" /></td>
+                              </tr>
+                            </table>
+                          </div>
+                        </td>
+                        <td valign="middle" class="td align-middle">
+                          <p>Select point, snap point, top. Edit the selection.</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="td">
+                          <div class="mediaobject">
+                            <table class="image-viewport" style="border-collapse:collapse;border:0; ;">
+                              <tr style="height: 48px">
+                                <td style="padding:0;"><img src="image/uuid-1096281f-ad0a-bd30-8824-824e5d3c9c16.svg" style="max-height: 48px;" alt="icons_dialog_sel_contour.svg" /></td>
+                              </tr>
+                            </table>
+                          </div>
+                        </td>
+                        <td class="td">
+                          <div class="mediaobject">
+                            <table class="image-viewport" style="border-collapse:collapse;border:0; ;">
+                              <tr style="height: 48px">
+                                <td style="padding:0;"><img src="image/uuid-a7c825ba-b12b-e9a5-5346-9a26e48c9010.svg" style="max-height: 48px;" alt="icons_brows_dialog_change_sel_cont.svg" /></td>
+                              </tr>
+                            </table>
+                          </div>
+                        </td>
+                        <td valign="middle" class="td align-middle">
+                          <p>Select contour. Edit the selection.</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="td">
+                          <div class="mediaobject">
+                            <table class="image-viewport" style="border-collapse:collapse;border:0; ;">
+                              <tr style="height: 48px">
+                                <td style="padding:0;"><img src="image/uuid-ec84c033-d0fb-0a66-c66f-b2284e1787a9.svg" style="max-height: 48px;" alt="icons_dialog_sel_closed_contour.svg" /></td>
+                              </tr>
+                            </table>
+                          </div>
+                        </td>
+                        <td class="td">
+                          <div class="mediaobject">
+                            <table class="image-viewport" style="border-collapse:collapse;border:0; ;">
+                              <tr style="height: 48px">
+                                <td style="padding:0;"><img src="image/uuid-38a2a65f-dd21-e2f2-14d2-1a1dab29bb59.svg" style="max-height: 48px;" alt="icons_brows_dialog_change_sel_cl_cont.svg" /></td>
+                              </tr>
+                            </table>
+                          </div>
+                        </td>
+                        <td valign="middle" class="td align-middle">
+                          <p>Select closed contour, profile, boundary. Edit the selection.</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="td">
+                          <div class="mediaobject">
+                            <table class="image-viewport" style="border-collapse:collapse;border:0; ;">
+                              <tr style="height: 48px">
+                                <td style="padding:0;"><img src="image/uuid-5d63f9f5-1e65-cfe8-2c08-88dd195c373a.svg" style="max-height: 48px;" alt="icons_brows_bot_sel_circle.svg" /></td>
+                              </tr>
+                            </table>
+                          </div>
+                        </td>
+                        <td class="td">
+                          <div class="mediaobject">
+                            <table class="image-viewport" style="border-collapse:collapse;border:0; ;">
+                              <tr style="height: 48px">
+                                <td style="padding:0;"><img src="image/uuid-2fa0469f-c7ab-6915-f5e5-1776b0ef9f4b.svg" style="max-height: 48px;" alt="icons_brows_dialog_change_sel_circ.svg" /></td>
+                              </tr>
+                            </table>
+                          </div>
+                        </td>
+                        <td valign="middle" class="td align-middle">
+                          <p>Select circle, profile, boundary. Edit the selection.</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="td">
+                          <div class="mediaobject">
+                            <table class="image-viewport" style="border-collapse:collapse;border:0; ;">
+                              <tr style="height: 48px">
+                                <td style="padding:0;"><img src="image/uuid-673d7995-7d25-d3a8-e0b8-6441ee3524d0.svg" style="max-height: 48px;" alt="icons_dialog_sel_surface.svg" /></td>
+                              </tr>
+                            </table>
+                          </div>
+                        </td>
+                        <td class="td">
+                          <div class="mediaobject">
+                            <table class="image-viewport" style="border-collapse:collapse;border:0; ;">
+                              <tr style="height: 48px">
+                                <td style="padding:0;"><img src="image/uuid-e2f74e1f-4685-2820-aa13-492091a9ba6b.svg" style="max-height: 48px;" alt="icons_brows_dialog_change_sel_surf.svg" /></td>
+                              </tr>
+                            </table>
+                          </div>
+                        </td>
+                        <td valign="middle" class="td align-middle">
+                          <p>Select face of a model, open/closed solid.</p>
+                          <p>Edit the selection.</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="td">
+                          <div class="mediaobject">
+                            <table class="image-viewport" style="border-collapse:collapse;border:0; ;">
+                              <tr style="height: 48px">
+                                <td style="padding:0;"><img src="image/uuid-ec1fc424-1b3c-e593-7879-c0f17c0098fd.svg" style="max-height: 48px;" alt="icons_dialog_sel_direction.svg" /></td>
+                              </tr>
+                            </table>
+                          </div>
+                        </td>
+                        <td colspan="2" valign="middle" class="td align-middle">
+                          <p>Select line, normal of a plane or curve.</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="td">
+                          <div class="mediaobject">
+                            <table class="image-viewport" style="border-collapse:collapse;border:0; ;">
+                              <tr style="height: 48px">
+                                <td style="padding:0;"><img src="image/uuid-b305ce21-d1f2-329b-820f-b47f0169cab6.svg" style="max-height: 48px;" alt="icons_dialog_ok.svg" /></td>
+                              </tr>
+                            </table>
+                          </div>
+                        </td>
+                        <td colspan="2" valign="middle" class="td align-middle">
+                          <p>Confirm the selection.</p>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="informalfigure">
+                  <div class="mediaobject">
+                    <table class="image-viewport" style="border-collapse:collapse;border:0; width:638px;">
+                      <tr>
+                        <td style="padding:0;"><img src="image/uuid-910abb06-382d-e77d-b843-a09cea5a19ac.png" style="max-width: 638px;" alt="grundlagen_tiefe_oberflaeche_sicherheitsebene_definieren.png" /></td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+                <p>Specify the Z coordinates for <span class="guilabel">depth</span> (1), <span class="guilabel">surface</span> (2) and <span class="guilabel">clearance plane</span> (3) directly by double clicking the graphical preview. The graphical preview enlarges (4). Define the Z value directly in the input field (5) or use the drag point (6)
+                to move the graphical preview upward or downward.</p>
+                <section dir="ltr" class="simplesect internal" id="UUID-03373c44-ebfa-6c4a-54c0-a249ac77daa7_simplesect-idm53350157105002">
+                  <div class="titlepage">
+                    <div>
+                      <div>
+                        <h2 class="title" style="clear: both"><span class="formal-title">Select element group</span></h2>
+                      </div>
+                    </div>
+                  </div>
+                  <p>Elements can be combined to form groups.</p>
+                  <div class="informaltable table-responsive" id="UUID-03373c44-ebfa-6c4a-54c0-a249ac77daa7_informaltable-idm53350485793040">
+                    <table frame="below" rules="none" style="width:100%;" class="informaltable">
+                      <colgroup>
+                        <col style="width:9%;" />
+                        <col style="width:91%;" />
+                      </colgroup>
+                      <tbody>
+                        <tr>
+                          <td class="td">
+                            <div class="mediaobject"><img src="image/uuid-896f6cf8-8668-f9d8-9473-e3ed2f11593d.png" style="" alt="assembly.png" /></div>
+                          </td>
+                          <td class="td">
+                            <p>Group entities into a group within the model structure or separate them from a group.</p>
+                            <p><span class="guimenu">Edit</span> → <span class="guimenuitem">Group / ungroup</span></p>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <p>If this function is activated, groups of elements can be selected. A group is divided into individual entities when it is transferred into <span class="italic">hyper</span>MILL. Subsequent changes to the entity within a group are not automatically forwarded to <span class="italic">hyper</span>MILL.</p>
+                </section>
+                <section xml:lang="en-US" lang="en-US" dir="ltr" class="section" data-origin-id="" data-publication-date="" id="UUID-03373c44-ebfa-6c4a-54c0-a249ac77daa7_UUID-d51f879c-4965-0604-7797-52d8862d8ade">
+                  <div class="titlepage">
+                    <div>
+                      <div class="title">
+                        <h2 class="title" style="clear: both"><span class="formal-title">Define filter</span></h2>
+                      </div>
+                    </div>
+                  </div>
+                  <p>Use a filter to define geometric elements.</p>
+                  <div class="procedure">
+                    <ol class="procedure" type="1">
+                      <li class="step">
+                        <div class="informaltable table-responsive">
+                          <table style="width:100%;" class="informaltable">
+                            <colgroup>
+                              <col style="width:12%;" />
+                              <col style="width:88%;" />
+                            </colgroup>
+                            <tbody>
+                              <tr>
+                                <td class="td">
+                                  <div class="mediaobject">
+                                    <table class="image-viewport" style="border-collapse:collapse;border:0; ;">
+                                      <tr style="height: 48px">
+                                        <td style="padding:0;"><img src="image/uuid-a6fc81ed-aae2-b071-7736-643a3f4a51ed.svg" style="max-height: 48px;" alt="hm_filter_open_filter.svg" /></td>
+                                      </tr>
+                                    </table>
+                                  </div>
+                                </td>
+                                <td class="td">
+                                  <p>Click the icon to open the <span class="guilabel">Filter definition</span> dialog, select the <span class="guilabel">Active</span> checkbox and enable the required filter option: <span class="guilabel">Use color filter</span>, <span class="guilabel">Use tag filter</span> or <span class="guilabel">Use layer
+                                  filter</span>.</p>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </li>
+                      <li class="step">
+                        <div class="informaltable table-responsive">
+                          <table style="width:100%;" class="informaltable">
+                            <colgroup>
+                              <col style="width:12%;" />
+                              <col style="width:12%;" />
+                              <col />
+                            </colgroup>
+                            <tbody>
+                              <tr>
+                                <td class="td">
+                                  <div class="mediaobject">
+                                    <table class="image-viewport" style="border-collapse:collapse;border:0; ;">
+                                      <tr style="height: 48px">
+                                        <td style="padding:0;"><img src="image/uuid-d68a6d02-13be-4b8e-e720-aacbbe4015e9.svg" style="max-height: 48px;" alt="hm_filter_edit.svg" /></td>
+                                      </tr>
+                                    </table>
+                                  </div>
+                                </td>
+                                <td class="td">
+                                  <div class="mediaobject">
+                                    <table class="image-viewport" style="border-collapse:collapse;border:0; ;">
+                                      <tr style="height: 48px">
+                                        <td style="padding:0;"><img src="image/uuid-89b3d465-5852-8446-a312-f4e5deba1994.svg" style="max-height: 48px;" alt="hm_filter_add_el.svg" /></td>
+                                      </tr>
+                                    </table>
+                                  </div>
+                                </td>
+                                <td class="td">
+                                  <p>Then click the icons to <span class="guilabel">Add / select color filter</span> or <span class="guilabel">Add / select tag filter</span> and define the color or tag class. If required, click the <span class="inlinemediaobject"><img src="/var/www/ccms/assets/images/image-missing.png" alt="" /></span> icon to
+                                  select the surfaces that are to be used as the basis for the filter definition.</p>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </li>
+                      <li class="step">
+                        <div class="informaltable table-responsive">
+                          <table style="width:100%;" class="informaltable">
+                            <colgroup>
+                              <col style="width:12%;" />
+                              <col style="width:12%;" />
+                              <col style="width:76%;" />
+                            </colgroup>
+                            <tbody>
+                              <tr>
+                                <td class="td">
+                                  <div class="mediaobject">
+                                    <table class="image-viewport" style="border-collapse:collapse;border:0; ;">
+                                      <tr style="height: 48px">
+                                        <td style="padding:0;"><img src="image/uuid-d68a6d02-13be-4b8e-e720-aacbbe4015e9.svg" style="max-height: 48px;" alt="hm_filter_edit.svg" /></td>
+                                      </tr>
+                                    </table>
+                                  </div>
+                                </td>
+                                <td class="td">
+                                  <div class="mediaobject">
+                                    <table class="image-viewport" style="border-collapse:collapse;border:0; ;">
+                                      <tr style="height: 48px">
+                                        <td style="padding:0;"><img src="image/uuid-89b3d465-5852-8446-a312-f4e5deba1994.svg" style="max-height: 48px;" alt="hm_filter_add_el.svg" /></td>
+                                      </tr>
+                                    </table>
+                                  </div>
+                                </td>
+                                <td class="td">
+                                  <p>If a layer filter or a layer container filter is to be used, select the <span class="guilabel">Layer filter</span> or <span class="guilabel">Layer container filter</span> checkbox. Then click the icons to <span class="guilabel">Add / select layer filter</span> or<span class="guilabel">Add/Select layer container
+                                  filter</span> and define the layer/layer container.</p>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </li>
+                      <li class="step">
+                        <div class="informaltable table-responsive">
+                          <table style="width:100%;" class="informaltable">
+                            <colgroup>
+                              <col style="width:12%;" />
+                              <col style="width:12%;" />
+                              <col style="width:76%;" />
+                            </colgroup>
+                            <tbody>
+                              <tr>
+                                <td class="td">
+                                  <div class="mediaobject">
+                                    <table class="image-viewport" style="border-collapse:collapse;border:0; ;">
+                                      <tr style="height: 48px">
+                                        <td style="padding:0;"><img src="image/uuid-179948a9-b75a-3db1-b113-590cd55e4e3e.svg" style="max-height: 48px;" alt="hm_filter_sel_layer.svg" /></td>
+                                      </tr>
+                                    </table>
+                                  </div>
+                                </td>
+                                <td class="td">
+                                  <div class="mediaobject">
+                                    <table class="image-viewport" style="border-collapse:collapse;border:0; ;">
+                                      <tr style="height: 48px">
+                                        <td style="padding:0;"><img src="image/uuid-3ff70adf-b2f9-368c-b514-22245d31736e.svg" style="max-height: 48px;" alt="hm_filter_sel_layer_cont.svg" /></td>
+                                      </tr>
+                                    </table>
+                                  </div>
+                                </td>
+                                <td class="td">
+                                  <p>To do this, in the <span class="guilabel">Layer</span> / <span class="guilabel">Layer container</span> line, click the icon to select a layer or a layer container that will be used for the filter definition. Enable the <span class="guilabel">Use wildcard (\\*)</span> option to search for character strings that
+                                  appear before or after the placeholder in a name. You can also use two placeholders to search for strings in between.</p>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </li>
+                      <li class="step">
+                        <p>To delete one or all filters, click the <span class="guilabel">color</span>, <span class="guilabel">Layer</span> or <span class="guilabel">Tag class</span> line and use the <span class="guilabel">Delete</span> / <span class="guilabel">Delete all</span> function on the shortcut menu.</p>
+                      </li>
+                      <li class="step">
+                        <div class="informaltable table-responsive">
+                          <table style="width:100%;" class="informaltable">
+                            <colgroup>
+                              <col style="width:12%;" />
+                              <col style="width:88%;" />
+                            </colgroup>
+                            <tbody>
+                              <tr>
+                                <td class="td">
+                                  <div class="mediaobject">
+                                    <table class="image-viewport" style="border-collapse:collapse;border:0; ;">
+                                      <tr style="height: 48px">
+                                        <td style="padding:0;"><img src="image/uuid-a60942e8-d29e-f40e-2c94-bcee6c33b5c9.svg" style="max-height: 48px;" alt="hm_filter_update.svg" /></td>
+                                      </tr>
+                                    </table>
+                                  </div>
+                                </td>
+                                <td class="td">
+                                  <p>After completing the filter definition, click the icon to include the elements found in the CAD model on the basis of the filter definition in the selection.</p>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </li>
+                    </ol>
+                  </div>
+                  <p>No filter function is available for <span class="phrase"><span class="application"><span class="emphasis"><em>hyper</em></span>MILL for Autodesk<sup>®</sup> Inventor<sup>®</sup></span></span>. Only the color filter is available for <span class="phrase"><span class="application"><span class="emphasis"><em>hyper</em></span>MILL
+                  for SOLIDWORKS</span></span>.</p>
+                </section>
+              </section>
+              <div class="footer-content">
+                <div class="section-toc section-toc-after">
+                  <div class="section-toc-title">
+                    <span class="section-toc-title-delimiter">:</span>
+                  </div>
+                </div>
+              </div>
+              <footer></footer>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

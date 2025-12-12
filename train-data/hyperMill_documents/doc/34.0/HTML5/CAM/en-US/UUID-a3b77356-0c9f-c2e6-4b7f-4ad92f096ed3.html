@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="x-ua-compatible" content="IE=edge" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="search" content="default" />
+  <meta name="use.ic" content="no" />
+  <meta name="tocstandalone" content="yes" />
+  <script type="text/javascript">
+  //<![CDATA[
+                        var index;
+                        var contentLanguage = 'en-US';
+                        var enterKey = 'select';
+                        
+                                        var anchoroption = true;
+                                var instantsearch_minlength = 1;
+                                                
+                                var fuse_threshold = 0.3;
+                        
+                                        var local_csh = false;
+                                
+                        var useanchorlinks = false;
+  //]]>
+  </script>
+  <title>Optimization</title>
+  <link rel="stylesheet" type="text/css" href="../css/docbook.css" />
+  <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" href="../css/bootstrap-theme.min.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style-common.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style-responsive.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style-print.css" />
+  <link rel="stylesheet" type="text/css" href="../css/font-awesome.css" />
+  <link rel="stylesheet" type="text/css" href="../css/custom.css" />
+  <link rel="stylesheet" type="text/css" href="../css/layout-custom-style.css" />
+  <script src="../js/jquery-1.10.2.min.js" type="text/javascript"></script>
+  <script src="../js/jquery-ui-1.10.3.custom.min.js" type="text/javascript"></script>
+  <script src="../js/bootstrap.min.js" type="text/javascript"></script>
+  <script src="../js/purl.js" type="text/javascript"></script>
+  <script src="../js/jquery.event.move.js" type="text/javascript"></script>
+  <script src="../js/jquery.event.swipe.js" type="text/javascript"></script>
+  <script src="../js/jquery.sticky.js" type="text/javascript"></script>
+  <script src="../js/respond.min.js" type="text/javascript"></script>
+  <script src="../js/script.js" type="text/javascript"></script>
+  <script src="js/toc.js" type="text/javascript"></script>
+  <script src="../js/create-toc.js" type="text/javascript"></script>
+  <script src="../js/clipboard.min.js" type="text/javascript"></script>
+  <script src="../js/fuse.min.js" type="text/javascript"></script>
+  <script src="../js/jquery.mark.min.js" type="text/javascript"></script>
+  <script src="../js/html5.fuse.search.js" type="text/javascript"></script>
+  <script src="js/fuzzydata.js" type="text/javascript"></script>
+  <script src="../js/csh.js" type="text/javascript"></script>
+  <script src="../js/highlight-mergehtml-plugin.js" type="text/javascript"></script>
+  <meta name="generator" content="Paligo" />
+  <link rel="prev" href="UUID-7f9a4221-dc9e-a86e-1078-92571d786f2a.html#UUID-7f9a4221-dc9e-a86e-1078-92571d786f2a_UUID-385a6d36-0c2b-9820-38d6-be5bdb93759c" title="Contour attributes" />
+  <link rel="next" href="UUID-a3b77356-0c9f-c2e6-4b7f-4ad92f096ed3.html#UUID-a3b77356-0c9f-c2e6-4b7f-4ad92f096ed3_UUID-52440015-6012-caad-fddd-58c43fba7c82" title="5X Drilling" />
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js?config=TeX-MML-AM_CHTML" async="async"></script>
+  <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+  <script type="text/javascript" src="../js/cookie-consent.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  <script type="text/javascript">
+  //<![CDATA[
+                        $(document).on('ready ajaxComplete', function() {
+                                
+                                hljs.addPlugin(mergeHTMLPlugin);
+                                hljs.configure({'ignoreUnescapedHTML': true});
+                                
+                                $('pre:not(.embedcode)').each(function() {
+                                        /**
+                                         * @type {string}
+                                         */
+                                        var language = $(this).data('language');
+
+                                        if (language === 'plaintext' || language === 'text') {
+                                                $(this).addClass(language).addClass('hljs');
+                                                return true;
+                                        }
+                                        else {
+                                                var clone = this.cloneNode(true);
+                                                hljs.highlightElement(clone);
+                                                $(this).empty().append($(clone).contents());
+                                                $(this).attr("class", $(clone).attr("class"));
+                                        }
+                                });
+                        });
+  //]]>
+  </script>
+  <style type="text/css">
+  /*<![CDATA[*/
+            div.skipnav {
+            }
+            div.skipnav a {
+                position: fixed;
+                left: -10000px;
+                top: 1.5em;
+                width: 1px;
+                height: 1px;
+                overflow: hidden;
+            }
+            div.skipnav a:focus, div.skipnav a:active, div.skipnav a:hover {
+                background: white;
+                color: black;
+                box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.5);
+                position: fixed;
+                left: 2em;
+                top: 1.5em;
+                width: auto;
+                height: auto;
+                overflow: visible;
+                text-decoration: underline;
+                z-index: 99999; /* has to be higher than the side panel */
+    }
+  /*]]>*/
+  </style>
+</head>
+<body data-link-prefix="">
+  <div class="skipnav">
+    <a href="#content-wrapper">Skip to main content</a>
+  </div>
+  <div id="page" class="clearfix">
+    <div id="header">
+      <div class="container">
+        <div id="logotype-container" class="pull-left">
+          <a href="../index.html"><img id="logotype-pageheader" src="../css/image/corporate-logo.png" alt="Corporate logotype" data-role="logotype" /></a>
+        </div>
+        <div id="pagetools-container" class="pull-right">
+          <ul id="page-tools">
+            <li class="page-tools-search"><input placeholder="Search" type="text" class="form-control" aria-label="Search" id="search" /></li>
+            <li class="page-tools-print">
+              <a href="javascript:window.print();"><span class="tool-label">Print</span><span class="glyphicon glyphicon-print"></span></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <h1 id="publication-title">CAM</h1>
+    <div id="subheader-sticky-wrapper" class="sticky-wrapper">
+      <div id="subheader">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3 toc-title">
+              <h2><a class="prev nav-icon hidden-lg hidden-md" href="UUID-7f9a4221-dc9e-a86e-1078-92571d786f2a.html#UUID-7f9a4221-dc9e-a86e-1078-92571d786f2a_UUID-385a6d36-0c2b-9820-38d6-be5bdb93759c"><span class="glyphicon glyphicon-chevron-left"></span></a> <a href="#toc" class="hidden mobile-nav-toggle"><span class=
+              "glyphicon glyphicon-list"></span>Table of Contents</a><span class="toc-label">Table of Contents</span><a class="next nav-icon hidden-lg hidden-md" href="UUID-a3b77356-0c9f-c2e6-4b7f-4ad92f096ed3.html#UUID-a3b77356-0c9f-c2e6-4b7f-4ad92f096ed3_UUID-52440015-6012-caad-fddd-58c43fba7c82"><span class=
+              "glyphicon glyphicon-chevron-right"></span></a></h2>
+            </div>
+            <div class="col-md-9 breadcrumb-container">
+              <ul class="breadcrumb">
+                <li class="breadcrumb-link">
+                  <span class="glyphicon glyphicon-home"></span>&nbsp;<a href="index-en-US.html">CAM</a>
+                </li>
+                <li class="breadcrumb-link">
+                  <a href="UUID-3b9d9a18-2161-24ee-9ef4-f7f1b27ed796.html">Drilling</a>
+                </li>
+                <li class="breadcrumb-link">
+                  <a href="UUID-542fb07f-2d75-dd94-4657-36e2198887b4.html">Drilling with Chip Break</a>
+                </li>
+                <li class="breadcrumb-node">Optimization</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="main-content">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 toc-container" id="toc-wrapper">
+            <div id="toc-placeholder">
+              <div id="toc-standalone-placeholder"></div>
+            </div>
+          </div>
+          <div class="col-md-9 content-container" id="content-wrapper">
+            <a accesskey="p" class="prev pull-left prev visible-lg visible-md" id="header-navigation-prev" href="UUID-7f9a4221-dc9e-a86e-1078-92571d786f2a.html#UUID-7f9a4221-dc9e-a86e-1078-92571d786f2a_UUID-385a6d36-0c2b-9820-38d6-be5bdb93759c"><span class="glyphicon glyphicon-circle-arrow-left"></span>Prev</a><a accesskey="n" class=
+            "pull-right next visible-lg visible-md" id="header-navigation-next" href="UUID-a3b77356-0c9f-c2e6-4b7f-4ad92f096ed3.html#UUID-a3b77356-0c9f-c2e6-4b7f-4ad92f096ed3_UUID-52440015-6012-caad-fddd-58c43fba7c82">Next<span class="glyphicon glyphicon-circle-arrow-right"></span></a>
+            <div id="topic-content">
+              <section xml:lang="en-US" lang="en-US" dir="ltr" class="section" data-origin-id="UUID-2c666a29-532d-eaa5-53b4-3cd72e333035" data-publication-date="" id="UUID-a3b77356-0c9f-c2e6-4b7f-4ad92f096ed3">
+                <div class="titlepage">
+                  <div>
+                    <div class="title">
+                      <h1 class="title" style="clear: both"><span class="formal-title">Optimization</span></h1>
+                    </div>
+                  </div>
+                </div>
+                <p>Drilling point optimization allows any drilling patterns to be optimized in accordance with various criteria (not available for the Turning strategy), so that the stresses and heat that are generated during drilling are distributed as evenly as possible over the entire surface.</p>
+                <div dir="ltr" class="note">
+                  <h3 class="title">Note</h3>
+                  <p><span class="italic">hyper</span>MILL generates a graphical feedback of the drilling points that have been selected for machining. Since a large number of drilling points requires a correspondingly powerful computer to calculate and display this graphical preview, the preview display is limited to 1000 drilling points by
+                  default.</p>
+                </div>
+                <section xml:lang="en-US" lang="en-US" dir="ltr" class="section internal" data-origin-id="" data-publication-date="" id="UUID-a3b77356-0c9f-c2e6-4b7f-4ad92f096ed3_UUID-52440015-6012-caad-fddd-58c43fba7c82">
+                  <div class="titlepage">
+                    <div>
+                      <div class="title">
+                        <h2 class="title" style="clear: both"><span class="formal-title">5X Drilling</span></h2>
+                      </div>
+                    </div>
+                  </div>
+                  <p>Two different optimization methods are available for 5-axis drilling.</p>
+                  <section dir="ltr" class="section internal" data-origin-id="" data-publication-date="" id="id100979">
+                    <div class="titlepage">
+                      <div>
+                        <div class="title">
+                          <h3 class="title"><span class="formal-title">5X</span></h3>
+                        </div>
+                      </div>
+                    </div>
+                    <p><span class="guilabel">Frame view</span>: The machining paths for the selected drill holes are calculated from the frame view, while taking account of the selected drilling strategy. All of the drilling strategies that can be applied during 2D drilling are available.</p>
+                    <p><span class="guilabel">5X grouping</span>: The machining paths for the selected drill holes are combined into groups and calculated according to the shortest distance method. The grouping depends on the tool axis (B axis/C axis) that may be moved first.</p>
+                    <p>The machining paths from one frame to the next can be checked for collisions (optional) if the corresponding parameter (Setup dialog box) is enabled.</p>
+                  </section>
+                  <section dir="ltr" class="section internal" data-origin-id="" data-publication-date="" id="id100986">
+                    <div class="titlepage">
+                      <div>
+                        <div class="title">
+                          <h3 class="title"><span class="formal-title">Start</span></h3>
+                        </div>
+                      </div>
+                    </div>
+                    <p><span class="guilabel">Use start reference</span>: Select a start point, if you want optimization to begin at a defined starting point.</p>
+                  </section>
+                  <section dir="ltr" class="section internal" data-origin-id="" data-publication-date="" id="id100990">
+                    <div class="titlepage">
+                      <div>
+                        <div class="title">
+                          <h3 class="title"><span class="formal-title">Parameters</span></h3>
+                        </div>
+                      </div>
+                    </div>
+                    <p><span class="guilabel">Move B axis first</span> / <span class="guilabel">Move C axis first</span>: Control the grouping of drill holes and thus specify the machining sequence. The drilling points are always processed in a vertical direction first (Z direction of the NCS). Afterwards, the method for 5X movement is used.</p>
+                  </section>
+                </section>
+                <section dir="ltr" class="section internal" data-origin-id="" data-publication-date="" id="id100995">
+                  <div class="titlepage">
+                    <div>
+                      <div class="title">
+                        <h2 class="title" style="clear: both"><span class="formal-title">Sorting strategy</span></h2>
+                      </div>
+                    </div>
+                  </div>
+                  <p><span class="guilabel">Off</span>: Drill holes are machined in the order in which they were selected.</p>
+                  <p><span class="guilabel">Shortest distance</span>: Machining is carried out starting with the (drilling) point closest to the origin of the specified coordinate system (frame), followed by the next closest in each case. Select the <span class="guilabel">Use start reference</span> option to use a start point as the reference for
+                  the beginning of the optimization.</p>
+                  <p><span class="guilabel">Circular</span>: The drill holes to be machined are divided into concentric circle segments starting from a center point.</p>
+                  <p><span class="guilabel">X or Y parallel</span>: The drill holes to be machined are divided into segments that are referenced on the X or Y axis of the selected machining coordinate system (frame).</p>
+                  <p><span class="guilabel">Contour parallel</span>: The drill holes are machined along the outline of the outer contour of the drilling point pattern.</p>
+                  <p>More information about the various parameters is provided in the next few chapters.</p>
+                  <p><span class="guilabel">Frame dependent</span>: Available for the 5X Helical Drilling cycle. The direction of the drill holes is aligned with the Z axis of the defined frame system. When using features, the frame system is part of the feature definition. All drill holes can be collision checked using the Milling area.</p>
+                </section>
+                <section xml:lang="en-US" lang="en-US" dir="ltr" class="section internal" data-origin-id="" data-publication-date="" id="UUID-a3b77356-0c9f-c2e6-4b7f-4ad92f096ed3_UUID-e462f39b-4536-2a47-c87c-1679cf021100">
+                  <div class="titlepage">
+                    <div>
+                      <div class="title">
+                        <h2 class="title" style="clear: both"><span class="formal-title">Circular sorting strategy</span></h2>
+                      </div>
+                    </div>
+                  </div>
+                  <section dir="ltr" class="section internal" data-origin-id="" data-publication-date="" id="id101013">
+                    <div class="titlepage">
+                      <div>
+                        <div class="title">
+                          <h3 class="title"><span class="formal-title">Start</span></h3>
+                        </div>
+                      </div>
+                    </div>
+                    <p><span class="guilabel">Use start reference</span>: Define any point as the start point. This start point can be inside or outside of the drilling point pattern. In this case, machining starts from the defined start reference and moves to the neighboring point in accordance with the Machining direction and Orientation.</p>
+                  </section>
+                  <section xml:lang="en-US" lang="en-US" dir="ltr" class="section" data-origin-id="" data-publication-date="" id="UUID-a3b77356-0c9f-c2e6-4b7f-4ad92f096ed3_UUID-f29f7ac5-9ff2-aaf3-38a1-ebdf840010a4">
+                    <div class="titlepage">
+                      <div>
+                        <div class="title">
+                          <h3 class="title"><span class="formal-title">Z optimization</span></h3>
+                        </div>
+                      </div>
+                    </div>
+                    <p><span class="guilabel">Z optimization</span>: Use the Max. Z depth parameter to specify the conditions for optimized machining of drill holes at different Z levels. If the distance between two levels is greater than this value, all of the drill holes on one level are fully machined first before moving to the next level. XY
+                    optimization takes place on every level, while taking account of the relevant starting points.</p>
+                    <p>This method reduces the number of empty paths.</p>
+                    <p>(1) without Z optimization, (2) with Z optimization.</p>
+                    <div class="informalfigure">
+                      <div class="mediaobject"><img src="image/uuid-285418a4-04f2-5b01-9f65-80097bd6e257.svg" style="height: 319px;" alt="bohren_Z_optimierung.svg" /></div>
+                    </div>
+                  </section>
+                  <section dir="ltr" class="section internal" data-origin-id="" data-publication-date="" id="id101027">
+                    <div class="titlepage">
+                      <div>
+                        <div class="title">
+                          <h3 class="title"><span class="formal-title">Orientation</span></h3>
+                        </div>
+                      </div>
+                    </div>
+                    <p>The parameters for controlling orientation relate to the machining of the segments.</p>
+                    <p><span class="guilabel">Clockwise</span>: The segments are machined in clockwise order.</p>
+                    <p><span class="guilabel">Counterclockwise</span>: The segments are machined in counterclockwise order.</p>
+                    <p><span class="guilabel">Zigzag</span>: The orientation (clockwise/counterclockwise) is reversed after each segment of the circle.</p>
+                  </section>
+                  <section dir="ltr" class="section internal" data-origin-id="" data-publication-date="" id="id101036">
+                    <div class="titlepage">
+                      <div>
+                        <div class="title">
+                          <h3 class="title"><span class="formal-title">Machining</span></h3>
+                        </div>
+                      </div>
+                    </div>
+                    <p><span class="guilabel">Inside-Out</span>: With this option, the drill holes are machined within radial distance from the inside outwards.</p>
+                    <p><span class="guilabel">Outside-In</span>: With this option, the drill holes are machined within radial distance from the outside inwards.</p>
+                  </section>
+                  <section dir="ltr" class="section internal" data-origin-id="" data-publication-date="" id="id101042">
+                    <div class="titlepage">
+                      <div>
+                        <div class="title">
+                          <h3 class="title"><span class="formal-title">Parameters</span></h3>
+                        </div>
+                      </div>
+                    </div>
+                    <p><span class="guilabel">Radial width</span> (1): Width of a circle segment, measured from the center of the machining area.</p>
+                    <p><span class="guilabel">Center point</span>: In order to obtain a correct toolpath calculation, it is essential to define a center point. The center point to be defined represents the center point of all circle segments that define the machining area.</p>
+                    <p>In the following, the surface between two concentric circles will be referred to as a circle segment. The term circle segment is not used in <span class="italic">hyper</span>MILL. It is only used in this documentation to describe the drilling optimization functionality.</p>
+                  </section>
+                  <section dir="ltr" class="section internal" data-origin-id="" data-publication-date="" id="UUID-a3b77356-0c9f-c2e6-4b7f-4ad92f096ed3_id179MG0YC053">
+                    <div class="titlepage">
+                      <div>
+                        <div class="title">
+                          <h3 class="title"><span class="formal-title">Example:</span></h3>
+                        </div>
+                      </div>
+                    </div>
+                    <p>In the example (see illustration), all the drilling points that lie within the radial distance in a circle segment are machined. In this context, machining continues with the neighboring drilling point. Once all the drilling points in a circle segment have been processed, the machine moves to the next circle segment.</p>
+                    <p>The machining sequence in the example is: circle segment A, circle segment B, circle segment C. Machining is clockwise from the outside in.</p>
+                    <div class="mediaobject">
+                      <table class="image-viewport" style="border-collapse:collapse;border:0; width:461px;">
+                        <tr style="height: 248px">
+                          <td style="padding:0;"><img src="image/uuid-2c947595-eea6-b9b7-56ca-8fc8f37837a4.svg" style="max-width: 461px; max-height: 248px;" alt="bohren_optimierung_kreisfoermig.svg" /></td>
+                        </tr>
+                      </table>
+                    </div>
+                  </section>
+                </section>
+                <section xml:lang="en-US" lang="en-US" dir="ltr" class="section internal" data-origin-id="" data-publication-date="" id="UUID-a3b77356-0c9f-c2e6-4b7f-4ad92f096ed3_UUID-15a98587-e012-b51e-52b3-e4fe79bbe87a">
+                  <div class="titlepage">
+                    <div>
+                      <div class="title">
+                        <h2 class="title" style="clear: both"><span class="formal-title">X / Y parallel sorting strategy</span></h2>
+                      </div>
+                    </div>
+                  </div>
+                  <section dir="ltr" class="section internal" data-origin-id="" data-publication-date="" id="id101059">
+                    <div class="titlepage">
+                      <div>
+                        <div class="title">
+                          <h3 class="title"><span class="formal-title">Orientation</span></h3>
+                        </div>
+                      </div>
+                    </div>
+                    <p><span class="guilabel">Zigzag</span>: The machining direction of the segments changes after each segment.</p>
+                    <p><span class="guilabel">Oneway</span>: The segments are always machined in the same direction.</p>
+                    <p><span class="guilabel">Shortest distance</span>: Machining continues from the last drilling point of a segment to the closest drilling point in the next segment.</p>
+                  </section>
+                  <section dir="ltr" class="section internal" data-origin-id="" data-publication-date="" id="id101067">
+                    <div class="titlepage">
+                      <div>
+                        <div class="title">
+                          <h3 class="title"><span class="formal-title">Machining</span></h3>
+                        </div>
+                      </div>
+                    </div>
+                    <p><span class="guilabel">Revert X</span>: The machining direction oriented on the X axis of the frame coordinate system is reversed.</p>
+                    <p><span class="guilabel">Revert Y</span>: The machining direction oriented on the Y axis of the frame coordinate system is reversed.</p>
+                  </section>
+                  <section dir="ltr" class="section internal" data-origin-id="" data-publication-date="" id="id101073">
+                    <div class="titlepage">
+                      <div>
+                        <div class="title">
+                          <h3 class="title"><span class="formal-title">Parameters</span></h3>
+                        </div>
+                      </div>
+                    </div>
+                    <p><span class="guilabel">Segment width</span> (A): Width of a segment extending in the X or Y direction. Corresponds to the maximum distance between points in the X or Y direction within a segment.</p>
+                  </section>
+                  <section dir="ltr" class="section internal" data-origin-id="" data-publication-date="" id="UUID-a3b77356-0c9f-c2e6-4b7f-4ad92f096ed3_id179MG0YC0ZY">
+                    <div class="titlepage">
+                      <div>
+                        <div class="title">
+                          <h3 class="title"><span class="formal-title">Examples:</span></h3>
+                        </div>
+                      </div>
+                    </div>
+                    <p>The following parameters are defined in example 1:</p>
+                    <div class="informaltable table-responsive">
+                      <table class="informaltable">
+                        <colgroup>
+                          <col style="width:54%;" />
+                          <col style="width:46%;" />
+                        </colgroup>
+                        <tbody>
+                          <tr>
+                            <td class="td">
+                              <p>Drilling strategy</p>
+                            </td>
+                            <td class="td">
+                              <p>X parallel</p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="td">
+                              <p>Orientation</p>
+                            </td>
+                            <td class="td">
+                              <p>Shortest distance</p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="td">
+                              <p>Segment width</p>
+                            </td>
+                            <td class="td">
+                              <p>4</p>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <p>The following parameters are defined in example 2:</p>
+                    <div class="informalfigure">
+                      <div class="mediaobject"><img src="image/uuid-fcdd97a6-3474-33d1-e5ee-fb1b2ec726d6.svg" style="height: 266px;" alt="bohren_optimierung_XY_parallel.svg" /></div>
+                    </div>
+                    <div class="informaltable table-responsive">
+                      <table class="informaltable">
+                        <colgroup>
+                          <col style="width:54%;" />
+                          <col style="width:46%;" />
+                        </colgroup>
+                        <tbody>
+                          <tr>
+                            <td class="td">
+                              <p>Drilling strategy</p>
+                            </td>
+                            <td class="td">
+                              <p>X parallel</p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="td">
+                              <p>Orientation</p>
+                            </td>
+                            <td class="td">
+                              <p>Shortest distance</p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="td">
+                              <p>Segment width</p>
+                            </td>
+                            <td class="td">
+                              <p>2</p>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <p><span class="guilabel">Max. segment gap</span>: Value of the maximum distance between two subareas of the same surface on which the drilling points to be machined are located.</p>
+                    <p>The following parameters are defined in the example on the left:</p>
+                    <div class="informaltable table-responsive">
+                      <table class="informaltable">
+                        <colgroup>
+                          <col style="width:54%;" />
+                          <col style="width:46%;" />
+                        </colgroup>
+                        <tbody>
+                          <tr>
+                            <td class="td">
+                              <p>Drilling strategy</p>
+                            </td>
+                            <td class="td">
+                              <p>Y parallel</p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="td">
+                              <p>Orientation</p>
+                            </td>
+                            <td class="td">
+                              <p>Zigzag</p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="td">
+                              <p>Segment width (S)</p>
+                            </td>
+                            <td class="td">
+                              <p>1</p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="td">
+                              <p>Max. Segment gap</p>
+                            </td>
+                            <td class="td">
+                              <p>7</p>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <div class="mediaobject"><img src="image/uuid-8b995b9b-49de-8bf4-5c3b-8561ca313f1c.svg" style="height: 283px;" alt="bohren_optimierung_max_segmentabstand.svg" /></div>
+                  </section>
+                </section>
+                <section xml:lang="en-US" lang="en-US" dir="ltr" class="section internal" data-origin-id="" data-publication-date="" id="UUID-a3b77356-0c9f-c2e6-4b7f-4ad92f096ed3_UUID-bfa56ae1-0f67-0804-5401-138fe64bb2c9">
+                  <div class="titlepage">
+                    <div>
+                      <div class="title">
+                        <h2 class="title" style="clear: both"><span class="formal-title">Contour parallel drilling strategy</span></h2>
+                      </div>
+                    </div>
+                  </div>
+                  <section dir="ltr" class="section internal" data-origin-id="" data-publication-date="" id="id101158">
+                    <div class="titlepage">
+                      <div>
+                        <div class="title">
+                          <h3 class="title"><span class="formal-title">Orientation</span></h3>
+                        </div>
+                      </div>
+                    </div>
+                    <p>The parameters for controlling the orientation refer to the shape of the outer contour of the drilling point pattern (see example above).</p>
+                    <p><span class="guilabel">Clockwise</span>: The drilling points are machined in clockwise order.</p>
+                    <p><span class="guilabel">Counterclockwise</span>: The drilling points are machined in counterclockwise order.</p>
+                    <p><span class="guilabel">Zigzag</span>: The orientation (clockwise/counterclockwise) is reversed after each machining pass.</p>
+                    <div class="mediaobject">
+                      <table class="image-viewport" style="border-collapse:collapse;border:0; width:461px;">
+                        <tr style="height: 230px">
+                          <td style="padding:0;"><img src="image/uuid-e43f8439-6338-0415-8d79-dd2aa2a30989.svg" style="max-width: 461px; max-height: 230px;" alt="bohren_optimierung_konturparallel.svg" /></td>
+                        </tr>
+                      </table>
+                    </div>
+                  </section>
+                  <section dir="ltr" class="section internal" data-origin-id="" data-publication-date="" id="id101170">
+                    <div class="titlepage">
+                      <div>
+                        <div class="title">
+                          <h3 class="title"><span class="formal-title">Parameters</span></h3>
+                        </div>
+                      </div>
+                    </div>
+                    <p><span class="guilabel">Max. drilling point gap</span>: Value of the maximum possible distance between two drilling points (P1, P2). If two drilling points are located within this limit, machining is carried out directly from P1 to P2 or vice versa.</p>
+                  </section>
+                  <section dir="ltr" class="section internal" data-origin-id="" data-publication-date="" id="UUID-a3b77356-0c9f-c2e6-4b7f-4ad92f096ed3_id179MG0YC0QU">
+                    <div class="titlepage">
+                      <div>
+                        <div class="title">
+                          <h3 class="title"><span class="formal-title">Examples:</span></h3>
+                        </div>
+                      </div>
+                    </div>
+                    <p>The following parameters are defined in the examples:</p>
+                    <p>Example 1:</p>
+                    <div class="informaltable table-responsive">
+                      <table class="informaltable">
+                        <colgroup>
+                          <col style="width:54%;" />
+                          <col style="width:46%;" />
+                        </colgroup>
+                        <tbody>
+                          <tr>
+                            <td class="td">
+                              <p>Drilling strategy</p>
+                            </td>
+                            <td class="td">
+                              <p>Contour parallel</p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="td">
+                              <p>Orientation</p>
+                            </td>
+                            <td class="td">
+                              <p>Counterclockwise</p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="td">
+                              <p>Max. drilling point gap</p>
+                            </td>
+                            <td class="td">
+                              <p>3</p>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <p>Example 2:</p>
+                    <div class="informalfigure">
+                      <div class="mediaobject">
+                        <table class="image-viewport" style="border-collapse:collapse;border:0; width:638px;">
+                          <tr>
+                            <td style="padding:0;"><img src="image/uuid-a3c0be57-664c-b2ee-76c9-a6a89cfdb39e.svg" style="max-width: 638px;" alt="bohren_optimierung_max_bohrpunkteabstand.svg" /></td>
+                          </tr>
+                        </table>
+                      </div>
+                    </div>
+                    <div class="informaltable table-responsive">
+                      <table class="informaltable">
+                        <colgroup>
+                          <col style="width:54%;" />
+                          <col style="width:46%;" />
+                        </colgroup>
+                        <tbody>
+                          <tr>
+                            <td class="td">
+                              <p>Drilling strategy</p>
+                            </td>
+                            <td class="td">
+                              <p>Contour parallel</p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="td">
+                              <p>Orientation</p>
+                            </td>
+                            <td class="td">
+                              <p>Counterclockwise</p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="td">
+                              <p>Max. drilling point gap</p>
+                            </td>
+                            <td class="td">
+                              <p>5</p>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </section>
+                </section>
+                <section xml:lang="en-US" lang="en-US" dir="ltr" class="section internal" data-origin-id="" data-publication-date="" id="UUID-a3b77356-0c9f-c2e6-4b7f-4ad92f096ed3_UUID-52440015-6012-caad-fddd-58c43fba7c82">
+                  <div class="titlepage">
+                    <div>
+                      <div class="title">
+                        <h2 class="title" style="clear: both"><span class="formal-title">5X Drilling</span></h2>
+                      </div>
+                    </div>
+                  </div>
+                  <p>Two different optimization methods are available for 5-axis drilling.</p>
+                  <section dir="ltr" class="section internal" data-origin-id="" data-publication-date="" id="id101226">
+                    <div class="titlepage">
+                      <div>
+                        <div class="title">
+                          <h3 class="title"><span class="formal-title">5X</span></h3>
+                        </div>
+                      </div>
+                    </div>
+                    <p><span class="guilabel">Frame view</span>: The machining paths for the selected drill holes are calculated from the frame view, while taking account of the selected drilling strategy. All of the drilling strategies that can be applied during 2D drilling are available.</p>
+                    <p><span class="guilabel">5X grouping</span>: The machining paths for the selected drill holes are combined into groups and calculated according to the shortest distance method. The grouping depends on the tool axis (B axis/C axis) that may be moved first.</p>
+                    <p>The machining paths from one frame to the next can be checked for collisions (optional) if the corresponding parameter (Setup dialog box) is enabled.</p>
+                  </section>
+                  <section dir="ltr" class="section internal" data-origin-id="" data-publication-date="" id="id101233">
+                    <div class="titlepage">
+                      <div>
+                        <div class="title">
+                          <h3 class="title"><span class="formal-title">Start</span></h3>
+                        </div>
+                      </div>
+                    </div>
+                    <p><span class="guilabel">Use start reference</span>: Select a start point, if you want optimization to begin at a defined starting point.</p>
+                  </section>
+                  <section dir="ltr" class="section internal" data-origin-id="" data-publication-date="" id="id101237">
+                    <div class="titlepage">
+                      <div>
+                        <div class="title">
+                          <h3 class="title"><span class="formal-title">Parameters</span></h3>
+                        </div>
+                      </div>
+                    </div>
+                    <p><span class="guilabel">Move B axis first</span> / <span class="guilabel">Move C axis first</span>: Control the grouping of drill holes and thus specify the machining sequence. The drilling points are always processed in a vertical direction first (Z direction of the NCS). Afterwards, the method for 5X movement is used.</p>
+                  </section>
+                </section>
+                <section xml:lang="en-US" lang="en-US" dir="ltr" class="section" data-origin-id="" data-publication-date="" id="UUID-a3b77356-0c9f-c2e6-4b7f-4ad92f096ed3_UUID-f29f7ac5-9ff2-aaf3-38a1-ebdf840010a4">
+                  <div class="titlepage">
+                    <div>
+                      <div class="title">
+                        <h2 class="title" style="clear: both"><span class="formal-title">Z optimization</span></h2>
+                      </div>
+                    </div>
+                  </div>
+                  <p><span class="guilabel">Z optimization</span>: Use the Max. Z depth parameter to specify the conditions for optimized machining of drill holes at different Z levels. If the distance between two levels is greater than this value, all of the drill holes on one level are fully machined first before moving to the next level. XY
+                  optimization takes place on every level, while taking account of the relevant starting points.</p>
+                  <p>This method reduces the number of empty paths.</p>
+                  <p>(1) without Z optimization, (2) with Z optimization.</p>
+                  <div class="informalfigure">
+                    <div class="mediaobject"><img src="image/uuid-285418a4-04f2-5b01-9f65-80097bd6e257.svg" style="height: 319px;" alt="bohren_Z_optimierung.svg" /></div>
+                  </div>
+                </section>
+              </section>
+              <div class="footer-content">
+                <div class="section-toc section-toc-after">
+                  <div class="section-toc-title">
+                    <span class="section-toc-title-delimiter">:</span>
+                  </div>
+                </div>
+              </div>
+              <footer></footer>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

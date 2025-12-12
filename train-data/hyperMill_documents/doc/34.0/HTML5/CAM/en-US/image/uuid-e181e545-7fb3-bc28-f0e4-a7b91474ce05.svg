@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="13cm" height="5.5cm" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xlink="http://www.w3.org/1999/xlink">
+ <title>Abbildung für OPEN MIND Softwaredokumentation</title>
+ <defs>
+  <linearGradient id="linearGradient9988" x1="38.956" x2="39.365" y1="1032.9" y2="894.08" gradientTransform="matrix(1.449 0 0 1.449 -21.222 -389.23)" gradientUnits="userSpaceOnUse" xlink:href="#linearGradient17780-7-9-9"/>
+  <linearGradient id="linearGradient17780-7-9-9">
+   <stop stop-color="#fff" offset="0"/>
+   <stop stop-color="#00385e" offset="1"/>
+  </linearGradient>
+  <linearGradient id="linearGradient9991" x1="98.033" x2="98.278" y1="1032.5" y2="893.43" gradientTransform="matrix(1.449 0 0 1.449 -21.222 -389.23)" gradientUnits="userSpaceOnUse" xlink:href="#linearGradient17780-7-9-9"/>
+  <pattern id="pattern9983" patternTransform="matrix(.098346 .10429 -15.072 14.198 -37.966 562.68)" xlink:href="#pattern5542-5"/>
+  <pattern id="pattern5542-5" patternTransform="matrix(.067835 .071971 -10.396 9.7984 -11.429 657.14)" xlink:href="#Strips1_64-8"/>
+  <pattern id="Strips1_64-8" width="65" height="1" patternTransform="translate(0) scale(10)" patternUnits="userSpaceOnUse">
+   <rect y="-.5" width="1" height="2"/>
+  </pattern>
+  <linearGradient id="linearGradient14738" x1="490.55" x2="489.85" y1="913.74" y2="1227.3" gradientTransform="matrix(1.449 0 0 1.449 -691.08 -390.91)" gradientUnits="userSpaceOnUse" xlink:href="#linearGradient17780-7-9-9"/>
+ </defs>
+ <metadata>
+  <rdf:RDF>
+   <cc:Work rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:title>Abbildung für OPEN MIND Softwaredokumentation</dc:title>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>OPEN MIND Technologies AG</dc:title>
+     </cc:Agent>
+    </dc:creator>
+    <dc:rights>
+     <cc:Agent>
+      <dc:title>Alle Rechte vorbehalten.</dc:title>
+     </cc:Agent>
+    </dc:rights>
+    <dc:publisher>
+     <cc:Agent>
+      <dc:title>Technische Redaktion</dc:title>
+     </cc:Agent>
+    </dc:publisher>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <g transform="translate(0 -914.65)">
+  <path d="m192.58 995.55h-56.866c-6.1462 0.0555-12.047-1.1991-17.258-4.3211l-89.026-59.714h-24.654l-0.052907 141.81h54.122l45.887-46.745c6.8646-6.7431 13.772-10.731 23.14-11.004h64.711v-20.031z" fill="url(#linearGradient14738)" stroke="#4d4d4d" stroke-miterlimit="10" stroke-width=".67654"/>
+  <path d="m204.15 987.43v4.6169h-67.207c-7.0812-0.22978-13.867-2.3903-19.714-6.3047l-89.055-59.579" fill="none" stroke="#d4aa00" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.6457"/>
+  <g>
+   <path d="m192.51 995.24h-56.895c-6.1493 0.055-12.053-1.1991-17.267-4.321l-89.072-59.714h-24.666l-0.052907 141.81h54.15l45.91-46.745c6.8681-6.7431 13.779-10.732 23.152-11.004h64.744v-20.031z" fill="url(#pattern9983)" opacity=".48387" stroke-miterlimit="10"/>
+   <g>
+    <path d="m192.58 1106.7v-91.987l-4.3e-4 -3e-4 -61.573 0.037c-11.677 0.3276-20.927 4.8019-27.847 13.774l-43.914 44.627h-54.513l-0.010667 33.412" fill="url(#linearGradient9991)" stroke="#4d4d4d" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width=".67654"/>
+    <path d="m4.721 1106.6v-33.65h54.513v33.65" fill="url(#linearGradient9988)" stroke="#4d4d4d" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="9.25" stroke-width=".67654"/>
+    <polyline transform="matrix(2.7795 0 0 2.7731 -95.874 922.7)" points="87.23 41.839 91.62 46.442 91.62 43.445 100.64 43.445 100.64 40.234 91.62 40.234 91.62 37.344 87.23 41.839" fill="#d4aa00" stroke="#000" stroke-linecap="square" stroke-miterlimit="10" stroke-width=".33104"/>
+   </g>
+   <path d="m4.9753 1106.9h187.36" color="#000000" fill="#4d748f" fill-rule="evenodd" stroke="#666" stroke-dasharray="11.4595, 2.86489, 1.43244, 2.86489" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.4324"/>
+  </g>
+ </g>
+</svg>

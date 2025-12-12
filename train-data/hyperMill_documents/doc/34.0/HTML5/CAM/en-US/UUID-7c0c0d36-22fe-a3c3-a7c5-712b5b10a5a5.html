@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="x-ua-compatible" content="IE=edge" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="search" content="default" />
+  <meta name="use.ic" content="no" />
+  <meta name="tocstandalone" content="yes" />
+  <script type="text/javascript">
+  //<![CDATA[
+                        var index;
+                        var contentLanguage = 'en-US';
+                        var enterKey = 'select';
+                        
+                                        var anchoroption = true;
+                                var instantsearch_minlength = 1;
+                                                
+                                var fuse_threshold = 0.3;
+                        
+                                        var local_csh = false;
+                                
+                        var useanchorlinks = false;
+  //]]>
+  </script>
+  <title>Machining planner</title>
+  <link rel="stylesheet" type="text/css" href="../css/docbook.css" />
+  <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" href="../css/bootstrap-theme.min.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style-common.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style-responsive.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style-print.css" />
+  <link rel="stylesheet" type="text/css" href="../css/font-awesome.css" />
+  <link rel="stylesheet" type="text/css" href="../css/custom.css" />
+  <link rel="stylesheet" type="text/css" href="../css/layout-custom-style.css" />
+  <script src="../js/jquery-1.10.2.min.js" type="text/javascript"></script>
+  <script src="../js/jquery-ui-1.10.3.custom.min.js" type="text/javascript"></script>
+  <script src="../js/bootstrap.min.js" type="text/javascript"></script>
+  <script src="../js/purl.js" type="text/javascript"></script>
+  <script src="../js/jquery.event.move.js" type="text/javascript"></script>
+  <script src="../js/jquery.event.swipe.js" type="text/javascript"></script>
+  <script src="../js/jquery.sticky.js" type="text/javascript"></script>
+  <script src="../js/respond.min.js" type="text/javascript"></script>
+  <script src="../js/script.js" type="text/javascript"></script>
+  <script src="js/toc.js" type="text/javascript"></script>
+  <script src="../js/create-toc.js" type="text/javascript"></script>
+  <script src="../js/clipboard.min.js" type="text/javascript"></script>
+  <script src="../js/fuse.min.js" type="text/javascript"></script>
+  <script src="../js/jquery.mark.min.js" type="text/javascript"></script>
+  <script src="../js/html5.fuse.search.js" type="text/javascript"></script>
+  <script src="js/fuzzydata.js" type="text/javascript"></script>
+  <script src="../js/csh.js" type="text/javascript"></script>
+  <script src="../js/highlight-mergehtml-plugin.js" type="text/javascript"></script>
+  <meta name="generator" content="Paligo" />
+  <link rel="prev" href="UUID-5fb54ee5-0f52-9ff5-23a0-50094c8b53ec.html#UUID-5fb54ee5-0f52-9ff5-23a0-50094c8b53ec_id17A4F0Z2094" title="Start external simulation" />
+  <link rel="next" href="UUID-7c0c0d36-22fe-a3c3-a7c5-712b5b10a5a5.html#UUID-7c0c0d36-22fe-a3c3-a7c5-712b5b10a5a5_UUID-dc2040f8-d721-e0de-3a6c-862e9362ac64" title="Turret setup" />
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js?config=TeX-MML-AM_CHTML" async="async"></script>
+  <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+  <script type="text/javascript" src="../js/cookie-consent.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  <script type="text/javascript">
+  //<![CDATA[
+                        $(document).on('ready ajaxComplete', function() {
+                                
+                                hljs.addPlugin(mergeHTMLPlugin);
+                                hljs.configure({'ignoreUnescapedHTML': true});
+                                
+                                $('pre:not(.embedcode)').each(function() {
+                                        /**
+                                         * @type {string}
+                                         */
+                                        var language = $(this).data('language');
+
+                                        if (language === 'plaintext' || language === 'text') {
+                                                $(this).addClass(language).addClass('hljs');
+                                                return true;
+                                        }
+                                        else {
+                                                var clone = this.cloneNode(true);
+                                                hljs.highlightElement(clone);
+                                                $(this).empty().append($(clone).contents());
+                                                $(this).attr("class", $(clone).attr("class"));
+                                        }
+                                });
+                        });
+  //]]>
+  </script>
+  <style type="text/css">
+  /*<![CDATA[*/
+            div.skipnav {
+            }
+            div.skipnav a {
+                position: fixed;
+                left: -10000px;
+                top: 1.5em;
+                width: 1px;
+                height: 1px;
+                overflow: hidden;
+            }
+            div.skipnav a:focus, div.skipnav a:active, div.skipnav a:hover {
+                background: white;
+                color: black;
+                box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.5);
+                position: fixed;
+                left: 2em;
+                top: 1.5em;
+                width: auto;
+                height: auto;
+                overflow: visible;
+                text-decoration: underline;
+                z-index: 99999; /* has to be higher than the side panel */
+    }
+  /*]]>*/
+  </style>
+</head>
+<body data-link-prefix="">
+  <div class="skipnav">
+    <a href="#content-wrapper">Skip to main content</a>
+  </div>
+  <div id="page" class="clearfix">
+    <div id="header">
+      <div class="container">
+        <div id="logotype-container" class="pull-left">
+          <a href="../index.html"><img id="logotype-pageheader" src="../css/image/corporate-logo.png" alt="Corporate logotype" data-role="logotype" /></a>
+        </div>
+        <div id="pagetools-container" class="pull-right">
+          <ul id="page-tools">
+            <li class="page-tools-search"><input placeholder="Search" type="text" class="form-control" aria-label="Search" id="search" /></li>
+            <li class="page-tools-print">
+              <a href="javascript:window.print();"><span class="tool-label">Print</span><span class="glyphicon glyphicon-print"></span></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <h1 id="publication-title">CAM</h1>
+    <div id="subheader-sticky-wrapper" class="sticky-wrapper">
+      <div id="subheader">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3 toc-title">
+              <h2><a class="prev nav-icon hidden-lg hidden-md" href="UUID-5fb54ee5-0f52-9ff5-23a0-50094c8b53ec.html#UUID-5fb54ee5-0f52-9ff5-23a0-50094c8b53ec_id17A4F0Z2094"><span class="glyphicon glyphicon-chevron-left"></span></a> <a href="#toc" class="hidden mobile-nav-toggle"><span class="glyphicon glyphicon-list"></span>Table of
+              Contents</a><span class="toc-label">Table of Contents</span><a class="next nav-icon hidden-lg hidden-md" href="UUID-7c0c0d36-22fe-a3c3-a7c5-712b5b10a5a5.html#UUID-7c0c0d36-22fe-a3c3-a7c5-712b5b10a5a5_UUID-dc2040f8-d721-e0de-3a6c-862e9362ac64"><span class="glyphicon glyphicon-chevron-right"></span></a></h2>
+            </div>
+            <div class="col-md-9 breadcrumb-container">
+              <ul class="breadcrumb">
+                <li class="breadcrumb-link">
+                  <span class="glyphicon glyphicon-home"></span>&nbsp;<a href="index-en-US.html">CAM</a>
+                </li>
+                <li class="breadcrumb-link">
+                  <a href="UUID-0751db51-8b5b-ae49-1904-dce4b8c92263.html">Basics of CAM editing</a>
+                </li>
+                <li class="breadcrumb-link">
+                  <a href="UUID-4bb0b314-e3a2-7ccb-d6ea-12b5393a4d58.html">Simulate machining</a>
+                </li>
+                <li class="breadcrumb-node">Machining planner</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="main-content">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 toc-container" id="toc-wrapper">
+            <div id="toc-placeholder">
+              <div id="toc-standalone-placeholder"></div>
+            </div>
+          </div>
+          <div class="col-md-9 content-container" id="content-wrapper">
+            <a accesskey="p" class="prev pull-left prev visible-lg visible-md" id="header-navigation-prev" href="UUID-5fb54ee5-0f52-9ff5-23a0-50094c8b53ec.html#UUID-5fb54ee5-0f52-9ff5-23a0-50094c8b53ec_id17A4F0Z2094"><span class="glyphicon glyphicon-circle-arrow-left"></span>Prev</a><a accesskey="n" class="pull-right next visible-lg visible-md"
+            id="header-navigation-next" href="UUID-7c0c0d36-22fe-a3c3-a7c5-712b5b10a5a5.html#UUID-7c0c0d36-22fe-a3c3-a7c5-712b5b10a5a5_UUID-dc2040f8-d721-e0de-3a6c-862e9362ac64">Next<span class="glyphicon glyphicon-circle-arrow-right"></span></a>
+            <div id="topic-content">
+              <section xml:lang="en-US" lang="en-US" dir="ltr" class="section" data-origin-id="UUID-0a5d7960-4662-936a-f406-7a4f40c23c64" data-publication-date="" id="UUID-7c0c0d36-22fe-a3c3-a7c5-712b5b10a5a5">
+                <div class="titlepage">
+                  <div>
+                    <div class="title">
+                      <h1 class="title" style="clear: both"><span class="formal-title">Machining planner</span></h1>
+                    </div>
+                  </div>
+                </div>
+                <p>Start the <span class="phrase"><span class="application">VIRTUAL Machining Center</span></span> in <span class="guilabel">Machining planner</span> mode and equip a turret for turning jobs with graphical support. No toolpaths are loaded. The function is available if, in the job list (<span class="guilabel">Postprocessor</span>
+                dialog page) a corresponding <span class="phrase"><span class="application">Virtual Machine</span></span> has been loaded.</p>
+                <div class="informaltable table-responsive">
+                  <table style="width:100%;" class="informaltable">
+                    <colgroup>
+                      <col style="width:15%;" />
+                      <col style="width:85%;" />
+                    </colgroup>
+                    <tbody>
+                      <tr>
+                        <td class="td">
+                          <div class="mediaobject">
+                            <table class="image-viewport" style="border-collapse:collapse;border:0; ;">
+                              <tr style="height: 48px">
+                                <td style="padding:0;"><img src="image/uuid-2f8a1f71-1916-46fe-b4b5-aa11968a8878.svg" style="max-height: 48px;" alt="setup.svg" /></td>
+                              </tr>
+                            </table>
+                          </div>
+                        </td>
+                        <td valign="middle" class="td align-middle">
+                          <p>In the <span class="phrase"><span class="application">VIRTUAL Machining Center</span></span>, switch to the Configuration operating mode and</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="td">
+                          <div class="mediaobject">
+                            <table class="image-viewport" style="border-collapse:collapse;border:0; ;">
+                              <tr style="height: 48px">
+                                <td style="padding:0;"><img src="image/uuid-6bd1598d-0462-e1df-eab4-36bf03eec081.svg" style="max-height: 48px;" alt="turret.svg" /></td>
+                              </tr>
+                            </table>
+                          </div>
+                        </td>
+                        <td valign="middle" class="td align-middle">
+                          <p>open the <span class="guilabel">Turret setup</span> dialog.</p>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <p></p>
+                <section xml:lang="en-US" lang="en-US" dir="ltr" class="section" data-origin-id="" data-publication-date="" id="UUID-7c0c0d36-22fe-a3c3-a7c5-712b5b10a5a5_UUID-dc2040f8-d721-e0de-3a6c-862e9362ac64">
+                  <div class="titlepage">
+                    <div>
+                      <div class="title">
+                        <h2 class="title" style="clear: both"><span class="formal-title">Turret setup</span></h2>
+                      </div>
+                    </div>
+                  </div>
+                  <p>Both turret holders and NC tools from the tool database or from <span class="phrase"><span class="application"><span class="emphasis"><em>hyper</em></span>MILL</span></span> can be imported for turret setup (1). Double-click in a line and then click on the button (2) to rotate a turret holder and an NC tool around the
+                  Z-axis.</p>
+                  <div class="mediaobject"><img src="image/uuid-5a0baac3-c792-f000-bda2-ff18994178e6-en-US.svg" style="" alt="VMC_revolveraufbau-de.svg" /></div>
+                  <p><span class="guilabel">Station</span>: Position of the tool mount on the turret.</p>
+                  <p><span class="guilabel">Name</span>: Name of the static holder/NC tool in the location.</p>
+                  <p><span class="guilabel">NC-Tool mounts</span>: Number of tool mounts of the static holder.</p>
+                  <p><span class="guilabel">Shift X</span> / <span class="guilabel">Shift Y</span>: Offset between the coordinate system of the <span class="guilabel">Machine side coupling</span> (1) and the <span class="guilabel">Work piece side coupling</span> (2) of the static holder in the X or Y direction.</p>
+                  <p>(A) Turret, (B) Turret holder, (C) NC tool.</p>
+                  <div class="mediaobject"><img src="image/uuid-7fd7ceed-d04f-fa66-e1fb-28a2574b63e7.svg" style="" alt="drehen_mit_revolver_koordinatensysteme.svg" /></div>
+                  <p><span class="guilabel">Tool reach</span>: (1) Section of the NC tool (measured up to the tool tip) that sticks out of the turret holder.</p>
+                  <p><span class="guilabel">Rotation Z</span>: (2) Rotation of the NC tool or the turret holder around the Z-axis. The turret holder is rotated in 90° steps and the NC tool in 180° steps.</p>
+                  <div class="mediaobject"><img src="image/uuid-cdf790fc-e2e1-0fae-1127-763dadadc1b3.svg" style="" alt="drehen_mit_revolver_ausspannlaenge.svg" /></div>
+                </section>
+              </section>
+              <div class="footer-content">
+                <div class="section-toc section-toc-after">
+                  <div class="section-toc-title">
+                    <span class="section-toc-title-delimiter">:</span>
+                  </div>
+                </div>
+              </div>
+              <footer></footer>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

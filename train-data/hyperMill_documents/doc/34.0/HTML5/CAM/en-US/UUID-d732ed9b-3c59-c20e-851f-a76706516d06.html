@@ -1,0 +1,1149 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="x-ua-compatible" content="IE=edge" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="search" content="default" />
+  <meta name="use.ic" content="no" />
+  <meta name="tocstandalone" content="yes" />
+  <script type="text/javascript">
+  //<![CDATA[
+                        var index;
+                        var contentLanguage = 'en-US';
+                        var enterKey = 'select';
+                        
+                                        var anchoroption = true;
+                                var instantsearch_minlength = 1;
+                                                
+                                var fuse_threshold = 0.3;
+                        
+                                        var local_csh = false;
+                                
+                        var useanchorlinks = false;
+  //]]>
+  </script>
+  <title>2.2.&nbsp;The hyperMILL browser</title>
+  <link rel="stylesheet" type="text/css" href="../css/docbook.css" />
+  <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" href="../css/bootstrap-theme.min.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style-common.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style-responsive.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style-print.css" />
+  <link rel="stylesheet" type="text/css" href="../css/font-awesome.css" />
+  <link rel="stylesheet" type="text/css" href="../css/custom.css" />
+  <link rel="stylesheet" type="text/css" href="../css/layout-custom-style.css" />
+  <script src="../js/jquery-1.10.2.min.js" type="text/javascript"></script>
+  <script src="../js/jquery-ui-1.10.3.custom.min.js" type="text/javascript"></script>
+  <script src="../js/bootstrap.min.js" type="text/javascript"></script>
+  <script src="../js/purl.js" type="text/javascript"></script>
+  <script src="../js/jquery.event.move.js" type="text/javascript"></script>
+  <script src="../js/jquery.event.swipe.js" type="text/javascript"></script>
+  <script src="../js/jquery.sticky.js" type="text/javascript"></script>
+  <script src="../js/respond.min.js" type="text/javascript"></script>
+  <script src="../js/script.js" type="text/javascript"></script>
+  <script src="js/toc.js" type="text/javascript"></script>
+  <script src="../js/create-toc.js" type="text/javascript"></script>
+  <script src="../js/clipboard.min.js" type="text/javascript"></script>
+  <script src="../js/fuse.min.js" type="text/javascript"></script>
+  <script src="../js/jquery.mark.min.js" type="text/javascript"></script>
+  <script src="../js/html5.fuse.search.js" type="text/javascript"></script>
+  <script src="js/fuzzydata.js" type="text/javascript"></script>
+  <script src="../js/csh.js" type="text/javascript"></script>
+  <script src="../js/highlight-mergehtml-plugin.js" type="text/javascript"></script>
+  <meta name="generator" content="Paligo" />
+  <link rel="prev" href="UUID-22c7d707-5c82-45f8-effd-acd1fe1cd4ce.html" title="hyperMILL for Autodesk® Inventor®&nbsp;and hyperMILL for SOLIDWORKS" />
+  <link rel="next" href="UUID-d732ed9b-3c59-c20e-851f-a76706516d06.html#UUID-d732ed9b-3c59-c20e-851f-a76706516d06_id179KG9040X1" title="Layout of the browser" />
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js?config=TeX-MML-AM_CHTML" async="async"></script>
+  <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+  <script type="text/javascript" src="../js/cookie-consent.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  <script type="text/javascript">
+  //<![CDATA[
+                        $(document).on('ready ajaxComplete', function() {
+                                
+                                hljs.addPlugin(mergeHTMLPlugin);
+                                hljs.configure({'ignoreUnescapedHTML': true});
+                                
+                                $('pre:not(.embedcode)').each(function() {
+                                        /**
+                                         * @type {string}
+                                         */
+                                        var language = $(this).data('language');
+
+                                        if (language === 'plaintext' || language === 'text') {
+                                                $(this).addClass(language).addClass('hljs');
+                                                return true;
+                                        }
+                                        else {
+                                                var clone = this.cloneNode(true);
+                                                hljs.highlightElement(clone);
+                                                $(this).empty().append($(clone).contents());
+                                                $(this).attr("class", $(clone).attr("class"));
+                                        }
+                                });
+                        });
+  //]]>
+  </script>
+  <style type="text/css">
+  /*<![CDATA[*/
+            div.skipnav {
+            }
+            div.skipnav a {
+                position: fixed;
+                left: -10000px;
+                top: 1.5em;
+                width: 1px;
+                height: 1px;
+                overflow: hidden;
+            }
+            div.skipnav a:focus, div.skipnav a:active, div.skipnav a:hover {
+                background: white;
+                color: black;
+                box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.5);
+                position: fixed;
+                left: 2em;
+                top: 1.5em;
+                width: auto;
+                height: auto;
+                overflow: visible;
+                text-decoration: underline;
+                z-index: 99999; /* has to be higher than the side panel */
+    }
+  /*]]>*/
+  </style>
+</head>
+<body data-link-prefix="">
+  <div class="skipnav">
+    <a href="#content-wrapper">Skip to main content</a>
+  </div>
+  <div id="page" class="clearfix">
+    <div id="header">
+      <div class="container">
+        <div id="logotype-container" class="pull-left">
+          <a href="../index.html"><img id="logotype-pageheader" src="../css/image/corporate-logo.png" alt="Corporate logotype" data-role="logotype" /></a>
+        </div>
+        <div id="pagetools-container" class="pull-right">
+          <ul id="page-tools">
+            <li class="page-tools-search"><input placeholder="Search" type="text" class="form-control" aria-label="Search" id="search" /></li>
+            <li class="page-tools-print">
+              <a href="javascript:window.print();"><span class="tool-label">Print</span><span class="glyphicon glyphicon-print"></span></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <h1 id="publication-title">CAM</h1>
+    <div id="subheader-sticky-wrapper" class="sticky-wrapper">
+      <div id="subheader">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3 toc-title">
+              <h2><a class="prev nav-icon hidden-lg hidden-md" href="UUID-22c7d707-5c82-45f8-effd-acd1fe1cd4ce.html"><span class="glyphicon glyphicon-chevron-left"></span></a> <a href="#toc" class="hidden mobile-nav-toggle"><span class="glyphicon glyphicon-list"></span>Table of Contents</a><span class="toc-label">Table of Contents</span><a class=
+              "next nav-icon hidden-lg hidden-md" href="UUID-d732ed9b-3c59-c20e-851f-a76706516d06.html#UUID-d732ed9b-3c59-c20e-851f-a76706516d06_id179KG9040X1"><span class="glyphicon glyphicon-chevron-right"></span></a></h2>
+            </div>
+            <div class="col-md-9 breadcrumb-container">
+              <ul class="breadcrumb">
+                <li class="breadcrumb-link">
+                  <span class="glyphicon glyphicon-home"></span>&nbsp;<a href="index-en-US.html">CAM</a>
+                </li>
+                <li class="breadcrumb-link">
+                  <a href="UUID-607650a7-e4a9-65f0-88ef-d0902d55d3e3.html">User interface</a>
+                </li>
+                <li class="breadcrumb-node">The <span class="italic">hyper</span>MILL browser</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="main-content">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 toc-container" id="toc-wrapper">
+            <div id="toc-placeholder">
+              <div id="toc-standalone-placeholder"></div>
+            </div>
+          </div>
+          <div class="col-md-9 content-container" id="content-wrapper">
+            <a accesskey="p" class="prev pull-left prev visible-lg visible-md" id="header-navigation-prev" href="UUID-22c7d707-5c82-45f8-effd-acd1fe1cd4ce.html"><span class="glyphicon glyphicon-circle-arrow-left"></span>Prev</a><a accesskey="n" class="pull-right next visible-lg visible-md" id="header-navigation-next" href=
+            "UUID-d732ed9b-3c59-c20e-851f-a76706516d06.html#UUID-d732ed9b-3c59-c20e-851f-a76706516d06_id179KG9040X1">Next<span class="glyphicon glyphicon-circle-arrow-right"></span></a>
+            <div id="topic-content">
+              <section xml:lang="en-US" lang="en-US" dir="ltr" class="section" data-origin-id="UUID-a012d16d-dd73-5639-8679-12df9edeaf15" data-publication-date="" id="UUID-d732ed9b-3c59-c20e-851f-a76706516d06">
+                <div class="titlepage">
+                  <div>
+                    <div class="title">
+                      <h1 class="title" style="clear: both"><span class="formal-number">2.2</span><span class="formal-label-delimiter">.</span> <span class="formal-title">The <span class="italic">hyper</span>MILL browser</span></h1>
+                    </div>
+                  </div>
+                </div>
+                <p>The <span class="italic">hyper</span>MILL browser is used to define job lists, jobs, tools, machining systems (frames) and features.</p>
+                <section dir="ltr" class="section internal" data-origin-id="" data-publication-date="" id="UUID-d732ed9b-3c59-c20e-851f-a76706516d06_id179KG9040X1">
+                  <div class="titlepage">
+                    <div>
+                      <div class="title">
+                        <h2 class="title" style="clear: both"><span class="formal-title">Layout of the browser</span></h2>
+                      </div>
+                    </div>
+                  </div>
+                  <p>The <span class="italic">hyper</span>MILL browser consists of the following elements:</p>
+                  <div class="mediaobject"><img src="image/uuid-ba327fe3-0a63-4038-649b-2f90d23185f0.svg" style="" alt="hyperMILL_browser2.svg" /></div>
+                  <p>(1) Tabs (CAM Plan, Jobs, Tools, Frames, Models, Features, Macros).</p>
+                  <p>(2) Upper browser window in a tree structure.</p>
+                  <p>(3) Toolbar with functions for editing elements, calculating and deleting toolpaths, or opening the tool database, among others.</p>
+                  <p>(4) Lower browser window.</p>
+                  <p>The browser view and layout change depending on the selected tab.</p>
+                  <div class="informaltable table-responsive">
+                    <table class="informaltable">
+                      <colgroup>
+                        <col style="width:12%;" />
+                        <col style="width:88%;" />
+                      </colgroup>
+                      <tbody>
+                        <tr>
+                          <td class="td">
+                            <div class="mediaobject">
+                              <table class="image-viewport" style="border-collapse:collapse;border:0; ;">
+                                <tr style="height: 48px">
+                                  <td style="padding:0;"><img src="image/uuid-1bac7048-eea9-1d96-38db-a68e19618432.svg" style="max-height: 48px;" alt="icons_brows_bot_edit.svg" /></td>
+                                </tr>
+                              </table>
+                            </div>
+                          </td>
+                          <td valign="middle" class="td align-middle">
+                            <p>Open the selected entry (job/job list) for editing.</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="td">
+                            <div class="mediaobject">
+                              <table class="image-viewport" style="border-collapse:collapse;border:0; ;">
+                                <tr style="height: 48px">
+                                  <td style="padding:0;"><img src="image/uuid-2645f968-dd1e-5e47-cd1a-e6fe9339847c.svg" style="max-height: 48px;" alt="icons_brows_bot_del.svg" /></td>
+                                </tr>
+                              </table>
+                            </div>
+                          </td>
+                          <td valign="middle" class="td align-middle">
+                            <p>Delete the selected entry (job/job list).</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="td">
+                            <div class="mediaobject">
+                              <table class="image-viewport" style="border-collapse:collapse;border:0; ;">
+                                <tr style="height: 48px">
+                                  <td style="padding:0;"><img src="image/uuid-f3aabb51-41aa-a2a5-2d27-bd2d35a01918.svg" style="max-height: 48px;" alt="icons_brows_bot_messages.svg" /></td>
+                                </tr>
+                              </table>
+                            </div>
+                          </td>
+                          <td valign="middle" class="td align-middle">
+                            <p>Display messages for the selected entry (job/joblist).</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="td">
+                            <div class="mediaobject">
+                              <table class="image-viewport" style="border-collapse:collapse;border:0; ;">
+                                <tr style="height: 48px">
+                                  <td style="padding:0;"><img src="image/uuid-a66a487b-f9eb-3826-8f5f-809abd795803.svg" style="max-height: 48px;" alt="icons_brows_bot_bookmark.svg" /></td>
+                                </tr>
+                              </table>
+                            </div>
+                          </td>
+                          <td class="td">
+                            <p>Save the current view in the graphics area using the <span class="phrase"><span class="application"><span class="emphasis"><em>hyper</em></span>MILL</span></span> bookmark. CAD visibility settings and toolpaths are taken into account. Associative to <span class="phrase"><span class="application"><span class=
+                            "emphasis"><em>hyper</em></span>MILL</span></span> jobs. Can be assigned to any <span class="phrase"><span class="application"><span class="emphasis"><em>hyper</em></span>MILL</span></span> job.</p>
+                            <div dir="ltr" class="note">
+                              <h3 class="title">Note</h3>
+                              <p>A visual bookmark is not copied with an associative job copy and must therefore be recreated.</p>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="td">
+                            <div class="mediaobject">
+                              <table class="image-viewport" style="border-collapse:collapse;border:0; ;">
+                                <tr style="height: 48px">
+                                  <td style="padding:0;"><img src="image/uuid-220e066b-4829-9c04-36e6-4c9e38abf22c.svg" style="max-height: 48px;" alt="icons_brows_bot_del_tp.svg" /></td>
+                                </tr>
+                              </table>
+                            </div>
+                          </td>
+                          <td valign="middle" class="td align-middle">
+                            <p>Delete the toolpath for the selected entry (job/joblist).</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="td">
+                            <div class="mediaobject">
+                              <table class="image-viewport" style="border-collapse:collapse;border:0; ;">
+                                <tr style="height: 48px">
+                                  <td style="padding:0;"><img src="image/uuid-da3b1b57-3027-f3e4-bd57-c4a0b9cc1f66.svg" style="max-height: 48px;" alt="icons_brows_bot_open_tdb.svg" /></td>
+                                </tr>
+                              </table>
+                            </div>
+                          </td>
+                          <td valign="middle" class="td align-middle">
+                            <p>Open the tool database to select an NC tool.</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="td">
+                            <div class="mediaobject">
+                              <table class="image-viewport" style="border-collapse:collapse;border:0; ;">
+                                <tr style="height: 48px">
+                                  <td style="padding:0;"><img src="image/uuid-03e3b780-6c79-627f-943e-fdbf78f32790.svg" style="max-height: 48px;" alt="icons_brows_bot_mod_trans.svg" /></td>
+                                </tr>
+                              </table>
+                            </div>
+                          </td>
+                          <td valign="middle" class="td align-middle">
+                            <p>Display the model in a transparent manner in the graphics area.</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="td">
+                            <div class="mediaobject">
+                              <table class="image-viewport" style="border-collapse:collapse;border:0; ;">
+                                <tr style="height: 48px">
+                                  <td style="padding:0;"><img src="image/uuid-e17ac63d-7a49-66dd-4e2c-2177d24b04ba.svg" style="max-height: 48px;" alt="icons_brows_bot_sh_rem_mat.svg" /></td>
+                                </tr>
+                              </table>
+                            </div>
+                          </td>
+                          <td valign="middle" class="td align-middle">
+                            <p>Show the removed material automatically when a job has been selected.</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="td">
+                            <div class="mediaobject">
+                              <table class="image-viewport" style="border-collapse:collapse;border:0; ;">
+                                <tr style="height: 48px">
+                                  <td style="padding:0;"><img src="image/uuid-82f4646b-7bd4-e6ea-3951-8380abedef1b.svg" style="max-height: 48px;" alt="hm_check_status.svg" /></td>
+                                </tr>
+                              </table>
+                            </div>
+                          </td>
+                          <td valign="middle" class="td align-middle">
+                            <p>Check the status of the toolpaths for the selected entry (job/joblist).</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="td">
+                            <div class="mediaobject">
+                              <table class="image-viewport" style="border-collapse:collapse;border:0; ;">
+                                <tr style="height: 48px">
+                                  <td style="padding:0;"><img src="image/uuid-4a4a9d53-dd37-ed52-7ebc-967fb779dc04.svg" style="max-height: 48px;" alt="icons_brows_bot_calc.svg" /></td>
+                                </tr>
+                              </table>
+                            </div>
+                          </td>
+                          <td valign="middle" class="td align-middle">
+                            <p>Calculate the toolpaths for the selected entry (job/joblist).</p>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <section xml:lang="en-US" lang="en-US" dir="ltr" class="section" data-origin-id="" data-publication-date="" id="UUID-d732ed9b-3c59-c20e-851f-a76706516d06_UUID-6229037f-548f-000d-aff5-691ff78aa201">
+                    <div class="titlepage">
+                      <div>
+                        <div class="title">
+                          <h3 class="title"><span class="formal-title">Configure browser</span></h3>
+                        </div>
+                      </div>
+                    </div>
+                    <p>The tabs can be arranged anywhere in the browser or undocked from the browser window. To do this, click the tab with the left mouse button and drag the tab to the required place while holding down the mouse button. Possible docking positions are indicated by a graphical feedback as blue, transparent areas. Dock or undock the
+                    tab from the browser by double-clicking (left mouse button) the title bar in the browser.</p>
+                    <div class="mediaobject">
+                      <table class="image-viewport" style="border-collapse:collapse;border:0; width:266px;">
+                        <tr style="height: 154px">
+                          <td style="padding:0;"><img src="image/uuid-51a1738a-9ff9-bcde-0806-bccf1cb98f88.png" style="max-width: 266px; max-height: 154px;" alt="hm_browser1.png" /></td>
+                        </tr>
+                      </table>
+                    </div>
+                    <p>Show or hide a tab. Right-click the tab and enable or disable the respective command on the shortcut menu.</p>
+                    <div class="mediaobject">
+                      <table class="image-viewport" style="border-collapse:collapse;border:0; width:210px;">
+                        <tr style="height: 122px">
+                          <td style="padding:0;"><img src="image/uuid-fd79ccab-4324-77a9-3442-9a74ad4963fc.png" style="max-width: 210px; max-height: 122px;" alt="hmill_register_ein_ausblenden.png" /></td>
+                        </tr>
+                      </table>
+                    </div>
+                    <section dir="ltr" class="section internal" data-origin-id="" data-publication-date="" id="UUID-d732ed9b-3c59-c20e-851f-a76706516d06_id179KG9040UM">
+                      <div class="titlepage">
+                        <div>
+                          <div class="title">
+                            <h4 class="title"><span class="formal-title">View manager</span></h4>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="informaltable table-responsive">
+                        <table class="informaltable">
+                          <colgroup>
+                            <col style="width:12%;" />
+                            <col style="width:88%;" />
+                          </colgroup>
+                          <tbody>
+                            <tr>
+                              <td rowspan="2" class="td">
+                                <div class="mediaobject">
+                                  <table class="image-viewport" style="border-collapse:collapse;border:0; ;">
+                                    <tr style="height: 48px">
+                                      <td style="padding:0;"><img src="image/uuid-c03d1493-00d3-ec46-4559-d7eb3fa56e4d.svg" style="max-height: 48px;" alt="icon_cam_settings_manager.svg" /></td>
+                                    </tr>
+                                  </table>
+                                </div>
+                              </td>
+                              <td valign="middle" class="td align-middle">
+                                <p id="UUID-d732ed9b-3c59-c20e-851f-a76706516d06_id15BPF0N04EY">Use the View manager to control the visibility of tabs in the <span class="italic">hyper</span>MILL browser.</p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td valign="middle" class="td align-middle">
+                                <p><span class="guimenuitem">CAM</span> → <span class="guisubmenu">Setup</span> View manager</p>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <p>By default, all tabs are shown in the browser. To hide a tab, disable the respective option. Use <span class="guilabel">Reset layout</span> to restore the default settings.</p>
+                    </section>
+                  </section>
+                </section>
+                <section dir="ltr" class="section" data-origin-id="" data-publication-date="" id="id76706">
+                  <div class="titlepage">
+                    <div>
+                      <div class="title">
+                        <h2 class="title" style="clear: both"><span class="formal-title">Jobs tab</span></h2>
+                      </div>
+                    </div>
+                  </div>
+                  <p>The top section of the browser displays joblists and jobs and the bottom section shows the milling areas and stockmodels.</p>
+                  <div dir="ltr" class="note notice">
+                    <h3 class="title">Note</h3>
+                    <p>Meaning of the text color for displaying stocks in the lower area of the browser:</p>
+                    <p><span class="bold"><strong>Red</strong></span>: The start stock of the selected job. Prerequisite for a resulting stock (highlighted in blue).</p>
+                    <p><span class="bold"><strong>Blue</strong></span>: The resulting stock of the selected job.</p>
+                    <p><span class="bold"><strong>Black</strong></span>: The stock generated last in a machining sequence.</p>
+                    <p>The start stock or last generated stock of a machining sequence is used in <span class="emphasis"><em>hyper</em></span>VIEW or in <span class="phrase"><span class="application">VIRTUAL Machining Center</span></span>.</p>
+                  </div>
+                  <p>The entry's marking in the browser indicates whether or not a job definition is complete and correct.</p>
+                  <div class="informaltable table-responsive">
+                    <table class="informaltable">
+                      <colgroup>
+                        <col style="width:12%;" />
+                        <col style="width:88%;" />
+                      </colgroup>
+                      <tbody>
+                        <tr>
+                          <td class="td">
+                            <div class="mediaobject">
+                              <table class="image-viewport" style="border-collapse:collapse;border:0; ;">
+                                <tr style="height: 48px">
+                                  <td style="padding:0;"><img src="image/uuid-11cf9626-240c-d936-1f14-3be738687f3c.svg" style="max-height: 48px;" alt="icons_job_status_ok.svg" /></td>
+                                </tr>
+                              </table>
+                            </div>
+                          </td>
+                          <td valign="middle" class="td align-middle">
+                            <p>Definition free of errors/warning. Calculate job with these parameters.</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="td">
+                            <div class="mediaobject">
+                              <table class="image-viewport" style="border-collapse:collapse;border:0; ;">
+                                <tr style="height: 48px">
+                                  <td style="padding:0;"><img src="image/uuid-13f76a2c-582c-dc73-ed4d-ca2d56e735b2.svg" style="max-height: 48px;" alt="icons_job_status_changed.svg" /></td>
+                                </tr>
+                              </table>
+                            </div>
+                          </td>
+                          <td valign="middle" class="td align-middle">
+                            <p>Definition free of errors/warning. Definition free of errors/warning calculation status currently unknown (can be checked explicitly using command <span class="guilabel">Toolpath status check</span>).</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="td">
+                            <div class="mediaobject">
+                              <table class="image-viewport" style="border-collapse:collapse;border:0; ;">
+                                <tr style="height: 48px">
+                                  <td style="padding:0;"><img src="image/uuid-866481b7-9edc-5791-54d7-242c5fa14374.svg" style="max-height: 48px;" alt="icons_job_status_changed2.svg" /></td>
+                                </tr>
+                              </table>
+                            </div>
+                          </td>
+                          <td valign="middle" class="td align-middle">
+                            <p>Definition free of errors/warning. Job must be calculated.</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="td">
+                            <div class="mediaobject">
+                              <table class="image-viewport" style="border-collapse:collapse;border:0; ;">
+                                <tr style="height: 48px">
+                                  <td style="padding:0;"><img src="image/uuid-a92e338f-a12f-9c13-3b11-60eb0504946d.svg" style="max-height: 48px;" alt="icons_job_status_changed3.svg" /></td>
+                                </tr>
+                              </table>
+                            </div>
+                          </td>
+                          <td valign="middle" class="td align-middle">
+                            <p>Definition contains warnings. Definition free of errors/warning calculation status currently unknown (can be checked explicitly using command <span class="guilabel">Toolpath status check</span>).</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="td">
+                            <div class="mediaobject">
+                              <table class="image-viewport" style="border-collapse:collapse;border:0; ;">
+                                <tr style="height: 48px">
+                                  <td style="padding:0;"><img src="image/uuid-a7261343-71cf-91b9-622a-dd73ca178073.svg" style="max-height: 48px;" alt="icons_job_status_changed4.svg" /></td>
+                                </tr>
+                              </table>
+                            </div>
+                          </td>
+                          <td valign="middle" class="td align-middle">
+                            <p>Definition contains warnings job must be calculated.</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="td">
+                            <div class="mediaobject">
+                              <table class="image-viewport" style="border-collapse:collapse;border:0; ;">
+                                <tr style="height: 48px">
+                                  <td style="padding:0;"><img src="image/uuid-b2e2c219-7c68-c9c7-97d4-47f052c6d1f9.svg" style="max-height: 48px;" alt="el_not_exist.svg" /></td>
+                                </tr>
+                              </table>
+                            </div>
+                          </td>
+                          <td valign="middle" class="td align-middle">
+                            <p>Element (toolpath/stockmodel) does not exist.</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="td">
+                            <div class="mediaobject">
+                              <table class="image-viewport" style="border-collapse:collapse;border:0; ;">
+                                <tr style="height: 48px">
+                                  <td style="padding:0;"><img src="image/uuid-fedad143-591e-c7cb-e510-e84caa8b13be.svg" style="max-height: 48px;" alt="el_not_vis.svg" /></td>
+                                </tr>
+                              </table>
+                            </div>
+                          </td>
+                          <td valign="middle" class="td align-middle">
+                            <p>Element (toolpath/stockmodel) is calculated and hidden. Click the icon to show the element.</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="td">
+                            <div class="mediaobject">
+                              <table class="image-viewport" style="border-collapse:collapse;border:0; ;">
+                                <tr style="height: 48px">
+                                  <td style="padding:0;"><img src="image/uuid-5718d42d-fa94-f9e0-1574-3e2cb70d8c13.svg" style="max-height: 48px;" alt="el_vis.svg" /></td>
+                                </tr>
+                              </table>
+                            </div>
+                          </td>
+                          <td valign="middle" class="td align-middle">
+                            <p>Element (toolpath/stockmodel) is calculated and shown. Click the icon to hide the element. Double-click the icon to automatically display the toolpath when the job name is clicked.</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="td">
+                            <div class="mediaobject">
+                              <table class="image-viewport" style="border-collapse:collapse;border:0; ;">
+                                <tr style="height: 48px">
+                                  <td style="padding:0;"><img src="image/uuid-5ad0eb99-0591-3a0a-6381-b44d098180a2.svg" style="max-height: 48px;" alt="el_show_auto.svg" /></td>
+                                </tr>
+                              </table>
+                            </div>
+                          </td>
+                          <td valign="middle" class="td align-middle">
+                            <p>Display the toolpath automatically. Click the job name to automatically show the toolpath for this job. Double-click the icon to disable the automatic display of the toolpath.</p>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <section xml:lang="en-US" lang="en-US" dir="ltr" class="section" data-origin-id="" data-publication-date="" id="UUID-d732ed9b-3c59-c20e-851f-a76706516d06_UUID-9886da7c-7cd3-1044-e56b-5961f8f5a7d4">
+                    <div class="titlepage">
+                      <div>
+                        <div class="title">
+                          <h3 class="title"><span class="formal-title">Turning with turret</span></h3>
+                        </div>
+                      </div>
+                    </div>
+                    <p>The following information is available for turning jobs with a turret:</p>
+                    <div class="informaltable table-responsive" id="UUID-d732ed9b-3c59-c20e-851f-a76706516d06_informaltable-idm53365384708684">
+                      <table class="informaltable">
+                        <colgroup>
+                          <col style="width:12%;" />
+                          <col style="width:88%;" />
+                        </colgroup>
+                        <tbody>
+                          <tr>
+                            <td class="td">
+                              <div class="mediaobject">
+                                <table class="image-viewport" style="border-collapse:collapse;border:0; ;">
+                                  <tr style="height: 48px">
+                                    <td style="padding:0;"><img src="image/uuid-a3f7d6de-9f9e-05a1-dd5e-56a9ad3c7a63.svg" style="max-height: 48px;" alt="turret_setup_joblist_ok.svg" /></td>
+                                  </tr>
+                                </table>
+                              </div>
+                            </td>
+                            <td valign="middle" class="td align-middle">
+                              <p>A machine with turret is used in the job list and the definition of the turret setup is free of errors and warnings.</p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="td">
+                              <div class="mediaobject">
+                                <table class="image-viewport" style="border-collapse:collapse;border:0; ;">
+                                  <tr style="height: 48px">
+                                    <td style="padding:0;"><img src="image/uuid-5b97abb5-628a-9b04-94f4-0afc4dbfff7d.svg" style="max-height: 48px;" alt="turret_setup_joblist_not_ok.svg" /></td>
+                                  </tr>
+                                </table>
+                              </div>
+                            </td>
+                            <td valign="middle" class="td align-middle">
+                              <p>A machine with turret is used in the job list and the definition of the turret setup contains errors.</p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="td">
+                              <div class="mediaobject">
+                                <table class="image-viewport" style="border-collapse:collapse;border:0; ;">
+                                  <tr style="height: 48px">
+                                    <td style="padding:0;"><img src="image/uuid-5a5588fb-49ff-a2f6-58db-798f88063c3d.svg" style="max-height: 48px;" alt="turret_setup_NC_ok.svg" /></td>
+                                  </tr>
+                                </table>
+                              </div>
+                            </td>
+                            <td valign="middle" class="td align-middle">
+                              <p>A machine with turret is used in the job list and the definition of the turret setup is free of errors and warnings. No NC file has been created yet.</p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="td">
+                              <div class="mediaobject">
+                                <table class="image-viewport" style="border-collapse:collapse;border:0; ;">
+                                  <tr style="height: 48px">
+                                    <td style="padding:0;"><img src="image/uuid-7c31235d-1cb5-5eb1-f2a4-5906ecd2a4f9.svg" style="max-height: 48px;" alt="turret_setup_NC_not_ok.svg" /></td>
+                                  </tr>
+                                </table>
+                              </div>
+                            </td>
+                            <td valign="middle" class="td align-middle">
+                              <p>A machine with turret is used in the job list and the definition of the turret setup contains errors. No NC file has been generated yet.</p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="td">
+                              <div class="mediaobject">
+                                <table class="image-viewport" style="border-collapse:collapse;border:0; ;">
+                                  <tr style="height: 48px">
+                                    <td style="padding:0;"><img src="image/uuid-48d17e07-6f8d-234b-17fe-e2a6ed4ad481.svg" style="max-height: 48px;" alt="turret_setup_tool_ok.svg" /></td>
+                                  </tr>
+                                </table>
+                              </div>
+                            </td>
+                            <td valign="middle" class="td align-middle">
+                              <p>A machine with turret is used in the job list and the tool used in the job is set up on the turret.</p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="td">
+                              <div class="mediaobject">
+                                <table class="image-viewport" style="border-collapse:collapse;border:0; ;">
+                                  <tr style="height: 48px">
+                                    <td style="padding:0;"><img src="image/uuid-1c8bf16e-2d60-b191-e9ec-9670ce880ff3.svg" style="max-height: 48px;" alt="turret_setup_tool_not_ok.svg" /></td>
+                                  </tr>
+                                </table>
+                              </div>
+                            </td>
+                            <td valign="middle" class="td align-middle">
+                              <p>A machine with turret is used in the job list and the tool used in the job is not set up on the turret.</p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="td">
+                              <div class="mediaobject">
+                                <table class="image-viewport" style="border-collapse:collapse;border:0; ;">
+                                  <tr style="height: 48px">
+                                    <td style="padding:0;"><img src="image/uuid-2616ba62-5174-447c-ea80-f7c940089ed6.svg" style="max-height: 48px;" alt="joblist_without_turret_support.svg" /></td>
+                                  </tr>
+                                </table>
+                              </div>
+                            </td>
+                            <td valign="middle" class="td align-middle">
+                              <p>No machine for turning jobs with a turret has yet been set up in the job list</p>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </section>
+                </section>
+                <section dir="ltr" class="section" data-origin-id="" data-publication-date="" id="id76707">
+                  <div class="titlepage">
+                    <div>
+                      <div class="title">
+                        <h2 class="title" style="clear: both"><span class="formal-title">Tools tab</span></h2>
+                      </div>
+                    </div>
+                  </div>
+                  <p>The browser window consists of the milling tool, drilling tool and turning tools areas.</p>
+                </section>
+                <section dir="ltr" class="section" data-origin-id="" data-publication-date="" id="id76708">
+                  <div class="titlepage">
+                    <div>
+                      <div class="title">
+                        <h2 class="title" style="clear: both"><span class="formal-title">Frames tab</span></h2>
+                      </div>
+                    </div>
+                  </div>
+                  <p>The top section of the browser displays coordinate systems and the bottom section of the browser displays transformations.</p>
+                  <div class="informaltable table-responsive" id="UUID-d732ed9b-3c59-c20e-851f-a76706516d06_informaltable-idm53336357399860">
+                    <table class="informaltable">
+                      <colgroup>
+                        <col style="width:12%;" />
+                        <col style="width:88%;" />
+                      </colgroup>
+                      <tbody>
+                        <tr>
+                          <td class="td">
+                            <div class="mediaobject">
+                              <table class="image-viewport" style="border-collapse:collapse;border:0; ;">
+                                <tr style="height: 48px">
+                                  <td style="padding:0;"><img src="image/uuid-1bac7048-eea9-1d96-38db-a68e19618432.svg" style="max-height: 48px;" alt="icons_brows_bot_edit.svg" /></td>
+                                </tr>
+                              </table>
+                            </div>
+                          </td>
+                          <td valign="middle" class="td align-middle">
+                            <p>Open the selected frame for editing.</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="td">
+                            <div class="mediaobject">
+                              <table class="image-viewport" style="border-collapse:collapse;border:0; ;">
+                                <tr style="height: 48px">
+                                  <td style="padding:0;"><img src="image/uuid-2645f968-dd1e-5e47-cd1a-e6fe9339847c.svg" style="max-height: 48px;" alt="icons_brows_bot_del.svg" /></td>
+                                </tr>
+                              </table>
+                            </div>
+                          </td>
+                          <td valign="middle" class="td align-middle">
+                            <p>Delete the selected frame.</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="td">
+                            <div class="mediaobject">
+                              <table class="image-viewport" style="border-collapse:collapse;border:0; ;">
+                                <tr style="height: 48px">
+                                  <td style="padding:0;"><img src="image/uuid-f3aabb51-41aa-a2a5-2d27-bd2d35a01918.svg" style="max-height: 48px;" alt="icons_brows_bot_messages.svg" /></td>
+                                </tr>
+                              </table>
+                            </div>
+                          </td>
+                          <td valign="middle" class="td align-middle">
+                            <p>Display messages for the selected frame.</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="td">
+                            <div class="mediaobject">
+                              <table class="image-viewport" style="border-collapse:collapse;border:0; ;">
+                                <tr style="height: 48px">
+                                  <td style="padding:0;"><img src="image/uuid-a66a487b-f9eb-3826-8f5f-809abd795803.svg" style="max-height: 48px;" alt="icons_brows_bot_bookmark.svg" /></td>
+                                </tr>
+                              </table>
+                            </div>
+                          </td>
+                          <td class="td">
+                            <p>Save the current view in the graphics area using the <span class="phrase"><span class="application"><span class="emphasis"><em>hyper</em></span>MILL</span></span> bookmark. CAD visibility settings and toolpaths are taken into account. Associative to <span class="phrase"><span class="application"><span class=
+                            "emphasis"><em>hyper</em></span>MILL</span></span> jobs. Can be assigned to any <span class="phrase"><span class="application"><span class="emphasis"><em>hyper</em></span>MILL</span></span> job.</p>
+                            <div dir="ltr" class="note">
+                              <h3 class="title">Note</h3>
+                              <p>A visual bookmark is not copied with an associative job copy and must therefore be recreated.</p>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="td">
+                            <div class="mediaobject">
+                              <table class="image-viewport" style="border-collapse:collapse;border:0; ;">
+                                <tr style="height: 48px">
+                                  <td style="padding:0;"><img src="image/uuid-618a1e29-a9aa-836e-356f-71a8c61d7eb7.svg" style="max-height: 48px;" alt="icons_brows_bot_show_trans.svg" /></td>
+                                </tr>
+                              </table>
+                            </div>
+                          </td>
+                          <td valign="middle" class="td align-middle">
+                            <p>Show / hide transformations.</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="td">
+                            <div class="mediaobject">
+                              <table class="image-viewport" style="border-collapse:collapse;border:0; ;">
+                                <tr style="height: 48px">
+                                  <td style="padding:0;"><img src="image/uuid-fdf82da2-6d9e-0ada-77aa-5cdeee24b661.svg" style="max-height: 48px;" alt="icons_brows_bot_sort_frames.svg" /></td>
+                                </tr>
+                              </table>
+                            </div>
+                          </td>
+                          <td valign="middle" class="td align-middle">
+                            <p>Sort frames alphanumerically.</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="td">
+                            <div class="mediaobject">
+                              <table class="image-viewport" style="border-collapse:collapse;border:0; ;">
+                                <tr style="height: 48px">
+                                  <td style="padding:0;"><img src="image/uuid-2a6b13c4-9883-e731-c197-62349b9fe9b3.svg" style="max-height: 48px;" alt="icons_brows_bot_new_frame.svg" /></td>
+                                </tr>
+                              </table>
+                            </div>
+                          </td>
+                          <td valign="middle" class="td align-middle">
+                            <p>Create a new frame.</p>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </section>
+                <section dir="ltr" class="section" data-origin-id="" data-publication-date="" id="id76709">
+                  <div class="titlepage">
+                    <div>
+                      <div class="title">
+                        <h2 class="title" style="clear: both"><span class="formal-title">Models tab</span></h2>
+                      </div>
+                    </div>
+                  </div>
+                  <p>The browser window contains milling and turning areas in the top section and stockmodels in the bottom section. An entry highlighted in red is a prerequisite for an entry highlighted in blue. An entry highlighted in blue is dependent on an entry highlighted in red. The entry's marking in the browser indicates whether or not a
+                  job is complete and correct.</p>
+                  <div class="informaltable table-responsive">
+                    <table class="informaltable">
+                      <colgroup>
+                        <col style="width:12%;" />
+                        <col style="width:88%;" />
+                      </colgroup>
+                      <tbody>
+                        <tr>
+                          <td class="td">
+                            <div class="mediaobject">
+                              <table class="image-viewport" style="border-collapse:collapse;border:0; ;">
+                                <tr style="height: 48px">
+                                  <td style="padding:0;"><img src="image/uuid-9207a004-98fe-ef64-4945-0515d12a1f22.svg" style="max-height: 48px;" alt="icon_ma.svg" /></td>
+                                </tr>
+                              </table>
+                            </div>
+                          </td>
+                          <td valign="middle" class="td align-middle">
+                            <p>Milling area contains no faults or warnings</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="td">
+                            <div class="mediaobject">
+                              <table class="image-viewport" style="border-collapse:collapse;border:0; ;">
+                                <tr style="height: 48px">
+                                  <td style="padding:0;"><img src="image/uuid-de5b5f9a-7d10-1921-63cb-39892012b014.svg" style="max-height: 48px;" alt="icon_ma_warn.svg" /></td>
+                                </tr>
+                              </table>
+                            </div>
+                          </td>
+                          <td valign="middle" class="td align-middle">
+                            <p>Milling area contains warnings</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="td">
+                            <div class="mediaobject">
+                              <table class="image-viewport" style="border-collapse:collapse;border:0; ;">
+                                <tr style="height: 48px">
+                                  <td style="padding:0;"><img src="image/uuid-c3e8f084-0f09-7786-457a-41298d28c429.svg" style="max-height: 48px;" alt="icon_ma_error.svg" /></td>
+                                </tr>
+                              </table>
+                            </div>
+                          </td>
+                          <td valign="middle" class="td align-middle">
+                            <p>Milling area has to be recalculated or redefined</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="td">
+                            <div class="mediaobject">
+                              <table class="image-viewport" style="border-collapse:collapse;border:0; ;">
+                                <tr style="height: 48px">
+                                  <td style="padding:0;"><img src="image/uuid-35d44535-ba7e-92df-0087-5bc6e38f051c.svg" style="max-height: 48px;" alt="icon_ta.svg" /></td>
+                                </tr>
+                              </table>
+                            </div>
+                          </td>
+                          <td valign="middle" class="td align-middle">
+                            <p>Turning area contains no faults or warnings</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="td">
+                            <div class="mediaobject">
+                              <table class="image-viewport" style="border-collapse:collapse;border:0; ;">
+                                <tr style="height: 48px">
+                                  <td style="padding:0;"><img src="image/uuid-b5342d38-b411-06b4-be67-940b4123ee16.svg" style="max-height: 48px;" alt="icon_ta_warn.svg" /></td>
+                                </tr>
+                              </table>
+                            </div>
+                          </td>
+                          <td valign="middle" class="td align-middle">
+                            <p>Turning area contains warnings</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="td">
+                            <div class="mediaobject">
+                              <table class="image-viewport" style="border-collapse:collapse;border:0; ;">
+                                <tr style="height: 48px">
+                                  <td style="padding:0;"><img src="image/uuid-88cc4002-ff7c-3c21-01a0-9ba8f04163a4.svg" style="max-height: 48px;" alt="icon_ta_error.svg" /></td>
+                                </tr>
+                              </table>
+                            </div>
+                          </td>
+                          <td valign="middle" class="td align-middle">
+                            <p>Turning area has to be recalculated or redefined</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="td">
+                            <div class="mediaobject">
+                              <table class="image-viewport" style="border-collapse:collapse;border:0; ;">
+                                <tr style="height: 48px">
+                                  <td style="padding:0;"><img src="image/uuid-143f8fd7-1e0f-94bf-0528-8c5320feb30f.svg" style="max-height: 48px;" alt="icon_st_cl.svg" /></td>
+                                </tr>
+                              </table>
+                            </div>
+                          </td>
+                          <td valign="middle" class="td align-middle">
+                            <p>Closed stock contains no faults or warnings</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="td">
+                            <div class="mediaobject">
+                              <table class="image-viewport" style="border-collapse:collapse;border:0; ;">
+                                <tr style="height: 48px">
+                                  <td style="padding:0;"><img src="image/uuid-7d18e0ec-7241-1a75-ff87-8e57eddef113.svg" style="max-height: 48px;" alt="icon_st_cl_warn.svg" /></td>
+                                </tr>
+                              </table>
+                            </div>
+                          </td>
+                          <td valign="middle" class="td align-middle">
+                            <p>Closed stock contains warnings</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="td">
+                            <div class="mediaobject">
+                              <table class="image-viewport" style="border-collapse:collapse;border:0; ;">
+                                <tr style="height: 48px">
+                                  <td style="padding:0;"><img src="image/uuid-64bc3ce6-403c-2577-ae92-52a7be41de06.svg" style="max-height: 48px;" alt="icon_st_cl_error.svg" /></td>
+                                </tr>
+                              </table>
+                            </div>
+                          </td>
+                          <td valign="middle" class="td align-middle">
+                            <p>Closed stock has to be recalculated or redefined</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="td">
+                            <div class="mediaobject">
+                              <table class="image-viewport" style="border-collapse:collapse;border:0; ;">
+                                <tr style="height: 48px">
+                                  <td style="padding:0;"><img src="image/uuid-7aac75d7-d04b-ba5d-c3ff-ceba5116cd7e.svg" style="max-height: 48px;" alt="icon_st_op.svg" /></td>
+                                </tr>
+                              </table>
+                            </div>
+                          </td>
+                          <td valign="middle" class="td align-middle">
+                            <p>Open stock contains no faults or warnings</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="td">
+                            <div class="mediaobject">
+                              <table class="image-viewport" style="border-collapse:collapse;border:0; ;">
+                                <tr style="height: 48px">
+                                  <td style="padding:0;"><img src="image/uuid-ca74746c-529b-9ebc-5259-87baccd2dc4f.svg" style="max-height: 48px;" alt="icon_st_op_warn.svg" /></td>
+                                </tr>
+                              </table>
+                            </div>
+                          </td>
+                          <td valign="middle" class="td align-middle">
+                            <p>Open stock contains warnings</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="td">
+                            <div class="mediaobject">
+                              <table class="image-viewport" style="border-collapse:collapse;border:0; ;">
+                                <tr style="height: 48px">
+                                  <td style="padding:0;"><img src="image/uuid-4ebf4e38-9a19-6eb9-4f8b-cbdababbc7a5.svg" style="max-height: 48px;" alt="icon_st_op_error.svg" /></td>
+                                </tr>
+                              </table>
+                            </div>
+                          </td>
+                          <td valign="middle" class="td align-middle">
+                            <p>Open stock has to be calculated or defined</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="td">
+                            <div class="mediaobject">
+                              <table class="image-viewport" style="border-collapse:collapse;border:0; ;">
+                                <tr style="height: 48px">
+                                  <td style="padding:0;"><img src="image/uuid-1a9ca6d5-d52e-fd71-e983-2488c22653af.svg" style="max-height: 48px;" alt="icon_st_too_big.svg" /></td>
+                                </tr>
+                              </table>
+                            </div>
+                          </td>
+                          <td valign="middle" class="td align-middle">
+                            <p>Stock is too large</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="td">
+                            <div class="mediaobject">
+                              <table class="image-viewport" style="border-collapse:collapse;border:0; ;">
+                                <tr style="height: 48px">
+                                  <td style="padding:0;"><img src="image/uuid-40575ce8-8853-1e93-a886-876f6e42b4ca.svg" style="max-height: 48px;" alt="icon_st_comp.svg" /></td>
+                                </tr>
+                              </table>
+                            </div>
+                          </td>
+                          <td valign="middle" class="td align-middle">
+                            <p>Compound stock</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="td">
+                            <div class="mediaobject">
+                              <table class="image-viewport" style="border-collapse:collapse;border:0; ;">
+                                <tr style="height: 48px">
+                                  <td style="padding:0;"><img src="image/uuid-134935b4-afa3-feca-9a02-3dd027149282.svg" style="max-height: 48px;" alt="icon_st_chain.svg" /></td>
+                                </tr>
+                              </table>
+                            </div>
+                          </td>
+                          <td valign="middle" class="td align-middle">
+                            <p>Stock created manually from job chain</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="td">
+                            <div class="mediaobject">
+                              <table class="image-viewport" style="border-collapse:collapse;border:0; ;">
+                                <tr style="height: 48px">
+                                  <td style="padding:0;"><img src="image/uuid-fedad143-591e-c7cb-e510-e84caa8b13be.svg" style="max-height: 48px;" alt="el_not_vis.svg" /></td>
+                                </tr>
+                              </table>
+                            </div>
+                          </td>
+                          <td valign="middle" class="td align-middle">
+                            <p>Element (toolpath/stockmodel) is hidden</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="td">
+                            <div class="mediaobject">
+                              <table class="image-viewport" style="border-collapse:collapse;border:0; ;">
+                                <tr style="height: 48px">
+                                  <td style="padding:0;"><img src="image/uuid-5718d42d-fa94-f9e0-1574-3e2cb70d8c13.svg" style="max-height: 48px;" alt="el_vis.svg" /></td>
+                                </tr>
+                              </table>
+                            </div>
+                          </td>
+                          <td valign="middle" class="td align-middle">
+                            <p>Element (toolpath/stockmodel) is shown</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="td">
+                            <div class="mediaobject">
+                              <table class="image-viewport" style="border-collapse:collapse;border:0; ;">
+                                <tr style="height: 48px">
+                                  <td style="padding:0;"><img src="image/uuid-b2e2c219-7c68-c9c7-97d4-47f052c6d1f9.svg" style="max-height: 48px;" alt="el_not_exist.svg" /></td>
+                                </tr>
+                              </table>
+                            </div>
+                          </td>
+                          <td valign="middle" class="td align-middle">
+                            <p>Element (toolpath/stockmodel) does not exist, must be calculated</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="td">
+                            <div class="mediaobject">
+                              <table class="image-viewport" style="border-collapse:collapse;border:0; ;">
+                                <tr style="height: 48px">
+                                  <td style="padding:0;"><img src="image/uuid-7af5651d-b247-a814-83b6-f53081fbec7c.svg" style="max-height: 48px;" alt="el_vis_tp_comp.svg" /></td>
+                                </tr>
+                              </table>
+                            </div>
+                          </td>
+                          <td valign="middle" class="td align-middle">
+                            <p>Toolpaths of compound job are partly shown</p>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </section>
+                <section xml:lang="en-US" lang="en-US" dir="ltr" class="section internal" data-origin-id="" data-publication-date="" id="UUID-d732ed9b-3c59-c20e-851f-a76706516d06_UUID-09191628-7553-ba14-9d4a-1d9749829664">
+                  <div class="titlepage">
+                    <div>
+                      <div class="title">
+                        <h2 class="title" style="clear: both"><span class="formal-title">Features tab</span></h2>
+                      </div>
+                    </div>
+                  </div>
+                  <p>The top section of the browser displays feature lists and the bottom section of the browser displays features.</p>
+                </section>
+                <section xml:lang="en-US" lang="en-US" dir="ltr" class="section internal" data-origin-id="" data-publication-date="" id="UUID-d732ed9b-3c59-c20e-851f-a76706516d06_UUID-5b9c057f-7b98-00b1-1020-b3b9659b1c5d">
+                  <div class="titlepage">
+                    <div>
+                      <div class="title">
+                        <h2 class="title" style="clear: both"><span class="formal-title">Macros tab</span></h2>
+                      </div>
+                    </div>
+                  </div>
+                  <p>The macros that are applied are displayed in the browser window.</p>
+                </section>
+              </section>
+              <div class="footer-content">
+                <div class="section-toc section-toc-after">
+                  <div class="section-toc-title">
+                    <span class="section-toc-title-delimiter">:</span>
+                  </div>
+                </div>
+              </div>
+              <footer></footer>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="x-ua-compatible" content="IE=edge" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="search" content="default" />
+  <meta name="use.ic" content="no" />
+  <meta name="tocstandalone" content="yes" />
+  <script type="text/javascript">
+  //<![CDATA[
+                        var index;
+                        var contentLanguage = 'en-US';
+                        var enterKey = 'select';
+                        
+                                        var anchoroption = true;
+                                var instantsearch_minlength = 1;
+                                                
+                                var fuse_threshold = 0.3;
+                        
+                                        var local_csh = false;
+                                
+                        var useanchorlinks = false;
+  //]]>
+  </script>
+  <title>The Stock model dialog</title>
+  <link rel="stylesheet" type="text/css" href="../css/docbook.css" />
+  <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" href="../css/bootstrap-theme.min.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style-common.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style-responsive.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style-print.css" />
+  <link rel="stylesheet" type="text/css" href="../css/font-awesome.css" />
+  <link rel="stylesheet" type="text/css" href="../css/custom.css" />
+  <link rel="stylesheet" type="text/css" href="../css/layout-custom-style.css" />
+  <script src="../js/jquery-1.10.2.min.js" type="text/javascript"></script>
+  <script src="../js/jquery-ui-1.10.3.custom.min.js" type="text/javascript"></script>
+  <script src="../js/bootstrap.min.js" type="text/javascript"></script>
+  <script src="../js/purl.js" type="text/javascript"></script>
+  <script src="../js/jquery.event.move.js" type="text/javascript"></script>
+  <script src="../js/jquery.event.swipe.js" type="text/javascript"></script>
+  <script src="../js/jquery.sticky.js" type="text/javascript"></script>
+  <script src="../js/respond.min.js" type="text/javascript"></script>
+  <script src="../js/script.js" type="text/javascript"></script>
+  <script src="js/toc.js" type="text/javascript"></script>
+  <script src="../js/create-toc.js" type="text/javascript"></script>
+  <script src="../js/clipboard.min.js" type="text/javascript"></script>
+  <script src="../js/fuse.min.js" type="text/javascript"></script>
+  <script src="../js/jquery.mark.min.js" type="text/javascript"></script>
+  <script src="../js/html5.fuse.search.js" type="text/javascript"></script>
+  <script src="js/fuzzydata.js" type="text/javascript"></script>
+  <script src="../js/csh.js" type="text/javascript"></script>
+  <script src="../js/highlight-mergehtml-plugin.js" type="text/javascript"></script>
+  <meta name="generator" content="Paligo" />
+  <link rel="prev" href="UUID-b33778b5-b1bd-d7a0-4410-8cd73f4b0050.html" title="Define stock model" />
+  <link rel="next" href="UUID-78a2f340-87d9-140e-bf88-6c6ed5d4c3a1.html#id76780" title="General" />
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js?config=TeX-MML-AM_CHTML" async="async"></script>
+  <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+  <script type="text/javascript" src="../js/cookie-consent.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  <script type="text/javascript">
+  //<![CDATA[
+                        $(document).on('ready ajaxComplete', function() {
+                                
+                                hljs.addPlugin(mergeHTMLPlugin);
+                                hljs.configure({'ignoreUnescapedHTML': true});
+                                
+                                $('pre:not(.embedcode)').each(function() {
+                                        /**
+                                         * @type {string}
+                                         */
+                                        var language = $(this).data('language');
+
+                                        if (language === 'plaintext' || language === 'text') {
+                                                $(this).addClass(language).addClass('hljs');
+                                                return true;
+                                        }
+                                        else {
+                                                var clone = this.cloneNode(true);
+                                                hljs.highlightElement(clone);
+                                                $(this).empty().append($(clone).contents());
+                                                $(this).attr("class", $(clone).attr("class"));
+                                        }
+                                });
+                        });
+  //]]>
+  </script>
+  <style type="text/css">
+  /*<![CDATA[*/
+            div.skipnav {
+            }
+            div.skipnav a {
+                position: fixed;
+                left: -10000px;
+                top: 1.5em;
+                width: 1px;
+                height: 1px;
+                overflow: hidden;
+            }
+            div.skipnav a:focus, div.skipnav a:active, div.skipnav a:hover {
+                background: white;
+                color: black;
+                box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.5);
+                position: fixed;
+                left: 2em;
+                top: 1.5em;
+                width: auto;
+                height: auto;
+                overflow: visible;
+                text-decoration: underline;
+                z-index: 99999; /* has to be higher than the side panel */
+    }
+  /*]]>*/
+  </style>
+</head>
+<body data-link-prefix="">
+  <div class="skipnav">
+    <a href="#content-wrapper">Skip to main content</a>
+  </div>
+  <div id="page" class="clearfix">
+    <div id="header">
+      <div class="container">
+        <div id="logotype-container" class="pull-left">
+          <a href="../index.html"><img id="logotype-pageheader" src="../css/image/corporate-logo.png" alt="Corporate logotype" data-role="logotype" /></a>
+        </div>
+        <div id="pagetools-container" class="pull-right">
+          <ul id="page-tools">
+            <li class="page-tools-search"><input placeholder="Search" type="text" class="form-control" aria-label="Search" id="search" /></li>
+            <li class="page-tools-print">
+              <a href="javascript:window.print();"><span class="tool-label">Print</span><span class="glyphicon glyphicon-print"></span></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <h1 id="publication-title">CAM</h1>
+    <div id="subheader-sticky-wrapper" class="sticky-wrapper">
+      <div id="subheader">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3 toc-title">
+              <h2><a class="prev nav-icon hidden-lg hidden-md" href="UUID-b33778b5-b1bd-d7a0-4410-8cd73f4b0050.html"><span class="glyphicon glyphicon-chevron-left"></span></a> <a href="#toc" class="hidden mobile-nav-toggle"><span class="glyphicon glyphicon-list"></span>Table of Contents</a><span class="toc-label">Table of Contents</span><a class=
+              "next nav-icon hidden-lg hidden-md" href="UUID-78a2f340-87d9-140e-bf88-6c6ed5d4c3a1.html#id76780"><span class="glyphicon glyphicon-chevron-right"></span></a></h2>
+            </div>
+            <div class="col-md-9 breadcrumb-container">
+              <ul class="breadcrumb">
+                <li class="breadcrumb-link">
+                  <span class="glyphicon glyphicon-home"></span>&nbsp;<a href="index-en-US.html">CAM</a>
+                </li>
+                <li class="breadcrumb-link">
+                  <a href="UUID-0751db51-8b5b-ae49-1904-dce4b8c92263.html">Basics of CAM editing</a>
+                </li>
+                <li class="breadcrumb-link">
+                  <a href="UUID-6af0c709-5a66-c45f-636e-357be3016359.html">Prepare manufacturing geometry</a>
+                </li>
+                <li class="breadcrumb-link">
+                  <a href="UUID-0ea0a566-b442-3798-962d-874cc0d92966.html">Stock</a>
+                </li>
+                <li class="breadcrumb-node">The Stock model dialog</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="main-content">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 toc-container" id="toc-wrapper">
+            <div id="toc-placeholder">
+              <div id="toc-standalone-placeholder"></div>
+            </div>
+          </div>
+          <div class="col-md-9 content-container" id="content-wrapper">
+            <a accesskey="p" class="prev pull-left prev visible-lg visible-md" id="header-navigation-prev" href="UUID-b33778b5-b1bd-d7a0-4410-8cd73f4b0050.html"><span class="glyphicon glyphicon-circle-arrow-left"></span>Prev</a><a accesskey="n" class="pull-right next visible-lg visible-md" id="header-navigation-next" href=
+            "UUID-78a2f340-87d9-140e-bf88-6c6ed5d4c3a1.html#id76780">Next<span class="glyphicon glyphicon-circle-arrow-right"></span></a>
+            <div id="topic-content">
+              <section xml:lang="en-US" lang="en-US" dir="ltr" class="section internal" data-origin-id="UUID-b51b166d-8385-c01a-6426-7367e4b5da32" data-publication-date="" id="UUID-78a2f340-87d9-140e-bf88-6c6ed5d4c3a1">
+                <div class="titlepage">
+                  <div>
+                    <div class="title">
+                      <h1 class="title" style="clear: both"><span class="formal-title">The Stock model dialog</span></h1>
+                    </div>
+                  </div>
+                </div>
+                <section dir="ltr" class="section internal" data-origin-id="" data-publication-date="" id="id76780">
+                  <div class="titlepage">
+                    <div>
+                      <div class="title">
+                        <h2 class="title" style="clear: both"><span class="formal-title">General</span></h2>
+                      </div>
+                    </div>
+                  </div>
+                  <p><span class="guilabel">Name/Comment</span>: You only need to specify a name if the stock model is to be generated by <span class="guilabel">extrusion</span> or <span class="guilabel">rotation</span>. A descriptive comment can help you identify the stock model later.</p>
+                </section>
+                <section dir="ltr" class="section internal" data-origin-id="" data-publication-date="" id="id76781">
+                  <div class="titlepage">
+                    <div>
+                      <div class="title">
+                        <h2 class="title" style="clear: both"><span class="formal-title">Mode</span></h2>
+                      </div>
+                    </div>
+                  </div>
+                  <p>In general, the following options are provided for generating stockmodels: Extrusion, Rotation, Surfaces, From job, File, Bounding geometry, From job chain.</p>
+                  <p><span class="guilabel">Extrusion</span>: Define a (closed) stockmodel based on a contour and a (positive/negative) offset. It can be used for a stock model calculation and for a stock model update.</p>
+                </section>
+                <section dir="ltr" class="section internal" data-origin-id="" data-publication-date="" id="id76782">
+                  <div class="titlepage">
+                    <div>
+                      <div class="title">
+                        <h2 class="title" style="clear: both"><span class="formal-title">Extrusion</span></h2>
+                      </div>
+                    </div>
+                  </div>
+                  <p><span class="guilabel">Tolerance</span>: Max. permissible distance (1) between the faceted surface of the polyhedron model and the real model surface.</p>
+                  <div class="mediaobject">
+                    <table class="image-viewport" style="border-collapse:collapse;border:0; width:461px;">
+                      <tr style="height: 233px">
+                        <td style="padding:0;"><img src="image/uuid-54acb4d7-798c-4f42-4987-78a9676f7e63.svg" style="max-width: 461px; max-height: 233px;" alt="grundlagen_math_aufloesung_neu.svg" /></td>
+                      </tr>
+                    </table>
+                  </div>
+                  <div class="informaltable table-responsive">
+                    <table style="width:100%;" class="informaltable">
+                      <colgroup>
+                        <col style="width:12%;" />
+                        <col style="width:88%;" />
+                      </colgroup>
+                      <tbody>
+                        <tr>
+                          <td class="td">
+                            <div class="mediaobject"><img src="image/uuid-ae2171e5-28c0-ecfe-d503-a499853a7703.svg" style="" alt="sel_closed_contour.svg" /></div>
+                          </td>
+                          <td class="td">
+                            <p><span class="guilabel">Profile</span>: Select contour.</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="td">
+                            <div class="mediaobject"><img src="image/uuid-1936d240-0f80-7e6e-505f-94ad48cd2741.svg" style="" alt="sel_point.svg" /></div>
+                          </td>
+                          <td class="td">
+                            <p><span class="guilabel">Offset 1</span> / <span class="guilabel">Offset 2</span>: Specify the height of the stock model in the Z direction (+/-).</p>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </section>
+                <section dir="ltr" class="section internal" data-origin-id="" data-publication-date="" id="id76783">
+                  <div class="titlepage">
+                    <div>
+                      <div class="title">
+                        <h2 class="title" style="clear: both"><span class="formal-title">Mode</span></h2>
+                      </div>
+                    </div>
+                  </div>
+                  <p><span class="guilabel">Rotation</span>: Define a (closed) stock model based on an (open) contour between the start and end point by means of the rotation axis. It can be used for a stock model calculation and for a stock model update.</p>
+                </section>
+                <section dir="ltr" class="section internal" data-origin-id="" data-publication-date="" id="id76784">
+                  <div class="titlepage">
+                    <div>
+                      <div class="title">
+                        <h2 class="title" style="clear: both"><span class="formal-title">Rotation</span></h2>
+                      </div>
+                    </div>
+                  </div>
+                  <p><span class="guilabel">Tolerance</span>: Max. permissible distance (1) between the faceted surface of the polyhedron model and the real model surface.</p>
+                  <div class="mediaobject">
+                    <table class="image-viewport" style="border-collapse:collapse;border:0; width:461px;">
+                      <tr style="height: 233px">
+                        <td style="padding:0;"><img src="image/uuid-54acb4d7-798c-4f42-4987-78a9676f7e63.svg" style="max-width: 461px; max-height: 233px;" alt="grundlagen_math_aufloesung_neu.svg" /></td>
+                      </tr>
+                    </table>
+                  </div>
+                  <div class="informaltable table-responsive">
+                    <table style="width:100%;" class="informaltable">
+                      <colgroup>
+                        <col style="width:12%;" />
+                        <col style="width:88%;" />
+                      </colgroup>
+                      <tbody>
+                        <tr>
+                          <td class="td">
+                            <div class="mediaobject"><img src="image/uuid-78c406f9-beac-deb8-a532-bf8208356a12.svg" style="" alt="sel_contour.svg" /></div>
+                          </td>
+                          <td class="td">
+                            <p><span class="guilabel">Profile</span>: Select open contour.</p>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <p><span class="guilabel">Resolution</span>: Define the fineness of the curve resolution.</p>
+                  <p><span xml:lang="de" lang="de" dir="ltr" class="guilabel">Mode</span></p>
+                  <p><span class="guilabel">Surfaces</span>: Define a stockmodel based on any selectable surfaces from a CAD model. The stockmodel cannot be used for a stockmodel update because it is not closed.</p>
+                </section>
+                <section dir="ltr" class="section internal" data-origin-id="" data-publication-date="" id="id76785">
+                  <div class="titlepage">
+                    <div>
+                      <div class="title">
+                        <h2 class="title" style="clear: both"><span class="formal-title">Surfaces</span></h2>
+                      </div>
+                    </div>
+                  </div>
+                  <p><span class="guilabel">Tolerance</span>: Max. permissible distance (1) between the faceted surface of the polyhedron model and the real model surface.</p>
+                  <div class="mediaobject">
+                    <table class="image-viewport" style="border-collapse:collapse;border:0; width:461px;">
+                      <tr style="height: 233px">
+                        <td style="padding:0;"><img src="image/uuid-54acb4d7-798c-4f42-4987-78a9676f7e63.svg" style="max-width: 461px; max-height: 233px;" alt="grundlagen_math_aufloesung_neu.svg" /></td>
+                      </tr>
+                    </table>
+                  </div>
+                  <div class="informaltable table-responsive">
+                    <table style="width:100%;" class="informaltable">
+                      <colgroup>
+                        <col style="width:12%;" />
+                        <col style="width:88%;" />
+                      </colgroup>
+                      <thead>
+                        <tr>
+                          <td class="td">
+                            <div class="mediaobject"><img src="image/uuid-f7166df0-d0bf-7b2f-a31a-0626f5481c04.svg" style="" alt="sel_surface.svg" /></div>
+                          </td>
+                          <td class="td">
+                            <p><span class="guilabel">Surfaces</span>: Select surfaces manually.</p>
+                          </td>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td class="td">
+                            <div class="mediaobject"><img src="image/uuid-773605c5-c52d-5e80-bbee-372ddcdd2d1d.svg" style="" alt="hm_filter_open_filter.svg" /></div>
+                          </td>
+                          <td class="td">
+                            <p>Define surfaces with the help of the geometry filter.</p>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <p><span xml:lang="de" lang="de" dir="ltr" class="guilabel">Mode</span></p>
+                  <p><span class="guilabel">From Job:</span> Define a stock model based on the closed stock model of a reference job (stock model update).</p>
+                </section>
+                <section dir="ltr" class="section" data-origin-id="" data-publication-date="" id="id76786">
+                  <div class="titlepage">
+                    <div>
+                      <div class="title">
+                        <h2 class="title" style="clear: both"><span class="formal-title">Close stockmodel</span></h2>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="informaltable table-responsive">
+                    <table style="width:100%;" class="informaltable">
+                      <colgroup>
+                        <col style="width:12%;" />
+                        <col style="width:88%;" />
+                      </colgroup>
+                      <tbody>
+                        <tr>
+                          <td class="td">
+                            <div class="mediaobject"><img src="image/uuid-78c406f9-beac-deb8-a532-bf8208356a12.svg" style="" alt="sel_contour.svg" /></div>
+                          </td>
+                          <td class="td">
+                            <p><span class="guilabel">Close stock and generate a reference of a VIS file</span></p>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <p>Following the surface selection, click the icon to use the stock for a stock model update. The stock model is closed and a corresponding VIS file is created. This function is also available in file mode. Select <span class="guimenu">Mode</span> → <span class="guimenuitem">File</span> and select the <code class=
+                  "filename">*.stl</code> file that should be converted to <code class="filename">*.vis</code> format.</p>
+                  <p><span class="guilabel">Automatic</span>: A closed stock is created based on the selected surfaces. The stock remains closed even if the geometry is moved. The stock information is contained in the <code class="filename">*.hmc</code> file. It is not necessary to manually convert the geometry data (*.vis format).</p>
+                </section>
+                <section dir="ltr" class="section internal" data-origin-id="" data-publication-date="" id="id76787">
+                  <div class="titlepage">
+                    <div>
+                      <div class="title">
+                        <h2 class="title" style="clear: both"><span class="formal-title">Reference job</span></h2>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="informaltable table-responsive">
+                    <table style="width:100%;" class="informaltable">
+                      <colgroup>
+                        <col style="width:12%;" />
+                        <col style="width:88%;" />
+                      </colgroup>
+                      <tbody>
+                        <tr>
+                          <td class="td">
+                            <div class="mediaobject"><img src="image/uuid-3c68fe2a-8609-b8b8-ad43-3cfdbcb1bdab.svg" style="" alt="sel_ref_job.svg" /></div>
+                          </td>
+                          <td class="td">
+                            <p><span class="guilabel">Select reference job</span>: Click the icon to select a reference job. The description of the selected reference job is used as the stockmodel name.</p>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <p>Select <span class="guilabel">mm</span> or <span class="guilabel">inch</span> to specify the system of units.</p>
+                  <p><span class="guilabel">Tolerance</span>: Max. permissible distance (1) between the faceted surface of the polyhedron model and the real model surface.</p>
+                  <div class="mediaobject">
+                    <table class="image-viewport" style="border-collapse:collapse;border:0; width:461px;">
+                      <tr style="height: 233px">
+                        <td style="padding:0;"><img src="image/uuid-54acb4d7-798c-4f42-4987-78a9676f7e63.svg" style="max-width: 461px; max-height: 233px;" alt="grundlagen_math_aufloesung_neu.svg" /></td>
+                      </tr>
+                    </table>
+                  </div>
+                  <p><span class="guilabel">Mode</span></p>
+                  <p><span class="guilabel">File</span>: Select any file in <code class="filename">*.STL</code> or <code class="filename">*.VIS</code> format. The description of the selected file is used as the stock model <span class="guilabel">name</span>.</p>
+                  <p>If the file selected here is to be used for a stockmodel calculation, it has to be a closed solid.</p>
+                  <p>The following applies to STL files that have been created using the Geometric Engine: If the file is to be used for stock definition, set the workplane to WCS before saving the file (<span class="guimenu">Workplane</span> → <span class="guimenuitem">&nbsp;Set to wold</span>).</p>
+                  <p><code xml:lang="de" lang="de" dir="ltr" class="filename">Mode</code></p>
+                  <p><span class="guilabel">Bounding geometry</span>: Define a stockmodel based on an existing CAD model. You can use either the profile of the CAD model, a box or cylinder as the basis for creating a stock model.</p>
+                </section>
+                <section dir="ltr" class="section internal" data-origin-id="" data-publication-date="" id="id76788">
+                  <div class="titlepage">
+                    <div>
+                      <div class="title">
+                        <h2 class="title" style="clear: both"><span class="formal-title">Bounding geometry</span></h2>
+                      </div>
+                    </div>
+                  </div>
+                  <p><span class="guilabel">Profile</span>: The <span class="guilabel">profile</span> of the active CAD model will be used as the bounding geometry. In this case, existing surfaces are rotated around the Z axis of the selected frame. You can define an <span class="guilabel">offset</span> (optional).</p>
+                  <p><span class="guilabel">Box/Cylinder</span>: A box/cylinder that is based on the outer boundary of the loaded model is created. Double-click the <span class="guilabel">Allowance</span> line to specify a freely definable offset.</p>
+                  <p>In cubical stock models, the offset can be defined for the frame direction (+/-) X, Y and Z. In cylindrical stock models, the offset can be defined for the top, bottom and shell. When you define a cylindrical stock model, you can also specify the outer diameter and stock height.</p>
+                  <p><span class="guilabel">Global offset</span>: Select this option if the offset is to apply to the entire stockmodel.</p>
+                  <p><span class="guilabel">Cast offset</span>: Create a cast stock model based on the current CAD model.</p>
+                  <div class="informaltable table-responsive">
+                    <table style="width:100%;" class="informaltable">
+                      <colgroup>
+                        <col style="width:12%;" />
+                        <col style="width:88%;" />
+                      </colgroup>
+                      <tbody>
+                        <tr>
+                          <td class="td">
+                            <div class="mediaobject"><img src="image/uuid-f7166df0-d0bf-7b2f-a31a-0626f5481c04.svg" style="" alt="sel_surface.svg" /></div>
+                          </td>
+                          <td class="td">
+                            <p><span class="guilabel">Surfaces</span>: Click the icon to select the <span class="guilabel">surfaces</span> or <span class="guilabel">solid</span> to be used as the basis for creating the cast stock model. If required, define an <span class="guilabel">offset</span>.</p>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <p><span class="guilabel">Select frame</span>: When creating a stockmodel, the frame of the joblist or job is used by default. You can also use another frame or define a new frame.</p>
+                  <p><span class="guilabel">Calculate</span>: Start the stockmodel calculation.</p>
+                  <p><span class="guilabel">Tolerance</span>: Max. permissible distance (1) between the faceted surface of the polyhedron model and the real model surface.</p>
+                  <div class="mediaobject" id="UUID-78a2f340-87d9-140e-bf88-6c6ed5d4c3a1_mediaobject-idm53140875203718">
+                    <table class="image-viewport" style="border-collapse:collapse;border:0; width:461px;">
+                      <tr style="height: 233px">
+                        <td style="padding:0;"><img src="image/uuid-54acb4d7-798c-4f42-4987-78a9676f7e63.svg" style="max-width: 461px; max-height: 233px;" alt="grundlagen_math_aufloesung_neu.svg" /></td>
+                      </tr>
+                    </table>
+                  </div>
+                  <p>Once the calculation has been performed, the storage location ( <span class="guilabel">Path</span>), measurement system ( <span class="guilabel">mm</span>/ <span class="guilabel">inch</span>) and <span class="guilabel">Resolution</span>are displayed in the <span class="guilabel">File</span> area. You can also change these. A
+                  corresponding entry is made in the stock browser and the cast stockmodel is available for further machining in all cycles that support stockmodels.</p>
+                  <p>Cast stock models are always created in <code class="filename">*.vis</code> format.</p>
+                </section>
+                <section dir="ltr" class="section internal" data-origin-id="" data-publication-date="" id="id76789">
+                  <div class="titlepage">
+                    <div>
+                      <div class="title">
+                        <h2 class="title" style="clear: both"><span class="formal-title">Mode</span></h2>
+                      </div>
+                    </div>
+                  </div>
+                  <p><span class="guilabel">Turning</span>: Select this option if the stock model is to be used for <span class="guilabel">Turning</span> and define the stock model generation mode.</p>
+                  <p><span class="italic">hyper</span>MILL allows you to generate a stock model for turning jobs from a stock model for milling jobs and vice versa.</p>
+                  <p><span class="guilabel">Rotation</span>: Define a (closed) <span class="guilabel">profile and turning axis</span> either directly in the graphics window or from a milling stockmodel or an existing file.</p>
+                  <div class="informaltable table-responsive">
+                    <table style="width:100%;" class="informaltable">
+                      <colgroup>
+                        <col style="width:12%;" />
+                        <col style="width:88%;" />
+                      </colgroup>
+                      <tbody>
+                        <tr>
+                          <td class="td">
+                            <div class="mediaobject"><img src="image/uuid-16dde998-8b16-053a-9991-9ab5439383f8.svg" style="" alt="stock_closed.svg" /></div>
+                          </td>
+                          <td class="td">
+                            <p>Click the icon to open the <span class="guilabel">Generate turning stock from milling stock</span> dialogue.</p>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </section>
+                <section dir="ltr" class="section internal" data-origin-id="" data-publication-date="" id="id76790">
+                  <div class="titlepage">
+                    <div>
+                      <div class="title">
+                        <h2 class="title" style="clear: both"><span class="formal-title">Options</span></h2>
+                      </div>
+                    </div>
+                  </div>
+                  <p><span class="guilabel">Stock</span>: Select a stockmodel.</p>
+                  <p><span class="guilabel">File</span>: Select any geometry file in <code class="filename">*.omx</code> or <code class="filename">*.stl</code> format and set the measurement system ( <span class="guilabel">mm</span> / <span class="guilabel">inch</span>).</p>
+                  <p><span class="guilabel">Frame for turning axis</span>: Select the frame for the turning axis. The Z axis of the selected frame corresponds to the turning axis of the turning stock. Define the <span class="guilabel">resolution</span> and an <span class="guilabel">offset</span>, if required.</p>
+                </section>
+                <section dir="ltr" class="section internal" data-origin-id="" data-publication-date="" id="id76791">
+                  <div class="titlepage">
+                    <div>
+                      <div class="title">
+                        <h2 class="title" style="clear: both"><span class="formal-title">Mode</span></h2>
+                      </div>
+                    </div>
+                  </div>
+                  <p><span class="guilabel">From job</span>: Define a stock model based on the stock model of a reference job.</p>
+                </section>
+                <section dir="ltr" class="section internal" data-origin-id="" data-publication-date="" id="id76792">
+                  <div class="titlepage">
+                    <div>
+                      <div class="title">
+                        <h2 class="title" style="clear: both"><span class="formal-title">Reference job</span></h2>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="informaltable table-responsive">
+                    <table style="width:100%;" class="informaltable">
+                      <colgroup>
+                        <col style="width:12%;" />
+                        <col style="width:88%;" />
+                      </colgroup>
+                      <tbody>
+                        <tr>
+                          <td class="td">
+                            <div class="mediaobject"><img src="image/uuid-3c68fe2a-8609-b8b8-ad43-3cfdbcb1bdab.svg" style="" alt="sel_ref_job.svg" /></div>
+                          </td>
+                          <td class="td">
+                            <p><span class="guilabel">Select reference job</span>: Click the icon to select a reference job. The description of the selected reference job is used as the stockmodel name.</p>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <p><span class="guilabel">Bounding geometry</span>: Use a bounding geometry to create a stockmodel for a turning job. You can select the following options:</p>
+                  <p><span class="guilabel">Profile</span>: The profile of the current polyhedron is used to generate a turning stock, while taking into account any defined offset.</p>
+                  <p><span class="guilabel">Cylinder</span>: While taking account of a defined offset, a cylindrical turning stock is created on the basis of the current polyhedron. After the calculation, the current stock size and minimum stock size are shown in the list display.</p>
+                  <p><span class="guilabel">Pipe</span>: While taking account of a defined offset, a pipe-shaped turning stock is created on the basis of the current polyhedron. After the calculation, the current stock size and minimum stock size are shown in the list display.</p>
+                  <p><span class="guilabel">Global offset</span>: Select this option if the offset is to apply to the entire stockmodel.</p>
+                  <p>If not, specify the offset for the top, bottom, shell and inner shell. Define the inner shell diameter and outer shell diameter.</p>
+                  <div class="mediaobject">
+                    <table class="image-viewport" style="border-collapse:collapse;border:0; width:461px;">
+                      <tr style="height: 233px">
+                        <td style="padding:0;"><img src="image/uuid-186fcd9c-6ee9-a627-e965-28ba80841f0d.svg" style="max-width: 461px; max-height: 233px;" alt="grundlagen_drehbreich_drehrohteil.svg" /></td>
+                      </tr>
+                    </table>
+                  </div>
+                  <p>(1) Turning stock, (2) Turning contour, (3) Turning area</p>
+                </section>
+                <section dir="ltr" class="section internal" data-origin-id="" data-publication-date="" id="id76793">
+                  <div class="titlepage">
+                    <div>
+                      <div class="title">
+                        <h2 class="title" style="clear: both"><span class="formal-title">Mode</span></h2>
+                      </div>
+                    </div>
+                  </div>
+                  <p><span class="guilabel">From job chain</span>: Adapt the resolution for a stockmodel from a job chain.</p>
+                  <p><span xml:lang="de" lang="de" dir="ltr" class="guilabel">Parameters</span></p>
+                  <p>Define the start stockmodel, format and resolution of the resulting stockmodel.</p>
+                </section>
+                <section dir="ltr" class="section internal" data-origin-id="" data-publication-date="" id="id76794">
+                  <div class="titlepage">
+                    <div>
+                      <div class="title">
+                        <h2 class="title" style="clear: both"><span class="formal-title">Start stockmodel</span></h2>
+                      </div>
+                    </div>
+                  </div>
+                  <p><span class="guilabel">File</span>: Click <span class="guilabel">Path</span> to select any file in <code class="filename">*.STL</code> or <code class="filename">*.VIS</code> format. Use the <span class="guilabel">Stock</span> option to select an existing stockmodel from the list as a start stockmodel.</p>
+                </section>
+                <section dir="ltr" class="section internal" data-origin-id="" data-publication-date="" id="id76795">
+                  <div class="titlepage">
+                    <div>
+                      <div class="title">
+                        <h2 class="title" style="clear: both"><span class="formal-title">Resulting model</span></h2>
+                      </div>
+                    </div>
+                  </div>
+                  <p>Select the <span class="guilabel">STL</span> (Stereo Lithography) or <span class="guilabel">VIS</span> (Visicut) option to specify the format of the resulting model and set the required resolution. Stock models in <code class="filename">*.VIS</code> format are recommended if you require greater accuracy.</p>
+                  <p><span class="guilabel">Tolerance</span>: Max. permissible distance (1) between the faceted surface of the polyhedron model and the real model surface.</p>
+                  <div class="mediaobject">
+                    <table class="image-viewport" style="border-collapse:collapse;border:0; width:461px;">
+                      <tr style="height: 233px">
+                        <td style="padding:0;"><img src="image/uuid-54acb4d7-798c-4f42-4987-78a9676f7e63.svg" style="max-width: 461px; max-height: 233px;" alt="grundlagen_math_aufloesung_neu.svg" /></td>
+                      </tr>
+                    </table>
+                  </div>
+                  <p><span xml:lang="de" lang="de" dir="ltr" class="guilabel">History</span></p>
+                  <p>Display information on the creation mode and resolution of the generated stockmodel in the <span class="guilabel">Parameters</span> and <span class="guilabel">Job chain</span> areas.</p>
+                </section>
+              </section>
+              <div class="footer-content">
+                <div class="section-toc section-toc-after">
+                  <div class="section-toc-title">
+                    <span class="section-toc-title-delimiter">:</span>
+                  </div>
+                </div>
+              </div>
+              <footer></footer>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

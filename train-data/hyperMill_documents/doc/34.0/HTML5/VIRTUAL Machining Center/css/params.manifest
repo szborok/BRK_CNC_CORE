@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<params>
+  <param name="submit.feedback" select="0"/>
+  <param name="voting.panel" select="0"/>
+  <param name="feedback.email" select=""/>
+  <param name="feedback.description" select="M&#xF6;chten Sie uns Feedback geben? Klicken Sie hier, um &#xC4;nderungen vorzuschlagen."/>
+  <param name="voting.panel.text" select="War das hilfreich?"/>
+  <param name="yes" select=""/>
+  <param name="no" select=""/>
+  <param name="toc.sidebar.placement" select="right"/>
+  <param name="custom.meta.tags" select=""/>
+  <param name="custom.meta.tag.separator" select=":"/>
+  <param name="custom.meta.tag.pair.separator" select=";"/>
+  <param name="google.analytics" select=""/>
+  <param name="google.analytics.type" select="gtag"/>
+  <param name="logo.link" select=""/>
+  <param name="bootstrap.version" select="340"/>
+  <param name="layout.custom.style.persistent.name" select="1"/>
+  <param name="elastic.site.search" select=""/>
+  <param name="elastic.site.search.only.index.main.content" select="0"/>
+  <param name="other.custom.search" select="0"/>
+  <param name="use.section.toc" select="after"/>
+  <param name="taxonomies.relationship" select=""/>
+  <param name="fuse.threshold" select="0.3"/>
+  <param name="use.resource.version.suffix" select="0"/>
+  <param name="add.rel.noopener" select="1"/>
+  <param name="external.logo.link.in.same.tab" select="0"/>
+  <param name="custom.css.source" select="/var/www/ccms/usr/openmindtech/xsl/custom/assets/layout-341037/5f4fbb886d0a8.css"/>
+  <param name="universalaccess.include-wcag-css" select="0"/>
+  <param name="universalaccess.skipnav.linktext" select="Skip to main content"/>
+  <param name="universalaccess.markup.incompatible" select="0"/>
+  <param name="universalaccess.skipnav.css.inline" select="1"/>
+  <param name="universalaccess.admonitions.strong" select="0"/>
+  <param name="universalaccess.markup.incompatible" select="0"/>
+  <param name="slides.revealjs.animate.listitems" select="1"/>
+  <param name="slides.revealjs.transition" select="slide"/>
+  <param name="slides.revealjs.show.progress" select="1"/>
+  <param name="slides.revealjs.show.controls" select="1"/>
+  <param name="slides.revealjs.valign.center" select="1"/>
+  <param name="slides.revealjs.navigation.mode" select="linear"/>
+  <param name="slides.revealjs.width" select="100%"/>
+  <param name="slides.revealjs.height" select="100%"/>
+  <param name="slides.revealjs.scale.min" select="0.2"/>
+  <param name="slides.revealjs.scale.max" select="1.5"/>
+  <param name="slides.revealjs.theme" select="white"/>
+  <param name="slides.revealjs.theme.custom" select=""/>
+  <param name="slides.revealjs.background.image.opacity" select="1"/>
+  <param name="slides.revealjs.default.background.image" select=""/>
+  <param name="slides.revealjs.default.background.image.out" select="/paligo/tmp/openmindtech/production-67e28f4fa937a6.15434398/VIRTUAL_Machining_Center_Manual-html5/out/css/image/default_slide_background.png"/>
+  <param name="slides.revealjs.logo" select=""/>
+  <param name="slides.revealjs.logo.out" select="/paligo/tmp/openmindtech/production-67e28f4fa937a6.15434398/VIRTUAL_Machining_Center_Manual-html5/out/css/image/logo-light.png"/>
+  <param name="slides.revealjs.logo.alt" select=""/>
+  <param name="slides.revealjs.logo.alt.out" select="/paligo/tmp/openmindtech/production-67e28f4fa937a6.15434398/VIRTUAL_Machining_Center_Manual-html5/out/css/image/logo-dark.png"/>
+  <param name="skip.index.page.by.redirect" select="0"/>
+  <param name="use.separate.relationship.toc" select="1"/>
+  <param name="seealso.string" select="&#xC0B4;&#xD3B4;&#xBCFC; &#xB2E4;&#xB978; &#xB0B4;&#xC6A9;"/>
+</params>

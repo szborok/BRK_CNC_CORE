@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="x-ua-compatible" content="IE=edge" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="search" content="default" />
+  <meta name="use.ic" content="no" />
+  <meta name="tocstandalone" content="yes" />
+  <script type="text/javascript">
+  //<![CDATA[
+                        var index;
+                        var contentLanguage = 'en-US';
+                        var enterKey = 'select';
+                        
+                                        var anchoroption = true;
+                                var instantsearch_minlength = 1;
+                                                
+                                var fuse_threshold = 0.3;
+                        
+                                        var local_csh = false;
+                                
+                        var useanchorlinks = false;
+  //]]>
+  </script>
+  <title>8.2.&nbsp;Setting up and configuring breakpoints</title>
+  <link rel="stylesheet" type="text/css" href="../css/docbook.css" />
+  <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" href="../css/bootstrap-theme.min.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style-common.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style-responsive.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style-print.css" />
+  <link rel="stylesheet" type="text/css" href="../css/font-awesome.css" />
+  <link rel="stylesheet" type="text/css" href="../css/custom.css" />
+  <link rel="stylesheet" type="text/css" href="../css/layout-custom-style.css" />
+  <script src="../js/jquery-1.10.2.min.js" type="text/javascript"></script>
+  <script src="../js/jquery-ui-1.10.3.custom.min.js" type="text/javascript"></script>
+  <script src="../js/bootstrap.min.js" type="text/javascript"></script>
+  <script src="../js/purl.js" type="text/javascript"></script>
+  <script src="../js/jquery.event.move.js" type="text/javascript"></script>
+  <script src="../js/jquery.event.swipe.js" type="text/javascript"></script>
+  <script src="../js/jquery.sticky.js" type="text/javascript"></script>
+  <script src="../js/respond.min.js" type="text/javascript"></script>
+  <script src="../js/script.js" type="text/javascript"></script>
+  <script src="js/toc.js" type="text/javascript"></script>
+  <script src="../js/create-toc.js" type="text/javascript"></script>
+  <script src="../js/clipboard.min.js" type="text/javascript"></script>
+  <script src="../js/fuse.min.js" type="text/javascript"></script>
+  <script src="../js/jquery.mark.min.js" type="text/javascript"></script>
+  <script src="../js/html5.fuse.search.js" type="text/javascript"></script>
+  <script src="js/fuzzydata.js" type="text/javascript"></script>
+  <script src="../js/csh.js" type="text/javascript"></script>
+  <script src="../js/highlight-mergehtml-plugin.js" type="text/javascript"></script>
+  <meta name="generator" content="Paligo" />
+  <link rel="prev" href="UUID-8cc3f299-c78c-f676-0deb-2b32b5fd4074.html#UUID-8cc3f299-c78c-f676-0deb-2b32b5fd4074_UUID-054232e5-52e0-f242-b87b-06bb5e52eb84" title="Keyboard shortcuts and mouse functions for controlling the analysis" />
+  <link rel="next" href="UUID-07b27fbb-35cb-825d-e4eb-6746b63a6367.html" title="8.3.&nbsp;Variables" />
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML" async="async"></script>
+  <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+  <script type="text/javascript" src="../js/cookie-consent.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  <script type="text/javascript">
+  //<![CDATA[
+                        $(document).on('ready ajaxComplete', function() {
+                                
+                                hljs.addPlugin(mergeHTMLPlugin);
+                                hljs.configure({'ignoreUnescapedHTML': true});
+                                
+                                $('pre:not(.embedcode)').each(function() {
+                                        /**
+                                         * @type {string}
+                                         */
+                                        var language = $(this).data('language');
+
+                                        if (language === 'plaintext' || language === 'text') {
+                                                $(this).addClass(language).addClass('hljs');
+                                                return true;
+                                        }
+                                        else {
+                                                var clone = this.cloneNode(true);
+                                                hljs.highlightElement(clone);
+                                                $(this).empty().append($(clone).contents());
+                                                $(this).attr("class", $(clone).attr("class"));
+                                        }
+                                });
+                        });
+  //]]>
+  </script>
+  <style type="text/css">
+  /*<![CDATA[*/
+            div.skipnav {
+            }
+            div.skipnav a {
+                position: fixed;
+                left: -10000px;
+                top: 1.5em;
+                width: 1px;
+                height: 1px;
+                overflow: hidden;
+            }
+            div.skipnav a:focus, div.skipnav a:active, div.skipnav a:hover {
+                background: white;
+                color: black;
+                box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.5);
+                position: fixed;
+                left: 2em;
+                top: 1.5em;
+                width: auto;
+                height: auto;
+                overflow: visible;
+                text-decoration: underline;
+                z-index: 99999; /* has to be higher than the side panel */
+    }
+  /*]]>*/
+  </style>
+</head>
+<body data-link-prefix="">
+  <div class="skipnav">
+    <a href="#content-wrapper">Skip to main content</a>
+  </div>
+  <div id="page" class="clearfix">
+    <div id="header">
+      <div class="container">
+        <div id="logotype-container" class="pull-left">
+          <a href="../index.html"><img id="logotype-pageheader" src="../css/image/corporate-logo.png" alt="Corporate logotype" data-role="logotype" /></a>
+        </div>
+        <div id="pagetools-container" class="pull-right">
+          <ul id="page-tools">
+            <li class="page-tools-search"><input placeholder="Search" type="text" class="form-control" aria-label="Search" id="search" /></li>
+            <li class="page-tools-print">
+              <a href="javascript:window.print();"><span class="tool-label">Print</span><span class="glyphicon glyphicon-print"></span></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <h1 id="publication-title"><span xml:lang="de" lang="de" dir="ltr" class="phrase"><span class="application">VIRTUAL Machining Center</span></span></h1>
+    <div id="subheader-sticky-wrapper" class="sticky-wrapper">
+      <div id="subheader">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3 toc-title">
+              <h2><a class="prev nav-icon hidden-lg hidden-md" href="UUID-8cc3f299-c78c-f676-0deb-2b32b5fd4074.html#UUID-8cc3f299-c78c-f676-0deb-2b32b5fd4074_UUID-054232e5-52e0-f242-b87b-06bb5e52eb84"><span class="glyphicon glyphicon-chevron-left"></span></a> <a href="#toc" class="hidden mobile-nav-toggle"><span class=
+              "glyphicon glyphicon-list"></span>Table of Contents</a><span class="toc-label">Table of Contents</span><a class="next nav-icon hidden-lg hidden-md" href="UUID-07b27fbb-35cb-825d-e4eb-6746b63a6367.html"><span class="glyphicon glyphicon-chevron-right"></span></a></h2>
+            </div>
+            <div class="col-md-9 breadcrumb-container">
+              <ul class="breadcrumb">
+                <li class="breadcrumb-link">
+                  <span class="glyphicon glyphicon-home"></span>&nbsp;<a href="index-en-US.html"><span xml:lang="de" lang="de" dir="ltr" class="phrase"><span class="application">VIRTUAL Machining Center</span></span></a>
+                </li>
+                <li class="breadcrumb-link">
+                  <a href="UUID-a0bf736e-f917-ba10-5a5d-2bbe92f9060a.html">Analysis</a>
+                </li>
+                <li class="breadcrumb-node">Setting up and configuring breakpoints</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="main-content">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 toc-container" id="toc-wrapper">
+            <div id="toc-placeholder">
+              <div id="toc-standalone-placeholder"></div>
+            </div>
+          </div>
+          <div class="col-md-9 content-container" id="content-wrapper">
+            <a accesskey="p" class="prev pull-left prev visible-lg visible-md" id="header-navigation-prev" href="UUID-8cc3f299-c78c-f676-0deb-2b32b5fd4074.html#UUID-8cc3f299-c78c-f676-0deb-2b32b5fd4074_UUID-054232e5-52e0-f242-b87b-06bb5e52eb84"><span class="glyphicon glyphicon-circle-arrow-left"></span>Prev</a><a accesskey="n" class=
+            "pull-right next visible-lg visible-md" id="header-navigation-next" href="UUID-07b27fbb-35cb-825d-e4eb-6746b63a6367.html">Next<span class="glyphicon glyphicon-circle-arrow-right"></span></a>
+            <div id="topic-content">
+              <section xml:lang="en-US" lang="en-US" dir="ltr" class="section" data-origin-id="UUID-1ad5c410-4291-dbf9-498a-c95e34dff9bf" data-publication-date="" id="UUID-c91aa33d-e918-ddfa-ddf3-29e15472fdc7">
+                <div class="titlepage">
+                  <div>
+                    <div class="title">
+                      <h1 class="title" style="clear: both"><span class="formal-number">8.2</span><span class="formal-label-delimiter">.</span> <span class="formal-title">Setting up and configuring breakpoints</span></h1>
+                    </div>
+                  </div>
+                </div>
+                <div class="informalfigure">
+                  <div class="mediaobject">
+                    <table class="image-viewport" style="border-collapse:collapse;border:0; width:397px;">
+                      <tr>
+                        <td style="padding:0;"><img src="image/uuid-69593e98-72ec-bbe9-514c-7d689ed64166-en-US.svg" style="max-width: 397px;" alt="vmc_analyse_haltepunkte.svg" /></td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+                <p><span class="inlinemediaobject"><img src="image/uuid-d3472d24-15bf-6200-8d62-f37eed6cb967.svg" alt="Nr_01.svg" /></span> <span class="guilabel">Overview</span>: List of defined breakpoints. Double-click to make a breakpoint editable and assign a name of your choice.</p>
+                <p><span class="inlinemediaobject"><img src="image/uuid-fa232d44-ccb2-2f50-a1d9-253c460bb62c.svg" alt="Nr_02.svg" /></span> <span class="guilabel">Details</span>: Coordinate values of a breakpoint as VNC or NC program file.</p>
+                <p><span class="inlinemediaobject"><img src="image/uuid-fb9c4824-908e-c3d0-eb1e-1e864608f0ed.svg" alt="Nr_03.svg" /></span> Shortcut menu on the Overview tab (list display). Select one or several breakpoints by clicking with the left mouse button, right-click and then select the <span class="guilabel">Disable breakpoint</span>,
+                <span class="guilabel">Enable breakpoint</span> or <span class="guilabel">Delete breakpoint</span> function to either disable, enable or delete the breakpoint respectively (see figure 10).</p>
+                <p><span class="inlinemediaobject"><img src="image/uuid-8e73687f-89a5-04d8-31df-020f365123aa.svg" alt="Nr_04.svg" /></span> Active breakpoint, <span class="inlinemediaobject"><img src="image/uuid-fb1a8ebc-9f11-c7d7-6068-ea0134526cce.svg" alt="Nr_05.svg" /></span> Inactive breakpoint.</p>
+                <p><span class="inlinemediaobject"><img src="image/uuid-40776e33-2592-da47-16b2-fcf814e7d95f.svg" alt="Nr_06.svg" /></span> Shortcut menu on the Details tab (coordinate values). Approach a specific breakpoint via the shortcut menu or set as the start/end of the program run (see the figure ‘Setting up and configuring breakpoints’).
+                The shortcut menu is the same as the shortcut menu in the block display. This way, specific breakpoints can be approached and they can also be set as the start and end of the program run.</p>
+                <div class="informaltable table-responsive" id="UUID-c91aa33d-e918-ddfa-ddf3-29e15472fdc7_informaltable-idm53195480757264">
+                  <table class="informaltable">
+                    <colgroup>
+                      <col style="width:15%;" />
+                      <col style="width:85%;" />
+                    </colgroup>
+                    <tbody>
+                      <tr>
+                        <td valign="top" class="td align-top">
+                          <div class="mediaobject"><img src="image/uuid-71c131ea-cd01-63a3-ae3e-3e5dcf1c3e4f.svg" style="" alt="breakpoint_filter_select.svg" /></div>
+                        </td>
+                        <td valign="top" class="td align-top">
+                          <p>Insert a new breakpoint. Use the <span class="guilabel">Stop [Number] Steps before the event</span> option to stop the program run the required number of steps before the defined breakpoint in order to reduce the speed if required.</p>
+                          <p><span class="inlinemediaobject"><img src="image/uuid-d3472d24-15bf-6200-8d62-f37eed6cb967.svg" alt="Nr_01.svg" /></span> Define a condition and a <span class="guilabel">Title</span> for a breakpoint. Either specify stop at <span class="guilabel">G0</span>, <span class="guilabel">Tool change</span> or <span class=
+                          "guilabel">Job change</span> as the condition (the number of times the condition occurs in the active program is displayed).</p>
+                          <p><span class="inlinemediaobject"><img src="image/uuid-fa232d44-ccb2-2f50-a1d9-253c460bb62c.svg" alt="Nr_02.svg" /></span> Pick a breakpoint from the toolpath that is loaded.</p>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </section>
+              <div class="footer-content">
+                <div class="section-toc section-toc-after">
+                  <div class="section-toc-title">
+                    <span class="section-toc-title-delimiter">:</span>
+                  </div>
+                </div>
+              </div>
+              <footer></footer>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

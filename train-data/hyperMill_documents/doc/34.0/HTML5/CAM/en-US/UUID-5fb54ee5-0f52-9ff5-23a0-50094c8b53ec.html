@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="x-ua-compatible" content="IE=edge" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="search" content="default" />
+  <meta name="use.ic" content="no" />
+  <meta name="tocstandalone" content="yes" />
+  <script type="text/javascript">
+  //<![CDATA[
+                        var index;
+                        var contentLanguage = 'en-US';
+                        var enterKey = 'select';
+                        
+                                        var anchoroption = true;
+                                var instantsearch_minlength = 1;
+                                                
+                                var fuse_threshold = 0.3;
+                        
+                                        var local_csh = false;
+                                
+                        var useanchorlinks = false;
+  //]]>
+  </script>
+  <title>External simulation</title>
+  <link rel="stylesheet" type="text/css" href="../css/docbook.css" />
+  <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" href="../css/bootstrap-theme.min.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style-common.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style-responsive.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style-print.css" />
+  <link rel="stylesheet" type="text/css" href="../css/font-awesome.css" />
+  <link rel="stylesheet" type="text/css" href="../css/custom.css" />
+  <link rel="stylesheet" type="text/css" href="../css/layout-custom-style.css" />
+  <script src="../js/jquery-1.10.2.min.js" type="text/javascript"></script>
+  <script src="../js/jquery-ui-1.10.3.custom.min.js" type="text/javascript"></script>
+  <script src="../js/bootstrap.min.js" type="text/javascript"></script>
+  <script src="../js/purl.js" type="text/javascript"></script>
+  <script src="../js/jquery.event.move.js" type="text/javascript"></script>
+  <script src="../js/jquery.event.swipe.js" type="text/javascript"></script>
+  <script src="../js/jquery.sticky.js" type="text/javascript"></script>
+  <script src="../js/respond.min.js" type="text/javascript"></script>
+  <script src="../js/script.js" type="text/javascript"></script>
+  <script src="js/toc.js" type="text/javascript"></script>
+  <script src="../js/create-toc.js" type="text/javascript"></script>
+  <script src="../js/clipboard.min.js" type="text/javascript"></script>
+  <script src="../js/fuse.min.js" type="text/javascript"></script>
+  <script src="../js/jquery.mark.min.js" type="text/javascript"></script>
+  <script src="../js/html5.fuse.search.js" type="text/javascript"></script>
+  <script src="js/fuzzydata.js" type="text/javascript"></script>
+  <script src="../js/csh.js" type="text/javascript"></script>
+  <script src="../js/highlight-mergehtml-plugin.js" type="text/javascript"></script>
+  <meta name="generator" content="Paligo" />
+  <link rel="prev" href="UUID-fad76f60-2eeb-a401-8e19-314f181e4c35.html" title="Simulation in hyperVIEW" />
+  <link rel="next" href="UUID-5fb54ee5-0f52-9ff5-23a0-50094c8b53ec.html#UUID-5fb54ee5-0f52-9ff5-23a0-50094c8b53ec_id17A4F0Z20GV" title="Activate VERICUT" />
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js?config=TeX-MML-AM_CHTML" async="async"></script>
+  <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+  <script type="text/javascript" src="../js/cookie-consent.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  <script type="text/javascript">
+  //<![CDATA[
+                        $(document).on('ready ajaxComplete', function() {
+                                
+                                hljs.addPlugin(mergeHTMLPlugin);
+                                hljs.configure({'ignoreUnescapedHTML': true});
+                                
+                                $('pre:not(.embedcode)').each(function() {
+                                        /**
+                                         * @type {string}
+                                         */
+                                        var language = $(this).data('language');
+
+                                        if (language === 'plaintext' || language === 'text') {
+                                                $(this).addClass(language).addClass('hljs');
+                                                return true;
+                                        }
+                                        else {
+                                                var clone = this.cloneNode(true);
+                                                hljs.highlightElement(clone);
+                                                $(this).empty().append($(clone).contents());
+                                                $(this).attr("class", $(clone).attr("class"));
+                                        }
+                                });
+                        });
+  //]]>
+  </script>
+  <style type="text/css">
+  /*<![CDATA[*/
+            div.skipnav {
+            }
+            div.skipnav a {
+                position: fixed;
+                left: -10000px;
+                top: 1.5em;
+                width: 1px;
+                height: 1px;
+                overflow: hidden;
+            }
+            div.skipnav a:focus, div.skipnav a:active, div.skipnav a:hover {
+                background: white;
+                color: black;
+                box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.5);
+                position: fixed;
+                left: 2em;
+                top: 1.5em;
+                width: auto;
+                height: auto;
+                overflow: visible;
+                text-decoration: underline;
+                z-index: 99999; /* has to be higher than the side panel */
+    }
+  /*]]>*/
+  </style>
+</head>
+<body data-link-prefix="">
+  <div class="skipnav">
+    <a href="#content-wrapper">Skip to main content</a>
+  </div>
+  <div id="page" class="clearfix">
+    <div id="header">
+      <div class="container">
+        <div id="logotype-container" class="pull-left">
+          <a href="../index.html"><img id="logotype-pageheader" src="../css/image/corporate-logo.png" alt="Corporate logotype" data-role="logotype" /></a>
+        </div>
+        <div id="pagetools-container" class="pull-right">
+          <ul id="page-tools">
+            <li class="page-tools-search"><input placeholder="Search" type="text" class="form-control" aria-label="Search" id="search" /></li>
+            <li class="page-tools-print">
+              <a href="javascript:window.print();"><span class="tool-label">Print</span><span class="glyphicon glyphicon-print"></span></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <h1 id="publication-title">CAM</h1>
+    <div id="subheader-sticky-wrapper" class="sticky-wrapper">
+      <div id="subheader">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3 toc-title">
+              <h2><a class="prev nav-icon hidden-lg hidden-md" href="UUID-fad76f60-2eeb-a401-8e19-314f181e4c35.html"><span class="glyphicon glyphicon-chevron-left"></span></a> <a href="#toc" class="hidden mobile-nav-toggle"><span class="glyphicon glyphicon-list"></span>Table of Contents</a><span class="toc-label">Table of Contents</span><a class=
+              "next nav-icon hidden-lg hidden-md" href="UUID-5fb54ee5-0f52-9ff5-23a0-50094c8b53ec.html#UUID-5fb54ee5-0f52-9ff5-23a0-50094c8b53ec_id17A4F0Z20GV"><span class="glyphicon glyphicon-chevron-right"></span></a></h2>
+            </div>
+            <div class="col-md-9 breadcrumb-container">
+              <ul class="breadcrumb">
+                <li class="breadcrumb-link">
+                  <span class="glyphicon glyphicon-home"></span>&nbsp;<a href="index-en-US.html">CAM</a>
+                </li>
+                <li class="breadcrumb-link">
+                  <a href="UUID-0751db51-8b5b-ae49-1904-dce4b8c92263.html">Basics of CAM editing</a>
+                </li>
+                <li class="breadcrumb-link">
+                  <a href="UUID-4bb0b314-e3a2-7ccb-d6ea-12b5393a4d58.html">Simulate machining</a>
+                </li>
+                <li class="breadcrumb-node">External simulation</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="main-content">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 toc-container" id="toc-wrapper">
+            <div id="toc-placeholder">
+              <div id="toc-standalone-placeholder"></div>
+            </div>
+          </div>
+          <div class="col-md-9 content-container" id="content-wrapper">
+            <a accesskey="p" class="prev pull-left prev visible-lg visible-md" id="header-navigation-prev" href="UUID-fad76f60-2eeb-a401-8e19-314f181e4c35.html"><span class="glyphicon glyphicon-circle-arrow-left"></span>Prev</a><a accesskey="n" class="pull-right next visible-lg visible-md" id="header-navigation-next" href=
+            "UUID-5fb54ee5-0f52-9ff5-23a0-50094c8b53ec.html#UUID-5fb54ee5-0f52-9ff5-23a0-50094c8b53ec_id17A4F0Z20GV">Next<span class="glyphicon glyphicon-circle-arrow-right"></span></a>
+            <div id="topic-content">
+              <section xml:lang="en-US" lang="en-US" dir="ltr" class="section internal" data-origin-id="UUID-cb6498b8-6aaa-5e8a-995b-faee4870f96c" data-publication-date="" id="UUID-5fb54ee5-0f52-9ff5-23a0-50094c8b53ec">
+                <div class="titlepage">
+                  <div>
+                    <div class="title">
+                      <h1 class="title" style="clear: both"><span class="formal-title">External simulation</span></h1>
+                    </div>
+                  </div>
+                </div>
+                <p><span class="emphasis"><em>hyper</em></span>MILL currently supports the following external simulation programs:</p>
+                <div class="itemizedlist">
+                  <ul class="itemizedlist" style="list-style-type: disc;">
+                    <li class="listitem">
+                      <p>VERICUT</p>
+                    </li>
+                    <li class="listitem">
+                      <p>COLLISION SAFEGUARD</p>
+                    </li>
+                    <li class="listitem">
+                      <p>NCSIMUL SOLUTIONS</p>
+                    </li>
+                  </ul>
+                </div>
+                <div dir="ltr" class="note">
+                  <h3 class="title">Note</h3>
+                  <p id="UUID-5fb54ee5-0f52-9ff5-23a0-50094c8b53ec_para-idm53123974912980">The following section contains information on activating and configuring external simulation programs in <span class="emphasis"><em>hyper</em></span>MILL. For information on how the simulation programs work, please consult the product documentation supplied
+                  by the respective manufacturer.</p>
+                </div>
+                <p>If you use an external simulation program, you must activate it first. Afterwards, you can specify various settings for its use.</p>
+                <p>Please note that a license is necessary to use the program. Please contact your OPEN MIND partner for details.</p>
+                <section dir="ltr" class="section internal" data-origin-id="" data-publication-date="" id="UUID-5fb54ee5-0f52-9ff5-23a0-50094c8b53ec_id17A4F0Z20GV">
+                  <div class="titlepage">
+                    <div>
+                      <div class="title">
+                        <h2 class="title" style="clear: both"><span class="formal-title">Activate VERICUT</span></h2>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="itemizedlist">
+                    <ul class="itemizedlist" style="list-style-type: disc;">
+                      <li class="listitem">
+                        <p>First open the <span class="guilabel">hyperMILL CONFIGURATION Center</span> program and select <span class="guilabel">Connect applications</span>.</p>
+                      </li>
+                      <li class="listitem">
+                        <p>Select the <span class="guilabel">VERICUT</span> entry under <span class="guilabel">Key</span>, then go to <span class="guilabel">Program</span>, browse to the correct folder in your VERICUT installation and select <span class="guilabel">vericut.bat</span>.</p>
+                      </li>
+                      <li class="listitem">
+                        <p>Confirm by selecting <span class="guilabel">OK</span>.</p>
+                      </li>
+                      <li class="listitem">
+                        <p>On the <span class="guilabel">Postprocessor</span> tab in the job list, select the <span class="guilabel">Machine</span> option.</p>
+                      </li>
+                      <li class="listitem">
+                        <div class="informaltable table-responsive">
+                          <table style="width:100%;" class="informaltable">
+                            <colgroup>
+                              <col style="width:12%;" />
+                              <col style="width:88%;" />
+                            </colgroup>
+                            <tbody>
+                              <tr>
+                                <td class="td">
+                                  <div class="mediaobject">
+                                    <table class="image-viewport" style="border-collapse:collapse;border:0; ;">
+                                      <tr style="height: 48px">
+                                        <td style="padding:0;"><img src="image/uuid-17fba0e1-07ca-3d7a-8c72-957b4e8fdd3f.svg" style="max-height: 48px;" alt="joblist_pp_machine.svg" /></td>
+                                      </tr>
+                                    </table>
+                                  </div>
+                                </td>
+                                <td class="td">
+                                  <p>Click the icon to open the <span class="guilabel">Machine administration</span> dialog.</p>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </li>
+                      <li class="listitem">
+                        <p>Define a machine whose NC output you want to check using VERICUT.</p>
+                      </li>
+                      <li class="listitem">
+                        <p>Activate the required simulation in the <span class="guimenu">General</span> → <span class="guisubmenu">External simulation</span> section.</p>
+                      </li>
+                      <li class="listitem">
+                        <div class="informaltable table-responsive">
+                          <table style="width:100%;" class="informaltable">
+                            <colgroup>
+                              <col style="width:12%;" />
+                              <col style="width:88%;" />
+                            </colgroup>
+                            <tbody>
+                              <tr>
+                                <td class="td">
+                                  <div class="mediaobject">
+                                    <table class="image-viewport" style="border-collapse:collapse;border:0; ;">
+                                      <tr style="height: 48px">
+                                        <td style="padding:0;"><img src="image/uuid-3a8c170a-fce2-17bb-6b63-6c3bf6456119.svg" style="max-height: 48px;" alt="icon_pp_conf.svg" /></td>
+                                      </tr>
+                                    </table>
+                                  </div>
+                                </td>
+                                <td class="td">
+                                  <p>Click the icon to open the configuration dialog.</p>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                  <section dir="ltr" class="section" data-origin-id="" data-publication-date="" id="id88244">
+                    <div class="titlepage">
+                      <div>
+                        <div class="title">
+                          <h3 class="title"><span class="formal-title">Configure VERICUT / COLLISION SAFEGUARD</span></h3>
+                        </div>
+                      </div>
+                    </div>
+                    <section dir="ltr" class="section internal" data-origin-id="" data-publication-date="" id="id88246">
+                      <div class="titlepage">
+                        <div>
+                          <div class="title">
+                            <h4 class="title"><span class="formal-title">Machine</span></h4>
+                          </div>
+                        </div>
+                      </div>
+                      <p>Select a machine model (file format: <code class="filename">*.mch</code>/ <code class="filename">*.xmhc</code>).</p>
+                    </section>
+                    <section dir="ltr" class="section internal" data-origin-id="" data-publication-date="" id="id88251">
+                      <div class="titlepage">
+                        <div>
+                          <div class="title">
+                            <h4 class="title"><span class="formal-title">Controller</span></h4>
+                          </div>
+                        </div>
+                      </div>
+                      <p>Select a controller (file format: <code class="filename">*.ctl</code>/ <code class="filename">*.xctl</code>).</p>
+                    </section>
+                    <section dir="ltr" class="section internal" data-origin-id="" data-publication-date="" id="id88256">
+                      <div class="titlepage">
+                        <div>
+                          <div class="title">
+                            <h4 class="title"><span class="formal-title">Project</span></h4>
+                          </div>
+                        </div>
+                      </div>
+                      <p>Select a project file. This is a template file in which the VERICUT start configuration is defined (including window view, tolerances, collision checking, etc.). To change the configuration, open the project file in VERICUT and then save your changes.</p>
+                    </section>
+                    <section dir="ltr" class="section internal" data-origin-id="" data-publication-date="" id="id88259">
+                      <div class="titlepage">
+                        <div>
+                          <div class="title">
+                            <h4 class="title"><span class="formal-title">Options</span></h4>
+                          </div>
+                        </div>
+                      </div>
+                      <p><span class="guilabel">Default correction list</span>: This value will be used if it has not already been defined in hyperMILL (job definition, Tool tab). Numerical values (integers), variables (tool numbers) and calculation options (such as T:No+10) may be used.</p>
+                      <p><span class="guilabel">Tool reference point ID</span>: Definition of a unique tool name (with formula support). Prerequisite for a correct tool change.</p>
+                      <p><span class="guilabel">Attach to</span>: Specify whether the components are to be placed automatically ( <span class="guilabel">Automatic</span> option). The VERICUT interface will then automatically search for the intended clamping position.</p>
+                      <p><span class="guilabel">Position</span>: Specify the position manually. The name of the VERICUT element at which the workpieces are placed must be defined.</p>
+                      <p><span class="guilabel">Model: Close STL</span> specifies whether a closed solid should be created for the STL files of the model.</p>
+                      <p>Option <span class="guilabel">Close fixture STL</span> creates a closed solid for the STL files of the clamping part.</p>
+                      <p>Closing the files can prevent display problems in VERICUT.</p>
+                      <p><span class="guilabel">Program zero</span>: Specify whether the VERICUT interface <span class="guilabel">Automatically</span> moves the program zero point or whether the setting is imported from the <span class="guilabel">Project template</span>.</p>
+                      <p>This concludes the settings required to use the VERICUT interface.</p>
+                    </section>
+                  </section>
+                </section>
+                <section dir="ltr" class="section" data-origin-id="" data-publication-date="" id="UUID-5fb54ee5-0f52-9ff5-23a0-50094c8b53ec_section-idm4573504332668833091815042151">
+                  <div class="titlepage">
+                    <div>
+                      <div class="title">
+                        <h2 class="title" style="clear: both"><span class="formal-title">Activate NCSIMUL</span></h2>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="itemizedlist" id="UUID-5fb54ee5-0f52-9ff5-23a0-50094c8b53ec_procedure-idm53309181763326">
+                    <ul class="itemizedlist" style="list-style-type: disc;">
+                      <li class="listitem">
+                        <p>Open the <span class="guilabel">hyperMILL CONFIGURATION Center</span> program and select <span class="guilabel">Connect applications</span>.</p>
+                      </li>
+                      <li class="listitem">
+                        <p>Select the <span class="phrase"></span> entry under <span class="guilabel">Key</span>, then go to <span class="guilabel">Program</span>, browse to the correct folder in your <span class="phrase"></span> installation and select <span class="guilabel">ConnectorFromNXF.exe</span>.</p>
+                      </li>
+                      <li class="listitem">
+                        <p>Confirm by selecting <span class="guilabel">OK</span>.</p>
+                      </li>
+                      <li class="listitem">
+                        <p>On the <span class="guilabel">Post processor</span> tab in the job list, select the <span class="guilabel">machine</span> option.</p>
+                      </li>
+                      <li class="listitem">
+                        <div class="informaltable table-responsive">
+                          <table style="width:100%;" class="informaltable">
+                            <colgroup>
+                              <col style="width:12%;" />
+                              <col style="width:88%;" />
+                            </colgroup>
+                            <tbody>
+                              <tr>
+                                <td class="td">
+                                  <div class="mediaobject">
+                                    <table class="image-viewport" style="border-collapse:collapse;border:0; ;">
+                                      <tr style="height: 48px">
+                                        <td style="padding:0;"><img src="image/uuid-17fba0e1-07ca-3d7a-8c72-957b4e8fdd3f.svg" style="max-height: 48px;" alt="joblist_pp_machine.svg" /></td>
+                                      </tr>
+                                    </table>
+                                  </div>
+                                </td>
+                                <td class="td">
+                                  <p>Click the icon to open the <span class="guilabel">Machine administration</span> dialog.</p>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </li>
+                      <li class="listitem">
+                        <p>Define a machine whose NC output you want to check using <span class="phrase"></span>.</p>
+                      </li>
+                      <li class="listitem">
+                        <p>Activate as a simulation in the <span class="guimenu">General</span> → <span class="guisubmenu">External simulation</span> <span class="phrase"></span> section.</p>
+                      </li>
+                      <li class="listitem">
+                        <div class="informaltable table-responsive">
+                          <table style="width:100%;" class="informaltable">
+                            <colgroup>
+                              <col style="width:12%;" />
+                              <col style="width:88%;" />
+                            </colgroup>
+                            <tbody>
+                              <tr>
+                                <td class="td">
+                                  <div class="mediaobject">
+                                    <table class="image-viewport" style="border-collapse:collapse;border:0; ;">
+                                      <tr style="height: 48px">
+                                        <td style="padding:0;"><img src="image/uuid-3a8c170a-fce2-17bb-6b63-6c3bf6456119.svg" style="max-height: 48px;" alt="icon_pp_conf.svg" /></td>
+                                      </tr>
+                                    </table>
+                                  </div>
+                                </td>
+                                <td class="td">
+                                  <p>Click the icon to open the configuration dialog.</p>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                  <section dir="ltr" class="section" data-origin-id="" data-publication-date="" id="UUID-5fb54ee5-0f52-9ff5-23a0-50094c8b53ec_section-idm4568127351336033091867008078">
+                    <div class="titlepage">
+                      <div>
+                        <div class="title">
+                          <h3 class="title"><span class="formal-title">Configure <span class="phrase"></span></span></h3>
+                        </div>
+                      </div>
+                    </div>
+                    <p><span class="guilabel">Station</span>: Select a machine station (only available if the <span class="guilabel">Use stations</span> option is activated in the <span class="guilabel">NCSimul Configuration</span> dialog).</p>
+                    <p><span class="guilabel">Clamping position automatically</span>: Activate if the clamping position is to be defined automatically by the software.</p>
+                    <p><span class="guilabel">Clamping position manually</span>: Activate to select a frame from the list to define the clamping position.</p>
+                    <p><span class="guilabel">Output project</span>: Path to create the <code class="filename">*.nxf</code> file and the <code class="filename">*.stl</code> file.</p>
+                    <p><span class="guilabel">Generate project data</span>: The files are created without starting NCSIMUL.</p>
+                    <p><span class="guilabel">Run NCSIMUL</span>: The files are created and NCSimul is started.</p>
+                  </section>
+                </section>
+                <section dir="ltr" class="section internal" data-origin-id="" data-publication-date="" id="UUID-5fb54ee5-0f52-9ff5-23a0-50094c8b53ec_id17A4F0Z2094">
+                  <div class="titlepage">
+                    <div>
+                      <div class="title">
+                        <h2 class="title" style="clear: both"><span class="formal-title">Start external simulation</span></h2>
+                      </div>
+                    </div>
+                  </div>
+                  <p>Use the <span class="guilabel">Utilities</span> function on the shortcut menu of the job list or job and select the required external simulation.</p>
+                </section>
+              </section>
+              <div class="footer-content">
+                <div class="section-toc section-toc-after">
+                  <div class="section-toc-title">
+                    <span class="section-toc-title-delimiter">:</span>
+                  </div>
+                </div>
+              </div>
+              <footer></footer>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

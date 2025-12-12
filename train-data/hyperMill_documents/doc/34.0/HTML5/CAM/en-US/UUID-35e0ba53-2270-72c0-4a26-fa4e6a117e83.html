@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="x-ua-compatible" content="IE=edge" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="search" content="default" />
+  <meta name="use.ic" content="no" />
+  <meta name="tocstandalone" content="yes" />
+  <script type="text/javascript">
+  //<![CDATA[
+                        var index;
+                        var contentLanguage = 'en-US';
+                        var enterKey = 'select';
+                        
+                                        var anchoroption = true;
+                                var instantsearch_minlength = 1;
+                                                
+                                var fuse_threshold = 0.3;
+                        
+                                        var local_csh = false;
+                                
+                        var useanchorlinks = false;
+  //]]>
+  </script>
+  <title>Postprocessor</title>
+  <link rel="stylesheet" type="text/css" href="../css/docbook.css" />
+  <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" href="../css/bootstrap-theme.min.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style-common.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style-responsive.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style-print.css" />
+  <link rel="stylesheet" type="text/css" href="../css/font-awesome.css" />
+  <link rel="stylesheet" type="text/css" href="../css/custom.css" />
+  <link rel="stylesheet" type="text/css" href="../css/layout-custom-style.css" />
+  <script src="../js/jquery-1.10.2.min.js" type="text/javascript"></script>
+  <script src="../js/jquery-ui-1.10.3.custom.min.js" type="text/javascript"></script>
+  <script src="../js/bootstrap.min.js" type="text/javascript"></script>
+  <script src="../js/purl.js" type="text/javascript"></script>
+  <script src="../js/jquery.event.move.js" type="text/javascript"></script>
+  <script src="../js/jquery.event.swipe.js" type="text/javascript"></script>
+  <script src="../js/jquery.sticky.js" type="text/javascript"></script>
+  <script src="../js/respond.min.js" type="text/javascript"></script>
+  <script src="../js/script.js" type="text/javascript"></script>
+  <script src="js/toc.js" type="text/javascript"></script>
+  <script src="../js/create-toc.js" type="text/javascript"></script>
+  <script src="../js/clipboard.min.js" type="text/javascript"></script>
+  <script src="../js/fuse.min.js" type="text/javascript"></script>
+  <script src="../js/jquery.mark.min.js" type="text/javascript"></script>
+  <script src="../js/html5.fuse.search.js" type="text/javascript"></script>
+  <script src="js/fuzzydata.js" type="text/javascript"></script>
+  <script src="../js/csh.js" type="text/javascript"></script>
+  <script src="../js/highlight-mergehtml-plugin.js" type="text/javascript"></script>
+  <meta name="generator" content="Paligo" />
+  <link rel="prev" href="UUID-1c3c5d6e-6e5b-a50e-33d4-29507618e381.html" title="NC" />
+  <link rel="next" href="UUID-003d7aff-7d81-5c46-8fb5-8cc57644e2d7.html" title="Main spindle / counter spindle" />
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js?config=TeX-MML-AM_CHTML" async="async"></script>
+  <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+  <script type="text/javascript" src="../js/cookie-consent.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  <script type="text/javascript">
+  //<![CDATA[
+                        $(document).on('ready ajaxComplete', function() {
+                                
+                                hljs.addPlugin(mergeHTMLPlugin);
+                                hljs.configure({'ignoreUnescapedHTML': true});
+                                
+                                $('pre:not(.embedcode)').each(function() {
+                                        /**
+                                         * @type {string}
+                                         */
+                                        var language = $(this).data('language');
+
+                                        if (language === 'plaintext' || language === 'text') {
+                                                $(this).addClass(language).addClass('hljs');
+                                                return true;
+                                        }
+                                        else {
+                                                var clone = this.cloneNode(true);
+                                                hljs.highlightElement(clone);
+                                                $(this).empty().append($(clone).contents());
+                                                $(this).attr("class", $(clone).attr("class"));
+                                        }
+                                });
+                        });
+  //]]>
+  </script>
+  <style type="text/css">
+  /*<![CDATA[*/
+            div.skipnav {
+            }
+            div.skipnav a {
+                position: fixed;
+                left: -10000px;
+                top: 1.5em;
+                width: 1px;
+                height: 1px;
+                overflow: hidden;
+            }
+            div.skipnav a:focus, div.skipnav a:active, div.skipnav a:hover {
+                background: white;
+                color: black;
+                box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.5);
+                position: fixed;
+                left: 2em;
+                top: 1.5em;
+                width: auto;
+                height: auto;
+                overflow: visible;
+                text-decoration: underline;
+                z-index: 99999; /* has to be higher than the side panel */
+    }
+  /*]]>*/
+  </style>
+</head>
+<body data-link-prefix="">
+  <div class="skipnav">
+    <a href="#content-wrapper">Skip to main content</a>
+  </div>
+  <div id="page" class="clearfix">
+    <div id="header">
+      <div class="container">
+        <div id="logotype-container" class="pull-left">
+          <a href="../index.html"><img id="logotype-pageheader" src="../css/image/corporate-logo.png" alt="Corporate logotype" data-role="logotype" /></a>
+        </div>
+        <div id="pagetools-container" class="pull-right">
+          <ul id="page-tools">
+            <li class="page-tools-search"><input placeholder="Search" type="text" class="form-control" aria-label="Search" id="search" /></li>
+            <li class="page-tools-print">
+              <a href="javascript:window.print();"><span class="tool-label">Print</span><span class="glyphicon glyphicon-print"></span></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <h1 id="publication-title">CAM</h1>
+    <div id="subheader-sticky-wrapper" class="sticky-wrapper">
+      <div id="subheader">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3 toc-title">
+              <h2><a class="prev nav-icon hidden-lg hidden-md" href="UUID-1c3c5d6e-6e5b-a50e-33d4-29507618e381.html"><span class="glyphicon glyphicon-chevron-left"></span></a> <a href="#toc" class="hidden mobile-nav-toggle"><span class="glyphicon glyphicon-list"></span>Table of Contents</a><span class="toc-label">Table of Contents</span><a class=
+              "next nav-icon hidden-lg hidden-md" href="UUID-003d7aff-7d81-5c46-8fb5-8cc57644e2d7.html"><span class="glyphicon glyphicon-chevron-right"></span></a></h2>
+            </div>
+            <div class="col-md-9 breadcrumb-container">
+              <ul class="breadcrumb">
+                <li class="breadcrumb-link">
+                  <span class="glyphicon glyphicon-home"></span>&nbsp;<a href="index-en-US.html">CAM</a>
+                </li>
+                <li class="breadcrumb-link">
+                  <a href="UUID-0751db51-8b5b-ae49-1904-dce4b8c92263.html">Basics of CAM editing</a>
+                </li>
+                <li class="breadcrumb-link">
+                  <a href="UUID-aeb94185-7a19-29aa-6f91-3af4af99b68d.html">Structure CAM project</a>
+                </li>
+                <li class="breadcrumb-link">
+                  <a href="UUID-62da9202-974f-8755-9a36-833feced0ae4.html">Job list</a>
+                </li>
+                <li class="breadcrumb-link">
+                  <a href="UUID-58bfe622-a35b-5c93-8d9c-74fca4c552b7.html">The Job list dialog</a>
+                </li>
+                <li class="breadcrumb-node">Postprocessor</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="main-content">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 toc-container" id="toc-wrapper">
+            <div id="toc-placeholder">
+              <div id="toc-standalone-placeholder"></div>
+            </div>
+          </div>
+          <div class="col-md-9 content-container" id="content-wrapper">
+            <a accesskey="p" class="prev pull-left prev visible-lg visible-md" id="header-navigation-prev" href="UUID-1c3c5d6e-6e5b-a50e-33d4-29507618e381.html"><span class="glyphicon glyphicon-circle-arrow-left"></span>Prev</a><a accesskey="n" class="pull-right next visible-lg visible-md" id="header-navigation-next" href=
+            "UUID-003d7aff-7d81-5c46-8fb5-8cc57644e2d7.html">Next<span class="glyphicon glyphicon-circle-arrow-right"></span></a>
+            <div id="topic-content">
+              <section xml:lang="en-US" lang="en-US" dir="ltr" class="section internal" data-origin-id="UUID-c1b533f0-7e7c-45b7-f923-6b1f138cd414" data-publication-date="" id="UUID-35e0ba53-2270-72c0-4a26-fa4e6a117e83">
+                <div class="titlepage">
+                  <div>
+                    <div class="title">
+                      <h1 class="title" style="clear: both"><span class="formal-title">Postprocessor</span></h1>
+                    </div>
+                  </div>
+                </div>
+                <p>Settings for machine definition and machine administration and to create NC files in <span class="italic">hyper</span>MILL.</p>
+                <p><span xml:lang="de" lang="de" dir="ltr" class="guilabel">NC files</span></p>
+                <div class="informaltable table-responsive">
+                  <table style="width:100%;" class="informaltable">
+                    <colgroup>
+                      <col style="width:12%;" />
+                      <col style="width:88%;" />
+                    </colgroup>
+                    <thead>
+                      <tr>
+                        <td class="td">
+                          <div class="mediaobject"><img src="image/uuid-17fba0e1-07ca-3d7a-8c72-957b4e8fdd3f.svg" style="" alt="joblist_pp_machine.svg" /></div>
+                        </td>
+                        <td class="td">
+                          <p><span class="guilabel">Machine</span>: Activate and click the icon to select or redefine a machine.</p>
+                        </td>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="td">
+                          <div class="mediaobject"><img src="image/uuid-38721a6e-5b63-1da3-d1b6-d0cb9d1721ca.svg" style="" alt="turret_setup.svg" /></div>
+                        </td>
+                        <td class="td">
+                          <p><span class="guilabel">Turret setup</span>: If a <span class="phrase"><span class="application">Virtual Machine</span></span> with support for turning jobs with a turret is defined as a machine (see <span class="guimenuitem">Machine administration</span> → <span class="guisubmenu">Edit</span> → <span class=
+                          "guisubmenu">Machine properties</span> → <span class="guisubmenu"><span class="phrase"><span class="application">Virtual Machine</span></span> Directory</span>), this is symbolized by an icon. Click the icon to open the <span class="guilabel">Turret setups administration</span> dialog to assign the required <span class=
+                          "guilabel">Names</span> and, if required, a <span class="guilabel">Comment</span> for this machine configuration. Click the <span class="guilabel">New</span> button to define a new turret setup. The following functions are also available: <span class="guilabel">Edit...</span>, <span class="guilabel">Delete...</span>,
+                          <span class="guilabel">Copy...</span>, <span class="guilabel">Export...</span>, and <span class="guilabel">Default...</span>.</p>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <p><span class="guilabel">NC directory</span>: Select this option to adapt the NC directory for saving the generated NC programs to the project directory. The path is displayed and cannot be changed.</p>
+                <p><span class="guilabel">Use document settings</span>: Enabled by default if NC directory is selected. The document settings apply to the NC directory for saving the generated NC programs (Setup <span class="italic">hyper</span>MILL, dialog page Document, Global Working Space).</p>
+                <div class="informaltable table-responsive">
+                  <table style="width:100%;" class="informaltable">
+                    <colgroup>
+                      <col style="width:12%;" />
+                      <col style="width:88%;" />
+                    </colgroup>
+                    <tbody>
+                      <tr>
+                        <td class="td">
+                          <div class="mediaobject"><img src="image/uuid-b9b8af14-c916-0706-342a-13b02a2aab3f.svg" style="" alt="select_folder.svg" /></div>
+                        </td>
+                        <td class="td">
+                          <p>Disable the option to define the path for the NC directory by clicking the icon.</p>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <p><span class="guilabel">NC file names</span>: Enable and select the method for naming the NC files (Single mode/Package mode).</p>
+                <p><span class="guilabel">Single mode</span>: Creates an NC file for each job in the job list. If this option is not selected, the settings from the machine definition will be used.</p>
+                <p>The following variables are available to define the file name:</p>
+                <div class="informaltable table-responsive">
+                  <table class="informaltable">
+                    <colgroup>
+                      <col style="width:28%;" />
+                      <col style="width:72%;" />
+                    </colgroup>
+                    <tbody>
+                      <tr>
+                        <td class="td">
+                          <p><code class="filename">&lt;JLIST&gt;</code></p>
+                        </td>
+                        <td class="td">
+                          <p>Job list name.</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="td">
+                          <p><code class="filename">&lt;JOB&gt;</code></p>
+                        </td>
+                        <td class="td">
+                          <p>Job name.</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="td">
+                          <p><code class="filename">&lt;JOBID&gt;</code></p>
+                        </td>
+                        <td class="td">
+                          <p>Job ID.</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="td">
+                          <p><code class="filename">&lt;COUNTER&gt;</code></p>
+                        </td>
+                        <td class="td">
+                          <p>Position of the job in the <span class="italic">hyper</span>VIEW job list.</p>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <p>Jobs and compound jobs, which should not be postprocessed, are disregarded when determining the value of <code class="filename">&lt;COUNTER&gt;</code>. This applies to jobs for which the <span class="guilabel">Generate NC file</span> option on the <span class="guilabel">General</span> dialog page is disabled or for compound jobs
+                that have no jobs for NC generation. Jobs for which the option <span class="guilabel">create NC file</span> is disabled, are not included in the <span class="italic">hyper</span>VIEW simulation.</p>
+                <p><span class="guilabel">Rule for filename generation</span>: As standard, the file name of the NC file is composed of the following elements:&nbsp;<code class="filename">Jobname_Job ID</code>.</p>
+                <p><span class="guilabel">Increment to job ID</span>: This value is added to the job ID.</p>
+                <p><span class="guilabel">Package mode</span>: All NC data for the selected joblist is written to a file. The name of the job list is used as the file prefix.</p>
+                <p><span class="guilabel">Start of counter</span>: Counters that the programme can output for NC file names. The NC file names created in single mode are numbered consecutively.</p>
+                <p><span class="guilabel">Compound job as single job</span>: Only available in single mode. If the function is enabled, all jobs in a compound job will be written to a single NC file. The name of the compound job is used for the placeholder in the NC file.</p>
+                <p><span class="guilabel">Vector fine interpolation</span>: Enabled by default. The definition of a maximum permissible angle change makes it possible for vector fine interpolation to control machine movements in the case of vector changes.</p>
+                <p>If you enable the function, <span class="italic">hyper</span>MILL will insert intermediate points into the toolpath in order to avoid any diverging interpolation of the machine from the calculated toolpath.</p>
+                <p>(1) <span class="guilabel">Vector fine interpolation</span>&nbsp;disabled. (2) <span class="guilabel">Vector fine interpolation</span>&nbsp;enabled with a&nbsp;<span class="guilabel">Max. angle</span>&nbsp;of 5.</p>
+                <div class="mediaobject">
+                  <table class="image-viewport" style="border-collapse:collapse;border:0; width:461px;">
+                    <tr style="height: 159px">
+                      <td style="padding:0;"><img src="image/uuid-69479424-7534-a510-7279-5bbabd7773fe.svg" style="max-width: 461px; max-height: 159px;" alt="grundlagen_vektorfeininterpolation.svg" /></td>
+                    </tr>
+                  </table>
+                </div>
+                <div dir="ltr" class="note">
+                  <h3 class="title">Note</h3>
+                  <p>OPEN MIND recommends always enabling this function, in particular, however, for machines without great circle interpolation.</p>
+                </div>
+                <p><span xml:lang="de" lang="de" dir="ltr" class="guilabel">5X Rapid mode</span></p>
+                <p><span class="guilabel">Default</span>: 5X rapid tool movements occur as defined in the cycle.</p>
+                <p><span class="guilabel">Optimized</span>: Select this option to avoid a possible pole pass and high acceleration of the C axis for 5X machining fast travel movements. This is made possible by simultaneous 5-axis rotary movements (conical interpolation). On the whole, the movements of the machine are softer, faster and more
+                predictable.</p>
+              </section>
+              <div class="footer-content">
+                <div class="section-toc section-toc-after">
+                  <div class="section-toc-title">
+                    <span class="section-toc-title-delimiter">:</span>
+                  </div>
+                </div>
+              </div>
+              <footer></footer>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

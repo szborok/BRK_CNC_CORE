@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="x-ua-compatible" content="IE=edge" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="search" content="default" />
+  <meta name="use.ic" content="no" />
+  <meta name="tocstandalone" content="yes" />
+  <script type="text/javascript">
+  //<![CDATA[
+                        var index;
+                        var contentLanguage = 'en-US';
+                        var enterKey = 'select';
+                        
+                                        var anchoroption = true;
+                                var instantsearch_minlength = 1;
+                                                
+                                var fuse_threshold = 0.3;
+                        
+                                        var local_csh = false;
+                                
+                        var useanchorlinks = false;
+  //]]>
+  </script>
+  <title>3.5.&nbsp;Tool management</title>
+  <link rel="stylesheet" type="text/css" href="../css/docbook.css" />
+  <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" href="../css/bootstrap-theme.min.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style-common.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style-responsive.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style-print.css" />
+  <link rel="stylesheet" type="text/css" href="../css/font-awesome.css" />
+  <link rel="stylesheet" type="text/css" href="../css/custom.css" />
+  <link rel="stylesheet" type="text/css" href="../css/layout-custom-style.css" />
+  <script src="../js/jquery-1.10.2.min.js" type="text/javascript"></script>
+  <script src="../js/jquery-ui-1.10.3.custom.min.js" type="text/javascript"></script>
+  <script src="../js/bootstrap.min.js" type="text/javascript"></script>
+  <script src="../js/purl.js" type="text/javascript"></script>
+  <script src="../js/jquery.event.move.js" type="text/javascript"></script>
+  <script src="../js/jquery.event.swipe.js" type="text/javascript"></script>
+  <script src="../js/jquery.sticky.js" type="text/javascript"></script>
+  <script src="../js/respond.min.js" type="text/javascript"></script>
+  <script src="../js/script.js" type="text/javascript"></script>
+  <script src="js/toc.js" type="text/javascript"></script>
+  <script src="../js/create-toc.js" type="text/javascript"></script>
+  <script src="../js/clipboard.min.js" type="text/javascript"></script>
+  <script src="../js/fuse.min.js" type="text/javascript"></script>
+  <script src="../js/jquery.mark.min.js" type="text/javascript"></script>
+  <script src="../js/html5.fuse.search.js" type="text/javascript"></script>
+  <script src="js/fuzzydata.js" type="text/javascript"></script>
+  <script src="../js/csh.js" type="text/javascript"></script>
+  <script src="../js/highlight-mergehtml-plugin.js" type="text/javascript"></script>
+  <meta name="generator" content="Paligo" />
+  <link rel="prev" href="UUID-afce1cad-b4ed-a5b2-6495-b44e28df224c.html" title="Functions on the shortcut menu: Coordinate systems" />
+  <link rel="next" href="UUID-288a81df-e730-2f52-ecde-db580f959db0.html#UUID-288a81df-e730-2f52-ecde-db580f959db0_section-idm53312140939730" title="Supported tool types" />
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js?config=TeX-MML-AM_CHTML" async="async"></script>
+  <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+  <script type="text/javascript" src="../js/cookie-consent.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  <script type="text/javascript">
+  //<![CDATA[
+                        $(document).on('ready ajaxComplete', function() {
+                                
+                                hljs.addPlugin(mergeHTMLPlugin);
+                                hljs.configure({'ignoreUnescapedHTML': true});
+                                
+                                $('pre:not(.embedcode)').each(function() {
+                                        /**
+                                         * @type {string}
+                                         */
+                                        var language = $(this).data('language');
+
+                                        if (language === 'plaintext' || language === 'text') {
+                                                $(this).addClass(language).addClass('hljs');
+                                                return true;
+                                        }
+                                        else {
+                                                var clone = this.cloneNode(true);
+                                                hljs.highlightElement(clone);
+                                                $(this).empty().append($(clone).contents());
+                                                $(this).attr("class", $(clone).attr("class"));
+                                        }
+                                });
+                        });
+  //]]>
+  </script>
+  <style type="text/css">
+  /*<![CDATA[*/
+            div.skipnav {
+            }
+            div.skipnav a {
+                position: fixed;
+                left: -10000px;
+                top: 1.5em;
+                width: 1px;
+                height: 1px;
+                overflow: hidden;
+            }
+            div.skipnav a:focus, div.skipnav a:active, div.skipnav a:hover {
+                background: white;
+                color: black;
+                box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.5);
+                position: fixed;
+                left: 2em;
+                top: 1.5em;
+                width: auto;
+                height: auto;
+                overflow: visible;
+                text-decoration: underline;
+                z-index: 99999; /* has to be higher than the side panel */
+    }
+  /*]]>*/
+  </style>
+</head>
+<body data-link-prefix="">
+  <div class="skipnav">
+    <a href="#content-wrapper">Skip to main content</a>
+  </div>
+  <div id="page" class="clearfix">
+    <div id="header">
+      <div class="container">
+        <div id="logotype-container" class="pull-left">
+          <a href="../index.html"><img id="logotype-pageheader" src="../css/image/corporate-logo.png" alt="Corporate logotype" data-role="logotype" /></a>
+        </div>
+        <div id="pagetools-container" class="pull-right">
+          <ul id="page-tools">
+            <li class="page-tools-search"><input placeholder="Search" type="text" class="form-control" aria-label="Search" id="search" /></li>
+            <li class="page-tools-print">
+              <a href="javascript:window.print();"><span class="tool-label">Print</span><span class="glyphicon glyphicon-print"></span></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <h1 id="publication-title">CAM</h1>
+    <div id="subheader-sticky-wrapper" class="sticky-wrapper">
+      <div id="subheader">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3 toc-title">
+              <h2><a class="prev nav-icon hidden-lg hidden-md" href="UUID-afce1cad-b4ed-a5b2-6495-b44e28df224c.html"><span class="glyphicon glyphicon-chevron-left"></span></a> <a href="#toc" class="hidden mobile-nav-toggle"><span class="glyphicon glyphicon-list"></span>Table of Contents</a><span class="toc-label">Table of Contents</span><a class=
+              "next nav-icon hidden-lg hidden-md" href="UUID-288a81df-e730-2f52-ecde-db580f959db0.html#UUID-288a81df-e730-2f52-ecde-db580f959db0_section-idm53312140939730"><span class="glyphicon glyphicon-chevron-right"></span></a></h2>
+            </div>
+            <div class="col-md-9 breadcrumb-container">
+              <ul class="breadcrumb">
+                <li class="breadcrumb-link">
+                  <span class="glyphicon glyphicon-home"></span>&nbsp;<a href="index-en-US.html">CAM</a>
+                </li>
+                <li class="breadcrumb-link">
+                  <a href="UUID-0751db51-8b5b-ae49-1904-dce4b8c92263.html">Basics of CAM editing</a>
+                </li>
+                <li class="breadcrumb-node">Tool management</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="main-content">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 toc-container" id="toc-wrapper">
+            <div id="toc-placeholder">
+              <div id="toc-standalone-placeholder"></div>
+            </div>
+          </div>
+          <div class="col-md-9 content-container" id="content-wrapper">
+            <a accesskey="p" class="prev pull-left prev visible-lg visible-md" id="header-navigation-prev" href="UUID-afce1cad-b4ed-a5b2-6495-b44e28df224c.html"><span class="glyphicon glyphicon-circle-arrow-left"></span>Prev</a><a accesskey="n" class="pull-right next visible-lg visible-md" id="header-navigation-next" href=
+            "UUID-288a81df-e730-2f52-ecde-db580f959db0.html#UUID-288a81df-e730-2f52-ecde-db580f959db0_section-idm53312140939730">Next<span class="glyphicon glyphicon-circle-arrow-right"></span></a>
+            <div id="topic-content">
+              <section xml:lang="en-US" lang="en-US" dir="ltr" class="section" data-origin-id="UUID-71c7ae66-d5f3-a97f-8dde-aba130dbfc97" data-publication-date="" id="UUID-288a81df-e730-2f52-ecde-db580f959db0">
+                <div class="titlepage">
+                  <div>
+                    <div class="title">
+                      <h1 class="title" style="clear: both"><span class="formal-number">3.5</span><span class="formal-label-delimiter">.</span> <span class="formal-title">Tool management</span></h1>
+                    </div>
+                  </div>
+                </div>
+                <p>An external database and a document database are available for managing tools. Tools stored in the external database are called external tools. Tools stored in the document database are called document tools.</p>
+                <section dir="ltr" class="section" data-origin-id="" data-publication-date="" id="UUID-288a81df-e730-2f52-ecde-db580f959db0_section-idm53312140939730">
+                  <div class="titlepage">
+                    <div>
+                      <div class="title">
+                        <h2 class="title" style="clear: both"><span class="formal-title">Supported tool types</span></h2>
+                      </div>
+                    </div>
+                  </div>
+                  <p><span class="emphasis"><em>hyper</em></span>MILL generally only supports the tool types listed in the documentation. Other tool types, in particular, angle tools or angle heads are not supported.</p>
+                </section>
+                <section dir="ltr" class="simplesect" id="id76766">
+                  <div class="titlepage">
+                    <div>
+                      <div>
+                        <h2 class="title" style="clear: both"><span class="formal-title">External tool</span></h2>
+                      </div>
+                    </div>
+                  </div>
+                  <p>Standard tools for manufacturing tasks are stored in the external OPEN MIND tool database with all data specific to them, such as tool number, machining type and so on. While defining tools in the CAM programming, you can access the external OPEN MIND tool database at any time to import the appropriate tools into the current
+                  document.</p>
+                  <p>The external OPEN MIND tool database is displayed in the <span class="guilabel">hyperMILL settings</span> dialog, <span class="guilabel">Database</span> dialog page.</p>
+                  <section xml:lang="en-US" lang="en-US" dir="ltr" class="section" data-origin-id="" data-publication-date="" id="UUID-288a81df-e730-2f52-ecde-db580f959db0_UUID-d8fb8999-ed97-0b40-549d-b37a4d0d94bb">
+                    <div class="titlepage">
+                      <div>
+                        <div class="title">
+                          <h3 class="title"><span class="formal-title">Transfer NC tool from database to <span class="emphasis"><em>hyper</em></span>MILL</span></h3>
+                        </div>
+                      </div>
+                    </div>
+                    <p>Select an NC tool from the OPEN MIND tool database:</p>
+                    <div class="procedure">
+                      <ol class="procedure" type="1">
+                        <li class="step">
+                          <div class="informaltable table-responsive">
+                            <table style="width:100%;" class="informaltable">
+                              <colgroup>
+                                <col style="width:12%;" />
+                                <col style="width:88%;" />
+                              </colgroup>
+                              <tbody>
+                                <tr>
+                                  <td class="td">
+                                    <div class="mediaobject">
+                                      <table class="image-viewport" style="border-collapse:collapse;border:0; ;">
+                                        <tr style="height: 48px">
+                                          <td style="padding:0;"><img src="image/uuid-e5e727ca-4311-1464-96f8-5c0ef54e0a26.svg" style="max-height: 48px;" alt="hm_document_tools_fromTool_DB.svg" /></td>
+                                        </tr>
+                                      </table>
+                                    </div>
+                                  </td>
+                                  <td class="td">
+                                    <p>Go to the <span class="guilabel">Jobs</span> or <span class="guilabel">Tools</span> dialog page of the <span class="emphasis"><em>hyper</em></span>MILL browser and click the icon to open the <span class="guilabel">Select NC-Tools</span> dialog.</p>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </li>
+                        <li class="step">
+                          <div class="informaltable table-responsive">
+                            <table style="width:100%;" class="informaltable">
+                              <colgroup>
+                                <col style="width:12%;" />
+                                <col style="width:88%;" />
+                              </colgroup>
+                              <tbody>
+                                <tr>
+                                  <td class="td">
+                                    <div class="mediaobject">
+                                      <table class="image-viewport" style="border-collapse:collapse;border:0; ;">
+                                        <tr style="height: 48px">
+                                          <td style="padding:0;"><img src="image/uuid-3d7e703f-5b60-f44b-5e12-39d73ca4cba8.svg" style="max-height: 48px;" alt="hm_doc_tool_save_record.svg" /></td>
+                                        </tr>
+                                      </table>
+                                    </div>
+                                  </td>
+                                  <td class="td">
+                                    <p>Switch to the <span class="guilabel">NC Tools</span> dialog page and select the required tool. If changes are made to tool parameters before transfer to <span class="emphasis"><em>hyper</em></span>MILL, click the icon to confirm the changes.</p>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </li>
+                        <li class="step">
+                          <p>To transfer the tool to <span class="emphasis"><em>hyper</em></span>MILL, use the <span class="guilabel">Transfer to hyperMILL</span> function on the shortcut menu.</p>
+                        </li>
+                      </ol>
+                    </div>
+                    <p>Select icons in the NC Tools dialog:</p>
+                    <div class="informaltable table-responsive">
+                      <table class="informaltable">
+                        <colgroup>
+                          <col style="width:12%;" />
+                          <col style="width:88%;" />
+                        </colgroup>
+                        <tbody>
+                          <tr>
+                            <td class="td">
+                              <div class="mediaobject">
+                                <table class="image-viewport" style="border-collapse:collapse;border:0; ;">
+                                  <tr style="height: 48px">
+                                    <td style="padding:0;"><img src="image/uuid-3d7e703f-5b60-f44b-5e12-39d73ca4cba8.svg" style="max-height: 48px;" alt="hm_doc_tool_save_record.svg" /></td>
+                                  </tr>
+                                </table>
+                              </div>
+                            </td>
+                            <td class="td">
+                              <p>Save modified tool data.</p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="td">
+                              <div class="mediaobject"><img src="image/uuid-12c231cd-9985-2f1f-6d41-fd30b0a2ca73.svg" style="" alt="hm_doc_tool_discard_record.svg" /></div>
+                            </td>
+                            <td class="td">
+                              <p>Discard modified tool data (do not save).</p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="td">
+                              <div class="mediaobject"><img src="image/uuid-001d0150-5565-d5f3-1acb-ad9606046da6.svg" style="" alt="hm_doc_tool_setup.svg" /></div>
+                            </td>
+                            <td class="td">
+                              <p>Specify settings for the <span class="guilabel">Report</span>.</p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="td">
+                              <div class="mediaobject"><img src="image/uuid-80abccd5-5bc3-9e0f-2a2e-8c30005e9ef0.svg" style="" alt="hm_doc_tool_cutting_material.svg" /></div>
+                            </td>
+                            <td class="td">
+                              <p>Edit cutter materials</p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="td">
+                              <div class="mediaobject"><img src="image/uuid-f3f14a02-8617-74dd-eecf-c98540bf6fbc.svg" style="" alt="hm_doc_tool_material.svg" /></div>
+                            </td>
+                            <td class="td">
+                              <p>Edit materials</p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="td">
+                              <div class="mediaobject"><img src="image/uuid-b9d2094e-ccea-7c3a-daaf-5f4ac1c57d34.svg" style="" alt="hm_doc_tool_coupling.svg" /></div>
+                            </td>
+                            <td class="td">
+                              <p>Edit couplings</p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="td">
+                              <div class="mediaobject"><img src="image/uuid-ccb64fe4-07c6-70a2-622f-932fe59d2a45.svg" style="" alt="hm_doc_tool_tech_purpose.svg" /></div>
+                            </td>
+                            <td class="td">
+                              <p>Edit technology usages</p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="td">
+                              <div class="mediaobject"><img src="image/uuid-38c1666b-a33b-6b11-d4ea-7ca3bd8ed103.svg" style="" alt="hm_doc_tool_coolant.svg" /></div>
+                            </td>
+                            <td class="td">
+                              <p>Edit coolants</p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="td">
+                              <div class="mediaobject"><img src="image/uuid-fd16e9ea-bb1d-acff-48e9-057cece66870.svg" style="" alt="hm_doc_tool_formula.svg" /></div>
+                            </td>
+                            <td class="td">
+                              <p>Edit formulas</p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="td">
+                              <div class="mediaobject"><img src="image/uuid-5a5cac01-bb5d-8574-88ef-bd5f541edb6a.svg" style="" alt="hm_doc_tool_custom_data.svg" /></div>
+                            </td>
+                            <td class="td">
+                              <p>Edit user-defined data classes.</p>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </section>
+                </section>
+                <section dir="ltr" class="simplesect" id="id76767">
+                  <div class="titlepage">
+                    <div>
+                      <div>
+                        <h2 class="title" style="clear: both"><span class="formal-title">Document tool</span></h2>
+                      </div>
+                    </div>
+                  </div>
+                  <p>If the external database does not contain a tool you need, you can set it up as a new document tool in the current document (model file). Document tools are stored in list form on the <span class="guilabel">Tools</span> dialog page of the <span class="italic">hyper</span>MILL browser in the <span class="guilabel">Milling
+                  tools</span>, <span class="guilabel">Drilling tools</span> and <span class="guilabel">Turning tools</span> sections.</p>
+                  <p>Right-click the Tools dialog page to show all available tabs of the <span class="italic">hyper</span>MILL browser. Enable the desired view options.</p>
+                  <p>Icons in the tool browser:</p>
+                  <div class="informaltable table-responsive">
+                    <table class="informaltable">
+                      <colgroup>
+                        <col style="width:12%;" />
+                        <col style="width:88%;" />
+                      </colgroup>
+                      <tbody>
+                        <tr>
+                          <td class="td">
+                            <div class="mediaobject"><img src="image/uuid-a38ab6d9-557a-0a4b-6645-aff4d1686712.svg" style="" alt="hm_document_tools_hide_tools.svg" /></div>
+                          </td>
+                          <td class="td">
+                            <p>Hide tools (milling, drilling, turning tools) as a list in the browser.</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="td">
+                            <div class="mediaobject"><img src="image/uuid-39e7aeb8-5a19-2242-57ff-ae3fb2f3475b.svg" style="" alt="hm_document_tools_show_tools.svg" /></div>
+                          </td>
+                          <td class="td">
+                            <p>Show tools (milling, drilling, turning tools) as a list in the browser.</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="td">
+                            <div class="mediaobject"><img src="image/uuid-8b9a12f1-bc65-d11a-4d9d-19b24d0fcb44.svg" style="" alt="hm_document_tools_state_local.svg" /></div>
+                          </td>
+                          <td class="td">
+                            <p>(Local) document tool</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="td">
+                            <div class="mediaobject"><img src="image/uuid-fdc67aa0-570e-ec0a-01ab-40071f3cd516.svg" style="" alt="hm_document_tools_state_up_to_date.svg" /></div>
+                          </td>
+                          <td class="td">
+                            <p>Tool is linked to external database and updated.</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="td">
+                            <div class="mediaobject"><img src="image/uuid-f94eade9-c358-016c-dee9-0af22a9a7164.svg" style="" alt="hm_document_tools_state_needs_update.svg" /></div>
+                          </td>
+                          <td class="td">
+                            <p>Tool is linked to external database. Update needed.</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="td">
+                            <div class="mediaobject"><img src="image/uuid-b2a84fac-3777-37a4-9066-eed99867639b.svg" style="" alt="hm_document_tools_state_broken_links.svg" /></div>
+                          </td>
+                          <td class="td">
+                            <p>Broken link to external tool database.</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="td">
+                            <div class="mediaobject"><img src="image/uuid-003ce941-c2f4-82d9-6f12-fe6a23a67718.svg" style="" alt="hm_document_tools_job_def_warn.svg" /></div>
+                          </td>
+                          <td class="td">
+                            <p>This tool carries a warning.</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="td">
+                            <div class="mediaobject"><img src="image/uuid-e5e727ca-4311-1464-96f8-5c0ef54e0a26.svg" style="" alt="hm_document_tools_fromTool_DB.svg" /></div>
+                          </td>
+                          <td class="td">
+                            <p>Select NC tool from external tools database.</p>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div dir="ltr" class="note">
+                    <h3 class="title">Note</h3>
+                    <p>All tools are identified by a unique ID. Make sure that you assign a unique ID to each new NC tool you define.</p>
+                  </div>
+                </section>
+              </section>
+              <div class="footer-content">
+                <div class="section-toc section-toc-after">
+                  <div class="section-toc-title">
+                    <span class="section-toc-title-delimiter">:</span>
+                  </div>
+                </div>
+              </div>
+              <footer></footer>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

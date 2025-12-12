@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="x-ua-compatible" content="IE=edge" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="search" content="default" />
+  <meta name="use.ic" content="no" />
+  <meta name="tocstandalone" content="yes" />
+  <script type="text/javascript">
+  //<![CDATA[
+                        var index;
+                        var contentLanguage = 'en-US';
+                        var enterKey = 'select';
+                        
+                                        var anchoroption = true;
+                                var instantsearch_minlength = 1;
+                                                
+                                var fuse_threshold = 0.3;
+                        
+                                        var local_csh = false;
+                                
+                        var useanchorlinks = false;
+  //]]>
+  </script>
+  <title>Search dialog page</title>
+  <link rel="stylesheet" type="text/css" href="../css/docbook.css" />
+  <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" href="../css/bootstrap-theme.min.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style-common.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style-responsive.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style-print.css" />
+  <link rel="stylesheet" type="text/css" href="../css/font-awesome.css" />
+  <link rel="stylesheet" type="text/css" href="../css/custom.css" />
+  <link rel="stylesheet" type="text/css" href="../css/layout-custom-style.css" />
+  <script src="../js/jquery-1.10.2.min.js" type="text/javascript"></script>
+  <script src="../js/jquery-ui-1.10.3.custom.min.js" type="text/javascript"></script>
+  <script src="../js/bootstrap.min.js" type="text/javascript"></script>
+  <script src="../js/purl.js" type="text/javascript"></script>
+  <script src="../js/jquery.event.move.js" type="text/javascript"></script>
+  <script src="../js/jquery.event.swipe.js" type="text/javascript"></script>
+  <script src="../js/jquery.sticky.js" type="text/javascript"></script>
+  <script src="../js/respond.min.js" type="text/javascript"></script>
+  <script src="../js/script.js" type="text/javascript"></script>
+  <script src="js/toc.js" type="text/javascript"></script>
+  <script src="../js/create-toc.js" type="text/javascript"></script>
+  <script src="../js/clipboard.min.js" type="text/javascript"></script>
+  <script src="../js/fuse.min.js" type="text/javascript"></script>
+  <script src="../js/jquery.mark.min.js" type="text/javascript"></script>
+  <script src="../js/html5.fuse.search.js" type="text/javascript"></script>
+  <script src="js/fuzzydata.js" type="text/javascript"></script>
+  <script src="../js/csh.js" type="text/javascript"></script>
+  <script src="../js/highlight-mergehtml-plugin.js" type="text/javascript"></script>
+  <meta name="generator" content="Paligo" />
+  <link rel="prev" href="UUID-825c4c20-71a5-a157-b633-4df5df7d3cea.html" title="Sample hole dialog page" />
+  <link rel="next" href="UUID-5b4f218a-e407-cdb0-3ce8-b257e9ad2941.html" title="Setup dialog page" />
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js?config=TeX-MML-AM_CHTML" async="async"></script>
+  <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+  <script type="text/javascript" src="../js/cookie-consent.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  <script type="text/javascript">
+  //<![CDATA[
+                        $(document).on('ready ajaxComplete', function() {
+                                
+                                hljs.addPlugin(mergeHTMLPlugin);
+                                hljs.configure({'ignoreUnescapedHTML': true});
+                                
+                                $('pre:not(.embedcode)').each(function() {
+                                        /**
+                                         * @type {string}
+                                         */
+                                        var language = $(this).data('language');
+
+                                        if (language === 'plaintext' || language === 'text') {
+                                                $(this).addClass(language).addClass('hljs');
+                                                return true;
+                                        }
+                                        else {
+                                                var clone = this.cloneNode(true);
+                                                hljs.highlightElement(clone);
+                                                $(this).empty().append($(clone).contents());
+                                                $(this).attr("class", $(clone).attr("class"));
+                                        }
+                                });
+                        });
+  //]]>
+  </script>
+  <style type="text/css">
+  /*<![CDATA[*/
+            div.skipnav {
+            }
+            div.skipnav a {
+                position: fixed;
+                left: -10000px;
+                top: 1.5em;
+                width: 1px;
+                height: 1px;
+                overflow: hidden;
+            }
+            div.skipnav a:focus, div.skipnav a:active, div.skipnav a:hover {
+                background: white;
+                color: black;
+                box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.5);
+                position: fixed;
+                left: 2em;
+                top: 1.5em;
+                width: auto;
+                height: auto;
+                overflow: visible;
+                text-decoration: underline;
+                z-index: 99999; /* has to be higher than the side panel */
+    }
+  /*]]>*/
+  </style>
+</head>
+<body data-link-prefix="">
+  <div class="skipnav">
+    <a href="#content-wrapper">Skip to main content</a>
+  </div>
+  <div id="page" class="clearfix">
+    <div id="header">
+      <div class="container">
+        <div id="logotype-container" class="pull-left">
+          <a href="../index.html"><img id="logotype-pageheader" src="../css/image/corporate-logo.png" alt="Corporate logotype" data-role="logotype" /></a>
+        </div>
+        <div id="pagetools-container" class="pull-right">
+          <ul id="page-tools">
+            <li class="page-tools-search"><input placeholder="Search" type="text" class="form-control" aria-label="Search" id="search" /></li>
+            <li class="page-tools-print">
+              <a href="javascript:window.print();"><span class="tool-label">Print</span><span class="glyphicon glyphicon-print"></span></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <h1 id="publication-title">CAM</h1>
+    <div id="subheader-sticky-wrapper" class="sticky-wrapper">
+      <div id="subheader">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3 toc-title">
+              <h2><a class="prev nav-icon hidden-lg hidden-md" href="UUID-825c4c20-71a5-a157-b633-4df5df7d3cea.html"><span class="glyphicon glyphicon-chevron-left"></span></a> <a href="#toc" class="hidden mobile-nav-toggle"><span class="glyphicon glyphicon-list"></span>Table of Contents</a><span class="toc-label">Table of Contents</span><a class=
+              "next nav-icon hidden-lg hidden-md" href="UUID-5b4f218a-e407-cdb0-3ce8-b257e9ad2941.html"><span class="glyphicon glyphicon-chevron-right"></span></a></h2>
+            </div>
+            <div class="col-md-9 breadcrumb-container">
+              <ul class="breadcrumb">
+                <li class="breadcrumb-link">
+                  <span class="glyphicon glyphicon-home"></span>&nbsp;<a href="index-en-US.html">CAM</a>
+                </li>
+                <li class="breadcrumb-link">
+                  <a href="UUID-045be457-706d-a14f-f9a1-00787a4eb50a.html">Feature and macro technology</a>
+                </li>
+                <li class="breadcrumb-link">
+                  <a href="UUID-49abe1ad-b199-5108-79e3-3d98ad69ba3e.html">Generate feature</a>
+                </li>
+                <li class="breadcrumb-link">
+                  <a href="UUID-f3e19e3c-37c7-e7e1-aafe-0e3713126013.html">Feature Recognition</a>
+                </li>
+                <li class="breadcrumb-link">
+                  <a href="UUID-730a1180-1827-adb9-ae5e-e1a022d401a8.html">Single Hole Recognition</a>
+                </li>
+                <li class="breadcrumb-node">Search dialog page</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="main-content">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 toc-container" id="toc-wrapper">
+            <div id="toc-placeholder">
+              <div id="toc-standalone-placeholder"></div>
+            </div>
+          </div>
+          <div class="col-md-9 content-container" id="content-wrapper">
+            <a accesskey="p" class="prev pull-left prev visible-lg visible-md" id="header-navigation-prev" href="UUID-825c4c20-71a5-a157-b633-4df5df7d3cea.html"><span class="glyphicon glyphicon-circle-arrow-left"></span>Prev</a><a accesskey="n" class="pull-right next visible-lg visible-md" id="header-navigation-next" href=
+            "UUID-5b4f218a-e407-cdb0-3ce8-b257e9ad2941.html">Next<span class="glyphicon glyphicon-circle-arrow-right"></span></a>
+            <div id="topic-content">
+              <section xml:lang="en-US" lang="en-US" dir="ltr" class="section internal" data-origin-id="UUID-5e950620-27c2-6c9c-2d16-27f98c7e0e36" data-publication-date="" id="UUID-053fe526-200c-6c4b-e587-95e3817ebbc7">
+                <div class="titlepage">
+                  <div>
+                    <div class="title">
+                      <h1 class="title" style="clear: both"><span class="formal-title">Search dialog page</span></h1>
+                    </div>
+                  </div>
+                </div>
+                <p>Here you can determine which hole surfaces should be compared with the base hole. As the result of this comparison, holes are found which have the same parameters as the base hole.</p>
+                <section dir="ltr" class="simplesect internal" id="id91551">
+                  <div class="titlepage">
+                    <div>
+                      <div>
+                        <h2 class="title" style="clear: both"><span class="formal-title">Group selection</span></h2>
+                      </div>
+                    </div>
+                  </div>
+                  <p><span class="guilabel">User:</span> Select the required holes, whose parameters are to be compared with those of the base hole.</p>
+                  <div dir="ltr" class="note">
+                    <h3 class="title">Note</h3>
+                    <p>You can also search for holes using the Window selection function in the CAD program. This is particularly useful with very complex models, for which Feature Recognition is only partly relevant.</p>
+                  </div>
+                  <p><span class="guilabel">Complete model</span>: All holes in the model with the same parameters as the base hole are automatically recognized.</p>
+                  <p><span class="guilabel">Start</span>: Start the automatic recognition of the holes. All recognized holes are shown under Result in a list display. The numbers mean:</p>
+                  <p>Example: 3 (2)</p>
+                  <p>(3) Number of directions</p>
+                  <p>(2) Number of holes in this direction</p>
+                  <div class="informaltable table-responsive">
+                    <table style="width:100%;" class="informaltable">
+                      <colgroup>
+                        <col style="width:12%;" />
+                        <col style="width:88%;" />
+                      </colgroup>
+                      <tbody>
+                        <tr>
+                          <td class="td">
+                            <div class="mediaobject">
+                              <table class="image-viewport" style="border-collapse:collapse;border:0; ;">
+                                <tr style="height: 48px">
+                                  <td style="padding:0;"><img src="image/uuid-d41d47b4-4a37-1c23-41f7-05b35a4eb12d.svg" style="max-height: 48px;" alt="ok.svg" /></td>
+                                </tr>
+                              </table>
+                            </div>
+                          </td>
+                          <td class="td">
+                            <p>Recognized holes are transferred to a feature list as a Generic Hole or Compound Feature.</p>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <p>Holes with the same parameters (Direction, Depth) are combined into a feature. Please note that the defined base hole is also always included as a component of a feature.</p>
+                </section>
+                <section dir="ltr" class="simplesect internal" id="id91577">
+                  <div class="titlepage">
+                    <div>
+                      <div>
+                        <h2 class="title" style="clear: both"><span class="formal-title">Filter</span></h2>
+                      </div>
+                    </div>
+                  </div>
+                  <p>Use a filter to limit the hoes to be recognized.</p>
+                  <p><span class="guilabel">Same color</span>: Only holes of the same color as the base hole are recognized.</p>
+                  <p><span class="guilabel">Same layer</span>: Only holes on the same layer as the base hole are recognized.</p>
+                  <p><span class="guilabel">Same orientation</span>: Only holes with the same orientation as the base hole are recognized.</p>
+                  <p><span class="guilabel">Frame limit</span>: Define a frame limit (angle) for the recognition process.</p>
+                  <p><span class="guilabel">Frame</span>: Define the frame to be used for the frame limit.</p>
+                  <p><span class="guilabel">B axis</span> / <span class="guilabel">C axis</span>: Use the two tool rotary axes to limit the angle for the hole recognition process. The B axis corresponds to the X/Y direction and the C axis corresponds to the Z direction of the defined frame.</p>
+                  <div class="mediaobject">
+                    <table class="image-viewport" style="border-collapse:collapse;border:0; width:461px;">
+                      <tr style="height: 212px">
+                        <td style="padding:0;"><img src="image/uuid-e86f704b-6299-50f2-5d6a-58b9eb9c0d08.svg" style="max-width: 461px; max-height: 212px;" alt="feature_rotationskugel.svg" /></td>
+                      </tr>
+                    </table>
+                  </div>
+                  <p>The defined angle limit in each direction is shown in color on a rotary ball. Yellow = machinable area (directions from which holes are recognized). Grey = unmachinable area (directions from which holes are not recognized). Example: angle B axis: 0° to 90°, angle C axis: 0° to 90°.</p>
+                  <p><span class="guilabel">Same depth</span>: Only holes of the same depth as the base hole are recognized.</p>
+                  <p><span class="guilabel">Depth limit</span>:Only holes are recognized which correspond to the depth limit (from/to).</p>
+                  <p><span class="guilabel">Remove hole</span>: Mark hole and in the short-cut menu select the <span class="guilabel">Remove</span> function.</p>
+                  <p>Reverse hole direction: Mark hole and in the shortcut menu select the <span class="guilabel">Reverse</span> function.</p>
+                  <p>If the <span class="guilabel">Reference feature</span> is selected as the <span class="guilabel">Strategy</span>, the following functions are available:</p>
+                </section>
+                <section dir="ltr" class="simplesect internal" id="id91609">
+                  <div class="titlepage">
+                    <div>
+                      <div>
+                        <h2 class="title" style="clear: both"><span class="formal-title">Group selection</span></h2>
+                      </div>
+                    </div>
+                  </div>
+                  <p><span class="guilabel">Points and surfaces</span>: Select surfaces / points which should be used to create the hole features. The orientation of the newly created hole features follows the surface normals in the area of the selected points.</p>
+                  <p>Use the <span class="guilabel">Move to featurelist</span> function to select an existing feature list to which the features will be assigned. Alternatively, create a new feature list (option: New).</p>
+                  <p><span class="guilabel">Circles</span>: Select circles which should be used to create the hole features. The orientation of the newly created hole features follows the surface normals in the area of the selected circles.</p>
+                  <p><span class="guilabel">Reverse direction</span>: Reverse the direction of the newly created drill feature..</p>
+                </section>
+              </section>
+              <div class="footer-content">
+                <div class="section-toc section-toc-after">
+                  <div class="section-toc-title">
+                    <span class="section-toc-title-delimiter">:</span>
+                  </div>
+                </div>
+              </div>
+              <footer></footer>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

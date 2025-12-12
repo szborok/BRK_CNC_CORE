@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="x-ua-compatible" content="IE=edge" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="search" content="default" />
+  <meta name="use.ic" content="no" />
+  <meta name="tocstandalone" content="yes" />
+  <script type="text/javascript">
+  //<![CDATA[
+                        var index;
+                        var contentLanguage = 'en-US';
+                        var enterKey = 'select';
+                        
+                                        var anchoroption = true;
+                                var instantsearch_minlength = 1;
+                                                
+                                var fuse_threshold = 0.3;
+                        
+                                        var local_csh = false;
+                                
+                        var useanchorlinks = false;
+  //]]>
+  </script>
+  <title>Solutions</title>
+  <link rel="stylesheet" type="text/css" href="../css/docbook.css" />
+  <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" href="../css/bootstrap-theme.min.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style-common.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style-responsive.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style-print.css" />
+  <link rel="stylesheet" type="text/css" href="../css/font-awesome.css" />
+  <link rel="stylesheet" type="text/css" href="../css/custom.css" />
+  <link rel="stylesheet" type="text/css" href="../css/layout-custom-style.css" />
+  <script src="../js/jquery-1.10.2.min.js" type="text/javascript"></script>
+  <script src="../js/jquery-ui-1.10.3.custom.min.js" type="text/javascript"></script>
+  <script src="../js/bootstrap.min.js" type="text/javascript"></script>
+  <script src="../js/purl.js" type="text/javascript"></script>
+  <script src="../js/jquery.event.move.js" type="text/javascript"></script>
+  <script src="../js/jquery.event.swipe.js" type="text/javascript"></script>
+  <script src="../js/jquery.sticky.js" type="text/javascript"></script>
+  <script src="../js/respond.min.js" type="text/javascript"></script>
+  <script src="../js/script.js" type="text/javascript"></script>
+  <script src="js/toc.js" type="text/javascript"></script>
+  <script src="../js/create-toc.js" type="text/javascript"></script>
+  <script src="../js/clipboard.min.js" type="text/javascript"></script>
+  <script src="../js/fuse.min.js" type="text/javascript"></script>
+  <script src="../js/jquery.mark.min.js" type="text/javascript"></script>
+  <script src="../js/html5.fuse.search.js" type="text/javascript"></script>
+  <script src="js/fuzzydata.js" type="text/javascript"></script>
+  <script src="../js/csh.js" type="text/javascript"></script>
+  <script src="../js/highlight-mergehtml-plugin.js" type="text/javascript"></script>
+  <meta name="generator" content="Paligo" />
+  <link rel="prev" href="UUID-c97266c9-299b-17f7-ff44-73bb4ce6099c.html" title="Optimization" />
+  <link rel="next" href="UUID-8e8b0e36-a94d-91d8-f2fe-cb1bf617bf3b.html" title="Parameters" />
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js?config=TeX-MML-AM_CHTML" async="async"></script>
+  <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+  <script type="text/javascript" src="../js/cookie-consent.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  <script type="text/javascript">
+  //<![CDATA[
+                        $(document).on('ready ajaxComplete', function() {
+                                
+                                hljs.addPlugin(mergeHTMLPlugin);
+                                hljs.configure({'ignoreUnescapedHTML': true});
+                                
+                                $('pre:not(.embedcode)').each(function() {
+                                        /**
+                                         * @type {string}
+                                         */
+                                        var language = $(this).data('language');
+
+                                        if (language === 'plaintext' || language === 'text') {
+                                                $(this).addClass(language).addClass('hljs');
+                                                return true;
+                                        }
+                                        else {
+                                                var clone = this.cloneNode(true);
+                                                hljs.highlightElement(clone);
+                                                $(this).empty().append($(clone).contents());
+                                                $(this).attr("class", $(clone).attr("class"));
+                                        }
+                                });
+                        });
+  //]]>
+  </script>
+  <style type="text/css">
+  /*<![CDATA[*/
+            div.skipnav {
+            }
+            div.skipnav a {
+                position: fixed;
+                left: -10000px;
+                top: 1.5em;
+                width: 1px;
+                height: 1px;
+                overflow: hidden;
+            }
+            div.skipnav a:focus, div.skipnav a:active, div.skipnav a:hover {
+                background: white;
+                color: black;
+                box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.5);
+                position: fixed;
+                left: 2em;
+                top: 1.5em;
+                width: auto;
+                height: auto;
+                overflow: visible;
+                text-decoration: underline;
+                z-index: 99999; /* has to be higher than the side panel */
+    }
+  /*]]>*/
+  </style>
+</head>
+<body data-link-prefix="">
+  <div class="skipnav">
+    <a href="#content-wrapper">Skip to main content</a>
+  </div>
+  <div id="page" class="clearfix">
+    <div id="header">
+      <div class="container">
+        <div id="logotype-container" class="pull-left">
+          <a href="../index.html"><img id="logotype-pageheader" src="../css/image/corporate-logo.png" alt="Corporate logotype" data-role="logotype" /></a>
+        </div>
+        <div id="pagetools-container" class="pull-right">
+          <ul id="page-tools">
+            <li class="page-tools-search"><input placeholder="Search" type="text" class="form-control" aria-label="Search" id="search" /></li>
+            <li class="page-tools-print">
+              <a href="javascript:window.print();"><span class="tool-label">Print</span><span class="glyphicon glyphicon-print"></span></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <h1 id="publication-title">CAM</h1>
+    <div id="subheader-sticky-wrapper" class="sticky-wrapper">
+      <div id="subheader">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3 toc-title">
+              <h2><a class="prev nav-icon hidden-lg hidden-md" href="UUID-c97266c9-299b-17f7-ff44-73bb4ce6099c.html"><span class="glyphicon glyphicon-chevron-left"></span></a> <a href="#toc" class="hidden mobile-nav-toggle"><span class="glyphicon glyphicon-list"></span>Table of Contents</a><span class="toc-label">Table of Contents</span><a class=
+              "next nav-icon hidden-lg hidden-md" href="UUID-8e8b0e36-a94d-91d8-f2fe-cb1bf617bf3b.html"><span class="glyphicon glyphicon-chevron-right"></span></a></h2>
+            </div>
+            <div class="col-md-9 breadcrumb-container">
+              <ul class="breadcrumb">
+                <li class="breadcrumb-link">
+                  <span class="glyphicon glyphicon-home"></span>&nbsp;<a href="index-en-US.html">CAM</a>
+                </li>
+                <li class="breadcrumb-link">
+                  <a href="UUID-0751db51-8b5b-ae49-1904-dce4b8c92263.html">Basics of CAM editing</a>
+                </li>
+                <li class="breadcrumb-link">
+                  <a href="UUID-aeb94185-7a19-29aa-6f91-3af4af99b68d.html">Structure CAM project</a>
+                </li>
+                <li class="breadcrumb-link">
+                  <a href="UUID-0731353e-eaf3-b73e-7c7f-2b75fbc80bbe.html">Define job</a>
+                </li>
+                <li class="breadcrumb-link">
+                  <a href="UUID-9e046def-8052-c20b-fa68-b9b72be80912.html">Input dialog: NC</a>
+                </li>
+                <li class="breadcrumb-node">Solutions</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="main-content">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 toc-container" id="toc-wrapper">
+            <div id="toc-placeholder">
+              <div id="toc-standalone-placeholder"></div>
+            </div>
+          </div>
+          <div class="col-md-9 content-container" id="content-wrapper">
+            <a accesskey="p" class="prev pull-left prev visible-lg visible-md" id="header-navigation-prev" href="UUID-c97266c9-299b-17f7-ff44-73bb4ce6099c.html"><span class="glyphicon glyphicon-circle-arrow-left"></span>Prev</a><a accesskey="n" class="pull-right next visible-lg visible-md" id="header-navigation-next" href=
+            "UUID-8e8b0e36-a94d-91d8-f2fe-cb1bf617bf3b.html">Next<span class="glyphicon glyphicon-circle-arrow-right"></span></a>
+            <div id="topic-content">
+              <section xml:lang="en-US" lang="en-US" dir="ltr" class="section" data-origin-id="UUID-ef19f187-b6ef-b573-660a-620acbe8db79" data-publication-date="" id="UUID-a69a77da-7de5-a8e6-3715-e68ce3936107">
+                <div class="titlepage">
+                  <div>
+                    <div class="title">
+                      <h1 class="title" style="clear: both"><span class="formal-title">Solutions</span></h1>
+                    </div>
+                  </div>
+                </div>
+                <section xml:lang="en-US" lang="en-US" dir="ltr" class="section" data-origin-id="" data-publication-date="" id="UUID-a69a77da-7de5-a8e6-3715-e68ce3936107_UUID-79fefe9e-0c90-535d-34eb-e618c4f2906a">
+                  <div class="titlepage">
+                    <div>
+                      <div class="title">
+                        <h2 class="title" style="clear: both"><span class="formal-title">Preferred direction</span></h2>
+                      </div>
+                    </div>
+                  </div>
+                  <p id="UUID-a69a77da-7de5-a8e6-3715-e68ce3936107_para-idm53109961246996">For machines with 5-axis kinematics, define the preferred spindle orientation in machining situations with at least two solutions.</p>
+                  <p><span class="guilabel">Use global definition</span>: Enable to use the default settings of the VIRTUAL Machining postprocessor for creating the NC file. Disable the option to use the settings of the current job (the default settings of the VIRTUAL Machining postprocessor are overwritten in this case). Use <span class=
+                  "guilabel">Plus</span> or <span class="guilabel">Minus</span> to define the preferred sign for the rotary axis.</p>
+                  <div class="informaltable table-responsive">
+                    <table frame="above" rules="none" style="width:100%;" class="informaltable">
+                      <colgroup>
+                        <col style="width:15%;" />
+                        <col style="width:85%;" />
+                      </colgroup>
+                      <tbody>
+                        <tr valign="top">
+                          <td class="td">
+                            <p><span class="bold"><strong>Example:</strong></span></p>
+                          </td>
+                          <td class="td">
+                            <p>BC kinematics: When <span class="guilabel">Plus</span> (1) is specified as the preferred axial direction, select the one that tilts the component to the viewer.</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td colspan="2" class="td">
+                            <div class="informalfigure" id="UUID-a69a77da-7de5-a8e6-3715-e68ce3936107_figure-5cc6d4737552e-idm45894348841104">
+                              <div class="mediaobject">
+                                <table class="image-viewport" style="border-collapse:collapse;border:0; width:598px;">
+                                  <tr style="height: 216px">
+                                    <td style="padding:0;"><img src="image/uuid-f56dff67-16be-c2ec-e8a9-90c77f200547.svg" style="max-width: 598px; max-height: 216px;" alt="VM_preferred_direction3.svg" /></td>
+                                  </tr>
+                                </table>
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <p><span class="guilabel">Force</span>: When the NC Optimizer is activated, the direction of the preferred axis is also taken into account, however, the NC Optimizer may make a different choice for different reasons (axis limits exceeded, collision avoidance). This behavior of the NC Optimizer is disabled by the <span class=
+                  "guilabel">Force</span> option.</p>
+                  <p><span class="guilabel">Closest C angle plus</span> / <span class="guilabel">Closest C angle minus</span>: The solution in the head that is closest to the defined C angle is selected. The solution in the head can switch between plus and minus, which keeps the movement of the C axis small.</p>
+                  <section dir="ltr" class="section" data-origin-id="" data-publication-date="" id="UUID-a69a77da-7de5-a8e6-3715-e68ce3936107_section-idm234771683051766">
+                    <div class="titlepage">
+                      <div>
+                        <div class="title">
+                          <h3 class="title"><span class="formal-title">Comparison: Preferred direction – Plus / Preferred direction – Closest C angle plus</span></h3>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="informaltable table-responsive">
+                      <table style="width:100%;" class="informaltable">
+                        <colgroup>
+                          <col style="width:50%;" />
+                          <col />
+                          <col style="width:50%;" />
+                        </colgroup>
+                        <thead>
+                          <tr>
+                            <th colspan="2" align="left" class="th">
+                              <p>Preferred direction → Plus</p>
+                              <p>(BC table/head kinematics)</p>
+                            </th>
+                            <th align="left" class="th">
+                              <p>Preferred direction → Closest C angle plus → 0 degrees</p>
+                              <p>(BC table/head kinematics)</p>
+                            </th>
+                          </tr>
+                          <tr>
+                            <td colspan="2" align="left" class="td">
+                              <p>To maintain the plus solution in the head, a large rotation is performed in the C axis. This behavior is shown in the following video:</p>
+                            </td>
+                            <td align="left" class="td">
+                              <p>The solution alternates between plus and minus in the head, which keeps the movement of the C axis small. This behavior is shown in the following video:</p>
+                            </td>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td colspan="2" class="td">
+                              <div class="mediaobject">
+                                <div class="video-container">
+                                  <div class="videoobject">
+                                    <iframe title="" style="border:0;" allow="fullscreen *" src="https://www.youtube.com/embed/-3lv7j0gSPk"></iframe>
+                                  </div>
+                                </div>
+                              </div>
+                            </td>
+                            <td class="td">
+                              <div class="mediaobject">
+                                <div class="video-container">
+                                  <div class="videoobject">
+                                    <iframe title="" style="border:0;" allow="fullscreen *" src="https://www.youtube.com/embed/ZK3Ex2mnCvY"></iframe>
+                                  </div>
+                                </div>
+                              </div>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </section>
+                  <section dir="ltr" class="section" data-origin-id="" data-publication-date="" id="UUID-a69a77da-7de5-a8e6-3715-e68ce3936107_section-idm234771679022626">
+                    <div class="titlepage">
+                      <div>
+                        <div class="title">
+                          <h3 class="title"><span class="formal-title">Additional information: Closest C angle plus / Closest C angle minus</span></h3>
+                        </div>
+                      </div>
+                    </div>
+                    <p>If there are two possible solutions with the same distance to the defined C angle, the desired behavior of the machine can be defined via <span class="guilabel">Closest C angle plus</span> or <span class="guilabel">Closest C angle minus</span>. Here <span class="bold"><strong>plus</strong></span> and <span class=
+                    "bold"><strong>minus</strong></span> refer to the C-axis solution.</p>
+                    <div class="informaltable table-responsive">
+                      <table style="width:100%;" class="informaltable">
+                        <thead>
+                          <tr>
+                            <th colspan="2" align="left" class="th">
+                              <p>Example: BC head/head kinematics, angle C axis = 0 degrees</p>
+                            </th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td colspan="2" class="td">
+                              <p>(1) Solution for <span class="guilabel">Closest C angle plus</span> = B+32.8239 C+79.2792.</p>
+                              <p>(2) Solution for <span class="guilabel">Closest C angle minus</span> = B-32.8239 C-79.2792.</p>
+                              <div class="mediaobject"><img src="image/uuid-319a2bf3-f2b8-db0d-efd4-c7035fcf74a7.svg" style="" alt="VM_NC_optimizer_closest_C_angle_01.svg" /></div>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <div class="informaltable table-responsive">
+                      <table style="width:100%;" class="informaltable">
+                        <thead>
+                          <tr>
+                            <th colspan="2" align="left" class="th">
+                              <p>Example: BC head/table kinematics, angle for the C axis = 0</p>
+                            </th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td colspan="2" class="td">
+                              <p>(1) Solution for <span class="guilabel">Closest C angle plus</span> = B+35.6477 C+77.1914.</p>
+                              <p>(2) Solution for <span class="guilabel">Closest C angle minus</span> = B-35.6477 C+282.8086.</p>
+                              <div class="mediaobject"><img src="image/uuid-9312b600-eb24-b263-0003-4bd310f0c0d0.svg" style="" alt="VM_NC_optimizer_closest_C_angle_02.svg" /></div>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </section>
+                </section>
+                <section xml:lang="en-US" lang="en-US" dir="ltr" class="section" data-origin-id="" data-publication-date="" id="UUID-a69a77da-7de5-a8e6-3715-e68ce3936107_UUID-0cbcf9c9-2f2a-17be-815a-328308c2d41e">
+                  <div class="titlepage">
+                    <div>
+                      <div class="title">
+                        <h2 class="title" style="clear: both"><span class="formal-title">Preferred solution C-axis (A/B=0) / Preferred C-axis turning (A/B=0)</span></h2>
+                      </div>
+                    </div>
+                  </div>
+                  <p>Define a manual pre-rotation of the C axis before the start of the job with the <span class="guilabel">Preferred solution C-Axis (A/B = 0)</span>/<span class="guilabel">Preferred solution C-Axis turning (A/B = 0)</span> function. This makes it possible to manually avoid axis limit violations or collision situations.</p>
+                  <div class="informaltable table-responsive" id="UUID-a69a77da-7de5-a8e6-3715-e68ce3936107_informaltable-idm53126403236690">
+                    <table frame="above" rules="none" style="width:100%;" class="informaltable">
+                      <colgroup>
+                        <col style="width:30%;" />
+                        <col style="width:70%;" />
+                      </colgroup>
+                      <tbody>
+                        <tr>
+                          <td valign="top" class="td align-top">
+                            <p><span class="bold"><strong>Example 1: 2D Milling</strong></span></p>
+                          </td>
+                          <td class="td">
+                            <p><span class="bold"><strong>BC kinematics</strong></span>:</p>
+                            <p>The function <span class="guimenuitem">Preferred solution C-Axis (A/B = 0)</span> → <span class="guisubmenu">Angle</span> is set to 180.</p>
+                            <p>This ensures that the C axis is rotated to 180 degrees before the start of the job to stop the axis limits from being exceeded. Tool position inside X axis limit (1), tool position outside X axis limit (2).</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td colspan="2" valign="top" align="left" class="td align-top">
+                            <div class="mediaobject">
+                              <table class="image-viewport" style="border-collapse:collapse;border:0; ;">
+                                <tr style="height: 234px">
+                                  <td style="padding:0;"><img src="image/uuid-f8994316-e043-d6ac-e630-2ab4f47732ae.svg" style="max-height: 234px;" alt="VM_preferred_C_angle2.svg" /></td>
+                                </tr>
+                              </table>
+                            </div>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div class="informaltable table-responsive">
+                    <table frame="above" rules="none" style="width:100%;" class="informaltable">
+                      <colgroup>
+                        <col style="width:30%;" />
+                        <col style="width:70%;" />
+                      </colgroup>
+                      <tbody>
+                        <tr>
+                          <td valign="top" class="td align-top">
+                            <p><span class="bold"><strong>Example 2: Milling with rotation axis</strong></span></p>
+                          </td>
+                          <td class="td">
+                            <p>The function <span class="guimenuitem">Preferred solution C-Axis (A/B = 0)</span> → <span class="guisubmenu">Axis change</span> is set to 90°. This ensures that an XY milling movement is converted into a milling movement with rotation axis and linear axis (e.g. CX).</p>
+                            <p>Control the position of the tool by changing the value for the angle. The basic position 0° refers to the X+ axis of the NCS. The value for the angle is a solid angle (counterclockwise). If the specified value for the milling position leads to a problem, such as an axis limitation, an optimization is automatically
+                            carried out by the <span class="phrase"><span class="application">NC Optimizer</span></span>.</p>
+                            <p><span class="bold"><strong>Requirement</strong></span>: The <span class="guilabel">Use NC optimizer</span> function is enabled in the <span class="guilabel">machine properties</span> dialog.</p>
+                            <p>(1) <span class="guilabel">Axis change</span> = 0°, (2) <span class="guilabel">axis change</span> = 90°</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td colspan="2" class="td">
+                            <div class="mediaobject"><img src="image/uuid-c3d2fc21-94c2-2bee-1419-a9ec845373da.svg" style="" alt="VM_milling_with_rotational_axis.svg" /></div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="td"></td>
+                          <td class="td">
+                            <p>The option <span class="guimenuitem">Preferred solution C-axis (A/B=0)</span> → <span class="guisubmenu">Axis change</span> is enabled and the value for the angle is 90°.</p>
+                            <div class="mediaobject">
+                              <div class="video-container">
+                                <div class="videoobject">
+                                  <iframe title="" style="border:0;" allow="fullscreen *" src="https://www.youtube.com/embed/QfyGkFLeDzU"></iframe>
+                                </div>
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="td"></td>
+                          <td class="td">
+                            <p>The option <span class="guimenuitem">Preferred solution C-Axis (A/B = 0)</span> → <span class="guisubmenu">Frame</span> is enabled.</p>
+                            <div class="mediaobject">
+                              <div class="video-container">
+                                <div class="videoobject">
+                                  <iframe title="" style="border:0;" allow="fullscreen *" src="https://www.youtube.com/embed/hjNZuixkucI"></iframe>
+                                </div>
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div class="informaltable table-responsive" id="UUID-a69a77da-7de5-a8e6-3715-e68ce3936107_informaltable-idm53370910593594">
+                    <table frame="above" style="width:100%;" rules="none" class="informaltable">
+                      <colgroup>
+                        <col style="width:30%;" />
+                        <col style="width:70%;" />
+                      </colgroup>
+                      <tbody>
+                        <tr>
+                          <td valign="top" class="td align-top">
+                            <p><span class="bold"><strong>Example 3: Drilling</strong></span></p>
+                          </td>
+                          <td class="td">
+                            <p><span class="bold"><strong>AC kinematics</strong></span></p>
+                            <p>The function <span class="guimenuitem">Preferred solution C-Axis (A/B = 0)</span> → <span class="guisubmenu">Angle</span> is set to 0 (1).</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td colspan="2" valign="top" class="td align-top">
+                            <div class="mediaobject"><img src="image/uuid-5d981530-5ddf-2d3f-f5c6-464a14b35369.svg" style="" alt="VM_preferred_C-angle3a.svg" /></div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="td"></td>
+                          <td class="td">
+                            <p>The function <span class="guimenuitem">Preferred solution C-Axis (A/B = 0)</span> → <span class="guisubmenu">Angle</span> is set to 45 (2). This rotates the C axis clockwise by 45 degrees before the job starts.</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td colspan="2" valign="top" class="td align-top">
+                            <div class="mediaobject"><img src="image/uuid-9558da4d-d2eb-e574-d8d2-93fee08b54ec.svg" style="" alt="VM_preferred_C-angle3b.svg" /></div>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div class="informaltable table-responsive" id="UUID-a69a77da-7de5-a8e6-3715-e68ce3936107_informaltable-idm53371085103752">
+                    <table frame="above" style="width:100%;" rules="none" class="informaltable">
+                      <colgroup>
+                        <col style="width:30%;" />
+                        <col style="width:70%;" />
+                      </colgroup>
+                      <tbody>
+                        <tr>
+                          <td valign="top" class="td align-top">
+                            <p><span class="bold"><strong>Example 4: Turning</strong></span></p>
+                          </td>
+                          <td class="td">
+                            <p><span class="bold"><strong>AC kinematics</strong></span>:</p>
+                            <p>The function <span class="guimenuitem">Preferred solution C-Axis turning (A/B = 0)</span> → <span class="guisubmenu">Angle</span> is set to 0 (degrees) (1).</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td colspan="2" valign="top" class="td align-top">
+                            <div class="mediaobject"><img src="image/uuid-52244c60-1e0a-1757-a306-d9208cabacaf.svg" style="" alt="VM_preferred_C-angle_drehen_a.svg" /></div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="td"></td>
+                          <td class="td">
+                            <p>The function <span class="guimenuitem">Preferred solution C-Axis turning (A/B = 0)</span> → <span class="guisubmenu">Angle</span> is set to 45 (degrees) (2). This rotates the machining position by 45 degrees.</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td colspan="2" valign="top" class="td align-top">
+                            <div class="mediaobject"><img src="image/uuid-d44b83b7-63d2-9548-aca2-e7c572d6b6ca.svg" style="" alt="VM_preferred_C-angle_drehen_b.svg" /></div>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <p><span class="guilabel">Frame</span>: The NC output and the C axis position correspond to the frame selected in the job.</p>
+                  <p><span class="guilabel">Transform polar</span>: Only available for lathes and turn-mill machines. The NC output is via the C-X axis and the corresponding functions in the control.</p>
+                  <p><span class="guilabel">Axis change</span>: The angle entered defines the position of the milling tool during machining. The NC output is via RTCP and a rotary axis. Output is only possible in the G17 inclination.</p>
+                  <p><span class="guilabel">Force</span>: When the NC Optimizer is activated, the specified C axis is generally taken into account, however, the NC Optimizer may make a different choice for different reasons (axis limits exceeded, collision avoidance).</p>
+                  <p>This behavior of the NC Optimizer is disabled by the <span class="guilabel">Force</span> option and the C axis is always pre-turned.</p>
+                </section>
+              </section>
+              <div class="footer-content">
+                <div class="section-toc section-toc-after">
+                  <div class="section-toc-title">
+                    <span class="section-toc-title-delimiter">:</span>
+                  </div>
+                </div>
+              </div>
+              <footer></footer>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

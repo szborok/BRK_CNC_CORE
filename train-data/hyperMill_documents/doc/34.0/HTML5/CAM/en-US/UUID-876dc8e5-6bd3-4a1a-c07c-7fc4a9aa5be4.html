@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="x-ua-compatible" content="IE=edge" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="search" content="default" />
+  <meta name="use.ic" content="no" />
+  <meta name="tocstandalone" content="yes" />
+  <script type="text/javascript">
+  //<![CDATA[
+                        var index;
+                        var contentLanguage = 'en-US';
+                        var enterKey = 'select';
+                        
+                                        var anchoroption = true;
+                                var instantsearch_minlength = 1;
+                                                
+                                var fuse_threshold = 0.3;
+                        
+                                        var local_csh = false;
+                                
+                        var useanchorlinks = false;
+  //]]>
+  </script>
+  <title>High Performance</title>
+  <link rel="stylesheet" type="text/css" href="../css/docbook.css" />
+  <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" href="../css/bootstrap-theme.min.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style-common.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style-responsive.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style-print.css" />
+  <link rel="stylesheet" type="text/css" href="../css/font-awesome.css" />
+  <link rel="stylesheet" type="text/css" href="../css/custom.css" />
+  <link rel="stylesheet" type="text/css" href="../css/layout-custom-style.css" />
+  <script src="../js/jquery-1.10.2.min.js" type="text/javascript"></script>
+  <script src="../js/jquery-ui-1.10.3.custom.min.js" type="text/javascript"></script>
+  <script src="../js/bootstrap.min.js" type="text/javascript"></script>
+  <script src="../js/purl.js" type="text/javascript"></script>
+  <script src="../js/jquery.event.move.js" type="text/javascript"></script>
+  <script src="../js/jquery.event.swipe.js" type="text/javascript"></script>
+  <script src="../js/jquery.sticky.js" type="text/javascript"></script>
+  <script src="../js/respond.min.js" type="text/javascript"></script>
+  <script src="../js/script.js" type="text/javascript"></script>
+  <script src="js/toc.js" type="text/javascript"></script>
+  <script src="../js/create-toc.js" type="text/javascript"></script>
+  <script src="../js/clipboard.min.js" type="text/javascript"></script>
+  <script src="../js/fuse.min.js" type="text/javascript"></script>
+  <script src="../js/jquery.mark.min.js" type="text/javascript"></script>
+  <script src="../js/html5.fuse.search.js" type="text/javascript"></script>
+  <script src="js/fuzzydata.js" type="text/javascript"></script>
+  <script src="../js/csh.js" type="text/javascript"></script>
+  <script src="../js/highlight-mergehtml-plugin.js" type="text/javascript"></script>
+  <meta name="generator" content="Paligo" />
+  <link rel="prev" href="UUID-3ee2ede7-d447-a54b-4a48-bb0c7caa7011.html#UUID-3ee2ede7-d447-a54b-4a48-bb0c7caa7011_UUID-8ba8db91-5ecc-8294-1edd-9f420e4ddaaa" title="Approach and retract" />
+  <link rel="next" href="UUID-876dc8e5-6bd3-4a1a-c07c-7fc4a9aa5be4.html#id95190" title="High Performance Roughing" />
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js?config=TeX-MML-AM_CHTML" async="async"></script>
+  <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+  <script type="text/javascript" src="../js/cookie-consent.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  <script type="text/javascript">
+  //<![CDATA[
+                        $(document).on('ready ajaxComplete', function() {
+                                
+                                hljs.addPlugin(mergeHTMLPlugin);
+                                hljs.configure({'ignoreUnescapedHTML': true});
+                                
+                                $('pre:not(.embedcode)').each(function() {
+                                        /**
+                                         * @type {string}
+                                         */
+                                        var language = $(this).data('language');
+
+                                        if (language === 'plaintext' || language === 'text') {
+                                                $(this).addClass(language).addClass('hljs');
+                                                return true;
+                                        }
+                                        else {
+                                                var clone = this.cloneNode(true);
+                                                hljs.highlightElement(clone);
+                                                $(this).empty().append($(clone).contents());
+                                                $(this).attr("class", $(clone).attr("class"));
+                                        }
+                                });
+                        });
+  //]]>
+  </script>
+  <style type="text/css">
+  /*<![CDATA[*/
+            div.skipnav {
+            }
+            div.skipnav a {
+                position: fixed;
+                left: -10000px;
+                top: 1.5em;
+                width: 1px;
+                height: 1px;
+                overflow: hidden;
+            }
+            div.skipnav a:focus, div.skipnav a:active, div.skipnav a:hover {
+                background: white;
+                color: black;
+                box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.5);
+                position: fixed;
+                left: 2em;
+                top: 1.5em;
+                width: auto;
+                height: auto;
+                overflow: visible;
+                text-decoration: underline;
+                z-index: 99999; /* has to be higher than the side panel */
+    }
+  /*]]>*/
+  </style>
+</head>
+<body data-link-prefix="">
+  <div class="skipnav">
+    <a href="#content-wrapper">Skip to main content</a>
+  </div>
+  <div id="page" class="clearfix">
+    <div id="header">
+      <div class="container">
+        <div id="logotype-container" class="pull-left">
+          <a href="../index.html"><img id="logotype-pageheader" src="../css/image/corporate-logo.png" alt="Corporate logotype" data-role="logotype" /></a>
+        </div>
+        <div id="pagetools-container" class="pull-right">
+          <ul id="page-tools">
+            <li class="page-tools-search"><input placeholder="Search" type="text" class="form-control" aria-label="Search" id="search" /></li>
+            <li class="page-tools-print">
+              <a href="javascript:window.print();"><span class="tool-label">Print</span><span class="glyphicon glyphicon-print"></span></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <h1 id="publication-title">CAM</h1>
+    <div id="subheader-sticky-wrapper" class="sticky-wrapper">
+      <div id="subheader">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3 toc-title">
+              <h2><a class="prev nav-icon hidden-lg hidden-md" href="UUID-3ee2ede7-d447-a54b-4a48-bb0c7caa7011.html#UUID-3ee2ede7-d447-a54b-4a48-bb0c7caa7011_UUID-8ba8db91-5ecc-8294-1edd-9f420e4ddaaa"><span class="glyphicon glyphicon-chevron-left"></span></a> <a href="#toc" class="hidden mobile-nav-toggle"><span class=
+              "glyphicon glyphicon-list"></span>Table of Contents</a><span class="toc-label">Table of Contents</span><a class="next nav-icon hidden-lg hidden-md" href="UUID-876dc8e5-6bd3-4a1a-c07c-7fc4a9aa5be4.html#id95190"><span class="glyphicon glyphicon-chevron-right"></span></a></h2>
+            </div>
+            <div class="col-md-9 breadcrumb-container">
+              <ul class="breadcrumb">
+                <li class="breadcrumb-link">
+                  <span class="glyphicon glyphicon-home"></span>&nbsp;<a href="index-en-US.html">CAM</a>
+                </li>
+                <li class="breadcrumb-link">
+                  <a href="UUID-8c123174-82e7-0c9b-1966-9af033907055.html">Turning</a>
+                </li>
+                <li class="breadcrumb-link">
+                  <a href="UUID-f4eeafb4-088e-3e6c-75bf-9b48c11485c8.html">Roughing</a>
+                </li>
+                <li class="breadcrumb-node">High Performance</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="main-content">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 toc-container" id="toc-wrapper">
+            <div id="toc-placeholder">
+              <div id="toc-standalone-placeholder"></div>
+            </div>
+          </div>
+          <div class="col-md-9 content-container" id="content-wrapper">
+            <a accesskey="p" class="prev pull-left prev visible-lg visible-md" id="header-navigation-prev" href="UUID-3ee2ede7-d447-a54b-4a48-bb0c7caa7011.html#UUID-3ee2ede7-d447-a54b-4a48-bb0c7caa7011_UUID-8ba8db91-5ecc-8294-1edd-9f420e4ddaaa"><span class="glyphicon glyphicon-circle-arrow-left"></span>Prev</a><a accesskey="n" class=
+            "pull-right next visible-lg visible-md" id="header-navigation-next" href="UUID-876dc8e5-6bd3-4a1a-c07c-7fc4a9aa5be4.html#id95190">Next<span class="glyphicon glyphicon-circle-arrow-right"></span></a>
+            <div id="topic-content">
+              <section xml:lang="en-US" lang="en-US" dir="ltr" class="section" data-origin-id="UUID-27bb25f6-b188-eb84-68ed-e235c8224513" data-publication-date="" id="UUID-876dc8e5-6bd3-4a1a-c07c-7fc4a9aa5be4">
+                <div class="titlepage">
+                  <div>
+                    <div class="title">
+                      <h1 class="title" style="clear: both"><span class="formal-title">High Performance</span></h1>
+                    </div>
+                  </div>
+                </div>
+                <section dir="ltr" class="section" data-origin-id="" data-publication-date="" id="id95190">
+                  <div class="titlepage">
+                    <div>
+                      <div class="title">
+                        <h2 class="title" style="clear: both"><span class="formal-title">High Performance Roughing</span></h2>
+                      </div>
+                    </div>
+                  </div>
+                  <p>Use if material that is difficult to cut is to be machined or a reliable chip break cannot be achieved with conventional strategies.</p>
+                  <p><span class="phrase"><span class="application">MAXX Machining</span></span> for turning jobs is characterized by:</p>
+                  <div class="itemizedlist">
+                    <ul class="itemizedlist" style="list-style-type: disc;">
+                      <li class="listitem">
+                        <p>High degree of process reliability and material removal plus a high level of quality at the same time.</p>
+                      </li>
+                      <li class="listitem">
+                        <p>Constant, low load on the tool and machine during the entire machining.</p>
+                      </li>
+                      <li class="listitem">
+                        <p>Support for round inserts.</p>
+                      </li>
+                      <li class="listitem">
+                        <p>Feedrate for fast positioning movements.</p>
+                      </li>
+                    </ul>
+                  </div>
+                  <p><span class="guilabel">High Performance Mode</span>: To use the function, select the <span class="guilabel">High Performance Mode</span> checkbox.</p>
+                  <div class="mediaobject">
+                    <table class="image-viewport" style="border-collapse:collapse;border:0; width:461px;">
+                      <tr>
+                        <td style="padding:0;"><img src="image/uuid-1430f12b-e94d-a76c-e9db-c37162548d49.svg" style="max-width: 461px;" alt="drehen_schruppen_MAXX_Machining_ueberblick.svg" /></td>
+                      </tr>
+                    </table>
+                  </div>
+                </section>
+                <section dir="ltr" class="section" data-origin-id="" data-publication-date="" id="id95211">
+                  <div class="titlepage">
+                    <div>
+                      <div class="title">
+                        <h2 class="title" style="clear: both"><span class="formal-title">Strategy</span></h2>
+                      </div>
+                    </div>
+                  </div>
+                  <p><span class="guilabel">Linear</span>: (1), (2) Material is removed parallel to the turning axis in accordance with the specified <span class="guilabel">Infeed direction</span> (see <span class="guilabel">Strategy</span> dialog page).</p>
+                  <p><span class="guilabel">Ramping</span>: (3), (4) Ramp-shaped material removal. Here, a ramp-shaped first cut is always made on a plane and the remaining material is cleared on the same plane in a second cut parallel to the turning axis.</p>
+                  <p><span class="guilabel">Zigzag</span>: (2), (4) Machining with alternating cutting mode.</p>
+                  <div class="informalfigure" id="UUID-876dc8e5-6bd3-4a1a-c07c-7fc4a9aa5be4_figure-idm46047075660336">
+                    <div class="mediaobject">
+                      <table class="image-viewport" style="border-collapse:collapse;border:0; width:638px;">
+                        <tr>
+                          <td style="padding:0;"><img src="image/uuid-51af9657-ba26-fa1b-b61f-65378eff2ac7.svg" style="max-width: 638px;" alt="drehen_schruppen_MAXX_Machining_schnittstrategie.svg" /></td>
+                        </tr>
+                      </table>
+                    </div>
+                  </div>
+                  <p id="UUID-876dc8e5-6bd3-4a1a-c07c-7fc4a9aa5be4_para-idm53095095714494"><span class="guilabel">Machining angle</span>: If this option is activated, the material is not removed parallel to the turning axis but at the defined machining angle. Available for the <span class="guilabel">Linear</span> and <span class="guilabel">Ramp
+                  strategy</span> options. (1) option activated, (2) option not activated.</p>
+                  <div class="mediaobject" id="UUID-876dc8e5-6bd3-4a1a-c07c-7fc4a9aa5be4_mediaobject-idm53095094302248">
+                    <table class="image-viewport" style="border-collapse:collapse;border:0; width:461px;">
+                      <tr>
+                        <td style="padding:0;"><img src="image/uuid-b48f73de-28a3-781b-057d-dfeaf7f34a4b.svg" style="max-width: 461px;" alt="drehen_schruppen_MAXX_Machining_bearbeitungswinkel.svg" /></td>
+                      </tr>
+                    </table>
+                  </div>
+                </section>
+                <section dir="ltr" class="section" data-origin-id="" data-publication-date="" id="id95232">
+                  <div class="titlepage">
+                    <div>
+                      <div class="title">
+                        <h2 class="title" style="clear: both"><span class="formal-title">Infeed</span></h2>
+                      </div>
+                    </div>
+                  </div>
+                  <p><span xml:lang="de" lang="de" dir="ltr" class="guilabel">Infeed</span>: Depth of the material removal.</p>
+                  <p><span xml:lang="de" lang="de" dir="ltr" class="guilabel">Infeed factor</span>: Area of the insert that is engaged in the material removal during machining.</p>
+                  <div dir="ltr" class="note notice">
+                    <h3 class="title">Note</h3>
+                    <p>If the infeed is specified, the infeed factor is calculated automatically via the corner radius. If the infeed factor is specified, the infeed is calculated automatically via the corner radius.</p>
+                    <p><span class="guilabel">Corner radius</span> * <span class="guilabel">Infeed factor</span> = <span class="guilabel">Infeed</span>.</p>
+                    <p><span class="bold"><strong>Example</strong></span>: corner radius = 5 mm, infeed factor = 0.2, infeed = 1.</p>
+                  </div>
+                  <p>(1) Infeed factor = 1.0, (2) Infeed factor = 0.3.</p>
+                  <div class="mediaobject">
+                    <table class="image-viewport" style="border-collapse:collapse;border:0; width:461px;">
+                      <tr>
+                        <td style="padding:0;"><img src="image/uuid-4e89bebf-635f-f87b-c01c-deb1228b6c77.svg" style="max-width: 461px;" alt="drehen_schruppen_MAXX_Machining_zustellung.svg" /></td>
+                      </tr>
+                    </table>
+                  </div>
+                  <p><span xml:lang="de" lang="de" dir="ltr" class="guilabel">Fillet radius</span>: Additional toolpath filleting in the corners. Default: corner radius * 0.1.</p>
+                </section>
+                <section dir="ltr" class="section" data-origin-id="" data-publication-date="" id="id95252">
+                  <div class="titlepage">
+                    <div>
+                      <div class="title">
+                        <h2 class="title" style="clear: both"><span class="formal-title">Feedrate</span></h2>
+                      </div>
+                    </div>
+                  </div>
+                  <p><span class="guilabel">Feedrate reposition</span>: Feedrate for the repositioning between the infeed planes.</p>
+                  <p>Unit: mm or inch/revolution of the workpiece.</p>
+                </section>
+                <section dir="ltr" class="section" data-origin-id="" data-publication-date="" id="UUID-876dc8e5-6bd3-4a1a-c07c-7fc4a9aa5be4_section-5c598a9e76ffa-idm45266699466000">
+                  <div class="titlepage">
+                    <div>
+                      <div class="title">
+                        <h2 class="title" style="clear: both"><span class="formal-title">Tool life control</span></h2>
+                      </div>
+                    </div>
+                  </div>
+                  <p>Activate the function if the material to be machined requires the time the tool is engaged to be controlled. Use the <span class="guilabel">Distance</span> option and the <span class="guilabel">Max. Distance</span> parameter to define the maximum permissible length of the toolpath for which the tool is engaged. Select the
+                  <span class="guilabel">Time</span> option in order to define the maximum permissible time for which the tool should be engaged using the <span class="guilabel">Max. time</span> parameter. <span class="guilabel">Number of paths</span> limits the time the tool is engaged with the <span class="guilabel">Max. number of paths</span>
+                  parameter. When the defined condition has been achieved, the machining ends and the tool retracts to the clearance plane.</p>
+                </section>
+                <section dir="ltr" class="section" data-origin-id="" data-publication-date="" id="UUID-876dc8e5-6bd3-4a1a-c07c-7fc4a9aa5be4_section-idm4647015789184033966107307445">
+                  <div class="titlepage">
+                    <div>
+                      <div class="title">
+                        <h2 class="title" style="clear: both"><span class="formal-title">Chip thickness control</span></h2>
+                      </div>
+                    </div>
+                  </div>
+                  <p>The <span class="guilabel">Chip thickness control</span> function ensures that the chip thickness remains as constant as possible during machining, thus guaranteeing reliable chip breaking during lead in and retraction and at shallow cutting depths.</p>
+                  <p>Use the two parameters <span class="guilabel">Min. feedrate</span> and <span class="guilabel">Max. feedrate</span> to define the range for adjusting the feedrate. The target chip thickness is calculated from the feedrate of the tool (see cutting profile of the tool).</p>
+                  <p>1) <span class="guilabel">Chip thickness control</span> is activated, (2) <span class="guilabel">Chip thickness control</span> is not activated.</p>
+                  <p>Feedrate analysis with the function <span class="guimenu">CAM</span> → <span class="guisubmenu">Analysis toolpath</span> → <span class="guisubmenu">Feedrates by color map</span>.</p>
+                  <div class="mediaobject"><img src="image/uuid-f5c439a2-cb2d-f5b4-0eba-63dfd0e9d509.svg" style="" alt="drehen_schruppen_spandicken_kontrolle.svg" /></div>
+                </section>
+              </section>
+              <div class="footer-content">
+                <div class="section-toc section-toc-after">
+                  <div class="section-toc-title">
+                    <span class="section-toc-title-delimiter">:</span>
+                  </div>
+                </div>
+              </div>
+              <footer></footer>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

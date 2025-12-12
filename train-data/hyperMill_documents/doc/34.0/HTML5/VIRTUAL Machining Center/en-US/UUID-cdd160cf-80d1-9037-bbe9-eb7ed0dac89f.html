@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="x-ua-compatible" content="IE=edge" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="search" content="default" />
+  <meta name="use.ic" content="no" />
+  <meta name="tocstandalone" content="yes" />
+  <script type="text/javascript">
+  //<![CDATA[
+                        var index;
+                        var contentLanguage = 'en-US';
+                        var enterKey = 'select';
+                        
+                                        var anchoroption = true;
+                                var instantsearch_minlength = 1;
+                                                
+                                var fuse_threshold = 0.3;
+                        
+                                        var local_csh = false;
+                                
+                        var useanchorlinks = false;
+  //]]>
+  </script>
+  <title>5.4.&nbsp;Collision check and material removal</title>
+  <link rel="stylesheet" type="text/css" href="../css/docbook.css" />
+  <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" href="../css/bootstrap-theme.min.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style-common.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style-responsive.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style-print.css" />
+  <link rel="stylesheet" type="text/css" href="../css/font-awesome.css" />
+  <link rel="stylesheet" type="text/css" href="../css/custom.css" />
+  <link rel="stylesheet" type="text/css" href="../css/layout-custom-style.css" />
+  <script src="../js/jquery-1.10.2.min.js" type="text/javascript"></script>
+  <script src="../js/jquery-ui-1.10.3.custom.min.js" type="text/javascript"></script>
+  <script src="../js/bootstrap.min.js" type="text/javascript"></script>
+  <script src="../js/purl.js" type="text/javascript"></script>
+  <script src="../js/jquery.event.move.js" type="text/javascript"></script>
+  <script src="../js/jquery.event.swipe.js" type="text/javascript"></script>
+  <script src="../js/jquery.sticky.js" type="text/javascript"></script>
+  <script src="../js/respond.min.js" type="text/javascript"></script>
+  <script src="../js/script.js" type="text/javascript"></script>
+  <script src="js/toc.js" type="text/javascript"></script>
+  <script src="../js/create-toc.js" type="text/javascript"></script>
+  <script src="../js/clipboard.min.js" type="text/javascript"></script>
+  <script src="../js/fuse.min.js" type="text/javascript"></script>
+  <script src="../js/jquery.mark.min.js" type="text/javascript"></script>
+  <script src="../js/html5.fuse.search.js" type="text/javascript"></script>
+  <script src="js/fuzzydata.js" type="text/javascript"></script>
+  <script src="../js/csh.js" type="text/javascript"></script>
+  <script src="../js/highlight-mergehtml-plugin.js" type="text/javascript"></script>
+  <meta name="generator" content="Paligo" />
+  <link rel="prev" href="UUID-9389ef81-983b-9551-417c-7f3310a0f947.html#UUID-9389ef81-983b-9551-417c-7f3310a0f947_UUID-072b27c8-accf-8e14-709a-c9ab90d59047" title="Keyboard shortcuts" />
+  <link rel="next" href="UUID-a3e8dfa9-f179-e93e-c7dd-b5a968d67dd9.html" title="Collision check options" />
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML" async="async"></script>
+  <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+  <script type="text/javascript" src="../js/cookie-consent.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  <script type="text/javascript">
+  //<![CDATA[
+                        $(document).on('ready ajaxComplete', function() {
+                                
+                                hljs.addPlugin(mergeHTMLPlugin);
+                                hljs.configure({'ignoreUnescapedHTML': true});
+                                
+                                $('pre:not(.embedcode)').each(function() {
+                                        /**
+                                         * @type {string}
+                                         */
+                                        var language = $(this).data('language');
+
+                                        if (language === 'plaintext' || language === 'text') {
+                                                $(this).addClass(language).addClass('hljs');
+                                                return true;
+                                        }
+                                        else {
+                                                var clone = this.cloneNode(true);
+                                                hljs.highlightElement(clone);
+                                                $(this).empty().append($(clone).contents());
+                                                $(this).attr("class", $(clone).attr("class"));
+                                        }
+                                });
+                        });
+  //]]>
+  </script>
+  <style type="text/css">
+  /*<![CDATA[*/
+            div.skipnav {
+            }
+            div.skipnav a {
+                position: fixed;
+                left: -10000px;
+                top: 1.5em;
+                width: 1px;
+                height: 1px;
+                overflow: hidden;
+            }
+            div.skipnav a:focus, div.skipnav a:active, div.skipnav a:hover {
+                background: white;
+                color: black;
+                box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.5);
+                position: fixed;
+                left: 2em;
+                top: 1.5em;
+                width: auto;
+                height: auto;
+                overflow: visible;
+                text-decoration: underline;
+                z-index: 99999; /* has to be higher than the side panel */
+    }
+  /*]]>*/
+  </style>
+</head>
+<body data-link-prefix="">
+  <div class="skipnav">
+    <a href="#content-wrapper">Skip to main content</a>
+  </div>
+  <div id="page" class="clearfix">
+    <div id="header">
+      <div class="container">
+        <div id="logotype-container" class="pull-left">
+          <a href="../index.html"><img id="logotype-pageheader" src="../css/image/corporate-logo.png" alt="Corporate logotype" data-role="logotype" /></a>
+        </div>
+        <div id="pagetools-container" class="pull-right">
+          <ul id="page-tools">
+            <li class="page-tools-search"><input placeholder="Search" type="text" class="form-control" aria-label="Search" id="search" /></li>
+            <li class="page-tools-print">
+              <a href="javascript:window.print();"><span class="tool-label">Print</span><span class="glyphicon glyphicon-print"></span></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <h1 id="publication-title"><span xml:lang="de" lang="de" dir="ltr" class="phrase"><span class="application">VIRTUAL Machining Center</span></span></h1>
+    <div id="subheader-sticky-wrapper" class="sticky-wrapper">
+      <div id="subheader">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3 toc-title">
+              <h2><a class="prev nav-icon hidden-lg hidden-md" href="UUID-9389ef81-983b-9551-417c-7f3310a0f947.html#UUID-9389ef81-983b-9551-417c-7f3310a0f947_UUID-072b27c8-accf-8e14-709a-c9ab90d59047"><span class="glyphicon glyphicon-chevron-left"></span></a> <a href="#toc" class="hidden mobile-nav-toggle"><span class=
+              "glyphicon glyphicon-list"></span>Table of Contents</a><span class="toc-label">Table of Contents</span><a class="next nav-icon hidden-lg hidden-md" href="UUID-a3e8dfa9-f179-e93e-c7dd-b5a968d67dd9.html"><span class="glyphicon glyphicon-chevron-right"></span></a></h2>
+            </div>
+            <div class="col-md-9 breadcrumb-container">
+              <ul class="breadcrumb">
+                <li class="breadcrumb-link">
+                  <span class="glyphicon glyphicon-home"></span>&nbsp;<a href="index-en-US.html"><span xml:lang="de" lang="de" dir="ltr" class="phrase"><span class="application">VIRTUAL Machining Center</span></span></a>
+                </li>
+                <li class="breadcrumb-link">
+                  <a href="UUID-bceb38e7-6115-818d-662d-36fc55903bbc.html">Program run (simulation)</a>
+                </li>
+                <li class="breadcrumb-node">Collision check and material removal</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="main-content">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 toc-container" id="toc-wrapper">
+            <div id="toc-placeholder">
+              <div id="toc-standalone-placeholder"></div>
+            </div>
+          </div>
+          <div class="col-md-9 content-container" id="content-wrapper">
+            <a accesskey="p" class="prev pull-left prev visible-lg visible-md" id="header-navigation-prev" href="UUID-9389ef81-983b-9551-417c-7f3310a0f947.html#UUID-9389ef81-983b-9551-417c-7f3310a0f947_UUID-072b27c8-accf-8e14-709a-c9ab90d59047"><span class="glyphicon glyphicon-circle-arrow-left"></span>Prev</a><a accesskey="n" class=
+            "pull-right next visible-lg visible-md" id="header-navigation-next" href="UUID-a3e8dfa9-f179-e93e-c7dd-b5a968d67dd9.html">Next<span class="glyphicon glyphicon-circle-arrow-right"></span></a>
+            <div id="topic-content">
+              <section xml:lang="en-US" lang="en-US" dir="ltr" class="section" data-origin-id="UUID-74d2fe16-2e18-d5cc-e7b0-8dfd52ecf4a8" data-publication-date="" id="UUID-cdd160cf-80d1-9037-bbe9-eb7ed0dac89f">
+                <div class="titlepage">
+                  <div>
+                    <div class="title">
+                      <h1 class="title" style="clear: both"><span class="formal-number">5.4</span><span class="formal-label-delimiter">.</span> <span class="formal-title">Collision check and material removal</span></h1>
+                    </div>
+                  </div>
+                </div>
+                <p></p>
+                <div class="informaltable table-responsive">
+                  <table class="informaltable sorted-desc-type-text-col-1">
+                    <colgroup>
+                      <col style="width:10%;" />
+                      <col style="width:90%;" />
+                    </colgroup>
+                    <tbody>
+                      <tr>
+                        <td valign="top" class="td align-top">
+                          <div class="mediaobject"><img src="image/uuid-3121599d-7666-9647-9473-7f49df041ba2.svg" style="" alt="scandirection.svg" /></div>
+                        </td>
+                        <td valign="top" class="td align-top">
+                          <p>Change the search direction of the quick navigation for finding warnings, collisions or breakpoints:</p>
+                          <p>Forward <span class="inlinemediaobject"><img src="image/uuid-d3472d24-15bf-6200-8d62-f37eed6cb967.svg" alt="Nr_01.svg" /></span>, Backward <span class="inlinemediaobject"><img src="image/uuid-fa232d44-ccb2-2f50-a1d9-253c460bb62c.svg" alt="Nr_02.svg" /></span>.</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="td">
+                          <div class="mediaobject"><img src="image/uuid-ead8514a-9d28-2cce-7659-628ac2f5c7b8.svg" style="" alt="warning1.svg" /></div>
+                        </td>
+                        <td valign="top" class="td align-top">
+                          <p>Move the machine to the next warning. The button turns yellow if a warning (for example, violation of the axis limit) has occurred.</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td valign="top" class="td align-top">
+                          <div class="mediaobject"><img src="image/uuid-2e4364b5-906c-12c6-1633-445c981042d8.svg" style="" alt="warning2.svg" /></div>
+                        </td>
+                        <td valign="top" class="td align-top">
+                          <p>Move the machine to the next warning or next error. The button turns red if an error or an error and a warning have occurred.</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td valign="top" class="td align-top">
+                          <div class="mediaobject"><img src="image/uuid-e67dd0db-57e5-46e9-42b6-20426730bb46.svg" style="" alt="collision1.svg" /></div>
+                        </td>
+                        <td valign="top" class="td align-top">
+                          <p>Move the machine to the next collision area. The button turns yellow after the collision check has been carried out if a contact has been detected.</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td valign="top" class="td align-top">
+                          <div class="mediaobject"><img src="image/uuid-cabd18af-f126-c35e-d14d-5c4c03d1de95.svg" style="" alt="collision2.svg" /></div>
+                        </td>
+                        <td valign="top" class="td align-top">
+                          <p>Move the machine to the next collision area. The button turns red after the collision check has been carried out on detecting the following:</p>
+                          <div class="itemizedlist">
+                            <ul class="itemizedlist" style="list-style-type: disc;">
+                              <li class="listitem">
+                                <p>A collision or a component violation</p>
+                              </li>
+                              <li class="listitem">
+                                <p>A collision and a component violation</p>
+                              </li>
+                              <li class="listitem">
+                                <p>A collision and a contact</p>
+                              </li>
+                              <li class="listitem">
+                                <p>A component violation and a contact</p>
+                              </li>
+                              <li class="listitem">
+                                <p>A collision, a component violation, and a contact</p>
+                              </li>
+                            </ul>
+                          </div>
+                          <p>.</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td valign="top" class="td align-top">
+                          <div class="mediaobject"><img src="image/uuid-31bb865f-e9ae-efb6-9ea2-2919180acf74.svg" style="" alt="breakscan.svg" /></div>
+                        </td>
+                        <td valign="top" class="td align-top">
+                          <p>Move the machine to the next breakpoint.</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td valign="top" class="td align-top">
+                          <div class="mediaobject"><img src="image/uuid-8e1a0259-2355-3c92-bdcc-82d5301a894d.svg" style="" alt="collisioncheck.svg" /></div>
+                        </td>
+                        <td valign="top" class="td align-top">
+                          <p>Start the collision check. Analyze the loaded program for possible collisions. If a collision or part violation is detected, the collision area is highlighted (red) in the program file. The NC file is not approved.</p>
+                          <div dir="ltr" class="note">
+                            <h3 class="title">Note</h3>
+                            <p>A collision check can be performed in the <span class="guilabel">Project administration</span> and <span class="guilabel">Program run (simulation)</span> operating modes. In the <span class="guilabel">Project administration</span> operating mode, all loaded main programs (NC list) are checked in chronological order,
+                            while in the <span class="guilabel">Program run (simulation)</span> operating mode, only the loaded main program is checked. After starting the <span class="phrase"><span class="application">VIRTUAL Machining Center</span></span>, the first main program is loaded automatically.</p>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="td">
+                          <div class="mediaobject"><img src="image/uuid-59785ddc-dd33-3a74-5b3f-15ed969fefff.svg" style="" alt="collisioncheckoptions.svg" /></div>
+                        </td>
+                        <td class="td">
+                          <p><span class="guilabel">Collision check options</span>. Specify which components are checked during the collision check.</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="td">
+                          <div class="mediaobject"><img src="image/uuid-4a68e3e7-9e2e-b005-140d-0b5197bca127.svg" style="" alt="removal.svg" /></div>
+                        </td>
+                        <td class="td">
+                          <p>Simulate the removal of material in the program run.</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td valign="top" class="td align-top">
+                          <div class="mediaobject"><img src="image/uuid-fcacd005-7e23-5679-1ea6-77216d6a2e80.svg" style="" alt="nc_coll_check.svg" /></div>
+                        </td>
+                        <td valign="top" class="td align-top">
+                          <p>A collision check must be carried out before a decision can be made about whether or not to approve an NC file.</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td valign="top" class="td align-top">
+                          <div class="mediaobject"><img src="image/uuid-8d27b57b-ab8f-0982-1930-9a6e9c7e64fa.svg" style="" alt="nc_errors.svg" /></div>
+                        </td>
+                        <td valign="top" class="td align-top">
+                          <p>Collisions occurred during the simulation. The NC file cannot be approved. For an NC file to be approved, a simulation must have been carried out without errors while the collision check is enabled.</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="td">
+                          <div class="mediaobject"><img src="image/uuid-ecac061b-9757-476a-0b58-6d59de9aae6b.svg" style="" alt="nc_contact.svg" /></div>
+                        </td>
+                        <td class="td">
+                          <p>Contacts or violations of the machine limits occurred during the simulation. To approve the file on the <span class="guilabel">Contacts</span> / <span class="guilabel">Warnings</span> tab, use the shortcut menu of the message (<span class="guilabel">Allow release of programs with contacts</span>). The NC file can now
+                          be approved.</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td valign="top" class="td align-top">
+                          <div class="mediaobject"><img src="image/uuid-40d68f9d-7b93-4ec1-40fe-6afa9bc9bac5.svg" style="" alt="nc_not_app.svg" /></div>
+                        </td>
+                        <td valign="top" class="td align-top">
+                          <p>No collisions occurred during the simulation. The NC file can be approved.</p>
+                          <p>Click the button to save the NC file in the defined folder.</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="td">
+                          <div class="mediaobject"><img src="image/uuid-d793271e-c69f-a77f-5dc0-e06989f8de09.svg" style="" alt="nc_delivered.svg" /></div>
+                        </td>
+                        <td class="td">
+                          <p>The NC file has been approved and is available in the defined folder.</p>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div dir="ltr" class="note" id="UUID-cdd160cf-80d1-9037-bbe9-eb7ed0dac89f_note-idm53194477091264">
+                  <h3 class="title">Note</h3>
+                  <p>A simulation only takes place up to the safety position of the machine. A <span class="bold"><strong>tool change</strong></span> is not simulated.</p>
+                </div>
+              </section>
+              <div class="footer-content">
+                <div class="section-toc section-toc-after">
+                  <div class="section-toc-title">
+                    <span class="section-toc-title-delimiter">:</span>
+                  </div>
+                </div>
+              </div>
+              <footer></footer>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

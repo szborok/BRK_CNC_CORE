@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="x-ua-compatible" content="IE=edge" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="search" content="default" />
+  <meta name="use.ic" content="no" />
+  <meta name="tocstandalone" content="yes" />
+  <script type="text/javascript">
+  //<![CDATA[
+                        var index;
+                        var contentLanguage = 'en-US';
+                        var enterKey = 'select';
+                        
+                                        var anchoroption = true;
+                                var instantsearch_minlength = 1;
+                                                
+                                var fuse_threshold = 0.3;
+                        
+                                        var local_csh = false;
+                                
+                        var useanchorlinks = false;
+  //]]>
+  </script>
+  <title>Contours</title>
+  <link rel="stylesheet" type="text/css" href="../css/docbook.css" />
+  <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" href="../css/bootstrap-theme.min.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style-common.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style-responsive.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style-print.css" />
+  <link rel="stylesheet" type="text/css" href="../css/font-awesome.css" />
+  <link rel="stylesheet" type="text/css" href="../css/custom.css" />
+  <link rel="stylesheet" type="text/css" href="../css/layout-custom-style.css" />
+  <script src="../js/jquery-1.10.2.min.js" type="text/javascript"></script>
+  <script src="../js/jquery-ui-1.10.3.custom.min.js" type="text/javascript"></script>
+  <script src="../js/bootstrap.min.js" type="text/javascript"></script>
+  <script src="../js/purl.js" type="text/javascript"></script>
+  <script src="../js/jquery.event.move.js" type="text/javascript"></script>
+  <script src="../js/jquery.event.swipe.js" type="text/javascript"></script>
+  <script src="../js/jquery.sticky.js" type="text/javascript"></script>
+  <script src="../js/respond.min.js" type="text/javascript"></script>
+  <script src="../js/script.js" type="text/javascript"></script>
+  <script src="js/toc.js" type="text/javascript"></script>
+  <script src="../js/create-toc.js" type="text/javascript"></script>
+  <script src="../js/clipboard.min.js" type="text/javascript"></script>
+  <script src="../js/fuse.min.js" type="text/javascript"></script>
+  <script src="../js/jquery.mark.min.js" type="text/javascript"></script>
+  <script src="../js/html5.fuse.search.js" type="text/javascript"></script>
+  <script src="js/fuzzydata.js" type="text/javascript"></script>
+  <script src="../js/csh.js" type="text/javascript"></script>
+  <script src="../js/highlight-mergehtml-plugin.js" type="text/javascript"></script>
+  <meta name="generator" content="Paligo" />
+  <link rel="prev" href="UUID-b8052176-2c93-487d-80a7-04333410d902.html" title="Tool" />
+  <link rel="next" href="UUID-5e816378-adba-5fdb-7c80-0f4332c76b49.html#UUID-5e816378-adba-5fdb-7c80-0f4332c76b49_UUID-0bce64dc-36c1-67c3-21f2-c48e82f78a76" title="Contour selection" />
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js?config=TeX-MML-AM_CHTML" async="async"></script>
+  <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+  <script type="text/javascript" src="../js/cookie-consent.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  <script type="text/javascript">
+  //<![CDATA[
+                        $(document).on('ready ajaxComplete', function() {
+                                
+                                hljs.addPlugin(mergeHTMLPlugin);
+                                hljs.configure({'ignoreUnescapedHTML': true});
+                                
+                                $('pre:not(.embedcode)').each(function() {
+                                        /**
+                                         * @type {string}
+                                         */
+                                        var language = $(this).data('language');
+
+                                        if (language === 'plaintext' || language === 'text') {
+                                                $(this).addClass(language).addClass('hljs');
+                                                return true;
+                                        }
+                                        else {
+                                                var clone = this.cloneNode(true);
+                                                hljs.highlightElement(clone);
+                                                $(this).empty().append($(clone).contents());
+                                                $(this).attr("class", $(clone).attr("class"));
+                                        }
+                                });
+                        });
+  //]]>
+  </script>
+  <style type="text/css">
+  /*<![CDATA[*/
+            div.skipnav {
+            }
+            div.skipnav a {
+                position: fixed;
+                left: -10000px;
+                top: 1.5em;
+                width: 1px;
+                height: 1px;
+                overflow: hidden;
+            }
+            div.skipnav a:focus, div.skipnav a:active, div.skipnav a:hover {
+                background: white;
+                color: black;
+                box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.5);
+                position: fixed;
+                left: 2em;
+                top: 1.5em;
+                width: auto;
+                height: auto;
+                overflow: visible;
+                text-decoration: underline;
+                z-index: 99999; /* has to be higher than the side panel */
+    }
+  /*]]>*/
+  </style>
+</head>
+<body data-link-prefix="">
+  <div class="skipnav">
+    <a href="#content-wrapper">Skip to main content</a>
+  </div>
+  <div id="page" class="clearfix">
+    <div id="header">
+      <div class="container">
+        <div id="logotype-container" class="pull-left">
+          <a href="../index.html"><img id="logotype-pageheader" src="../css/image/corporate-logo.png" alt="Corporate logotype" data-role="logotype" /></a>
+        </div>
+        <div id="pagetools-container" class="pull-right">
+          <ul id="page-tools">
+            <li class="page-tools-search"><input placeholder="Search" type="text" class="form-control" aria-label="Search" id="search" /></li>
+            <li class="page-tools-print">
+              <a href="javascript:window.print();"><span class="tool-label">Print</span><span class="glyphicon glyphicon-print"></span></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <h1 id="publication-title">CAM</h1>
+    <div id="subheader-sticky-wrapper" class="sticky-wrapper">
+      <div id="subheader">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3 toc-title">
+              <h2><a class="prev nav-icon hidden-lg hidden-md" href="UUID-b8052176-2c93-487d-80a7-04333410d902.html"><span class="glyphicon glyphicon-chevron-left"></span></a> <a href="#toc" class="hidden mobile-nav-toggle"><span class="glyphicon glyphicon-list"></span>Table of Contents</a><span class="toc-label">Table of Contents</span><a class=
+              "next nav-icon hidden-lg hidden-md" href="UUID-5e816378-adba-5fdb-7c80-0f4332c76b49.html#UUID-5e816378-adba-5fdb-7c80-0f4332c76b49_UUID-0bce64dc-36c1-67c3-21f2-c48e82f78a76"><span class="glyphicon glyphicon-chevron-right"></span></a></h2>
+            </div>
+            <div class="col-md-9 breadcrumb-container">
+              <ul class="breadcrumb">
+                <li class="breadcrumb-link">
+                  <span class="glyphicon glyphicon-home"></span>&nbsp;<a href="index-en-US.html">CAM</a>
+                </li>
+                <li class="breadcrumb-link">
+                  <a href="UUID-afd1a7c2-b2fe-2ba0-9ef0-962197581f36.html">2D Machining</a>
+                </li>
+                <li class="breadcrumb-link">
+                  <a href="UUID-4a20930a-2be4-72a4-f585-975a410c533f.html">Chamfer Milling on 3D Model</a>
+                </li>
+                <li class="breadcrumb-node">Contours</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="main-content">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 toc-container" id="toc-wrapper">
+            <div id="toc-placeholder">
+              <div id="toc-standalone-placeholder"></div>
+            </div>
+          </div>
+          <div class="col-md-9 content-container" id="content-wrapper">
+            <a accesskey="p" class="prev pull-left prev visible-lg visible-md" id="header-navigation-prev" href="UUID-b8052176-2c93-487d-80a7-04333410d902.html"><span class="glyphicon glyphicon-circle-arrow-left"></span>Prev</a><a accesskey="n" class="pull-right next visible-lg visible-md" id="header-navigation-next" href=
+            "UUID-5e816378-adba-5fdb-7c80-0f4332c76b49.html#UUID-5e816378-adba-5fdb-7c80-0f4332c76b49_UUID-0bce64dc-36c1-67c3-21f2-c48e82f78a76">Next<span class="glyphicon glyphicon-circle-arrow-right"></span></a>
+            <div id="topic-content">
+              <section xml:lang="en-US" lang="en-US" dir="ltr" class="section" data-origin-id="UUID-41946b4f-3461-92ec-9a45-3c402ce37492" data-publication-date="" id="UUID-5e816378-adba-5fdb-7c80-0f4332c76b49">
+                <div class="titlepage">
+                  <div>
+                    <div class="title">
+                      <h1 class="title" style="clear: both"><span class="formal-title">Contours</span></h1>
+                    </div>
+                  </div>
+                </div>
+                <p>Define machining contours, the vertical machining area and cycle-specific contour parameters.</p>
+                <section xml:lang="en-US" lang="en-US" dir="ltr" class="section internal" data-origin-id="" data-publication-date="" id="UUID-5e816378-adba-5fdb-7c80-0f4332c76b49_UUID-0bce64dc-36c1-67c3-21f2-c48e82f78a76">
+                  <div class="titlepage">
+                    <div>
+                      <div class="title">
+                        <h2 class="title" style="clear: both"><span class="formal-title">Contour selection</span></h2>
+                      </div>
+                    </div>
+                  </div>
+                  <p>The following can be selected as 2D machining contours: points (drilling only), arcs, circles, reference lines, curves and edge curves of surfaces. Several contours or holes can be machined in one job. The number of selected contours is displayed.</p>
+                </section>
+                <section xml:lang="en-US" lang="en-US" dir="ltr" class="section internal" data-origin-id="" data-publication-date="" id="UUID-5e816378-adba-5fdb-7c80-0f4332c76b49_UUID-b8024e76-0c7c-d453-2a3c-2d3ee6ae28fe">
+                  <div class="titlepage">
+                    <div>
+                      <div class="title">
+                        <h2 class="title" style="clear: both"><span class="formal-title">Contour attributes</span></h2>
+                      </div>
+                    </div>
+                  </div>
+                  <p>To define contour attributes (top, bottom), select the machining contour in the contour list. By making multiple selections in this contour list, you can quickly define the same top and bottom values for several contours.</p>
+                  <p>Use the following buttons to change the order of selected contours or delete a contour. (1) To the top, (2) Up, (3) Delete, (4) Down, (5) To the bottom.</p>
+                  <div class="mediaobject" id="UUID-5e816378-adba-5fdb-7c80-0f4332c76b49_mediaobject-idm53072641173928">
+                    <table class="image-viewport" style="border-collapse:collapse;border:0; width:105px;">
+                      <tr>
+                        <td style="padding:0;"><img src="image/uuid-f4b67702-3142-ce06-d596-71e64ed51ee1.PNG" style="max-width: 105px;" alt="transform_target_ref.PNG" /></td>
+                      </tr>
+                    </table>
+                  </div>
+                </section>
+                <div xml:lang="en-US" lang="en-US" dir="ltr" class="sidebar" id="UUID-5e816378-adba-5fdb-7c80-0f4332c76b49_UUID-b1501a14-e3ba-3980-7ce7-908e87a06281">
+                  <h5 id="id111197" class="bridgehead">Visualization</h5>
+                  <p>Selected contours (2) are shown in the model at the Z level of the defined top (1) and bottom (3). Depending on the current cycle, the contour directions may also be shown. The contour list on the dialog page shows further parameters such as Start, End and Plunge.</p>
+                  <p>Top and bottom contours of selected 3D contours are projected into the corresponding planes from the point of view of the current frame (4). Please observe:</p>
+                  <div class="itemizedlist">
+                    <ul class="itemizedlist" style="list-style-type: disc;">
+                      <li class="listitem">
+                        <p>Relative = 0: Upper edge of the selected geometry (5).</p>
+                      </li>
+                      <li class="listitem">
+                        <p>Thickness = 0: Bottom edge of the selected geometry (6).</p>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="informalfigure">
+                    <div class="mediaobject">
+                      <table class="image-viewport" style="border-collapse:collapse;border:0; width:638px;">
+                        <tr>
+                          <td style="padding:0;"><img src="image/uuid-1e63ee1d-4745-eab2-03bf-80ce266ffa4e.svg" style="max-width: 638px;" alt="2D_bearbeitung_konturen.svg" /></td>
+                        </tr>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+                <div xml:lang="en-US" lang="en-US" dir="ltr" class="sidebar" id="UUID-5e816378-adba-5fdb-7c80-0f4332c76b49_UUID-ec21af4f-8765-babf-d79c-4d0c3f729ea8">
+                  <p><span class="guilabel">Top</span>: Start of machining in Z direction (1).</p>
+                  <p><span class="guilabel">Bottom</span>: End depth of machining in Z direction (2).</p>
+                  <p>Both parameters are relative to the current frame.</p>
+                  <p>It is possible to have various vertical machining areas for the different machining contours in a job. By making multiple selections, the same top and bottom definitions can be applied simultaneously to different contours.</p>
+                  <div class="informalfigure">
+                    <div class="mediaobject">
+                      <table class="image-viewport" style="border-collapse:collapse;border:0; ;">
+                        <tr style="height: 230px">
+                          <td style="padding:0;"><img src="image/uuid-979510a2-9072-e829-a762-dbccc4b30870.svg" style="max-height: 230px;" alt="2D_bearbeitung_start_ende.svg" /></td>
+                        </tr>
+                      </table>
+                    </div>
+                  </div>
+                  <p>Both parameters can be defined as absolute and relative values, and as Thickness. Thus top and bottom definitions can be made with various measurements.</p>
+                  <p><span class="guilabel">Absolute (jobframe)</span> (A): The values you set are relative to the current frame. Use the absolute dimensions when a drawing has no defined Z coordinates (2D drawing). In these cases, define the top (1) as absolute and the bottom as relative or as absolute depending on the dimensions in the drawing
+                  (3). Selected contour (2)</p>
+                  <p>Specifying relative dimensions (B): Relative values are relative to the position of the CAD geometry selected in the model. This way of specifying top (1) and/or bottom (3) should be used for drawings that have Z information (for example, 3D contours, solids, defined thicknesses). Here, (2) stands for Z = 0 as the upper edge
+                  of the geometry.</p>
+                  <p>Working with thickness (C): Thicknesses are relative to the position of the CAD geometry selected in the model. This way of specifying top (1) and/or bottom (2) should be used for drawings that have Z information (for example, 3D contours, solids, defined thicknesses).</p>
+                  <div class="informalfigure">
+                    <div class="mediaobject">
+                      <table class="image-viewport" style="border-collapse:collapse;border:0; width:638px;">
+                        <tr>
+                          <td style="padding:0;"><img src="image/uuid-86870c98-54e0-40a3-e4e3-cd0903f9e5ec.svg" style="max-width: 638px;" alt="2D_bearbeitung_oberfl_tiefe.svg" /></td>
+                        </tr>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+                <section xml:lang="en-US" lang="en-US" dir="ltr" class="section internal" data-origin-id="" data-publication-date="" id="UUID-5e816378-adba-5fdb-7c80-0f4332c76b49_UUID-3bf7ae6d-f7bf-34ef-aeb4-5d22e6e2f5e8">
+                  <div class="titlepage">
+                    <div>
+                      <div class="title">
+                        <h2 class="title" style="clear: both"><span class="formal-title">Examples:</span></h2>
+                      </div>
+                    </div>
+                  </div>
+                  <p><span class="guilabel">UE Contour</span> (1): Machining begins each time at the upper edge of the object and ends at the object's lower edge.</p>
+                  <div class="informaltable table-responsive">
+                    <table class="informaltable">
+                      <colgroup>
+                        <col style="width:32%;" />
+                        <col style="width:33%;" />
+                        <col style="width:36%;" />
+                      </colgroup>
+                      <tbody>
+                        <tr>
+                          <td class="td">
+                            <p>Top</p>
+                          </td>
+                          <td class="td">
+                            <p>Relative</p>
+                          </td>
+                          <td class="td">
+                            <p>0</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="td">
+                            <p>Bottom</p>
+                          </td>
+                          <td class="td">
+                            <p>Thickness</p>
+                          </td>
+                          <td class="td">
+                            <p>0</p>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <p><span class="guilabel">Bottom of contour</span> (2): Machining begins in each case at the object's lower edge (thickness 0) and ends at the specified bottom.</p>
+                  <div class="informaltable table-responsive">
+                    <table class="informaltable">
+                      <colgroup>
+                        <col style="width:32%;" />
+                        <col style="width:32%;" />
+                        <col style="width:36%;" />
+                      </colgroup>
+                      <tbody>
+                        <tr>
+                          <td class="td">
+                            <p>Top</p>
+                          </td>
+                          <td class="td">
+                            <p>Thickness</p>
+                          </td>
+                          <td class="td">
+                            <p>0</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="td">
+                            <p>Bottom</p>
+                          </td>
+                          <td class="td">
+                            <p>absolute/relative/thickness</p>
+                          </td>
+                          <td class="td">
+                            <p>-10</p>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div class="informalfigure">
+                    <div class="mediaobject">
+                      <table class="image-viewport" style="border-collapse:collapse;border:0; width:638px;">
+                        <tr>
+                          <td style="padding:0;"><img src="image/uuid-5e2167b2-2ad6-60fa-283e-8c3862b9b719.svg" style="max-width: 638px;" alt="2D_bearbeitung_objekthoehe.svg" /></td>
+                        </tr>
+                      </table>
+                    </div>
+                  </div>
+                  <p><span class="guilabel">Relative to top</span>: The bottom (2) relative to top refers to the defined top value (1).</p>
+                  <div class="mediaobject">
+                    <table class="image-viewport" style="border-collapse:collapse;border:0; width:461px;">
+                      <tr style="height: 248px">
+                        <td style="padding:0;"><img src="image/uuid-6dc662b3-5f05-8a8a-08c7-74e26049cce3.svg" style="max-width: 461px; max-height: 248px;" alt="2D_bearbeitung_tiefe_rel_oberfl.svg" /></td>
+                      </tr>
+                    </table>
+                  </div>
+                </section>
+                <p>Select the <span class="guilabel">Preferred start point</span>, <span class="guilabel">End point</span> or <span class="guilabel">Plunge point</span> checkbox and select a point.</p>
+                <p>Freely select the start point (1) for each contour.</p>
+                <div class="mediaobject">
+                  <table class="image-viewport" style="border-collapse:collapse;border:0; width:461px;">
+                    <tr style="height: 230px">
+                      <td style="padding:0;"><img src="image/uuid-a7797dca-7743-6792-c14f-2925e2cdbdba.svg" style="max-width: 461px; max-height: 230px;" alt="2D_konturfraesen_startpunkt.svg" /></td>
+                    </tr>
+                  </table>
+                </div>
+                <p>Set an end point (2) if the contour is to be machined only partially or if there should be an overlap.</p>
+                <div class="mediaobject">
+                  <table class="image-viewport" style="border-collapse:collapse;border:0; width:461px;">
+                    <tr style="height: 248px">
+                      <td style="padding:0;"><img src="image/uuid-27a3c1a2-0c86-a0c9-3d6e-da3521c21e81.svg" style="max-width: 461px; max-height: 248px;" alt="2D_konturfraesen_endpunkt.svg" /></td>
+                    </tr>
+                  </table>
+                </div>
+                <p><span class="guilabel">Plunge point</span>: The plunge point (1) applies for the infeed to the first workplane. The cutter moves directly from the plunge point to the starting point or to the approach macro position. The plunge point is not collision checked.</p>
+                <div class="mediaobject">
+                  <table class="image-viewport" style="border-collapse:collapse;border:0; width:461px;">
+                    <tr style="height: 230px">
+                      <td style="padding:0;"><img src="image/uuid-51a4ad7d-c0e9-6c58-eb1a-3469559d6750.svg" style="max-width: 461px; max-height: 230px;" alt="2D_konturfraesen_eintauchpunkt2.svg" /></td>
+                    </tr>
+                  </table>
+                </div>
+                <p><span class="guilabel">Reverse</span>: In the default setting the machining direction follows the direction of the selected contour. This can be seen in the graphic preview. If the generated toolpaths do not result in the intended machining direction, select the relevant contours and select the <span class=
+                "guilabel">Reverse</span> option.</p>
+                <div dir="ltr" class="warning">
+                  <h3 class="title">Warning</h3>
+                  <p>If you change the machining direction, you should change the cutter position as well.</p>
+                </div>
+                <p><span class="guilabel">Overlap</span>: An overlap is only permissible for closed contours. The toolpath will move the tool past the start point (1) until it reaches the given end point (2).</p>
+                <div class="mediaobject">
+                  <table class="image-viewport" style="border-collapse:collapse;border:0; width:461px;">
+                    <tr style="height: 248px">
+                      <td style="padding:0;"><img src="image/uuid-32657b65-b5ba-0722-2f78-0d6be41188d3.svg" style="max-width: 461px; max-height: 248px;" alt="2D_konturfraesen_ueberlappung.svg" /></td>
+                    </tr>
+                  </table>
+                </div>
+                <section xml:lang="en-US" lang="en-US" dir="ltr" class="section" data-origin-id="" data-publication-date="" id="UUID-5e816378-adba-5fdb-7c80-0f4332c76b49_UUID-bc5d7e88-9365-93b3-e9b5-f05e54466347">
+                  <div class="titlepage">
+                    <div>
+                      <div class="title">
+                        <h2 class="title" style="clear: both"><span class="formal-title">Options</span></h2>
+                      </div>
+                    </div>
+                  </div>
+                  <p><span class="guilabel">Overlap off</span>: Select this option when the tool should not perform an overlap on the closed contours.</p>
+                  <p><span class="guilabel">Smooth overlap</span>: Select if the tool is to perform a smooth overlap on the closed contour. Define the <span class="guilabel">Length</span> (2) of the overlap. Use <span class="guilabel">Distance</span> (3) to define the maximum lateral distance of the tool from the model during the overlap.</p>
+                  <p>(1) Start point</p>
+                  <p>(4) = Toolpath points: are shown when this is activated on the <span class="guilabel">General</span> dialog page (in the <span class="guilabel">Toolpath visualization</span> area).</p>
+                  <div class="informalfigure" id="UUID-5e816378-adba-5fdb-7c80-0f4332c76b49_figure-idm4493591857835231521029838293">
+                    <div class="mediaobject">
+                      <table class="image-viewport" style="border-collapse:collapse;border:0; width:638px;">
+                        <tr>
+                          <td style="padding:0;"><img src="image/uuid-0038e21c-58f7-0618-5462-1f8c63228dc9.svg" style="max-width: 638px;" alt="2D_konturfraesen_3DModell_sanftes_ueberlappen.svg" /></td>
+                        </tr>
+                      </table>
+                    </div>
+                  </div>
+                  <p><span class="guilabel">Standard</span>: Select this option when the tool should perform an overlap on the closed contours. Define the <span class="guilabel">Length</span> of the overlap (2).</p>
+                </section>
+                <section dir="ltr" class="section" data-origin-id="" data-publication-date="" id="id111330">
+                  <div class="titlepage">
+                    <div>
+                      <div class="title">
+                        <h2 class="title" style="clear: both"><span class="formal-title">Optimization</span></h2>
+                      </div>
+                    </div>
+                  </div>
+                  <p><span class="guilabel">Optimize start points</span>: For closed contours, a search is automatically performed to find the best start points that will facilitate a collision-free standard macro. If a manual start point is defined, this is the preferred start point. Otherwise, either the outer edges (1) or the center point of
+                  the longest contour element (2) is used as a start point.</p>
+                  <div class="mediaobject">
+                    <table class="image-viewport" style="border-collapse:collapse;border:0; width:461px;">
+                      <tr style="height: 212px">
+                        <td style="padding:0;"><img src="image/uuid-5be962ef-c14c-3d54-e1e7-d5060032bf7f.svg" style="max-width: 461px; max-height: 212px;" alt="2D_konturfraesen_3DModell_optimierung.svg" /></td>
+                      </tr>
+                    </table>
+                  </div>
+                </section>
+                <section dir="ltr" class="section" data-origin-id="" data-publication-date="" id="UUID-5e816378-adba-5fdb-7c80-0f4332c76b49_section-idm53353772287196">
+                  <div class="titlepage">
+                    <div>
+                      <div class="title">
+                        <h2 class="title" style="clear: both"><span class="formal-title">Technology</span></h2>
+                      </div>
+                    </div>
+                  </div>
+                  <p>Define technology parameters.</p>
+                  <section dir="ltr" class="section internal" data-origin-id="" data-publication-date="" id="id111340">
+                    <div class="titlepage">
+                      <div>
+                        <div class="title">
+                          <h3 class="title"><span class="formal-title">Feedrate options</span></h3>
+                        </div>
+                      </div>
+                    </div>
+                    <p>Adjust the standard feedrate (measured at the tool center point) for individual contour elements.</p>
+                    <p><span class="guilabel">Center (Standard)</span>: The contour is machined with the standard feedrate.</p>
+                    <p><span class="guilabel">Edge control</span>: Optimize the feedrate at edges. Two parameters limit the reduction/increase of the feedrate: <span class="guilabel">Min. feedrate (factor)</span> and <span class="guilabel">Max. feedrate (factor)</span>. The factor value refers to the standard feedrate at the reference point of the
+                    tool and controls the feedrate at the contact point. Permissible values for the <span class="guilabel">Min. feedrate (factor)</span> are between 0 and 1, for the <span class="guilabel">Max. feedrate (factor)</span> between 1 and 10.</p>
+                    <div dir="ltr" class="tip">
+                      <h3 class="title">Same tool for contours and holes</h3>
+                      <p>Using the <span class="guilabel">Edge control</span> options, the same tool can be used for both chamfering contours and drilling holes in one job.</p>
+                    </div>
+                  </section>
+                </section>
+              </section>
+              <div class="footer-content">
+                <div class="section-toc section-toc-after">
+                  <div class="section-toc-title">
+                    <span class="section-toc-title-delimiter">:</span>
+                  </div>
+                </div>
+              </div>
+              <footer></footer>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

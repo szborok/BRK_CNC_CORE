@@ -1,0 +1,30 @@
+.glyphicon-print:before{
+    content: "\1F5A8";
+}
+
+span.glyphicon.glyphicon-print{
+    font-family: Arial;
+}
+
+.glyphicon-circle-arrow-left:before{
+    content: "\2190";
+}
+
+.glyphicon-circle-arrow-right:before{
+    content: "\2192";
+}
+
+.glyphicon-chevron-right:before{
+    content: "\25ba";
+}
+
+.glyphicon-chevron-down:before{
+    content: "\25BC";
+}
+
+span.glyphicon.glyphicon-home{
+    display: none;
+}
+
+
+

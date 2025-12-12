@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48" height="48" version="1.1" viewBox="0 0 12.7 12.7" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <linearGradient id="linearGradient5" x1="57.224" x2="50.76" y1="152.73" y2="152.75" gradientTransform="matrix(1.1295 0 0 .98262 1.0839 -7.8031)" gradientUnits="userSpaceOnUse">
+   <stop stop-color="#151415" offset="0"/>
+   <stop stop-color="#fbfbfb" offset="1"/>
+  </linearGradient>
+ </defs>
+ <g transform="translate(-46.831 -154.25)">
+  <g transform="matrix(.62418 .6124 -.60791 .62879 101.79 33.753)" stroke="#000000">
+   <g transform="translate(-.078246)">
+    <path d="m60.434 141.88h2.3529v4.8936l-1.2795 1.0601-1.0734-1.0601z" fill="#b2b2b2" fill-opacity=".3098" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round" stroke-width=".54651"/>
+    <g transform="matrix(.91099 .046483 .027382 .9121 2.7107 6.9456)" fill="none" stroke-width=".6">
+     <path d="m59.075 145.05 2.5272 2.3185"/>
+     <path d="m58.956 146.48 2.5895 2.4536"/>
+     <path d="m58.914 148 2.2623 2.2822"/>
+    </g>
+   </g>
+   <rect x="58.852" y="139.99" width="5.3596" height="1.8145" fill="url(#linearGradient5)" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round" stroke-width=".63209"/>
+  </g>
+  <g transform="translate(-.6528 .097437)" fill="none" stroke="#0000f7" stroke-linecap="round" stroke-linejoin="round" stroke-width=".6">
+   <path d="m50.172 164.91v-8.715"/>
+   <path d="m50.218 156.89 3.4274-0.0364"/>
+   <path d="m50.172 164.94 7.2241-7.4356"/>
+   <path d="m53.668 156.9 2.1819 2.0937"/>
+  </g>
+ </g>
+</svg>

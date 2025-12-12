@@ -1,0 +1,1341 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="168.75mm"
+   height="108.5mm"
+   version="1.1"
+   id="svg453"
+   sodipodi:docname="messen_kreiselemente_toleranzen.svg"
+   inkscape:version="1.2.2 (732a01da63, 2022-12-09)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview455"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showgrid="false"
+     showguides="true"
+     inkscape:zoom="2.3019969"
+     inkscape:cx="311.4687"
+     inkscape:cy="437.44628"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="1912"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg453">
+    <sodipodi:guide
+       position="118.15828,33.014813"
+       orientation="0,-1"
+       id="guide10080"
+       inkscape:locked="false" />
+  </sodipodi:namedview>
+  <defs
+     id="defs53">
+    <filter
+       id="filter12295-0-7-2"
+       color-interpolation-filters="sRGB"
+       x="-0.1"
+       y="-0.1"
+       width="1.2"
+       height="1.2">
+      <feBlend
+         in2="BackgroundImage"
+         mode="screen"
+         id="feBlend2" />
+    </filter>
+    <filter
+       id="filter12295-0-2-3"
+       color-interpolation-filters="sRGB"
+       x="-0.1"
+       y="-0.1"
+       width="1.2"
+       height="1.2">
+      <feBlend
+         in2="BackgroundImage"
+         mode="screen"
+         id="feBlend5" />
+    </filter>
+    <filter
+       id="filter12295-75-1-1"
+       color-interpolation-filters="sRGB"
+       x="-0.1"
+       y="-0.1"
+       width="1.2"
+       height="1.2">
+      <feBlend
+         in2="BackgroundImage"
+         mode="screen"
+         id="feBlend8" />
+    </filter>
+    <filter
+       id="filter12295-36-8-0"
+       color-interpolation-filters="sRGB"
+       x="-0.1"
+       y="-0.1"
+       width="1.2"
+       height="1.2">
+      <feBlend
+         in2="BackgroundImage"
+         mode="screen"
+         id="feBlend11" />
+    </filter>
+    <radialGradient
+       id="radialGradient14849-6"
+       cx="413.94"
+       cy="230.95"
+       r="6.0405"
+       gradientTransform="matrix(1.1847,0,0,1.1052,55.671,22.24)"
+       gradientUnits="userSpaceOnUse">
+      <stop
+         stop-color="#ffffff"
+         offset="0"
+         id="stop14" />
+      <stop
+         stop-color="#4d4d4d"
+         offset="1"
+         id="stop16" />
+    </radialGradient>
+    <filter
+       id="filter12295-0-77-9"
+       color-interpolation-filters="sRGB"
+       x="-0.052687489"
+       y="-0.034897375"
+       width="1.105375"
+       height="1.0697948">
+      <feBlend
+         in2="BackgroundImage"
+         mode="screen"
+         id="feBlend19" />
+    </filter>
+    <filter
+       id="filter12295-0-77-0-8"
+       color-interpolation-filters="sRGB"
+       x="-0.1"
+       y="-0.1"
+       width="1.2"
+       height="1.2">
+      <feBlend
+         in2="BackgroundImage"
+         mode="screen"
+         id="feBlend22" />
+    </filter>
+    <radialGradient
+       id="radialGradient15339-7"
+       cx="413.94"
+       cy="230.95"
+       r="6.0405"
+       gradientTransform="matrix(1.1847,0,0,1.1052,-360.87,23.06)"
+       gradientUnits="userSpaceOnUse">
+      <stop
+         stop-color="#ffffff"
+         offset="0"
+         id="stop25" />
+      <stop
+         stop-color="#4d4d4d"
+         offset="1"
+         id="stop27" />
+    </radialGradient>
+    <filter
+       id="filter12295-31-2-9-4"
+       x="-0.077872528"
+       y="-0.050352433"
+       width="1.1557451"
+       height="1.1007049"
+       color-interpolation-filters="sRGB">
+      <feBlend
+         in2="BackgroundImage"
+         mode="screen"
+         id="feBlend30" />
+    </filter>
+    <filter
+       id="filter12295-31-2-9-4-8"
+       x="-0.10576716"
+       y="-0.063993643"
+       width="1.2115343"
+       height="1.1279873"
+       color-interpolation-filters="sRGB">
+      <feBlend
+         in2="BackgroundImage"
+         mode="screen"
+         id="feBlend33" />
+    </filter>
+    <filter
+       id="filter12295-0-77-0-8-0"
+       color-interpolation-filters="sRGB"
+       x="-0.1"
+       y="-0.1"
+       width="1.2"
+       height="1.2">
+      <feBlend
+         in2="BackgroundImage"
+         mode="screen"
+         id="feBlend36" />
+    </filter>
+    <filter
+       id="filter12295-31-2-9-4-8-7"
+       x="-0.12010848"
+       y="-0.070699976"
+       width="1.240217"
+       height="1.1414"
+       color-interpolation-filters="sRGB">
+      <feBlend
+         in2="BackgroundImage"
+         mode="screen"
+         id="feBlend39" />
+    </filter>
+    <filter
+       id="filter12295-0-77-9-9"
+       color-interpolation-filters="sRGB"
+       x="-0.1"
+       y="-0.1"
+       width="1.2"
+       height="1.2">
+      <feBlend
+         in2="BackgroundImage"
+         mode="screen"
+         id="feBlend42" />
+    </filter>
+    <filter
+       id="filter12295-31-2-9-4-5"
+       x="-0.077872528"
+       y="-0.050352433"
+       width="1.1557451"
+       height="1.1007049"
+       color-interpolation-filters="sRGB">
+      <feBlend
+         in2="BackgroundImage"
+         mode="screen"
+         id="feBlend45" />
+    </filter>
+    <radialGradient
+       id="radialGradient7935"
+       cx="413.94"
+       cy="230.95"
+       r="6.0405"
+       gradientTransform="matrix(1.1847,0,0,1.1052,-155.6,21.99)"
+       gradientUnits="userSpaceOnUse">
+      <stop
+         stop-color="#ffffff"
+         offset="0"
+         id="stop48" />
+      <stop
+         stop-color="#4d4d4d"
+         offset="1"
+         id="stop50" />
+    </radialGradient>
+  </defs>
+  <g
+     fill="#edf1f4"
+     stroke="#4d4d4d"
+     stroke-width="0.63425"
+     id="g65"
+     transform="translate(0,-627.17)">
+    <g
+       stroke-linecap="round"
+       stroke-linejoin="round"
+       id="g61">
+      <path
+         d="m 341.81,733.87 39.459,-26.104 v 53.76 l -38.568,26.413 z"
+         id="path55" />
+      <path
+         d="m 215.93,725.38 37.244,-26.058 127.87,8.4235 -39.527,26.472 z"
+         id="path57" />
+      <path
+         d="m 215.93,725.36 126.34,8.5001 v 54.048 L 215.93,779.115 Z"
+         id="path59" />
+    </g>
+    <path
+       d="m 264.61,682.24 v 34.311 c 8.7876,16.772 62.48,16.286 70.874,-0.8556 v -34.006"
+       id="path63" />
+  </g>
+  <g
+     transform="matrix(0.48404,0,0,0.48404,243.34,-393.69)"
+     fill="none"
+     stroke="#34679b"
+     stroke-linecap="round"
+     stroke-linejoin="round"
+     stroke-miterlimit="6"
+     stroke-width="2.7744"
+     id="g73">
+    <path
+       d="m 122.31,934.45 -9.6009,-8.8896"
+       id="path67" />
+    <path
+       d="m 113,934.82 8.8896,-9.6009"
+       id="path69" />
+    <path
+       d="m 117.51,935.58 0.177,-11.621"
+       id="path71" />
+  </g>
+  <g
+     transform="matrix(0.33731,0.34715,-0.34715,0.33731,618.97,-324.71)"
+     id="g85">
+    <g
+       id="g83">
+      <g
+         transform="rotate(82.221,145.46,965.54)"
+         fill="none"
+         stroke="#34679b"
+         stroke-linecap="round"
+         stroke-linejoin="round"
+         stroke-miterlimit="6"
+         stroke-width="2.7744"
+         id="g81">
+        <path
+           d="M 161.5,981.29 146.025,966.307"
+           id="path75" />
+        <path
+           d="m 145.71,966.23 1.5396,7.5637"
+           id="path77" />
+        <path
+           d="m 145.72,966.25 7.501,1.215"
+           id="path79" />
+      </g>
+    </g>
+  </g>
+  <path
+     d="m 335.53921,55.535306 a 35.570145,13.785164 0 0 1 -35.51012,13.785164 35.570145,13.785164 0 0 1 -35.62902,-13.738632 35.570145,13.785164 0 0 1 35.3912,-13.830801 35.570145,13.785164 0 0 1 35.74678,13.692994 l -35.56899,0.09187 z"
+     fill="#a4b8c5"
+     stroke="#4d4d4d"
+     stroke-width="0.634255"
+     id="path87" />
+  <path
+     d="M 269.55,47.93 290.208,33.77"
+     fill="none"
+     stroke="#000000"
+     stroke-linecap="round"
+     stroke-linejoin="round"
+     stroke-width="0.63425"
+     id="path89" />
+  <g
+     transform="translate(163.4,-612.668)"
+     stroke="#000000"
+     stroke-linecap="round"
+     stroke-linejoin="round"
+     id="g95">
+    <path
+       d="m 126.06,645.8 -12.061,2.9773 0.65429,-8.1882 z"
+       fill="#000000"
+       stroke-width="0.99921"
+       id="path91" />
+    <path
+       d="m 104.17,644.09 21.908,1.6526"
+       fill="none"
+       stroke-width="0.63425"
+       id="path93" />
+  </g>
+  <g
+     transform="translate(158.89,-607.094)"
+     stroke="#000000"
+     stroke-linecap="round"
+     stroke-linejoin="round"
+     id="g101">
+    <path
+       d="m 191.71,651.39 12.061,-2.9773 -0.65429,8.1882 z"
+       fill="#000000"
+       stroke-width="0.99921"
+       id="path97" />
+    <path
+       d="m 191.47,651.37 21.908,1.6526"
+       fill="none"
+       stroke-width="0.63425"
+       id="path99" />
+  </g>
+  <path
+     d="M 335.25,57.62 349.43,43.749"
+     fill="none"
+     stroke="#000000"
+     stroke-linecap="round"
+     stroke-linejoin="round"
+     stroke-width="0.63425"
+     id="path103" />
+  <path
+     d="m 18.078,231.77 h 140.41 v 92.934 H 18.078 Z"
+     id="path115"
+     style="fill:#edf1f4;stroke:#4d4d4d;stroke-width:0.63425;stroke-linecap:round;stroke-linejoin:round" />
+  <path
+     d="m 222.85,231.66 h 140.41 v 92.934 H 222.85 Z"
+     id="path117"
+     style="fill:#edf1f4;stroke:#4d4d4d;stroke-width:0.63425;stroke-linecap:round;stroke-linejoin:round" />
+  <path
+     d="m 434.43,231.96 h 140.41 v 92.934 H 434.43 Z"
+     id="path119"
+     style="fill:#edf1f4;stroke:#4d4d4d;stroke-width:0.63425;stroke-linecap:round;stroke-linejoin:round" />
+  <path
+     d="m 56.808,324.39645 c 0,5.155 -4.179,9.334 -9.334,9.334 -5.155,0 -9.3341,-4.179 -9.3341,-9.334 0,-5.1551 4.179,-9.3341 9.3341,-9.3341 5.1551,0 9.334,4.179 9.334,9.3341 z"
+     id="path123"
+     style="fill:#ffffff;stroke:#000000;stroke-width:0.63425;stroke-linecap:round;stroke-linejoin:round" />
+  <path
+     d="m 53.738,324.39645 c 0,3.458 -2.8033,6.2613 -6.2614,6.2613 -3.458,0 -6.2614,-2.8033 -6.2614,-6.2613 0,-3.4581 2.8033,-6.2614 6.2614,-6.2614 3.458,0 6.2614,2.8033 6.2614,6.2614 z"
+     id="path125"
+     style="fill:#ffffff;stroke:#000000;stroke-width:0.63425;stroke-linecap:round;stroke-linejoin:round" />
+  <path
+     d="m 47.44,324.45 h 6.6068 c -0.009,3.5246 -2.9257,6.5846 -6.599,6.5889 z"
+     fill="#000000"
+     id="path129" />
+  <path
+     d="m 134.02979,277.85661 c 0,23.61514 -19.14452,42.75966 -42.759657,42.75966 -23.615134,0 -42.759656,-19.14452 -42.759656,-42.75966 0,-23.61513 19.144522,-42.75966 42.759656,-42.75966 23.615137,0 42.759657,19.14453 42.759657,42.75966 z"
+     fill="none"
+     stroke-dasharray="0.531262, 0.531262"
+     stroke-width="0.755906"
+     id="path133"
+     style="stroke:#4d4d4d" />
+  <circle
+     cx="91.268028"
+     cy="277.85095"
+     r="38.627262"
+     fill="#a4b8c5"
+     fill-rule="evenodd"
+     stroke-linecap="round"
+     stroke-linejoin="round"
+     stroke-width="0.634255"
+     id="circle135"
+     style="stroke:#4d4d4d" />
+  <path
+     d="m 125.33894,277.87476 c 0,18.8133 -15.25131,34.06462 -34.064614,34.06462 -18.8133,0 -34.064615,-15.25132 -34.064615,-34.06462 0,-18.8133 15.251315,-34.06462 34.064615,-34.06462 18.813304,0 34.064614,15.25132 34.064614,34.06462 z"
+     fill="none"
+     stroke-dasharray="0.66294, 0.66294"
+     stroke-width="0.755884"
+     id="path137"
+     style="stroke:#4d4d4d" />
+  <path
+     d="m 189.1274,324.598 -15.786,-3.9286 v 8.2143 z"
+     fill="#000000"
+     stroke-linecap="round"
+     stroke-linejoin="round"
+     stroke-width="0.999"
+     id="path141"
+     style="stroke:#000000" />
+  <text
+     x="182.49173"
+     y="317.38062"
+     fill="#000000"
+     font-family="'Arial Nova', 'Arial Unicode MS', 'Yu Gothic UI', sans-serif"
+     letter-spacing="0px"
+     word-spacing="0px"
+     style="line-height:0%;stroke:#000000"
+     xml:space="preserve"
+     id="text145"><tspan
+       x="182.49173"
+       y="317.38062"
+       fill="#ff0000"
+       font-family="'Arial Nova', 'Arial Unicode MS', 'Yu Gothic UI', sans-serif"
+       font-size="10px"
+       stroke="#000000"
+       style="line-height:1.25"
+       id="tspan143">X</tspan></text>
+  <path
+     d="M 174.6874,324.718 H 31.0474"
+     fill="none"
+     stroke-linecap="round"
+     stroke-linejoin="round"
+     stroke-width="0.634"
+     id="path147"
+     style="stroke:#000000" />
+  <text
+     x="36.106606"
+     y="212.80664"
+     fill="#000000"
+     font-family="'Arial Nova', 'Arial Unicode MS', 'Yu Gothic UI', sans-serif"
+     letter-spacing="0px"
+     word-spacing="0px"
+     style="line-height:0%;stroke:#000000"
+     xml:space="preserve"
+     id="text153"><tspan
+       x="36.106606"
+       y="212.80664"
+       fill="#ff0000"
+       font-family="'Arial Nova', 'Arial Unicode MS', 'Yu Gothic UI', sans-serif"
+       font-size="10px"
+       stroke="#000000"
+       style="line-height:1.25"
+       id="tspan151">Y</tspan></text>
+  <path
+     d="m 47.7014,218.618 v 121.46"
+     fill="none"
+     stroke-linecap="round"
+     stroke-linejoin="round"
+     stroke-width="0.63425"
+     id="path155"
+     style="stroke:#000000" />
+  <path
+     d="m 47.5904,205.098 -3.9286,15.786 h 8.2143 z"
+     fill="#000000"
+     stroke-linecap="round"
+     stroke-linejoin="round"
+     stroke-width="0.999"
+     id="path157"
+     style="stroke:#000000" />
+  <g
+     transform="translate(128.95,-690.00855)"
+     fill="#ffffff"
+     stroke="#000000"
+     stroke-linecap="round"
+     stroke-linejoin="round"
+     stroke-width="0.63425"
+     id="g167">
+    <path
+       d="m 133.16,1014.3 c 0,5.155 -4.179,9.334 -9.334,9.334 -5.155,0 -9.3341,-4.179 -9.3341,-9.334 0,-5.1551 4.179,-9.3341 9.3341,-9.3341 5.1551,0 9.334,4.179 9.334,9.3341 z"
+       id="path163" />
+    <path
+       d="m 130.09,1014.3 c 0,3.458 -2.8033,6.2613 -6.2614,6.2613 -3.458,0 -6.2614,-2.8033 -6.2614,-6.2613 0,-3.4581 2.8033,-6.2614 6.2614,-6.2614 3.458,0 6.2614,2.8033 6.2614,6.2614 z"
+       id="path165" />
+  </g>
+  <path
+     d="m 252.742,324.345 h 6.6068 c -0.009,3.5246 -2.9257,6.5846 -6.599,6.5889 z"
+     fill="#000000"
+     id="path169" />
+  <g
+     id="g181"
+     transform="translate(200.6,-662.777)"
+     style="stroke:#000000">
+    <path
+       d="m 193.83,987.27 -15.786,-3.9286 v 8.2143 z"
+       fill="#000000"
+       stroke-linecap="round"
+       stroke-linejoin="round"
+       stroke-width="0.999"
+       id="path173" />
+    <text
+       x="187.19434"
+       y="980.05261"
+       fill="#000000"
+       font-family="'Arial Nova', 'Arial Unicode MS', 'Yu Gothic UI', sans-serif"
+       letter-spacing="0px"
+       word-spacing="0px"
+       style="line-height:0%"
+       xml:space="preserve"
+       id="text177"><tspan
+         x="187.19434"
+         y="980.05261"
+         fill="#ff0000"
+         font-family="'Arial Nova', 'Arial Unicode MS', 'Yu Gothic UI', sans-serif"
+         font-size="10px"
+         stroke="#000000"
+         style="line-height:1.25"
+         id="tspan175">X</tspan></text>
+    <path
+       d="M 179.39,987.39 H 35.75"
+       fill="none"
+       stroke-linecap="round"
+       stroke-linejoin="round"
+       stroke-width="0.634"
+       id="path179" />
+  </g>
+  <g
+     id="g191"
+     transform="translate(200.6,-662.777)"
+     style="stroke:#000000">
+    <text
+       x="40.809204"
+       y="875.47864"
+       fill="#000000"
+       font-family="'Arial Nova', 'Arial Unicode MS', 'Yu Gothic UI', sans-serif"
+       letter-spacing="0px"
+       word-spacing="0px"
+       style="line-height:0%"
+       xml:space="preserve"
+       id="text185"><tspan
+         x="40.809204"
+         y="875.47864"
+         fill="#ff0000"
+         font-family="'Arial Nova', 'Arial Unicode MS', 'Yu Gothic UI', sans-serif"
+         font-size="10px"
+         stroke="#000000"
+         style="line-height:1.25"
+         id="tspan183">Y</tspan></text>
+    <path
+       d="m 52.404,881.29 v 121.46"
+       fill="none"
+       stroke-linecap="round"
+       stroke-linejoin="round"
+       stroke-width="0.63425"
+       id="path187" />
+    <path
+       d="m 52.293,867.77 -3.9286,15.786 h 8.2143 z"
+       fill="#000000"
+       stroke-linecap="round"
+       stroke-linejoin="round"
+       stroke-width="0.999"
+       id="path189" />
+  </g>
+  <g
+     transform="translate(340.15,-689.72755)"
+     fill="#ffffff"
+     stroke="#000000"
+     stroke-linecap="round"
+     stroke-linejoin="round"
+     stroke-width="0.63425"
+     id="g201">
+    <path
+       d="m 133.16,1014.3 c 0,5.155 -4.179,9.334 -9.334,9.334 -5.155,0 -9.3341,-4.179 -9.3341,-9.334 0,-5.1551 4.179,-9.3341 9.3341,-9.3341 5.1551,0 9.334,4.179 9.334,9.3341 z"
+       id="path197" />
+    <path
+       d="m 130.09,1014.3 c 0,3.458 -2.8033,6.2613 -6.2614,6.2613 -3.458,0 -6.2614,-2.8033 -6.2614,-6.2613 0,-3.4581 2.8033,-6.2614 6.2614,-6.2614 3.458,0 6.2614,2.8033 6.2614,6.2614 z"
+       id="path199" />
+  </g>
+  <path
+     d="m 463.942,324.626 h 6.6068 c -0.009,3.5246 -2.9257,6.5846 -6.599,6.5889 z"
+     fill="#000000"
+     id="path203" />
+  <g
+     id="g215"
+     transform="translate(411.8,-662.496)"
+     style="stroke:#000000">
+    <path
+       d="m 193.83,987.27 -15.786,-3.9286 v 8.2143 z"
+       fill="#000000"
+       stroke-linecap="round"
+       stroke-linejoin="round"
+       stroke-width="0.999"
+       id="path207" />
+    <text
+       x="187.19434"
+       y="980.05261"
+       fill="#000000"
+       font-family="'Arial Nova', 'Arial Unicode MS', 'Yu Gothic UI', sans-serif"
+       letter-spacing="0px"
+       word-spacing="0px"
+       style="line-height:0%"
+       xml:space="preserve"
+       id="text211"><tspan
+         x="187.19434"
+         y="980.05261"
+         fill="#ff0000"
+         font-family="'Arial Nova', 'Arial Unicode MS', 'Yu Gothic UI', sans-serif"
+         font-size="10px"
+         stroke="#000000"
+         style="line-height:1.25"
+         id="tspan209">X</tspan></text>
+    <path
+       d="M 179.39,987.39 H 35.75"
+       fill="none"
+       stroke-linecap="round"
+       stroke-linejoin="round"
+       stroke-width="0.634"
+       id="path213" />
+  </g>
+  <g
+     id="g225"
+     transform="translate(411.8,-662.496)"
+     style="stroke:#000000">
+    <text
+       x="40.809204"
+       y="875.47864"
+       fill="#000000"
+       font-family="'Arial Nova', 'Arial Unicode MS', 'Yu Gothic UI', sans-serif"
+       letter-spacing="0px"
+       word-spacing="0px"
+       style="line-height:0%"
+       xml:space="preserve"
+       id="text219"><tspan
+         x="40.809204"
+         y="875.47864"
+         fill="#ff0000"
+         font-family="'Arial Nova', 'Arial Unicode MS', 'Yu Gothic UI', sans-serif"
+         font-size="10px"
+         stroke="#000000"
+         style="line-height:1.25"
+         id="tspan217">Y</tspan></text>
+    <path
+       d="m 52.404,881.29 v 121.46"
+       fill="none"
+       stroke-linecap="round"
+       stroke-linejoin="round"
+       stroke-width="0.63425"
+       id="path221" />
+    <path
+       d="m 52.293,867.77 -3.9286,15.786 h 8.2143 z"
+       fill="#000000"
+       stroke-linecap="round"
+       stroke-linejoin="round"
+       stroke-width="0.999"
+       id="path223" />
+  </g>
+  <path
+     d="m 136.32,277.96 c -0.0124,3.6859 -3.0587,6.6579 -6.8036,6.638 -3.7449,-0.019 -6.7704,-3.0237 -6.7577,-6.7093 0.008,-2.5466 1.4911,-4.7042 3.5999,-5.8661 2.3909,-1.3175 4.5259,-1.0088 6.3772,0.021 2.1162,1.1767 3.593,3.3604 3.5842,5.9167 z"
+     color="#000000"
+     fill="url(#radialGradient15339-7)"
+     fill-rule="evenodd"
+     stroke="#4d4d4d"
+     stroke-linecap="round"
+     stroke-linejoin="round"
+     stroke-miterlimit="10"
+     stroke-width="0.63425"
+     id="path231"
+     style="fill:url(#radialGradient15339-7)" />
+  <g
+     transform="rotate(-31.718,-981.39426,824.64348)"
+     fill="#000000"
+     stroke-width="0.99921"
+     id="g237"
+     style="stroke:#000000;stroke-linecap:round;stroke-linejoin:round">
+    <path
+       d="m 262.06,921.43 11.786,-3.9286 v 8.2143 z"
+       id="path233" />
+    <path
+       d="m 256.25,921.49 -11.786,3.9286 v -8.2143 z"
+       id="path235" />
+  </g>
+  <path
+     d="m 142.02955,244.13043 -14.84802,9.17677"
+     fill="none"
+     stroke-width="0.63425"
+     id="path239"
+     style="stroke:#000000;stroke-linecap:round;stroke-linejoin:round" />
+  <path
+     d="m 122.33787,256.35959 -14.84803,9.17677"
+     fill="none"
+     stroke-width="0.63425"
+     id="path241"
+     style="stroke:#000000;stroke-linecap:round;stroke-linejoin:round" />
+  <path
+     d="m 540.9,342.31 -11.786,3.9286 v -8.2143 z"
+     fill="#000000"
+     stroke-width="0.99921"
+     id="path247"
+     style="stroke:#000000;stroke-linecap:round;stroke-linejoin:round" />
+  <path
+     d="m 474.81,342.39 11.786,-3.9286 v 8.2143 z"
+     fill="#000000"
+     stroke-width="0.99921"
+     id="path249"
+     style="stroke:#000000;stroke-linecap:round;stroke-linejoin:round" />
+  <path
+     d="m 537.55,342.45 -62.925,-0.066"
+     fill="none"
+     stroke-width="0.63425"
+     id="path251"
+     style="stroke:#000000;stroke-linecap:round;stroke-linejoin:round" />
+  <text
+     x="496.5528"
+     y="340.72293"
+     fill="#000000"
+     font-family="'Arial Nova', 'Arial Unicode MS', 'Yu Gothic UI', sans-serif"
+     letter-spacing="0px"
+     word-spacing="0px"
+     style="line-height:0%"
+     xml:space="preserve"
+     id="text257"><tspan
+       x="496.5528"
+       y="340.72293"
+       font-size="11px"
+       style="line-height:1.25"
+       id="tspan255">Min.</tspan></text>
+  <path
+     d="M 550.38,361 H 462.925"
+     fill="none"
+     stroke="#000000"
+     stroke-linecap="round"
+     stroke-linejoin="round"
+     stroke-width="0.63425"
+     id="path259" />
+  <path
+     d="m 551.98,361.14 -11.786,3.9286 v -8.2143 z"
+     stroke="#000000"
+     stroke-linecap="round"
+     stroke-linejoin="round"
+     stroke-width="0.99921"
+     id="path261"
+     style="fill:#000000" />
+  <path
+     d="m 462.24,360.84 11.786,-3.9286 v 8.2143 z"
+     stroke="#000000"
+     stroke-linecap="round"
+     stroke-linejoin="round"
+     stroke-width="0.99921"
+     id="path263"
+     style="fill:#000000" />
+  <text
+     x="496.27722"
+     y="359.68607"
+     font-family="'Arial Nova', 'Arial Unicode MS', 'Yu Gothic UI', sans-serif"
+     letter-spacing="0px"
+     word-spacing="0px"
+     style="line-height:0%;fill:#000000"
+     xml:space="preserve"
+     id="text267"><tspan
+       x="496.27722"
+       y="359.68607"
+       font-size="11px"
+       style="line-height:1.25"
+       id="tspan265">Max.</tspan></text>
+  <text
+     x="66.980423"
+     y="222.47145"
+     fill="#000000"
+     font-family="'Arial Nova', 'Arial Unicode MS', 'Yu Gothic UI', sans-serif"
+     letter-spacing="0px"
+     stroke="#f9f9f9"
+     word-spacing="0px"
+     style="line-height:0%;stroke-width:0.99921;filter:url(#filter12295-0-77-9)"
+     xml:space="preserve"
+     id="text307"><tspan
+       x="66.980423"
+       y="222.47145"
+       fill="#ffffff"
+       font-family="'Arial Nova', 'Arial Unicode MS', 'Yu Gothic UI', sans-serif"
+       font-size="20px"
+       stroke="#ffffff"
+       stroke-width="0.99921"
+       style="line-height:1.25"
+       id="tspan305">2</tspan></text>
+  <path
+     d="m 78.1407,223.94 11.375,17.592"
+     color="#000000"
+     fill="#1f638a"
+     fill-rule="evenodd"
+     filter="url(#filter12295-31-2-9-4)"
+     stroke="#1f638a"
+     stroke-linecap="round"
+     stroke-linejoin="round"
+     stroke-width="1.7716"
+     id="path313" />
+  <path
+     transform="matrix(1,0,0,-1,1.105,1544.84)"
+     d="m 96.661,1307 8.375,13.842"
+     color="#000000"
+     fill="#1f638a"
+     fill-rule="evenodd"
+     filter="url(#filter12295-31-2-9-4-8)"
+     stroke="#1f638a"
+     stroke-linecap="round"
+     stroke-linejoin="round"
+     stroke-width="1.7716"
+     id="path327" />
+  <g
+     transform="matrix(-0.85065,-0.52574,-0.52574,0.85065,822.97268,-345.38634)"
+     fill="#000000"
+     stroke-width="0.99921"
+     id="g335"
+     style="stroke:#000000;stroke-linecap:round;stroke-linejoin:round">
+    <path
+       d="m 262.06,921.43 11.786,-3.9286 v 8.2143 z"
+       id="path331" />
+    <path
+       d="m 256.25,921.49 -11.786,3.9286 v -8.2143 z"
+       id="path333" />
+  </g>
+  <path
+     d="m 100.81866,291.54082 14.8481,9.1768"
+     fill="none"
+     stroke-width="0.634252"
+     id="path337"
+     style="stroke:#000000;stroke-linecap:round;stroke-linejoin:round" />
+  <path
+     d="m 120.51044,303.77001 14.8481,9.17679"
+     fill="none"
+     stroke-width="0.634252"
+     id="path339"
+     style="stroke:#000000;stroke-linecap:round;stroke-linejoin:round" />
+  <path
+     d="m 341.834,278.44 c 0,25.341 -20.543,45.884 -45.885,45.884 -25.341,0 -45.885,-20.543 -45.885,-45.884 0,-25.341 20.543,-45.884 45.885,-45.884 25.341,0 45.885,20.543 45.885,45.884 z"
+     fill="none"
+     stroke-dasharray="0.755906, 0.755906"
+     stroke-width="0.75591"
+     id="path345"
+     style="stroke:#4d4d4d" />
+  <circle
+     cx="296.57184"
+     cy="277.81854"
+     r="38.628841"
+     fill="#a4b8c5"
+     fill-rule="evenodd"
+     stroke-linecap="round"
+     stroke-linejoin="round"
+     stroke-width="0.634281"
+     id="circle347"
+     style="stroke:#4d4d4d" />
+  <path
+     d="m 330.644,277.79 c 0,18.814 -15.252,34.065 -34.065,34.065 -18.814,0 -34.065,-15.251 -34.065,-34.065 0,-18.814 15.252,-34.065 34.065,-34.065 18.814,0 34.065,15.251 34.065,34.065 z"
+     fill="none"
+     stroke-dasharray="0.755906, 0.755906"
+     stroke-width="0.75591"
+     id="path349"
+     style="stroke:#4d4d4d" />
+  <path
+     d="m 327.84,256.53 -7.9601,9.5381 -4.3185,-6.9875 z"
+     fill="#000000"
+     stroke="#000000"
+     stroke-linecap="round"
+     stroke-linejoin="round"
+     stroke-width="0.99921"
+     id="path355" />
+  <path
+     d="m 334.494,252.32 7.9601,-9.538 4.3186,6.9874 z"
+     fill="#000000"
+     stroke-width="0.99921"
+     id="path357"
+     style="stroke:#000000;stroke-linecap:round;stroke-linejoin:round" />
+  <path
+     d="m 349.294,243.22 -14.848,9.1769"
+     fill="none"
+     stroke-width="0.63425"
+     id="path359"
+     style="stroke:#000000;stroke-linecap:round;stroke-linejoin:round" />
+  <path
+     d="m 327.85,256.54 -14.848,9.1769"
+     fill="none"
+     stroke="#000000"
+     stroke-linecap="round"
+     stroke-linejoin="round"
+     stroke-width="0.63425"
+     id="path363" />
+  <g
+     transform="matrix(-0.85065,-0.52574,-0.52574,0.85065,1027.7127,-345.82634)"
+     fill="#000000"
+     stroke-width="0.99921"
+     id="g369"
+     style="stroke:#000000;stroke-linecap:round;stroke-linejoin:round">
+    <path
+       d="m 262.06,921.43 11.786,-3.9286 v 8.2143 z"
+       id="path365" />
+    <path
+       d="m 256.25,921.49 -11.786,3.9286 v -8.2143 z"
+       id="path367" />
+  </g>
+  <path
+     d="m 305.55868,291.10082 14.8481,9.1768"
+     fill="none"
+     stroke-width="0.634252"
+     id="path371"
+     style="stroke:#000000;stroke-linecap:round;stroke-linejoin:round" />
+  <path
+     d="m 325.25046,303.33001 14.8481,9.17679"
+     fill="none"
+     stroke-width="0.634252"
+     id="path373"
+     style="stroke:#000000;stroke-linecap:round;stroke-linejoin:round" />
+  <path
+     d="m 282.647,223.59 11.375,17.592"
+     color="#000000"
+     fill="#1f638a"
+     fill-rule="evenodd"
+     filter="url(#filter12295-31-2-9-4-5)"
+     stroke="#1f638a"
+     stroke-linecap="round"
+     stroke-linejoin="round"
+     stroke-width="1.7716"
+     id="path389" />
+  <path
+     transform="matrix(1,0,0,-1,205.751,1544.78)"
+     d="m 97.661,1308.3 7.375,12.529"
+     color="#000000"
+     fill="#1f638a"
+     fill-rule="evenodd"
+     filter="url(#filter12295-31-2-9-4-8-7)"
+     stroke="#1f638a"
+     stroke-linecap="round"
+     stroke-linejoin="round"
+     stroke-width="1.7716"
+     id="path403" />
+  <path
+     d="m 341.59,276.89 c -0.0124,3.6859 -3.0587,6.6579 -6.8036,6.638 -3.7449,-0.019 -6.7704,-3.0237 -6.7577,-6.7093 0.008,-2.5466 1.4911,-4.7042 3.5999,-5.8661 2.3909,-1.3175 4.5259,-1.0088 6.3772,0.021 2.1162,1.1767 3.593,3.3604 3.5842,5.9167 z"
+     color="#000000"
+     fill="url(#radialGradient7935)"
+     fill-rule="evenodd"
+     stroke="#4d4d4d"
+     stroke-linecap="round"
+     stroke-linejoin="round"
+     stroke-miterlimit="10"
+     stroke-width="0.63425"
+     id="path407"
+     style="fill:url(#radialGradient7935)" />
+  <path
+     d="m 553.03,278.61 c 0,25.341 -20.543,45.884 -45.885,45.884 -25.341,0 -45.885,-20.543 -45.885,-45.884 0,-25.341 20.543,-45.884 45.885,-45.884 25.341,0 45.885,20.543 45.885,45.884 z"
+     fill="none"
+     stroke-dasharray="0.755906, 0.755906"
+     stroke-width="0.75591"
+     id="path409"
+     style="stroke:#4d4d4d" />
+  <circle
+     cx="507.76782"
+     cy="277.98856"
+     r="38.628841"
+     fill="#a4b8c5"
+     fill-rule="evenodd"
+     stroke-linecap="round"
+     stroke-linejoin="round"
+     stroke-width="0.634281"
+     id="circle411"
+     style="stroke:#4d4d4d" />
+  <path
+     d="m 541.84,277.96 c 0,18.814 -15.252,34.065 -34.065,34.065 -18.814,0 -34.065,-15.251 -34.065,-34.065 0,-18.814 15.252,-34.065 34.065,-34.065 18.814,0 34.065,15.251 34.065,34.065 z"
+     fill="none"
+     stroke-dasharray="0.755906, 0.755906"
+     stroke-width="0.75591"
+     id="path413"
+     style="stroke:#4d4d4d" />
+  <path
+     d="m 553.02,277.11 0.0534,84.324"
+     id="path419"
+     style="fill:none;stroke:#4d4d4d;stroke-width:0.63425;stroke-dasharray:0.634252, 0.634252" />
+  <path
+     d="m 541.84,276.97 0.0221,65.793"
+     id="path421"
+     style="fill:none;stroke:#4d4d4d;stroke-width:0.63425;stroke-dasharray:0.634252, 0.634252" />
+  <path
+     d="m 473.72,279.05 0.0221,63.793"
+     id="path423"
+     style="fill:none;stroke:#4d4d4d;stroke-width:0.63425;stroke-dasharray:0.634252, 0.634252" />
+  <path
+     d="m 461.29,277.53 0.0221,83.793"
+     id="path425"
+     style="fill:none;stroke:#4d4d4d;stroke-width:0.63425;stroke-dasharray:0.634252, 0.634252" />
+  <path
+     d="m 552.86,277.14 c -0.0124,3.6859 -3.0587,6.6579 -6.8036,6.638 -3.7449,-0.019 -6.7704,-3.0237 -6.7577,-6.7094 0.008,-2.5465 1.4911,-4.7041 3.5999,-5.8661 2.3909,-1.3174 4.5259,-1.0087 6.3772,0.021 2.1162,1.1768 3.593,3.3605 3.5842,5.9168 z"
+     color="#000000"
+     fill="url(#radialGradient14849-6)"
+     fill-rule="evenodd"
+     stroke="#4d4d4d"
+     stroke-linecap="round"
+     stroke-linejoin="round"
+     stroke-miterlimit="10"
+     stroke-width="0.63425"
+     id="path429"
+     style="fill:url(#radialGradient14849-6)" />
+  <g
+     fill="none"
+     opacity="0.55769"
+     stroke="#4d4d4d"
+     stroke-dasharray="0.755906, 0.755906"
+     stroke-width="0.75591"
+     id="g435"
+     transform="translate(0,-627.17)">
+    <path
+       d="m 334.65,685.48 -69.58,-5.0878"
+       id="path431" />
+    <path
+       d="m 318.07,670.77 -35.551,23.904"
+       id="path433" />
+  </g>
+  <g
+     transform="matrix(0.69737,0,0,0.69737,232.39,-591.401)"
+     id="g449">
+    <g
+       id="g439">
+      <path
+         d="m 91.122,923.98 c 0.20785,0.12471 11.473,7.7734 11.473,7.7734"
+         fill="none"
+         stroke="#ff00ff"
+         stroke-linecap="round"
+         stroke-linejoin="round"
+         stroke-width="1.4227"
+         id="path437" />
+    </g>
+    <g
+       transform="matrix(0.67699,0,0,0.67699,51.211,337.18)"
+       fill="none"
+       stroke="#ff00ff"
+       stroke-linecap="round"
+       stroke-linejoin="round"
+       stroke-width="2.1014"
+       id="g447">
+      <path
+         d="m 64.515,864.73 c 0,0.49122 5.9051,15.631 5.9051,15.631"
+         id="path441" />
+      <path
+         d="m 69.051,866.81 -3.0752,11.465"
+         id="path443" />
+      <path
+         d="m 59.752,879.6 15.78,-14.245"
+         id="path445" />
+    </g>
+  </g>
+  <g
+     transform="translate(363.06308,119.36864)"
+     id="g4349"
+     style="display:inline">
+    <ellipse
+       cx="-44.919998"
+       cy="-98.797997"
+       rx="13.199"
+       ry="13.469"
+       fill="#1f638a"
+       stroke-linecap="round"
+       stroke-linejoin="round"
+       stroke-width="1.0658"
+       id="ellipse4343" />
+    <text
+       x="-50.761276"
+       y="-91.125885"
+       fill="#000000"
+       font-family="'Arial Nova', 'Arial Unicode MS', 'Yu Gothic UI', sans-serif"
+       font-size="12.8px"
+       letter-spacing="0px"
+       stroke-width="1.0667"
+       word-spacing="0px"
+       style="line-height:0%"
+       xml:space="preserve"
+       id="text4347"><tspan
+         x="-50.761276"
+         y="-91.125885"
+         fill="#ffffff"
+         font-family="'Arial Nova', 'Arial Unicode MS', 'Yu Gothic UI', sans-serif"
+         font-size="21.333px"
+         stroke="#ffffff"
+         stroke-width="1.0667"
+         style="line-height:1.25"
+         id="tspan4345">1</tspan></text>
+  </g>
+  <g
+     transform="translate(86.741912,309.40279)"
+     id="g4357"
+     style="display:inline">
+    <ellipse
+       cx="-13.718"
+       cy="-98.797997"
+       rx="13.199"
+       ry="13.469"
+       fill="#1f638a"
+       stroke-linecap="round"
+       stroke-linejoin="round"
+       stroke-width="1.0658"
+       id="ellipse4351" />
+    <text
+       x="-19.559933"
+       y="-91.125885"
+       fill="#000000"
+       font-family="'Arial Nova', 'Arial Unicode MS', 'Yu Gothic UI', sans-serif"
+       font-size="12.8px"
+       letter-spacing="0px"
+       stroke-width="1.0667"
+       word-spacing="0px"
+       style="line-height:0%"
+       xml:space="preserve"
+       id="text4355"><tspan
+         x="-19.559933"
+         y="-91.125885"
+         fill="#ffffff"
+         font-family="'Arial Nova', 'Arial Unicode MS', 'Yu Gothic UI', sans-serif"
+         font-size="21.333px"
+         stroke="#ffffff"
+         stroke-width="1.0667"
+         style="line-height:1.25"
+         id="tspan4353">2</tspan></text>
+  </g>
+  <g
+     transform="translate(93.344878,310.53958)"
+     id="g4365"
+     style="display:inline">
+    <ellipse
+       cx="17.483"
+       cy="-98.797997"
+       rx="13.199"
+       ry="13.469"
+       fill="#1f638a"
+       stroke-linecap="round"
+       stroke-linejoin="round"
+       stroke-width="1.0658"
+       id="ellipse4359" />
+    <text
+       x="11.641406"
+       y="-91.256096"
+       fill="#000000"
+       font-family="'Arial Nova', 'Arial Unicode MS', 'Yu Gothic UI', sans-serif"
+       font-size="12.8px"
+       letter-spacing="0px"
+       stroke-width="1.0667"
+       word-spacing="0px"
+       style="line-height:0%"
+       xml:space="preserve"
+       id="text4363"><tspan
+         x="11.641406"
+         y="-91.256096"
+         fill="#ffffff"
+         font-family="'Arial Nova', 'Arial Unicode MS', 'Yu Gothic UI', sans-serif"
+         font-size="21.333px"
+         stroke="#ffffff"
+         stroke-width="1.0667"
+         style="line-height:1.25"
+         id="tspan4361">3</tspan></text>
+  </g>
+  <g
+     transform="translate(322.04392,310.74781)"
+     id="g4349-7"
+     style="display:inline">
+    <ellipse
+       cx="-44.919998"
+       cy="-98.797997"
+       rx="13.199"
+       ry="13.469"
+       fill="#1f638a"
+       stroke-linecap="round"
+       stroke-linejoin="round"
+       stroke-width="1.0658"
+       id="ellipse4343-0" />
+    <text
+       x="-50.761276"
+       y="-91.125885"
+       fill="#000000"
+       font-family="'Arial Nova', 'Arial Unicode MS', 'Yu Gothic UI', sans-serif"
+       font-size="12.8px"
+       letter-spacing="0px"
+       stroke-width="1.0667"
+       word-spacing="0px"
+       style="line-height:0%"
+       xml:space="preserve"
+       id="text4347-9"><tspan
+         x="-50.761276"
+         y="-91.125885"
+         fill="#ffffff"
+         font-family="'Arial Nova', 'Arial Unicode MS', 'Yu Gothic UI', sans-serif"
+         font-size="21.333px"
+         stroke="#ffffff"
+         stroke-width="1.0667"
+         style="line-height:1.25"
+         id="tspan4345-8">4</tspan></text>
+  </g>
+  <g
+     transform="translate(140.14655,489.48106)"
+     id="g4349-78"
+     style="display:inline">
+    <ellipse
+       cx="-44.919998"
+       cy="-98.797997"
+       rx="13.199"
+       ry="13.469"
+       fill="#1f638a"
+       stroke-linecap="round"
+       stroke-linejoin="round"
+       stroke-width="1.0658"
+       id="ellipse4343-3" />
+    <text
+       x="-52.551544"
+       y="-91.921562"
+       fill="#000000"
+       font-family="'Arial Nova', 'Arial Unicode MS', 'Yu Gothic UI', sans-serif"
+       font-size="12.8px"
+       letter-spacing="0px"
+       stroke-width="1.0667"
+       word-spacing="0px"
+       style="line-height:0%"
+       xml:space="preserve"
+       id="text4347-5"><tspan
+         x="-52.551544"
+         y="-91.921562"
+         fill="#ffffff"
+         font-family="'Arial Nova', 'Arial Unicode MS', 'Yu Gothic UI', sans-serif"
+         font-size="21.333px"
+         stroke="#ffffff"
+         stroke-width="1.0667"
+         style="line-height:1.25"
+         id="tspan4345-86">A</tspan></text>
+  </g>
+  <g
+     transform="translate(344.82833,488.49572)"
+     id="g4349-78-8"
+     style="display:inline">
+    <ellipse
+       cx="-44.919998"
+       cy="-98.797997"
+       rx="13.199"
+       ry="13.469"
+       fill="#1f638a"
+       stroke-linecap="round"
+       stroke-linejoin="round"
+       stroke-width="1.0658"
+       id="ellipse4343-3-5" />
+    <text
+       x="-50.582352"
+       y="-91.358932"
+       fill="#000000"
+       font-family="'Arial Nova', 'Arial Unicode MS', 'Yu Gothic UI', sans-serif"
+       font-size="12.8px"
+       letter-spacing="0px"
+       stroke-width="1.0667"
+       word-spacing="0px"
+       style="line-height:0%"
+       xml:space="preserve"
+       id="text4347-5-4"><tspan
+         x="-50.582352"
+         y="-91.358932"
+         fill="#ffffff"
+         font-family="'Arial Nova', 'Arial Unicode MS', 'Yu Gothic UI', sans-serif"
+         font-size="21.333px"
+         stroke="#ffffff"
+         stroke-width="1.0667"
+         style="line-height:1.25"
+         id="tspan4345-86-2">B</tspan></text>
+  </g>
+  <g
+     transform="translate(553.69132,489.5308)"
+     id="g4349-78-83"
+     style="display:inline">
+    <ellipse
+       cx="-44.919998"
+       cy="-98.797997"
+       rx="13.199"
+       ry="13.469"
+       fill="#1f638a"
+       stroke-linecap="round"
+       stroke-linejoin="round"
+       stroke-width="1.0658"
+       id="ellipse4343-3-1" />
+    <text
+       x="-52.551544"
+       y="-91.921562"
+       fill="#000000"
+       font-family="'Arial Nova', 'Arial Unicode MS', 'Yu Gothic UI', sans-serif"
+       font-size="12.8px"
+       letter-spacing="0px"
+       stroke-width="1.0667"
+       word-spacing="0px"
+       style="line-height:0%"
+       xml:space="preserve"
+       id="text4347-5-9"><tspan
+         x="-52.551544"
+         y="-91.921562"
+         fill="#ffffff"
+         font-family="'Arial Nova', 'Arial Unicode MS', 'Yu Gothic UI', sans-serif"
+         font-size="21.333px"
+         stroke="#ffffff"
+         stroke-width="1.0667"
+         style="line-height:1.25"
+         id="tspan4345-86-9">C</tspan></text>
+  </g>
+  <g
+     transform="translate(360.73738,309.78816)"
+     id="g4349-4"
+     style="display:inline">
+    <ellipse
+       cx="-44.919998"
+       cy="-98.797997"
+       rx="13.199"
+       ry="13.469"
+       fill="#1f638a"
+       stroke-linecap="round"
+       stroke-linejoin="round"
+       stroke-width="1.0658"
+       id="ellipse4343-1" />
+    <text
+       x="-50.761276"
+       y="-91.125885"
+       fill="#000000"
+       font-family="'Arial Nova', 'Arial Unicode MS', 'Yu Gothic UI', sans-serif"
+       font-size="12.8px"
+       letter-spacing="0px"
+       stroke-width="1.0667"
+       word-spacing="0px"
+       style="line-height:0%"
+       xml:space="preserve"
+       id="text4347-2"><tspan
+         x="-50.761276"
+         y="-91.125885"
+         fill="#ffffff"
+         font-family="'Arial Nova', 'Arial Unicode MS', 'Yu Gothic UI', sans-serif"
+         font-size="21.333px"
+         stroke="#ffffff"
+         stroke-width="1.0667"
+         style="line-height:1.25"
+         id="tspan4345-6">5</tspan></text>
+  </g>
+</svg>

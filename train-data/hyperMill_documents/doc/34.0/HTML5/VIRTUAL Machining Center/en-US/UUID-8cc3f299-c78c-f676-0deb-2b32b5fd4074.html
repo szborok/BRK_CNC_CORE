@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="x-ua-compatible" content="IE=edge" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="search" content="default" />
+  <meta name="use.ic" content="no" />
+  <meta name="tocstandalone" content="yes" />
+  <script type="text/javascript">
+  //<![CDATA[
+                        var index;
+                        var contentLanguage = 'en-US';
+                        var enterKey = 'select';
+                        
+                                        var anchoroption = true;
+                                var instantsearch_minlength = 1;
+                                                
+                                var fuse_threshold = 0.3;
+                        
+                                        var local_csh = false;
+                                
+                        var useanchorlinks = false;
+  //]]>
+  </script>
+  <title>8.1.&nbsp;Analysing the movement path of the machine axes</title>
+  <link rel="stylesheet" type="text/css" href="../css/docbook.css" />
+  <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" href="../css/bootstrap-theme.min.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style-common.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style-responsive.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style-print.css" />
+  <link rel="stylesheet" type="text/css" href="../css/font-awesome.css" />
+  <link rel="stylesheet" type="text/css" href="../css/custom.css" />
+  <link rel="stylesheet" type="text/css" href="../css/layout-custom-style.css" />
+  <script src="../js/jquery-1.10.2.min.js" type="text/javascript"></script>
+  <script src="../js/jquery-ui-1.10.3.custom.min.js" type="text/javascript"></script>
+  <script src="../js/bootstrap.min.js" type="text/javascript"></script>
+  <script src="../js/purl.js" type="text/javascript"></script>
+  <script src="../js/jquery.event.move.js" type="text/javascript"></script>
+  <script src="../js/jquery.event.swipe.js" type="text/javascript"></script>
+  <script src="../js/jquery.sticky.js" type="text/javascript"></script>
+  <script src="../js/respond.min.js" type="text/javascript"></script>
+  <script src="../js/script.js" type="text/javascript"></script>
+  <script src="js/toc.js" type="text/javascript"></script>
+  <script src="../js/create-toc.js" type="text/javascript"></script>
+  <script src="../js/clipboard.min.js" type="text/javascript"></script>
+  <script src="../js/fuse.min.js" type="text/javascript"></script>
+  <script src="../js/jquery.mark.min.js" type="text/javascript"></script>
+  <script src="../js/html5.fuse.search.js" type="text/javascript"></script>
+  <script src="js/fuzzydata.js" type="text/javascript"></script>
+  <script src="../js/csh.js" type="text/javascript"></script>
+  <script src="../js/highlight-mergehtml-plugin.js" type="text/javascript"></script>
+  <meta name="generator" content="Paligo" />
+  <link rel="prev" href="UUID-a0bf736e-f917-ba10-5a5d-2bbe92f9060a.html" title="8.&nbsp;Analysis" />
+  <link rel="next" href="UUID-8cc3f299-c78c-f676-0deb-2b32b5fd4074.html#UUID-8cc3f299-c78c-f676-0deb-2b32b5fd4074_UUID-cf0d5b7b-fde4-1dd0-9873-a8ee4f9f96a8" title="Analysing the machine positions and travel range" />
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML" async="async"></script>
+  <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+  <script type="text/javascript" src="../js/cookie-consent.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  <script type="text/javascript">
+  //<![CDATA[
+                        $(document).on('ready ajaxComplete', function() {
+                                
+                                hljs.addPlugin(mergeHTMLPlugin);
+                                hljs.configure({'ignoreUnescapedHTML': true});
+                                
+                                $('pre:not(.embedcode)').each(function() {
+                                        /**
+                                         * @type {string}
+                                         */
+                                        var language = $(this).data('language');
+
+                                        if (language === 'plaintext' || language === 'text') {
+                                                $(this).addClass(language).addClass('hljs');
+                                                return true;
+                                        }
+                                        else {
+                                                var clone = this.cloneNode(true);
+                                                hljs.highlightElement(clone);
+                                                $(this).empty().append($(clone).contents());
+                                                $(this).attr("class", $(clone).attr("class"));
+                                        }
+                                });
+                        });
+  //]]>
+  </script>
+  <style type="text/css">
+  /*<![CDATA[*/
+            div.skipnav {
+            }
+            div.skipnav a {
+                position: fixed;
+                left: -10000px;
+                top: 1.5em;
+                width: 1px;
+                height: 1px;
+                overflow: hidden;
+            }
+            div.skipnav a:focus, div.skipnav a:active, div.skipnav a:hover {
+                background: white;
+                color: black;
+                box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.5);
+                position: fixed;
+                left: 2em;
+                top: 1.5em;
+                width: auto;
+                height: auto;
+                overflow: visible;
+                text-decoration: underline;
+                z-index: 99999; /* has to be higher than the side panel */
+    }
+  /*]]>*/
+  </style>
+</head>
+<body data-link-prefix="">
+  <div class="skipnav">
+    <a href="#content-wrapper">Skip to main content</a>
+  </div>
+  <div id="page" class="clearfix">
+    <div id="header">
+      <div class="container">
+        <div id="logotype-container" class="pull-left">
+          <a href="../index.html"><img id="logotype-pageheader" src="../css/image/corporate-logo.png" alt="Corporate logotype" data-role="logotype" /></a>
+        </div>
+        <div id="pagetools-container" class="pull-right">
+          <ul id="page-tools">
+            <li class="page-tools-search"><input placeholder="Search" type="text" class="form-control" aria-label="Search" id="search" /></li>
+            <li class="page-tools-print">
+              <a href="javascript:window.print();"><span class="tool-label">Print</span><span class="glyphicon glyphicon-print"></span></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <h1 id="publication-title"><span xml:lang="de" lang="de" dir="ltr" class="phrase"><span class="application">VIRTUAL Machining Center</span></span></h1>
+    <div id="subheader-sticky-wrapper" class="sticky-wrapper">
+      <div id="subheader">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3 toc-title">
+              <h2><a class="prev nav-icon hidden-lg hidden-md" href="UUID-a0bf736e-f917-ba10-5a5d-2bbe92f9060a.html"><span class="glyphicon glyphicon-chevron-left"></span></a> <a href="#toc" class="hidden mobile-nav-toggle"><span class="glyphicon glyphicon-list"></span>Table of Contents</a><span class="toc-label">Table of Contents</span><a class=
+              "next nav-icon hidden-lg hidden-md" href="UUID-8cc3f299-c78c-f676-0deb-2b32b5fd4074.html#UUID-8cc3f299-c78c-f676-0deb-2b32b5fd4074_UUID-cf0d5b7b-fde4-1dd0-9873-a8ee4f9f96a8"><span class="glyphicon glyphicon-chevron-right"></span></a></h2>
+            </div>
+            <div class="col-md-9 breadcrumb-container">
+              <ul class="breadcrumb">
+                <li class="breadcrumb-link">
+                  <span class="glyphicon glyphicon-home"></span>&nbsp;<a href="index-en-US.html"><span xml:lang="de" lang="de" dir="ltr" class="phrase"><span class="application">VIRTUAL Machining Center</span></span></a>
+                </li>
+                <li class="breadcrumb-link">
+                  <a href="UUID-a0bf736e-f917-ba10-5a5d-2bbe92f9060a.html">Analysis</a>
+                </li>
+                <li class="breadcrumb-node">Analysing the movement path of the machine axes</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="main-content">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 toc-container" id="toc-wrapper">
+            <div id="toc-placeholder">
+              <div id="toc-standalone-placeholder"></div>
+            </div>
+          </div>
+          <div class="col-md-9 content-container" id="content-wrapper">
+            <a accesskey="p" class="prev pull-left prev visible-lg visible-md" id="header-navigation-prev" href="UUID-a0bf736e-f917-ba10-5a5d-2bbe92f9060a.html"><span class="glyphicon glyphicon-circle-arrow-left"></span>Prev</a><a accesskey="n" class="pull-right next visible-lg visible-md" id="header-navigation-next" href=
+            "UUID-8cc3f299-c78c-f676-0deb-2b32b5fd4074.html#UUID-8cc3f299-c78c-f676-0deb-2b32b5fd4074_UUID-cf0d5b7b-fde4-1dd0-9873-a8ee4f9f96a8">Next<span class="glyphicon glyphicon-circle-arrow-right"></span></a>
+            <div id="topic-content">
+              <section xml:lang="en-US" lang="en-US" dir="ltr" class="section" data-origin-id="UUID-de037e86-ab7e-9a67-7c40-b731fe99f811" data-publication-date="" id="UUID-8cc3f299-c78c-f676-0deb-2b32b5fd4074">
+                <div class="titlepage">
+                  <div>
+                    <div class="title">
+                      <h1 class="title" style="clear: both"><span class="formal-number">8.1</span><span class="formal-label-delimiter">.</span> <span class="formal-title">Analysing the movement path of the machine axes</span></h1>
+                    </div>
+                  </div>
+                </div>
+                <div class="mediaobject"><img src="image/uuid-18403c6b-3e38-8837-9f21-34ed6dd580c5-en-US.svg" style="" alt="vmc_graphische_analyse_bewegungsablauf.svg" /></div>
+                <p><span class="inlinemediaobject"><img src="image/uuid-d3472d24-15bf-6200-8d62-f37eed6cb967.svg" alt="Nr_01.svg" /></span> Coordinates (linear axes) or degrees (rotary axes).</p>
+                <p><span class="inlinemediaobject"><img src="image/uuid-fa232d44-ccb2-2f50-a1d9-253c460bb62c.svg" alt="Nr_02.svg" /></span> Collision area (highlighted in red).</p>
+                <p><span class="inlinemediaobject"><img src="image/uuid-fb9c4824-908e-c3d0-eb1e-1e864608f0ed.svg" alt="Nr_03.svg" /></span> Movement path of the Z axis, <span class="inlinemediaobject"><img src="image/uuid-8e73687f-89a5-04d8-31df-020f365123aa.svg" alt="Nr_04.svg" /></span> the Y axis,<span class="inlinemediaobject"><img src=
+                "image/uuid-fb1a8ebc-9f11-c7d7-6068-ea0134526cce.svg" alt="Nr_05.svg" /></span> and the X axis.</p>
+                <p><span class="inlinemediaobject"><img src="image/uuid-40776e33-2592-da47-16b2-fcf814e7d95f.svg" alt="Nr_06.svg" /></span> Length of the toolpath.</p>
+                <p><span class="inlinemediaobject"><img src="image/uuid-6ae9593e-533c-38c8-f21d-9ab8b709c1bf.svg" alt="Nr_07.svg" /></span> Use the <span class="bold"><strong>F</strong></span> and <span class="bold"><strong>S</strong></span> buttons to show the feedrate and spindle speed.</p>
+                <p><span class="inlinemediaobject"><img src="image/uuid-e979a2e8-7174-243d-7a76-d0fd2df3b398.svg" alt="Nr_08.svg" /></span> Tooltip: Position the mouse pointer over a button (<span class="bold"><strong>X</strong></span>, <span class="bold"><strong>Y</strong></span>, <span class="bold"><strong>Z</strong></span>, <span class=
+                "bold"><strong>A</strong></span>, <span class="bold"><strong>B</strong></span>) to show the minimum and maximum value of the axis.</p>
+                <p><span class="inlinemediaobject"><img src="image/uuid-0afd4b02-bea8-327c-a12a-2fcdddea7416.svg" alt="Nr_09.svg" /></span> Use the <span class="bold"><strong>X</strong></span>, <span class="bold"><strong>Y</strong></span>, <span class="bold"><strong>Z</strong></span>, <span class="bold"><strong>A</strong></span>, <span class=
+                "bold"><strong>B</strong></span> buttons to show the graphical movement path of the linear axes and rotary axes.</p>
+                <p><span class="inlinemediaobject"><img src="image/uuid-1e2a7ecd-baa7-566f-e99a-cf051aea2c7d.svg" alt="Nr_10.svg" /></span> Coordinate grid.</p>
+                <p><span class="guilabel">Absolute</span> Display the coordinate values as absolute values. <span class="guilabel">Delta</span>: Show the coordinate values as the difference between two blocks.</p>
+                <p><span class="guilabel">Zoom</span>: Zooming (enlarging or reducing) is performed both in the horizontal direction when displaying the coordinate values and in the vertical direction when displaying the block display.</p>
+                <p><span class="guilabel">Zoom vertical</span>: Zooming (enlarging or reducing) is only performed in the vertical direction when displaying the coordinate values. The representation of the block display does not change.</p>
+                <p><span class="guilabel">Zoom horizontal</span>: Zooming (enlarging or reducing) is only performed in the horizontal direction during the block display. The representation of the coordinate values does not change.</p>
+                <p>The information also applies to the analysis of the feedrate values and the spindle speed.</p>
+                <p><span class="guilabel">Visible grid</span>: Show a coordinate grid in order to obtain a better overview.</p>
+                <p><span class="guilabel">Current simulation interval only</span>: Display information for the current simulation interval.</p>
+                <section xml:lang="en-US" lang="en-US" dir="ltr" class="section" data-origin-id="" data-publication-date="" id="UUID-8cc3f299-c78c-f676-0deb-2b32b5fd4074_UUID-cf0d5b7b-fde4-1dd0-9873-a8ee4f9f96a8">
+                  <div class="titlepage">
+                    <div>
+                      <div class="title">
+                        <h2 class="title" style="clear: both"><span class="formal-title">Analysing the machine positions and travel range</span></h2>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mediaobject"><img src="image/uuid-dcff02f8-fe04-3498-a0e7-013c2f3fab8a.png" style="" alt="vmc_graphische_analyse_sonstige.svg" /></div>
+                  <p><span class="inlinemediaobject"><img src="image/uuid-d3472d24-15bf-6200-8d62-f37eed6cb967.svg" alt="Nr_01.svg" /></span> Movement path of the Z axis, <span class="inlinemediaobject"><img src="image/uuid-fa232d44-ccb2-2f50-a1d9-253c460bb62c.svg" alt="Nr_02.svg" /></span> current position of the machine,</p>
+                  <p><span class="inlinemediaobject"><img src="image/uuid-fb9c4824-908e-c3d0-eb1e-1e864608f0ed.svg" alt="Nr_03.svg" /></span> Upper limit, <span class="inlinemediaobject"><img src="image/uuid-8e73687f-89a5-04d8-31df-020f365123aa.svg" alt="Nr_04.svg" /></span> lower limit (travel range of the Z axis).</p>
+                </section>
+                <section xml:lang="en-US" lang="en-US" dir="ltr" class="section" data-origin-id="" data-publication-date="" id="UUID-8cc3f299-c78c-f676-0deb-2b32b5fd4074_UUID-054232e5-52e0-f242-b87b-06bb5e52eb84">
+                  <div class="titlepage">
+                    <div>
+                      <div class="title">
+                        <h2 class="title" style="clear: both"><span class="formal-title">Keyboard shortcuts and mouse functions for controlling the analysis</span></h2>
+                      </div>
+                    </div>
+                  </div>
+                  <p><span class="keycap keycap-graphical"><strong>CTRL</strong></span> key and right mouse button: Move the analysis window.</p>
+                  <p><span class="keycap keycap-graphical"><strong>CTRL</strong></span> key and left mouse button: Set a position and move the machine to this position.</p>
+                  <p>Left mouse button: Open a zoom window for zooming.</p>
+                  <p>Right mouse button/mouse wheel: Zoom out or in. Both functions are designed as a stack function: If you zoom in three times and zoom out twice you will reach the state that existed after the first zoom in.</p>
+                  <p>SHIFT key and mouse wheel/middle mouse button: After zooming out, zoom in again to a previously selected position.</p>
+                  <p>SHIFT key and right mouse button: Zoom out to the original standard view again.</p>
+                  <p>Double-click (right/left mouse button): Create a new breakpoint.</p>
+                </section>
+              </section>
+              <div class="footer-content">
+                <div class="section-toc section-toc-after">
+                  <div class="section-toc-title">
+                    <span class="section-toc-title-delimiter">:</span>
+                  </div>
+                </div>
+              </div>
+              <footer></footer>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

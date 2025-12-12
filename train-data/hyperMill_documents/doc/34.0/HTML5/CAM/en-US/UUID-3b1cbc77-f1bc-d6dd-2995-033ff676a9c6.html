@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="x-ua-compatible" content="IE=edge" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="search" content="default" />
+  <meta name="use.ic" content="no" />
+  <meta name="tocstandalone" content="yes" />
+  <script type="text/javascript">
+  //<![CDATA[
+                        var index;
+                        var contentLanguage = 'en-US';
+                        var enterKey = 'select';
+                        
+                                        var anchoroption = true;
+                                var instantsearch_minlength = 1;
+                                                
+                                var fuse_threshold = 0.3;
+                        
+                                        var local_csh = false;
+                                
+                        var useanchorlinks = false;
+  //]]>
+  </script>
+  <title>5-axis parameters</title>
+  <link rel="stylesheet" type="text/css" href="../css/docbook.css" />
+  <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" href="../css/bootstrap-theme.min.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style-common.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style-responsive.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style-print.css" />
+  <link rel="stylesheet" type="text/css" href="../css/font-awesome.css" />
+  <link rel="stylesheet" type="text/css" href="../css/custom.css" />
+  <link rel="stylesheet" type="text/css" href="../css/layout-custom-style.css" />
+  <script src="../js/jquery-1.10.2.min.js" type="text/javascript"></script>
+  <script src="../js/jquery-ui-1.10.3.custom.min.js" type="text/javascript"></script>
+  <script src="../js/bootstrap.min.js" type="text/javascript"></script>
+  <script src="../js/purl.js" type="text/javascript"></script>
+  <script src="../js/jquery.event.move.js" type="text/javascript"></script>
+  <script src="../js/jquery.event.swipe.js" type="text/javascript"></script>
+  <script src="../js/jquery.sticky.js" type="text/javascript"></script>
+  <script src="../js/respond.min.js" type="text/javascript"></script>
+  <script src="../js/script.js" type="text/javascript"></script>
+  <script src="js/toc.js" type="text/javascript"></script>
+  <script src="../js/create-toc.js" type="text/javascript"></script>
+  <script src="../js/clipboard.min.js" type="text/javascript"></script>
+  <script src="../js/fuse.min.js" type="text/javascript"></script>
+  <script src="../js/jquery.mark.min.js" type="text/javascript"></script>
+  <script src="../js/html5.fuse.search.js" type="text/javascript"></script>
+  <script src="js/fuzzydata.js" type="text/javascript"></script>
+  <script src="../js/csh.js" type="text/javascript"></script>
+  <script src="../js/highlight-mergehtml-plugin.js" type="text/javascript"></script>
+  <meta name="generator" content="Paligo" />
+  <link rel="prev" href="UUID-cb900e4b-9b3e-3d2b-62dc-285c7edbe884.html#UUID-cb900e4b-9b3e-3d2b-62dc-285c7edbe884_UUID-444e4f1d-9313-4644-1bb1-4c0b5cfa665b" title="Safety" />
+  <link rel="next" href="UUID-3b1cbc77-f1bc-d6dd-2995-033ff676a9c6.html#UUID-3b1cbc77-f1bc-d6dd-2995-033ff676a9c6_section-5d3f04987f6f7-idm45400051614768" title="Tilt strategy" />
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js?config=TeX-MML-AM_CHTML" async="async"></script>
+  <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+  <script type="text/javascript" src="../js/cookie-consent.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  <script type="text/javascript">
+  //<![CDATA[
+                        $(document).on('ready ajaxComplete', function() {
+                                
+                                hljs.addPlugin(mergeHTMLPlugin);
+                                hljs.configure({'ignoreUnescapedHTML': true});
+                                
+                                $('pre:not(.embedcode)').each(function() {
+                                        /**
+                                         * @type {string}
+                                         */
+                                        var language = $(this).data('language');
+
+                                        if (language === 'plaintext' || language === 'text') {
+                                                $(this).addClass(language).addClass('hljs');
+                                                return true;
+                                        }
+                                        else {
+                                                var clone = this.cloneNode(true);
+                                                hljs.highlightElement(clone);
+                                                $(this).empty().append($(clone).contents());
+                                                $(this).attr("class", $(clone).attr("class"));
+                                        }
+                                });
+                        });
+  //]]>
+  </script>
+  <style type="text/css">
+  /*<![CDATA[*/
+            div.skipnav {
+            }
+            div.skipnav a {
+                position: fixed;
+                left: -10000px;
+                top: 1.5em;
+                width: 1px;
+                height: 1px;
+                overflow: hidden;
+            }
+            div.skipnav a:focus, div.skipnav a:active, div.skipnav a:hover {
+                background: white;
+                color: black;
+                box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.5);
+                position: fixed;
+                left: 2em;
+                top: 1.5em;
+                width: auto;
+                height: auto;
+                overflow: visible;
+                text-decoration: underline;
+                z-index: 99999; /* has to be higher than the side panel */
+    }
+  /*]]>*/
+  </style>
+</head>
+<body data-link-prefix="">
+  <div class="skipnav">
+    <a href="#content-wrapper">Skip to main content</a>
+  </div>
+  <div id="page" class="clearfix">
+    <div id="header">
+      <div class="container">
+        <div id="logotype-container" class="pull-left">
+          <a href="../index.html"><img id="logotype-pageheader" src="../css/image/corporate-logo.png" alt="Corporate logotype" data-role="logotype" /></a>
+        </div>
+        <div id="pagetools-container" class="pull-right">
+          <ul id="page-tools">
+            <li class="page-tools-search"><input placeholder="Search" type="text" class="form-control" aria-label="Search" id="search" /></li>
+            <li class="page-tools-print">
+              <a href="javascript:window.print();"><span class="tool-label">Print</span><span class="glyphicon glyphicon-print"></span></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <h1 id="publication-title">CAM</h1>
+    <div id="subheader-sticky-wrapper" class="sticky-wrapper">
+      <div id="subheader">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3 toc-title">
+              <h2><a class="prev nav-icon hidden-lg hidden-md" href="UUID-cb900e4b-9b3e-3d2b-62dc-285c7edbe884.html#UUID-cb900e4b-9b3e-3d2b-62dc-285c7edbe884_UUID-444e4f1d-9313-4644-1bb1-4c0b5cfa665b"><span class="glyphicon glyphicon-chevron-left"></span></a> <a href="#toc" class="hidden mobile-nav-toggle"><span class=
+              "glyphicon glyphicon-list"></span>Table of Contents</a><span class="toc-label">Table of Contents</span><a class="next nav-icon hidden-lg hidden-md" href="UUID-3b1cbc77-f1bc-d6dd-2995-033ff676a9c6.html#UUID-3b1cbc77-f1bc-d6dd-2995-033ff676a9c6_section-5d3f04987f6f7-idm45400051614768"><span class=
+              "glyphicon glyphicon-chevron-right"></span></a></h2>
+            </div>
+            <div class="col-md-9 breadcrumb-container">
+              <ul class="breadcrumb">
+                <li class="breadcrumb-link">
+                  <span class="glyphicon glyphicon-home"></span>&nbsp;<a href="index-en-US.html">CAM</a>
+                </li>
+                <li class="breadcrumb-link">
+                  <a href="UUID-612c317b-197f-d0fa-8b72-ad4799e69646.html">5X Machining</a>
+                </li>
+                <li class="breadcrumb-link">
+                  <a href="UUID-a549f254-cba6-3ffe-2cd9-21e827187447.html">Tube Milling</a>
+                </li>
+                <li class="breadcrumb-node">5-axis parameters</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="main-content">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 toc-container" id="toc-wrapper">
+            <div id="toc-placeholder">
+              <div id="toc-standalone-placeholder"></div>
+            </div>
+          </div>
+          <div class="col-md-9 content-container" id="content-wrapper">
+            <a accesskey="p" class="prev pull-left prev visible-lg visible-md" id="header-navigation-prev" href="UUID-cb900e4b-9b3e-3d2b-62dc-285c7edbe884.html#UUID-cb900e4b-9b3e-3d2b-62dc-285c7edbe884_UUID-444e4f1d-9313-4644-1bb1-4c0b5cfa665b"><span class="glyphicon glyphicon-circle-arrow-left"></span>Prev</a><a accesskey="n" class=
+            "pull-right next visible-lg visible-md" id="header-navigation-next" href="UUID-3b1cbc77-f1bc-d6dd-2995-033ff676a9c6.html#UUID-3b1cbc77-f1bc-d6dd-2995-033ff676a9c6_section-5d3f04987f6f7-idm45400051614768">Next<span class="glyphicon glyphicon-circle-arrow-right"></span></a>
+            <div id="topic-content">
+              <section xml:lang="en-US" lang="en-US" dir="ltr" class="section" data-origin-id="UUID-cf413b8e-460b-2e3c-d7b3-b9acbf2b8e13" data-publication-date="" id="UUID-3b1cbc77-f1bc-d6dd-2995-033ff676a9c6">
+                <div class="titlepage">
+                  <div>
+                    <div class="title">
+                      <h1 class="title" style="clear: both"><span class="formal-title">5-axis parameters</span></h1>
+                    </div>
+                  </div>
+                </div>
+                <section dir="ltr" class="section" data-origin-id="" data-publication-date="" id="UUID-3b1cbc77-f1bc-d6dd-2995-033ff676a9c6_section-5d3f04987f6f7-idm45400051614768">
+                  <div class="titlepage">
+                    <div>
+                      <div class="title">
+                        <h2 class="title" style="clear: both"><span class="formal-title">Tilt strategy</span></h2>
+                      </div>
+                    </div>
+                  </div>
+                  <p><span class="guilabel">5X simultaneous</span> (A): Collisions with the shank are avoided by tilting the tool around the cutting middle point. To be able to plunge as deeply as possible without any collision avoidance, the tool can be tilted with the desired tilt angle in the direction of the <span class="guilabel">Tilt
+                  curve</span>.</p>
+                  <p><span class="guilabel">Fixed 3D</span> (B): The tool axis always corresponds to the Z axis of the frame. The orientation of the frame allows the reachable depth to be influenced without any collision avoidance. In this tilt strategy, the tool is shifted laterally in order to avoid collisions.</p>
+                  <div class="informaltable table-responsive">
+                    <table style="width:100%;" class="informaltable">
+                      <colgroup>
+                        <col style="width:15%;" />
+                        <col style="width:85%;" />
+                      </colgroup>
+                      <tbody>
+                        <tr>
+                          <td class="td">
+                            <p><span class="bold"><strong>Example</strong></span></p>
+                          </td>
+                          <td class="td">
+                            <p>5X Tube Finishing, Woodruff cutter, Strategy = Spiral,</p>
+                            <p>(A) <span class="guilabel">5X simultaneous</span>, (B) <span class="guilabel">Fixed 3D</span>, Jobframe tilted 7 °,</p>
+                            <p>(1) Start profile, (2) End profile</p>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div class="informalfigure" id="UUID-3b1cbc77-f1bc-d6dd-2995-033ff676a9c6_figure-5d42ace0a9e4f-idm45315535705120">
+                    <div class="mediaobject">
+                      <table class="image-viewport" style="border-collapse:collapse;border:0; ;">
+                        <tr style="height: 399px">
+                          <td style="padding:0;"><img src="image/uuid-7d739111-f271-0a9e-2381-9f5da2fd92a2.svg" style="max-height: 399px;" alt="5X_formkanal_anstellstrategie.svg" /></td>
+                        </tr>
+                      </table>
+                    </div>
+                  </div>
+                </section>
+                <section dir="ltr" class="section internal" data-origin-id="" data-publication-date="" id="UUID-3b1cbc77-f1bc-d6dd-2995-033ff676a9c6_section-idm53128822751986">
+                  <div class="titlepage">
+                    <div>
+                      <div class="title">
+                        <h2 class="title" style="clear: both"><span class="formal-title">Tilt reference</span></h2>
+                      </div>
+                    </div>
+                  </div>
+                  <h6 id="id135595" class="bridgehead">Tilt curves</h6>
+                  <div class="itemizedlist">
+                    <ul class="itemizedlist" style="list-style-type: disc;">
+                      <li class="listitem">
+                        <p>Available for Ballmill and Lollipop.</p>
+                      </li>
+                      <li class="listitem">
+                        <p>Optional selection.</p>
+                      </li>
+                      <li class="listitem">
+                        <p>Selecting tilt curves will overwrite the central curve's tilt curve function. The tool will then position itself facing a cladding curve around the tilt curve's intersection points with the temporary cross-sections.</p>
+                      </li>
+                    </ul>
+                  </div>
+                  <div dir="ltr" class="note">
+                    <h3 class="title">Note</h3>
+                    <p>This is especially useful when there are highly pointed angles to the machining surfaces for a tool inclination towards the central curve. In most cases, it is sufficient to laterally move a copy of the central curve</p>
+                  </div>
+                  <h6 id="id135605" class="bridgehead">Drive surfaces</h6>
+                  <div class="itemizedlist">
+                    <ul class="itemizedlist" style="list-style-type: disc;">
+                      <li class="listitem">
+                        <p>Available for Woodruff.</p>
+                      </li>
+                      <li class="listitem">
+                        <p>Selection that is absolutely necessary.</p>
+                      </li>
+                      <li class="listitem">
+                        <p>During collision avoidance, drive surfaces (normal vectors ) maintain the tool contact and are used to solve problems concerning the poor surface quality of the model (for example, irregular normal vectors, gaps or overlaps). They are either part of the model surface or are surfaces with a suitable offset (to the model
+                        surface).</p>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="informaltable table-responsive">
+                    <table style="width:100%;" class="informaltable">
+                      <colgroup>
+                        <col style="width:15%;" />
+                        <col style="width:85%;" />
+                      </colgroup>
+                      <tbody>
+                        <tr>
+                          <td class="td">
+                            <p><span class="bold"><strong>Example</strong></span>:</p>
+                          </td>
+                          <td class="td">
+                            <p>5X Tube Finishing, strategy = Spiral, Woodruff Cutter</p>
+                            <p>(1) Model surfaces as <span class="guilabel">Drive surfaces</span>.</p>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div class="mediaobject">
+                    <table class="image-viewport" style="border-collapse:collapse;border:0; width:461px;">
+                      <tr>
+                        <td style="padding:0;"><img src="image/uuid-d44081ca-2485-ca40-7a86-5a8a849d9258.svg" style="max-width: 461px;" alt="5X_formkanal_fuehrungsflaechen.svg" /></td>
+                      </tr>
+                    </table>
+                  </div>
+                </section>
+                <section dir="ltr" class="section" data-origin-id="" data-publication-date="" id="UUID-3b1cbc77-f1bc-d6dd-2995-033ff676a9c6_section-5d417a7dd15ac-idm45353324891408">
+                  <div class="titlepage">
+                    <div>
+                      <div class="title">
+                        <h2 class="title" style="clear: both"><span class="formal-title">Tilt angle</span></h2>
+                      </div>
+                    </div>
+                  </div>
+                  <p><span class="guilabel">Desired tilt angle</span>: Define the default angle for the tilt angle of the tool.</p>
+                  <p><span class="guilabel">Max. tilt angle</span>: Define the maximum permissible angle for the tilt angle of the tool.</p>
+                </section>
+                <section dir="ltr" class="section internal" data-origin-id="" data-publication-date="" id="id135635">
+                  <div class="titlepage">
+                    <div>
+                      <div class="title">
+                        <h2 class="title" style="clear: both"><span class="formal-title">Automatic segmenting</span></h2>
+                      </div>
+                    </div>
+                  </div>
+                  <p><span xml:lang="de" lang="de" dir="ltr" class="guilabel">User def. segment limits</span></p>
+                  <p>When using a parallel machining strategy, segment limits allow for partitioning into machining segments. In case the upper machining plane intersects one of these lines, a rapid is inserted to the clearance plane to enable the rotary axis to be turned backwards if needed.</p>
+                  <p>Define segment limits preferably as simple lines in the top machining plane.</p>
+                  <p>This option is only required for limited rotary axes.</p>
+                </section>
+              </section>
+              <div class="footer-content">
+                <div class="section-toc section-toc-after">
+                  <div class="section-toc-title">
+                    <span class="section-toc-title-delimiter">:</span>
+                  </div>
+                </div>
+              </div>
+              <footer></footer>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

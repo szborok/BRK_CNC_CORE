@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="x-ua-compatible" content="IE=edge" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="search" content="default" />
+  <meta name="use.ic" content="no" />
+  <meta name="tocstandalone" content="yes" />
+  <script type="text/javascript">
+  //<![CDATA[
+                        var index;
+                        var contentLanguage = 'en-US';
+                        var enterKey = 'select';
+                        
+                                        var anchoroption = true;
+                                var instantsearch_minlength = 1;
+                                                
+                                var fuse_threshold = 0.3;
+                        
+                                        var local_csh = false;
+                                
+                        var useanchorlinks = false;
+  //]]>
+  </script>
+  <title>Geometry</title>
+  <link rel="stylesheet" type="text/css" href="../css/docbook.css" />
+  <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" href="../css/bootstrap-theme.min.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style-common.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style-responsive.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style-print.css" />
+  <link rel="stylesheet" type="text/css" href="../css/font-awesome.css" />
+  <link rel="stylesheet" type="text/css" href="../css/custom.css" />
+  <link rel="stylesheet" type="text/css" href="../css/layout-custom-style.css" />
+  <script src="../js/jquery-1.10.2.min.js" type="text/javascript"></script>
+  <script src="../js/jquery-ui-1.10.3.custom.min.js" type="text/javascript"></script>
+  <script src="../js/bootstrap.min.js" type="text/javascript"></script>
+  <script src="../js/purl.js" type="text/javascript"></script>
+  <script src="../js/jquery.event.move.js" type="text/javascript"></script>
+  <script src="../js/jquery.event.swipe.js" type="text/javascript"></script>
+  <script src="../js/jquery.sticky.js" type="text/javascript"></script>
+  <script src="../js/respond.min.js" type="text/javascript"></script>
+  <script src="../js/script.js" type="text/javascript"></script>
+  <script src="js/toc.js" type="text/javascript"></script>
+  <script src="../js/create-toc.js" type="text/javascript"></script>
+  <script src="../js/clipboard.min.js" type="text/javascript"></script>
+  <script src="../js/fuse.min.js" type="text/javascript"></script>
+  <script src="../js/jquery.mark.min.js" type="text/javascript"></script>
+  <script src="../js/html5.fuse.search.js" type="text/javascript"></script>
+  <script src="js/fuzzydata.js" type="text/javascript"></script>
+  <script src="../js/csh.js" type="text/javascript"></script>
+  <script src="../js/highlight-mergehtml-plugin.js" type="text/javascript"></script>
+  <meta name="generator" content="Paligo" />
+  <link rel="prev" href="UUID-f153cb41-38dc-12b5-133a-6da718bbeb6c.html" title="Tools" />
+  <link rel="next" href="UUID-e0e0850b-9bff-e6f0-bab2-01c1261af289.html#UUID-e0e0850b-9bff-e6f0-bab2-01c1261af289_section-idm232098706508047" title="Coordinate System" />
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js?config=TeX-MML-AM_CHTML" async="async"></script>
+  <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+  <script type="text/javascript" src="../js/cookie-consent.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  <script type="text/javascript">
+  //<![CDATA[
+                        $(document).on('ready ajaxComplete', function() {
+                                
+                                hljs.addPlugin(mergeHTMLPlugin);
+                                hljs.configure({'ignoreUnescapedHTML': true});
+                                
+                                $('pre:not(.embedcode)').each(function() {
+                                        /**
+                                         * @type {string}
+                                         */
+                                        var language = $(this).data('language');
+
+                                        if (language === 'plaintext' || language === 'text') {
+                                                $(this).addClass(language).addClass('hljs');
+                                                return true;
+                                        }
+                                        else {
+                                                var clone = this.cloneNode(true);
+                                                hljs.highlightElement(clone);
+                                                $(this).empty().append($(clone).contents());
+                                                $(this).attr("class", $(clone).attr("class"));
+                                        }
+                                });
+                        });
+  //]]>
+  </script>
+  <style type="text/css">
+  /*<![CDATA[*/
+            div.skipnav {
+            }
+            div.skipnav a {
+                position: fixed;
+                left: -10000px;
+                top: 1.5em;
+                width: 1px;
+                height: 1px;
+                overflow: hidden;
+            }
+            div.skipnav a:focus, div.skipnav a:active, div.skipnav a:hover {
+                background: white;
+                color: black;
+                box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.5);
+                position: fixed;
+                left: 2em;
+                top: 1.5em;
+                width: auto;
+                height: auto;
+                overflow: visible;
+                text-decoration: underline;
+                z-index: 99999; /* has to be higher than the side panel */
+    }
+  /*]]>*/
+  </style>
+</head>
+<body data-link-prefix="">
+  <div class="skipnav">
+    <a href="#content-wrapper">Skip to main content</a>
+  </div>
+  <div id="page" class="clearfix">
+    <div id="header">
+      <div class="container">
+        <div id="logotype-container" class="pull-left">
+          <a href="../index.html"><img id="logotype-pageheader" src="../css/image/corporate-logo.png" alt="Corporate logotype" data-role="logotype" /></a>
+        </div>
+        <div id="pagetools-container" class="pull-right">
+          <ul id="page-tools">
+            <li class="page-tools-search"><input placeholder="Search" type="text" class="form-control" aria-label="Search" id="search" /></li>
+            <li class="page-tools-print">
+              <a href="javascript:window.print();"><span class="tool-label">Print</span><span class="glyphicon glyphicon-print"></span></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <h1 id="publication-title">CAM</h1>
+    <div id="subheader-sticky-wrapper" class="sticky-wrapper">
+      <div id="subheader">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3 toc-title">
+              <h2><a class="prev nav-icon hidden-lg hidden-md" href="UUID-f153cb41-38dc-12b5-133a-6da718bbeb6c.html"><span class="glyphicon glyphicon-chevron-left"></span></a> <a href="#toc" class="hidden mobile-nav-toggle"><span class="glyphicon glyphicon-list"></span>Table of Contents</a><span class="toc-label">Table of Contents</span><a class=
+              "next nav-icon hidden-lg hidden-md" href="UUID-e0e0850b-9bff-e6f0-bab2-01c1261af289.html#UUID-e0e0850b-9bff-e6f0-bab2-01c1261af289_section-idm232098706508047"><span class="glyphicon glyphicon-chevron-right"></span></a></h2>
+            </div>
+            <div class="col-md-9 breadcrumb-container">
+              <ul class="breadcrumb">
+                <li class="breadcrumb-link">
+                  <span class="glyphicon glyphicon-home"></span>&nbsp;<a href="index-en-US.html">CAM</a>
+                </li>
+                <li class="breadcrumb-link">
+                  <a href="UUID-612c317b-197f-d0fa-8b72-ad4799e69646.html">5X Machining</a>
+                </li>
+                <li class="breadcrumb-link">
+                  <a href="UUID-60aafd63-4080-415a-78b4-3a61217b5581.html">Multiblade Milling</a>
+                </li>
+                <li class="breadcrumb-node">Geometry</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="main-content">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 toc-container" id="toc-wrapper">
+            <div id="toc-placeholder">
+              <div id="toc-standalone-placeholder"></div>
+            </div>
+          </div>
+          <div class="col-md-9 content-container" id="content-wrapper">
+            <a accesskey="p" class="prev pull-left prev visible-lg visible-md" id="header-navigation-prev" href="UUID-f153cb41-38dc-12b5-133a-6da718bbeb6c.html"><span class="glyphicon glyphicon-circle-arrow-left"></span>Prev</a><a accesskey="n" class="pull-right next visible-lg visible-md" id="header-navigation-next" href=
+            "UUID-e0e0850b-9bff-e6f0-bab2-01c1261af289.html#UUID-e0e0850b-9bff-e6f0-bab2-01c1261af289_section-idm232098706508047">Next<span class="glyphicon glyphicon-circle-arrow-right"></span></a>
+            <div id="topic-content">
+              <section xml:lang="en-US" lang="en-US" dir="ltr" class="section" data-origin-id="UUID-b5457b66-044b-4181-4528-c2948afb06e3" data-publication-date="" id="UUID-e0e0850b-9bff-e6f0-bab2-01c1261af289">
+                <div class="titlepage">
+                  <div>
+                    <div class="title">
+                      <h1 class="title" style="clear: both"><span class="formal-title">Geometry</span></h1>
+                    </div>
+                  </div>
+                </div>
+                <p>The parts you want to machine must be available as solid or surface models. The system will support a geometry without any or with a maximum of one splitter between the main blades.</p>
+                <p>Stock refers to a part that only needs to be machined directly in the blade area. The following therefore require precise pre-machining: extended hub surfaces, shroud and trailing edges that are not rounded. A small allowance is permissible for rounded leading and trailing edges.</p>
+                <div dir="ltr" class="note">
+                  <h3 class="title">Note</h3>
+                  <p>If the part has not been pre-turned appropriately, you will need to do this using additional machining steps before commencing other work on the part. You will need the stock’s CAD data to do this.</p>
+                </div>
+                <section dir="ltr" class="section" data-origin-id="" data-publication-date="" id="UUID-e0e0850b-9bff-e6f0-bab2-01c1261af289_section-idm232098706508047">
+                  <div class="titlepage">
+                    <div>
+                      <div class="title">
+                        <h2 class="title" style="clear: both"><span class="formal-title">Coordinate System</span></h2>
+                      </div>
+                    </div>
+                  </div>
+                  <p>All impeller and blisk calculations in <span class="italic">hyper</span>MILL are based on their rotational symmetry. This means the Z axis of the coordinate system for calculations must correspond to the part’s rotational axis.</p>
+                </section>
+                <section xml:lang="en-US" lang="en-US" dir="ltr" class="section" data-origin-id="" data-publication-date="" id="UUID-e0e0850b-9bff-e6f0-bab2-01c1261af289_UUID-17d8f127-0cc1-a2e5-31e8-4478a5b04941">
+                  <div class="titlepage">
+                    <div>
+                      <div class="title">
+                        <h2 class="title" style="clear: both"><span class="formal-title">Geometry selection</span></h2>
+                      </div>
+                    </div>
+                  </div>
+                  <p>You can select the surfaces to be machined directly in the geometry panel for the current job or using a <span class="italic">hyper</span>MILL feature to which these surfaces have been previously allocated.</p>
+                  <p>As it is generally necessary to select the same geometry for all machining operations, the feature technology eases the task of choosing the geometry and quickly applying proven machining sequences to comparable parts.</p>
+                  <p>For more information on defining <span class="italic">hyper</span>MILL features, see section <a class="link linktype-component" href="UUID-045be457-706d-a14f-f9a1-00787a4eb50a.html" title="4.&nbsp;Feature and macro technology">Feature and macro technology</a>.</p>
+                  <section dir="ltr" class="section internal" data-origin-id="" data-publication-date="" id="id137871">
+                    <div class="titlepage">
+                      <div>
+                        <div class="title">
+                          <h3 class="title"><span class="formal-title">Basic geometry</span></h3>
+                        </div>
+                      </div>
+                    </div>
+                    <p><span xml:lang="de" lang="de" dir="ltr" class="guilabel">Number of main blades</span></p>
+                    <p>This value indicates the number of main blades. This figure does not include any existing splitter blades. <span class="italic">hyper</span>MILL automatically generates a complete collision model with all blades based on this number.</p>
+                  </section>
+                  <section dir="ltr" class="section internal" data-origin-id="" data-publication-date="" id="id137877">
+                    <div class="titlepage">
+                      <div>
+                        <div class="title">
+                          <h3 class="title"><span class="formal-title">Blade geometry</span></h3>
+                        </div>
+                      </div>
+                    </div>
+                    <p><span class="guilabel">Main blade surfaces / Splitter blade surfaces</span></p>
+                    <p>You need to select the surfaces of the main blade and, where available, the surfaces of the splitter. You must always specify the <span class="guilabel">splitter blade (2)</span> as the shorter splitter blade (to the right) located counter clockwise following the <span class="guilabel">main blade (1)</span>.</p>
+                    <p>You must select the following for both blades: the main flow areas, surfaces of the leading and trailing edges and optional fillets to the hub.</p>
+                    <div class="mediaobject">
+                      <table class="image-viewport" style="border-collapse:collapse;border:0; width:461px;">
+                        <tr style="height: 212px">
+                          <td style="padding:0;"><img src="image/uuid-76690e50-b23f-a181-e279-8f9506bfca62.png" style="max-width: 461px; max-height: 212px;" alt="5X_impeller_geometrie_blattgeometrie.png" /></td>
+                        </tr>
+                      </table>
+                    </div>
+                    <div dir="ltr" class="warning">
+                      <h3 class="title">Warning</h3>
+                      <p>You should only select fillets if it is not possible to generate them directly with the used tool radius. The main flow and edge surfaces need not be trimmed against the hub. However, the distance to the hub must be less than the radius of the smallest tool used. Please note: Depending on the surface data, an additional
+                      definition of <span class="guilabel">Blade skeleton curves</span> may be required!</p>
+                    </div>
+                    <p><span xml:lang="de" lang="de" dir="ltr" class="guilabel">Blade skeleton curves</span></p>
+                    <p>Blade skeleton curves limit the so-called skeleton surface. This is an ISO surface that sufficiently corresponds to the blade curvature. Defining curves is optional. They might be required in case of</p>
+                    <div class="itemizedlist">
+                      <ul class="itemizedlist" style="list-style-type: disc;">
+                        <li class="listitem">
+                          <p>suction as well as pressure side surfaces consist of a patch containing short surfaces,</p>
+                        </li>
+                        <li class="listitem">
+                          <p>surfaces of leading and/or trailing edges extend into the suction and/or pressure side,</p>
+                        </li>
+                        <li class="listitem">
+                          <p>if suction and/or pressure surface include leading and/or trailing edge area (not symmetrically),</p>
+                        </li>
+                        <li class="listitem">
+                          <p>if the blades get very close to horizontal at leading and/or trailing edge.</p>
+                        </li>
+                      </ul>
+                    </div>
+                  </section>
+                  <section dir="ltr" class="section internal" data-origin-id="" data-publication-date="" id="id137903">
+                    <div class="titlepage">
+                      <div>
+                        <div class="title">
+                          <h3 class="title"><span class="formal-title">Limitations</span></h3>
+                        </div>
+                      </div>
+                    </div>
+                    <p><span class="guilabel">Hub</span> (1) and <span class="guilabel">shroud</span> (2)</p>
+                    <p>Select the relevant surface. Both surfaces must form a rotational surface.</p>
+                    <p>If the type of surface is different or they are made up of surface segments, you will need to generate these surfaces again. Both surfaces do not need to precisely describe the area to be machined. The surfaces should not be shorter than this area, but they can be longer.</p>
+                    <div class="informalfigure">
+                      <div class="mediaobject"><img src="image/uuid-f51d9a15-0d91-e709-8363-ef28c15d4769.png" style="" alt="5X_impeller_geometire_boden_deckflaeche.png" /></div>
+                    </div>
+                  </section>
+                  <section dir="ltr" class="section internal" data-origin-id="" data-publication-date="" id="id137914">
+                    <div class="titlepage">
+                      <div>
+                        <div class="title">
+                          <h3 class="title"><span class="formal-title">Trim curves</span></h3>
+                        </div>
+                      </div>
+                    </div>
+                    <p>These curves define the machining area around the respective edge. You will only need to define trim curves if you are going to use the Edge Milling cycle and/or blade machining with flanks.</p>
+                    <div class="mediaobject">
+                      <table class="image-viewport" style="border-collapse:collapse;border:0; width:315px;">
+                        <tr style="height: 205px">
+                          <td style="padding:0;"><img src="image/uuid-a3f197df-b169-b3ed-c5f1-970fb94b24a5.png" style="max-width: 315px; max-height: 205px;" alt="5X_impeller_geometrie_begrenzungskurven.png" /></td>
+                        </tr>
+                      </table>
+                    </div>
+                  </section>
+                  <section dir="ltr" class="section" data-origin-id="" data-publication-date="" id="UUID-e0e0850b-9bff-e6f0-bab2-01c1261af289_section-idm232098783604674">
+                    <div class="titlepage">
+                      <div>
+                        <div class="title">
+                          <h3 class="title"><span class="formal-title">Drive profiles</span></h3>
+                        </div>
+                      </div>
+                    </div>
+                    <p>The <span class="guilabel">Hub curve</span> defines the lower blade limit and must be selected if the cutter must not touch the hub (e.g. in case of variable fillets) or if internal detection fails (calculation message might report issue with trim curves but its selection is correct).</p>
+                    <p>The <span class="guilabel">Shroud curve</span> defines the upper blade limit and must be selected, if internal detection fails (reported inside calculation message).</p>
+                    <div dir="ltr" class="note">
+                      <h3 class="title">Note</h3>
+                      <p>Drive profiles are only available for the <span class="guilabel">5X MB Flank Milling</span> cycle.</p>
+                    </div>
+                  </section>
+                </section>
+              </section>
+              <div class="footer-content">
+                <div class="section-toc section-toc-after">
+                  <div class="section-toc-title">
+                    <span class="section-toc-title-delimiter">:</span>
+                  </div>
+                </div>
+              </div>
+              <footer></footer>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

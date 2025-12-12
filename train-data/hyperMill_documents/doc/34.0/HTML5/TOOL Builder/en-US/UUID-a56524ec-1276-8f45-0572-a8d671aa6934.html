@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="x-ua-compatible" content="IE=edge" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="search" content="default" />
+  <meta name="use.ic" content="no" />
+  <meta name="tocstandalone" content="yes" />
+  <script type="text/javascript">
+  //<![CDATA[
+                        var index;
+                        var contentLanguage = 'en-US';
+                        var enterKey = 'select';
+                        
+                                        var anchoroption = true;
+                                var instantsearch_minlength = 1;
+                                                
+                                var fuse_threshold = 0.3;
+                        
+                                        var local_csh = false;
+                                
+                        var useanchorlinks = false;
+  //]]>
+  </script>
+  <title>5.&nbsp;Turning tool: Creating a static holder for machining with a turret</title>
+  <link rel="stylesheet" type="text/css" href="../css/docbook.css" />
+  <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" href="../css/bootstrap-theme.min.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style-common.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style-responsive.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style-print.css" />
+  <link rel="stylesheet" type="text/css" href="../css/font-awesome.css" />
+  <link rel="stylesheet" type="text/css" href="../css/custom.css" />
+  <link rel="stylesheet" type="text/css" href="../css/layout-custom-style.css" />
+  <script src="../js/jquery-1.10.2.min.js" type="text/javascript"></script>
+  <script src="../js/jquery-ui-1.10.3.custom.min.js" type="text/javascript"></script>
+  <script src="../js/bootstrap.min.js" type="text/javascript"></script>
+  <script src="../js/purl.js" type="text/javascript"></script>
+  <script src="../js/jquery.event.move.js" type="text/javascript"></script>
+  <script src="../js/jquery.event.swipe.js" type="text/javascript"></script>
+  <script src="../js/jquery.sticky.js" type="text/javascript"></script>
+  <script src="../js/respond.min.js" type="text/javascript"></script>
+  <script src="../js/script.js" type="text/javascript"></script>
+  <script src="js/toc.js" type="text/javascript"></script>
+  <script src="../js/create-toc.js" type="text/javascript"></script>
+  <script src="../js/clipboard.min.js" type="text/javascript"></script>
+  <script src="../js/fuse.min.js" type="text/javascript"></script>
+  <script src="../js/jquery.mark.min.js" type="text/javascript"></script>
+  <script src="../js/html5.fuse.search.js" type="text/javascript"></script>
+  <script src="js/fuzzydata.js" type="text/javascript"></script>
+  <script src="../js/csh.js" type="text/javascript"></script>
+  <script src="../js/highlight-mergehtml-plugin.js" type="text/javascript"></script>
+  <meta name="generator" content="Paligo" />
+  <link rel="prev" href="UUID-f4511fad-90c5-4036-b211-425b03d70010.html" title="4.&nbsp;Turning tool holder assembly" />
+  <link rel="next" href="UUID-c6b233db-d57c-2791-84e5-ebe074d412b7.html" title="6.&nbsp;Milling tool / Drilling tool: Creating a holder / extension" />
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML" async="async"></script>
+  <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+  <script type="text/javascript" src="../js/cookie-consent.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  <script type="text/javascript">
+  //<![CDATA[
+                        $(document).on('ready ajaxComplete', function() {
+                                
+                                hljs.addPlugin(mergeHTMLPlugin);
+                                hljs.configure({'ignoreUnescapedHTML': true});
+                                
+                                $('pre:not(.embedcode)').each(function() {
+                                        /**
+                                         * @type {string}
+                                         */
+                                        var language = $(this).data('language');
+
+                                        if (language === 'plaintext' || language === 'text') {
+                                                $(this).addClass(language).addClass('hljs');
+                                                return true;
+                                        }
+                                        else {
+                                                var clone = this.cloneNode(true);
+                                                hljs.highlightElement(clone);
+                                                $(this).empty().append($(clone).contents());
+                                                $(this).attr("class", $(clone).attr("class"));
+                                        }
+                                });
+                        });
+  //]]>
+  </script>
+  <style type="text/css">
+  /*<![CDATA[*/
+            div.skipnav {
+            }
+            div.skipnav a {
+                position: fixed;
+                left: -10000px;
+                top: 1.5em;
+                width: 1px;
+                height: 1px;
+                overflow: hidden;
+            }
+            div.skipnav a:focus, div.skipnav a:active, div.skipnav a:hover {
+                background: white;
+                color: black;
+                box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.5);
+                position: fixed;
+                left: 2em;
+                top: 1.5em;
+                width: auto;
+                height: auto;
+                overflow: visible;
+                text-decoration: underline;
+                z-index: 99999; /* has to be higher than the side panel */
+    }
+  /*]]>*/
+  </style>
+</head>
+<body data-link-prefix="">
+  <div class="skipnav">
+    <a href="#content-wrapper">Skip to main content</a>
+  </div>
+  <div id="page" class="clearfix">
+    <div id="header">
+      <div class="container">
+        <div id="logotype-container" class="pull-left">
+          <a href="../index.html"><img id="logotype-pageheader" src="../css/image/corporate-logo.png" alt="Corporate logotype" data-role="logotype" /></a>
+        </div>
+        <div id="pagetools-container" class="pull-right">
+          <ul id="page-tools">
+            <li class="page-tools-search"><input placeholder="Search" type="text" class="form-control" aria-label="Search" id="search" /></li>
+            <li class="page-tools-print">
+              <a href="javascript:window.print();"><span class="tool-label">Print</span><span class="glyphicon glyphicon-print"></span></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <h1 id="publication-title"><span xml:lang="de" lang="de" dir="ltr" class="phrase"><span class="application">TOOL Builder</span></span></h1>
+    <div id="subheader-sticky-wrapper" class="sticky-wrapper">
+      <div id="subheader">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3 toc-title">
+              <h2><a class="prev nav-icon hidden-lg hidden-md" href="UUID-f4511fad-90c5-4036-b211-425b03d70010.html"><span class="glyphicon glyphicon-chevron-left"></span></a> <a href="#toc" class="hidden mobile-nav-toggle"><span class="glyphicon glyphicon-list"></span>Table of Contents</a><span class="toc-label">Table of Contents</span><a class=
+              "next nav-icon hidden-lg hidden-md" href="UUID-c6b233db-d57c-2791-84e5-ebe074d412b7.html"><span class="glyphicon glyphicon-chevron-right"></span></a></h2>
+            </div>
+            <div class="col-md-9 breadcrumb-container">
+              <ul class="breadcrumb">
+                <li class="breadcrumb-link">
+                  <span class="glyphicon glyphicon-home"></span>&nbsp;<a href="index-en-US.html"><span xml:lang="de" lang="de" dir="ltr" class="phrase"><span class="application">TOOL Builder</span></span></a>
+                </li>
+                <li class="breadcrumb-node">Turning tool: Creating a static holder for machining with a turret</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="main-content">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 toc-container" id="toc-wrapper">
+            <div id="toc-placeholder">
+              <div id="toc-standalone-placeholder"></div>
+            </div>
+          </div>
+          <div class="col-md-9 content-container" id="content-wrapper">
+            <a accesskey="p" class="prev pull-left prev visible-lg visible-md" id="header-navigation-prev" href="UUID-f4511fad-90c5-4036-b211-425b03d70010.html"><span class="glyphicon glyphicon-circle-arrow-left"></span>Prev</a><a accesskey="n" class="pull-right next visible-lg visible-md" id="header-navigation-next" href=
+            "UUID-c6b233db-d57c-2791-84e5-ebe074d412b7.html">Next<span class="glyphicon glyphicon-circle-arrow-right"></span></a>
+            <div id="topic-content">
+              <section xml:lang="en-US" lang="en-US" dir="ltr" class="section" data-origin-id="UUID-af4e2ca9-71e2-5cc9-6693-46120c66af17" data-publication-date="" id="UUID-a56524ec-1276-8f45-0572-a8d671aa6934">
+                <div class="titlepage">
+                  <div>
+                    <div class="title">
+                      <h1 class="title" style="clear: both"><span class="formal-number">5</span><span class="formal-label-delimiter">.</span> <span class="formal-title">Turning tool: Creating a static holder for machining with a turret</span></h1>
+                    </div>
+                  </div>
+                </div>
+                <p>Import the 3D data provided by tool manufacturers and create a static holder for turning operations with a turret.</p>
+                <div class="informaltable table-responsive" id="UUID-a56524ec-1276-8f45-0572-a8d671aa6934_informaltable-idm53337567782970">
+                  <table frame="void" rules="rows" style="width:100%;" class="informaltable">
+                    <colgroup>
+                      <col style="width:10%;" />
+                      <col style="width:35%;" />
+                      <col style="width:55%;" />
+                    </colgroup>
+                    <tbody>
+                      <tr>
+                        <td valign="top" class="td align-top">
+                          <div class="mediaobject"><img src="image/uuid-3f21847d-ea92-4a23-5cf8-5deccdc62356.svg" style="" alt="hyperMILL_TOOL_builder.svg" /></div>
+                        </td>
+                        <td colspan="2" valign="top" class="td align-top">
+                          <p>To create a static holder for machining with a turret with the <span class="phrase"><span class="application">TOOL Builder</span></span>, proceed as follows:</p>
+                          <p>In the tool database, on the <span class="guimenuitem">Static holders</span> → <span class="guisubmenu">New</span> → <span class="guisubmenu">Turret holder</span> → <span class="guisubmenu">Geometry</span> dialog page, click the icon to start the <span class="phrase"><span class="application">TOOL
+                          Builder</span></span>.</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td valign="top" class="td align-top">
+                          <div class="mediaobject"><img src="image/uuid-ab099259-4b99-6afe-fb64-292538ac48dc.svg" style="" alt="open_document.svg" /></div>
+                        </td>
+                        <td colspan="2" valign="top" class="td align-top">
+                          <p>Then use the <span class="guimenuitem">File</span> → <span class="guisubmenu">Open</span> dialog to open a 3D geometry file in <code class="filename">*.step</code>,<code class="filename">*.stp</code>,<code class="filename">*.iges</code>, or <code class="filename">*.hmc</code> format.</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td colspan="3" class="td">
+                          <h3 id="idp1211" class="bridgehead">Define the body</h3>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td valign="top" class="td align-top">
+                          <div class="mediaobject">
+                            <table class="image-viewport" style="border-collapse:collapse;border:0; ;">
+                              <tr>
+                                <td style="padding:0;vertical-align:top;"><img src="image/uuid-c6c48a52-4e39-b795-3526-de922113b99c.png" style="" alt="tool_static_body_0.png" /></td>
+                              </tr>
+                            </table>
+                          </div>
+                        </td>
+                        <td valign="top" class="td align-top">
+                          <p>Define the geometry of the static holder.</p>
+                          <p>The geometry of the holder is automatically detected, so that after opening the file, the <span class="guilabel">Elements</span> of the body are already selected and highlighted in color.</p>
+                          <p>The number of elements is displayed.</p>
+                        </td>
+                        <td valign="top" class="td align-top">
+                          <div class="mediaobject"><img src="image/uuid-7e629e81-7d46-360f-3b7c-1d45b76cf06c.svg" style="" alt="statischer_halter_Koerper.svg" /></div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td colspan="3" class="td">
+                          <h3 id="idp1212" class="bridgehead">Define the holder axis</h3>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td valign="top" class="td align-top">
+                          <div class="mediaobject"><img src="image/uuid-c0dee985-eb20-9a07-61b2-72c3d1405c23.png" style="" alt="tool_static_axis_machine_side_0.png" /></div>
+                        </td>
+                        <td valign="top" class="td align-top">
+                          <p>To do this, <span class="guilabel">Select</span> the required elements (for example, the reference coordinate system <span class="inlinemediaobject"><img src="image/uuid-167edeb5-94c4-22da-310c-e561dcec4de6.svg" alt="Nr_01.svg" /></span>).</p>
+                          <p>Alternatively, select <span class="guilabel">2 Points</span>. The order of selection defines the direction of the axis.</p>
+                          <p>If necessary, invert the direction by double-clicking the arrow of the axis or activate the <span class="guilabel">Invert</span> function.</p>
+                          <p>The program attempts to automatically detect the <span class="guilabel">Machine side</span> <span class="inlinemediaobject"><img src="image/uuid-373e9813-c62f-77b2-2f72-f6aede7bed93.svg" alt="Nr_02.svg" /></span>. Correct the machine side if necessary.</p>
+                        </td>
+                        <td valign="top" class="td align-top">
+                          <div class="mediaobject"><img src="image/uuid-634dc7a4-395d-d33f-9abe-ea5734dfd3f4.svg" style="" alt="statischer_halter_halterachse_neu.svg" /></div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td colspan="3" class="td">
+                          <h3 id="idp1213" class="bridgehead">Define the holder coupling</h3>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td valign="top" class="td align-top">
+                          <div class="mediaobject"><img src="image/uuid-31081d1c-94ce-b0e2-7e02-bed241b7f6fa.png" style="" alt="tool_static_coupling_machine_side_0.png" /></div>
+                        </td>
+                        <td valign="top" class="td align-top">
+                          <p id="UUID-a56524ec-1276-8f45-0572-a8d671aa6934_idBCFDGFECC2">To do this, select a <span class="guilabel">Face</span> or a <span class="guilabel">Point</span>.</p>
+                          <p>The selected element <span class="inlinemediaobject"><img src="image/uuid-167edeb5-94c4-22da-310c-e561dcec4de6.svg" alt="Nr_01.svg" /></span> is highlighted in color. Specify the <span class="guilabel">X direction</span> of the reference coordinate system. To do this, select the X axis of the reference coordinate
+                          system, <span class="guilabel">2 Points</span>, or one <span class="guilabel">Point</span>.</p>
+                          <p><span class="guilabel">Machine side</span> <span class="inlinemediaobject"><img src="image/uuid-373e9813-c62f-77b2-2f72-f6aede7bed93.svg" alt="Nr_02.svg" /></span>, <span class="guilabel">Clamping side</span> <span class="inlinemediaobject"><img src="image/uuid-1ff5b9e5-fdb8-8487-916f-b07ae3eafeda.svg" alt=
+                          "Nr_03.svg" /></span>, and <span class="guilabel">Workpiece side <span class="inlinemediaobject"><img src="image/uuid-f693925a-eaee-120d-2515-350308f82803.svg" alt="Nr_04.svg" /></span></span> are displayed.</p>
+                        </td>
+                        <td rowspan="2" valign="top" class="td align-top">
+                          <div class="mediaobject"><img src="image/uuid-de03dcf1-f96c-0b08-af4c-f87f348a769b.svg" style="" alt="statischer_halter_halterkupplung.svg" /></div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="td">
+                          <div class="mediaobject" id="UUID-a56524ec-1276-8f45-0572-a8d671aa6934_mediaobject-idm53338409144470"><img src="image/uuid-f7fe63ce-5b04-cb04-bd9f-6a6dd3f0f3cf.png" style="" alt="wp_rotz.png" /></div>
+                        </td>
+                        <td valign="top" class="td align-top">
+                          <p>Click the button to rotate the X axis direction by 90°.</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td colspan="3" class="td">
+                          <h3 id="idp1214" class="bridgehead">Define the tool axis</h3>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td valign="top" class="td align-top">
+                          <div class="mediaobject"><img src="image/uuid-91fad55a-c135-fc66-482b-b45d47ae5aa1.png" style="" alt="tool_static_axis_tool_side_0.png" /></div>
+                        </td>
+                        <td valign="top" class="td align-top">
+                          <p>To do this, <span class="guilabel">Select</span> the required elements <span class="inlinemediaobject"><img src="image/uuid-167edeb5-94c4-22da-310c-e561dcec4de6.svg" alt="Nr_01.svg" /></span>.</p>
+                          <p>Alternatively, select <span class="guilabel">2 Points</span>.</p>
+                          <p>The order of selection defines the direction of the axis.</p>
+                          <p>Invert the <span class="guilabel">Direction</span> by double-clicking the axis arrow or activate the <span class="guilabel">Invert</span> function.</p>
+                          <p><span class="guilabel">Clamping side</span> <span class="inlinemediaobject"><img src="image/uuid-373e9813-c62f-77b2-2f72-f6aede7bed93.svg" alt="Nr_02.svg" /></span> and <span class="guilabel">Workpiece side</span> <span class="inlinemediaobject"><img src="image/uuid-1ff5b9e5-fdb8-8487-916f-b07ae3eafeda.svg" alt=
+                          "Nr_03.svg" /></span> are displayed.</p>
+                        </td>
+                        <td class="td">
+                          <div class="mediaobject"><img src="image/uuid-80667790-6961-5a9a-f14f-5a3e2b9a0cec.svg" style="" alt="statischer_halter_werkzeugachse.svg" /></div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td colspan="3" class="td">
+                          <h3 id="idp1215" class="bridgehead">Define the tool coupling</h3>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td valign="top" class="td align-top">
+                          <div class="mediaobject"><img src="image/uuid-7d6a9add-95ca-dfa4-2de8-aed5b2813b32.png" style="" alt="tool_static_coupling_tool_side_0.png" /></div>
+                        </td>
+                        <td valign="top" class="td align-top">
+                          <p>Select a <span class="guilabel">Face</span> <span class="inlinemediaobject"><img src="image/uuid-167edeb5-94c4-22da-310c-e561dcec4de6.svg" alt="Nr_01.svg" /></span> or a <span class="guilabel">Point</span> to define the area of the tool coupling.</p>
+                          <p>If necessary, manually adjust the <span class="guilabel">X direction</span> of the axis. To do this, <span class="guilabel">Select</span> the required elements. Alternatively, select <span class="guilabel">2 Points</span> or one <span class="guilabel">Point</span>.</p>
+                          <p>The order in which the points are selected defines the direction of the axis.</p>
+                          <p><span class="guilabel">Machine side</span> <span class="inlinemediaobject"><img src="image/uuid-373e9813-c62f-77b2-2f72-f6aede7bed93.svg" alt="Nr_02.svg" /></span>, <span class="guilabel">Clamping side</span> <span class="inlinemediaobject"><img src="image/uuid-1ff5b9e5-fdb8-8487-916f-b07ae3eafeda.svg" alt=
+                          "Nr_03.svg" /></span>, and <span class="guilabel">Workpiece side <span class="inlinemediaobject"><img src="image/uuid-f693925a-eaee-120d-2515-350308f82803.svg" alt="Nr_04.svg" /></span></span> are displayed.</p>
+                        </td>
+                        <td rowspan="3" class="td">
+                          <div class="mediaobject"><img src="image/uuid-984a1b72-9672-1a9f-3ff3-4c05642dc159.svg" style="" alt="statischer_halter_werkzeugkupplung.svg" /></div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td valign="top" class="td align-top">
+                          <div class="mediaobject" id="UUID-a56524ec-1276-8f45-0572-a8d671aa6934_mediaobject-idm53338574416750"><img src="image/uuid-f7fe63ce-5b04-cb04-bd9f-6a6dd3f0f3cf.png" style="" alt="wp_rotz.png" /></div>
+                        </td>
+                        <td valign="top" class="td align-top">
+                          <p id="UUID-a56524ec-1276-8f45-0572-a8d671aa6934_para-idm53338574446956">Click the button to rotate the X axis direction by 90°.</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td colspan="3" class="td"></td>
+                      </tr>
+                      <tr>
+                        <td colspan="3" class="td">
+                          <h3 id="idp1216" class="bridgehead">Add a new mounting position</h3>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="td">
+                          <div class="mediaobject"><img src="image/uuid-b1e3e627-db60-df6d-4cc1-262ffa1ff442.png" style="" alt="staticholder_add_tool_01.png" /></div>
+                        </td>
+                        <td class="td">
+                          <p>To add an additional mounting position for a turret holder, select the <span class="guilabel">Add new mounting position</span> function and carry out the <span class="guilabel">Define tool axis</span> and <span class="guilabel">Define tool coupling</span> steps again.</p>
+                          <p>Use the <span class="guilabel">Modify Tool</span> function on the shortcut menu to adapt a previously defined mounting position.</p>
+                          <p>Then use the <span class="guilabel">Define tool axis</span> and <span class="guilabel">Define tool coupling</span> functions to correct the selection to be changed.</p>
+                          <p>Use <span class="guilabel">Remove tool</span> to delete the mounting position.</p>
+                        </td>
+                        <td class="td">
+                          <div class="mediaobject"><img src="image/uuid-58c62363-96b2-bf44-d21f-f5545184f7d5.svg" style="" alt="revolverhalter_indexiert.svg" /></div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td colspan="3" class="td">
+                          <h3 id="idp1217" class="bridgehead">Export the data</h3>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="td">
+                          <div class="mediaobject"><img src="image/uuid-2f9323a0-e153-fd03-1392-15bf287d1623.png" style="" alt="tool_milling_export_0.png" /></div>
+                        </td>
+                        <td colspan="2" class="td">
+                          <p>Transfer the imported 3D file with the previously defined elements to the tool database as a static holder.</p>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </section>
+              <div class="footer-content">
+                <div class="section-toc section-toc-after">
+                  <div class="section-toc-title">
+                    <span class="section-toc-title-delimiter">:</span>
+                  </div>
+                </div>
+              </div>
+              <footer></footer>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

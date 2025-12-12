@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="x-ua-compatible" content="IE=edge" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="search" content="default" />
+  <meta name="use.ic" content="no" />
+  <meta name="tocstandalone" content="yes" />
+  <script type="text/javascript">
+  //<![CDATA[
+                        var index;
+                        var contentLanguage = 'en-US';
+                        var enterKey = 'select';
+                        
+                                        var anchoroption = true;
+                                var instantsearch_minlength = 1;
+                                                
+                                var fuse_threshold = 0.3;
+                        
+                                        var local_csh = false;
+                                
+                        var useanchorlinks = false;
+  //]]>
+  </script>
+  <title>The Electrode milling dialog</title>
+  <link rel="stylesheet" type="text/css" href="../css/docbook.css" />
+  <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" href="../css/bootstrap-theme.min.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style-common.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style-responsive.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style-print.css" />
+  <link rel="stylesheet" type="text/css" href="../css/font-awesome.css" />
+  <link rel="stylesheet" type="text/css" href="../css/custom.css" />
+  <link rel="stylesheet" type="text/css" href="../css/layout-custom-style.css" />
+  <script src="../js/jquery-1.10.2.min.js" type="text/javascript"></script>
+  <script src="../js/jquery-ui-1.10.3.custom.min.js" type="text/javascript"></script>
+  <script src="../js/bootstrap.min.js" type="text/javascript"></script>
+  <script src="../js/purl.js" type="text/javascript"></script>
+  <script src="../js/jquery.event.move.js" type="text/javascript"></script>
+  <script src="../js/jquery.event.swipe.js" type="text/javascript"></script>
+  <script src="../js/jquery.sticky.js" type="text/javascript"></script>
+  <script src="../js/respond.min.js" type="text/javascript"></script>
+  <script src="../js/script.js" type="text/javascript"></script>
+  <script src="js/toc.js" type="text/javascript"></script>
+  <script src="../js/create-toc.js" type="text/javascript"></script>
+  <script src="../js/clipboard.min.js" type="text/javascript"></script>
+  <script src="../js/fuse.min.js" type="text/javascript"></script>
+  <script src="../js/jquery.mark.min.js" type="text/javascript"></script>
+  <script src="../js/html5.fuse.search.js" type="text/javascript"></script>
+  <script src="js/fuzzydata.js" type="text/javascript"></script>
+  <script src="../js/csh.js" type="text/javascript"></script>
+  <script src="../js/highlight-mergehtml-plugin.js" type="text/javascript"></script>
+  <meta name="generator" content="Paligo" />
+  <link rel="prev" href="UUID-acf580ad-65ad-9c5b-9669-3bf651404e3d.html" title="NC Programming" />
+  <link rel="next" href="UUID-14de032b-f4f8-f8db-7c7b-0f0cf64b3817.html" title="Joblist and electrode feature" />
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js?config=TeX-MML-AM_CHTML" async="async"></script>
+  <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+  <script type="text/javascript" src="../js/cookie-consent.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  <script type="text/javascript">
+  //<![CDATA[
+                        $(document).on('ready ajaxComplete', function() {
+                                
+                                hljs.addPlugin(mergeHTMLPlugin);
+                                hljs.configure({'ignoreUnescapedHTML': true});
+                                
+                                $('pre:not(.embedcode)').each(function() {
+                                        /**
+                                         * @type {string}
+                                         */
+                                        var language = $(this).data('language');
+
+                                        if (language === 'plaintext' || language === 'text') {
+                                                $(this).addClass(language).addClass('hljs');
+                                                return true;
+                                        }
+                                        else {
+                                                var clone = this.cloneNode(true);
+                                                hljs.highlightElement(clone);
+                                                $(this).empty().append($(clone).contents());
+                                                $(this).attr("class", $(clone).attr("class"));
+                                        }
+                                });
+                        });
+  //]]>
+  </script>
+  <style type="text/css">
+  /*<![CDATA[*/
+            div.skipnav {
+            }
+            div.skipnav a {
+                position: fixed;
+                left: -10000px;
+                top: 1.5em;
+                width: 1px;
+                height: 1px;
+                overflow: hidden;
+            }
+            div.skipnav a:focus, div.skipnav a:active, div.skipnav a:hover {
+                background: white;
+                color: black;
+                box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.5);
+                position: fixed;
+                left: 2em;
+                top: 1.5em;
+                width: auto;
+                height: auto;
+                overflow: visible;
+                text-decoration: underline;
+                z-index: 99999; /* has to be higher than the side panel */
+    }
+  /*]]>*/
+  </style>
+</head>
+<body data-link-prefix="">
+  <div class="skipnav">
+    <a href="#content-wrapper">Skip to main content</a>
+  </div>
+  <div id="page" class="clearfix">
+    <div id="header">
+      <div class="container">
+        <div id="logotype-container" class="pull-left">
+          <a href="../index.html"><img id="logotype-pageheader" src="../css/image/corporate-logo.png" alt="Corporate logotype" data-role="logotype" /></a>
+        </div>
+        <div id="pagetools-container" class="pull-right">
+          <ul id="page-tools">
+            <li class="page-tools-search"><input placeholder="Search" type="text" class="form-control" aria-label="Search" id="search" /></li>
+            <li class="page-tools-print">
+              <a href="javascript:window.print();"><span class="tool-label">Print</span><span class="glyphicon glyphicon-print"></span></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <h1 id="publication-title">CAM</h1>
+    <div id="subheader-sticky-wrapper" class="sticky-wrapper">
+      <div id="subheader">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3 toc-title">
+              <h2><a class="prev nav-icon hidden-lg hidden-md" href="UUID-acf580ad-65ad-9c5b-9669-3bf651404e3d.html"><span class="glyphicon glyphicon-chevron-left"></span></a> <a href="#toc" class="hidden mobile-nav-toggle"><span class="glyphicon glyphicon-list"></span>Table of Contents</a><span class="toc-label">Table of Contents</span><a class=
+              "next nav-icon hidden-lg hidden-md" href="UUID-14de032b-f4f8-f8db-7c7b-0f0cf64b3817.html"><span class="glyphicon glyphicon-chevron-right"></span></a></h2>
+            </div>
+            <div class="col-md-9 breadcrumb-container">
+              <ul class="breadcrumb">
+                <li class="breadcrumb-link">
+                  <span class="glyphicon glyphicon-home"></span>&nbsp;<a href="index-en-US.html">CAM</a>
+                </li>
+                <li class="breadcrumb-link">
+                  <a href="UUID-0751db51-8b5b-ae49-1904-dce4b8c92263.html">Basics of CAM editing</a>
+                </li>
+                <li class="breadcrumb-link">
+                  <a href="UUID-434ea6a6-7971-f3fd-e905-3b7e1a608baf.html">Produce electrodes</a>
+                </li>
+                <li class="breadcrumb-node">The Electrode milling dialog</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="main-content">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 toc-container" id="toc-wrapper">
+            <div id="toc-placeholder">
+              <div id="toc-standalone-placeholder"></div>
+            </div>
+          </div>
+          <div class="col-md-9 content-container" id="content-wrapper">
+            <a accesskey="p" class="prev pull-left prev visible-lg visible-md" id="header-navigation-prev" href="UUID-acf580ad-65ad-9c5b-9669-3bf651404e3d.html"><span class="glyphicon glyphicon-circle-arrow-left"></span>Prev</a><a accesskey="n" class="pull-right next visible-lg visible-md" id="header-navigation-next" href=
+            "UUID-14de032b-f4f8-f8db-7c7b-0f0cf64b3817.html">Next<span class="glyphicon glyphicon-circle-arrow-right"></span></a>
+            <div id="topic-content">
+              <section xml:lang="en-US" lang="en-US" dir="ltr" class="section internal" data-origin-id="UUID-c082e52d-202e-c7ee-0fb0-e7243013f24f" data-publication-date="" id="UUID-843c72bf-7be9-c45d-d2cb-9a2d24883e52">
+                <div class="titlepage">
+                  <div>
+                    <div class="title">
+                      <h1 class="title" style="clear: both"><span class="formal-title">The Electrode milling dialog</span></h1>
+                    </div>
+                  </div>
+                </div>
+                <p>The data for NC programming (joblist, milling area, stock, clamp and electrode feature) are created in the <span class="guilabel">Electrode milling</span> dialog. Subsequent machining of data is not possible via this dialog.</p>
+                <p>The dialog comprises the dialog pages <span class="guilabel">General</span>, <span class="guilabel">Macros</span> and <span class="guilabel">Setup</span>.</p>
+                <section dir="ltr" class="simplesect internal" id="UUID-843c72bf-7be9-c45d-d2cb-9a2d24883e52_id17A59090LA5">
+                  <div class="titlepage">
+                    <div>
+                      <div>
+                        <h2 class="title" style="clear: both"><span class="formal-title">General</span></h2>
+                      </div>
+                    </div>
+                  </div>
+                  <p><span xml:lang="de" lang="de" dir="ltr" class="guilabel">Joblist</span></p>
+                  <p>The <span class="guilabel">Name</span> of the joblist is copied from the electrode designation.</p>
+                  <p><span class="guilabel">Global clearance plane</span>: set by default to 10000.</p>
+                  <p><span xml:lang="de" lang="de" dir="ltr" class="guilabel">Model</span></p>
+                  <p>Milling area and stock are created in the <span class="italic">hyper</span>MILL browser, if the <span class="guilabel">Milling area</span> and <span class="guilabel">Stock</span> functions are activated. The geometric data is copied from the selected electrode.</p>
+                  <p>A clamp is created as an element in the <span class="italic">hyper</span>MILL browser if the <span class="guilabel">Clamp</span> function is activated. The geometric data is copied from the holder of the selected electrode.</p>
+                  <p>Activate the <span class="guilabel">Machine</span> function and select the desired machine. In doing so, the <span class="guilabel">Machine</span> function is activated in the job list and the selected machine is transferred.</p>
+                  <p><span xml:lang="de" lang="de" dir="ltr" class="guilabel">NCS</span></p>
+                  <p>Use the NSC (NC system) to define the position of the zero point. Possible zero point positions include:</p>
+                  <p>(1) Top of electrode area</p>
+                  <p>(2) Top of reference contour</p>
+                  <p>(3) Bottom of reference contour</p>
+                  <p>(4) Bottom of electrode (only if <span class="bold"><strong>no</strong></span> clamping device is activated)</p>
+                  <p>(4) Top of electrode holder (only if a clamping device is activated)</p>
+                  <p>(5) Reference zero clamping system</p>
+                  <p>Based on the selected zero point position, zero point and frame are created as elements in the <span class="emphasis"><em>hyper</em></span>MILL browser.</p>
+                  <div class="informalfigure" id="UUID-843c72bf-7be9-c45d-d2cb-9a2d24883e52_figure-idm4645813037497632795032462076">
+                    <div class="mediaobject">
+                      <table class="image-viewport" style="border-collapse:collapse;border:0; width:450px;">
+                        <tr>
+                          <td style="padding:0;"><img src="image/uuid-b664af6b-a8fc-79a5-f7f5-d2312976f138.svg" style="max-width: 450px;" alt="elektrode.svg" /></td>
+                        </tr>
+                      </table>
+                    </div>
+                  </div>
+                </section>
+                <section dir="ltr" class="simplesect internal" id="UUID-843c72bf-7be9-c45d-d2cb-9a2d24883e52_id17A59090LOS">
+                  <div class="titlepage">
+                    <div>
+                      <div>
+                        <h2 class="title" style="clear: both"><span class="formal-title">Macros</span></h2>
+                      </div>
+                    </div>
+                  </div>
+                  <p>Available macros and selected macros are displayed on the dialog page. To use a macro during programming, move this to the Selected macros area. Generate the required macro beforehand. This is carried out based on the generated electrode feature using the <span class="guilabel">New macro from feature</span> function.</p>
+                  <p>Use the <span class="guilabel">Allow multiple apply</span> function to enable multiple use of feature-based macros.</p>
+                  <p>For information on creating a feature-based macro, see section <a class="link linktype-component" href="UUID-e771b78d-ae4f-3e69-225e-42fae4c46f10.html" title="Create macro">Create macro</a>.</p>
+                </section>
+                <section dir="ltr" class="simplesect internal" id="UUID-843c72bf-7be9-c45d-d2cb-9a2d24883e52_id17A59090MZR">
+                  <div class="titlepage">
+                    <div>
+                      <div>
+                        <h2 class="title" style="clear: both"><span class="formal-title">Setup</span></h2>
+                      </div>
+                    </div>
+                  </div>
+                  <p>The milling project directory for producing the electrode is displayed on the dialog page. With comments provided, production-related information is offered for the jobs. The <span class="guilabel">Calculate</span> function is used to create the toolpaths.</p>
+                  <p><span xml:lang="de" lang="de" dir="ltr" class="guilabel">Save file</span></p>
+                  <p>The milling project directory is displayed.</p>
+                  <p><span xml:lang="de" lang="de" dir="ltr" class="guilabel">Joblist</span></p>
+                  <p><span class="guilabel">Comment 1-10</span>: Create optional comments. Comments are copied into the joblist created as joblist comments.</p>
+                  <div class="informaltable table-responsive">
+                    <table style="width:100%;" class="informaltable">
+                      <colgroup>
+                        <col style="width:12%;" />
+                        <col style="width:88%;" />
+                      </colgroup>
+                      <tbody>
+                        <tr>
+                          <td class="td">
+                            <div class="mediaobject">
+                              <table class="image-viewport" style="border-collapse:collapse;border:0; ;">
+                                <tr style="height: 48px">
+                                  <td style="padding:0;"><img src="image/uuid-2f9796f9-1485-ee33-0587-517e8435acaf.svg" style="max-height: 48px;" alt="edit_mach.svg" /></td>
+                                </tr>
+                              </table>
+                            </div>
+                          </td>
+                          <td class="td">
+                            <p>Enter the comments using a text editor. Each line in the text editor corresponds to a job list comment.</p>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <p><span xml:lang="de" lang="de" dir="ltr" class="guilabel">Options</span></p>
+                  <p><span class="guilabel">Calculate</span>: The toolpaths are calculated.</p>
+                </section>
+              </section>
+              <div class="footer-content">
+                <div class="section-toc section-toc-after">
+                  <div class="section-toc-title">
+                    <span class="section-toc-title-delimiter">:</span>
+                  </div>
+                </div>
+              </div>
+              <footer></footer>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="x-ua-compatible" content="IE=edge" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="search" content="default" />
+  <meta name="use.ic" content="no" />
+  <meta name="tocstandalone" content="yes" />
+  <script type="text/javascript">
+  //<![CDATA[
+                        var index;
+                        var contentLanguage = 'en-US';
+                        var enterKey = 'select';
+                        
+                                        var anchoroption = true;
+                                var instantsearch_minlength = 1;
+                                                
+                                var fuse_threshold = 0.3;
+                        
+                                        var local_csh = false;
+                                
+                        var useanchorlinks = false;
+  //]]>
+  </script>
+  <title>9.1.&nbsp;Connecting VIRTUAL Machining Center and the machine</title>
+  <link rel="stylesheet" type="text/css" href="../css/docbook.css" />
+  <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" href="../css/bootstrap-theme.min.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style-common.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style-responsive.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style-print.css" />
+  <link rel="stylesheet" type="text/css" href="../css/font-awesome.css" />
+  <link rel="stylesheet" type="text/css" href="../css/custom.css" />
+  <link rel="stylesheet" type="text/css" href="../css/layout-custom-style.css" />
+  <script src="../js/jquery-1.10.2.min.js" type="text/javascript"></script>
+  <script src="../js/jquery-ui-1.10.3.custom.min.js" type="text/javascript"></script>
+  <script src="../js/bootstrap.min.js" type="text/javascript"></script>
+  <script src="../js/purl.js" type="text/javascript"></script>
+  <script src="../js/jquery.event.move.js" type="text/javascript"></script>
+  <script src="../js/jquery.event.swipe.js" type="text/javascript"></script>
+  <script src="../js/jquery.sticky.js" type="text/javascript"></script>
+  <script src="../js/respond.min.js" type="text/javascript"></script>
+  <script src="../js/script.js" type="text/javascript"></script>
+  <script src="js/toc.js" type="text/javascript"></script>
+  <script src="../js/create-toc.js" type="text/javascript"></script>
+  <script src="../js/clipboard.min.js" type="text/javascript"></script>
+  <script src="../js/fuse.min.js" type="text/javascript"></script>
+  <script src="../js/jquery.mark.min.js" type="text/javascript"></script>
+  <script src="../js/html5.fuse.search.js" type="text/javascript"></script>
+  <script src="js/fuzzydata.js" type="text/javascript"></script>
+  <script src="../js/csh.js" type="text/javascript"></script>
+  <script src="../js/highlight-mergehtml-plugin.js" type="text/javascript"></script>
+  <meta name="generator" content="Paligo" />
+  <link rel="prev" href="UUID-d22cd2ec-dc58-9f2c-b2ff-776158b9fb67.html" title="9.&nbsp;CONNECTED Machining" />
+  <link rel="next" href="UUID-a9ea5c7e-1d68-bc7d-f22e-8e514f02811d.html#UUID-a9ea5c7e-1d68-bc7d-f22e-8e514f02811d_section-5dbab12569700-idm44889119838608" title="Configuration" />
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML" async="async"></script>
+  <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+  <script type="text/javascript" src="../js/cookie-consent.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  <script type="text/javascript">
+  //<![CDATA[
+                        $(document).on('ready ajaxComplete', function() {
+                                
+                                hljs.addPlugin(mergeHTMLPlugin);
+                                hljs.configure({'ignoreUnescapedHTML': true});
+                                
+                                $('pre:not(.embedcode)').each(function() {
+                                        /**
+                                         * @type {string}
+                                         */
+                                        var language = $(this).data('language');
+
+                                        if (language === 'plaintext' || language === 'text') {
+                                                $(this).addClass(language).addClass('hljs');
+                                                return true;
+                                        }
+                                        else {
+                                                var clone = this.cloneNode(true);
+                                                hljs.highlightElement(clone);
+                                                $(this).empty().append($(clone).contents());
+                                                $(this).attr("class", $(clone).attr("class"));
+                                        }
+                                });
+                        });
+  //]]>
+  </script>
+  <style type="text/css">
+  /*<![CDATA[*/
+            div.skipnav {
+            }
+            div.skipnav a {
+                position: fixed;
+                left: -10000px;
+                top: 1.5em;
+                width: 1px;
+                height: 1px;
+                overflow: hidden;
+            }
+            div.skipnav a:focus, div.skipnav a:active, div.skipnav a:hover {
+                background: white;
+                color: black;
+                box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.5);
+                position: fixed;
+                left: 2em;
+                top: 1.5em;
+                width: auto;
+                height: auto;
+                overflow: visible;
+                text-decoration: underline;
+                z-index: 99999; /* has to be higher than the side panel */
+    }
+  /*]]>*/
+  </style>
+</head>
+<body data-link-prefix="">
+  <div class="skipnav">
+    <a href="#content-wrapper">Skip to main content</a>
+  </div>
+  <div id="page" class="clearfix">
+    <div id="header">
+      <div class="container">
+        <div id="logotype-container" class="pull-left">
+          <a href="../index.html"><img id="logotype-pageheader" src="../css/image/corporate-logo.png" alt="Corporate logotype" data-role="logotype" /></a>
+        </div>
+        <div id="pagetools-container" class="pull-right">
+          <ul id="page-tools">
+            <li class="page-tools-search"><input placeholder="Search" type="text" class="form-control" aria-label="Search" id="search" /></li>
+            <li class="page-tools-print">
+              <a href="javascript:window.print();"><span class="tool-label">Print</span><span class="glyphicon glyphicon-print"></span></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <h1 id="publication-title"><span xml:lang="de" lang="de" dir="ltr" class="phrase"><span class="application">VIRTUAL Machining Center</span></span></h1>
+    <div id="subheader-sticky-wrapper" class="sticky-wrapper">
+      <div id="subheader">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3 toc-title">
+              <h2><a class="prev nav-icon hidden-lg hidden-md" href="UUID-d22cd2ec-dc58-9f2c-b2ff-776158b9fb67.html"><span class="glyphicon glyphicon-chevron-left"></span></a> <a href="#toc" class="hidden mobile-nav-toggle"><span class="glyphicon glyphicon-list"></span>Table of Contents</a><span class="toc-label">Table of Contents</span><a class=
+              "next nav-icon hidden-lg hidden-md" href="UUID-a9ea5c7e-1d68-bc7d-f22e-8e514f02811d.html#UUID-a9ea5c7e-1d68-bc7d-f22e-8e514f02811d_section-5dbab12569700-idm44889119838608"><span class="glyphicon glyphicon-chevron-right"></span></a></h2>
+            </div>
+            <div class="col-md-9 breadcrumb-container">
+              <ul class="breadcrumb">
+                <li class="breadcrumb-link">
+                  <span class="glyphicon glyphicon-home"></span>&nbsp;<a href="index-en-US.html"><span xml:lang="de" lang="de" dir="ltr" class="phrase"><span class="application">VIRTUAL Machining Center</span></span></a>
+                </li>
+                <li class="breadcrumb-link">
+                  <a href="UUID-d22cd2ec-dc58-9f2c-b2ff-776158b9fb67.html"><span class="phrase"><span class="application">CONNECTED Machining</span></span></a>
+                </li>
+                <li class="breadcrumb-node">Connecting <span class="phrase"><span class="application">VIRTUAL Machining Center</span></span> and the machine</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="main-content">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 toc-container" id="toc-wrapper">
+            <div id="toc-placeholder">
+              <div id="toc-standalone-placeholder"></div>
+            </div>
+          </div>
+          <div class="col-md-9 content-container" id="content-wrapper">
+            <a accesskey="p" class="prev pull-left prev visible-lg visible-md" id="header-navigation-prev" href="UUID-d22cd2ec-dc58-9f2c-b2ff-776158b9fb67.html"><span class="glyphicon glyphicon-circle-arrow-left"></span>Prev</a><a accesskey="n" class="pull-right next visible-lg visible-md" id="header-navigation-next" href=
+            "UUID-a9ea5c7e-1d68-bc7d-f22e-8e514f02811d.html#UUID-a9ea5c7e-1d68-bc7d-f22e-8e514f02811d_section-5dbab12569700-idm44889119838608">Next<span class="glyphicon glyphicon-circle-arrow-right"></span></a>
+            <div id="topic-content">
+              <section xml:lang="en-US" lang="en-US" dir="ltr" class="section" data-origin-id="UUID-125b1e08-ba6a-d2c1-1ce8-392f90d08bc0" data-publication-date="" id="UUID-a9ea5c7e-1d68-bc7d-f22e-8e514f02811d">
+                <div class="titlepage">
+                  <div>
+                    <div class="title">
+                      <h1 class="title" style="clear: both"><span class="formal-number">9.1</span><span class="formal-label-delimiter">.</span> <span class="formal-title">Connecting <span class="phrase"><span class="application">VIRTUAL Machining Center</span></span> and the machine</span></h1>
+                    </div>
+                  </div>
+                </div>
+                <div class="informaltable table-responsive">
+                  <table style="width:100%;" class="informaltable">
+                    <colgroup>
+                      <col style="width:15%;" />
+                      <col style="width:85%;" />
+                    </colgroup>
+                    <tbody>
+                      <tr>
+                        <td class="td">
+                          <div class="mediaobject"><img src="image/uuid-607a8c80-7952-e7ca-a635-3eea79cff21a.svg" style="" alt="heidenhain.svg" /></div>
+                        </td>
+                        <td class="td">
+                          <p>Connect the <span class="phrase"><span class="application">VIRTUAL Machining Center</span></span> to the Heidenhain controller of the machine.</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="td">
+                          <div class="mediaobject"><img src="image/uuid-54406b36-9913-6a5b-8986-3abff403d978.svg" style="" alt="grob_siemens.svg" /></div>
+                        </td>
+                        <td class="td">
+                          <p>Connect the <span class="phrase"><span class="application">VIRTUAL Machining Center</span></span> to the Siemens controller of the machine.</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="td">
+                          <div class="mediaobject" id="UUID-a9ea5c7e-1d68-bc7d-f22e-8e514f02811d_mediaobject-idm53160576779914"><img src="image/uuid-446ba169-eea2-23a2-fcd2-09390cc2b4eb.png" style="" alt="CNC_connect.png" /></div>
+                        </td>
+                        <td class="td">
+                          <p id="UUID-a9ea5c7e-1d68-bc7d-f22e-8e514f02811d_para-idm53160576817224">Show the elements for exchanging data between the <span class="phrase"><span class="application">CONNECTED Machining</span></span> and the machine as well as for controlling the machine.</p>
+                          <p><span class="guilabel">Connect</span>: Establish the connection to the machine. An initial consistency check takes place between the data of the NC program, which was generated with the <span class="phrase"><span class="application">VIRTUAL Machining Center</span></span>, and the machine.</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="td">
+                          <div class="mediaobject" id="UUID-a9ea5c7e-1d68-bc7d-f22e-8e514f02811d_mediaobject-idm53160575906208"><img src="image/uuid-135316b0-3905-b8b8-ebf9-ed6ba4c0162a.png" style="" alt="CNC_disconnect.png" /></div>
+                        </td>
+                        <td class="td">
+                          <p id="UUID-a9ea5c7e-1d68-bc7d-f22e-8e514f02811d_para-idm53160576848792"><span class="guilabel">Disconnect</span>: Disconnect the <span class="phrase"><span class="application">VIRTUAL Machining Center</span></span> and the machine.</p>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <section dir="ltr" class="section" data-origin-id="" data-publication-date="" id="UUID-a9ea5c7e-1d68-bc7d-f22e-8e514f02811d_section-5dbab12569700-idm44889119838608">
+                  <div class="titlepage">
+                    <div>
+                      <div class="title">
+                        <h2 class="title" style="clear: both"><span class="formal-title">Configuration</span></h2>
+                      </div>
+                    </div>
+                  </div>
+                  <p>(only available for Heidenhain controllers)</p>
+                  <div class="orderedlist">
+                    <ol class="orderedlist" type="1">
+                      <li class="listitem">
+                        <p>Clicking <span class="guilabel">Create Connection</span> opens the <span class="guilabel">Configure Heidenhain connection</span> dialog.</p>
+                      </li>
+                      <li class="listitem">
+                        <p>Specify the <span class="guilabel">Connection name</span>, enter the <span class="guilabel">Ip address</span> and select the <span class="guilabel">Cnc type</span>.</p>
+                      </li>
+                      <li class="listitem">
+                        <p>Click <span class="guilabel">Save</span> to establish the connection.</p>
+                      </li>
+                    </ol>
+                  </div>
+                  <p id="UUID-a9ea5c7e-1d68-bc7d-f22e-8e514f02811d_para-idm53160574914744"><span class="inlinemediaobject"><img src="image/uuid-b74451a3-118d-a74e-9ed4-55f257a3f523.png" alt="CNC_select_from_list.png" /></span> Select the connection from the list.</p>
+                </section>
+                <section dir="ltr" class="section" data-origin-id="" data-publication-date="" id="UUID-a9ea5c7e-1d68-bc7d-f22e-8e514f02811d_section-idm231825580919384">
+                  <div class="titlepage">
+                    <div>
+                      <div class="title">
+                        <h2 class="title" style="clear: both"><span class="formal-title">Connection</span></h2>
+                      </div>
+                    </div>
+                  </div>
+                  <p>(only available for Siemens controllers)</p>
+                  <div class="informaltable table-responsive">
+                    <table style="width:100%;" class="informaltable">
+                      <colgroup>
+                        <col style="width:15%;" />
+                        <col style="width:85%;" />
+                        <col />
+                      </colgroup>
+                      <tbody>
+                        <tr>
+                          <td valign="top" class="td align-top">
+                            <div class="mediaobject">
+                              <table class="image-viewport" style="border-collapse:collapse;border:0; ;">
+                                <tr style="height: 30px">
+                                  <td style="padding:0;"><img src="image/uuid-7bd732a1-ea41-ad63-f7a2-74790366b5fc.svg" style="max-height: 30px;" alt="machine_ip_address_name_new.svg" /></td>
+                                </tr>
+                              </table>
+                            </div>
+                          </td>
+                          <td colspan="2" valign="top" class="td align-top">
+                            <div class="orderedlist">
+                              <ol class="orderedlist" type="1">
+                                <li class="listitem">
+                                  <p>Clicking the <span class="guilabel">Add connection</span> button opens the dialog for setting up the connection to the Siemens controller.</p>
+                                </li>
+                                <li class="listitem">
+                                  <p>Define the <span class="guilabel">Name</span>, <span class="guilabel">IP</span>, <span class="guilabel">Key</span> and <span class="guilabel">Config File</span>.</p>
+                                </li>
+                                <li class="listitem">
+                                  <p>If necessary, use <span class="guilabel">Ping</span> to test the connection.</p>
+                                </li>
+                                <li class="listitem">
+                                  <p>Click <span class="guilabel">OK</span> to save the data and close the dialog. Select <span class="guilabel">Discard</span> to enter the data again. Select <span class="guilabel">Cancel</span> to close the dialog without saving.</p>
+                                </li>
+                              </ol>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="td">
+                            <div class="mediaobject"><img src="image/uuid-9fa72483-a8f8-2212-3d9e-1e43c0df00b2.svg" style="" alt="machine_ip_address_name_edit.svg" /></div>
+                          </td>
+                          <td colspan="2" class="td">
+                            <p>Click the <span class="guilabel">Edit Connection</span> button to edit the current connection to the Siemens controller.</p>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </section>
+                <section dir="ltr" class="section" data-origin-id="" data-publication-date="" id="UUID-a9ea5c7e-1d68-bc7d-f22e-8e514f02811d_section-idm4675520478816031605763039597">
+                  <div class="titlepage">
+                    <div>
+                      <div class="title">
+                        <h2 class="title" style="clear: both"><span class="formal-title">Status</span></h2>
+                      </div>
+                    </div>
+                  </div>
+                  <p>Shows the current status of the connection.</p>
+                  <p><span class="guilabel">SIK</span>: Identification number or name of the controller.</p>
+                </section>
+                <section dir="ltr" class="section" data-origin-id="" data-publication-date="" id="UUID-a9ea5c7e-1d68-bc7d-f22e-8e514f02811d_section-idm4531670253814431605763383404">
+                  <div class="titlepage">
+                    <div>
+                      <div class="title">
+                        <h2 class="title" style="clear: both"><span class="formal-title">PC</span></h2>
+                      </div>
+                    </div>
+                  </div>
+                  <p id="UUID-a9ea5c7e-1d68-bc7d-f22e-8e514f02811d_para-idm53160576550826"><span class="guilabel">NC directory</span>: Directory on the PC (local computer) in which the NC file is saved.</p>
+                  <p><span class="guilabel">NC program</span>: Name of the generated NC file.</p>
+                </section>
+                <section dir="ltr" class="section" data-origin-id="" data-publication-date="" id="UUID-a9ea5c7e-1d68-bc7d-f22e-8e514f02811d_section-idm4623770445675231605763681975">
+                  <div class="titlepage">
+                    <div>
+                      <div class="title">
+                        <h2 class="title" style="clear: both"><span class="formal-title">Heidenhain CNC</span></h2>
+                      </div>
+                    </div>
+                  </div>
+                  <p><span class="guilabel">NC directory</span>: Directory on the controller in which the NC file is saved.</p>
+                </section>
+              </section>
+              <div class="footer-content">
+                <div class="section-toc section-toc-after">
+                  <div class="section-toc-title">
+                    <span class="section-toc-title-delimiter">:</span>
+                  </div>
+                </div>
+              </div>
+              <footer></footer>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

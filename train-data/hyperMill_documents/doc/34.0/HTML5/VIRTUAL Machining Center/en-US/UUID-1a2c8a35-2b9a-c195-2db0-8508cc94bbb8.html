@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="x-ua-compatible" content="IE=edge" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="search" content="default" />
+  <meta name="use.ic" content="no" />
+  <meta name="tocstandalone" content="yes" />
+  <script type="text/javascript">
+  //<![CDATA[
+                        var index;
+                        var contentLanguage = 'en-US';
+                        var enterKey = 'select';
+                        
+                                        var anchoroption = true;
+                                var instantsearch_minlength = 1;
+                                                
+                                var fuse_threshold = 0.3;
+                        
+                                        var local_csh = false;
+                                
+                        var useanchorlinks = false;
+  //]]>
+  </script>
+  <title>9.4.&nbsp;Controlling the machine</title>
+  <link rel="stylesheet" type="text/css" href="../css/docbook.css" />
+  <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" href="../css/bootstrap-theme.min.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style-common.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style-responsive.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style-print.css" />
+  <link rel="stylesheet" type="text/css" href="../css/font-awesome.css" />
+  <link rel="stylesheet" type="text/css" href="../css/custom.css" />
+  <link rel="stylesheet" type="text/css" href="../css/layout-custom-style.css" />
+  <script src="../js/jquery-1.10.2.min.js" type="text/javascript"></script>
+  <script src="../js/jquery-ui-1.10.3.custom.min.js" type="text/javascript"></script>
+  <script src="../js/bootstrap.min.js" type="text/javascript"></script>
+  <script src="../js/purl.js" type="text/javascript"></script>
+  <script src="../js/jquery.event.move.js" type="text/javascript"></script>
+  <script src="../js/jquery.event.swipe.js" type="text/javascript"></script>
+  <script src="../js/jquery.sticky.js" type="text/javascript"></script>
+  <script src="../js/respond.min.js" type="text/javascript"></script>
+  <script src="../js/script.js" type="text/javascript"></script>
+  <script src="js/toc.js" type="text/javascript"></script>
+  <script src="../js/create-toc.js" type="text/javascript"></script>
+  <script src="../js/clipboard.min.js" type="text/javascript"></script>
+  <script src="../js/fuse.min.js" type="text/javascript"></script>
+  <script src="../js/jquery.mark.min.js" type="text/javascript"></script>
+  <script src="../js/html5.fuse.search.js" type="text/javascript"></script>
+  <script src="js/fuzzydata.js" type="text/javascript"></script>
+  <script src="../js/csh.js" type="text/javascript"></script>
+  <script src="../js/highlight-mergehtml-plugin.js" type="text/javascript"></script>
+  <meta name="generator" content="Paligo" />
+  <link rel="prev" href="UUID-2736c98a-92dc-4490-26b4-7df62c7335a0.html#UUID-2736c98a-92dc-4490-26b4-7df62c7335a0_UUID-56de1be6-b8e1-b79d-540c-b098ff1a0114" title="Machine configuration" />
+  <link rel="next" href="UUID-1a2c8a35-2b9a-c195-2db0-8508cc94bbb8.html#UUID-1a2c8a35-2b9a-c195-2db0-8508cc94bbb8_section-5dbad6c11870e-idm44771267222208" title="Heidenhain CNC" />
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML" async="async"></script>
+  <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+  <script type="text/javascript" src="../js/cookie-consent.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  <script type="text/javascript">
+  //<![CDATA[
+                        $(document).on('ready ajaxComplete', function() {
+                                
+                                hljs.addPlugin(mergeHTMLPlugin);
+                                hljs.configure({'ignoreUnescapedHTML': true});
+                                
+                                $('pre:not(.embedcode)').each(function() {
+                                        /**
+                                         * @type {string}
+                                         */
+                                        var language = $(this).data('language');
+
+                                        if (language === 'plaintext' || language === 'text') {
+                                                $(this).addClass(language).addClass('hljs');
+                                                return true;
+                                        }
+                                        else {
+                                                var clone = this.cloneNode(true);
+                                                hljs.highlightElement(clone);
+                                                $(this).empty().append($(clone).contents());
+                                                $(this).attr("class", $(clone).attr("class"));
+                                        }
+                                });
+                        });
+  //]]>
+  </script>
+  <style type="text/css">
+  /*<![CDATA[*/
+            div.skipnav {
+            }
+            div.skipnav a {
+                position: fixed;
+                left: -10000px;
+                top: 1.5em;
+                width: 1px;
+                height: 1px;
+                overflow: hidden;
+            }
+            div.skipnav a:focus, div.skipnav a:active, div.skipnav a:hover {
+                background: white;
+                color: black;
+                box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.5);
+                position: fixed;
+                left: 2em;
+                top: 1.5em;
+                width: auto;
+                height: auto;
+                overflow: visible;
+                text-decoration: underline;
+                z-index: 99999; /* has to be higher than the side panel */
+    }
+  /*]]>*/
+  </style>
+</head>
+<body data-link-prefix="">
+  <div class="skipnav">
+    <a href="#content-wrapper">Skip to main content</a>
+  </div>
+  <div id="page" class="clearfix">
+    <div id="header">
+      <div class="container">
+        <div id="logotype-container" class="pull-left">
+          <a href="../index.html"><img id="logotype-pageheader" src="../css/image/corporate-logo.png" alt="Corporate logotype" data-role="logotype" /></a>
+        </div>
+        <div id="pagetools-container" class="pull-right">
+          <ul id="page-tools">
+            <li class="page-tools-search"><input placeholder="Search" type="text" class="form-control" aria-label="Search" id="search" /></li>
+            <li class="page-tools-print">
+              <a href="javascript:window.print();"><span class="tool-label">Print</span><span class="glyphicon glyphicon-print"></span></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <h1 id="publication-title"><span xml:lang="de" lang="de" dir="ltr" class="phrase"><span class="application">VIRTUAL Machining Center</span></span></h1>
+    <div id="subheader-sticky-wrapper" class="sticky-wrapper">
+      <div id="subheader">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3 toc-title">
+              <h2><a class="prev nav-icon hidden-lg hidden-md" href="UUID-2736c98a-92dc-4490-26b4-7df62c7335a0.html#UUID-2736c98a-92dc-4490-26b4-7df62c7335a0_UUID-56de1be6-b8e1-b79d-540c-b098ff1a0114"><span class="glyphicon glyphicon-chevron-left"></span></a> <a href="#toc" class="hidden mobile-nav-toggle"><span class=
+              "glyphicon glyphicon-list"></span>Table of Contents</a><span class="toc-label">Table of Contents</span><a class="next nav-icon hidden-lg hidden-md" href="UUID-1a2c8a35-2b9a-c195-2db0-8508cc94bbb8.html#UUID-1a2c8a35-2b9a-c195-2db0-8508cc94bbb8_section-5dbad6c11870e-idm44771267222208"><span class=
+              "glyphicon glyphicon-chevron-right"></span></a></h2>
+            </div>
+            <div class="col-md-9 breadcrumb-container">
+              <ul class="breadcrumb">
+                <li class="breadcrumb-link">
+                  <span class="glyphicon glyphicon-home"></span>&nbsp;<a href="index-en-US.html"><span xml:lang="de" lang="de" dir="ltr" class="phrase"><span class="application">VIRTUAL Machining Center</span></span></a>
+                </li>
+                <li class="breadcrumb-link">
+                  <a href="UUID-d22cd2ec-dc58-9f2c-b2ff-776158b9fb67.html"><span class="phrase"><span class="application">CONNECTED Machining</span></span></a>
+                </li>
+                <li class="breadcrumb-node">Controlling the machine</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="main-content">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 toc-container" id="toc-wrapper">
+            <div id="toc-placeholder">
+              <div id="toc-standalone-placeholder"></div>
+            </div>
+          </div>
+          <div class="col-md-9 content-container" id="content-wrapper">
+            <a accesskey="p" class="prev pull-left prev visible-lg visible-md" id="header-navigation-prev" href="UUID-2736c98a-92dc-4490-26b4-7df62c7335a0.html#UUID-2736c98a-92dc-4490-26b4-7df62c7335a0_UUID-56de1be6-b8e1-b79d-540c-b098ff1a0114"><span class="glyphicon glyphicon-circle-arrow-left"></span>Prev</a><a accesskey="n" class=
+            "pull-right next visible-lg visible-md" id="header-navigation-next" href="UUID-1a2c8a35-2b9a-c195-2db0-8508cc94bbb8.html#UUID-1a2c8a35-2b9a-c195-2db0-8508cc94bbb8_section-5dbad6c11870e-idm44771267222208">Next<span class="glyphicon glyphicon-circle-arrow-right"></span></a>
+            <div id="topic-content">
+              <section xml:lang="en-US" lang="en-US" dir="ltr" class="section" data-origin-id="UUID-79aa790b-93ef-2626-e383-db123c7c6803" data-publication-date="" id="UUID-1a2c8a35-2b9a-c195-2db0-8508cc94bbb8">
+                <div class="titlepage">
+                  <div>
+                    <div class="title">
+                      <h1 class="title" style="clear: both"><span class="formal-number">9.4</span><span class="formal-label-delimiter">.</span> <span class="formal-title">Controlling the machine</span></h1>
+                    </div>
+                  </div>
+                </div>
+                <p>Use <span class="phrase"><span class="application">CONNECTED Machining</span></span> to control the machine in single step run mode or program run mode, stop/continue a program, adjust the feedrate and rapid traverse speed or synchronise the current position of the machine with the <span class="phrase"><span class=
+                "application">VIRTUAL Machining Center</span></span>.</p>
+                <section dir="ltr" class="section" data-origin-id="" data-publication-date="" id="UUID-1a2c8a35-2b9a-c195-2db0-8508cc94bbb8_section-5dbad6c11870e-idm44771267222208">
+                  <div class="titlepage">
+                    <div>
+                      <div class="title">
+                        <h2 class="title" style="clear: both"><span class="formal-title">Heidenhain CNC</span></h2>
+                      </div>
+                    </div>
+                  </div>
+                  <p><span class="guilabel">NC directory</span>: Displays the NC directory defined in the controller's memory.</p>
+                  <div class="informaltable table-responsive">
+                    <table style="width:100%;" class="informaltable">
+                      <colgroup>
+                        <col style="width:25%;" />
+                        <col style="width:75%;" />
+                      </colgroup>
+                      <tbody>
+                        <tr>
+                          <td class="td">
+                            <div class="mediaobject"><img src="image/uuid-8034fb6c-749c-7186-86ed-51229e01d673.svg" style="" alt="hh_program_run_mode.svg" /></div>
+                          </td>
+                          <td class="td">
+                            <p><span class="guilabel">Change to program run mode</span>: Control the machine in program run mode.</p>
+                            <p><span class="inlinemediaobject"><img src="image/uuid-d3472d24-15bf-6200-8d62-f37eed6cb967.svg" alt="Nr_01.svg" /></span> Program run mode activated <span class="inlinemediaobject"><img src="image/uuid-fa232d44-ccb2-2f50-a1d9-253c460bb62c.svg" alt="Nr_02.svg" /></span> Program run mode not activated.</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="td">
+                            <div class="mediaobject"><img src="image/uuid-d45e5c2f-46fa-4a92-7023-d675921c80b5.svg" style="" alt="hh_single_step_run_mode.svg" /></div>
+                          </td>
+                          <td class="td">
+                            <p><span class="guilabel">Change to single step run mode</span>: Control the machine in single step run mode.</p>
+                            <p><span class="inlinemediaobject"><img src="image/uuid-d3472d24-15bf-6200-8d62-f37eed6cb967.svg" alt="Nr_01.svg" /></span> Single step run mode activated <span class="inlinemediaobject"><img src="image/uuid-fa232d44-ccb2-2f50-a1d9-253c460bb62c.svg" alt="Nr_02.svg" /></span> Single step run mode not activated.</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="td">
+                            <div class="mediaobject"><img src="image/uuid-bc7b5c4a-9c13-6103-b2b0-bb727fff5cf3.png" style="" alt="CNC_load_nc_program_on_machine.png" /></div>
+                          </td>
+                          <td class="td">
+                            <p><span class="guilabel">Load NC program on machine</span>: Load the NC program, which was transferred from <span class="phrase"><span class="application">CONNECTED Machining</span></span> to the memory of the controller, on the machine.</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="td">
+                            <div class="mediaobject"><img src="image/uuid-7747c3c2-d510-1310-d268-630fcded05da.svg" style="" alt="folder.svg" /></div>
+                          </td>
+                          <td class="td">
+                            <p>Use the <span class="guilabel">Select cnc folder</span> dialog to define a folder on the machine computer for saving the generated NC program.</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="td">
+                            <div class="mediaobject"><img src="image/uuid-13917cc1-317d-60a5-9d7e-90ca39512d82.svg" style="" alt="folder_neu.svg" /></div>
+                          </td>
+                          <td class="td">
+                            <p>Create a new folder in the directory structure of the machine computer.</p>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </section>
+                <section dir="ltr" class="section" data-origin-id="" data-publication-date="" id="UUID-1a2c8a35-2b9a-c195-2db0-8508cc94bbb8_section-5dbad791d24a4-idm45252099390416">
+                  <div class="titlepage">
+                    <div>
+                      <div class="title">
+                        <h2 class="title" style="clear: both"><span class="formal-title">Current NC Program Position in CNC</span></h2>
+                      </div>
+                    </div>
+                  </div>
+                  <p><span class="guilabel">Block number</span>: Displays the current block number of the machine.</p>
+                  <div class="informaltable table-responsive">
+                    <table style="width:100%;" class="informaltable">
+                      <colgroup>
+                        <col style="width:25%;" />
+                        <col style="width:75%;" />
+                      </colgroup>
+                      <tbody>
+                        <tr>
+                          <td class="td">
+                            <div class="mediaobject"><img src="image/uuid-fc587393-ca5c-fb34-d78f-6276e112b053.png" style="" alt="CNC_CNC_Current_NC_Program_Position_in_CNC.png" /></div>
+                          </td>
+                          <td class="td">
+                            <p><span class="guilabel">Synchronize NC program position to Virtual Machining Center</span></p>
+                            <p>The current position of the machine (block number) is transferred to <span class="phrase"><span class="application">VIRTUAL Machining Center</span></span>.</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="td">
+                            <div class="mediaobject"><img src="image/uuid-6979df10-671f-cd08-0b4d-16f082f33a05.svg" style="" alt="CNC_program_halt.svg" /></div>
+                          </td>
+                          <td class="td">
+                            <p><span class="guilabel">Program halt</span> <span class="inlinemediaobject"><img src="image/uuid-d3472d24-15bf-6200-8d62-f37eed6cb967.svg" alt="Nr_01.svg" /></span>: Stop the program on the machine.</p>
+                            <p>Rapid traverse speed and feedrate are set to 0. The control elements <span class="inlinemediaobject"><img src="image/uuid-fa232d44-ccb2-2f50-a1d9-253c460bb62c.svg" alt="Nr_02.svg" /></span> are greyed out. Rapid traverse speed and feedrate <span class="bold"><strong>cannot</strong></span> be changed.</p>
+                            <p>Double-click to activate the control elements (potentiometers) again. The potentiometers remain at 0 and can be ‘turned up’ by holding down the left mouse button (‘gentle restart’).</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="td">
+                            <div class="mediaobject"><img src="image/uuid-5fd48440-1fb5-3e7e-ed32-96d50de912c1.svg" style="" alt="CNC_program_resume.svg" /></div>
+                          </td>
+                          <td class="td">
+                            <p><span class="guilabel">Program resume</span> <span class="inlinemediaobject"><img src="image/uuid-d3472d24-15bf-6200-8d62-f37eed6cb967.svg" alt="Nr_01.svg" /></span>: Continue the program on the machine.</p>
+                            <p>The values set for rapid traverse speed and feedrate are applied. The potentiometers <span class="inlinemediaobject"><img src="image/uuid-fa232d44-ccb2-2f50-a1d9-253c460bb62c.svg" alt="Nr_02.svg" /></span> are displayed normally. To change the feedrate or rapid traverse speed, position the mouse pointer within the
+                            potentiometer <span class="inlinemediaobject"><img src="image/uuid-fa232d44-ccb2-2f50-a1d9-253c460bb62c.svg" alt="Nr_02.svg" /></span> and move while holding down the mouse button.</p>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div class="informaltable table-responsive">
+                    <table style="width:100%;" class="informaltable">
+                      <colgroup>
+                        <col style="width:50%;" />
+                        <col style="width:50%;" />
+                      </colgroup>
+                      <tbody>
+                        <tr>
+                          <td class="td">
+                            <div class="mediaobject"><img src="image/uuid-2b194b9d-de76-3af1-1aca-d7f93d60a710.svg" style="" alt="CNC_potis.svg" /></div>
+                          </td>
+                          <td class="td">
+                            <p>Potentiometers for rapid traverse speed <span class="inlinemediaobject"><img src="image/uuid-d3472d24-15bf-6200-8d62-f37eed6cb967.svg" alt="Nr_01.svg" /></span>, feedrate <span class="inlinemediaobject"><img src="image/uuid-fa232d44-ccb2-2f50-a1d9-253c460bb62c.svg" alt="Nr_02.svg" /></span> and spindle speed
+                            <span class="inlinemediaobject"><img src="image/uuid-fb9c4824-908e-c3d0-eb1e-1e864608f0ed.svg" alt="Nr_03.svg" /></span> of the machine as a percentage value of the defined initial value in the NC program.</p>
+                            <p>Activate the value for the spindle speed <span class="inlinemediaobject"><img src="image/uuid-fb9c4824-908e-c3d0-eb1e-1e864608f0ed.svg" alt="Nr_03.svg" /></span> by double-clicking the potentiometer. Change the value by clicking the area outside of the potentiometer (scale) or position the mouse pointer within the
+                            potentiometer and move while holding down the mouse button.</p>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </section>
+              </section>
+              <div class="footer-content">
+                <div class="section-toc section-toc-after">
+                  <div class="section-toc-title">
+                    <span class="section-toc-title-delimiter">:</span>
+                  </div>
+                </div>
+              </div>
+              <footer></footer>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

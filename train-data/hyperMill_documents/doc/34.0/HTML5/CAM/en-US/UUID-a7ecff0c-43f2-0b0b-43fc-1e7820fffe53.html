@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="x-ua-compatible" content="IE=edge" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="search" content="default" />
+  <meta name="use.ic" content="no" />
+  <meta name="tocstandalone" content="yes" />
+  <script type="text/javascript">
+  //<![CDATA[
+                        var index;
+                        var contentLanguage = 'en-US';
+                        var enterKey = 'select';
+                        
+                                        var anchoroption = true;
+                                var instantsearch_minlength = 1;
+                                                
+                                var fuse_threshold = 0.3;
+                        
+                                        var local_csh = false;
+                                
+                        var useanchorlinks = false;
+  //]]>
+  </script>
+  <title>The feature browser</title>
+  <link rel="stylesheet" type="text/css" href="../css/docbook.css" />
+  <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" href="../css/bootstrap-theme.min.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style-common.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style-responsive.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style-print.css" />
+  <link rel="stylesheet" type="text/css" href="../css/font-awesome.css" />
+  <link rel="stylesheet" type="text/css" href="../css/custom.css" />
+  <link rel="stylesheet" type="text/css" href="../css/layout-custom-style.css" />
+  <script src="../js/jquery-1.10.2.min.js" type="text/javascript"></script>
+  <script src="../js/jquery-ui-1.10.3.custom.min.js" type="text/javascript"></script>
+  <script src="../js/bootstrap.min.js" type="text/javascript"></script>
+  <script src="../js/purl.js" type="text/javascript"></script>
+  <script src="../js/jquery.event.move.js" type="text/javascript"></script>
+  <script src="../js/jquery.event.swipe.js" type="text/javascript"></script>
+  <script src="../js/jquery.sticky.js" type="text/javascript"></script>
+  <script src="../js/respond.min.js" type="text/javascript"></script>
+  <script src="../js/script.js" type="text/javascript"></script>
+  <script src="js/toc.js" type="text/javascript"></script>
+  <script src="../js/create-toc.js" type="text/javascript"></script>
+  <script src="../js/clipboard.min.js" type="text/javascript"></script>
+  <script src="../js/fuse.min.js" type="text/javascript"></script>
+  <script src="../js/jquery.mark.min.js" type="text/javascript"></script>
+  <script src="../js/html5.fuse.search.js" type="text/javascript"></script>
+  <script src="js/fuzzydata.js" type="text/javascript"></script>
+  <script src="../js/csh.js" type="text/javascript"></script>
+  <script src="../js/highlight-mergehtml-plugin.js" type="text/javascript"></script>
+  <meta name="generator" content="Paligo" />
+  <link rel="prev" href="UUID-83852851-3804-09e7-314d-1e4927570c37.html" title="4.2.&nbsp;User interface" />
+  <link rel="next" href="UUID-c5ab6f2e-b8ec-1f83-fea8-19913a309596.html" title="The Feature editor" />
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js?config=TeX-MML-AM_CHTML" async="async"></script>
+  <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+  <script type="text/javascript" src="../js/cookie-consent.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  <script type="text/javascript">
+  //<![CDATA[
+                        $(document).on('ready ajaxComplete', function() {
+                                
+                                hljs.addPlugin(mergeHTMLPlugin);
+                                hljs.configure({'ignoreUnescapedHTML': true});
+                                
+                                $('pre:not(.embedcode)').each(function() {
+                                        /**
+                                         * @type {string}
+                                         */
+                                        var language = $(this).data('language');
+
+                                        if (language === 'plaintext' || language === 'text') {
+                                                $(this).addClass(language).addClass('hljs');
+                                                return true;
+                                        }
+                                        else {
+                                                var clone = this.cloneNode(true);
+                                                hljs.highlightElement(clone);
+                                                $(this).empty().append($(clone).contents());
+                                                $(this).attr("class", $(clone).attr("class"));
+                                        }
+                                });
+                        });
+  //]]>
+  </script>
+  <style type="text/css">
+  /*<![CDATA[*/
+            div.skipnav {
+            }
+            div.skipnav a {
+                position: fixed;
+                left: -10000px;
+                top: 1.5em;
+                width: 1px;
+                height: 1px;
+                overflow: hidden;
+            }
+            div.skipnav a:focus, div.skipnav a:active, div.skipnav a:hover {
+                background: white;
+                color: black;
+                box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.5);
+                position: fixed;
+                left: 2em;
+                top: 1.5em;
+                width: auto;
+                height: auto;
+                overflow: visible;
+                text-decoration: underline;
+                z-index: 99999; /* has to be higher than the side panel */
+    }
+  /*]]>*/
+  </style>
+</head>
+<body data-link-prefix="">
+  <div class="skipnav">
+    <a href="#content-wrapper">Skip to main content</a>
+  </div>
+  <div id="page" class="clearfix">
+    <div id="header">
+      <div class="container">
+        <div id="logotype-container" class="pull-left">
+          <a href="../index.html"><img id="logotype-pageheader" src="../css/image/corporate-logo.png" alt="Corporate logotype" data-role="logotype" /></a>
+        </div>
+        <div id="pagetools-container" class="pull-right">
+          <ul id="page-tools">
+            <li class="page-tools-search"><input placeholder="Search" type="text" class="form-control" aria-label="Search" id="search" /></li>
+            <li class="page-tools-print">
+              <a href="javascript:window.print();"><span class="tool-label">Print</span><span class="glyphicon glyphicon-print"></span></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <h1 id="publication-title">CAM</h1>
+    <div id="subheader-sticky-wrapper" class="sticky-wrapper">
+      <div id="subheader">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3 toc-title">
+              <h2><a class="prev nav-icon hidden-lg hidden-md" href="UUID-83852851-3804-09e7-314d-1e4927570c37.html"><span class="glyphicon glyphicon-chevron-left"></span></a> <a href="#toc" class="hidden mobile-nav-toggle"><span class="glyphicon glyphicon-list"></span>Table of Contents</a><span class="toc-label">Table of Contents</span><a class=
+              "next nav-icon hidden-lg hidden-md" href="UUID-c5ab6f2e-b8ec-1f83-fea8-19913a309596.html"><span class="glyphicon glyphicon-chevron-right"></span></a></h2>
+            </div>
+            <div class="col-md-9 breadcrumb-container">
+              <ul class="breadcrumb">
+                <li class="breadcrumb-link">
+                  <span class="glyphicon glyphicon-home"></span>&nbsp;<a href="index-en-US.html">CAM</a>
+                </li>
+                <li class="breadcrumb-link">
+                  <a href="UUID-045be457-706d-a14f-f9a1-00787a4eb50a.html">Feature and macro technology</a>
+                </li>
+                <li class="breadcrumb-link">
+                  <a href="UUID-83852851-3804-09e7-314d-1e4927570c37.html">User interface</a>
+                </li>
+                <li class="breadcrumb-node">The feature browser</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="main-content">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 toc-container" id="toc-wrapper">
+            <div id="toc-placeholder">
+              <div id="toc-standalone-placeholder"></div>
+            </div>
+          </div>
+          <div class="col-md-9 content-container" id="content-wrapper">
+            <a accesskey="p" class="prev pull-left prev visible-lg visible-md" id="header-navigation-prev" href="UUID-83852851-3804-09e7-314d-1e4927570c37.html"><span class="glyphicon glyphicon-circle-arrow-left"></span>Prev</a><a accesskey="n" class="pull-right next visible-lg visible-md" id="header-navigation-next" href=
+            "UUID-c5ab6f2e-b8ec-1f83-fea8-19913a309596.html">Next<span class="glyphicon glyphicon-circle-arrow-right"></span></a>
+            <div id="topic-content">
+              <section xml:lang="en-US" lang="en-US" dir="ltr" class="section" data-origin-id="UUID-6b9f0b47-26c2-b28a-df55-e27eef43cefa" data-publication-date="" id="UUID-a7ecff0c-43f2-0b0b-43fc-1e7820fffe53">
+                <div class="titlepage">
+                  <div>
+                    <div class="title">
+                      <h1 class="title" style="clear: both"><span class="formal-title">The feature browser</span></h1>
+                    </div>
+                  </div>
+                </div>
+                <p>The Feature tab in the <span class="italic">hyper</span>MILL browser is known as the feature browser. The feature browser comprises the following:</p>
+                <div class="itemizedlist">
+                  <ul class="itemizedlist" style="list-style-type: disc;">
+                    <li class="listitem">
+                      <p>The top area with feature lists and shortcut menu functions (1)</p>
+                    </li>
+                    <li class="listitem">
+                      <p>The bottom area with feature and shortcut menu functions (2)</p>
+                    </li>
+                    <li class="listitem">
+                      <p>A freely definable filter (3)</p>
+                    </li>
+                    <li class="listitem">
+                      <p>A toolbar with filter functions and functions to control the visibility of features (4).</p>
+                    </li>
+                  </ul>
+                </div>
+                <div class="mediaobject">
+                  <table class="image-viewport" style="border-collapse:collapse;border:0; width:461px;">
+                    <tr>
+                      <td style="padding:0;"><img src="image/uuid-730ee72d-c5a9-f3de-0a10-bbc3867f2814.png" style="max-width: 461px;" alt="featurebrowser_UI_2020.png" /></td>
+                    </tr>
+                  </table>
+                </div>
+                <section dir="ltr" class="simplesect internal" id="UUID-a7ecff0c-43f2-0b0b-43fc-1e7820fffe53_id179LE0B0QKY">
+                  <div class="titlepage">
+                    <div>
+                      <div>
+                        <h2 class="title" style="clear: both"><span class="formal-title">The display of features</span></h2>
+                      </div>
+                    </div>
+                  </div>
+                  <p>Use the following options to control the display of features:</p>
+                  <div class="informaltable table-responsive">
+                    <table class="informaltable">
+                      <colgroup>
+                        <col style="width:8%;" />
+                        <col style="width:31%;" />
+                        <col style="width:61%;" />
+                      </colgroup>
+                      <tbody>
+                        <tr>
+                          <td colspan="3" class="td">
+                            <p>1. <span class="guilabel">V</span>- By showing or hiding the features of a feature list.</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="td"></td>
+                          <td class="td">
+                            <div class="mediaobject">
+                              <table class="image-viewport" style="border-collapse:collapse;border:0; ;">
+                                <tr style="height: 48px">
+                                  <td style="padding:0;"><img src="image/uuid-0eea4329-a399-6d2e-0311-70908f6c0c60.svg" style="max-height: 48px;" alt="featlist_visible.svg" /></td>
+                                </tr>
+                              </table>
+                            </div>
+                          </td>
+                          <td class="td">
+                            <p>Activate (show features) or deactivate (hide features) the function in the top area of the feature browser.</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td colspan="3" class="td">
+                            <p>2. By entering any numeric or alphanumeric characters into the filter</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="td"></td>
+                          <td class="td">
+                            <div class="mediaobject">
+                              <table class="image-viewport" style="border-collapse:collapse;border:0; ;">
+                                <tr style="height: 48px">
+                                  <td style="padding:0;"><img src="image/uuid-3c0bac35-1c41-fad7-fed8-59f7623a5001.svg" style="max-height: 48px;" alt="search_featurebrowser.svg" /></td>
+                                </tr>
+                              </table>
+                            </div>
+                          </td>
+                          <td class="td">
+                            <p>Enter any digits or characters that are contained in the feature name to control the display of comprehensive feature lists and thus improve the transparency of the feature browser.</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td colspan="3" class="td">
+                            <p>3. Using feature filters.</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td rowspan="2" class="td"></td>
+                          <td class="td">
+                            <div class="mediaobject">
+                              <table class="image-viewport" style="border-collapse:collapse;border:0; ;">
+                                <tr style="height: 48px">
+                                  <td style="padding:0;"><img src="image/uuid-773605c5-c52d-5e80-bbee-372ddcdd2d1d.svg" style="max-height: 48px;" alt="hm_filter_open_filter.svg" /></td>
+                                </tr>
+                              </table>
+                            </div>
+                          </td>
+                          <td class="td">
+                            <p>Open the feature filter by clicking the icon on the toolbar. A list of available feature filters is displayed in the <span class="guilabel">Filter name</span> column.</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="td">
+                            <div class="mediaobject">
+                              <table class="image-viewport" style="border-collapse:collapse;border:0; ;">
+                                <tr style="height: 48px">
+                                  <td style="padding:0;"><img src="image/uuid-fc2b01d0-5961-c9ee-f4cb-1d055a163693.svg" style="max-height: 48px;" alt="feat_filter_change.svg" /></td>
+                                </tr>
+                              </table>
+                            </div>
+                            <div class="mediaobject">
+                              <table class="image-viewport" style="border-collapse:collapse;border:0; ;">
+                                <tr style="height: 48px">
+                                  <td style="padding:0;"><img src="image/uuid-1936d240-0f80-7e6e-505f-94ad48cd2741.svg" style="max-height: 48px;" alt="sel_point.svg" /></td>
+                                </tr>
+                              </table>
+                            </div>
+                          </td>
+                          <td class="td">
+                            <p>Select the type of geometric elements for the filter definition and then select the desired element / desired element directly in the CAD model. Alternatively, enter a value in the corresponding line. A filter is only active if the Feature feedback function is activated.</p>
+                            <p><span class="guimenu">Move to feature list</span> → <span class="guisubmenu">New</span>: Create a new feature list with the features that correspond to the filter conditions.</p>
+                            <p><span class="guimenu">Move to feature list</span> → <span class="guisubmenu">[L1], ... [L2]</span>: Select a feature list to include the features that correspond to the filter conditions.</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="td"></td>
+                          <td colspan="2" class="td">
+                            <p>(1) Filter enabled, (2) Filter selected, (3) Filter disabled.</p>
+                            <div class="mediaobject">
+                              <table class="image-viewport" style="border-collapse:collapse;border:0; width:461px;">
+                                <tr>
+                                  <td style="padding:0;"><img src="image/uuid-821431fa-ea10-8eb6-60f4-5a763961f8a5.png" style="max-width: 461px;" alt="featurebrowser_detail.png" /></td>
+                                </tr>
+                              </table>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td colspan="3" class="td">
+                            <p>4. Via the drop-down list on the right of the toolbar</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td rowspan="3" class="td"></td>
+                          <td class="td">
+                            <div class="mediaobject">
+                              <table class="image-viewport" style="border-collapse:collapse;border:0; ;">
+                                <tr style="height: 48px">
+                                  <td style="padding:0;"><img src="image/uuid-d01e1f49-e34c-b813-493f-f8fad08f9ee0.svg" style="max-height: 48px;" alt="feat_mark_only.svg" /></td>
+                                </tr>
+                              </table>
+                            </div>
+                          </td>
+                          <td class="td">
+                            <p>Only show the marked feature.</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="td">
+                            <div class="mediaobject">
+                              <table class="image-viewport" style="border-collapse:collapse;border:0; ;">
+                                <tr style="height: 48px">
+                                  <td style="padding:0;"><img src="image/uuid-0bd2c15a-7a25-95a6-3fdc-e4890f59b531.svg" style="max-height: 48px;" alt="feat_all.svg" /></td>
+                                </tr>
+                              </table>
+                            </div>
+                          </td>
+                          <td class="td">
+                            <p>Show all features.</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="td">
+                            <div class="mediaobject">
+                              <table class="image-viewport" style="border-collapse:collapse;border:0; ;">
+                                <tr style="height: 48px">
+                                  <td style="padding:0;"><img src="image/uuid-23d32ea6-6092-b6f9-f047-b3671ab6f5d4.svg" style="max-height: 48px;" alt="feat_no.svg" /></td>
+                                </tr>
+                              </table>
+                            </div>
+                          </td>
+                          <td class="td">
+                            <p>Hide all features.</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td colspan="3" class="td">
+                            <p>5. Via the shortcut menu of the feature browser in the top area</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td rowspan="3" class="td"></td>
+                          <td class="td">
+                            <p><span xml:lang="de" lang="de" dir="ltr" class="guilabel">Expand All Mode</span></p>
+                          </td>
+                          <td class="td">
+                            <p>Show all features</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="td">
+                            <p><span xml:lang="de" lang="de" dir="ltr" class="guilabel">Hide all</span></p>
+                          </td>
+                          <td class="td">
+                            <p>Hide all features.</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="td">
+                            <p><span xml:lang="de" lang="de" dir="ltr" class="guilabel">Show selection / Show selection only</span></p>
+                          </td>
+                          <td class="td">
+                            <p>Show the features of the marked feature list.</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td colspan="3" class="td">
+                            <p>6. Via the shortcut menu of the feature browser in the bottom area</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td rowspan="2" class="td"></td>
+                          <td class="td">
+                            <p><span xml:lang="de" lang="de" dir="ltr" class="guilabel">Zoom In</span></p>
+                          </td>
+                          <td class="td">
+                            <p>Zoom in on a selected feature in the graphics window.</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="td">
+                            <p><span xml:lang="de" lang="de" dir="ltr" class="guilabel">Automatic zoom-in on</span></p>
+                          </td>
+                          <td class="td">
+                            <p>Always automatically zoom in on a selected feature in the graphics window. The zoom function remains in place until it is deactivated (see <span class="guilabel">Automatic zoom-in off</span>).</p>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <p>Display the model in transparent mode</p>
+                  <div class="informaltable table-responsive">
+                    <table class="informaltable">
+                      <colgroup>
+                        <col style="width:12%;" />
+                        <col style="width:88%;" />
+                      </colgroup>
+                      <tbody>
+                        <tr>
+                          <td class="td">
+                            <div class="mediaobject">
+                              <table class="image-viewport" style="border-collapse:collapse;border:0; ;">
+                                <tr style="height: 48px">
+                                  <td style="padding:0;"><img src="image/uuid-38ca292a-8fa7-e4e8-ce61-d98863b5218c.svg" style="max-height: 48px;" alt="highlight_feat_mode.svg" /></td>
+                                </tr>
+                              </table>
+                            </div>
+                          </td>
+                          <td class="td">
+                            <p>Assign the transparent color to the model with highlighted representation of the feature. The CAD system's first available transparent color is used.</p>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <p>Set the feedback color.</p>
+                  <div class="informaltable table-responsive">
+                    <table class="informaltable">
+                      <colgroup>
+                        <col style="width:12%;" />
+                        <col style="width:88%;" />
+                      </colgroup>
+                      <tbody>
+                        <tr>
+                          <td class="td">
+                            <p><span xml:lang="de" lang="de" dir="ltr" class="guilabel">C -</span></p>
+                          </td>
+                          <td class="td">
+                            <p>Color coding of the feature feedback in a feature list.</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="td">
+                            <div class="mediaobject">
+                              <table class="image-viewport" style="border-collapse:collapse;border:0; ;">
+                                <tr style="height: 48px">
+                                  <td style="padding:0;"><img src="image/uuid-f225d022-a03d-c98b-788d-31f709765338.svg" style="max-height: 48px;" alt="featlist_color.svg" /></td>
+                                </tr>
+                              </table>
+                            </div>
+                          </td>
+                          <td class="td">
+                            <p>Change the color for the feature feedback of the feature list by double-clicking the icon. Feedback for all the features of this feature list is colored accordingly in the model.</p>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div class="informaltable table-responsive">
+                    <table class="informaltable">
+                      <colgroup>
+                        <col style="width:10%;" />
+                        <col style="width:90%;" />
+                      </colgroup>
+                      <tbody>
+                        <tr>
+                          <td class="td">
+                            <p><span class="guilabel">B</span> -</p>
+                          </td>
+                          <td class="td">
+                            <p>Create a visual bookmark.</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="td">
+                            <div class="mediaobject">
+                              <table class="image-viewport" style="border-collapse:collapse;border:0; ;">
+                                <tr style="height: 48px">
+                                  <td style="padding:0;"><img src="image/uuid-3e09ee23-e12b-c69b-8c49-a828ccfdf622.svg" style="max-height: 48px;" alt="bookmark.svg" /></td>
+                                </tr>
+                              </table>
+                            </div>
+                          </td>
+                          <td class="td">
+                            <p>Store a defined view of the model. A visual bookmark can be assigned to a feature list or a feature and makes it easier to work with a large number of features. To define a new visual bookmark, set the required model view, select the feature or feature list and choose the <span class="guilabel">New visual
+                            bookmark</span> function from the shortcut menu by double-clicking the <span class="guilabel">Visual bookmark</span> icon.</p>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <p>Assign frame to a feature list</p>
+                  <div class="informaltable table-responsive">
+                    <table class="informaltable">
+                      <colgroup>
+                        <col style="width:10%;" />
+                        <col style="width:90%;" />
+                      </colgroup>
+                      <tbody>
+                        <tr>
+                          <td class="td">
+                            <div class="mediaobject">
+                              <table class="image-viewport" style="border-collapse:collapse;border:0; ;">
+                                <tr style="height: 48px">
+                                  <td style="padding:0;"><img src="image/uuid-20bfefe5-d679-22ed-a1a8-19c283a609c5.svg" style="max-height: 48px;" alt="frame_not_assigned.svg" /></td>
+                                </tr>
+                              </table>
+                            </div>
+                          </td>
+                          <td class="td">
+                            <p>Assign a frame to the feature list by double-clicking the icon.</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="td">
+                            <div class="mediaobject">
+                              <table class="image-viewport" style="border-collapse:collapse;border:0; ;">
+                                <tr style="height: 48px">
+                                  <td style="padding:0;"><img src="image/uuid-bc37a3be-741b-4ac6-8ecf-939bb476ea48.svg" style="max-height: 48px;" alt="frame_assigned.svg" /></td>
+                                </tr>
+                              </table>
+                            </div>
+                          </td>
+                          <td class="td">
+                            <p>Change the frame of the feature list by double-clicking the icon.</p>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <p>If a feature from this feature list is used for the job definition, the frame of the feature list is analyzed. Frames associated with individual features are not analyzed.</p>
+                  <p>Edit a frame with the <span class="guilabel">Edit</span> function in the shortcut menu.</p>
+                  <p>Delete a frame with the <span class="guilabel">Delete</span> function in the shortcut menu.</p>
+                </section>
+                <section dir="ltr" class="simplesect internal" id="UUID-a7ecff0c-43f2-0b0b-43fc-1e7820fffe53_id179LE0B0Q3K">
+                  <div class="titlepage">
+                    <div>
+                      <div>
+                        <h2 class="title" style="clear: both"><span class="formal-title">Sort features</span></h2>
+                      </div>
+                    </div>
+                  </div>
+                  <p>Use the drop-down list on the left of the toolbar to sort the features in the browser according to <span class="guilabel">Type</span>, <span class="guilabel">Name</span> or <span class="guilabel">Number</span>. If you select the <span class="guilabel">None</span> option, the features will be sorted according to the generating
+                  order.</p>
+                </section>
+                <section dir="ltr" class="simplesect internal" id="UUID-a7ecff0c-43f2-0b0b-43fc-1e7820fffe53_id179LE0B0QRW">
+                  <div class="titlepage">
+                    <div>
+                      <div>
+                        <h2 class="title" style="clear: both"><span class="formal-title">Functions in the feature browser</span></h2>
+                      </div>
+                    </div>
+                  </div>
+                  <p>Create a new feature list using the <span class="guilabel">Feature list</span> function on the shortcut menu.</p>
+                  <p>Delete a feature list with the <span class="guilabel">Delete</span> function in the shortcut menu.</p>
+                  <p>Change a feature list name by double-clicking and directly editing.</p>
+                  <div class="informaltable table-responsive">
+                    <table class="informaltable">
+                      <colgroup>
+                        <col style="width:8%;" />
+                        <col style="width:92%;" />
+                      </colgroup>
+                      <tbody>
+                        <tr>
+                          <td class="td">
+                            <p><span class="guilabel">N</span> -</p>
+                          </td>
+                          <td class="td">
+                            <p>Number of features of feature lists / Number of visible features.</p>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </section>
+              </section>
+              <div class="footer-content">
+                <div class="section-toc section-toc-after">
+                  <div class="section-toc-title">
+                    <span class="section-toc-title-delimiter">:</span>
+                  </div>
+                </div>
+              </div>
+              <footer></footer>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

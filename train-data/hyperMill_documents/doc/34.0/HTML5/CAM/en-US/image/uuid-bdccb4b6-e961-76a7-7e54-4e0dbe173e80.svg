@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="130mm"
+   height="75mm"
+   version="1.1"
+   id="svg11571"
+   sodipodi:docname="bohren_sicherheitsabstand.svg"
+   inkscape:version="1.2.2 (732a01da63, 2022-12-09)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview11573"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="13.320889"
+     inkscape:cx="394.56826"
+     inkscape:cy="270.74019"
+     inkscape:window-width="1920"
+     inkscape:window-height="1010"
+     inkscape:window-x="2167"
+     inkscape:window-y="-6"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg11571" />
+  <title
+     id="title11472">Abbildung für OPEN MIND Softwaredokumentation</title>
+  <defs
+     id="defs11531">
+    <linearGradient
+       id="linearGradient62427"
+       x1="-127.86"
+       x2="420.26"
+       y1="128.43"
+       y2="129.4"
+       gradientUnits="userSpaceOnUse">
+      <stop
+         stop-color="#fff"
+         offset="0"
+         id="stop11474" />
+      <stop
+         stop-color="#00385e"
+         offset="1"
+         id="stop11476" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient3103"
+       x1="119.28"
+       x2="359.49"
+       y1="25.027"
+       y2="25.304"
+       gradientTransform="matrix(1.1197,0,0,1.1197,55.461,-31.68)"
+       gradientUnits="userSpaceOnUse">
+      <stop
+         stop-color="#fff"
+         offset="0"
+         id="stop11479" />
+      <stop
+         stop-color="#FCFCFC"
+         offset=".2264"
+         id="stop11481" />
+      <stop
+         stop-color="#F4F4F4"
+         offset=".3626"
+         id="stop11483" />
+      <stop
+         stop-color="#E6E6E6"
+         offset=".475"
+         id="stop11485" />
+      <stop
+         stop-color="#D1D1D1"
+         offset=".5744"
+         id="stop11487" />
+      <stop
+         stop-color="#B7B7B7"
+         offset=".6652"
+         id="stop11489" />
+      <stop
+         stop-color="#979797"
+         offset=".7498"
+         id="stop11491" />
+      <stop
+         stop-color="#707070"
+         offset=".8297"
+         id="stop11493" />
+      <stop
+         stop-color="#444"
+         offset=".9057"
+         id="stop11495" />
+      <stop
+         stop-color="#121212"
+         offset=".9761"
+         id="stop11497" />
+      <stop
+         offset="1"
+         id="stop11499" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient3105"
+       x1="120.38"
+       x2="358.36"
+       y1="92.207"
+       y2="94.181"
+       gradientUnits="userSpaceOnUse">
+      <stop
+         stop-color="#fff"
+         offset="0"
+         id="stop11502" />
+      <stop
+         stop-color="#FCFCFC"
+         offset=".2264"
+         id="stop11504" />
+      <stop
+         stop-color="#F4F4F4"
+         offset=".3626"
+         id="stop11506" />
+      <stop
+         stop-color="#E6E6E6"
+         offset=".475"
+         id="stop11508" />
+      <stop
+         stop-color="#D1D1D1"
+         offset=".5744"
+         id="stop11510" />
+      <stop
+         stop-color="#B7B7B7"
+         offset=".6652"
+         id="stop11512" />
+      <stop
+         stop-color="#979797"
+         offset=".7498"
+         id="stop11514" />
+      <stop
+         stop-color="#707070"
+         offset=".8297"
+         id="stop11516" />
+      <stop
+         stop-color="#444"
+         offset=".9057"
+         id="stop11518" />
+      <stop
+         stop-color="#121212"
+         offset=".9761"
+         id="stop11520" />
+      <stop
+         offset="1"
+         id="stop11522" />
+    </linearGradient>
+    <pattern
+       id="pattern4294-6-7"
+       patternTransform="matrix(.0076504 -.11888 -41.199 -21.455 -48.191 -134.16)"
+       xlink:href="#pattern17969-6-2-1-4" />
+    <pattern
+       id="pattern17969-6-2-1-4"
+       patternTransform="matrix(.0076504 -.11888 -41.199 -21.455 111.07 -62.147)"
+       xlink:href="#pattern6950-6-2-2-9" />
+    <pattern
+       id="pattern6950-6-2-2-9"
+       patternTransform="matrix(-.042046 .0076971 -7.5881 -41.45 0 0)"
+       xlink:href="#Strips1_64-1-5-0-1" />
+    <pattern
+       id="Strips1_64-1-5-0-1"
+       width="65"
+       height="1"
+       patternTransform="translate(0) scale(10)"
+       patternUnits="userSpaceOnUse">
+      <rect
+         y="-.5"
+         width="1"
+         height="2"
+         fill="black"
+         id="rect11528" />
+    </pattern>
+    <pattern
+       id="pattern4294-6-7-7-7"
+       patternTransform="matrix(-0.11326992,-0.0433364,-14.556522,14.6767,369.4473,-55.580493)"
+       xlink:href="#pattern17969-6-2-1-4-2-2" />
+    <pattern
+       id="pattern17969-6-2-1-4-2-2"
+       patternTransform="matrix(.0076504 -.11888 -41.199 -21.455 111.07 -62.147)"
+       xlink:href="#pattern6950-6-2-2-9-8-5" />
+    <pattern
+       id="pattern6950-6-2-2-9-8-5"
+       patternTransform="matrix(-.042046 .0076971 -7.5881 -41.45 0 0)"
+       xlink:href="#Strips1_64-1-5-0-1-5-2" />
+    <pattern
+       id="Strips1_64-1-5-0-1-5-2"
+       width="65"
+       height="1"
+       patternTransform="translate(0) scale(10)"
+       patternUnits="userSpaceOnUse">
+      <rect
+         y="-.5"
+         width="1"
+         height="2"
+         fill="black"
+         id="rect260-3-1" />
+    </pattern>
+  </defs>
+  <polygon
+     transform="matrix(1.1197,0,0,1.1197,32.508,52.91)"
+     points="1.315 194.64 1.315 94.475 332.98 94.475 332.98 194.64"
+     clip-rule="evenodd"
+     fill="url(#linearGradient62427)"
+     fill-rule="evenodd"
+     stroke="#4d4d4d"
+     stroke-linecap="round"
+     stroke-linejoin="round"
+     stroke-miterlimit="10"
+     stroke-width=".6042"
+     id="polygon11533" />
+  <path
+     d="m 405.23488,270.81105 0.10616,-111.99743 -371.343389,0.10258 0.01949,111.99583 z"
+     fill="url(#pattern4294-6-7)"
+     opacity="0.28674"
+     id="path1283-5-5"
+     style="opacity:0.892857;fill:url(#pattern4294-6-7-7-7);stroke:#020302;stroke-width:0.188976;stroke-dasharray:none;stroke-opacity:1"
+     sodipodi:nodetypes="ccccc" />
+  <polygon
+     transform="matrix(1.1197,0,0,1.1197,33.461,52.72)"
+     points="287.7 194.55 149.94 194.55 149.94 120.02 287.7 120.02"
+     clip-rule="evenodd"
+     fill="#739ba5"
+     fill-rule="evenodd"
+     stroke="#16434a"
+     stroke-miterlimit="10"
+     id="polygon11537" />
+  <g
+     transform="translate(-22,46)"
+     fill-rule="evenodd"
+     stroke="#4d4d4d"
+     stroke-miterlimit="10"
+     id="g11545">
+    <path
+       d="m407.85 112.23-30.245 28.951h-154.25l-28.739-28.951"
+       fill="#739ba5"
+       stroke-width=".67654"
+       id="path11539" />
+    <rect
+       x="189.24"
+       y="-30.7"
+       width="221.9"
+       height="56.774"
+       clip-rule="evenodd"
+       fill="url(#linearGradient3103)"
+       stroke-linecap="round"
+       stroke-linejoin="round"
+       stroke-width=".67654"
+       id="rect11541" />
+    <polygon
+       transform="matrix(1.1197,0,0,1.1197,55.461,-31.68)"
+       points="206.17 137.9 230.94 137.9 317.45 51.393 119.47 51.393"
+       clip-rule="evenodd"
+       fill="url(#linearGradient3105)"
+       stroke-linecap="round"
+       stroke-linejoin="round"
+       stroke-width=".6042"
+       id="polygon11543" />
+  </g>
+  <g
+     transform="translate(-22,46)"
+     stroke="#000000"
+     stroke-linecap="round"
+     stroke-linejoin="round"
+     id="g11555">
+    <path
+       d="m181.68 91.957v25.654"
+       stroke-width=".67654"
+       id="path11547" />
+    <path
+       d="m181.82 121.75 3.2941-9.8823h-6.8876z"
+       stroke-width="1.0658"
+       id="path11549" />
+    <path
+       d="m181.78 142.46 3.2941 9.8823h-6.8877z"
+       stroke-width="1.0658"
+       id="path11551" />
+    <path
+       d="m181.98 146.68v25.654"
+       stroke-width=".67654"
+       id="path11553" />
+  </g>
+  <g
+     transform="translate(-22,46)"
+     stroke-linecap="round"
+     stroke-linejoin="round"
+     id="g11565">
+    <path
+       d="m286.08 122.84h-103.49"
+       fill="none"
+       stroke="#000000"
+       stroke-width=".67654"
+       id="path11559" />
+    <path
+       d="m223.31 141.05h-40.945"
+       fill="none"
+       stroke="#000000"
+       stroke-width=".67654"
+       id="path11561" />
+    <ellipse
+       cx="165.16"
+       cy="132.85"
+       rx="13.199"
+       ry="13.469"
+       fill="#1f638a"
+       stroke-width="1.0658"
+       id="ellipse11563" />
+  </g>
+  <text
+     x="137.31873"
+     y="186.52411"
+     fill="#000000"
+     font-family="'Arial Nova', 'Arial Unicode MS', 'Yu Gothic UI', sans-serif"
+     font-size="12.8px"
+     letter-spacing="0px"
+     stroke-width="1.0667"
+     word-spacing="0px"
+     style="line-height:0%"
+     xml:space="preserve"
+     id="text11569"><tspan
+       x="137.31873"
+       y="186.52411"
+       fill="#ffffff"
+       font-family="'Arial Nova', 'Arial Unicode MS', 'Yu Gothic UI', sans-serif"
+       font-size="21.333px"
+       stroke="#ffffff"
+       stroke-width="1.0667"
+       style="line-height:1.25"
+       id="tspan11567">1</tspan></text>
+</svg>

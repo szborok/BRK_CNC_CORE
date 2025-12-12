@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="x-ua-compatible" content="IE=edge" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="search" content="default" />
+  <meta name="use.ic" content="no" />
+  <meta name="tocstandalone" content="yes" />
+  <script type="text/javascript">
+  //<![CDATA[
+                        var index;
+                        var contentLanguage = 'en-US';
+                        var enterKey = 'select';
+                        
+                                        var anchoroption = true;
+                                var instantsearch_minlength = 1;
+                                                
+                                var fuse_threshold = 0.3;
+                        
+                                        var local_csh = false;
+                                
+                        var useanchorlinks = false;
+  //]]>
+  </script>
+  <title>5.3.&nbsp;Simulating the VNC or NC program file</title>
+  <link rel="stylesheet" type="text/css" href="../css/docbook.css" />
+  <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" href="../css/bootstrap-theme.min.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style-common.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style-responsive.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style-print.css" />
+  <link rel="stylesheet" type="text/css" href="../css/font-awesome.css" />
+  <link rel="stylesheet" type="text/css" href="../css/custom.css" />
+  <link rel="stylesheet" type="text/css" href="../css/layout-custom-style.css" />
+  <script src="../js/jquery-1.10.2.min.js" type="text/javascript"></script>
+  <script src="../js/jquery-ui-1.10.3.custom.min.js" type="text/javascript"></script>
+  <script src="../js/bootstrap.min.js" type="text/javascript"></script>
+  <script src="../js/purl.js" type="text/javascript"></script>
+  <script src="../js/jquery.event.move.js" type="text/javascript"></script>
+  <script src="../js/jquery.event.swipe.js" type="text/javascript"></script>
+  <script src="../js/jquery.sticky.js" type="text/javascript"></script>
+  <script src="../js/respond.min.js" type="text/javascript"></script>
+  <script src="../js/script.js" type="text/javascript"></script>
+  <script src="js/toc.js" type="text/javascript"></script>
+  <script src="../js/create-toc.js" type="text/javascript"></script>
+  <script src="../js/clipboard.min.js" type="text/javascript"></script>
+  <script src="../js/fuse.min.js" type="text/javascript"></script>
+  <script src="../js/jquery.mark.min.js" type="text/javascript"></script>
+  <script src="../js/html5.fuse.search.js" type="text/javascript"></script>
+  <script src="js/fuzzydata.js" type="text/javascript"></script>
+  <script src="../js/csh.js" type="text/javascript"></script>
+  <script src="../js/highlight-mergehtml-plugin.js" type="text/javascript"></script>
+  <meta name="generator" content="Paligo" />
+  <link rel="prev" href="UUID-37f11ce1-aeec-d7a6-63a3-688d89a8e7f4.html#UUID-37f11ce1-aeec-d7a6-63a3-688d89a8e7f4_section-idm4563662357720034035656224544" title="Turning operations" />
+  <link rel="next" href="UUID-9389ef81-983b-9551-417c-7f3310a0f947.html#UUID-9389ef81-983b-9551-417c-7f3310a0f947_UUID-072b27c8-accf-8e14-709a-c9ab90d59047" title="Keyboard shortcuts" />
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML" async="async"></script>
+  <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+  <script type="text/javascript" src="../js/cookie-consent.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  <script type="text/javascript">
+  //<![CDATA[
+                        $(document).on('ready ajaxComplete', function() {
+                                
+                                hljs.addPlugin(mergeHTMLPlugin);
+                                hljs.configure({'ignoreUnescapedHTML': true});
+                                
+                                $('pre:not(.embedcode)').each(function() {
+                                        /**
+                                         * @type {string}
+                                         */
+                                        var language = $(this).data('language');
+
+                                        if (language === 'plaintext' || language === 'text') {
+                                                $(this).addClass(language).addClass('hljs');
+                                                return true;
+                                        }
+                                        else {
+                                                var clone = this.cloneNode(true);
+                                                hljs.highlightElement(clone);
+                                                $(this).empty().append($(clone).contents());
+                                                $(this).attr("class", $(clone).attr("class"));
+                                        }
+                                });
+                        });
+  //]]>
+  </script>
+  <style type="text/css">
+  /*<![CDATA[*/
+            div.skipnav {
+            }
+            div.skipnav a {
+                position: fixed;
+                left: -10000px;
+                top: 1.5em;
+                width: 1px;
+                height: 1px;
+                overflow: hidden;
+            }
+            div.skipnav a:focus, div.skipnav a:active, div.skipnav a:hover {
+                background: white;
+                color: black;
+                box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.5);
+                position: fixed;
+                left: 2em;
+                top: 1.5em;
+                width: auto;
+                height: auto;
+                overflow: visible;
+                text-decoration: underline;
+                z-index: 99999; /* has to be higher than the side panel */
+    }
+  /*]]>*/
+  </style>
+</head>
+<body data-link-prefix="">
+  <div class="skipnav">
+    <a href="#content-wrapper">Skip to main content</a>
+  </div>
+  <div id="page" class="clearfix">
+    <div id="header">
+      <div class="container">
+        <div id="logotype-container" class="pull-left">
+          <a href="../index.html"><img id="logotype-pageheader" src="../css/image/corporate-logo.png" alt="Corporate logotype" data-role="logotype" /></a>
+        </div>
+        <div id="pagetools-container" class="pull-right">
+          <ul id="page-tools">
+            <li class="page-tools-search"><input placeholder="Search" type="text" class="form-control" aria-label="Search" id="search" /></li>
+            <li class="page-tools-print">
+              <a href="javascript:window.print();"><span class="tool-label">Print</span><span class="glyphicon glyphicon-print"></span></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <h1 id="publication-title"><span xml:lang="de" lang="de" dir="ltr" class="phrase"><span class="application">VIRTUAL Machining Center</span></span></h1>
+    <div id="subheader-sticky-wrapper" class="sticky-wrapper">
+      <div id="subheader">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3 toc-title">
+              <h2><a class="prev nav-icon hidden-lg hidden-md" href="UUID-37f11ce1-aeec-d7a6-63a3-688d89a8e7f4.html#UUID-37f11ce1-aeec-d7a6-63a3-688d89a8e7f4_section-idm4563662357720034035656224544"><span class="glyphicon glyphicon-chevron-left"></span></a> <a href="#toc" class="hidden mobile-nav-toggle"><span class=
+              "glyphicon glyphicon-list"></span>Table of Contents</a><span class="toc-label">Table of Contents</span><a class="next nav-icon hidden-lg hidden-md" href="UUID-9389ef81-983b-9551-417c-7f3310a0f947.html#UUID-9389ef81-983b-9551-417c-7f3310a0f947_UUID-072b27c8-accf-8e14-709a-c9ab90d59047"><span class=
+              "glyphicon glyphicon-chevron-right"></span></a></h2>
+            </div>
+            <div class="col-md-9 breadcrumb-container">
+              <ul class="breadcrumb">
+                <li class="breadcrumb-link">
+                  <span class="glyphicon glyphicon-home"></span>&nbsp;<a href="index-en-US.html"><span xml:lang="de" lang="de" dir="ltr" class="phrase"><span class="application">VIRTUAL Machining Center</span></span></a>
+                </li>
+                <li class="breadcrumb-link">
+                  <a href="UUID-bceb38e7-6115-818d-662d-36fc55903bbc.html">Program run (simulation)</a>
+                </li>
+                <li class="breadcrumb-node">Simulating the VNC or NC program file</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="main-content">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 toc-container" id="toc-wrapper">
+            <div id="toc-placeholder">
+              <div id="toc-standalone-placeholder"></div>
+            </div>
+          </div>
+          <div class="col-md-9 content-container" id="content-wrapper">
+            <a accesskey="p" class="prev pull-left prev visible-lg visible-md" id="header-navigation-prev" href="UUID-37f11ce1-aeec-d7a6-63a3-688d89a8e7f4.html#UUID-37f11ce1-aeec-d7a6-63a3-688d89a8e7f4_section-idm4563662357720034035656224544"><span class="glyphicon glyphicon-circle-arrow-left"></span>Prev</a><a accesskey="n" class=
+            "pull-right next visible-lg visible-md" id="header-navigation-next" href="UUID-9389ef81-983b-9551-417c-7f3310a0f947.html#UUID-9389ef81-983b-9551-417c-7f3310a0f947_UUID-072b27c8-accf-8e14-709a-c9ab90d59047">Next<span class="glyphicon glyphicon-circle-arrow-right"></span></a>
+            <div id="topic-content">
+              <section xml:lang="en-US" lang="en-US" dir="ltr" class="section" data-origin-id="UUID-3351d4aa-a825-143d-9d04-48ce7f90050c" data-publication-date="" id="UUID-9389ef81-983b-9551-417c-7f3310a0f947">
+                <div class="titlepage">
+                  <div>
+                    <div class="title">
+                      <h1 class="title" style="clear: both"><span class="formal-number">5.3</span><span class="formal-label-delimiter">.</span> <span class="formal-title">Simulating the VNC or NC program file</span></h1>
+                    </div>
+                  </div>
+                </div>
+                <p>Set the start and end of the program run, approach a position with the machine and analyze, start and stop the simulation, move the machine axes one step at a time and regulate the speed for G0 and G1 movements.</p>
+                <p><span xml:lang="de" lang="de" dir="ltr" class="bold"><strong>Setting the simulation area – approach a position</strong></span></p>
+                <div class="informalfigure">
+                  <div class="mediaobject image-left" style="text-align:left;"><img src="image/uuid-fccf59e1-3baa-cb15-c985-f2720139910c.svg" style="" alt="vmc_bedienfeld_simulation_oben.svg" /></div>
+                </div>
+                <p>Set the start <span class="inlinemediaobject"><img src="image/uuid-d3472d24-15bf-6200-8d62-f37eed6cb967.svg" alt="Nr_01.svg" /></span> and end <span class="inlinemediaobject"><img src="image/uuid-fa232d44-ccb2-2f50-a1d9-253c460bb62c.svg" alt="Nr_02.svg" /></span> of the program run by selecting the lower and upper limits. For
+                this purpose, pick the required start and end points for the program run on the toolpath. You can also define the start and end points directly using the two slide controls <span class="inlinemediaobject"><img src="image/uuid-18f4cd4c-9996-2b3b-2865-0a84be6e8834.svg" alt="Nr_A.svg" /></span> and <span class=
+                "inlinemediaobject"><img src="image/uuid-56f368b6-0584-dd70-72f2-1b6a2a34898a.svg" alt="Nr_B.svg" /></span>.</p>
+                <p><span class="inlinemediaobject"><img src="image/uuid-fb9c4824-908e-c3d0-eb1e-1e864608f0ed.svg" alt="Nr_03.svg" /></span> Reset the limits for the program run.</p>
+                <p><span class="inlinemediaobject"><img src="image/uuid-8e73687f-89a5-04d8-31df-020f365123aa.svg" alt="Nr_04.svg" /></span> Move the machine to the start of the simulation area.</p>
+                <p><span class="inlinemediaobject"><img src="image/uuid-fb1a8ebc-9f11-c7d7-6068-ea0134526cce.svg" alt="Nr_05.svg" /></span> Approach the current position again, see <span class="inlinemediaobject"><img src="image/uuid-40776e33-2592-da47-16b2-fcf814e7d95f.svg" alt="Nr_06.svg" /></span>.</p>
+                <p><span class="inlinemediaobject"><img src="image/uuid-40776e33-2592-da47-16b2-fcf814e7d95f.svg" alt="Nr_06.svg" /></span> Pick a new position by defining a toolpath point and move the machine to this point.</p>
+                <div dir="ltr" class="note">
+                  <h3 class="title">Note</h3>
+                  <p>The <span class="inlinemediaobject"><img src="image/uuid-d3472d24-15bf-6200-8d62-f37eed6cb967.svg" alt="Nr_01.svg" /></span>, <span class="inlinemediaobject"><img src="image/uuid-fa232d44-ccb2-2f50-a1d9-253c460bb62c.svg" alt="Nr_02.svg" /></span> and <span class="inlinemediaobject"><img src=
+                  "image/uuid-40776e33-2592-da47-16b2-fcf814e7d95f.svg" alt="Nr_06.svg" /></span> functions are only available when a toolpath is displayed.</p>
+                </div>
+                <p><span xml:lang="de" lang="de" dir="ltr" class="bold"><strong>Starting and stopping the program run – regulate the speed</strong></span></p>
+                <div class="mediaobject"><img src="image/uuid-e412f407-33a1-4bca-92ee-3a406b542b55.svg" style="" alt="vmc_bedienfeld_simulation_unten.svg" /></div>
+                <p><span class="inlinemediaobject"><img src="image/uuid-6ae9593e-533c-38c8-f21d-9ab8b709c1bf.svg" alt="Nr_07.svg" /></span> Move the program run one step backwards.</p>
+                <p><span class="inlinemediaobject"><img src="image/uuid-e979a2e8-7174-243d-7a76-d0fd2df3b398.svg" alt="Nr_08.svg" /></span> Start and stop the program run.</p>
+                <p><span class="inlinemediaobject"><img src="image/uuid-0afd4b02-bea8-327c-a12a-2fcdddea7416.svg" alt="Nr_09.svg" /></span> Move the program run one step forwards.</p>
+                <p><span class="inlinemediaobject"><img src="image/uuid-1e2a7ecd-baa7-566f-e99a-cf051aea2c7d.svg" alt="Nr_10.svg" /></span> Set the speed for rapids (G0 movements).</p>
+                <p><span class="inlinemediaobject"><img src="image/uuid-bdc53138-ecba-500b-730f-607824550080.svg" alt="Nr_11.svg" /></span> Set the speed for the normal feedrate (G1/2/3 movements).</p>
+                <p>The speed control refers to a path unit. Minimum = 0.01 mm, Maximum = 100 mm. If necessary, interpolation is carried out between the individual blocks to provide a tool movement that is as uniform and consistent as possible. If the increment is not smooth enough, blocks may also be omitted. The increment has no influence on the
+                collision check and material removal simulation.</p>
+                <p>Double-click one of the two speed controllers to switch the program run to whole blocks, independent of the speed, (the speed controllers are then greyed out). This always applies both to G0 and G1 movements as well as to moving forwards and backwards one step at a time. Double-click one of the two speed controllers again to
+                restore the original behaviour.</p>
+                <p><span class="bold"><strong>Run a collision check</strong></span></p>
+                <div class="informaltable table-responsive">
+                  <table style="width:100%;" class="informaltable">
+                    <colgroup>
+                      <col style="width:10%;" />
+                      <col style="width:90%;" />
+                    </colgroup>
+                    <tbody>
+                      <tr>
+                        <td class="td">
+                          <div class="mediaobject"><img src="image/uuid-8e1a0259-2355-3c92-bdcc-82d5301a894d.svg" style="" alt="collisioncheck.svg" /></div>
+                        </td>
+                        <td class="td">
+                          <p>After starting the collision check, the progress indicator in the simulation control panel changes as follows:</p>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="mediaobject"><img src="image/uuid-bc0ec0d6-55c8-b91b-a15b-0dbfaa75e85c.svg" style="" alt="vmc_bedienfeld_kollisionspruefung.svg" /></div>
+                <p><span class="inlinemediaobject"><img src="image/uuid-d3472d24-15bf-6200-8d62-f37eed6cb967.svg" alt="Nr_01.svg" /></span> Progress of the collision check in the loaded program file. Either a collision, component violation, or a contact was detected.</p>
+                <p><span class="inlinemediaobject"><img src="image/uuid-fa232d44-ccb2-2f50-a1d9-253c460bb62c.svg" alt="Nr_02.svg" /></span> Progress of the collision check in the loaded program file. No collision, component violation, or contact has yet been detected.</p>
+                <p><span class="inlinemediaobject"><img src="image/uuid-fb9c4824-908e-c3d0-eb1e-1e864608f0ed.svg" alt="Nr_03.svg" /></span> The collision check ended without a collision, component violation, or contact.</p>
+                <p><span class="inlinemediaobject"><img src="image/uuid-8e73687f-89a5-04d8-31df-020f365123aa.svg" alt="Nr_04.svg" /></span> The collision check ended with a contact. Detailed information on this can be found in the output message and in the upper window of the display area.</p>
+                <p><span class="inlinemediaobject"><img src="image/uuid-fb1a8ebc-9f11-c7d7-6068-ea0134526cce.svg" alt="Nr_05.svg" /></span> The collision check ended with either a collision or component violation. Detailed information on this can be found in the output message and in the upper window of the display area.</p>
+                <p><span class="inlinemediaobject"><img src="image/uuid-40776e33-2592-da47-16b2-fcf814e7d95f.svg" alt="Nr_06.svg" /></span> Machine position in the loaded program file.</p>
+                <p></p>
+                <section xml:lang="en-US" lang="en-US" dir="ltr" class="section" data-origin-id="" data-publication-date="" id="UUID-9389ef81-983b-9551-417c-7f3310a0f947_UUID-072b27c8-accf-8e14-709a-c9ab90d59047">
+                  <div class="titlepage">
+                    <div>
+                      <div class="title">
+                        <h2 class="title" style="clear: both"><span class="formal-title">Keyboard shortcuts</span></h2>
+                      </div>
+                    </div>
+                  </div>
+                  <p><span class="keycap keycap-graphical"><strong>CTRL</strong></span>+ <span class="keycap keycap-graphical"><strong>F</strong></span>: Perform a full-text search when the input focus is on the VNC/NC code display. To do so, click the display window with the right/left mouse button.</p>
+                  <p><span class="keycap keycap-graphical"><strong>Back</strong></span>/<span class="keycap keycap-graphical"><strong>Forward</strong></span> key: Move the program run forwards or backwards one step at a time when the input focus is on the simulation control. To do so, click the simulation control elements with the right or left
+                  mouse button.</p>
+                </section>
+              </section>
+              <div class="footer-content">
+                <div class="section-toc section-toc-after">
+                  <div class="section-toc-title">
+                    <span class="section-toc-title-delimiter">:</span>
+                  </div>
+                </div>
+              </div>
+              <footer></footer>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

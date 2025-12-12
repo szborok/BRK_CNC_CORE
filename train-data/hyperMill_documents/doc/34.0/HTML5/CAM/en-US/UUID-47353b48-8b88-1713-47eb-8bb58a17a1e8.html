@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="x-ua-compatible" content="IE=edge" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="search" content="default" />
+  <meta name="use.ic" content="no" />
+  <meta name="tocstandalone" content="yes" />
+  <script type="text/javascript">
+  //<![CDATA[
+                        var index;
+                        var contentLanguage = 'en-US';
+                        var enterKey = 'select';
+                        
+                                        var anchoroption = true;
+                                var instantsearch_minlength = 1;
+                                                
+                                var fuse_threshold = 0.3;
+                        
+                                        var local_csh = false;
+                                
+                        var useanchorlinks = false;
+  //]]>
+  </script>
+  <title>Feature Mapping (Hole)</title>
+  <link rel="stylesheet" type="text/css" href="../css/docbook.css" />
+  <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" href="../css/bootstrap-theme.min.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style-common.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style-responsive.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style-print.css" />
+  <link rel="stylesheet" type="text/css" href="../css/font-awesome.css" />
+  <link rel="stylesheet" type="text/css" href="../css/custom.css" />
+  <link rel="stylesheet" type="text/css" href="../css/layout-custom-style.css" />
+  <script src="../js/jquery-1.10.2.min.js" type="text/javascript"></script>
+  <script src="../js/jquery-ui-1.10.3.custom.min.js" type="text/javascript"></script>
+  <script src="../js/bootstrap.min.js" type="text/javascript"></script>
+  <script src="../js/purl.js" type="text/javascript"></script>
+  <script src="../js/jquery.event.move.js" type="text/javascript"></script>
+  <script src="../js/jquery.event.swipe.js" type="text/javascript"></script>
+  <script src="../js/jquery.sticky.js" type="text/javascript"></script>
+  <script src="../js/respond.min.js" type="text/javascript"></script>
+  <script src="../js/script.js" type="text/javascript"></script>
+  <script src="js/toc.js" type="text/javascript"></script>
+  <script src="../js/create-toc.js" type="text/javascript"></script>
+  <script src="../js/clipboard.min.js" type="text/javascript"></script>
+  <script src="../js/fuse.min.js" type="text/javascript"></script>
+  <script src="../js/jquery.mark.min.js" type="text/javascript"></script>
+  <script src="../js/html5.fuse.search.js" type="text/javascript"></script>
+  <script src="js/fuzzydata.js" type="text/javascript"></script>
+  <script src="../js/csh.js" type="text/javascript"></script>
+  <script src="../js/highlight-mergehtml-plugin.js" type="text/javascript"></script>
+  <meta name="generator" content="Paligo" />
+  <link rel="prev" href="UUID-49abe1ad-b199-5108-79e3-3d98ad69ba3e.html" title="4.4.&nbsp;Generate feature" />
+  <link rel="next" href="UUID-47353b48-8b88-1713-47eb-8bb58a17a1e8.html#id91239" title="General" />
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js?config=TeX-MML-AM_CHTML" async="async"></script>
+  <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+  <script type="text/javascript" src="../js/cookie-consent.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  <script type="text/javascript">
+  //<![CDATA[
+                        $(document).on('ready ajaxComplete', function() {
+                                
+                                hljs.addPlugin(mergeHTMLPlugin);
+                                hljs.configure({'ignoreUnescapedHTML': true});
+                                
+                                $('pre:not(.embedcode)').each(function() {
+                                        /**
+                                         * @type {string}
+                                         */
+                                        var language = $(this).data('language');
+
+                                        if (language === 'plaintext' || language === 'text') {
+                                                $(this).addClass(language).addClass('hljs');
+                                                return true;
+                                        }
+                                        else {
+                                                var clone = this.cloneNode(true);
+                                                hljs.highlightElement(clone);
+                                                $(this).empty().append($(clone).contents());
+                                                $(this).attr("class", $(clone).attr("class"));
+                                        }
+                                });
+                        });
+  //]]>
+  </script>
+  <style type="text/css">
+  /*<![CDATA[*/
+            div.skipnav {
+            }
+            div.skipnav a {
+                position: fixed;
+                left: -10000px;
+                top: 1.5em;
+                width: 1px;
+                height: 1px;
+                overflow: hidden;
+            }
+            div.skipnav a:focus, div.skipnav a:active, div.skipnav a:hover {
+                background: white;
+                color: black;
+                box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.5);
+                position: fixed;
+                left: 2em;
+                top: 1.5em;
+                width: auto;
+                height: auto;
+                overflow: visible;
+                text-decoration: underline;
+                z-index: 99999; /* has to be higher than the side panel */
+    }
+  /*]]>*/
+  </style>
+</head>
+<body data-link-prefix="">
+  <div class="skipnav">
+    <a href="#content-wrapper">Skip to main content</a>
+  </div>
+  <div id="page" class="clearfix">
+    <div id="header">
+      <div class="container">
+        <div id="logotype-container" class="pull-left">
+          <a href="../index.html"><img id="logotype-pageheader" src="../css/image/corporate-logo.png" alt="Corporate logotype" data-role="logotype" /></a>
+        </div>
+        <div id="pagetools-container" class="pull-right">
+          <ul id="page-tools">
+            <li class="page-tools-search"><input placeholder="Search" type="text" class="form-control" aria-label="Search" id="search" /></li>
+            <li class="page-tools-print">
+              <a href="javascript:window.print();"><span class="tool-label">Print</span><span class="glyphicon glyphicon-print"></span></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <h1 id="publication-title">CAM</h1>
+    <div id="subheader-sticky-wrapper" class="sticky-wrapper">
+      <div id="subheader">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3 toc-title">
+              <h2><a class="prev nav-icon hidden-lg hidden-md" href="UUID-49abe1ad-b199-5108-79e3-3d98ad69ba3e.html"><span class="glyphicon glyphicon-chevron-left"></span></a> <a href="#toc" class="hidden mobile-nav-toggle"><span class="glyphicon glyphicon-list"></span>Table of Contents</a><span class="toc-label">Table of Contents</span><a class=
+              "next nav-icon hidden-lg hidden-md" href="UUID-47353b48-8b88-1713-47eb-8bb58a17a1e8.html#id91239"><span class="glyphicon glyphicon-chevron-right"></span></a></h2>
+            </div>
+            <div class="col-md-9 breadcrumb-container">
+              <ul class="breadcrumb">
+                <li class="breadcrumb-link">
+                  <span class="glyphicon glyphicon-home"></span>&nbsp;<a href="index-en-US.html">CAM</a>
+                </li>
+                <li class="breadcrumb-link">
+                  <a href="UUID-045be457-706d-a14f-f9a1-00787a4eb50a.html">Feature and macro technology</a>
+                </li>
+                <li class="breadcrumb-link">
+                  <a href="UUID-49abe1ad-b199-5108-79e3-3d98ad69ba3e.html">Generate feature</a>
+                </li>
+                <li class="breadcrumb-node">Feature Mapping (Hole)</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="main-content">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 toc-container" id="toc-wrapper">
+            <div id="toc-placeholder">
+              <div id="toc-standalone-placeholder"></div>
+            </div>
+          </div>
+          <div class="col-md-9 content-container" id="content-wrapper">
+            <a accesskey="p" class="prev pull-left prev visible-lg visible-md" id="header-navigation-prev" href="UUID-49abe1ad-b199-5108-79e3-3d98ad69ba3e.html"><span class="glyphicon glyphicon-circle-arrow-left"></span>Prev</a><a accesskey="n" class="pull-right next visible-lg visible-md" id="header-navigation-next" href=
+            "UUID-47353b48-8b88-1713-47eb-8bb58a17a1e8.html#id91239">Next<span class="glyphicon glyphicon-circle-arrow-right"></span></a>
+            <div id="topic-content">
+              <section xml:lang="en-US" lang="en-US" dir="ltr" class="section" data-origin-id="UUID-b1fab120-8ae1-006c-2418-776d48aeb544" data-publication-date="" id="UUID-47353b48-8b88-1713-47eb-8bb58a17a1e8">
+                <div class="titlepage">
+                  <div>
+                    <div class="title">
+                      <h1 class="title" style="clear: both"><span class="formal-title">Feature Mapping (Hole)</span></h1>
+                    </div>
+                  </div>
+                </div>
+                <p>To transfer hole information from a CAD model (solid):</p>
+                <div class="procedure">
+                  <ol class="procedure" type="1">
+                    <li class="step">
+                      <p>In the <span class="italic">hyper</span>MILL browser, switch to the <span class="guilabel">Feature</span> tab.</p>
+                    </li>
+                    <li class="step">
+                      <p>Right-click the upper area of the feature browser and select the <span class="guilabel">Feature Mapping (Hole)</span> function from the shortcut menu.</p>
+                    </li>
+                  </ol>
+                </div>
+                <p>The&nbsp;<span class="guilabel">Feature Mapping (Hole)</span>&nbsp;dialog comprises the areas&nbsp;<span class="guilabel">General</span>, <span class="guilabel">Options</span>&nbsp;and <span class="guilabel">More</span>.</p>
+                <section dir="ltr" class="section internal" data-origin-id="" data-publication-date="" id="id91239">
+                  <div class="titlepage">
+                    <div>
+                      <div class="title">
+                        <h2 class="title" style="clear: both"><span class="formal-title">General</span></h2>
+                      </div>
+                    </div>
+                  </div>
+                  <p><span class="guilabel">Tolerance</span>: Specifies the accuracy level for transferring the geometric data from the CAD model.</p>
+                </section>
+                <section dir="ltr" class="section internal" data-origin-id="" data-publication-date="" id="id91243">
+                  <div class="titlepage">
+                    <div>
+                      <div class="title">
+                        <h2 class="title" style="clear: both"><span class="formal-title">Options</span></h2>
+                      </div>
+                    </div>
+                  </div>
+                  <p><span class="guilabel">Check slot</span>: Enable this option if slot recognition is required.</p>
+                  <p><span class="guilabel">Slot tolerance</span>: (1) Enter a distance from which a feature is to be divided into two or more features if the holes are concentric and have the same diameter, but there is free space between them, for example, a slot is constructed. If the distance is smaller, the free space is bridged – only one
+                  feature is created.</p>
+                  <div class="mediaobject">
+                    <table class="image-viewport" style="border-collapse:collapse;border:0; ;">
+                      <tr style="height: 415px">
+                        <td style="padding:0;"><img src="image/uuid-a863ad1b-b880-c46d-125e-6221e6b0d1bd.svg" style="max-height: 415px;" alt="Feature_mapping_toleranz_nut.svg" /></td>
+                      </tr>
+                    </table>
+                  </div>
+                  <p><span class="guilabel">Detect spot depth</span>: Recognized features are checked for spots and any existing spots are displayed accordingly. The spot depth (1) is displayed in the list of feature parameters.</p>
+                  <div class="mediaobject">
+                    <table class="image-viewport" style="border-collapse:collapse;border:0; width:461px;">
+                      <tr style="height: 195px">
+                        <td style="padding:0;"><img src="image/uuid-6f2f0e44-1ffb-c43f-fa2c-b4f84977b3bc.svg" style="max-width: 461px; max-height: 195px;" alt="feature_bohrung_anspiegelung.svg" /></td>
+                      </tr>
+                    </table>
+                  </div>
+                  <p><span class="guilabel">Check bottom</span>Recognized features are also checked for bottom spots and any existing spots are displayed accordingly.</p>
+                  <p><span class="guilabel">Gap tolerance</span>: Recognized features are checked for gaps and marked accordingly (see figure). The spot depth (3) is displayed in the list of feature parameters.</p>
+                  <p>(1) Gap tolerance &lt; column, (2) Gap tolerance &gt; column</p>
+                  <div class="informalfigure">
+                    <div class="mediaobject"><img src="image/uuid-fd9d54c3-2078-369c-4a68-0366b6dcbd2c.svg" style="height: 213px;" alt="feature_spalt_toleranz.svg" /></div>
+                  </div>
+                  <p>.</p>
+                  <p><span class="guilabel">Limiting diameter</span>: Enable this option when holes require diameter limiting.</p>
+                  <p><span class="guilabel">Max. diameter</span>: Features are only created for holes with diameters that are equal to or smaller than the maximum diameter.</p>
+                  <p><span class="guilabel">Use preferred machining direction</span>: All holes that can be machined from the defined direction are combined into a single feature list.</p>
+                  <p><span class="guilabel">Offset angle (degree)</span>: Angle range within which the preferred machining direction is checked. Default = 0.5°.</p>
+                  <p><span class="bold"><strong>Example</strong></span>:</p>
+                  <p>(1) Preferred machining direction is not activated:</p>
+                  <p>The machining direction (A) of all holes is unchanged.</p>
+                  <p>(2) Preferred machining direction is activated, Offset angle (degree): default (0.5):</p>
+                  <p>The machining direction (A) <span class="bold"><strong>of a</strong></span> hole is reversed.</p>
+                  <p>(3) Preferred machining direction is activated, Offset angle (degree): 45°:</p>
+                  <p>The machining direction (A) of <span class="bold"><strong>all</strong></span> holes is reversed.</p>
+                  <div class="informalfigure">
+                    <div class="mediaobject">
+                      <table class="image-viewport" style="border-collapse:collapse;border:0; width:638px;">
+                        <tr>
+                          <td style="padding:0;"><img src="image/uuid-3eb91462-8490-409a-e1d2-605bead05735.svg" style="max-width: 638px;" alt="feature_bevorzugte_bearbeitungsrichtung1.svg" /></td>
+                        </tr>
+                      </table>
+                    </div>
+                  </div>
+                  <div dir="ltr" class="note">
+                    <h3 class="title">Note</h3>
+                    <p>This characteristic is evaluated with application of the feature in an intelligent macro.</p>
+                  </div>
+                  <p><span class="guilabel">Check sink</span>: A check is carried out to see if sinks can be machined from the defined direction. In the example, the preferred machining direction is defined using the frame.</p>
+                  <p><span class="bold"><strong>Example</strong></span>:</p>
+                  <p>(1) Check sink is activated.</p>
+                  <p>(2) Check sink is not activated.</p>
+                  <p>All the features are combined into a feature list and are shown in turquoise.</p>
+                  <p><span class="guilabel">Machining direction</span> (3): Define the machining direction.</p>
+                  <div class="informaltable table-responsive">
+                    <table style="width:100%;" class="informaltable">
+                      <colgroup>
+                        <col style="width:12%;" />
+                        <col style="width:88%;" />
+                      </colgroup>
+                      <tbody>
+                        <tr>
+                          <td class="td">
+                            <div class="mediaobject">
+                              <table class="image-viewport" style="border-collapse:collapse;border:0; ;">
+                                <tr style="height: 48px">
+                                  <td style="padding:0;"><img src="image/uuid-5c7a9957-f719-6ad0-2933-d5aa34591953.svg" style="max-height: 48px;" alt="sel_dir.svg" /></td>
+                                </tr>
+                              </table>
+                            </div>
+                          </td>
+                          <td class="td">
+                            <p>Click the icon and select a geometric element (line, normal of a surface, frame ...) or enter vectors manually.</p>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <p><span class="guilabel">Feedback position</span> (4): Define the origin of the graphical feedback for the preferred machining direction.</p>
+                  <div class="informaltable table-responsive">
+                    <table style="width:100%;" class="informaltable">
+                      <colgroup>
+                        <col style="width:12%;" />
+                        <col style="width:88%;" />
+                      </colgroup>
+                      <tbody>
+                        <tr>
+                          <td class="td">
+                            <div class="mediaobject">
+                              <table class="image-viewport" style="border-collapse:collapse;border:0; ;">
+                                <tr style="height: 48px">
+                                  <td style="padding:0;"><img src="image/uuid-1936d240-0f80-7e6e-505f-94ad48cd2741.svg" style="max-height: 48px;" alt="sel_point.svg" /></td>
+                                </tr>
+                              </table>
+                            </div>
+                          </td>
+                          <td class="td">
+                            <p>Click the icon and select a geometric element (snap point, point ...) or enter coordinate values manually (with reference to the origin of the graphical feedback).</p>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div class="informalfigure">
+                    <div class="mediaobject"><img src="image/uuid-ff6353c1-9131-db81-a5ac-ad0f99f1551a.svg" style="height: 354px;" alt="feature_bevorzugte_bearbeitungsrichtung.svg" /></div>
+                  </div>
+                </section>
+                <section dir="ltr" class="section internal" data-origin-id="" data-publication-date="" id="id91330">
+                  <div class="titlepage">
+                    <div>
+                      <div class="title">
+                        <h2 class="title" style="clear: both"><span class="formal-title">More</span></h2>
+                      </div>
+                    </div>
+                  </div>
+                  <p><span class="guilabel">Offset to bottom</span>: Features based on through holes are created with the bottom offset specified here.</p>
+                  <p><span class="guilabel">Use feature list</span>: If this option is enabled, the holes are saved as features in existing feature lists. Feature assignment is in reference to the frames assigned to feature lists. Feature lists that do not contain frames are ignored.</p>
+                  <p><span xml:lang="de" lang="de" dir="ltr" class="guilabel">Frame creation mode</span></p>
+                  <p><span class="guilabel">2D</span>: A feature list is created for each drilling direction and a frame is assigned to each feature list.</p>
+                  <p><span class="guilabel">5X</span>: All recognized features are combined into one feature list, but a frame is not assigned to this list.</p>
+                  <p><span class="guilabel">Mixed</span>: If several holes have the same orientation, a feature list is created for this orientation and a frame is assigned to the feature list. All other holes are combined into one feature list, but a frame is not assigned to this list.</p>
+                  <p><span class="guilabel">Split by diameter</span>: In the case of multi-step holes, the diameter of the individual steps is taken into account when arranging the features in the feature list (B). The machining direction (4) is included.</p>
+                  <p>If, from the direction of machining, the diameter of a subsequent step is greater than the diameter of the preceding step, the hole is divided into two or more <span class="guilabel">Simple</span> (3) and <span class="guilabel">Sink Holes</span> (2).</p>
+                  <p>If the <span class="guilabel">split by diameter</span> function is disabled (A), this multi-step hole is included in the feature list as a <span class="guilabel">freely defined hole</span> (1).</p>
+                  <div class="mediaobject">
+                    <table class="image-viewport" style="border-collapse:collapse;border:0; width:461px;">
+                      <tr style="height: 195px">
+                        <td style="padding:0;"><img src="image/uuid-15f5715b-7291-5191-a38d-a06ca309fd6c.svg" style="max-width: 461px; max-height: 195px;" alt="feature_nach_durchmesser_trennen.svg" /></td>
+                      </tr>
+                    </table>
+                  </div>
+                  <p><span class="guilabel">Check machinability</span>: If this function is enabled (B), only holes that are in accessible areas are recognized as a feature and displayed. In figure (A), the function is disabled; (1) shows the machining direction.</p>
+                  <div class="mediaobject">
+                    <table class="image-viewport" style="border-collapse:collapse;border:0; width:461px;">
+                      <tr style="height: 177px">
+                        <td style="padding:0;"><img src="image/uuid-e589e346-c8a4-63c2-3bd8-e48d8831d82d.svg" style="max-width: 461px; max-height: 177px;" alt="feature_bearbeitbarkeit_pruefen.svg" /></td>
+                      </tr>
+                    </table>
+                  </div>
+                  <p><span class="guilabel">Use color table</span></p>
+                  <p>When importing feature information from a CAD model, <span class="italic">hyper</span>MILL also recognizes feature properties such as thread, ISO fits or feature classes if these are defined in a color table.</p>
+                  <p><span class="italic">hyper</span>MILL evaluates the assignment of color information to feature properties when generating features and incorporates the corresponding parameter directly in the feature. At the same time, this parameter is also included in the feature name and is thus available for selection when creating and
+                  using macros.</p>
+                  <p>To read information from a color table, activate the option <span class="guilabel">Use color table</span>&nbsp;in the&nbsp;<span class="guilabel">Feature Mapping (Hole)</span>&nbsp;dialog and use the&nbsp;<span class="guilabel">Edit color table</span>&nbsp;function (via the&nbsp;menu <span class="guimenuitem">CAM</span> →
+                  <span class="guisubmenu">Setup</span> → <span class="guisubmenu">Settings</span> → <span class="guisubmenu">Database</span> → <span class="guisubmenu">Color table</span>) to specify colors for threads, ISO-fits and pockets using sample elements.</p>
+                  <p>The information is stored in a *.xml file, which is located in the following folder by default.</p>
+                  <p><code class="filename">C:\Users\Public\Documents\OPEN MIND\ColorTable\default[version].xml</code></p>
+                  <p>In order for <span class="italic">hyper</span>MILL to be able to correctly recognise the Thread and Fits feature properties, they must be defined as follows:</p>
+                  <p><span class="bold"><strong>Example</strong></span>:</p>
+                  <pre class="screen">&lt;Color_Table&gt;
+   
+&lt;Color_Machining_Definition R="128" G="64" B="64" 
+FitDesignation="H7" ThreadDesignation="Mx"
+FeatureClass="Special FC" 
+UseThreadNominalDiameter="1"/&gt;
+
+&lt;Color_Machining_Definition R="128" G="0" B="128"  
+FitDesignation="H12"ThreadDesignation="M;G"
+UseThreadNominalDiameter="0" /&gt; 
+
+&lt;/Color_Table&gt;</pre>
+                  <p>The R (Red), G (Green) and B (Blue) identifiers can be assigned color values between 0 and 255.</p>
+                  <p>The <span class="guilabel">FitDesignation</span> element can assume fit designations (example <span class="guilabel">H7</span>) and the <span class="guilabel">ThreadDesignation</span> element can assume the values <span class="guilabel">M</span> = Metric Coarse Pitch, <span class="guilabel">Mx</span> = Metric Fine Pitch,
+                  <span class="guilabel">W</span> = Whitworth and <span class="guilabel">G</span> = Gas Uni.</p>
+                  <p>Several thread types are separated by <span class="guilabel">;</span> with the order of the list determining the order of the search.</p>
+                  <p>The <span class="guilabel">FeatureClass</span> element can accept designations of defined feature classes.</p>
+                  <p><span class="guilabel">UseThreadNominalDiameter</span> can assume the values <span class="guilabel">0</span> and <span class="guilabel">1</span>. <span class="guilabel">0</span> = Reference value is the core diameter of the thread, <span class="guilabel">1</span> = Reference value is the nominal diameter of the thread.</p>
+                  <p><span class="guilabel">Use color table only</span>: Only the holes whose color matches the colors in the color table are adopted. Holes with colors, which are not defined in the color table, are not recognized.</p>
+                  <p><span class="guilabel">Use Generic Hole only</span>: During the assignment of feature information from the CAD model, <span class="guilabel">Simple Holes</span>, <span class="guilabel">Sink Holes</span> and <span class="guilabel">Free defined Holes</span> are transferred directly to the feature browser as Generic Holes.</p>
+                  <p><span class="guilabel">Keep CAD features</span>: Activate if a CAD hole feature should remain associatively linked to the <span class="emphasis"><em>hyper</em></span>MILL feature after feature mapping. This also applies to features that were read in via a direct interface.</p>
+                  <p><span class="guilabel">Min. tip angle</span>: Define from which angle holes can be recognized as a tip or through hole type. If the defined tip angle is larger than the angle in the hole, these holes are recognized as the through hole type. If the tip angle is smaller, the holes are recognized as the tip hole type.</p>
+                  <p>Example:</p>
+                  <p>(1) Min. tip angle = 75°. Holes 50°/ 60° = Through, hole 90° = Tip.</p>
+                  <p>(2) Min. tip angle = 55°. Holes 50° = Through, holes 60°/90 = Tip.</p>
+                  <p>(3) Min. tip angle = 45°. Holes 50°/ 60° / 90° = Tip</p>
+                  <div class="informalfigure">
+                    <div class="mediaobject">
+                      <table class="image-viewport" style="border-collapse:collapse;border:0; width:638px;">
+                        <tr>
+                          <td style="padding:0;"><img src="image/uuid-b252272a-e0f9-8f81-7afe-d92ff5016bb5.svg" style="max-width: 638px;" alt="feature_featuremapping_bohrung_min_spitzenwinkel_neu.svg" /></td>
+                        </tr>
+                      </table>
+                    </div>
+                  </div>
+                  <p><span class="guilabel">Create associative point</span>: Display and edit point coordinates of hole features relative to a selected frame.</p>
+                  <p><span class="guilabel">Grouping features</span>: Features with the same geometry are combined into a feature for each frame. (1) Function is not enabled, (2) Function is enabled.</p>
+                  <div class="informalfigure">
+                    <div class="mediaobject">
+                      <table class="image-viewport" style="border-collapse:collapse;border:0; width:638px;">
+                        <tr>
+                          <td style="padding:0;"><img src="image/uuid-f1c7b304-c14c-95b1-53f8-151289b396c2.svg" style="max-width: 638px;" alt="feature_gruppieren.svg" /></td>
+                        </tr>
+                      </table>
+                    </div>
+                  </div>
+                  <p>Result of Feature Mapping:</p>
+                  <div class="orderedlist">
+                    <ol class="orderedlist" type="1">
+                      <li class="listitem">
+                        <p>All holes that comply with the mapping conditions defined and are drilled in the same direction are compiled into a feature in the feature list.</p>
+                      </li>
+                      <li class="listitem">
+                        <p>A new frame is created for a feature list if there are at least two holes with the same drilling direction. All of the other features are combined in another feature list without a frame.</p>
+                      </li>
+                      <li class="listitem">
+                        <p>A <span class="italic">hyper</span>MILL feature appears as a new entry in the feature list and can be used in the job definition.</p>
+                      </li>
+                    </ol>
+                  </div>
+                  <p><span class="guilabel">Min. segment angle</span>: Cylindrical surfaces with a segment angle greater than 270° are recognized as holes.</p>
+                </section>
+              </section>
+              <div class="footer-content">
+                <div class="section-toc section-toc-after">
+                  <div class="section-toc-title">
+                    <span class="section-toc-title-delimiter">:</span>
+                  </div>
+                </div>
+              </div>
+              <footer></footer>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

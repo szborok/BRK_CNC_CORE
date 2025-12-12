@@ -1,0 +1,5933 @@
+var toc = [{
+"url": "UUID-5913424f-bef5-9aa5-4fa8-d2f9c1848482.html",
+"text": "1. Introduction",
+"class": "topic-link"
+},
+{
+"url": "UUID-607650a7-e4a9-65f0-88ef-d0902d55d3e3.html",
+"text": "2. User interface",
+"class": "topic-link"
+,
+"children": [
+{
+"url": "UUID-7bcda0c0-5a20-894f-c53f-a32bcd692404.html",
+"text": "2.1. hyperMILL and CAD program",
+"class": "topic-link"
+,
+"children": [
+{
+"url": "UUID-438d6c1d-aac3-5d7c-7ffe-9d725cd5ea88.html",
+"text": "Keyboard commands",
+"class": "topic-link"
+},
+{
+"url": "UUID-22c7d707-5c82-45f8-effd-acd1fe1cd4ce.html",
+"text": "hyperMILL for Autodesk® Inventor® and hyperMILL for SOLIDWORKS",
+"class": "topic-link"
+}]
+},
+{
+"url": "UUID-d732ed9b-3c59-c20e-851f-a76706516d06.html",
+"text": "2.2. The hyperMILL browser",
+"class": "topic-link"
+},
+{
+"url": "UUID-b6c5bbd1-d04d-bb9f-102b-5ef4d48e31e8.html",
+"text": "2.3. Job definition dialogs",
+"class": "topic-link"
+,
+"children": [
+{
+"url": "UUID-55486dc7-fe72-07c3-a7c5-ed1852341dbb.html",
+"text": "dialog control functions",
+"class": "topic-link"
+},
+{
+"url": "UUID-21c5eafa-7f4b-ff7c-e385-65118fea6b15.html",
+"text": "Dialog positioning",
+"class": "topic-link"
+},
+{
+"url": "UUID-3b02fe50-cf9a-fff0-7b01-25d308b77b98.html",
+"text": "Define parameters",
+"class": "topic-link"
+}]
+},
+{
+"url": "UUID-03373c44-ebfa-6c4a-54c0-a249ac77daa7.html",
+"text": "2.4. Selecting elements in the CAD system",
+"class": "topic-link"
+,
+"children": [
+{
+"url": "UUID-25e4d04f-c259-c3ad-cf6c-df998e62f322.html",
+"text": "",
+"class": "topic-link"
+},
+{
+"url": "UUID-3547c665-8f94-c3a2-0a95-056394697016.html",
+"text": "Create playback path",
+"class": "topic-link"
+},
+{
+"url": "UUID-8f8b2f68-9522-3465-ee34-3276b7f99ff8.html",
+"text": "hyperMILL for Autodesk® Inventor®",
+"class": "topic-link"
+},
+{
+"url": "UUID-10999b18-34a1-2fe2-5a19-9e81eb4b76d8.html",
+"text": "hyperMILL for SOLIDWORKS",
+"class": "topic-link"
+}]
+}]
+},
+{
+"url": "UUID-0751db51-8b5b-ae49-1904-dce4b8c92263.html",
+"text": "3. Basics of CAM editing",
+"class": "topic-link"
+,
+"children": [
+{
+"url": "UUID-8ae4ea12-1e3c-7723-09a0-fe8d35475176.html",
+"text": "3.1. Overview: From the model to the NC program",
+"class": "topic-link"
+},
+{
+"url": "UUID-91b6e2e4-2195-8181-175d-4c0a3ca846c2.html",
+"text": "3.2. Using the Project Assistant",
+"class": "topic-link"
+,
+"children": [
+{
+"url": "UUID-864d7d94-3668-2286-d7b6-07dbc09fd018.html",
+"text": "Define NCS orientation",
+"class": "topic-link"
+},
+{
+"url": "UUID-b1291d22-913d-a311-d73e-c689146841e7.html",
+"text": "Define stock size and allowances",
+"class": "topic-link"
+},
+{
+"url": "UUID-910fd31e-0f29-16d9-91f0-34b09e27efa0.html",
+"text": "Define NCS position",
+"class": "topic-link"
+},
+{
+"url": "UUID-642c2e36-6c04-3713-880d-867e84a74087.html",
+"text": "Defining the machining frames",
+"class": "topic-link"
+},
+{
+"url": "UUID-69ba0733-dd5e-7f86-8d54-4d0d13e5ec8d.html",
+"text": "Defining names, selecting material and machine",
+"class": "topic-link"
+}]
+},
+{
+"url": "UUID-1c87fc7a-5991-5777-1a2f-50ff8b4b9a61.html",
+"text": "3.3. Specifying the basic settings",
+"class": "topic-link"
+,
+"children": [
+{
+"url": "UUID-8dfebf04-e775-39de-81d7-e78bae4f56c0.html",
+"text": "Document dialogue page",
+"class": "topic-link"
+},
+{
+"url": "UUID-ef2f339c-bee7-bd7f-8fef-4568bf9a108f.html",
+"text": "Application dialog page",
+"class": "topic-link"
+},
+{
+"url": "UUID-d5139d38-d2a0-49dc-3049-163692350085.html",
+"text": "Dialog page CAD document",
+"class": "topic-link"
+},
+{
+"url": "UUID-4a861fc0-4c73-8658-5660-a1ccfc6a493e.html",
+"text": "SolidWorks Document dialog page",
+"class": "topic-link"
+},
+{
+"url": "UUID-ff8ba6ae-29cf-e035-ddc4-c1a143496a30.html",
+"text": "Database dialog page",
+"class": "topic-link"
+},
+{
+"url": "UUID-f028c898-b7f1-ac17-c178-4c6862583143.html",
+"text": "General dialog page",
+"class": "topic-link"
+},
+{
+"url": "UUID-aa432072-4714-c098-6ee9-0ecb03899901.html",
+"text": "Maintenance dialog page",
+"class": "topic-link"
+},
+{
+"url": "UUID-46762749-2393-4744-9e30-a4c9b4592aca.html",
+"text": "Tire dialog page",
+"class": "topic-link"
+},
+{
+"url": "UUID-a04cdcdf-e987-e776-50f1-c72927c7a3c2.html",
+"text": "Dialog page CAM Plan",
+"class": "topic-link"
+},
+{
+"url": "UUID-18e610ae-97b8-c7ac-3f98-be3964a79fb7.html",
+"text": "Adjust paths",
+"class": "topic-link"
+}]
+},
+{
+"url": "UUID-863b665b-a9fa-2ffd-4a3f-8964a0462975.html",
+"text": "3.4. NC system and frames",
+"class": "topic-link"
+,
+"children": [
+{
+"url": "UUID-8e61e421-b26c-4fdc-1c16-68afcf01bfb9.html",
+"text": "NC system",
+"class": "topic-link"
+},
+{
+"url": "UUID-8f23f5dc-7a5e-74d0-9ec2-3aa2231f9919.html",
+"text": "Frame",
+"class": "topic-link"
+},
+{
+"url": "UUID-3d98cc0c-035c-0586-47ed-f94e65259e38.html",
+"text": "Definition dialog page",
+"class": "topic-link"
+},
+{
+"url": "UUID-e3385e15-e445-0c23-6335-568d1d146fe0.html",
+"text": "Clamping position dialog page",
+"class": "topic-link"
+},
+{
+"url": "UUID-bd30a910-9a79-65d4-2b8a-b6c480547603.html",
+"text": "Frame limit dialog page",
+"class": "topic-link"
+},
+{
+"url": "UUID-9a87ad9b-aacb-2e2b-3db8-ff9f7ecebb68.html",
+"text": "Corrected output system dialog page",
+"class": "topic-link"
+},
+{
+"url": "UUID-41cc4947-a640-5d7f-8686-c1683e87220c.html",
+"text": "Origin",
+"class": "topic-link"
+},
+{
+"url": "UUID-be1fbd6f-68ee-0115-641a-185413b5f4fb.html",
+"text": "NC output",
+"class": "topic-link"
+},
+{
+"url": "UUID-afce1cad-b4ed-a5b2-6495-b44e28df224c.html",
+"text": "Functions on the shortcut menu: Coordinate systems",
+"class": "topic-link"
+}]
+},
+{
+"url": "UUID-288a81df-e730-2f52-ecde-db580f959db0.html",
+"text": "3.5. Tool management",
+"class": "topic-link"
+,
+"children": [
+{
+"url": "UUID-432d9f24-b199-ecd7-ea81-4535c13cb2a2.html",
+"text": "Define tool",
+"class": "topic-link"
+},
+{
+"url": "UUID-e88269a4-6119-c8d2-bf1b-10ef12890234.html",
+"text": "Define turning tool",
+"class": "topic-link"
+},
+{
+"url": "UUID-ec461cf6-848f-19df-0890-65ab25993fcc.html",
+"text": "Define tool in a job",
+"class": "topic-link"
+},
+{
+"url": "UUID-847bc766-2065-e62b-ebf7-5caa685f080e.html",
+"text": "Import tool from database",
+"class": "topic-link"
+},
+{
+"url": "UUID-a00f4492-ef51-616a-187f-e51e6ba445b3.html",
+"text": "Export tool to tool database",
+"class": "topic-link"
+},
+{
+"url": "UUID-0c39eafa-00b2-1c29-7e39-068dc7bb25c5.html",
+"text": "Remove link to database",
+"class": "topic-link"
+},
+{
+"url": "UUID-2f7c899d-c890-bdaf-b7c2-18af881d2b0a.html",
+"text": "Restore link to database",
+"class": "topic-link"
+},
+{
+"url": "UUID-d3263cac-0988-dec3-a57e-68a7c53bed3e.html",
+"text": "Edit tool",
+"class": "topic-link"
+},
+{
+"url": "UUID-403c83aa-ed06-8869-7a56-4ed533d4a435.html",
+"text": "Functions on the shortcut menu: Tools",
+"class": "topic-link"
+},
+{
+"url": "UUID-82dfd3ab-9e3c-dc2e-f6b0-7b718bdcceca.html",
+"text": "Import tool from .XML file",
+"class": "topic-link"
+},
+{
+"url": "UUID-dabd1a14-e0b7-d792-5d95-1c44704c0c78.html",
+"text": "Additional functions",
+"class": "topic-link"
+}]
+},
+{
+"url": "UUID-6af0c709-5a66-c45f-636e-357be3016359.html",
+"text": "3.6. Prepare manufacturing geometry",
+"class": "topic-link"
+,
+"children": [
+{
+"url": "UUID-a1acfe5e-1598-d972-7fd9-a19b6f2b521f.html",
+"text": "The CAD model",
+"class": "topic-link"
+},
+{
+"url": "UUID-0ea0a566-b442-3798-962d-874cc0d92966.html",
+"text": "Stock",
+"class": "topic-link"
+,
+"children": [
+{
+"url": "UUID-b33778b5-b1bd-d7a0-4410-8cd73f4b0050.html",
+"text": "Define stock model",
+"class": "topic-link"
+},
+{
+"url": "UUID-78a2f340-87d9-140e-bf88-6c6ed5d4c3a1.html",
+"text": "The Stock model dialog",
+"class": "topic-link"
+},
+{
+"url": "UUID-8f2facea-496b-6225-b299-b8217b5e0fde.html",
+"text": "Calculate stock",
+"class": "topic-link"
+},
+{
+"url": "UUID-0dacfb34-c3b9-0f32-87a0-d5a3ed72ab81.html",
+"text": "Mirror stock",
+"class": "topic-link"
+},
+{
+"url": "UUID-89fca37a-24ec-a948-fe1e-9863c180f5e3.html",
+"text": "Combine multiple stock models",
+"class": "topic-link"
+},
+{
+"url": "UUID-f24cc405-b746-d983-2bcc-412f0cec14bd.html",
+"text": "Edit stock",
+"class": "topic-link"
+},
+{
+"url": "UUID-5b8a6bd4-4e0c-fc20-0eb3-5a4352f9d620.html",
+"text": "Create stock chain",
+"class": "topic-link"
+}]
+},
+{
+"url": "UUID-2478288b-efc5-6b84-25b1-7d771ed33142.html",
+"text": "Functions on the shortcut menu: Models (stockmodels)",
+"class": "topic-link"
+},
+{
+"url": "UUID-7b3be93a-4a66-b580-9e6c-713390629b2a.html",
+"text": "Functions on the shortcut menu: Jobs (stockmodels)",
+"class": "topic-link"
+}]
+},
+{
+"url": "UUID-aeb94185-7a19-29aa-6f91-3af4af99b68d.html",
+"text": "3.7. Structure CAM project",
+"class": "topic-link"
+,
+"children": [
+{
+"url": "UUID-6604c419-85e5-b54c-e9ba-7f2b6f631699.html",
+"text": "CAM Plan",
+"class": "topic-link"
+},
+{
+"url": "UUID-62da9202-974f-8755-9a36-833feced0ae4.html",
+"text": "Job list",
+"class": "topic-link"
+,
+"children": [
+{
+"url": "UUID-58bfe622-a35b-5c93-8d9c-74fca4c552b7.html",
+"text": "The Job list dialog",
+"class": "topic-link"
+,
+"children": [
+{
+"url": "UUID-95fed2af-afc3-2a0e-67bd-e5e4192bd698.html",
+"text": "Part data",
+"class": "topic-link"
+},
+{
+"url": "UUID-83bec830-1dca-1226-7497-4036726b5516.html",
+"text": "Turning",
+"class": "topic-link"
+},
+{
+"url": "UUID-1c3c5d6e-6e5b-a50e-33d4-29507618e381.html",
+"text": "NC",
+"class": "topic-link"
+},
+{
+"url": "UUID-35e0ba53-2270-72c0-4a26-fa4e6a117e83.html",
+"text": "Postprocessor",
+"class": "topic-link"
+},
+{
+"url": "UUID-003d7aff-7d81-5c46-8fb5-8cc57644e2d7.html",
+"text": "Main spindle \/ counter spindle",
+"class": "topic-link"
+},
+{
+"url": "UUID-b4805d57-446c-1dc4-6952-b5389e21ec73.html",
+"text": "Transfer",
+"class": "topic-link"
+}]
+}]
+},
+{
+"url": "UUID-0731353e-eaf3-b73e-7c7f-2b75fbc80bbe.html",
+"text": "Define job",
+"class": "topic-link"
+,
+"children": [
+{
+"url": "UUID-23f2e244-b804-e34e-0323-ed963b827770.html",
+"text": "Input dialog: General",
+"class": "topic-link"
+},
+{
+"url": "UUID-9e046def-8052-c20b-fa68-b9b72be80912.html",
+"text": "Input dialog: NC",
+"class": "topic-link"
+,
+"children": [
+{
+"url": "UUID-6de6f073-5f9c-2aaf-6b85-69d2ada7bb6b.html",
+"text": "General",
+"class": "topic-link"
+},
+{
+"url": "UUID-c97266c9-299b-17f7-ff44-73bb4ce6099c.html",
+"text": "Optimization",
+"class": "topic-link"
+},
+{
+"url": "UUID-a69a77da-7de5-a8e6-3715-e68ce3936107.html",
+"text": "Solutions",
+"class": "topic-link"
+},
+{
+"url": "UUID-8e8b0e36-a94d-91d8-f2fe-cb1bf617bf3b.html",
+"text": "Parameters",
+"class": "topic-link"
+}]
+}]
+},
+{
+"url": "UUID-754db4a8-7b42-8c57-c393-662d44680c1f.html",
+"text": "Compound job",
+"class": "topic-link"
+},
+{
+"url": "UUID-3c7a6b01-c61b-035b-e7d4-af189170f03a.html",
+"text": "Linking job",
+"class": "topic-link"
+,
+"children": [
+{
+"url": "UUID-dfd98181-3410-96e3-7f19-f656ec9b4efc.html",
+"text": "Defining a linking job",
+"class": "topic-link"
+},
+{
+"url": "UUID-586d6218-ed72-63f6-4a15-2e948c77826e.html",
+"text": "Setup",
+"class": "topic-link"
+}]
+},
+{
+"url": "UUID-62dab1b4-d2d2-bb22-7726-f0f0e9e75b4f.html",
+"text": "Linking job turning",
+"class": "topic-link"
+},
+{
+"url": "UUID-bb0d67c4-8d63-ca73-5a57-daed9e73a725.html",
+"text": "Linking job additive",
+"class": "topic-link"
+,
+"children": [
+{
+"url": "UUID-2ca27d41-807f-b453-d37f-ad06d3e7d6b5.html",
+"text": "Tool dialog page",
+"class": "topic-link"
+},
+{
+"url": "UUID-80861ec8-f738-11f1-3bdf-17cf2d0f58ae.html",
+"text": "Parameters dialog page",
+"class": "topic-link"
+}]
+},
+{
+"url": "UUID-3a1c9696-4abd-3c62-d5ab-23157f29fce6.html",
+"text": "NC event",
+"class": "topic-link"
+},
+{
+"url": "UUID-6e47d15c-232e-ebc4-3e7e-a5f432436ef7.html",
+"text": "Associative job copy",
+"class": "topic-link"
+},
+{
+"url": "UUID-059bda8f-dd3f-241c-09dd-445a23dee36e.html",
+"text": "Job Optimization",
+"class": "topic-link"
+},
+{
+"url": "UUID-64c35574-cec9-822f-64be-b3f24cacd8bf.html",
+"text": "Multi axis indexing",
+"class": "topic-link"
+},
+{
+"url": "UUID-2d63e510-c2eb-2aa5-902b-c454752336de.html",
+"text": "Global editing",
+"class": "topic-link"
+},
+{
+"url": "UUID-88f7441b-8f45-0ad3-34f8-f421e1ab6c87.html",
+"text": "Functions on the shortcut menu: Job lists\/Jobs",
+"class": "topic-link"
+}]
+},
+{
+"url": "UUID-d214f654-13ff-db54-08b4-1c9b6f019bbc.html",
+"text": "3.8. Transformations",
+"class": "topic-link"
+,
+"children": [
+{
+"url": "UUID-226519c6-452d-9c35-421a-664be5fa8677.html",
+"text": "Define and apply transformations",
+"class": "topic-link"
+},
+{
+"url": "UUID-5ddbf1b6-8883-94e8-56a7-be0628e1ae4a.html",
+"text": "Linear pattern",
+"class": "topic-link"
+},
+{
+"url": "UUID-3bd3a1b9-741e-0fb9-7292-34c0ae7b3927.html",
+"text": "Circular pattern",
+"class": "topic-link"
+},
+{
+"url": "UUID-4c5e294a-083d-1943-5376-3bad336f1273.html",
+"text": "General pattern",
+"class": "topic-link"
+},
+{
+"url": "UUID-919e03a5-2299-1840-5379-8c529db83f97.html",
+"text": "Mirror",
+"class": "topic-link"
+},
+{
+"url": "UUID-b2732806-79bd-4fb2-9cbc-7a86f632819e.html",
+"text": "Transformation Pattern Recognition",
+"class": "topic-link"
+},
+{
+"url": "UUID-b2047984-4866-0f61-a514-4162b33de556.html",
+"text": "Mirrors and stock models",
+"class": "topic-link"
+},
+{
+"url": "UUID-f8a19c35-278d-5e8c-b71a-1b66becc73eb.html",
+"text": "Functions on the shortcut menu: Transformations",
+"class": "topic-link"
+}]
+},
+{
+"url": "UUID-2d98bf0b-6539-9785-c084-8712b249541c.html",
+"text": "3.9. Collision check preparations",
+"class": "topic-link"
+,
+"children": [
+{
+"url": "UUID-48ae8779-57cc-f2a5-e853-bbc311122b69.html",
+"text": "General information",
+"class": "topic-link"
+},
+{
+"url": "UUID-9249fea0-0e1d-b013-7f52-c9cd9fdce63b.html",
+"text": "Define milling area",
+"class": "topic-link"
+},
+{
+"url": "UUID-a9837f28-8df0-7144-40e7-efa1b3283950.html",
+"text": "Define turning area",
+"class": "topic-link"
+},
+{
+"url": "UUID-c24ffb56-b480-5059-b36f-d2edea7a81ab.html",
+"text": "Create turning area from model",
+"class": "topic-link"
+},
+{
+"url": "UUID-a294872d-307f-e23e-6481-10feb00d1cee.html",
+"text": "Define fixture",
+"class": "topic-link"
+},
+{
+"url": "UUID-2592bc6c-ba1a-7043-e586-d9fb052e49c9.html",
+"text": "Functions on the shortcut menu: Milling \/ turning areas",
+"class": "topic-link"
+},
+{
+"url": "UUID-7260f547-44dc-35b4-0f8e-7b3c6e2e1aa9.html",
+"text": "Collision checking with the hyperMILL Converter",
+"class": "topic-link"
+}]
+},
+{
+"url": "UUID-6e79b039-ebca-2996-f21b-d906314be784.html",
+"text": "3.10. Calculate and analyze toolpaths",
+"class": "topic-link"
+,
+"children": [
+{
+"url": "UUID-b4a30fc8-9f06-f068-8209-a65b9cca36f2.html",
+"text": "Calculate toolpaths",
+"class": "topic-link"
+},
+{
+"url": "UUID-ab56ba3e-f2e8-98e3-7c5b-17cefa196658.html",
+"text": "Delete toolpaths",
+"class": "topic-link"
+},
+{
+"url": "UUID-a9b092dd-70c3-5345-6335-988d34a40607.html",
+"text": "Read toolpaths",
+"class": "topic-link"
+},
+{
+"url": "UUID-239803dc-932c-2eca-769f-675bc90b097c.html",
+"text": "Distance toolpath-shape",
+"class": "topic-link"
+},
+{
+"url": "UUID-9c427a83-2585-a285-8f04-264195c03bde.html",
+"text": "Analyze toolpath",
+"class": "topic-link"
+},
+{
+"url": "UUID-4151ad04-79d1-4e5c-bff9-858736cad270.html",
+"text": "Show toolpath",
+"class": "topic-link"
+},
+{
+"url": "UUID-fd768d2f-0418-67c2-bc0c-dfae857ff0e1.html",
+"text": "Update calculated toolpaths",
+"class": "topic-link"
+},
+{
+"url": "UUID-d8f087fc-66b2-0747-5b29-56204337763a.html",
+"text": "Information on calculated toolpaths",
+"class": "topic-link"
+},
+{
+"url": "UUID-115bbc0d-6f3e-8657-069a-c851225ac79c.html",
+"text": "The cycle Edit toolpath",
+"class": "topic-link"
+,
+"children": [
+{
+"url": "UUID-9c45fcee-6b0c-6ac8-faa1-824470028cf8.html",
+"text": "Parameters dialog page",
+"class": "topic-link"
+},
+{
+"url": "UUID-60538df3-39ec-208e-9e1f-9dc4b08e186d.html",
+"text": "Boundary dialog page",
+"class": "topic-link"
+}]
+}]
+},
+{
+"url": "UUID-4bb0b314-e3a2-7ccb-d6ea-12b5393a4d58.html",
+"text": "3.11. Simulate machining",
+"class": "topic-link"
+,
+"children": [
+{
+"url": "UUID-4a775395-167a-7717-dfd3-bfd0cbb03ea8.html",
+"text": "Internal simulation",
+"class": "topic-link"
+},
+{
+"url": "UUID-fad76f60-2eeb-a401-8e19-314f181e4c35.html",
+"text": "Simulation in hyperVIEW",
+"class": "topic-link"
+},
+{
+"url": "UUID-5fb54ee5-0f52-9ff5-23a0-50094c8b53ec.html",
+"text": "External simulation",
+"class": "topic-link"
+},
+{
+"url": "UUID-7c0c0d36-22fe-a3c3-a7c5-712b5b10a5a5.html",
+"text": "Machining planner",
+"class": "topic-link"
+}]
+},
+{
+"url": "UUID-42844235-97db-c8a4-fcb6-4a3d843c65a8.html",
+"text": "3.12. hyperMILL additional functions",
+"class": "topic-link"
+,
+"children": [
+{
+"url": "UUID-1d91e1cc-288a-7aa7-bee6-01c9ae141b6b.html",
+"text": "Rest material display",
+"class": "topic-link"
+},
+{
+"url": "UUID-d83a3dbf-6585-13ee-9714-8c76f2a64ebc.html",
+"text": "Analysis",
+"class": "topic-link"
+},
+{
+"url": "UUID-159d4acf-7af1-607e-d23f-857428f95f33.html",
+"text": "Converter – display surface errors",
+"class": "topic-link"
+},
+{
+"url": "UUID-0118646b-27de-67cf-d942-f4bf65c3a510.html",
+"text": "Remove image",
+"class": "topic-link"
+},
+{
+"url": "UUID-d41e2f0c-ef93-9537-6b24-143e3926e92a.html",
+"text": "OMX data",
+"class": "topic-link"
+},
+{
+"url": "UUID-84a10243-ccd6-b49d-a85c-09037870f408.html",
+"text": "Import TDM Systems tools",
+"class": "topic-link"
+},
+{
+"url": "UUID-569ffc4c-02e3-8eef-739c-3058b69fbdd9.html",
+"text": "Import WinTool tools",
+"class": "topic-link"
+},
+{
+"url": "UUID-4a3db944-4fc6-9579-6842-2fde8021c79f.html",
+"text": "Import Zoller tools",
+"class": "topic-link"
+},
+{
+"url": "UUID-6a7387d4-9124-e9d1-1697-0274df652497.html",
+"text": "Import NCSIMUL | Tool tools",
+"class": "topic-link"
+},
+{
+"url": "UUID-758cfe25-5de6-cca5-6e4f-1657a1bad157.html",
+"text": "Contour offset",
+"class": "topic-link"
+},
+{
+"url": "UUID-efa16413-f171-7ef4-76ce-9ec8f4684301.html",
+"text": "Contour autolink",
+"class": "topic-link"
+},
+{
+"url": "UUID-0dfc614a-26d7-6295-6db1-760d76ca0ff5.html",
+"text": "Wrapping side shell",
+"class": "topic-link"
+},
+{
+"url": "UUID-b92811ad-6ee5-bbe9-f38d-f4151c7213eb.html",
+"text": "Delete graphical hyperMILL data",
+"class": "topic-link"
+}]
+},
+{
+"url": "UUID-3bb37262-4cb0-7c33-22a0-a29198fe546a.html",
+"text": "3.13. CAD Utilities",
+"class": "topic-link"
+,
+"children": [
+{
+"url": "UUID-1850d04e-4bdf-68a4-f554-83371416c589.html",
+"text": "hyperMILL for Autodesk® Inventor®",
+"class": "topic-link"
+},
+{
+"url": "UUID-b8126641-88d3-8ae0-9de2-a89acbc6019c.html",
+"text": "hyperMILL for SOLIDWORKS",
+"class": "topic-link"
+}]
+},
+{
+"url": "UUID-434ea6a6-7971-f3fd-e905-3b7e1a608baf.html",
+"text": "3.14. Produce electrodes",
+"class": "topic-link"
+,
+"children": [
+{
+"url": "UUID-9db0d0d4-eb03-c633-275f-9f650c972342.html",
+"text": "Preparing milling NC programming",
+"class": "topic-link"
+},
+{
+"url": "UUID-acf580ad-65ad-9c5b-9669-3bf651404e3d.html",
+"text": "NC Programming",
+"class": "topic-link"
+},
+{
+"url": "UUID-843c72bf-7be9-c45d-d2cb-9a2d24883e52.html",
+"text": "The Electrode milling dialog",
+"class": "topic-link"
+},
+{
+"url": "UUID-14de032b-f4f8-f8db-7c7b-0f0cf64b3817.html",
+"text": "Joblist and electrode feature",
+"class": "topic-link"
+},
+{
+"url": "UUID-62efeb2f-6120-0bec-c412-b9791958d3fb.html",
+"text": "Milling strategy and macro programming",
+"class": "topic-link"
+},
+{
+"url": "UUID-1b5d3ff3-2ca9-2909-edf6-93433a337ded.html",
+"text": "Calculate toolpaths",
+"class": "topic-link"
+},
+{
+"url": "UUID-c4ff551e-9e0c-dd4c-75cd-bf7944599ac7.html",
+"text": "Electrode user variables",
+"class": "topic-link"
+},
+{
+"url": "UUID-148e4b1f-ddbb-1d56-8fab-92b0ed55a619.html",
+"text": "The machining sequence at a glance",
+"class": "topic-link"
+}]
+}]
+},
+{
+"url": "UUID-045be457-706d-a14f-f9a1-00787a4eb50a.html",
+"text": "4. Feature and macro technology",
+"class": "topic-link"
+,
+"children": [
+{
+"url": "UUID-6277ad4e-8084-e97e-a6e5-d9bf8ba17bd1.html",
+"text": "4.1. The advantages of feature technology",
+"class": "topic-link"
+},
+{
+"url": "UUID-83852851-3804-09e7-314d-1e4927570c37.html",
+"text": "4.2. User interface",
+"class": "topic-link"
+,
+"children": [
+{
+"url": "UUID-a7ecff0c-43f2-0b0b-43fc-1e7820fffe53.html",
+"text": "The feature browser",
+"class": "topic-link"
+},
+{
+"url": "UUID-c5ab6f2e-b8ec-1f83-fea8-19913a309596.html",
+"text": "The Feature editor",
+"class": "topic-link"
+,
+"children": [
+{
+"url": "UUID-e4fe00cd-321b-b914-9d4d-2dc5c9f586cc.html",
+"text": "Define attributes",
+"class": "topic-link"
+}]
+},
+{
+"url": "UUID-b7b2c931-2718-ff77-c7af-ef2645f0ea55.html",
+"text": "The Feature job connector",
+"class": "topic-link"
+}]
+},
+{
+"url": "UUID-012eeaf6-9740-93c0-72f6-ff1eaf3f3d0a.html",
+"text": "4.3. Feature catalogue",
+"class": "topic-link"
+,
+"children": [
+{
+"url": "UUID-deb7b3da-8e12-c265-e0d6-af3e942e74ee.html",
+"text": "Contour",
+"class": "topic-link"
+},
+{
+"url": "UUID-10422e1a-21dd-12c9-3d7d-c009d894dfd6.html",
+"text": "Strategy Curve",
+"class": "topic-link"
+},
+{
+"url": "UUID-02ea0070-31fd-a339-2ecc-d7c10e1ae956.html",
+"text": "Surface Group",
+"class": "topic-link"
+},
+{
+"url": "UUID-e7929b01-5d2e-c99a-6c1b-d28985d6b3e6.html",
+"text": "Plane",
+"class": "topic-link"
+},
+{
+"url": "UUID-426a2191-2a82-1bdf-f6ea-80ec3ec26ecf.html",
+"text": "T-Slot",
+"class": "topic-link"
+},
+{
+"url": "UUID-6fce9c19-0043-3239-9fb2-6dbab93bce80.html",
+"text": "Generic Pocket",
+"class": "topic-link"
+},
+{
+"url": "UUID-82bda6d1-1bd2-869a-9a98-4bacea339d6e.html",
+"text": "O-Ring",
+"class": "topic-link"
+},
+{
+"url": "UUID-d2ffc3ea-7c6e-fa71-916f-b6786f7865db.html",
+"text": "Generic Hole",
+"class": "topic-link"
+},
+{
+"url": "UUID-826e2e6b-75bd-b952-f867-9d3485cc7093.html",
+"text": "Generic turning feature\/Turning groove",
+"class": "topic-link"
+},
+{
+"url": "UUID-d955277c-b25c-3338-b560-e2bb4f402f6c.html",
+"text": "OPEN MIND Feature",
+"class": "topic-link"
+,
+"children": [
+{
+"url": "UUID-9e90dd05-9967-a512-c139-23f7c57128b3.html",
+"text": "Simple Hole",
+"class": "topic-link"
+},
+{
+"url": "UUID-dd80d1a9-acf4-7535-d3f4-d15b787b9544.html",
+"text": "Sink Hole",
+"class": "topic-link"
+},
+{
+"url": "UUID-106ab2f8-5c1e-1f4a-9bcd-e1314ba0792f.html",
+"text": "Free Defined Hole",
+"class": "topic-link"
+},
+{
+"url": "UUID-5585498e-733d-777e-5e22-61997d3aca71.html",
+"text": "Surface",
+"class": "topic-link"
+},
+{
+"url": "UUID-ace3d175-328f-07d8-6cd1-9eb87fcc930a.html",
+"text": "Pocket",
+"class": "topic-link"
+},
+{
+"url": "UUID-c960e5e0-5c8c-d329-542b-ab4d03c17aa4.html",
+"text": "Compound Feature",
+"class": "topic-link"
+}]
+},
+{
+"url": "UUID-64f78977-caee-f556-c26b-2e4d77dc9854.html",
+"text": "Turbomachinery Feature",
+"class": "topic-link"
+,
+"children": [
+{
+"url": "UUID-2272e836-79c9-f01e-2680-bd1de45c5239.html",
+"text": "Blade",
+"class": "topic-link"
+},
+{
+"url": "UUID-80d55eef-c0c1-666f-70c5-e2d90c4854e6.html",
+"text": "Multi-blade",
+"class": "topic-link"
+}]
+},
+{
+"url": "UUID-3b8fa03b-955e-0c4e-284f-20d693e0226b.html",
+"text": "Customized Process Feature (CPF)",
+"class": "topic-link"
+,
+"children": [
+{
+"url": "UUID-e3212cad-2780-b609-07e4-d95a19c815a3.html",
+"text": "Requirements",
+"class": "topic-link"
+},
+{
+"url": "UUID-667753d4-abc7-263a-d58c-f01aa1981198.html",
+"text": "Example pocket machining",
+"class": "topic-link"
+},
+{
+"url": "UUID-947c1448-da28-b11c-bfee-a97e4a679ac5.html",
+"text": "Define structure+#",
+"class": "topic-link"
+},
+{
+"url": "UUID-f9df6982-f2d4-10cc-4ac7-9d0903e160f3.html",
+"text": "Use CPF",
+"class": "topic-link"
+},
+{
+"url": "UUID-ffb9a9ef-2899-021b-639e-6e14ed8d23b2.html",
+"text": "Link CPF to CAD data",
+"class": "topic-link"
+},
+{
+"url": "UUID-08415030-b050-75ec-dc58-d4158e5d791f.html",
+"text": "Use CPF in the job definition",
+"class": "topic-link"
+},
+{
+"url": "UUID-b8a55408-9271-c12d-85b7-91c5591db6f8.html",
+"text": "Boundary",
+"class": "topic-link"
+},
+{
+"url": "UUID-44c819d4-02ed-d0dc-1d6d-1c1a6ea38d80.html",
+"text": "Reuse CPF in new CAD model",
+"class": "topic-link"
+},
+{
+"url": "UUID-93504b2c-a1fa-6886-3c78-5703517528f0.html",
+"text": "Setup",
+"class": "topic-link"
+}]
+}]
+},
+{
+"url": "UUID-49abe1ad-b199-5108-79e3-3d98ad69ba3e.html",
+"text": "4.4. Generate feature",
+"class": "topic-link"
+,
+"children": [
+{
+"url": "UUID-47353b48-8b88-1713-47eb-8bb58a17a1e8.html",
+"text": "Feature Mapping (Hole)",
+"class": "topic-link"
+},
+{
+"url": "UUID-f3e19e3c-37c7-e7e1-aafe-0e3713126013.html",
+"text": "Feature Recognition",
+"class": "topic-link"
+,
+"children": [
+{
+"url": "UUID-730a1180-1827-adb9-ae5e-e1a022d401a8.html",
+"text": "Single Hole Recognition",
+"class": "topic-link"
+,
+"children": [
+{
+"url": "UUID-825c4c20-71a5-a157-b633-4df5df7d3cea.html",
+"text": "Sample hole dialog page",
+"class": "topic-link"
+},
+{
+"url": "UUID-053fe526-200c-6c4b-e587-95e3817ebbc7.html",
+"text": "Search dialog page",
+"class": "topic-link"
+},
+{
+"url": "UUID-5b4f218a-e407-cdb0-3ce8-b257e9ad2941.html",
+"text": "Setup dialog page",
+"class": "topic-link"
+}]
+},
+{
+"url": "UUID-5711b804-f5ea-ef14-9740-376e64d3430a.html",
+"text": "Pocket Recognition",
+"class": "topic-link"
+,
+"children": [
+{
+"url": "UUID-6353f725-d3d9-f163-112b-4a0a45369d3f.html",
+"text": "Sample pocket dialog page",
+"class": "topic-link"
+},
+{
+"url": "UUID-8acb5099-98e6-5d9e-fcd5-1c0dd6710908.html",
+"text": "Pocket type: Through pocket",
+"class": "topic-link"
+},
+{
+"url": "UUID-39a8a19f-e8bf-d17c-12ce-e40a0bc91818.html",
+"text": "Search dialog page",
+"class": "topic-link"
+},
+{
+"url": "UUID-35a92a85-e344-3763-7332-de8c9394d318.html",
+"text": "Setup dialog page",
+"class": "topic-link"
+}]
+},
+{
+"url": "UUID-bfe0976f-1f2b-cdac-e49a-55ab6fae2113.html",
+"text": "Plane Recognition",
+"class": "topic-link"
+},
+{
+"url": "UUID-4dcb0a6f-d8c3-7954-0dd7-aaa4feca14fd.html",
+"text": "Boundary Recognition",
+"class": "topic-link"
+},
+{
+"url": "UUID-6eda6428-f820-e36e-52a7-3c01b9d7ab9b.html",
+"text": "Turn Feature Recognition",
+"class": "topic-link"
+},
+{
+"url": "UUID-a238751e-fd0b-4f63-33f0-1601717817e4.html",
+"text": "Rest material boundary",
+"class": "topic-link"
+},
+{
+"url": "UUID-5b6288fe-02cd-31a6-63b1-9dd0930ad432.html",
+"text": "Transformation Pattern Recognition",
+"class": "topic-link"
+}]
+}]
+},
+{
+"url": "UUID-0df1ae7e-ec38-aee4-5645-f1ddd10c5889.html",
+"text": "4.5. Use feature",
+"class": "topic-link"
+,
+"children": [
+{
+"url": "UUID-a0b26188-4224-95b7-2040-a335554c5b29.html",
+"text": "From feature to job",
+"class": "topic-link"
+},
+{
+"url": "UUID-a6f12856-112b-a3de-f2b4-7589ce94823c.html",
+"text": "From job to feature",
+"class": "topic-link"
+,
+"children": [
+{
+"url": "UUID-924d5e87-eda3-0e7a-305d-d4f087d03251.html",
+"text": "Fit hole to stock model",
+"class": "topic-link"
+},
+{
+"url": "UUID-b73b2986-e4b0-afff-fe87-2c80dd338e48.html",
+"text": "Find intersecting holes",
+"class": "topic-link"
+},
+{
+"url": "UUID-2cfac42c-1a2e-7c5a-d5ac-0c8ea4a1105d.html",
+"text": "Sort holes",
+"class": "topic-link"
+}]
+},
+{
+"url": "UUID-58457f12-0e59-856b-b5e3-b01f4017b4f8.html",
+"text": "Functions on the shortcut menu: feature lists",
+"class": "topic-link"
+},
+{
+"url": "UUID-0b232b00-51b8-7c7a-3a82-d6d412b30184.html",
+"text": "Functions on the shortcut menu: Features",
+"class": "topic-link"
+}]
+},
+{
+"url": "UUID-2b09e07f-eac1-34bd-6947-bf192f8ebb83.html",
+"text": "4.6. Macro technology",
+"class": "topic-link"
+,
+"children": [
+{
+"url": "UUID-88295ffe-d989-3563-1796-8460a711ede5.html",
+"text": "Advantages and uses",
+"class": "topic-link"
+},
+{
+"url": "UUID-e771b78d-ae4f-3e69-225e-42fae4c46f10.html",
+"text": "Create macro",
+"class": "topic-link"
+,
+"children": [
+{
+"url": "UUID-ea4a4802-c82b-c083-caad-bda094a77964.html",
+"text": "The New macro dialog",
+"class": "topic-link"
+}]
+},
+{
+"url": "UUID-7ca9cf1a-769b-c947-22bf-c4c902f83593.html",
+"text": "Apply macro",
+"class": "topic-link"
+,
+"children": [
+{
+"url": "UUID-39e25c43-1134-d390-abf1-684a546f0104.html",
+"text": "The Apply macro dialog",
+"class": "topic-link"
+}]
+},
+{
+"url": "UUID-3f453f91-590d-90a1-933e-e8af13cff15f.html",
+"text": "The macro database",
+"class": "topic-link"
+},
+{
+"url": "UUID-10e0c401-ad02-0727-436e-1b0e2255126f.html",
+"text": "Intelligent macros",
+"class": "topic-link"
+},
+{
+"url": "UUID-37810f3d-7a8e-579f-58fd-62a826cb0c76.html",
+"text": "Functions on the shortcut menu: Macros",
+"class": "topic-link"
+}]
+}]
+},
+{
+"url": "UUID-e8d302b1-25e9-ce17-14f3-a09e6ac21bf0.html",
+"text": "5. Probing",
+"class": "topic-link"
+,
+"children": [
+{
+"url": "UUID-8fb7dc5b-b326-4759-2744-0ae87a7974a3.html",
+"text": "5.2. 3D Point Probing",
+"class": "topic-link"
+,
+"children": [
+{
+"url": "UUID-3aa296f7-b389-d09c-4d7a-ba0529fea417.html",
+"text": "Contours",
+"class": "topic-link"
+},
+{
+"url": "UUID-f2d71eb8-3682-0124-37db-f44e094c19ac.html",
+"text": "Optimization",
+"class": "topic-link"
+},
+{
+"url": "UUID-f6da5754-466a-d8f3-8651-b3322ce9a73b.html",
+"text": "Parameters",
+"class": "topic-link"
+},
+{
+"url": "UUID-d45eda32-bc49-b5b9-79ce-8d5be2abbb17.html",
+"text": "Setup",
+"class": "topic-link"
+}]
+},
+{
+"url": "UUID-9450c583-8374-a5ce-772d-654135d4a0f4.html",
+"text": "5.3. Workpiece alignment along edge",
+"class": "topic-link"
+,
+"children": [
+{
+"url": "UUID-bbc3e21e-e1d0-e4b4-1db9-4f27f949b0b1.html",
+"text": "Contours",
+"class": "topic-link"
+},
+{
+"url": "UUID-223acfb7-bc4b-e765-4c02-297c0b5979cd.html",
+"text": "Parameters",
+"class": "topic-link"
+},
+{
+"url": "UUID-60f1cbcd-0b0f-e13e-e3b9-69d689d39cf7.html",
+"text": "Strategy",
+"class": "topic-link"
+},
+{
+"url": "UUID-d4f4b739-0c46-7fd2-2c94-39dd37b80bef.html",
+"text": "",
+"class": "topic-link"
+}]
+},
+{
+"url": "UUID-a9177277-7644-22f7-1f2c-a85cd199d89b.html",
+"text": "5.4. Workpiece alignment with holes",
+"class": "topic-link"
+,
+"children": [
+{
+"url": "UUID-667fb911-494b-9176-5c1f-366ecd4b9174.html",
+"text": "Contours",
+"class": "topic-link"
+},
+{
+"url": "UUID-6931d468-e911-0d19-c08f-a4b86d4b5251.html",
+"text": "Parameters",
+"class": "topic-link"
+},
+{
+"url": "UUID-f646902e-262d-b204-675a-e886e94e5b73.html",
+"text": "Strategy",
+"class": "topic-link"
+},
+{
+"url": "UUID-d3092781-40a4-63f8-7536-0d7b00460eae.html",
+"text": "Setup",
+"class": "topic-link"
+}]
+},
+{
+"url": "UUID-ff2fcd7e-2d1b-7b07-129d-1326a63e6e23.html",
+"text": "5.5. Rectangular Probing",
+"class": "topic-link"
+,
+"children": [
+{
+"url": "UUID-cd76f2ec-9b58-939a-14c3-be5e10651a15.html",
+"text": "Contours",
+"class": "topic-link"
+},
+{
+"url": "UUID-0aea3460-c130-43d2-b3c6-3b32a98b2aa6.html",
+"text": "Parameters",
+"class": "topic-link"
+},
+{
+"url": "UUID-341771b5-c2c5-4480-e664-147cb8d13e2b.html",
+"text": "Strategy",
+"class": "topic-link"
+},
+{
+"url": "UUID-6f7fa0e6-9df4-05ca-963f-94ba05b33274.html",
+"text": "Setup",
+"class": "topic-link"
+}]
+},
+{
+"url": "UUID-6d2a0538-7c3c-3477-0b6a-b85c063a6d8e.html",
+"text": "5.6. Slot-Rib Probing",
+"class": "topic-link"
+,
+"children": [
+{
+"url": "UUID-dadacc7a-1c14-e906-87f3-19ae8d28df72.html",
+"text": "Contours",
+"class": "topic-link"
+},
+{
+"url": "UUID-47415918-7c19-c8b7-d280-3a0513ff987d.html",
+"text": "Parameters",
+"class": "topic-link"
+},
+{
+"url": "UUID-7333e8f4-405c-95ae-7ae5-d9e51dbd28f2.html",
+"text": "Strategy",
+"class": "topic-link"
+},
+{
+"url": "UUID-c068ce61-1337-dcf8-4ee1-93536e668666.html",
+"text": "Setup",
+"class": "topic-link"
+}]
+},
+{
+"url": "UUID-54f632cc-4dd1-1f3d-08f8-0abd1a4a3ff5.html",
+"text": "5.7. Circular Probing",
+"class": "topic-link"
+,
+"children": [
+{
+"url": "UUID-64ba177d-d34e-784d-57c4-c2d4effe2b72.html",
+"text": "Contours and parameters",
+"class": "topic-link"
+},
+{
+"url": "UUID-5776127e-5c02-3a54-017a-790b50db5bdc.html",
+"text": "Strategy",
+"class": "topic-link"
+},
+{
+"url": "UUID-40b51fea-404a-df3f-6899-a6552f02a952.html",
+"text": "Setup",
+"class": "topic-link"
+}]
+},
+{
+"url": "UUID-f3eb0e77-b85a-e2d8-0e1b-c88b104d8899.html",
+"text": "5.8. Axis dependent Probing",
+"class": "topic-link"
+,
+"children": [
+{
+"url": "UUID-5d4ec2c1-a4c9-89f2-957a-d5c62161fd55.html",
+"text": "Contours and parameters",
+"class": "topic-link"
+},
+{
+"url": "UUID-99e26377-c3ea-3c61-35c6-d7a588435631.html",
+"text": "Strategy",
+"class": "topic-link"
+},
+{
+"url": "UUID-8780f8cf-b11c-e2d1-13a7-7a5c484bb518.html",
+"text": "Setup",
+"class": "topic-link"
+}]
+}]
+},
+{
+"url": "UUID-8c123174-82e7-0c9b-1966-9af033907055.html",
+"text": "6. Turning",
+"class": "topic-link"
+,
+"children": [
+{
+"url": "UUID-ab9bff16-9231-9c65-33f3-20d1309b95d2.html",
+"text": "6.1. Available machining cycles",
+"class": "topic-link"
+},
+{
+"url": "UUID-f4eeafb4-088e-3e6c-75bf-9b48c11485c8.html",
+"text": "6.2. Roughing",
+"class": "topic-link"
+,
+"children": [
+{
+"url": "UUID-67096b9e-6b61-7684-494d-3388803bde2d.html",
+"text": "Tool",
+"class": "topic-link"
+},
+{
+"url": "UUID-4959fd16-3a52-c2a7-0057-c8e3a44728eb.html",
+"text": "Contours",
+"class": "topic-link"
+},
+{
+"url": "UUID-5ecfe60d-afb9-cdf9-8d2d-0ba43636bf7b.html",
+"text": "Strategy",
+"class": "topic-link"
+},
+{
+"url": "UUID-3ee2ede7-d447-a54b-4a48-bb0c7caa7011.html",
+"text": "Parameters",
+"class": "topic-link"
+},
+{
+"url": "UUID-876dc8e5-6bd3-4a1a-c07c-7fc4a9aa5be4.html",
+"text": "High Performance",
+"class": "topic-link"
+},
+{
+"url": "UUID-dca32509-997e-7d6e-eb2d-b33dffa1fc59.html",
+"text": "Macros",
+"class": "topic-link"
+},
+{
+"url": "UUID-d30dc63b-05b3-21c4-3ad7-62e799de324c.html",
+"text": "Setup",
+"class": "topic-link"
+}]
+},
+{
+"url": "UUID-ce66783a-e77b-dfef-dec4-77864ac52799.html",
+"text": "6.3. Contour parallel Turning",
+"class": "topic-link"
+,
+"children": [
+{
+"url": "UUID-a776eb77-e607-8c72-a47e-0a546dc00b06.html",
+"text": "Tool",
+"class": "topic-link"
+},
+{
+"url": "UUID-eacbc60d-a992-3e56-123f-8156f5c05c0b.html",
+"text": "Contours",
+"class": "topic-link"
+},
+{
+"url": "UUID-7d1ced11-96fe-da23-7c8c-a34f4695725c.html",
+"text": "Strategy",
+"class": "topic-link"
+},
+{
+"url": "UUID-dff4fa90-cb33-7364-1fed-4b2277a8137f.html",
+"text": "Parameters",
+"class": "topic-link"
+},
+{
+"url": "UUID-93d18f67-2833-f78b-921d-3df974e4d637.html",
+"text": "Macros",
+"class": "topic-link"
+},
+{
+"url": "UUID-68973ec1-8b95-b1fa-d377-c3406c0e8a9f.html",
+"text": "Setup",
+"class": "topic-link"
+}]
+},
+{
+"url": "UUID-c6badca0-28c4-4237-9a5a-3761cdeb9e65.html",
+"text": "6.4. Finishing",
+"class": "topic-link"
+,
+"children": [
+{
+"url": "UUID-f17a35a3-094d-6fa7-4abe-3376f6ad3ed0.html",
+"text": "Tool",
+"class": "topic-link"
+},
+{
+"url": "UUID-2eb6593e-13be-dc0a-ed84-78d240b7a547.html",
+"text": "Contours",
+"class": "topic-link"
+},
+{
+"url": "UUID-4ffcc9b2-f08d-cdcd-9d47-a4e6b86b0ea3.html",
+"text": "Strategy",
+"class": "topic-link"
+},
+{
+"url": "UUID-4c27cbcc-bcf5-eafa-882c-6f1ef06ac99d.html",
+"text": "Parameters",
+"class": "topic-link"
+},
+{
+"url": "UUID-8aea8cb0-229a-99cf-32c8-d0e568a6411b.html",
+"text": "Macros",
+"class": "topic-link"
+},
+{
+"url": "UUID-08da4bc4-fb69-d1d5-c598-9b89b5581e59.html",
+"text": "Setup",
+"class": "topic-link"
+}]
+},
+{
+"url": "UUID-b7860b34-9be2-7031-c263-ff9e3d8c45a2.html",
+"text": "6.5. 3X simultaneous Roughing",
+"class": "topic-link"
+,
+"children": [
+{
+"url": "UUID-17c11db0-619a-91f6-dcbc-73ee9284a829.html",
+"text": "Tool",
+"class": "topic-link"
+},
+{
+"url": "UUID-95eabcfe-1db0-6e62-cd44-59d945e6f5d4.html",
+"text": "Contours",
+"class": "topic-link"
+},
+{
+"url": "UUID-de2698c3-ef9c-7063-fc9c-65e1c6daa9f1.html",
+"text": "Strategy",
+"class": "topic-link"
+},
+{
+"url": "UUID-cba4bcbd-8dda-73bb-1d3f-80a5050f25d9.html",
+"text": "Parameters",
+"class": "topic-link"
+},
+{
+"url": "UUID-f21c7014-1499-1053-d5fd-1052f9c768cc.html",
+"text": "3Axes",
+"class": "topic-link"
+},
+{
+"url": "UUID-ce4c6acd-bd69-b86a-0b16-a8bec9e1574a.html",
+"text": "High Performance",
+"class": "topic-link"
+},
+{
+"url": "UUID-afa014e4-107a-896d-aee9-470e2fc438dd.html",
+"text": "Macros",
+"class": "topic-link"
+},
+{
+"url": "UUID-a11e22b7-7ecf-bea5-27a3-4f13b85c6cf1.html",
+"text": "Setup",
+"class": "topic-link"
+}]
+},
+{
+"url": "UUID-77b98b8f-1ee0-4e54-50a6-c0ff2a1109f6.html",
+"text": "6.6. 3X simultaneous Finishing",
+"class": "topic-link"
+,
+"children": [
+{
+"url": "UUID-eeeb4465-5a1a-0abc-c712-2c099de492c8.html",
+"text": "Tool",
+"class": "topic-link"
+},
+{
+"url": "UUID-15892036-cf74-582e-404c-0b68faf58649.html",
+"text": "Contours",
+"class": "topic-link"
+},
+{
+"url": "UUID-10d50b2c-2934-1ee1-8f93-7a7de9aa5678.html",
+"text": "Strategy",
+"class": "topic-link"
+},
+{
+"url": "UUID-f81ebe8d-5078-4a93-567f-603293ffddbd.html",
+"text": "Parameters",
+"class": "topic-link"
+},
+{
+"url": "UUID-fb0b00ad-91d9-778f-7f8f-5a0c29736f64.html",
+"text": "3Axes",
+"class": "topic-link"
+},
+{
+"url": "UUID-c2853863-ddeb-e801-ea29-a0a8efe67a66.html",
+"text": "Macros",
+"class": "topic-link"
+},
+{
+"url": "UUID-04f8d454-d41d-9abc-0f90-c5b110fe500e.html",
+"text": "Setup",
+"class": "topic-link"
+}]
+},
+{
+"url": "UUID-13d54bfd-3076-3186-ae0a-f08efc8df027.html",
+"text": "6.7. Groove Turning",
+"class": "topic-link"
+,
+"children": [
+{
+"url": "UUID-ebd3f80a-ecb8-ac0a-43fa-72c4fc24bef1.html",
+"text": "Tool",
+"class": "topic-link"
+},
+{
+"url": "UUID-5cfbbf7a-34a4-e951-8859-9a6562399e11.html",
+"text": "Contours",
+"class": "topic-link"
+},
+{
+"url": "UUID-9299b399-ad41-42bf-9d0b-40dcdaf2580d.html",
+"text": "Strategy",
+"class": "topic-link"
+},
+{
+"url": "UUID-98db3606-9540-a8b5-ee3c-8eea67d4545d.html",
+"text": "Parameters",
+"class": "topic-link"
+},
+{
+"url": "UUID-02c37192-2f8d-d2c1-fc5b-68ffac980334.html",
+"text": "High Performance",
+"class": "topic-link"
+},
+{
+"url": "UUID-0f567a62-68cb-1e97-d211-3a2e7e587a20.html",
+"text": "Macros",
+"class": "topic-link"
+},
+{
+"url": "UUID-b6884a8f-28c5-9fb8-04b1-fe59526ee875.html",
+"text": "Setup",
+"class": "topic-link"
+}]
+},
+{
+"url": "UUID-c48cf7a1-0146-dcac-907f-fa8443a9a785.html",
+"text": "6.8. Grooving",
+"class": "topic-link"
+,
+"children": [
+{
+"url": "UUID-94fb5147-b5e6-ee7f-e0b4-813da43c71f9.html",
+"text": "Tool",
+"class": "topic-link"
+},
+{
+"url": "UUID-3d6689d0-0a38-05f3-9d1c-60710aba488d.html",
+"text": "Contours",
+"class": "topic-link"
+},
+{
+"url": "UUID-fade3a84-36d4-2123-8abe-f19113ed9031.html",
+"text": "Strategy",
+"class": "topic-link"
+},
+{
+"url": "UUID-b5204c98-e3f5-1942-f51f-f3efbf5f16c9.html",
+"text": "Parameters",
+"class": "topic-link"
+},
+{
+"url": "UUID-e10d128a-f403-24b1-4aff-e51b1394634c.html",
+"text": "Macros",
+"class": "topic-link"
+},
+{
+"url": "UUID-3b87f63b-19e4-5c43-6364-a69b24aebc7a.html",
+"text": "Setup",
+"class": "topic-link"
+}]
+},
+{
+"url": "UUID-103a65e7-2365-f88d-1344-6e79af0e36d8.html",
+"text": "6.9. Groove Finishing",
+"class": "topic-link"
+,
+"children": [
+{
+"url": "UUID-7c630b98-6575-fdcf-61e8-efd30e6952d5.html",
+"text": "Tool",
+"class": "topic-link"
+},
+{
+"url": "UUID-c7ffe1db-dfc8-23bb-3d2d-9a7cdeaa5d65.html",
+"text": "Contours",
+"class": "topic-link"
+},
+{
+"url": "UUID-908fca80-a4c3-f833-80cf-a2ae5aa993eb.html",
+"text": "Strategy",
+"class": "topic-link"
+},
+{
+"url": "UUID-e9fda7f7-3e1b-6a9c-72c0-92586c4ca6fa.html",
+"text": "Parameters",
+"class": "topic-link"
+},
+{
+"url": "UUID-0cc4f2f9-3fd5-86ee-aae8-6debebc640e2.html",
+"text": "Macros",
+"class": "topic-link"
+},
+{
+"url": "UUID-a2ad2a6b-6347-ca8d-7a6c-639ccaccfbe4.html",
+"text": "Setup",
+"class": "topic-link"
+}]
+},
+{
+"url": "UUID-e8573c45-d403-0e35-f0dc-bf414303ceb4.html",
+"text": "6.10. Parting",
+"class": "topic-link"
+,
+"children": [
+{
+"url": "UUID-4b0e81cc-aebd-1db1-e855-01498edadc43.html",
+"text": "Tool",
+"class": "topic-link"
+},
+{
+"url": "UUID-57e8ce08-3afb-a550-bcca-9804066e4cac.html",
+"text": "Contours",
+"class": "topic-link"
+},
+{
+"url": "UUID-62885be0-5b15-60ae-139c-223dfaeeb868.html",
+"text": "Strategy",
+"class": "topic-link"
+},
+{
+"url": "UUID-f3d061bc-8c56-d9f5-d59a-c90f9d238df4.html",
+"text": "Parameters",
+"class": "topic-link"
+},
+{
+"url": "UUID-af020648-f198-6c50-d08b-6267ee7dffe0.html",
+"text": "Macros",
+"class": "topic-link"
+},
+{
+"url": "UUID-180a7269-4b04-8f9f-f8df-55e6f2baa6ae.html",
+"text": "Setup",
+"class": "topic-link"
+}]
+},
+{
+"url": "UUID-c41e2334-deca-b9df-c0c1-114fe8058243.html",
+"text": "6.11. Face Groove Turning",
+"class": "topic-link"
+,
+"children": [
+{
+"url": "UUID-9efc0fcc-ac5a-3262-1f4c-80cf897a73c1.html",
+"text": "Contours",
+"class": "topic-link"
+},
+{
+"url": "UUID-d66ee390-b37e-1b43-a488-e7d919997334.html",
+"text": "Strategy",
+"class": "topic-link"
+},
+{
+"url": "UUID-9ee0f533-dfbd-5666-73ad-2aa001c4e2b4.html",
+"text": "Parameters",
+"class": "topic-link"
+},
+{
+"url": "UUID-9038bb5f-0591-be7b-4ced-c2370e4893d3.html",
+"text": "High Performance",
+"class": "topic-link"
+},
+{
+"url": "UUID-8be40bf1-9cfe-c52b-47b5-d787af7de968.html",
+"text": "Macros",
+"class": "topic-link"
+},
+{
+"url": "UUID-dc40a91e-e072-aa5a-0500-1b7ebdaaf44b.html",
+"text": "Setup",
+"class": "topic-link"
+}]
+},
+{
+"url": "UUID-59bd8468-b5f0-a19e-d09e-fd4795f4d463.html",
+"text": "6.12. Face Groove Plunging",
+"class": "topic-link"
+,
+"children": [
+{
+"url": "UUID-3becffde-e473-1925-1195-f810b7a66c08.html",
+"text": "Tool",
+"class": "topic-link"
+},
+{
+"url": "UUID-a4b7c251-ff2e-bd68-46f4-5c42b6708d11.html",
+"text": "Contours",
+"class": "topic-link"
+},
+{
+"url": "UUID-a95a3de8-a19b-b873-c63a-581bdb9eca3f.html",
+"text": "Strategy",
+"class": "topic-link"
+},
+{
+"url": "UUID-cf04ee95-4555-2f1f-b8a6-d2a18961b8ba.html",
+"text": "Parameters",
+"class": "topic-link"
+},
+{
+"url": "UUID-86b1b36b-3fe8-889f-0c2b-d3372014cd65.html",
+"text": "Macros",
+"class": "topic-link"
+},
+{
+"url": "UUID-36c94861-df50-f5e7-82f5-35a27341fab9.html",
+"text": "Setup",
+"class": "topic-link"
+}]
+},
+{
+"url": "UUID-f09cd115-68ac-c0fe-5ea8-45339d8b12a4.html",
+"text": "6.13. Face Groove Finishing",
+"class": "topic-link"
+,
+"children": [
+{
+"url": "UUID-29d61c2e-7e51-3b29-2aa1-b315cb9f4f48.html",
+"text": "Tool",
+"class": "topic-link"
+},
+{
+"url": "UUID-6b95a05c-8f74-5f89-12f1-69bfeea66f3b.html",
+"text": "Contours",
+"class": "topic-link"
+},
+{
+"url": "UUID-952a3950-995f-87fb-0b2c-a94b9b92c5d7.html",
+"text": "Strategy",
+"class": "topic-link"
+},
+{
+"url": "UUID-49624f30-34e0-58d6-95dc-a34d45233768.html",
+"text": "Parameters",
+"class": "topic-link"
+},
+{
+"url": "UUID-49bf8efa-6458-a960-f2d4-35ef696c6b3a.html",
+"text": "Macros",
+"class": "topic-link"
+},
+{
+"url": "UUID-69ad254a-eea7-e576-fae7-001981878a10.html",
+"text": "Setup",
+"class": "topic-link"
+}]
+},
+{
+"url": "UUID-80de3bd0-dbb2-5559-9a2b-5469e13c3a10.html",
+"text": "6.14. Thread Cutting",
+"class": "topic-link"
+,
+"children": [
+{
+"url": "UUID-bf245572-1608-179a-6394-341266d3c818.html",
+"text": "Contours",
+"class": "topic-link"
+},
+{
+"url": "UUID-9be89d08-9e5a-d82c-1419-8c1c8fef7d66.html",
+"text": "Strategy",
+"class": "topic-link"
+},
+{
+"url": "UUID-3820cbeb-f88c-fe20-cf32-23d6ecaccf26.html",
+"text": "Parameters",
+"class": "topic-link"
+}]
+}]
+},
+{
+"url": "UUID-3b9d9a18-2161-24ee-9ef4-f7f1b27ed796.html",
+"text": "7. Drilling",
+"class": "topic-link"
+,
+"children": [
+{
+"url": "UUID-0ba433f0-7431-18d9-eb8e-480443c47e7a.html",
+"text": "7.2. Tool",
+"class": "topic-link"
+},
+{
+"url": "UUID-5cb84cf4-e19e-ae16-d9bd-f652c2955dca.html",
+"text": "7.3. Contours",
+"class": "topic-link"
+},
+{
+"url": "UUID-b5606c24-1e87-3a68-c23b-4da0bdb4d3d4.html",
+"text": "7.4. Optimization",
+"class": "topic-link"
+},
+{
+"url": "UUID-dcbe04f2-509b-f26d-003d-64c86d4a84e4.html",
+"text": "7.5. Parameters",
+"class": "topic-link"
+},
+{
+"url": "UUID-a7b686ba-53d4-e969-2d9f-da891f38f64d.html",
+"text": "7.6. Boundary",
+"class": "topic-link"
+},
+{
+"url": "UUID-403b5147-44cc-6b1c-2485-93d408b7ffe9.html",
+"text": "7.7. Centering",
+"class": "topic-link"
+,
+"children": [
+{
+"url": "UUID-a0610627-3e13-8f09-a2f4-3198eaf712d3.html",
+"text": "Contours",
+"class": "topic-link"
+},
+{
+"url": "UUID-4261f816-ac40-1158-7730-6d597c892ab4.html",
+"text": "Parameters",
+"class": "topic-link"
+},
+{
+"url": "UUID-879c8bf3-1743-5a01-4bc4-97225fab2433.html",
+"text": "Boundary",
+"class": "topic-link"
+},
+{
+"url": "UUID-3203a8d0-e870-816c-caef-78b90471376f.html",
+"text": "Setup",
+"class": "topic-link"
+}]
+},
+{
+"url": "UUID-8525c084-a1cf-5f02-0359-94da16b7706d.html",
+"text": "7.8. Simple Drilling",
+"class": "topic-link"
+,
+"children": [
+{
+"url": "UUID-8d261e29-5952-3b10-14d6-f0cf6f1ae99c.html",
+"text": "Contours",
+"class": "topic-link"
+},
+{
+"url": "UUID-844da8db-a229-5394-2450-9b4551e020d4.html",
+"text": "Optimization",
+"class": "topic-link"
+},
+{
+"url": "UUID-ee7bcefb-2784-0591-b6a9-e6afec8b11e7.html",
+"text": "Parameters",
+"class": "topic-link"
+},
+{
+"url": "UUID-74ad74a7-1b49-ea40-332c-2738d915dd53.html",
+"text": "Boundary",
+"class": "topic-link"
+},
+{
+"url": "UUID-21436181-4cbd-30f7-9971-b9a9593241f4.html",
+"text": "Setup",
+"class": "topic-link"
+}]
+},
+{
+"url": "UUID-542fb07f-2d75-dd94-4657-36e2198887b4.html",
+"text": "7.9. Drilling with Chip Break",
+"class": "topic-link"
+,
+"children": [
+{
+"url": "UUID-7f9a4221-dc9e-a86e-1078-92571d786f2a.html",
+"text": "Contours",
+"class": "topic-link"
+},
+{
+"url": "UUID-a3b77356-0c9f-c2e6-4b7f-4ad92f096ed3.html",
+"text": "Optimization",
+"class": "topic-link"
+},
+{
+"url": "UUID-fa2aace1-fd18-c230-cd67-d0d96f2dee82.html",
+"text": "Parameters",
+"class": "topic-link"
+},
+{
+"url": "UUID-f92d03a0-b792-c56e-7190-946b1e6eb1d4.html",
+"text": "Boundary",
+"class": "topic-link"
+},
+{
+"url": "UUID-85539630-623c-a1ee-64f2-67d6571b382c.html",
+"text": "Setup",
+"class": "topic-link"
+}]
+},
+{
+"url": "UUID-9a83c332-3a21-3466-bcbd-af0175a133e1.html",
+"text": "7.10. Drilling with Pecking",
+"class": "topic-link"
+,
+"children": [
+{
+"url": "UUID-37b79416-3fdb-8fee-9eb5-5c0729e6eed0.html",
+"text": "Contours",
+"class": "topic-link"
+},
+{
+"url": "UUID-51e4698f-99a5-4f57-0289-fe24004dd160.html",
+"text": "Optimization",
+"class": "topic-link"
+},
+{
+"url": "UUID-780e3cbb-dddd-4c18-6169-6c3193868fcf.html",
+"text": "Parameters",
+"class": "topic-link"
+},
+{
+"url": "UUID-daaeb207-2133-8f12-2310-1f7bfcce962c.html",
+"text": "Boundary",
+"class": "topic-link"
+},
+{
+"url": "UUID-ed9acba6-a5bb-cd8f-3a96-7c6cfade7c5b.html",
+"text": "Setup",
+"class": "topic-link"
+}]
+},
+{
+"url": "UUID-a9a459c6-334f-d2b9-62b7-6eb84823c7c2.html",
+"text": "7.11. Optimized deep Hole Drilling (old)",
+"class": "topic-link"
+,
+"children": [
+{
+"url": "UUID-84e71251-083f-b0bb-0a26-d46787e5e01b.html",
+"text": "Tool",
+"class": "topic-link"
+},
+{
+"url": "UUID-39bd99a1-3f2d-173f-a927-f4c8a135435c.html",
+"text": "Contours",
+"class": "topic-link"
+},
+{
+"url": "UUID-7cf80fb3-0ab0-038f-0286-a588f875a4cd.html",
+"text": "Optimization",
+"class": "topic-link"
+},
+{
+"url": "UUID-8283d85c-ca03-3cd7-6c07-c3265344f962.html",
+"text": "Parameters",
+"class": "topic-link"
+},
+{
+"url": "UUID-011f7bae-51e5-d5cd-a385-2dd607e9bb63.html",
+"text": "Boundary",
+"class": "topic-link"
+},
+{
+"url": "UUID-4de76283-15c8-4a24-509a-7f72eb5d00ed.html",
+"text": "Setup",
+"class": "topic-link"
+}]
+},
+{
+"url": "UUID-1789dd58-ff71-d3ee-29f5-72f2628fb15d.html",
+"text": "7.12. Optimized deep Hole Drilling",
+"class": "topic-link"
+,
+"children": [
+{
+"url": "UUID-c10bd9af-26a0-9940-6765-40d3299fca60.html",
+"text": "Process",
+"class": "topic-link"
+},
+{
+"url": "UUID-21a06893-31f1-9f2d-3154-ab534acc5bde.html",
+"text": "Parameters",
+"class": "topic-link"
+},
+{
+"url": "UUID-84e9a238-5332-d286-cd07-12f04e976e53.html",
+"text": "Setup",
+"class": "topic-link"
+}]
+},
+{
+"url": "UUID-9e550e0f-5010-769b-6f7c-6e30568693af.html",
+"text": "7.13. Reaming",
+"class": "topic-link"
+,
+"children": [
+{
+"url": "UUID-51eadc4a-5d38-efd5-9bdb-8f93cf9e43af.html",
+"text": "Contours",
+"class": "topic-link"
+},
+{
+"url": "UUID-d5dd66e5-06dc-4812-6032-a18cd49c3dae.html",
+"text": "Optimization",
+"class": "topic-link"
+},
+{
+"url": "UUID-ee25b7d5-33c8-5d1d-a376-0cc04a2d3fe0.html",
+"text": "Parameters",
+"class": "topic-link"
+},
+{
+"url": "UUID-6036d029-4aeb-31ea-bfe4-468cb8f4c645.html",
+"text": "Boundary",
+"class": "topic-link"
+},
+{
+"url": "UUID-3d253ff4-bf09-6210-0134-2734b2bf59c1.html",
+"text": "Setup",
+"class": "topic-link"
+}]
+},
+{
+"url": "UUID-d0dd7380-81b7-fe32-df8a-505f329c561f.html",
+"text": "7.14. Tapping",
+"class": "topic-link"
+,
+"children": [
+{
+"url": "UUID-63dfdb54-01ae-85d9-8923-513f16b80011.html",
+"text": "Contours",
+"class": "topic-link"
+},
+{
+"url": "UUID-1b98f498-c421-0f98-806c-5a7d0db50113.html",
+"text": "Optimization",
+"class": "topic-link"
+},
+{
+"url": "UUID-0d018627-91f4-69d6-7a80-c6508eb7ba84.html",
+"text": "Parameters",
+"class": "topic-link"
+},
+{
+"url": "UUID-71cedd0f-cf91-fe3f-2208-9a732b3af4f8.html",
+"text": "Boundary",
+"class": "topic-link"
+},
+{
+"url": "UUID-607abe1e-b600-a679-bb3b-4bac5965eb32.html",
+"text": "Setup",
+"class": "topic-link"
+}]
+},
+{
+"url": "UUID-7ca70c31-255c-5ab9-d21c-dd41240a5ce2.html",
+"text": "7.15. Boring",
+"class": "topic-link"
+,
+"children": [
+{
+"url": "UUID-ab9265c8-0976-70cc-5e4b-3d1dcf265bc4.html",
+"text": "Contours",
+"class": "topic-link"
+},
+{
+"url": "UUID-7ec5d3df-046a-ee49-d838-74b5959f0750.html",
+"text": "Optimization",
+"class": "topic-link"
+},
+{
+"url": "UUID-0ffc57bc-1670-a77c-0d4c-f72bef7407f8.html",
+"text": "Parameters",
+"class": "topic-link"
+},
+{
+"url": "UUID-71f78026-81c4-8baf-a38e-ebfcaf818953.html",
+"text": "Boundary",
+"class": "topic-link"
+},
+{
+"url": "UUID-13a826ae-e15a-6d33-7489-a8437257dc8a.html",
+"text": "Setup",
+"class": "topic-link"
+}]
+},
+{
+"url": "UUID-9455d043-423b-dce4-4a61-5523332453b0.html",
+"text": "7.16. Back Boring",
+"class": "topic-link"
+,
+"children": [
+{
+"url": "UUID-f2147724-ebf5-4b53-d277-7c3aa43bcff8.html",
+"text": "Tool",
+"class": "topic-link"
+},
+{
+"url": "UUID-bd55c3ab-a197-ba7f-129d-a0f34ddd14fe.html",
+"text": "Contours",
+"class": "topic-link"
+},
+{
+"url": "UUID-3a0b4725-ca90-7762-e1ca-27ed924218cc.html",
+"text": "Optimization",
+"class": "topic-link"
+},
+{
+"url": "UUID-fbdafd2a-1417-7a81-f55b-7f40f04275f9.html",
+"text": "Process",
+"class": "topic-link"
+},
+{
+"url": "UUID-1247eb02-e369-f899-1a40-5a672d7d9699.html",
+"text": "Parameters",
+"class": "topic-link"
+},
+{
+"url": "UUID-2cc41023-1ffd-46a6-4338-38eb5b554402.html",
+"text": "Boundary",
+"class": "topic-link"
+},
+{
+"url": "UUID-3c887455-3636-0f46-7168-5672ba729d30.html",
+"text": "Setup",
+"class": "topic-link"
+}]
+},
+{
+"url": "UUID-fe7735ce-b11d-426f-f8d7-38b63ec0f16c.html",
+"text": "7.17. Helical Drilling",
+"class": "topic-link"
+,
+"children": [
+{
+"url": "UUID-3c81bf02-0138-488f-8dd4-befde647e815.html",
+"text": "Tool",
+"class": "topic-link"
+},
+{
+"url": "UUID-b26dfe40-e81f-5efc-8748-857a3642937a.html",
+"text": "Contours",
+"class": "topic-link"
+},
+{
+"url": "UUID-052b74aa-ba59-2c0a-dd53-666b0da4f9d2.html",
+"text": "Optimization",
+"class": "topic-link"
+},
+{
+"url": "UUID-5d5f0ca6-653f-1996-618c-a76b7d2ecb25.html",
+"text": "Parameters",
+"class": "topic-link"
+},
+{
+"url": "UUID-cd4b42f3-902f-90ba-65fe-3c609146c2f4.html",
+"text": "Boundary",
+"class": "topic-link"
+},
+{
+"url": "UUID-85082f4b-dd14-1ab4-2d38-f7f1f2655a4e.html",
+"text": "Setup",
+"class": "topic-link"
+}]
+},
+{
+"url": "UUID-c35269b5-dab1-b535-958b-f20e6666982c.html",
+"text": "7.18. Thread Milling",
+"class": "topic-link"
+,
+"children": [
+{
+"url": "UUID-9a80c7ca-0210-3d58-586c-3a18c766a10b.html",
+"text": "Tool",
+"class": "topic-link"
+},
+{
+"url": "UUID-e6277e14-aef9-3da0-a905-5f1655fc8c3c.html",
+"text": "Contours",
+"class": "topic-link"
+},
+{
+"url": "UUID-1efdc41e-bcb7-8a71-2c6a-f7c126dc2fe5.html",
+"text": "Optimization",
+"class": "topic-link"
+},
+{
+"url": "UUID-4791c5e0-b738-f033-1090-d058ef9529af.html",
+"text": "Parameters",
+"class": "topic-link"
+},
+{
+"url": "UUID-62bcb99c-6bdf-bc1a-d02d-bcec647462c0.html",
+"text": "Roughing \/ Finishing",
+"class": "topic-link"
+},
+{
+"url": "UUID-306ad4a8-32b9-da26-605b-a4ba6b82fdd9.html",
+"text": "Macros",
+"class": "topic-link"
+},
+{
+"url": "UUID-1d7a9fb4-5edd-a68c-d4f2-a4a5c2c4ca15.html",
+"text": "Boundary",
+"class": "topic-link"
+},
+{
+"url": "UUID-a34e881e-8e40-2b69-a981-5217405868e8.html",
+"text": "Setup",
+"class": "topic-link"
+}]
+},
+{
+"url": "UUID-06ff0e93-8e73-5bc5-4512-fdb9bd2eaf47.html",
+"text": "7.19. Circular Pocket",
+"class": "topic-link"
+,
+"children": [
+{
+"url": "UUID-b52996a0-a524-db2f-76b5-4c5e2b99b8ad.html",
+"text": "Contours",
+"class": "topic-link"
+},
+{
+"url": "UUID-48c3fc2d-6be3-10f0-dd1e-31ad64319fb3.html",
+"text": "Optimization",
+"class": "topic-link"
+},
+{
+"url": "UUID-13c1ead5-b0c2-7f83-216b-dc3edd7fad65.html",
+"text": "Boundary",
+"class": "topic-link"
+},
+{
+"url": "UUID-26352d05-7486-e814-0470-0fe2e4976a4e.html",
+"text": "Setup",
+"class": "topic-link"
+}]
+},
+{
+"url": "UUID-a59d33e0-28f1-4039-6d3a-464c75494fb9.html",
+"text": "7.20. Gun Drilling",
+"class": "topic-link"
+,
+"children": [
+{
+"url": "UUID-958748a3-4239-ff9e-bf5b-7e2636775f2c.html",
+"text": "Parameters",
+"class": "topic-link"
+}]
+},
+{
+"url": "UUID-203bcab8-ac32-9f8f-f498-7a97802dc4b3.html",
+"text": "7.21. 5X Helical Drilling (MAXX Machining)",
+"class": "topic-link"
+,
+"children": [
+{
+"url": "UUID-fc74290b-ea59-d787-53ea-f4deb28344be.html",
+"text": "Tools",
+"class": "topic-link"
+},
+{
+"url": "UUID-a142dcf8-3c29-e721-34cc-c2708f45885e.html",
+"text": "Contours",
+"class": "topic-link"
+},
+{
+"url": "UUID-5fbb232b-2540-81ba-8e76-3914643159cb.html",
+"text": "Optimization",
+"class": "topic-link"
+},
+{
+"url": "UUID-67b24784-c290-545c-4bdb-9d751517be96.html",
+"text": "Parameters",
+"class": "topic-link"
+},
+{
+"url": "UUID-69eac50a-f0f7-98d0-9985-98e09c160173.html",
+"text": "5 axes",
+"class": "topic-link"
+},
+{
+"url": "UUID-7fa0a082-fa9f-6eba-7557-0fd1ce417393.html",
+"text": "Setup",
+"class": "topic-link"
+}]
+},
+{
+"url": "UUID-93036b17-cbf5-5cce-29f5-8b44854540dc.html",
+"text": "7.22. Hole Brushing",
+"class": "topic-link"
+,
+"children": [
+{
+"url": "UUID-885cd789-7cfc-aba2-6242-858a3c9b6219.html",
+"text": "Contours",
+"class": "topic-link"
+},
+{
+"url": "UUID-e07f8608-c5a4-fa27-a7fe-569f16701a1d.html",
+"text": "Parameters",
+"class": "topic-link"
+},
+{
+"url": "UUID-ef7541cc-e888-6de5-c2af-cbba3b641cf3.html",
+"text": "Setup",
+"class": "topic-link"
+}]
+}]
+},
+{
+"url": "UUID-612ff4af-5647-71ca-6f1a-13a869fc43ff.html",
+"text": "8. Jig grinding",
+"class": "topic-link"
+,
+"children": [
+{
+"url": "UUID-ae96f223-595f-7001-6f5d-73dc9839de92.html",
+"text": "8.1. Available machining cycles",
+"class": "topic-link"
+},
+{
+"url": "UUID-728849ad-93ad-d48e-1bbe-5c05c167a32a.html",
+"text": "8.2. Hole Grinding",
+"class": "topic-link"
+,
+"children": [
+{
+"url": "UUID-e41236d8-6404-b412-6366-203ab83d5b84.html",
+"text": "Tool",
+"class": "topic-link"
+},
+{
+"url": "UUID-19c000aa-6e5c-1ae1-449b-864d93081770.html",
+"text": "Contours",
+"class": "topic-link"
+},
+{
+"url": "UUID-27bcdcef-403d-d204-0c60-4b940aa61429.html",
+"text": "Optimization",
+"class": "topic-link"
+},
+{
+"url": "UUID-9a15d5e3-0035-d878-6672-21d332312596.html",
+"text": "Parameters",
+"class": "topic-link"
+},
+{
+"url": "UUID-9cf2e914-2a72-1dd5-60fc-eeab79f94860.html",
+"text": "Boundary",
+"class": "topic-link"
+},
+{
+"url": "UUID-d461c6b8-e8e3-77ba-1221-5dafbfa2af3a.html",
+"text": "Setup",
+"class": "topic-link"
+}]
+},
+{
+"url": "UUID-0d833015-a270-0c07-1516-287605b02801.html",
+"text": "8.3. 2D Contour Grinding on 3D Model",
+"class": "topic-link"
+,
+"children": [
+{
+"url": "UUID-731fd959-4cea-9316-7518-ddeb4db35718.html",
+"text": "Tool",
+"class": "topic-link"
+},
+{
+"url": "UUID-69afdc39-dbb9-f318-2751-d00aedb83aca.html",
+"text": "Contours",
+"class": "topic-link"
+},
+{
+"url": "UUID-0dbf80e9-9196-8964-877e-d25daab40296.html",
+"text": "Strategy",
+"class": "topic-link"
+},
+{
+"url": "UUID-1eebb161-23c2-b57a-e684-347850721be1.html",
+"text": "Parameters",
+"class": "topic-link"
+},
+{
+"url": "UUID-e2494ab9-3232-cf89-bb8e-d9cabf2afdca.html",
+"text": "Boundary",
+"class": "topic-link"
+},
+{
+"url": "UUID-d909987d-37db-bc12-25d5-0d35eb0bf14f.html",
+"text": "Macros",
+"class": "topic-link"
+},
+{
+"url": "UUID-fff90bdc-834e-ec9a-3f53-17f1caa5b7b8.html",
+"text": "Setup",
+"class": "topic-link"
+}]
+}]
+},
+{
+"url": "UUID-afd1a7c2-b2fe-2ba0-9ef0-962197581f36.html",
+"text": "9. 2D Machining",
+"class": "topic-link"
+,
+"children": [
+{
+"url": "UUID-248350b7-ac3c-01e3-2463-db52db1f75b0.html",
+"text": "9.2. General information",
+"class": "topic-link"
+,
+"children": [
+{
+"url": "UUID-4b815491-561d-eb25-3227-8e28a9452d65.html",
+"text": "Tools",
+"class": "topic-link"
+},
+{
+"url": "UUID-e0ceb0bd-5373-93a6-9e1f-a176d16240de.html",
+"text": "Contours",
+"class": "topic-link"
+},
+{
+"url": "UUID-1da712a9-2cb2-fee1-1e5b-d1336cc1696d.html",
+"text": "Parameters",
+"class": "topic-link"
+},
+{
+"url": "UUID-134f1d9e-6d7b-d23b-190b-de545e1c0a65.html",
+"text": "Macros",
+"class": "topic-link"
+},
+{
+"url": "UUID-2f753030-676f-66d4-28fa-2b502d70dcf9.html",
+"text": "Setup",
+"class": "topic-link"
+}]
+},
+{
+"url": "UUID-c297482c-dff2-d6d9-f472-fa824aa66d83.html",
+"text": "9.3. Pocket Milling",
+"class": "topic-link"
+,
+"children": [
+{
+"url": "UUID-2ecf5895-1505-9b59-f966-abc85410e20c.html",
+"text": "Contours",
+"class": "topic-link"
+},
+{
+"url": "UUID-8cb86109-d459-1410-74d1-deb945e256fc.html",
+"text": "Strategy",
+"class": "topic-link"
+},
+{
+"url": "UUID-93f6c0f2-70ee-bfda-587d-48c4bd8a13fb.html",
+"text": "Parameters",
+"class": "topic-link"
+},
+{
+"url": "UUID-ff5e799b-7b26-35d8-63d8-af99d9daf33a.html",
+"text": "High Performance",
+"class": "topic-link"
+},
+{
+"url": "UUID-8af4a85f-4b9f-8be5-db29-447544419318.html",
+"text": "Macros",
+"class": "topic-link"
+},
+{
+"url": "UUID-21d0b858-0295-71d2-1bfc-69662974b290.html",
+"text": "Setup",
+"class": "topic-link"
+}]
+},
+{
+"url": "UUID-b1c5633f-b5ca-9343-9eec-bb189d4ad53a.html",
+"text": "9.4. Contour Milling",
+"class": "topic-link"
+,
+"children": [
+{
+"url": "UUID-33f11bca-6822-0341-6000-333a4453d884.html",
+"text": "Tool",
+"class": "topic-link"
+},
+{
+"url": "UUID-0b401169-8417-c6df-3e3c-222e0f805eaa.html",
+"text": "Contours",
+"class": "topic-link"
+},
+{
+"url": "UUID-06d509bf-b9ee-8e71-bf83-bb211c35d333.html",
+"text": "Parameters",
+"class": "topic-link"
+},
+{
+"url": "UUID-fd84f349-8794-4f68-2d01-636156401613.html",
+"text": "Macros",
+"class": "topic-link"
+},
+{
+"url": "UUID-dd5fdd66-5e75-0eb4-fe37-5c4909461e69.html",
+"text": "Setup",
+"class": "topic-link"
+}]
+},
+{
+"url": "UUID-67278453-3205-62c2-f6a4-7dd1997a4523.html",
+"text": "9.5. Contour Milling on 3D Model",
+"class": "topic-link"
+,
+"children": [
+{
+"url": "UUID-4d888c29-da9c-fa40-2bb0-286c03f177f7.html",
+"text": "Tool",
+"class": "topic-link"
+},
+{
+"url": "UUID-0a45f60f-e830-edde-dd62-4c9ac9ed4d8a.html",
+"text": "Contours",
+"class": "topic-link"
+},
+{
+"url": "UUID-49fcdf94-3320-4eeb-3d6d-68179ac22d7f.html",
+"text": "Strategy",
+"class": "topic-link"
+},
+{
+"url": "UUID-b83cd4b9-3deb-687f-8db2-bc8dad2390e1.html",
+"text": "Parameters",
+"class": "topic-link"
+},
+{
+"url": "UUID-b912a9ba-2dad-e6b0-ca31-6d3a8b34752d.html",
+"text": "Boundary",
+"class": "topic-link"
+},
+{
+"url": "UUID-4a950d6a-c150-3fa2-ba75-71b2eabb78a2.html",
+"text": "Macros",
+"class": "topic-link"
+},
+{
+"url": "UUID-001538ed-0c5e-11e2-d6a9-e2d27f80faba.html",
+"text": "Setup",
+"class": "topic-link"
+}]
+},
+{
+"url": "UUID-107a4a64-531a-ed80-cb2d-2e949c7f52e0.html",
+"text": "9.6. T-Slot Milling on 3D Model",
+"class": "topic-link"
+,
+"children": [
+{
+"url": "UUID-726aadfb-5fa8-8615-0280-2548f162c423.html",
+"text": "Tool",
+"class": "topic-link"
+},
+{
+"url": "UUID-9b896f80-89e7-3e23-3fc0-49832177da19.html",
+"text": "Contours",
+"class": "topic-link"
+},
+{
+"url": "UUID-7463ea44-cb92-b314-da0b-63211007de2f.html",
+"text": "Strategy",
+"class": "topic-link"
+},
+{
+"url": "UUID-87698fb8-43bf-348d-b523-563c73bc7034.html",
+"text": "Parameters",
+"class": "topic-link"
+},
+{
+"url": "UUID-c65b9c49-e15e-59ef-f54c-a4ff4b0a752b.html",
+"text": "Boundary",
+"class": "topic-link"
+},
+{
+"url": "UUID-88dace29-b42d-b2a5-1437-0b3b9f8f6dc9.html",
+"text": "Macros",
+"class": "topic-link"
+},
+{
+"url": "UUID-4534599f-8df6-4420-e26d-59c9608fc4b5.html",
+"text": "Setup",
+"class": "topic-link"
+}]
+},
+{
+"url": "UUID-4a20930a-2be4-72a4-f585-975a410c533f.html",
+"text": "9.7. Chamfer Milling on 3D Model",
+"class": "topic-link"
+,
+"children": [
+{
+"url": "UUID-b8052176-2c93-487d-80a7-04333410d902.html",
+"text": "Tool",
+"class": "topic-link"
+},
+{
+"url": "UUID-5e816378-adba-5fdb-7c80-0f4332c76b49.html",
+"text": "Contours",
+"class": "topic-link"
+},
+{
+"url": "UUID-6271641d-cc8f-0e86-516a-4fa9316339bc.html",
+"text": "Strategy",
+"class": "topic-link"
+},
+{
+"url": "UUID-ae1ce8a6-ed49-9634-858a-7690adda7042.html",
+"text": "Parameters",
+"class": "topic-link"
+},
+{
+"url": "UUID-7dda1153-9c79-5ac5-2c9a-b7a926c97984.html",
+"text": "Boundary",
+"class": "topic-link"
+},
+{
+"url": "UUID-e271c387-9510-3526-7b92-e4b83b1330ad.html",
+"text": "Macros",
+"class": "topic-link"
+},
+{
+"url": "UUID-1e1b5740-88dd-66f4-09d1-9103351c9ca4.html",
+"text": "Setup",
+"class": "topic-link"
+}]
+},
+{
+"url": "UUID-5ba5680b-c9d7-44b7-637d-e8bbdbd50372.html",
+"text": "9.8. Inclined Contouring",
+"class": "topic-link"
+,
+"children": [
+{
+"url": "UUID-560f3645-e21d-4895-1d1d-a01b04687cf0.html",
+"text": "Contours",
+"class": "topic-link"
+},
+{
+"url": "UUID-1e64feda-f237-ae1a-cfbd-cee8858bd200.html",
+"text": "Parameters",
+"class": "topic-link"
+},
+{
+"url": "UUID-4d37bd86-c85f-667b-a6d4-17bb12477da7.html",
+"text": "Macros",
+"class": "topic-link"
+},
+{
+"url": "UUID-a6b97bef-1545-06b1-bc67-12a69da9532d.html",
+"text": "Setup",
+"class": "topic-link"
+}]
+},
+{
+"url": "UUID-e7be34be-d42a-bc4a-b870-93c3f6ff8be5.html",
+"text": "9.9. Inclined Pocketing",
+"class": "topic-link"
+,
+"children": [
+{
+"url": "UUID-c72bdc0c-1c20-6794-4446-eedf3bcc23c8.html",
+"text": "Contours",
+"class": "topic-link"
+},
+{
+"url": "UUID-0ea6cc21-debb-5cd8-dfe0-1d7153d9c704.html",
+"text": "Parameters",
+"class": "topic-link"
+},
+{
+"url": "UUID-8f9f6af7-e8d9-89ae-244e-c9d46c1b9685.html",
+"text": "Macros",
+"class": "topic-link"
+},
+{
+"url": "UUID-093cf981-870c-eade-c10a-a887a4b5508b.html",
+"text": "Setup",
+"class": "topic-link"
+}]
+},
+{
+"url": "UUID-3337e3f6-fce7-770d-b80d-d7524f40ed2a.html",
+"text": "9.10. Rectangular Pocket",
+"class": "topic-link"
+,
+"children": [
+{
+"url": "UUID-66212c59-fba1-057c-dbc0-ee591d05cfe4.html",
+"text": "Contours",
+"class": "topic-link"
+},
+{
+"url": "UUID-a8eac8d7-5b7a-a3f2-fd31-9f19469fef91.html",
+"text": "Parameters",
+"class": "topic-link"
+},
+{
+"url": "UUID-3a99e9ee-5e48-f9ee-f03a-ac7713303712.html",
+"text": "Setup",
+"class": "topic-link"
+}]
+},
+{
+"url": "UUID-b4e37e8b-7a49-6a68-1d89-ac292b274ab1.html",
+"text": "9.11. Rest Machining",
+"class": "topic-link"
+,
+"children": [
+{
+"url": "UUID-d0b8f2c9-89d9-157a-3bd8-009eec92e320.html",
+"text": "Tool",
+"class": "topic-link"
+},
+{
+"url": "UUID-4c574337-8ba3-32ea-9a35-09baf4691a28.html",
+"text": "Contours",
+"class": "topic-link"
+},
+{
+"url": "UUID-6f209b41-6962-5380-73ae-a4b8b4bbb05c.html",
+"text": "Parameters",
+"class": "topic-link"
+},
+{
+"url": "UUID-6f58d79c-66d7-8609-3e41-736a73339ca8.html",
+"text": "Setup",
+"class": "topic-link"
+}]
+},
+{
+"url": "UUID-f0b8aa79-69ed-2161-99bd-ff1edb67f5cc.html",
+"text": "9.12. Face Milling",
+"class": "topic-link"
+,
+"children": [
+{
+"url": "UUID-78c3ee19-e3da-262d-f04b-b96480ae636c.html",
+"text": "Contours",
+"class": "topic-link"
+},
+{
+"url": "UUID-03a5f222-14dd-98f7-d17c-86252839362f.html",
+"text": "Parameters",
+"class": "topic-link"
+},
+{
+"url": "UUID-980a66db-15d5-f247-c0c0-7aff133cebf1.html",
+"text": "Setup",
+"class": "topic-link"
+}]
+},
+{
+"url": "UUID-67de6c84-f96d-4903-f235-63b8760674e3.html",
+"text": "9.13. Playback Milling",
+"class": "topic-link"
+,
+"children": [
+{
+"url": "UUID-a278fec5-56b5-ee7c-7ceb-9d9c10ed8cbb.html",
+"text": "Contours",
+"class": "topic-link"
+},
+{
+"url": "UUID-8ca53ffd-76fb-d7d8-cc5b-3f88cec37715.html",
+"text": "Strategy",
+"class": "topic-link"
+},
+{
+"url": "UUID-748ab571-73b1-9e9c-856c-aa8e10d8db9f.html",
+"text": "Parameters",
+"class": "topic-link"
+},
+{
+"url": "UUID-e4319b5c-db11-e208-2761-c83d329f2825.html",
+"text": "Macros",
+"class": "topic-link"
+},
+{
+"url": "UUID-f3206205-ae69-e233-cbca-58cea08b464f.html",
+"text": "Setup",
+"class": "topic-link"
+}]
+},
+{
+"url": "UUID-f298cfaa-09f6-5430-8152-1d2d5b748e16.html",
+"text": "9.14. Plunge Milling",
+"class": "topic-link"
+,
+"children": [
+{
+"url": "UUID-ab016dc1-9329-fc4e-76cf-9aaedd1f1302.html",
+"text": "Tool",
+"class": "topic-link"
+},
+{
+"url": "UUID-096a03a0-b99e-8703-7d88-e6eadb987204.html",
+"text": "Contours",
+"class": "topic-link"
+},
+{
+"url": "UUID-2a4a6116-1b8f-b411-d6d0-f73e9f368b94.html",
+"text": "Strategy",
+"class": "topic-link"
+},
+{
+"url": "UUID-103ce021-16b1-7302-88ef-86564d2e6a22.html",
+"text": "Parameters",
+"class": "topic-link"
+},
+{
+"url": "UUID-467168b6-6eab-af57-930c-47987e86e359.html",
+"text": "Macros",
+"class": "topic-link"
+},
+{
+"url": "UUID-f0d5a4a3-d706-f56a-adaf-188d40e87a63.html",
+"text": "Setup",
+"class": "topic-link"
+}]
+}]
+},
+{
+"url": "UUID-4c32e00e-243c-8e49-1e15-a8a644637a71.html",
+"text": "10. 3D Machining",
+"class": "topic-link"
+,
+"children": [
+{
+"url": "UUID-8b25eecd-d68b-239b-ddd2-6c7ad03368fb.html",
+"text": "10.2. 3D collision check",
+"class": "topic-link"
+},
+{
+"url": "UUID-bfd9c96f-5b4d-331b-f148-4ef84144e64f.html",
+"text": "10.3. Parameters",
+"class": "topic-link"
+},
+{
+"url": "UUID-38254cf0-224d-0895-1539-e8a26cb7bb12.html",
+"text": "10.4. Strategy parameters",
+"class": "topic-link"
+},
+{
+"url": "UUID-3529a6cc-e2c2-d547-2090-720559f97f9b.html",
+"text": "10.5. Boundary",
+"class": "topic-link"
+,
+"children": [
+{
+"url": "UUID-d9a2b2db-a14c-214f-8568-5fe976bd0ce3.html",
+"text": "Strategy",
+"class": "topic-link"
+}]
+},
+{
+"url": "UUID-1891d0f7-c195-3c9e-1eca-9d27add0424d.html",
+"text": "10.6. Macros",
+"class": "topic-link"
+},
+{
+"url": "UUID-aea4c8ea-b6b4-2fe7-3e51-04b3284d4785.html",
+"text": "10.7. Setup",
+"class": "topic-link"
+},
+{
+"url": "UUID-a0196934-2851-097b-8e4b-d711317dda71.html",
+"text": "10.8. Optimized Roughing",
+"class": "topic-link"
+,
+"children": [
+{
+"url": "UUID-37c38b5f-180b-2986-f9a2-85e55e72c8b4.html",
+"text": "Tool",
+"class": "topic-link"
+},
+{
+"url": "UUID-3399c76c-6750-2093-f781-f932770bad80.html",
+"text": "Strategy",
+"class": "topic-link"
+},
+{
+"url": "UUID-59009195-8713-20a8-1181-a398340763f7.html",
+"text": "Parameters",
+"class": "topic-link"
+},
+{
+"url": "UUID-e7bba225-11e8-e9b6-a568-e1ea11ed6c91.html",
+"text": "High Performance",
+"class": "topic-link"
+},
+{
+"url": "UUID-bbdff5fd-6eaa-8a17-fa96-5f000302477c.html",
+"text": "Boundary",
+"class": "topic-link"
+},
+{
+"url": "UUID-7a9ba730-2236-1e56-696f-ebe72f65e027.html",
+"text": "Macros",
+"class": "topic-link"
+},
+{
+"url": "UUID-953539c0-9b42-486d-ecbd-88af7799ee0c.html",
+"text": "Setup",
+"class": "topic-link"
+}]
+},
+{
+"url": "UUID-d374eff6-a048-f99f-c2cf-73dcbb03ea42.html",
+"text": "10.9. Profile Finishing",
+"class": "topic-link"
+,
+"children": [
+{
+"url": "UUID-ea15bfde-07a7-f0f4-c34c-c2627ceeaeb9.html",
+"text": "Tools",
+"class": "topic-link"
+},
+{
+"url": "UUID-95f962ec-2406-d5e7-d343-a8131b8eb8a5.html",
+"text": "Strategy",
+"class": "topic-link"
+},
+{
+"url": "UUID-f00226bb-f1ef-3d31-c721-34012f470d36.html",
+"text": "Parameters",
+"class": "topic-link"
+},
+{
+"url": "UUID-3a58c18f-d688-b865-d2a7-967ea9a5a523.html",
+"text": "Boundary",
+"class": "topic-link"
+},
+{
+"url": "UUID-c937be71-cfff-cc13-715c-e64680d913f7.html",
+"text": "Macros",
+"class": "topic-link"
+},
+{
+"url": "UUID-2c72b144-d0ec-7c5c-a591-16494117fdd8.html",
+"text": "Setup",
+"class": "topic-link"
+}]
+},
+{
+"url": "UUID-3dc1209c-5655-bb50-7aa4-17ad8a143f7a.html",
+"text": "10.10. Z Level Shape Finishing",
+"class": "topic-link"
+,
+"children": [
+{
+"url": "UUID-5c63e2ea-17be-3f07-e398-177f0dd25e69.html",
+"text": "Tools",
+"class": "topic-link"
+},
+{
+"url": "UUID-67f71c41-3d4c-8d37-13ac-8ae8e0b0b11a.html",
+"text": "Strategy",
+"class": "topic-link"
+},
+{
+"url": "UUID-365e58d3-0c9e-a97b-3636-15ac6eb3dba2.html",
+"text": "Parameters",
+"class": "topic-link"
+},
+{
+"url": "UUID-c78da4ed-fd08-9fd5-df95-682ab8bf1666.html",
+"text": "Boundary",
+"class": "topic-link"
+},
+{
+"url": "UUID-e5be32cd-3a34-9a1d-30cc-399bdd6fce14.html",
+"text": "Macros",
+"class": "topic-link"
+},
+{
+"url": "UUID-53e9c9fe-226a-4b05-bb36-3b75405f1b73.html",
+"text": "Setup",
+"class": "topic-link"
+}]
+},
+{
+"url": "UUID-9827273a-c0c0-c4a2-0458-b9aefb957e46.html",
+"text": "10.11. Iso machining",
+"class": "topic-link"
+,
+"children": [
+{
+"url": "UUID-bf3c3b6c-fca6-ac82-e74b-6160164de6b3.html",
+"text": "Tools",
+"class": "topic-link"
+},
+{
+"url": "UUID-9e6fe051-e3cc-fca2-3393-3700a8bf0400.html",
+"text": "Strategy",
+"class": "topic-link"
+},
+{
+"url": "UUID-553c0f36-6af4-19b6-053a-a4a947d724f7.html",
+"text": "Parameters",
+"class": "topic-link"
+},
+{
+"url": "UUID-fb484765-d6da-629c-723c-b0dc48fca122.html",
+"text": "Boundary",
+"class": "topic-link"
+},
+{
+"url": "UUID-79df9283-8dd1-6f54-4af5-a4c3e02b702f.html",
+"text": "Macros",
+"class": "topic-link"
+},
+{
+"url": "UUID-26b6e049-56c5-d83e-b25e-30744b88efe9.html",
+"text": "Setup",
+"class": "topic-link"
+}]
+},
+{
+"url": "UUID-5414b600-7934-4cc1-0bc4-676057e846e1.html",
+"text": "10.12. Free Path Milling",
+"class": "topic-link"
+,
+"children": [
+{
+"url": "UUID-7d7c07fe-ef8c-ef8d-6abc-95c15ee28e38.html",
+"text": "Tools",
+"class": "topic-link"
+},
+{
+"url": "UUID-0eb8a571-4979-44fc-a831-873ae8ed3091.html",
+"text": "Contours",
+"class": "topic-link"
+},
+{
+"url": "UUID-3ae271c3-67a3-941d-f930-8af9df56e8eb.html",
+"text": "Parameters",
+"class": "topic-link"
+},
+{
+"url": "UUID-903a4ced-0ff8-34cb-d14a-34deca3e22f1.html",
+"text": "Boundary",
+"class": "topic-link"
+},
+{
+"url": "UUID-0f3711bf-ec63-993a-5894-9fbe18ec1e09.html",
+"text": "Macros",
+"class": "topic-link"
+},
+{
+"url": "UUID-8f32f7f7-5df0-3e47-36d7-d946bf89ae90.html",
+"text": "Setup",
+"class": "topic-link"
+}]
+},
+{
+"url": "UUID-9d0f32a9-d88e-1537-b5bd-6e89abb308fe.html",
+"text": "10.13. Plane Machining",
+"class": "topic-link"
+,
+"children": [
+{
+"url": "UUID-43ec994b-6656-d266-3706-85bf6887fbcd.html",
+"text": "Tools",
+"class": "topic-link"
+},
+{
+"url": "UUID-92a5dba1-b72e-e488-e2e2-13a7f7a2bcae.html",
+"text": "Strategy",
+"class": "topic-link"
+},
+{
+"url": "UUID-484d4568-2205-db98-aff4-2aa920ab9fb5.html",
+"text": "Parameters",
+"class": "topic-link"
+},
+{
+"url": "UUID-4845db68-125f-2641-5195-715165506d9b.html",
+"text": "Boundary",
+"class": "topic-link"
+},
+{
+"url": "UUID-3237c730-da0b-35eb-058a-8f5e4f03dd53.html",
+"text": "Macros",
+"class": "topic-link"
+},
+{
+"url": "UUID-c1bf34d4-5615-20fa-00ee-4850d6da2598.html",
+"text": "Setup",
+"class": "topic-link"
+}]
+},
+{
+"url": "UUID-934002dc-e76f-cb5c-52ee-e7e4f7e3403d.html",
+"text": "10.14. Optimized Rest Machining",
+"class": "topic-link"
+,
+"children": [
+{
+"url": "UUID-311f6ffa-e6fe-3b54-5364-cf93133a958e.html",
+"text": "Tools",
+"class": "topic-link"
+},
+{
+"url": "UUID-b22d7504-7f02-9491-edd3-7f84096ea831.html",
+"text": "Strategy",
+"class": "topic-link"
+},
+{
+"url": "UUID-c4cbf496-1124-2825-a4cb-c48e5068b4f2.html",
+"text": "Parameters",
+"class": "topic-link"
+},
+{
+"url": "UUID-1fefc43c-e166-7fa1-9a3d-b08bb7649456.html",
+"text": "Boundary",
+"class": "topic-link"
+},
+{
+"url": "UUID-4238b23f-6868-cb92-7728-460714458e8d.html",
+"text": "Setup",
+"class": "topic-link"
+}]
+},
+{
+"url": "UUID-77540003-727f-557d-4770-c9d8c55957b2.html",
+"text": "10.15. Arbitrary Stock Roughing",
+"class": "topic-link"
+,
+"children": [
+{
+"url": "UUID-3b22ab36-15d5-142e-0646-da7da29367e7.html",
+"text": "Tools",
+"class": "topic-link"
+},
+{
+"url": "UUID-4e95a846-624a-9cc1-d029-fa8011067d08.html",
+"text": "Strategy",
+"class": "topic-link"
+},
+{
+"url": "UUID-1fa0a341-7383-955f-d794-a14ad4f72d71.html",
+"text": "Parameters",
+"class": "topic-link"
+},
+{
+"url": "UUID-b0de356f-bf07-f29d-d3da-8a6399f98557.html",
+"text": "High Performance",
+"class": "topic-link"
+},
+{
+"url": "UUID-919a09cd-1663-db19-20e1-0e4ec4ae0b21.html",
+"text": "Boundary",
+"class": "topic-link"
+},
+{
+"url": "UUID-d4d874a2-d1a6-801e-bdaf-bce3ef8b4de9.html",
+"text": "Macros",
+"class": "topic-link"
+},
+{
+"url": "UUID-1f5399b8-ed18-3056-73a6-3279df1473d9.html",
+"text": "Setup",
+"class": "topic-link"
+}]
+},
+{
+"url": "UUID-dfd08470-c6fe-8a6c-96e7-0763c4f4d472.html",
+"text": "10.16. Z Level Finishing",
+"class": "topic-link"
+,
+"children": [
+{
+"url": "UUID-ed04225c-8023-14ff-1f89-274e2cef2be8.html",
+"text": "Tools",
+"class": "topic-link"
+},
+{
+"url": "UUID-addeec95-bd0a-4102-91c3-33cc7d784481.html",
+"text": "Strategy",
+"class": "topic-link"
+},
+{
+"url": "UUID-652e1a6a-5418-1aef-048d-bfe7da7447fb.html",
+"text": "Parameters",
+"class": "topic-link"
+},
+{
+"url": "UUID-f0a23cab-e17a-de3f-d6dc-4fbec28b4925.html",
+"text": "Boundary",
+"class": "topic-link"
+},
+{
+"url": "UUID-4ade6af8-1273-f891-0ab5-6755d8474f7c.html",
+"text": "Macros",
+"class": "topic-link"
+},
+{
+"url": "UUID-2f675213-c249-b48d-44e0-eea6747a19b5.html",
+"text": "Setup",
+"class": "topic-link"
+}]
+},
+{
+"url": "UUID-e77676cc-6704-0d13-fedb-18b9ffbc3ff1.html",
+"text": "10.17. Complete Finishing",
+"class": "topic-link"
+,
+"children": [
+{
+"url": "UUID-62ea668c-354d-6810-0a66-239ab5810064.html",
+"text": "Tools",
+"class": "topic-link"
+},
+{
+"url": "UUID-c666980d-d0d0-460a-9ba8-1efdf125b9ca.html",
+"text": "Strategy",
+"class": "topic-link"
+},
+{
+"url": "UUID-fb94ee54-f1df-7b97-8bf7-b4e946abdc98.html",
+"text": "Parameters",
+"class": "topic-link"
+},
+{
+"url": "UUID-3db64ec7-a03a-7895-b233-9772bb5c0585.html",
+"text": "Boundary",
+"class": "topic-link"
+},
+{
+"url": "UUID-bae8d225-d602-ebb9-8a7f-a2ceebbb7f35.html",
+"text": "Macros",
+"class": "topic-link"
+},
+{
+"url": "UUID-1965bfc6-659e-f434-da5c-aed8c76740dd.html",
+"text": "Setup",
+"class": "topic-link"
+}]
+},
+{
+"url": "UUID-49263c17-1d94-4552-88fc-df113a9d5858.html",
+"text": "10.18. Equidistant Finishing",
+"class": "topic-link"
+,
+"children": [
+{
+"url": "UUID-f6cdc1d7-b234-aba6-51db-84dfc2bece2b.html",
+"text": "Tools",
+"class": "topic-link"
+},
+{
+"url": "UUID-01903db1-0b9e-a9dd-0df0-54f5264602e6.html",
+"text": "Strategy",
+"class": "topic-link"
+},
+{
+"url": "UUID-633f418a-9703-c8c3-764c-2dcb81e04c87.html",
+"text": "Parameters",
+"class": "topic-link"
+},
+{
+"url": "UUID-07bfb87b-b56c-9fa8-ae76-92dd4b7f6584.html",
+"text": "Boundary",
+"class": "topic-link"
+},
+{
+"url": "UUID-3eb36f72-baff-e15e-ce05-7ebfceab8269.html",
+"text": "Macros",
+"class": "topic-link"
+},
+{
+"url": "UUID-ea68f7f0-5077-a7c4-8faf-8c837afecd2b.html",
+"text": "Setup",
+"class": "topic-link"
+}]
+},
+{
+"url": "UUID-2abe0fd3-a226-03cf-1775-97477c840277.html",
+"text": "10.19. Automatic Rest Machining",
+"class": "topic-link"
+,
+"children": [
+{
+"url": "UUID-a094444f-92be-cba1-70c5-7196bc41730e.html",
+"text": "Tools",
+"class": "topic-link"
+},
+{
+"url": "UUID-d6b250cc-61c9-3ff0-d18e-770ce3805712.html",
+"text": "Strategy",
+"class": "topic-link"
+},
+{
+"url": "UUID-40a0f1db-edab-a518-934b-93370332dfd4.html",
+"text": "Parameters",
+"class": "topic-link"
+},
+{
+"url": "UUID-b2419fc5-851e-2ed8-bd7b-a30557b42d9b.html",
+"text": "Roughing",
+"class": "topic-link"
+},
+{
+"url": "UUID-f6d34fa6-1a07-58bf-6663-2b121d7a10e7.html",
+"text": "Boundary",
+"class": "topic-link"
+},
+{
+"url": "UUID-a88991a2-8cc9-ed17-8221-15c144e92663.html",
+"text": "Setup",
+"class": "topic-link"
+}]
+},
+{
+"url": "UUID-32d35677-66c1-0c35-c32d-782120773555.html",
+"text": "10.20. Corner Rest Machining",
+"class": "topic-link"
+,
+"children": [
+{
+"url": "UUID-67389c8b-0d3b-d7b8-3460-48b7a9936855.html",
+"text": "Tools",
+"class": "topic-link"
+},
+{
+"url": "UUID-a3ce97ee-c4c7-9541-5cff-0419c5a08023.html",
+"text": "Strategy",
+"class": "topic-link"
+},
+{
+"url": "UUID-85f7a18e-df44-f10b-fba4-6a58208e8df5.html",
+"text": "Parameters",
+"class": "topic-link"
+},
+{
+"url": "UUID-4c4233a7-9e9e-8156-ab34-195bcbe6b8d0.html",
+"text": "Setup",
+"class": "topic-link"
+}]
+},
+{
+"url": "UUID-951dae35-b874-655a-da84-bd310bd789d5.html",
+"text": "10.21. Cutting edge",
+"class": "topic-link"
+,
+"children": [
+{
+"url": "UUID-4ddce6d2-f1b4-4030-e65d-d4438f9a8764.html",
+"text": "Tools",
+"class": "topic-link"
+},
+{
+"url": "UUID-70c54d33-69d3-06d5-1446-c4b00e5ca54f.html",
+"text": "Contours",
+"class": "topic-link"
+},
+{
+"url": "UUID-9701c7bd-c5de-eef9-7b85-2ccd37a43d05.html",
+"text": "Strategy",
+"class": "topic-link"
+},
+{
+"url": "UUID-3494b75b-d42e-72f3-f0a5-0e5d56595406.html",
+"text": "Parameters",
+"class": "topic-link"
+},
+{
+"url": "UUID-95946aa7-c2b2-045c-eedf-ad75dc82a1ae.html",
+"text": "Boundary",
+"class": "topic-link"
+},
+{
+"url": "UUID-afa7294f-7792-ff86-3bb2-5d855029c8f2.html",
+"text": "Macros",
+"class": "topic-link"
+},
+{
+"url": "UUID-5c883fe2-effa-60fd-e35c-9bf461e0b8b9.html",
+"text": "Setup",
+"class": "topic-link"
+}]
+},
+{
+"url": "UUID-1e6cc1f5-313a-f6a2-ecd2-9ec47c799ccc.html",
+"text": "10.22. Rework Machining",
+"class": "topic-link"
+,
+"children": [
+{
+"url": "UUID-bc60a8a2-352c-bd45-5d3d-3bc960db9149.html",
+"text": "Tools",
+"class": "topic-link"
+},
+{
+"url": "UUID-48feb828-c8d7-f4ca-b1df-7dfeacdec255.html",
+"text": "Parameters",
+"class": "topic-link"
+},
+{
+"url": "UUID-1ffd46a0-1ffc-abda-49cc-ff884a46ff04.html",
+"text": "Boundary",
+"class": "topic-link"
+},
+{
+"url": "UUID-9a0279a3-35c1-d9a5-73d3-4b9fecfc225b.html",
+"text": "Macros",
+"class": "topic-link"
+},
+{
+"url": "UUID-18db0495-8a98-e9d7-0e21-f601260d3c7b.html",
+"text": "Setup",
+"class": "topic-link"
+}]
+},
+{
+"url": "UUID-5c4761c1-e842-a7df-a585-6d1ad73c0979.html",
+"text": "10.23. Rib \/ Groove Machining",
+"class": "topic-link"
+,
+"children": [
+{
+"url": "UUID-8dd8a6bb-f8de-1b22-b016-3722dc5aaec2.html",
+"text": "Tools",
+"class": "topic-link"
+},
+{
+"url": "UUID-e4e7714b-2289-b313-f914-6c30146ce7ad.html",
+"text": "Strategy",
+"class": "topic-link"
+},
+{
+"url": "UUID-c6f33670-c9d6-b96f-45d0-36bc76b2a95e.html",
+"text": "Parameters",
+"class": "topic-link"
+},
+{
+"url": "UUID-020de62a-fc3b-5c58-7986-a43dc2a4c64a.html",
+"text": "Boundary",
+"class": "topic-link"
+},
+{
+"url": "UUID-bf49c703-a453-048f-f0a0-537f69875d3a.html",
+"text": "Macros",
+"class": "topic-link"
+},
+{
+"url": "UUID-ccf0dde1-8ffc-4c59-4137-ec06325d5e99.html",
+"text": "Setup",
+"class": "topic-link"
+}]
+},
+{
+"url": "UUID-3b920452-1b67-6663-5b7f-f4e852cde7b2.html",
+"text": "10.24. Form Pocket",
+"class": "topic-link"
+,
+"children": [
+{
+"url": "UUID-ffdd5b08-20b9-f87a-c04c-47cfd8a629b4.html",
+"text": "Tools",
+"class": "topic-link"
+},
+{
+"url": "UUID-9c684607-b805-b599-9b2e-78dce03d278d.html",
+"text": "Strategy",
+"class": "topic-link"
+},
+{
+"url": "UUID-5ba78315-4c24-e115-51e5-e3c4ea6e18c6.html",
+"text": "Parameters",
+"class": "topic-link"
+},
+{
+"url": "UUID-26cb1e43-1224-0a68-35d5-32ff0d57c3df.html",
+"text": "Boundary",
+"class": "topic-link"
+},
+{
+"url": "UUID-1738f401-b8da-c3b1-47a6-66915d5f8059.html",
+"text": "Macros",
+"class": "topic-link"
+},
+{
+"url": "UUID-3d9c31aa-2477-4ddb-e43b-854603d5de2d.html",
+"text": "Setup",
+"class": "topic-link"
+}]
+},
+{
+"url": "UUID-5532667e-87fc-eb6b-1e4e-dd8ba6bb16c3.html",
+"text": "10.25. Pencil Milling",
+"class": "topic-link"
+,
+"children": [
+{
+"url": "UUID-f4d02cfb-9c61-9f63-aff3-b663ed2cd086.html",
+"text": "Tools",
+"class": "topic-link"
+},
+{
+"url": "UUID-53a626a9-a7c9-575b-d5fe-56cae97a9aa1.html",
+"text": "Strategy",
+"class": "topic-link"
+},
+{
+"url": "UUID-967dd9e1-66fb-2940-ae77-2962082b8ad1.html",
+"text": "Parameters",
+"class": "topic-link"
+},
+{
+"url": "UUID-7981b34e-a7b7-9da9-303d-cfbbc8259230.html",
+"text": "Boundary",
+"class": "topic-link"
+},
+{
+"url": "UUID-f14b4c20-e02e-68e6-f73b-b687af504c37.html",
+"text": "Macros",
+"class": "topic-link"
+},
+{
+"url": "UUID-c3486644-60ba-50a6-64e2-fb5b36acb51d.html",
+"text": "Setup",
+"class": "topic-link"
+}]
+}]
+},
+{
+"url": "UUID-612c317b-197f-d0fa-8b72-ad4799e69646.html",
+"text": "11. 5X Machining",
+"class": "topic-link"
+,
+"children": [
+{
+"url": "UUID-2e02d976-867d-b501-e272-af49daadc484.html",
+"text": "11.1. General information",
+"class": "topic-link"
+,
+"children": [
+{
+"url": "UUID-4e5159ec-8ca6-870b-aaa3-54cf228620af.html",
+"text": "Terms",
+"class": "topic-link"
+},
+{
+"url": "UUID-186e05f3-2879-197a-24e7-d494f5a89982.html",
+"text": "Setup",
+"class": "topic-link"
+},
+{
+"url": "UUID-e076fa9c-1406-49ac-3a7c-a6e1cc0dff1d.html",
+"text": "Approach\/retract macros",
+"class": "topic-link"
+},
+{
+"url": "UUID-7c420563-8b81-efff-acc0-5ce65655a0a0.html",
+"text": "Parameters",
+"class": "topic-link"
+},
+{
+"url": "UUID-c6518126-fe0e-1684-43ec-9878c4d39772.html",
+"text": "5X simultaneous Machining",
+"class": "topic-link"
+},
+{
+"url": "UUID-3e49ba91-d9cd-b5d8-e1a7-137c7fca8e0d.html",
+"text": "Machines with rotary axes that do not rotate endlessly",
+"class": "topic-link"
+}]
+},
+{
+"url": "UUID-2f4baa96-aca3-c6ed-f9b3-a9f777d49b85.html",
+"text": "11.2. Cavity Milling",
+"class": "topic-link"
+,
+"children": [
+{
+"url": "UUID-e841952c-8bb8-51fe-5060-e6f8bdbf44e6.html",
+"text": "Tool dialog page",
+"class": "topic-link"
+},
+{
+"url": "UUID-bffb8fcb-db5a-699b-e4a2-461062acdeca.html",
+"text": "Setup dialog page",
+"class": "topic-link"
+},
+{
+"url": "UUID-82f0b599-805a-d179-48fb-a34666350bbc.html",
+"text": "The 5-axis parameters",
+"class": "topic-link"
+,
+"children": [
+{
+"url": "UUID-6541a6c9-d382-af45-198b-f4e80817446d.html",
+"text": "Collision avoidance",
+"class": "topic-link"
+},
+{
+"url": "UUID-69ba21c5-5290-b1af-97a9-603f01a7fa94.html",
+"text": "Machine limitation",
+"class": "topic-link"
+},
+{
+"url": "UUID-69b61fb0-8859-10c6-d846-d913fa1c1f84.html",
+"text": "Automatic indexing",
+"class": "topic-link"
+},
+{
+"url": "UUID-05592263-028f-314a-2477-a2114cf7a416.html",
+"text": "Toolpath smoothing",
+"class": "topic-link"
+},
+{
+"url": "UUID-aed6fa16-bb2d-1d6d-c672-bee9ae766cfd.html",
+"text": "Fixed inclination of the rotary axes",
+"class": "topic-link"
+}]
+},
+{
+"url": "UUID-3c974209-315f-1b62-85bb-abe19fa19f81.html",
+"text": "Optimized Rest Roughing",
+"class": "topic-link"
+,
+"children": [
+{
+"url": "UUID-bc746158-ff22-4550-5061-5eadfb600ecb.html",
+"text": "Strategy",
+"class": "topic-link"
+},
+{
+"url": "UUID-1a1bf70d-1138-9659-e9d7-d3cdc098ba7e.html",
+"text": "Parameters",
+"class": "topic-link"
+},
+{
+"url": "UUID-a4f9ed33-6cac-4733-1c93-429007907783.html",
+"text": "5 axes",
+"class": "topic-link"
+},
+{
+"url": "UUID-cc862a4c-f4de-0784-692a-6a4f12f99a24.html",
+"text": "Boundary",
+"class": "topic-link"
+},
+{
+"url": "UUID-25b979e7-bdf0-96f9-171e-ec02cfe6b1bd.html",
+"text": "Macros",
+"class": "topic-link"
+},
+{
+"url": "UUID-e3b96071-738c-254d-b8e0-f48535d7e033.html",
+"text": "Setup",
+"class": "topic-link"
+}]
+},
+{
+"url": "UUID-f747f4e7-2808-adc6-fe60-2195abfe7ee0.html",
+"text": "Profile Finishing (new)",
+"class": "topic-link"
+,
+"children": [
+{
+"url": "UUID-0004bd60-889a-9c03-9167-dc25db82a9a9.html",
+"text": "Strategy",
+"class": "topic-link"
+},
+{
+"url": "UUID-89619d48-cab4-a26f-dc8e-13fbd41e8ddf.html",
+"text": "Parameters",
+"class": "topic-link"
+},
+{
+"url": "UUID-fe868904-1d31-8437-ca75-9a1870f53da0.html",
+"text": "The 5-axis parameters",
+"class": "topic-link"
+},
+{
+"url": "UUID-a26ccf89-67d4-d9ed-8f05-d84c63aff425.html",
+"text": "Boundary",
+"class": "topic-link"
+},
+{
+"url": "UUID-bd7045a1-3108-9ed8-438a-51fc7ebe8c57.html",
+"text": "Macros",
+"class": "topic-link"
+},
+{
+"url": "UUID-208658bb-ca65-4389-4183-d2c578112b7b.html",
+"text": "Setup",
+"class": "topic-link"
+}]
+},
+{
+"url": "UUID-7b2839d8-3a5f-193d-1b58-dda26095db4c.html",
+"text": "Z Level Finishing",
+"class": "topic-link"
+,
+"children": [
+{
+"url": "UUID-cb861468-28b0-e611-6cd1-2dbe47bd2b9a.html",
+"text": "Parameters",
+"class": "topic-link"
+},
+{
+"url": "UUID-9b322c12-d8ca-03c0-0e69-783e189c129f.html",
+"text": "Boundary",
+"class": "topic-link"
+},
+{
+"url": "UUID-b8cf2b4d-f9b2-ee5c-62a0-a2f2a1cb78cb.html",
+"text": "Macros",
+"class": "topic-link"
+},
+{
+"url": "UUID-425fda01-444b-14fa-c4e7-203cb60e9466.html",
+"text": "Setup",
+"class": "topic-link"
+}]
+},
+{
+"url": "UUID-f56d8b52-8b47-c944-cd9a-fe49ac4f79f2.html",
+"text": "Iso machining",
+"class": "topic-link"
+,
+"children": [
+{
+"url": "UUID-00820996-a9bb-aac7-0352-b0828d6f9513.html",
+"text": "Strategy",
+"class": "topic-link"
+},
+{
+"url": "UUID-ce237c7d-a3e9-8f42-dab3-cdfde28ce5fb.html",
+"text": "Parameters",
+"class": "topic-link"
+},
+{
+"url": "UUID-2a010ea1-9a8a-6f39-c27d-7be9c4580f3d.html",
+"text": "The 5-axis parameters",
+"class": "topic-link"
+},
+{
+"url": "UUID-d74aba9d-d702-22fa-8baa-30c94d786984.html",
+"text": "Boundary",
+"class": "topic-link"
+},
+{
+"url": "UUID-58d8dfd8-231d-6fb4-d4f2-123cb016bc35.html",
+"text": "Macros",
+"class": "topic-link"
+},
+{
+"url": "UUID-ec67dbb0-2aa5-c4b3-621f-ea940cddb8e3.html",
+"text": "Setup",
+"class": "topic-link"
+}]
+},
+{
+"url": "UUID-9927a943-447f-2e22-c1ba-d165c282102e.html",
+"text": "Equidistant Finishing",
+"class": "topic-link"
+,
+"children": [
+{
+"url": "UUID-0df14c6b-1e28-7536-8f2b-e1b78cc86529.html",
+"text": "Strategy",
+"class": "topic-link"
+},
+{
+"url": "UUID-dfe10784-0066-4e1f-d7cd-8cbbb59de903.html",
+"text": "Parameters",
+"class": "topic-link"
+},
+{
+"url": "UUID-2d1a08f4-c6f3-9e88-a9ed-5719dd9e3d92.html",
+"text": "Boundary",
+"class": "topic-link"
+},
+{
+"url": "UUID-c7cd2890-d598-95f9-14d0-fdcdec07bafc.html",
+"text": "Macros",
+"class": "topic-link"
+},
+{
+"url": "UUID-be3e1de2-3db9-7bec-882b-8aac93e33352.html",
+"text": "Setup",
+"class": "topic-link"
+}]
+},
+{
+"url": "UUID-663d93b9-45fb-80d3-9560-4c5d90adad00.html",
+"text": "Rest Machining",
+"class": "topic-link"
+,
+"children": [
+{
+"url": "UUID-76a35511-ed68-4ef6-65dc-c0e587fe2136.html",
+"text": "Tools",
+"class": "topic-link"
+},
+{
+"url": "UUID-30ff6330-7ce3-8060-80b5-47f7a80579be.html",
+"text": "Strategy",
+"class": "topic-link"
+},
+{
+"url": "UUID-b4e3c9fb-ee97-a1d1-e88a-9a78b19422cd.html",
+"text": "Parameters",
+"class": "topic-link"
+},
+{
+"url": "UUID-20f70282-4505-9e82-e41b-ddfe69c71e22.html",
+"text": "Boundary",
+"class": "topic-link"
+},
+{
+"url": "UUID-f303f053-a47d-37dc-5d68-30a77d23f56c.html",
+"text": "Setup",
+"class": "topic-link"
+}]
+},
+{
+"url": "UUID-0ac504b1-fe6c-82f8-4d60-b638a3b34261.html",
+"text": "Corner Rest Machining",
+"class": "topic-link"
+,
+"children": [
+{
+"url": "UUID-b54fa6c7-009f-d5e3-bc95-3b6d8ee821ce.html",
+"text": "Tools",
+"class": "topic-link"
+},
+{
+"url": "UUID-ff0dec25-078d-9bea-93bd-b30af77df771.html",
+"text": "Strategy",
+"class": "topic-link"
+},
+{
+"url": "UUID-a6d9c5a7-d326-a3bd-3ad6-00fcfe354d27.html",
+"text": "Parameters",
+"class": "topic-link"
+},
+{
+"url": "UUID-d2ab0f38-f79a-4d2b-de17-cd4138fd3920.html",
+"text": "5 Axes",
+"class": "topic-link"
+},
+{
+"url": "UUID-3e6b2e1f-881b-d691-bb3d-2a6f8f2397b3.html",
+"text": "Setup",
+"class": "topic-link"
+}]
+},
+{
+"url": "UUID-d7e2eafc-5210-c0cc-0ef6-5ef3bb972f32.html",
+"text": "Free Path Milling",
+"class": "topic-link"
+,
+"children": [
+{
+"url": "UUID-3d37b626-d1b7-760b-b3c6-74aaa56e6ff5.html",
+"text": "Contours",
+"class": "topic-link"
+},
+{
+"url": "UUID-f2f01f3c-6282-8022-d83d-baac27ad28b8.html",
+"text": "Parameters",
+"class": "topic-link"
+},
+{
+"url": "UUID-8ff0fc1a-1b6a-f06f-7781-a6948fd9a821.html",
+"text": "Boundary",
+"class": "topic-link"
+},
+{
+"url": "UUID-e9fff222-6d43-f9dd-2a36-4f271d863f28.html",
+"text": "Macros",
+"class": "topic-link"
+},
+{
+"url": "UUID-6dc6aae8-1c9e-a0da-a3a6-ce63beffd471.html",
+"text": "Setup",
+"class": "topic-link"
+}]
+},
+{
+"url": "UUID-b0e0fc7d-4616-5a45-97e9-d9c3f92e9416.html",
+"text": "Rework Machining",
+"class": "topic-link"
+,
+"children": [
+{
+"url": "UUID-1205dc0f-ac42-9a8d-4f05-342d28cdd12f.html",
+"text": "Strategy",
+"class": "topic-link"
+},
+{
+"url": "UUID-1ea199ee-0754-195e-90f3-1ca91daef523.html",
+"text": "Parameters",
+"class": "topic-link"
+},
+{
+"url": "UUID-9f02c3f1-fa33-dd87-a7fe-cf71b629aa7c.html",
+"text": "Boundary",
+"class": "topic-link"
+},
+{
+"url": "UUID-e8364070-8a75-5a45-3062-57159c26d0e3.html",
+"text": "Macros",
+"class": "topic-link"
+},
+{
+"url": "UUID-ecec2c59-cc2f-5762-8851-fe872b005f98.html",
+"text": "Setup",
+"class": "topic-link"
+}]
+},
+{
+"url": "UUID-066d6eaa-bb46-7eec-4f7f-8325993ab2ac.html",
+"text": "Cutting Edge Plunge",
+"class": "topic-link"
+,
+"children": [
+{
+"url": "UUID-9ad66c4e-9d4b-7851-6bbe-d428ee31175b.html",
+"text": "Tool",
+"class": "topic-link"
+},
+{
+"url": "UUID-69a7a4d7-bce4-7d86-e001-bde423cfbbd6.html",
+"text": "Contours",
+"class": "topic-link"
+},
+{
+"url": "UUID-0e2d4c3c-a0b5-083a-f861-f25049785d59.html",
+"text": "Parameters",
+"class": "topic-link"
+},
+{
+"url": "UUID-f1db72fb-aedc-7a03-9f60-b577173c7a9d.html",
+"text": "5 Axes",
+"class": "topic-link"
+},
+{
+"url": "UUID-896b11f0-81ec-e577-99a5-8c42cc901832.html",
+"text": "Boundary",
+"class": "topic-link"
+},
+{
+"url": "UUID-1b1a9994-8045-aec9-3f7d-36fad93af2f7.html",
+"text": "Setup",
+"class": "topic-link"
+}]
+},
+{
+"url": "UUID-aa8ea0cf-ecb8-4df3-f54d-bb4c0033627c.html",
+"text": "Cutting Edge Swarf",
+"class": "topic-link"
+,
+"children": [
+{
+"url": "UUID-f612ff00-d86a-a9c9-0c71-1d2d4d9cf0e2.html",
+"text": "Contours",
+"class": "topic-link"
+},
+{
+"url": "UUID-7e675c44-2d5e-f507-3afe-addae8a85c11.html",
+"text": "Parameters",
+"class": "topic-link"
+},
+{
+"url": "UUID-508f8cba-b767-848f-e4e4-fe636fb5eb44.html",
+"text": "Macros",
+"class": "topic-link"
+},
+{
+"url": "UUID-9ab7a762-1f30-171e-8c47-503626059915.html",
+"text": "Setup",
+"class": "topic-link"
+}]
+},
+{
+"url": "UUID-c5b56752-ddca-6109-5543-de5600e4cafa.html",
+"text": "Radial machining",
+"class": "topic-link"
+,
+"children": [
+{
+"url": "UUID-5760b54f-e908-771d-11a7-e0dc7f7e9930.html",
+"text": "Tools",
+"class": "topic-link"
+},
+{
+"url": "UUID-d5ff028f-4819-8b4e-c746-c4ddc875ef12.html",
+"text": "Strategy",
+"class": "topic-link"
+},
+{
+"url": "UUID-9c971af7-1fa1-fa5f-9c48-66bf835b67cd.html",
+"text": "Parameters",
+"class": "topic-link"
+},
+{
+"url": "UUID-3ad98826-e372-2648-5353-dc205aad5a2c.html",
+"text": "5 Axes",
+"class": "topic-link"
+},
+{
+"url": "UUID-dcc210f7-23ca-be9c-7e39-422e94fd6167.html",
+"text": "Boundary",
+"class": "topic-link"
+},
+{
+"url": "UUID-e0b15470-f446-2558-cc02-7f1941d1c81b.html",
+"text": "Macros",
+"class": "topic-link"
+},
+{
+"url": "UUID-84cd6998-1f8f-c590-c4b4-52d286af0740.html",
+"text": "Setup",
+"class": "topic-link"
+}]
+},
+{
+"url": "UUID-b9b75999-2552-82e0-dc30-044d610e5845.html",
+"text": "Halfpipe Machining",
+"class": "topic-link"
+,
+"children": [
+{
+"url": "UUID-106afe33-cb48-d8b9-397f-1f4ee1ad2a31.html",
+"text": "Strategy",
+"class": "topic-link"
+},
+{
+"url": "UUID-98cdbade-745d-4d7f-dfd2-b0f7a0f2aaa0.html",
+"text": "Parameters",
+"class": "topic-link"
+},
+{
+"url": "UUID-1de72890-cd72-50d0-2da5-548becf28e2c.html",
+"text": "5 Axes",
+"class": "topic-link"
+},
+{
+"url": "UUID-ef2aaa31-4aad-b4f1-7210-2bef9b9bea30.html",
+"text": "Macros",
+"class": "topic-link"
+},
+{
+"url": "UUID-205467ae-ee3a-cf7c-30b8-6420ee2510d9.html",
+"text": "Setup",
+"class": "topic-link"
+}]
+},
+{
+"url": "UUID-01cc8cfc-dd8e-f632-1b5f-27f52fcd8baa.html",
+"text": "Profile Finishing",
+"class": "topic-link"
+,
+"children": [
+{
+"url": "UUID-842f5759-03b3-c346-340f-c0da34d8d826.html",
+"text": "Strategy",
+"class": "topic-link"
+},
+{
+"url": "UUID-0eec3b01-8cdc-6b73-0013-2d45f41221fd.html",
+"text": "Parameters",
+"class": "topic-link"
+},
+{
+"url": "UUID-af77593b-ce29-6eac-580b-166e05c0796b.html",
+"text": "Boundary",
+"class": "topic-link"
+},
+{
+"url": "UUID-7e356861-bc7e-ccba-fafa-e0f602514b6e.html",
+"text": "Macros",
+"class": "topic-link"
+},
+{
+"url": "UUID-21fc4eb8-1233-f63a-12f2-fa056f539c7c.html",
+"text": "Setup",
+"class": "topic-link"
+}]
+}]
+},
+{
+"url": "UUID-6ecec7ba-7b8e-f18d-e4e5-e5bf1f989b6a.html",
+"text": "11.3. Surface Milling",
+"class": "topic-link"
+,
+"children": [
+{
+"url": "UUID-6bbb61bb-b02f-4aa0-cb97-92a3edddf3ff.html",
+"text": "The 5-axis parameters",
+"class": "topic-link"
+},
+{
+"url": "UUID-8104fc12-985b-456c-632a-ee8f28d43767.html",
+"text": "Top Milling",
+"class": "topic-link"
+,
+"children": [
+{
+"url": "UUID-849a9b44-e869-910f-b1b4-992207859da3.html",
+"text": "Tool",
+"class": "topic-link"
+},
+{
+"url": "UUID-d9153b8a-114b-bc53-bd1f-0cb2e6b432af.html",
+"text": "Strategy",
+"class": "topic-link"
+},
+{
+"url": "UUID-bcc9d18c-de6a-fd79-06cc-40e0dcbef7a7.html",
+"text": "5 axes",
+"class": "topic-link"
+},
+{
+"url": "UUID-bbea2d39-e1c7-4f04-f0ae-b56c59a6e82c.html",
+"text": "Macros",
+"class": "topic-link"
+},
+{
+"url": "UUID-95b63c05-202b-310b-f9f8-f7617e846a1f.html",
+"text": "Setup",
+"class": "topic-link"
+}]
+},
+{
+"url": "UUID-ae93ee47-5926-d0e2-2e1d-267606f2fac8.html",
+"text": "ISO Top Milling",
+"class": "topic-link"
+,
+"children": [
+{
+"url": "UUID-6afcae7e-dd5b-065b-14fa-ceb76b3220a6.html",
+"text": "Strategy",
+"class": "topic-link"
+},
+{
+"url": "UUID-60535040-6cc8-53a8-5610-6b87ba62774c.html",
+"text": "5 axes",
+"class": "topic-link"
+},
+{
+"url": "UUID-2996b4b5-734e-3c7e-d922-f6e598cfd514.html",
+"text": "Macros",
+"class": "topic-link"
+},
+{
+"url": "UUID-ffa5f046-ad0f-5c59-6ac4-d4f7b7bd8351.html",
+"text": "Setup",
+"class": "topic-link"
+}]
+},
+{
+"url": "UUID-78f140b9-369c-31e4-1836-79935d032dcf.html",
+"text": "Contouring",
+"class": "topic-link"
+,
+"children": [
+{
+"url": "UUID-fce7cadf-d6ad-be34-5f66-ebc74f39675c.html",
+"text": "Parameters",
+"class": "topic-link"
+},
+{
+"url": "UUID-9890849b-6862-fa47-0398-be7a50b9b03e.html",
+"text": "5 axes",
+"class": "topic-link"
+},
+{
+"url": "UUID-d6691fcb-6671-5f84-520c-c8ca2097757b.html",
+"text": "Macros",
+"class": "topic-link"
+},
+{
+"url": "UUID-a09b4a3b-9d30-2240-6de5-de81f18bd518.html",
+"text": "Setup",
+"class": "topic-link"
+}]
+},
+{
+"url": "UUID-99806478-c0b0-bedc-094b-8ceb1438a2c6.html",
+"text": "Swarf Cutting one Curve",
+"class": "topic-link"
+,
+"children": [
+{
+"url": "UUID-baf87fab-2530-5824-c2e1-8d4680053fd6.html",
+"text": "Tool",
+"class": "topic-link"
+},
+{
+"url": "UUID-b8c86ce9-cc6b-5823-9dc8-68d96e524894.html",
+"text": "Strategy",
+"class": "topic-link"
+},
+{
+"url": "UUID-5662df7f-b500-0607-a77e-ab800b7a1ecf.html",
+"text": "Parameters",
+"class": "topic-link"
+},
+{
+"url": "UUID-dbf9c964-55cb-bdbd-1671-6d22c6948e3e.html",
+"text": "Boundary",
+"class": "topic-link"
+},
+{
+"url": "UUID-4e131a6b-80ca-0a73-b4bd-15ed16b37d24.html",
+"text": "5 axes",
+"class": "topic-link"
+},
+{
+"url": "UUID-a527f8bc-afce-5563-4071-ad523876fde0.html",
+"text": "Macros",
+"class": "topic-link"
+},
+{
+"url": "UUID-b21c60e0-d8b7-2629-e1ea-2d5b27f1c2e4.html",
+"text": "Setup",
+"class": "topic-link"
+}]
+},
+{
+"url": "UUID-5450c185-7589-7086-50e2-7bbaea32e6e8.html",
+"text": "Swarf Cutting two Curves",
+"class": "topic-link"
+,
+"children": [
+{
+"url": "UUID-76dee542-5204-371e-5206-c88845e1abd0.html",
+"text": "Strategy",
+"class": "topic-link"
+},
+{
+"url": "UUID-1b63a72b-ac1a-fbd4-b1c6-5f5cefacbce4.html",
+"text": "Parameters",
+"class": "topic-link"
+},
+{
+"url": "UUID-fa6ffbab-d982-c4fe-bc57-7f12ea27f66f.html",
+"text": "5 axes",
+"class": "topic-link"
+},
+{
+"url": "UUID-238f0278-7fed-4307-b6e5-d7a62196be56.html",
+"text": "Macros",
+"class": "topic-link"
+},
+{
+"url": "UUID-52f40e54-d063-dcd7-a3c9-1274a6a86e8b.html",
+"text": "Setup",
+"class": "topic-link"
+}]
+},
+{
+"url": "UUID-59a05cbc-0fab-8c05-5854-cc312c7c31c0.html",
+"text": "Shape Offset Roughing",
+"class": "topic-link"
+,
+"children": [
+{
+"url": "UUID-7529aaa9-8dc1-487a-e168-6139a413de67.html",
+"text": "Tool",
+"class": "topic-link"
+},
+{
+"url": "UUID-7ec4a864-dceb-5af4-8ec0-54c52b36d5ed.html",
+"text": "Strategy",
+"class": "topic-link"
+},
+{
+"url": "UUID-326741fb-f96c-72f4-5fc5-0096d761a010.html",
+"text": "Parameters",
+"class": "topic-link"
+},
+{
+"url": "UUID-18e0ff78-d0b3-87cd-aac5-a09c242bcfd6.html",
+"text": "5 axes",
+"class": "topic-link"
+},
+{
+"url": "UUID-7bce5336-4220-741d-7440-1daad6b6e99c.html",
+"text": "High Performance",
+"class": "topic-link"
+},
+{
+"url": "UUID-fc5a21cc-3f8d-7455-ded9-b481101a638f.html",
+"text": "Boundary",
+"class": "topic-link"
+},
+{
+"url": "UUID-8f15a3a0-90d7-f8d2-d845-53deb11d0115.html",
+"text": "Macros",
+"class": "topic-link"
+},
+{
+"url": "UUID-3f0d5816-91ca-a190-ed28-efe75211bfbe.html",
+"text": "Setup",
+"class": "topic-link"
+}]
+},
+{
+"url": "UUID-1a729e98-3937-8d85-a9b2-ce68332ff30a.html",
+"text": "Shape Offset Finishing",
+"class": "topic-link"
+,
+"children": [
+{
+"url": "UUID-825dec60-fff6-2989-5ebc-c3d52fafdd02.html",
+"text": "Tool",
+"class": "topic-link"
+},
+{
+"url": "UUID-76356602-ad5f-c25a-cc05-880e83e4cd83.html",
+"text": "Strategy",
+"class": "topic-link"
+},
+{
+"url": "UUID-36a79313-7203-7878-18f0-90ebd8e8ddc6.html",
+"text": "5 axes",
+"class": "topic-link"
+},
+{
+"url": "UUID-731af497-7828-f38b-2006-6db03a8b3e7d.html",
+"text": "Boundary",
+"class": "topic-link"
+},
+{
+"url": "UUID-3095e7a4-a979-166b-c456-a270ed63c90c.html",
+"text": "Macros",
+"class": "topic-link"
+},
+{
+"url": "UUID-414e267d-c492-9c2d-8b31-3b2f17c7eead.html",
+"text": "Setup",
+"class": "topic-link"
+}]
+},
+{
+"url": "UUID-8eaab9b3-6d2e-4c5d-5a77-322a8e1f9ae8.html",
+"text": "Tangent Plane Machining",
+"class": "topic-link"
+,
+"children": [
+{
+"url": "UUID-eb3e1a43-b878-a5fd-c15a-9e0f5f2bb091.html",
+"text": "Tool",
+"class": "topic-link"
+},
+{
+"url": "UUID-86c7e684-d32f-e586-6981-8a4246df0244.html",
+"text": "Strategy",
+"class": "topic-link"
+},
+{
+"url": "UUID-c93fc0bb-ba0f-4c02-13e1-9037cf0472d8.html",
+"text": "Parameters",
+"class": "topic-link"
+},
+{
+"url": "UUID-5a6cfd9f-01f7-0ae0-ed73-ff43c8d025ed.html",
+"text": "5 axes",
+"class": "topic-link"
+},
+{
+"url": "UUID-0f38e02d-949e-cd0c-93a9-07e91772526e.html",
+"text": "Boundary",
+"class": "topic-link"
+},
+{
+"url": "UUID-a631dba6-a90a-afaa-08da-d6f68af2d108.html",
+"text": "Setup",
+"class": "topic-link"
+}]
+},
+{
+"url": "UUID-af9ec674-4b62-ba74-d1c8-8f9aa0da226b.html",
+"text": "Tangent Machining",
+"class": "topic-link"
+,
+"children": [
+{
+"url": "UUID-9f6db743-c7bc-7b7f-24ee-2ffccb102e63.html",
+"text": "Tool",
+"class": "topic-link"
+},
+{
+"url": "UUID-f2785f22-5698-783f-10d0-8c5e6ca9da99.html",
+"text": "Strategy",
+"class": "topic-link"
+},
+{
+"url": "UUID-aae0ac21-2e61-aa53-a6cc-1a49ed585995.html",
+"text": "Parameters",
+"class": "topic-link"
+},
+{
+"url": "UUID-cb64ce81-1ddd-8f32-5441-1c66e3863b2b.html",
+"text": "5 axes",
+"class": "topic-link"
+},
+{
+"url": "UUID-48d79eb6-fb2a-039f-45ca-b806b9798de5.html",
+"text": "Boundary",
+"class": "topic-link"
+},
+{
+"url": "UUID-81cc8669-7527-ed95-b460-00e1c327550b.html",
+"text": "Macros",
+"class": "topic-link"
+},
+{
+"url": "UUID-1bb903f7-96be-b28c-b9eb-0893b34e462b.html",
+"text": "Setup",
+"class": "topic-link"
+}]
+},
+{
+"url": "UUID-669b63c6-ddad-9a14-ea34-bc19b52601d3.html",
+"text": "Prismatic Fillet Finishing",
+"class": "topic-link"
+,
+"children": [
+{
+"url": "UUID-a4231227-730a-1350-3427-7d9cf602e6ac.html",
+"text": "Tool",
+"class": "topic-link"
+},
+{
+"url": "UUID-c6c8ecb7-e139-d061-81a3-83136feb60b5.html",
+"text": "Strategy",
+"class": "topic-link"
+},
+{
+"url": "UUID-a5949221-e3cf-cccb-4917-db5e14c14651.html",
+"text": "Parameters",
+"class": "topic-link"
+},
+{
+"url": "UUID-5b9de750-7568-c8a4-80c9-7bc7142ce652.html",
+"text": "5 axes",
+"class": "topic-link"
+},
+{
+"url": "UUID-6056efa8-6cc5-87bd-3ecb-70ca60c8b44b.html",
+"text": "Setup",
+"class": "topic-link"
+}]
+},
+{
+"url": "UUID-312b3027-0266-233e-7fa4-9ca3c9d13720.html",
+"text": "5X Deburring",
+"class": "topic-link"
+,
+"children": [
+{
+"url": "UUID-021bcfc7-6624-9e8a-6ce0-b2b7c4c5a6dd.html",
+"text": "Tool",
+"class": "topic-link"
+},
+{
+"url": "UUID-2c0a0a7e-52f9-1118-c866-9972c34de52f.html",
+"text": "Contours",
+"class": "topic-link"
+},
+{
+"url": "UUID-4a4738d2-ea31-875c-e992-8848a3e5b917.html",
+"text": "Parameters",
+"class": "topic-link"
+},
+{
+"url": "UUID-31e76220-c78b-b21d-cf92-0229d8ee05de.html",
+"text": "5 axes",
+"class": "topic-link"
+},
+{
+"url": "UUID-ebc1c7f9-071c-78cc-7b1d-3162299c6848.html",
+"text": "Boundary",
+"class": "topic-link"
+},
+{
+"url": "UUID-9c6fbfae-cf09-42f8-462a-d310b67820ca.html",
+"text": "Setup",
+"class": "topic-link"
+}]
+},
+{
+"url": "UUID-f0078806-da7c-effd-1139-86cabce4278c.html",
+"text": "5X Hole Deburring",
+"class": "topic-link"
+,
+"children": [
+{
+"url": "UUID-96e2e70f-4854-0185-398b-522dd7cdbe57.html",
+"text": "Tool",
+"class": "topic-link"
+},
+{
+"url": "UUID-944486b7-33ac-f869-905d-610d610e2c68.html",
+"text": "Contours",
+"class": "topic-link"
+},
+{
+"url": "UUID-038401dd-39cd-c59a-b48a-2675ae2b0a51.html",
+"text": "Parameters",
+"class": "topic-link"
+},
+{
+"url": "UUID-39839bd2-9ed5-d129-1cb5-eb3864d50716.html",
+"text": "5 axes",
+"class": "topic-link"
+},
+{
+"url": "UUID-42038cba-d27b-2616-e24a-f8ee8a0ba4f9.html",
+"text": "Setup",
+"class": "topic-link"
+}]
+}]
+},
+{
+"url": "UUID-513e2135-1a9f-2cf9-2acb-13a7f874c5fc.html",
+"text": "11.4. Additive Manufacturing",
+"class": "topic-link"
+,
+"children": [
+{
+"url": "UUID-ab188ddd-2f35-4051-abc1-cbc99fb37377.html",
+"text": "Tool",
+"class": "topic-link"
+},
+{
+"url": "UUID-04b42d8d-d0c2-f071-0e75-4b15ec91075b.html",
+"text": "Strategy",
+"class": "topic-link"
+},
+{
+"url": "UUID-3b4408a2-7446-3736-afc2-473278d909a1.html",
+"text": "Additive",
+"class": "topic-link"
+},
+{
+"url": "UUID-c8029a4f-02e2-a944-cce2-9a0ce7f28c4b.html",
+"text": "Parameters",
+"class": "topic-link"
+},
+{
+"url": "UUID-766018b0-1799-c000-04c5-90ee90d1b258.html",
+"text": "5 axes",
+"class": "topic-link"
+},
+{
+"url": "UUID-4093e1d9-6085-40c6-3d2f-3349460d3ce4.html",
+"text": "Boundary",
+"class": "topic-link"
+},
+{
+"url": "UUID-6d7fb95c-fe1e-f241-d78f-ead244b53d34.html",
+"text": "Macros",
+"class": "topic-link"
+},
+{
+"url": "UUID-691329c4-8e4b-0c8e-2816-fab655a0a4b0.html",
+"text": "Setup",
+"class": "topic-link"
+},
+{
+"url": "UUID-1281c93c-920a-b13b-ee6d-5b064638bb4d.html",
+"text": "Input dialog: General",
+"class": "topic-link"
+}]
+},
+{
+"url": "UUID-a549f254-cba6-3ffe-2cd9-21e827187447.html",
+"text": "11.5. Tube Milling",
+"class": "topic-link"
+,
+"children": [
+{
+"url": "UUID-72e5e2e5-92c6-2560-c6f2-e68569269d88.html",
+"text": "Overview of cycles",
+"class": "topic-link"
+},
+{
+"url": "UUID-3327664d-de01-42c3-38c7-37d62d0f8d84.html",
+"text": "Strategy",
+"class": "topic-link"
+},
+{
+"url": "UUID-cb900e4b-9b3e-3d2b-62dc-285c7edbe884.html",
+"text": "Parameters",
+"class": "topic-link"
+},
+{
+"url": "UUID-3b1cbc77-f1bc-d6dd-2995-033ff676a9c6.html",
+"text": "5-axis parameters",
+"class": "topic-link"
+},
+{
+"url": "UUID-ed45e855-9ff8-3962-f833-ef4c679d3f83.html",
+"text": "Macros",
+"class": "topic-link"
+},
+{
+"url": "UUID-a5678444-4cd4-030c-b31b-c5c847c0dcfa.html",
+"text": "Setup",
+"class": "topic-link"
+}]
+},
+{
+"url": "UUID-7809443f-a21f-8115-0fbb-7b81bb1280cf.html",
+"text": "11.6. Blade Milling",
+"class": "topic-link"
+,
+"children": [
+{
+"url": "UUID-aa968c9d-d8ec-0086-8983-a945f8fc27ed.html",
+"text": "Overview of cycles",
+"class": "topic-link"
+},
+{
+"url": "UUID-c652512d-c1bc-74a8-a97f-ede9cf61bb92.html",
+"text": "General basic settings – 5X cycles",
+"class": "topic-link"
+},
+{
+"url": "UUID-349f070f-c5eb-5f86-4308-cdf6b9b63616.html",
+"text": "3D Roughing",
+"class": "topic-link"
+,
+"children": [
+{
+"url": "UUID-86ef8c65-ff8f-c883-e2ea-f3685491d120.html",
+"text": "Boundary",
+"class": "topic-link"
+},
+{
+"url": "UUID-da00cd85-d98f-6958-3498-bf6ecc2ee262.html",
+"text": "Setup",
+"class": "topic-link"
+}]
+},
+{
+"url": "UUID-922bd18f-b95d-92cd-6bca-602d117cbcce.html",
+"text": "Point Milling",
+"class": "topic-link"
+,
+"children": [
+{
+"url": "UUID-aa48e1bd-ac97-e637-62ef-b623f16df79b.html",
+"text": "Parameters",
+"class": "topic-link"
+},
+{
+"url": "UUID-8cf37aba-2e10-eec5-9b56-02e6b0c8c9ec.html",
+"text": "5-axis parameters",
+"class": "topic-link"
+},
+{
+"url": "UUID-345cdb16-70f0-1ca8-9536-9e1f2a9a745c.html",
+"text": "Setup",
+"class": "topic-link"
+},
+{
+"url": "UUID-bfd606ca-17b3-2b36-eeef-8d8451ead085.html",
+"text": "Geometry",
+"class": "topic-link"
+}]
+},
+{
+"url": "UUID-80f9f591-c41e-a983-a102-31047af73bd1.html",
+"text": "Platform machining",
+"class": "topic-link"
+,
+"children": [
+{
+"url": "UUID-0c915fcf-6430-3b62-88ab-94e473e509e9.html",
+"text": "Strategy",
+"class": "topic-link"
+},
+{
+"url": "UUID-d629e3e3-0d64-3f7f-7a9e-75e5ef4cfc6a.html",
+"text": "Parameters",
+"class": "topic-link"
+},
+{
+"url": "UUID-4a944fea-2855-5780-3908-bcbf655088fc.html",
+"text": "5 axes",
+"class": "topic-link"
+},
+{
+"url": "UUID-8bce287d-bfcf-3352-f92b-397c6a18eff7.html",
+"text": "Macros",
+"class": "topic-link"
+},
+{
+"url": "UUID-2b0bf3d1-77c0-4c3f-c4ad-33f0b391adfa.html",
+"text": "Setup",
+"class": "topic-link"
+},
+{
+"url": "UUID-e9483d3b-5d7d-8a02-1242-3838e6f2b56f.html",
+"text": "Geometry",
+"class": "topic-link"
+}]
+},
+{
+"url": "UUID-66cd46ab-00fc-cea8-de05-bfa5d9380a39.html",
+"text": "Swarf Cutting",
+"class": "topic-link"
+,
+"children": [
+{
+"url": "UUID-1db35270-601c-2bf3-3528-6aa06ac3574e.html",
+"text": "Parameters",
+"class": "topic-link"
+},
+{
+"url": "UUID-aa6f6897-a094-0994-233b-1c3d7bdfe61d.html",
+"text": "5-axis parameters",
+"class": "topic-link"
+},
+{
+"url": "UUID-40c6e531-239c-8c9c-8ff8-d4d0cc673434.html",
+"text": "Setup",
+"class": "topic-link"
+},
+{
+"url": "UUID-2209f5c0-c502-50c2-4799-8f0170ebc43e.html",
+"text": "Geometry",
+"class": "topic-link"
+}]
+},
+{
+"url": "UUID-0593319a-3515-2f83-5fa1-f8c6740e1a30.html",
+"text": "Top Milling",
+"class": "topic-link"
+,
+"children": [
+{
+"url": "UUID-19a7df55-dfb7-422e-999f-fbfa9944c911.html",
+"text": "Strategy",
+"class": "topic-link"
+},
+{
+"url": "UUID-c6efadce-ee55-cc88-63d9-c113288dfe18.html",
+"text": "Parameters",
+"class": "topic-link"
+},
+{
+"url": "UUID-12fbed69-2d12-959f-6003-ec5841be4a7f.html",
+"text": "5-axis parameters",
+"class": "topic-link"
+},
+{
+"url": "UUID-504c78ee-7700-2f8d-1d9c-72355dc1aea5.html",
+"text": "Setup",
+"class": "topic-link"
+},
+{
+"url": "UUID-dd1c22a6-0a60-36da-826d-8e35050440b6.html",
+"text": "Geometry",
+"class": "topic-link"
+}]
+},
+{
+"url": "UUID-765ed033-4723-fee5-89bd-b09352ad9496.html",
+"text": "Tangent Milling",
+"class": "topic-link"
+,
+"children": [
+{
+"url": "UUID-12739271-7a05-2f1f-6b1f-2be7a6330a73.html",
+"text": "Tool",
+"class": "topic-link"
+},
+{
+"url": "UUID-0e821174-6897-065e-22a0-8b3ce5e2f503.html",
+"text": "Strategy",
+"class": "topic-link"
+},
+{
+"url": "UUID-b1e43116-2406-249e-9eac-9e07b41c9b11.html",
+"text": "Parameters",
+"class": "topic-link"
+},
+{
+"url": "UUID-eed4d229-a0d4-80a8-c929-57bec315de3d.html",
+"text": "5-axis parameters",
+"class": "topic-link"
+},
+{
+"url": "UUID-1b6d67af-5f02-5ea8-687b-de230a831a3e.html",
+"text": "Setup",
+"class": "topic-link"
+},
+{
+"url": "UUID-b68ce747-6dfd-ff6f-0e7e-f611328cb6d6.html",
+"text": "Geometry",
+"class": "topic-link"
+}]
+}]
+},
+{
+"url": "UUID-60aafd63-4080-415a-78b4-3a61217b5581.html",
+"text": "11.7. Multiblade Milling",
+"class": "topic-link"
+,
+"children": [
+{
+"url": "UUID-f153cb41-38dc-12b5-133a-6da718bbeb6c.html",
+"text": "Tools",
+"class": "topic-link"
+},
+{
+"url": "UUID-e0e0850b-9bff-e6f0-bab2-01c1261af289.html",
+"text": "Geometry",
+"class": "topic-link"
+},
+{
+"url": "UUID-8bf3442e-15fb-a890-7988-f2e465d90ecd.html",
+"text": "Setup",
+"class": "topic-link"
+},
+{
+"url": "UUID-888e394d-c900-3a5b-9752-260ef0e06a28.html",
+"text": "MB Roughing",
+"class": "topic-link"
+,
+"children": [
+{
+"url": "UUID-6659aa09-7d66-9aea-b5b4-37621de03fca.html",
+"text": "Parameters",
+"class": "topic-link"
+},
+{
+"url": "UUID-dc961530-764f-d9a4-8403-1507006d5d25.html",
+"text": "5 axes",
+"class": "topic-link"
+},
+{
+"url": "UUID-280e3142-f6b3-afd5-a346-58e4025df814.html",
+"text": "Macros",
+"class": "topic-link"
+},
+{
+"url": "UUID-908b5732-e991-e1dc-0d11-f43c6d840ece.html",
+"text": "Setup",
+"class": "topic-link"
+}]
+},
+{
+"url": "UUID-37f43231-7b57-368a-bf78-118b6261b4fb.html",
+"text": "MB Hub Finishing",
+"class": "topic-link"
+,
+"children": [
+{
+"url": "UUID-b584a0af-f5eb-9260-ac5c-dfb92d848c09.html",
+"text": "Parameters",
+"class": "topic-link"
+},
+{
+"url": "UUID-7ec27bd0-1fd5-0b7f-5eb9-7ed3389ab751.html",
+"text": "5 axes",
+"class": "topic-link"
+},
+{
+"url": "UUID-ca05df2e-1741-3878-d167-b0669c8de41f.html",
+"text": "Macros",
+"class": "topic-link"
+},
+{
+"url": "UUID-c2208c4e-8e68-799c-a122-216a87fc601a.html",
+"text": "Setup",
+"class": "topic-link"
+}]
+},
+{
+"url": "UUID-5919027d-ad75-6292-9f2a-98a7cb00ccb2.html",
+"text": "MB Point Milling",
+"class": "topic-link"
+,
+"children": [
+{
+"url": "UUID-0ae31f84-fdbc-3873-2c3e-542be0b55d15.html",
+"text": "Parameters",
+"class": "topic-link"
+},
+{
+"url": "UUID-b167f42b-9e29-8d5e-1f9b-ae2020dc61e0.html",
+"text": "5 axes",
+"class": "topic-link"
+},
+{
+"url": "UUID-b1ddbdfe-fe54-05b0-af83-748a6fb366bb.html",
+"text": "Macros",
+"class": "topic-link"
+},
+{
+"url": "UUID-1a7bab06-dd21-8ae4-9b91-fd0f34ebc4dc.html",
+"text": "Setup",
+"class": "topic-link"
+}]
+},
+{
+"url": "UUID-4345926d-aa6c-4f7c-a555-5e1086a7243b.html",
+"text": "MB Flank Milling",
+"class": "topic-link"
+,
+"children": [
+{
+"url": "UUID-53217be3-632c-04ca-963e-81e5b1602fae.html",
+"text": "Parameters",
+"class": "topic-link"
+},
+{
+"url": "UUID-35055e2e-2424-3654-fcdf-8ce79f43297f.html",
+"text": "5 axes",
+"class": "topic-link"
+},
+{
+"url": "UUID-e395cfc8-b5f8-bfef-89a0-41c89a559ba0.html",
+"text": "Macros",
+"class": "topic-link"
+},
+{
+"url": "UUID-85fa7968-77ab-9c20-4d7f-7002d85d8459.html",
+"text": "Setup",
+"class": "topic-link"
+}]
+},
+{
+"url": "UUID-a7fb6995-0d0f-6528-7d66-e1bc12ff6b71.html",
+"text": "MB Edge Milling",
+"class": "topic-link"
+,
+"children": [
+{
+"url": "UUID-c4d13321-1726-2ed3-9799-cfeb58fd30f5.html",
+"text": "Parameters",
+"class": "topic-link"
+},
+{
+"url": "UUID-5d0a0c53-43ec-0ab8-ffc7-17223bc57b76.html",
+"text": "5 axes",
+"class": "topic-link"
+},
+{
+"url": "UUID-8f1bd98c-1eac-70ed-97a5-e72bdef465c4.html",
+"text": "Macros",
+"class": "topic-link"
+},
+{
+"url": "UUID-9cb41bff-373d-2fcc-c12a-c9075ae21bcc.html",
+"text": "Setup",
+"class": "topic-link"
+}]
+},
+{
+"url": "UUID-1953a646-16f8-b970-71f6-e17264ecac19.html",
+"text": "MB Fillet Milling",
+"class": "topic-link"
+,
+"children": [
+{
+"url": "UUID-cad945a8-00f1-9bdd-1433-01d41eb8b620.html",
+"text": "Parameters",
+"class": "topic-link"
+},
+{
+"url": "UUID-8d4afa08-f4d4-d95d-c2c1-b6af2b8585c3.html",
+"text": "5 axes",
+"class": "topic-link"
+},
+{
+"url": "UUID-eafec4a5-6f35-da9f-ee56-f56d5c142fc6.html",
+"text": "Setup",
+"class": "topic-link"
+}]
+}]
+}]
+},
+{
+"url": "UUID-51eaf0e4-7ec1-8210-187c-12cd10b54a1d.html",
+"text": "12. Tool database",
+"class": "topic-link"
+,
+"children": [
+{
+"url": "UUID-634fb878-d3da-9671-c94f-a5dbf85250d0.html",
+"text": "12.4. User interface",
+"class": "topic-link"
+},
+{
+"url": "UUID-dfa621d0-0330-c07b-5615-e721159ce6db.html",
+"text": "12.5. Create database",
+"class": "topic-link"
+},
+{
+"url": "UUID-62ffe5f7-2c4c-c02b-daf4-fada29b13852.html",
+"text": "12.6. Define tool",
+"class": "topic-link"
+,
+"children": [
+{
+"url": "UUID-da80ee30-1d88-b426-5e73-99ea4e6be694.html",
+"text": "Define tool geometry",
+"class": "topic-link"
+},
+{
+"url": "UUID-9c08c08d-9816-15f7-acb7-03e48782d7d2.html",
+"text": "Define tapered tool with a shank",
+"class": "topic-link"
+},
+{
+"url": "UUID-3e31613f-980f-4b79-bd26-a615679bf015.html",
+"text": "Save tool as default",
+"class": "topic-link"
+}]
+},
+{
+"url": "UUID-221d23ac-967c-7823-7f69-46f11596a6e4.html",
+"text": "12.7. Define turning tool",
+"class": "topic-link"
+,
+"children": [
+{
+"url": "UUID-42d1a09a-1129-e0b4-9e51-5f613d017c7b.html",
+"text": "Define insert",
+"class": "topic-link"
+},
+{
+"url": "UUID-bd5e31ac-6aa1-0e5c-da3a-7ef222627742.html",
+"text": "Define static holder",
+"class": "topic-link"
+},
+{
+"url": "UUID-bbafd154-a70a-2b20-3b8a-36c8d63c4be1.html",
+"text": "Define tool holder",
+"class": "topic-link"
+}]
+},
+{
+"url": "UUID-576aebc0-6e2d-81b8-3af9-0e2cd599f5a2.html",
+"text": "12.8. Create indexable cutter",
+"class": "topic-link"
+,
+"children": [
+{
+"url": "UUID-7f9b3dc2-d44b-fd88-1509-fee18e8a58c4.html",
+"text": "Indexable cutter with high feed inserts",
+"class": "topic-link"
+},
+{
+"url": "UUID-33b2de77-0637-a777-cb60-4aa205a3eade.html",
+"text": "Indexable round insert cutter",
+"class": "topic-link"
+}]
+},
+{
+"url": "UUID-60273054-97af-60a8-4c4b-2214055b8c29.html",
+"text": "12.9. Optimal barrel cutter",
+"class": "topic-link"
+},
+{
+"url": "UUID-f17a965c-b2b8-e47c-d253-a2610b4547d0.html",
+"text": "12.10. Tool geometry parameters",
+"class": "topic-link"
+,
+"children": [
+{
+"url": "UUID-f0a860a0-dc01-2b8f-9e88-51e49d9c64a0.html",
+"text": "Milling tool \/ touch probe",
+"class": "topic-link"
+},
+{
+"url": "UUID-0e880558-9d3d-e229-b42f-d9f630ad2ec2.html",
+"text": "Drilling tool",
+"class": "topic-link"
+},
+{
+"url": "UUID-e0f0c2bd-0c3c-3cde-7970-5f8fbaca5e48.html",
+"text": "Turning tool",
+"class": "topic-link"
+},
+{
+"url": "UUID-63cc7db4-c63b-b5d4-d6ee-7abd944d52c7.html",
+"text": "Grinding bit",
+"class": "topic-link"
+},
+{
+"url": "UUID-494f760c-0a08-3dcd-b035-f10483bab05f.html",
+"text": "Additive tool",
+"class": "topic-link"
+}]
+},
+{
+"url": "UUID-77184347-ee38-28c2-d236-916e909f3767.html",
+"text": "12.11. Tool technology parameters",
+"class": "topic-link"
+,
+"children": [
+{
+"url": "UUID-ddea44e8-7ad8-150e-8ae9-3e2277624bb8.html",
+"text": "Define",
+"class": "topic-link"
+},
+{
+"url": "UUID-b4dd9530-8678-afa5-8c40-14f499d29564.html",
+"text": "Copy and insert",
+"class": "topic-link"
+},
+{
+"url": "UUID-35164684-6ac9-30b1-001f-fdec710c64c0.html",
+"text": "For turning tool\/drilling tool",
+"class": "topic-link"
+},
+{
+"url": "UUID-1a451b17-72e0-e0f6-39a5-7abf319abb1e.html",
+"text": "Update",
+"class": "topic-link"
+},
+{
+"url": "UUID-a87ff126-978c-a586-9c56-a5d0ba8b610b.html",
+"text": "Use standard formulas",
+"class": "topic-link"
+},
+{
+"url": "UUID-561b9539-dcee-1fcf-c068-2ba8b02231f8.html",
+"text": "Define material\/cutter material",
+"class": "topic-link"
+},
+{
+"url": "UUID-6cbd6eaa-8075-90f1-d970-00ddf7d26292.html",
+"text": "Assign material to a cutter material",
+"class": "topic-link"
+},
+{
+"url": "UUID-4a6b6889-ed3b-fcfd-39e8-6ea0955713d5.html",
+"text": "Define technology usage",
+"class": "topic-link"
+},
+{
+"url": "UUID-81a4fe3a-de21-3528-dead-adb34e46e74c.html",
+"text": "Define coolant",
+"class": "topic-link"
+}]
+},
+{
+"url": "UUID-0dcc7c01-5f35-bd09-9bda-c7b51a52b52e.html",
+"text": "12.12. Tool series and technology templates",
+"class": "topic-link"
+,
+"children": [
+{
+"url": "UUID-253c256b-1fb3-1a62-ebbf-853fe81df760.html",
+"text": "Define tool series",
+"class": "topic-link"
+},
+{
+"url": "UUID-6eaefcfe-bd98-7d9a-4684-47bf40c30c4d.html",
+"text": "Define technology template",
+"class": "topic-link"
+,
+"children": [
+{
+"url": "UUID-cf787a85-e767-ad3a-2008-5ffeba9ffd0f.html",
+"text": "Type of cut parameter and associated calculation rules",
+"class": "topic-link"
+},
+{
+"url": "UUID-85570498-f5a1-8d66-97cd-2a8f35675d31.html",
+"text": "Calculation rules and their meaning",
+"class": "topic-link"
+}]
+},
+{
+"url": "UUID-d570183b-780e-f50b-eb0c-f8d28bcf0b0e.html",
+"text": "Cutting classes and materials",
+"class": "topic-link"
+},
+{
+"url": "UUID-65218bba-9e93-95c2-dcc4-09095c1b8c28.html",
+"text": "Overview: jobs and types of cut",
+"class": "topic-link"
+},
+{
+"url": "UUID-8d77d9ae-66bd-ae4c-4a8a-e9acf44653c0.html",
+"text": "Overview: cutting types, tool types and parameters",
+"class": "topic-link"
+}]
+},
+{
+"url": "UUID-13671837-d209-e120-c751-db5333ab2dd4.html",
+"text": "12.13. Define manufacturer",
+"class": "topic-link"
+},
+{
+"url": "UUID-9cc995a9-6602-90ce-3f87-cef32b437182.html",
+"text": "12.14. Define user-defined data class",
+"class": "topic-link"
+},
+{
+"url": "UUID-e06cc28d-ca3c-b47c-517d-fd75f20e9c87.html",
+"text": "12.15. Define coupling",
+"class": "topic-link"
+,
+"children": [
+{
+"url": "UUID-9aeae89a-c2c0-9135-7453-cbe0e4c97a21.html",
+"text": "Coupling types",
+"class": "topic-link"
+},
+{
+"url": "UUID-2fcda739-df73-75ef-5cfb-9db62948e0e6.html",
+"text": "Possible applications",
+"class": "topic-link"
+}]
+},
+{
+"url": "UUID-4c8bcc55-0461-5841-2dd7-699a5631ec9a.html",
+"text": "12.16. Define spindle",
+"class": "topic-link"
+},
+{
+"url": "UUID-a9dfed15-20c2-139c-09ca-9bf93cb51056.html",
+"text": "12.17. Define holder\/extension",
+"class": "topic-link"
+,
+"children": [
+{
+"url": "UUID-7f38b4f4-57c5-ce1a-2ccb-2227f5cff9e4.html",
+"text": "Import holder\/extension as 3D model",
+"class": "topic-link"
+},
+{
+"url": "UUID-980f9177-7858-be46-cc35-8c87146e762e.html",
+"text": "Holder\/extension positional orientation",
+"class": "topic-link"
+},
+{
+"url": "UUID-95cfc547-c27b-5f7c-2d93-1913f3df8e3a.html",
+"text": "Create geometry with the geometry editor",
+"class": "topic-link"
+}]
+},
+{
+"url": "UUID-f6738cf7-7587-10da-da6c-512a7e30b218.html",
+"text": "12.18. Define NC tool",
+"class": "topic-link"
+,
+"children": [
+{
+"url": "UUID-ece21e7d-d963-2dde-4aa5-c034f2c1de4b.html",
+"text": "Components for NC tool",
+"class": "topic-link"
+},
+{
+"url": "UUID-e6fc4721-7ad9-3f0b-5909-c40cbcbda1ca.html",
+"text": "General parameters",
+"class": "topic-link"
+},
+{
+"url": "UUID-da2bbf94-b215-c3bd-4358-9b295cc7c8ea.html",
+"text": "Geometry parameters",
+"class": "topic-link"
+},
+{
+"url": "UUID-62c0d4b6-86a3-fc36-2519-802946b88f45.html",
+"text": "Technology parameters",
+"class": "topic-link"
+},
+{
+"url": "UUID-1611399a-873b-7fb6-7fa3-79e4c2fd8aba.html",
+"text": "Cutting point setup (turning tools)",
+"class": "topic-link"
+},
+{
+"url": "UUID-065559d5-c523-936a-4321-370ad9b97fda.html",
+"text": "NC tools and technology data",
+"class": "topic-link"
+}]
+},
+{
+"url": "UUID-a5ec8009-ae6e-593e-0f72-223e45eb2652.html",
+"text": "12.19. Define depot",
+"class": "topic-link"
+,
+"children": [
+{
+"url": "UUID-6b52c0fd-2999-1f70-ccc6-5f7c0c3f2984.html",
+"text": "Save NC tool in a depot",
+"class": "topic-link"
+},
+{
+"url": "UUID-2de907cc-4d82-d9e1-dbe0-6c1672699bc2.html",
+"text": "Transfer NC tool from depot to hyperMILL",
+"class": "topic-link"
+}]
+},
+{
+"url": "UUID-662c387e-6380-cb7b-70a9-8f91a6143bd7.html",
+"text": "12.20. Data exchange",
+"class": "topic-link"
+,
+"children": [
+{
+"url": "UUID-04fc4886-dd0f-a93d-a225-d5a4f1d55757.html",
+"text": "Importing\/exporting data",
+"class": "topic-link"
+},
+{
+"url": "UUID-8fc4213a-64a3-d014-75f6-4a6dcd1cf4e8.html",
+"text": "Export folder structure",
+"class": "topic-link"
+},
+{
+"url": "UUID-5502d8fa-1785-e6c4-9645-0d7d49b334f7.html",
+"text": "Synchronise data",
+"class": "topic-link"
+},
+{
+"url": "UUID-7ddf3659-87d0-8c9f-6bf3-963e5c904ea4.html",
+"text": "Import external tool data",
+"class": "topic-link"
+}]
+},
+{
+"url": "UUID-88980c56-c13b-1bd7-87c4-3b298d85702f.html",
+"text": "12.21. Additional functions",
+"class": "topic-link"
+,
+"children": [
+{
+"url": "UUID-f3b94080-d78f-7c32-8b13-487e28b46b1d.html",
+"text": "Sort tools \/ NC tools",
+"class": "topic-link"
+},
+{
+"url": "UUID-6502f8ea-9b97-d514-7d36-e28d0679922e.html",
+"text": "Create reports",
+"class": "topic-link"
+},
+{
+"url": "UUID-140c8ae3-24e1-1041-d2d0-c96afaea7189.html",
+"text": "Specify accuracy",
+"class": "topic-link"
+},
+{
+"url": "UUID-70be9cda-9e0c-84d6-3d0d-da38b60beae6.html",
+"text": "Specify measurement system",
+"class": "topic-link"
+},
+{
+"url": "UUID-89c57b8b-01d0-c197-2c55-1542ba8b5f80.html",
+"text": "Change password",
+"class": "topic-link"
+},
+{
+"url": "UUID-91cfa551-26f4-b98c-4ef5-83149a1cc2f5.html",
+"text": "Showing properties of the tool database",
+"class": "topic-link"
+},
+{
+"url": "UUID-ebe64b2f-3f97-d521-5750-96b96bea3dd5.html",
+"text": "Multiple selections",
+"class": "topic-link"
+},
+{
+"url": "UUID-d016b0c3-d199-789a-22d1-2a3ed66ba075.html",
+"text": "Copy &amp; Paste",
+"class": "topic-link"
+}]
+},
+{
+"url": "UUID-3a779a83-f87b-a448-5d6e-863247a69fd2.html",
+"text": "12.22. Interfaces",
+"class": "topic-link"
+,
+"children": [
+{
+"url": "UUID-6d7f16bd-5935-83fc-909a-70c69752d2c8.html",
+"text": "TDM Systems integration",
+"class": "topic-link"
+},
+{
+"url": "UUID-2e30ef10-24a2-89a1-2198-25a17c4dbe9f.html",
+"text": "WinTool integration",
+"class": "topic-link"
+},
+{
+"url": "UUID-1e4a550b-edc7-359b-4fe4-6ba628ffc2ea.html",
+"text": "Zoller integration",
+"class": "topic-link"
+},
+{
+"url": "UUID-2dcaacb1-3517-e96e-a011-7037976091c3.html",
+"text": "NCSIMUL | Tool",
+"class": "topic-link"
+}]
+},
+{
+"url": "UUID-0858f2e3-2ead-8ce5-3f9b-ff5a27eb4804.html",
+"text": "12.23. Icons",
+"class": "topic-link"
+}]
+},
+{
+"url": "UUID-56b42c1f-4725-0b56-0bdf-0ee2de68a013.html",
+"text": "13. hyperVIEW",
+"class": "topic-link"
+,
+"children": [
+{
+"url": "UUID-d66edaea-42f0-d7ae-6990-1aca3f2e2cae.html",
+"text": "13.1. User interface",
+"class": "topic-link"
+},
+{
+"url": "UUID-c3807e33-01cc-66fb-1609-518b29479a51.html",
+"text": "13.2. Important workflows",
+"class": "topic-link"
+,
+"children": [
+{
+"url": "UUID-50833757-c9a3-50a5-9283-35c427577a6a.html",
+"text": "Set up machine",
+"class": "topic-link"
+},
+{
+"url": "UUID-78b95f78-0c41-a3fa-5eaf-4e9a33d52aa1.html",
+"text": "Generate NC program",
+"class": "topic-link"
+},
+{
+"url": "UUID-1851e5f7-52d1-7660-2637-a5b0c132dd0d.html",
+"text": "Set up machine simulation",
+"class": "topic-link"
+},
+{
+"url": "UUID-efdc570f-a49a-4da9-1ec4-fa1fe712e689.html",
+"text": "Generate report",
+"class": "topic-link"
+},
+{
+"url": "UUID-0da2376e-b3fd-073e-7e92-3374086cd414.html",
+"text": "Print information",
+"class": "topic-link"
+}]
+},
+{
+"url": "UUID-7cc915cc-5cf2-a132-9291-a55f9b80ab21.html",
+"text": "13.3. Menu functions",
+"class": "topic-link"
+,
+"children": [
+{
+"url": "UUID-110448e4-9b4e-9bf1-f8f0-c40a5a8f3a68.html",
+"text": "File",
+"class": "topic-link"
+},
+{
+"url": "UUID-7730c5f6-d2ef-74f0-8d2c-dd32a086b9d5.html",
+"text": "Edit",
+"class": "topic-link"
+},
+{
+"url": "UUID-3e925e3f-ec20-f4ef-7c3f-10882a9c6c12.html",
+"text": "View",
+"class": "topic-link"
+},
+{
+"url": "UUID-b676cc46-8881-ad33-4374-04d1ad3a3ffc.html",
+"text": "Simulation",
+"class": "topic-link"
+},
+{
+"url": "UUID-53f74ff8-13b5-b888-59df-e5d940488b7e.html",
+"text": "Machine Setup",
+"class": "topic-link"
+},
+{
+"url": "UUID-0e9473f6-399c-2d55-f5dc-553cf50103dc.html",
+"text": "Options",
+"class": "topic-link"
+},
+{
+"url": "UUID-21058468-9f98-6185-c399-38c686079466.html",
+"text": "Profile",
+"class": "topic-link"
+},
+{
+"url": "UUID-39feee71-950e-7535-3e9b-f65d3c03c2f8.html",
+"text": "NC-File",
+"class": "topic-link"
+},
+{
+"url": "UUID-b760f48c-8041-44fb-8fd9-7040de93d2c2.html",
+"text": "Machine model",
+"class": "topic-link"
+},
+{
+"url": "UUID-8f994d8d-c74f-ddc9-252d-b3da1a5f46ad.html",
+"text": "Print and CSV Layout",
+"class": "topic-link"
+},
+{
+"url": "UUID-e0239095-5a4e-57ba-d889-2ccf29951164.html",
+"text": "Accuracy",
+"class": "topic-link"
+},
+{
+"url": "UUID-392e80eb-096a-2e82-a00d-cbb093d5112a.html",
+"text": "Extended Postprocessor Options",
+"class": "topic-link"
+},
+{
+"url": "UUID-d390ac37-a648-fcff-f6e1-e84cccfeba2e.html",
+"text": "Video",
+"class": "topic-link"
+}]
+},
+{
+"url": "UUID-34375f5b-485a-151c-3c00-3d20e2deb5f9.html",
+"text": "13.4. Browser functions",
+"class": "topic-link"
+,
+"children": [
+{
+"url": "UUID-6660add6-8226-1b0f-15e6-9b9555aa5eca.html",
+"text": "NC-Jobs tab",
+"class": "topic-link"
+,
+"children": [
+{
+"url": "UUID-ae5c5448-be8c-2cf0-a6b0-5d55ee41ba73.html",
+"text": "Machine properties \/ NC file properties",
+"class": "topic-link"
+}]
+},
+{
+"url": "UUID-c11bd7e3-3794-03cb-f3c6-722c7b9a0454.html",
+"text": "Simulation tab",
+"class": "topic-link"
+},
+{
+"url": "UUID-7009687e-7dce-8ff3-2af8-ad76e6aeeb9d.html",
+"text": "Machine Setup tab",
+"class": "topic-link"
+}]
+},
+{
+"url": "UUID-130e9c90-89bd-7dcc-334a-f49d7a9378f7.html",
+"text": "13.5. Toolbars",
+"class": "topic-link"
+}]
+},
+{
+"url": "UUID-305a0ad7-3b0b-369a-7409-baf7134842ed.html",
+"text": "14. Appendix",
+"class": "topic-link"
+,
+"children": [
+{
+"url": "UUID-829dd484-270e-cfc8-077b-8ccf196f4607.html",
+"text": "14.1. ReportDesigner",
+"class": "topic-link"
+,
+"children": [
+{
+"url": "UUID-e9632be6-fa12-78ac-b5b7-3e7d5a8fafb2.html",
+"text": "Introduction",
+"class": "topic-link"
+},
+{
+"url": "UUID-97c2378f-33eb-e4ff-a3f2-8c8f1b64d62a.html",
+"text": "Initial Steps",
+"class": "topic-link"
+},
+{
+"url": "UUID-8f815858-53c5-9fbd-5c7a-ae1b6d97e967.html",
+"text": "Menu and Toolbar",
+"class": "topic-link"
+},
+{
+"url": "UUID-54f4b00d-d929-2b9e-3bde-869e54889fd6.html",
+"text": "Creating a New Report",
+"class": "topic-link"
+},
+{
+"url": "UUID-23d0f158-de6b-a92c-6793-72722e99bc2b.html",
+"text": "Preview Area",
+"class": "topic-link"
+},
+{
+"url": "UUID-fa20c5a9-9c06-48ee-00b7-f62630168d11.html",
+"text": "Structure View",
+"class": "topic-link"
+},
+{
+"url": "UUID-b09cbe2c-9b13-21b9-8a79-c335e7c846ef.html",
+"text": "Properties Dialog",
+"class": "topic-link"
+},
+{
+"url": "UUID-208f2ce9-212a-661b-bfde-f038146e7b07.html",
+"text": "Test Execution",
+"class": "topic-link"
+},
+{
+"url": "UUID-434e3e89-1024-f680-509d-02f41447112c.html",
+"text": "Visible Elements",
+"class": "topic-link"
+},
+{
+"url": "UUID-88345998-7486-02d8-761b-fd1f5a50ac9b.html",
+"text": "Text Areas and Properties",
+"class": "topic-link"
+},
+{
+"url": "UUID-db7f0438-b893-0d62-53f0-9c77c54135f5.html",
+"text": "Tables, rows and columns",
+"class": "topic-link"
+},
+{
+"url": "UUID-65139ece-e694-0770-10c8-56b08bb269d5.html",
+"text": "Simple and Numbered Lists",
+"class": "topic-link"
+},
+{
+"url": "UUID-6027ea9a-619e-82e4-4f24-8622c9ff4954.html",
+"text": "Images and Graphics",
+"class": "topic-link"
+},
+{
+"url": "UUID-57764969-9e41-0792-c0c3-425045be4f9b.html",
+"text": "Logical Elements",
+"class": "topic-link"
+},
+{
+"url": "UUID-7d6d5ff0-415b-bbd1-df96-238e00bab46d.html",
+"text": "Conditions",
+"class": "topic-link"
+},
+{
+"url": "UUID-08038e7d-7cdd-eec9-3536-2dc7dce340c8.html",
+"text": "Additional functions",
+"class": "topic-link"
+},
+{
+"url": "UUID-857a70b1-bc62-3702-e5ec-eab2847795ec.html",
+"text": "MinTlength",
+"class": "topic-link"
+},
+{
+"url": "UUID-8e061071-956f-e82b-4dc1-bad831f9b18e.html",
+"text": "Zmax-Zmin",
+"class": "topic-link"
+},
+{
+"url": "UUID-75658370-819c-ce80-0b56-3cce0063bf54.html",
+"text": "System Requirements",
+"class": "topic-link"
+}]
+},
+{
+"url": "UUID-63ebc5c2-7c71-3169-8588-ddd41b603fd8.html",
+"text": "14.2. FAQs \/ Contacting your OPEN MIND partner",
+"class": "topic-link"
+,
+"children": [
+{
+"url": "UUID-bdd1fa28-9f2b-878c-5a5e-02fe2fc64140.html",
+"text": "Frequently asked questions",
+"class": "topic-link"
+},
+{
+"url": "UUID-69f92c0f-1023-969e-6d31-036896e9a820.html",
+"text": "Contact OPEN MIND partner",
+"class": "topic-link"
+}]
+},
+{
+"url": "UUID-5f881b96-d51e-3dd2-75c2-2b993d040598.html",
+"text": "14.3. Trademarks",
+"class": "topic-link"
+}]
+},
+{
+"url": "UUID-bb67fcc5-fba4-9826-34f7-99d929f98a24.html",
+"text": "15. Third Party Software Terms",
+"class": "topic-link"
+,
+"children": [
+{
+"url": "UUID-667f9036-e757-c5f5-f0f6-4b9b08279107.html",
+"text": "15.1. Apache 2.0",
+"class": "topic-link"
+},
+{
+"url": "UUID-cce46ec7-2d0b-3b94-84af-b4945f108499.html",
+"text": "15.2. Boost",
+"class": "topic-link"
+},
+{
+"url": "UUID-9052eda8-afa9-e5ad-5c7e-dfb5b4b8fbd0.html",
+"text": "15.3. CxImage",
+"class": "topic-link"
+},
+{
+"url": "UUID-3ff0e53e-24c6-c8fc-09df-9df11f7cb1ca.html",
+"text": "15.4. FreeType",
+"class": "topic-link"
+},
+{
+"url": "UUID-e3a6d47b-7944-b84c-875b-8d0e80d04366.html",
+"text": "15.5. libxls",
+"class": "topic-link"
+},
+{
+"url": "UUID-3b22e6cf-2b6d-35e2-719f-df43b81b769e.html",
+"text": "15.6. Microsoft Public License (MS-PL)",
+"class": "topic-link"
+},
+{
+"url": "UUID-8e4d77e1-de13-7d5d-9ba6-f5723ae07fc7.html",
+"text": "15.7. NLopt",
+"class": "topic-link"
+},
+{
+"url": "UUID-825b24e8-085c-ee74-f6b6-b36243cdbe7f.html",
+"text": "15.8. OpenCascade",
+"class": "topic-link"
+},
+{
+"url": "UUID-f01e69a5-037c-b88f-d665-289dce9e3c04.html",
+"text": "15.9. OpenMesh",
+"class": "topic-link"
+},
+{
+"url": "UUID-2f7727b2-5a6f-cb59-a572-3dee80fe6ea6.html",
+"text": "15.10. OpenSSL License",
+"class": "topic-link"
+},
+{
+"url": "UUID-b5c8dd24-1da5-4191-1251-a64bb2d46bcf.html",
+"text": "15.11. OpenVR",
+"class": "topic-link"
+},
+{
+"url": "UUID-fdd69251-d78e-89dc-be33-99af4c47b5c3.html",
+"text": "15.12. Pugixml",
+"class": "topic-link"
+},
+{
+"url": "UUID-644f3750-428a-a162-c34e-7623b961879c.html",
+"text": "15.13. QT",
+"class": "topic-link"
+},
+{
+"url": "UUID-160a7206-474f-9b6c-f025-163fe056b458.html",
+"text": "15.14. Qwt",
+"class": "topic-link"
+},
+{
+"url": "UUID-922f93f7-5d63-b69f-b779-83e2ace51601.html",
+"text": "15.15. VOLUMILL™",
+"class": "topic-link"
+},
+{
+"url": "UUID-ce5235be-a205-2e6e-4dd5-a6b0f1dde368.html",
+"text": "15.16. WTL",
+"class": "topic-link"
+}]
+}];

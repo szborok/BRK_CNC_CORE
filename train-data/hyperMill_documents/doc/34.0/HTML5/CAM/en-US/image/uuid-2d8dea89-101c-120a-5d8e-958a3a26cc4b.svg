@@ -1,0 +1,795 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   version="1.1"
+   viewBox="0 0 460.63 301.18"
+   id="svg18872"
+   sodipodi:docname="grundlagen_mehrseitenbearbeitung.svg"
+   inkscape:version="1.2.2 (732a01da63, 2022-12-09)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <sodipodi:namedview
+     id="namedview18874"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="1.5671692"
+     inkscape:cx="150.59"
+     inkscape:cy="107.51871"
+     inkscape:window-width="1920"
+     inkscape:window-height="1010"
+     inkscape:window-x="953"
+     inkscape:window-y="-6"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg18872" />
+  <title
+     id="title18675">Abbildung für OPEN MIND Softwaredokumentation</title>
+  <defs
+     id="defs18716">
+    <linearGradient
+       id="b"
+       x1="51.352"
+       x2="42.884"
+       y1="59.816"
+       y2="62.898"
+       gradientUnits="userSpaceOnUse">
+      <stop
+         stop-color="#d2dadd"
+         offset="0"
+         id="stop18677" />
+      <stop
+         stop-color="#13385e"
+         offset="1"
+         id="stop18679" />
+    </linearGradient>
+    <linearGradient
+       id="a">
+      <stop
+         stop-color="#ffffff"
+         offset="0"
+         id="stop18682" />
+      <stop
+         stop-color="#00385e"
+         offset="1"
+         id="stop18684" />
+    </linearGradient>
+    <linearGradient
+       id="h"
+       x1="61.691"
+       x2="53.224"
+       y1="46.539"
+       y2="49.621"
+       gradientTransform="matrix(1.8156 0 0 1.8156 66.84 11.858)"
+       gradientUnits="userSpaceOnUse">
+      <stop
+         stop-color="#d2dadd"
+         offset="0"
+         id="stop18687" />
+      <stop
+         stop-color="#13385e"
+         offset="1"
+         id="stop18689" />
+    </linearGradient>
+    <linearGradient
+       id="g"
+       x1="51.352"
+       x2="42.884"
+       y1="59.816"
+       y2="62.898"
+       gradientTransform="matrix(1.8156 0 0 1.8156 66.84 11.858)"
+       gradientUnits="userSpaceOnUse"
+       xlink:href="#b" />
+    <linearGradient
+       id="d"
+       x1="45.994"
+       x2="37.526"
+       y1="54.052"
+       y2="57.134"
+       gradientTransform="matrix(1.8156 0 0 1.8156 66.84 11.858)"
+       gradientUnits="userSpaceOnUse">
+      <stop
+         stop-color="#d2dadd"
+         offset="0"
+         id="stop18693" />
+      <stop
+         stop-color="#13385e"
+         offset="1"
+         id="stop18695" />
+    </linearGradient>
+    <linearGradient
+       id="c"
+       x1="36.127"
+       x2="27.659"
+       y1="67.16"
+       y2="70.242"
+       gradientTransform="matrix(1.8156 0 0 1.8156 66.84 11.858)"
+       gradientUnits="userSpaceOnUse">
+      <stop
+         stop-color="#d2dadd"
+         offset="0"
+         id="stop18698" />
+      <stop
+         stop-color="#13385e"
+         offset="1"
+         id="stop18700" />
+    </linearGradient>
+    <filter
+       id="m"
+       x="-0.025137438"
+       y="-0.034962644"
+       width="1.0502749"
+       height="1.0699253"
+       color-interpolation-filters="sRGB">
+      <feGaussianBlur
+         stdDeviation="0.10236846"
+         id="feGaussianBlur18703" />
+    </filter>
+    <linearGradient
+       id="l"
+       x1="53.449"
+       x2="272.74"
+       y1="141.73"
+       y2="151.28"
+       gradientUnits="userSpaceOnUse">
+      <stop
+         stop-color="#ffffff"
+         offset="0"
+         id="stop18706" />
+      <stop
+         stop-color="#00385e"
+         offset="1"
+         id="stop18708" />
+    </linearGradient>
+    <linearGradient
+       id="f"
+       x1="51.352"
+       x2="42.884"
+       y1="59.816"
+       y2="62.898"
+       gradientTransform="matrix(1.8156 0 0 1.8156 41.783 24.418)"
+       gradientUnits="userSpaceOnUse"
+       xlink:href="#b" />
+    <linearGradient
+       id="e"
+       x1="51.352"
+       x2="42.884"
+       y1="59.816"
+       y2="62.898"
+       gradientTransform="matrix(1.8156 0 0 1.8156 59.207 -.82463)"
+       gradientUnits="userSpaceOnUse"
+       xlink:href="#b" />
+    <linearGradient
+       id="j"
+       x1="131.86"
+       x2="217.31"
+       y1="13.836"
+       y2="91.759"
+       gradientTransform="matrix(1.8205 0 0 1.8205 192.56 -6.9687)"
+       gradientUnits="userSpaceOnUse"
+       xlink:href="#a" />
+    <linearGradient
+       id="k"
+       x1="20.705"
+       x2="216.36"
+       y1="87.841"
+       y2="72.027"
+       gradientTransform="matrix(1.8205 0 0 1.8205 192.8 -6.7315)"
+       gradientUnits="userSpaceOnUse"
+       xlink:href="#a" />
+    <linearGradient
+       id="i"
+       x1="36.106"
+       x2="211.6"
+       y1="46.838"
+       y2="57.994"
+       gradientTransform="matrix(1.8205 0 0 1.8205 192.8 -6.7315)"
+       gradientUnits="userSpaceOnUse"
+       xlink:href="#a" />
+  </defs>
+  <metadata
+     id="metadata18718">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title>Abbildung für OPEN MIND Softwaredokumentation</dc:title>
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>OPEN MIND Technologies AG</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <dc:rights>
+          <cc:Agent>
+            <dc:title>Alle Rechte vorbehalten.</dc:title>
+          </cc:Agent>
+        </dc:rights>
+        <dc:publisher>
+          <cc:Agent>
+            <dc:title>Technische Redaktion</dc:title>
+          </cc:Agent>
+        </dc:publisher>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     transform="translate(-210.22 17.031)"
+     stroke-linejoin="round"
+     id="g18738">
+    <g
+       id="g18728">
+      <path
+         d="m528.9 58.951-40.196 53.245 0.17795 111.07 40.018-54.329z"
+         clip-rule="evenodd"
+         fill="url(#j)"
+         fill-rule="evenodd"
+         stroke="#232323"
+         stroke-width=".7997"
+         id="path18720" />
+      <path
+         d="m488.98 223.29v-110.98l-117.29 0.0677-66.735 31.105v79.804z"
+         clip-rule="evenodd"
+         fill="url(#k)"
+         fill-rule="evenodd"
+         stroke="#3e3e3e"
+         stroke-width=".7997"
+         id="path18722" />
+      <path
+         d="m519.53 143.86v-48.447l-20.539 27.497v49.317l20.539-28.367"
+         fill="none"
+         stroke="#e1e1e1"
+         stroke-dasharray="1.5874, 3.17481"
+         stroke-linecap="round"
+         stroke-miterlimit="10"
+         stroke-opacity=".88235"
+         stroke-width="1.5874"
+         id="path18724" />
+      <path
+         d="m529.14 59.188h-117.09l-40.927 53.245h117.82z"
+         clip-rule="evenodd"
+         fill="url(#i)"
+         fill-rule="evenodd"
+         stroke="#4d4d4d"
+         stroke-width=".74972"
+         id="path18726" />
+    </g>
+    <g
+       fill="none"
+       stroke="#e1e1e1"
+       stroke-linecap="round"
+       stroke-miterlimit="10"
+       id="g18736">
+      <polyline
+         transform="matrix(1.8205 0 0 1.8205 192.8 -6.7315)"
+         points="154.27 59.704 167.48 41.964 128.84 41.964 115.4 59.704 154.27 59.704"
+         stroke-dasharray="1.79455, 1.79455"
+         stroke-opacity=".88235"
+         stroke-width=".89728"
+         id="polyline18730" />
+      <circle
+         cx="434.12"
+         cy="169.32"
+         r="19.71"
+         stroke-dasharray="3.34234, 3.34234"
+         stroke-opacity=".88104"
+         stroke-width="1.6712"
+         id="circle18732" />
+      <circle
+         cx="364.76"
+         cy="169.32"
+         r="19.709"
+         stroke-dasharray="3.34234, 3.34234"
+         stroke-opacity=".88104"
+         stroke-width="1.6712"
+         id="circle18734" />
+    </g>
+  </g>
+  <line
+     x1="278.24"
+     x2="306.97"
+     y1="239.93"
+     y2="239.87"
+     fill="none"
+     stroke="#34679b"
+     stroke-miterlimit="5.6552"
+     stroke-width=".67654"
+     id="line18740" />
+  <line
+     x1="95.577"
+     x2="78.223"
+     y1="239.55"
+     y2="262.45"
+     fill="none"
+     stroke="#34679b"
+     stroke-miterlimit="5.6552"
+     stroke-width=".67654"
+     id="line18742" />
+  <switch
+     transform="matrix(1.876 0 0 1.876 16.888 -1.5361)"
+     id="switch18744">
+    <foreignObject
+       width="1"
+       height="1"
+       overflow="visible"
+       requiredExtensions="http://ns.adobe.com/Flows/1.0/" />
+  </switch>
+  <switch
+     transform="matrix(1.876 0 0 1.876 16.888 -1.5361)"
+     id="switch18746">
+    <foreignObject
+       width="1"
+       height="1"
+       overflow="visible"
+       requiredExtensions="http://ns.adobe.com/Flows/1.0/" />
+  </switch>
+  <switch
+     transform="matrix(1.3311 0 0 1.3311 28.2 172.37)"
+     stroke="#ff0000"
+     stroke-width=".4765"
+     id="switch18748">
+    <foreignObject
+       width="1"
+       height="1"
+       overflow="visible"
+       requiredExtensions="http://ns.adobe.com/Flows/1.0/" />
+  </switch>
+  <g
+     stroke="#4d4d4d"
+     stroke-miterlimit="5.6552"
+     id="g18760">
+    <path
+       d="m126.64 139.94c-3.9744 2.2514-8.0433 2.5764-9.0873 0.7317-1.044-1.8447 1.3309-5.1637 5.3053-7.4133 3.9744-2.2496 8.0451-2.5764 9.0891-0.7317 1.044 1.8465-1.3309 5.1655-5.3071 7.4133z"
+       fill="url(#c)"
+       opacity=".45"
+       stroke-linecap="square"
+       stroke-width=".67654"
+       id="path18750" />
+    <path
+       d="m144.55 116.14c-3.9744 2.2514-8.0433 2.5764-9.0873 0.73171-1.044-1.8447 1.3309-5.1637 5.3053-7.4133 3.9744-2.2496 8.0451-2.5764 9.0891-0.7317 1.044 1.8447-1.3309 5.1637-5.3071 7.4133z"
+       fill="url(#d)"
+       opacity=".45"
+       stroke-linecap="square"
+       stroke-width=".67654"
+       id="path18752" />
+    <path
+       d="m95.119 160.29 65.985-30.656 40.61-53.448-60.841 27.953z"
+       fill="url(#l)"
+       fill-rule="evenodd"
+       stroke-linecap="round"
+       stroke-linejoin="round"
+       stroke-width=".67654"
+       id="path18754" />
+    <path
+       d="m154.28 126.6c-3.9744 2.2514-8.0433 2.5764-9.0873 0.7317-1.044-1.8447 1.3309-5.1637 5.3053-7.4133 3.9744-2.2496 8.0451-2.5764 9.0891-0.7317 1.044 1.8447-1.3309 5.1637-5.3071 7.4133z"
+       fill="url(#g)"
+       opacity=".45"
+       stroke-linecap="square"
+       stroke-width=".67654"
+       id="path18756" />
+    <path
+       d="m173.05 102.49c-3.9744 2.2514-8.0433 2.5764-9.0873 0.7317-1.044-1.8447 1.3309-5.1637 5.3053-7.4133 3.9744-2.2496 8.0451-2.5764 9.0891-0.73171 1.044 1.8465-1.3327 5.1655-5.3071 7.4133z"
+       fill="url(#h)"
+       opacity=".45"
+       stroke-linecap="square"
+       stroke-width=".67654"
+       id="path18758" />
+  </g>
+  <g
+     stroke-miterlimit="5.6552"
+     id="g18816">
+    <g
+       stroke-width=".37262"
+       id="g18770">
+      <polygon
+         transform="matrix(1.8156 0 0 1.8156 66.84 11.858)"
+         points="66.768 124.82 66.92 124.91"
+         fill-rule="evenodd"
+         id="polygon18762" />
+      <polyline
+         transform="matrix(1.8156 0 0 1.8156 66.84 11.858)"
+         points="66.92 124.91 66.768 124.82 66.92 124.91"
+         fill="none"
+         stroke="#000000"
+         stroke-linecap="square"
+         id="polyline18764" />
+      <polygon
+         transform="matrix(1.8156 0 0 1.8156 66.84 11.858)"
+         points="72.467 128.14 72.542 128.18"
+         fill-rule="evenodd"
+         id="polygon18766" />
+      <polyline
+         transform="matrix(1.8156 0 0 1.8156 66.84 11.858)"
+         points="72.542 128.18 72.467 128.14 72.542 128.18"
+         fill="none"
+         stroke="#000000"
+         stroke-linecap="square"
+         id="polyline18768" />
+    </g>
+    <line
+       x1="95.283"
+       x2="95.315"
+       y1="240.37"
+       y2="199.37"
+       fill="none"
+       stroke="#7ab51d"
+       stroke-width=".67654"
+       id="line18772" />
+    <polygon
+       transform="matrix(1.8156 0 0 1.8156 60.241 11.613)"
+       points="35.171 127.77 43.189 125.55 35.171 123.46"
+       fill="#e2001a"
+       fill-rule="evenodd"
+       stroke="#e2001a"
+       stroke-linecap="round"
+       stroke-linejoin="round"
+       stroke-width=".37262"
+       id="polygon18774" />
+    <line
+       x1="94.957"
+       x2="134.68"
+       y1="240.14"
+       y2="240.17"
+       fill="none"
+       stroke="#e2001a"
+       stroke-width=".67654"
+       id="line18776" />
+    <g
+       id="g18782">
+      <polygon
+         transform="matrix(1.8156 -.017763 .017763 1.8156 70.147 6.2737)"
+         points="2.083 142.59 8.641 137.52 5.223 134.89"
+         fill="#34679b"
+         fill-rule="evenodd"
+         stroke="#34679b"
+         stroke-linecap="round"
+         stroke-linejoin="round"
+         stroke-width=".37262"
+         id="polygon18778" />
+      <text
+         id="n"
+         x="94.62439"
+         y="127.08605"
+         fill="#e2001a"
+         font-family="'Arial Nova', 'Arial Unicode MS', 'Yu Gothic UI', sans-serif"
+         font-size="16.799px"
+         stroke="#ff0000"
+         stroke-width=".67654">X</text>
+      <text
+         id="o"
+         x="105.59573"
+         y="130.1104"
+         fill="#e2001a"
+         font-family="'Arial Nova', 'Arial Unicode MS', 'Yu Gothic UI', sans-serif"
+         font-size="11.594px"
+         stroke="#ff0000"
+         stroke-width=".67654">3</text>
+    </g>
+    <g
+       transform="translate(-49 -715.93)"
+       stroke-width=".67654"
+       id="g18786">
+      <a
+         transform="matrix(.96782 0 0 .96782 81.484 29.55)"
+         stroke="#7d7d7d"
+         stroke-miterlimit="5.6552"
+         stroke-width=".69903"
+         id="a18784" />
+    </g>
+    <polygon
+       transform="matrix(1.8156 0 0 1.8156 250.48 23)"
+       points="13.425 105.2 17.742 105.2 15.521 97.182"
+       fill="#7ab51d"
+       fill-rule="evenodd"
+       stroke="#7ab51d"
+       stroke-linecap="round"
+       stroke-linejoin="round"
+       stroke-width=".37262"
+       id="polygon18788" />
+    <line
+       x1="278.6"
+       x2="278.63"
+       y1="240.04"
+       y2="199.03"
+       fill="none"
+       stroke="#7ab51d"
+       stroke-width=".67654"
+       id="line18790" />
+    <polygon
+       transform="matrix(1.103 -1.4422 1.4422 1.103 76.559 128.62)"
+       points="35.171 123.46 35.171 127.77 43.189 125.55"
+       fill="#e2001a"
+       fill-rule="evenodd"
+       stroke="#e2001a"
+       stroke-linecap="round"
+       stroke-linejoin="round"
+       stroke-width=".37262"
+       id="polygon18792" />
+    <line
+       x1="278.71"
+       x2="302.87"
+       y1="239.83"
+       y2="208.3"
+       fill="none"
+       stroke="#e2001a"
+       stroke-width=".67654"
+       id="line18794" />
+    <polygon
+       transform="matrix(-1.1133 -1.4342 1.4342 -1.1133 116.3 401.48)"
+       points="8.641 137.52 5.223 134.89 2.083 142.59"
+       fill="#34679b"
+       fill-rule="evenodd"
+       stroke="#34679b"
+       stroke-linecap="round"
+       stroke-linejoin="round"
+       stroke-width=".37262"
+       id="polygon18796" />
+    <polygon
+       transform="matrix(-1.1358 1.4165 -1.4165 -1.1358 339.33 220.37)"
+       points="35.171 127.77 43.189 125.55 35.171 123.46"
+       fill="#e2001a"
+       fill-rule="evenodd"
+       stroke="#e2001a"
+       stroke-linecap="round"
+       stroke-linejoin="round"
+       stroke-width=".37262"
+       id="polygon18798" />
+    <line
+       x1="140.24"
+       x2="115.36"
+       y1="104.73"
+       y2="135.71"
+       fill="none"
+       stroke="#e2001a"
+       stroke-width=".67654"
+       id="line18800" />
+    <polygon
+       transform="matrix(.7499 1.6535 -1.6535 .7499 325.84 -10.68)"
+       points="15.521 97.182 13.425 105.2 17.742 105.2"
+       fill="#7ab51d"
+       fill-rule="evenodd"
+       stroke="#7ab51d"
+       stroke-linecap="round"
+       stroke-linejoin="round"
+       stroke-width=".37262"
+       id="polygon18802" />
+    <line
+       x1="139.79"
+       x2="177.15"
+       y1="104.57"
+       y2="87.662"
+       fill="none"
+       stroke="#7ab51d"
+       stroke-width=".67654"
+       id="line18804" />
+    <line
+       x1="140.14"
+       x2="122.14"
+       y1="104.68"
+       y2="82.286"
+       fill="none"
+       stroke="#34679b"
+       stroke-width=".67654"
+       id="line18806" />
+    <g
+       id="g18814">
+      <polygon
+         transform="matrix(-.42366 1.7655 -1.7655 -.42366 367.2 130.21)"
+         points="5.223 134.89 2.083 142.59 8.641 137.52"
+         fill="#34679b"
+         fill-rule="evenodd"
+         stroke="#34679b"
+         stroke-linecap="round"
+         stroke-linejoin="round"
+         stroke-width=".37262"
+         id="polygon18808" />
+      <text
+         x="121.65499"
+         y="260.78589"
+         fill="#e2001a"
+         font-family="'Arial Nova', 'Arial Unicode MS', 'Yu Gothic UI', sans-serif"
+         font-size="16.799px"
+         stroke="#ff0000"
+         stroke-width=".67654"
+         id="text18810">X</text>
+      <text
+         x="132.62634"
+         y="263.81042"
+         fill="#e2001a"
+         font-family="'Arial Nova', 'Arial Unicode MS', 'Yu Gothic UI', sans-serif"
+         font-size="11.594px"
+         stroke="#ff0000"
+         stroke-width=".67654"
+         id="text18812">1</text>
+    </g>
+  </g>
+  <g
+     font-family="'Arial Nova', 'Arial Unicode MS', 'Yu Gothic UI', sans-serif"
+     id="g18848">
+    <g
+       stroke-miterlimit="5.6552"
+       stroke-width=".67654"
+       id="g18842">
+      <text
+         x="82.36058"
+         y="277.79645"
+         fill="#34679b"
+         font-size="16.799px"
+         stroke="#34679b"
+         id="text18818">Z</text>
+      <text
+         x="93.331917"
+         y="280.82086"
+         fill="#34679b"
+         font-size="11.594px"
+         stroke="#34679b"
+         id="text18820">1</text>
+      <text
+         x="72.20546"
+         y="212.12285"
+         fill="#7ab51d"
+         font-size="16.799px"
+         stroke="#7ab51d"
+         id="text18822">Y</text>
+      <text
+         x="83.176804"
+         y="215.1472"
+         fill="#7ab51d"
+         font-size="11.594px"
+         stroke="#7ab51d"
+         id="text18824">1</text>
+      <text
+         x="95.770378"
+         y="63.073845"
+         fill="#34679b"
+         font-size="16.799px"
+         stroke="#34679b"
+         id="text18826">Z</text>
+      <text
+         x="106.74172"
+         y="66.098198"
+         fill="#34679b"
+         font-size="11.594px"
+         stroke="#34679b"
+         id="text18828">3</text>
+      <text
+         x="158.18794"
+         y="81.542656"
+         fill="#7ab51d"
+         font-size="16.799px"
+         stroke="#7ab51d"
+         id="text18830">Y</text>
+      <text
+         x="169.1593"
+         y="84.567009"
+         fill="#7ab51d"
+         font-size="11.594px"
+         stroke="#7ab51d"
+         id="text18832">3</text>
+      <text
+         x="325.08316"
+         y="249.65581"
+         fill="#34679b"
+         font-size="16.799px"
+         stroke="#34679b"
+         id="text18834">Z</text>
+      <text
+         x="336.0545"
+         y="252.68022"
+         fill="#34679b"
+         font-size="11.594px"
+         stroke="#34679b"
+         id="text18836">2</text>
+      <text
+         x="310.69247"
+         y="218.6143"
+         fill="#ff0000"
+         font-size="16.799px"
+         stroke="#ff0000"
+         id="text18838">X</text>
+      <text
+         x="321.66382"
+         y="221.63866"
+         fill="#ff0000"
+         font-size="11.594px"
+         stroke="#ff0000"
+         id="text18840">2</text>
+    </g>
+    <text
+       x="255.01833"
+       y="224.6104"
+       fill="#7ab51d"
+       font-size="16.799px"
+       stroke="#7ab51d"
+       stroke-width=".82218"
+       id="text18844">Y</text>
+    <text
+       x="265.98969"
+       y="227.63481"
+       fill="#7ab51d"
+       font-size="11.594px"
+       stroke="#7ab51d"
+       stroke-miterlimit="5.6552"
+       stroke-width=".67654"
+       id="text18846">2</text>
+  </g>
+  <g
+     aria-label="F1"
+     id="text18852"
+     style="font-size:16.852px;line-height:125%;font-family:'Arial Nova', 'Arial Unicode MS', 'Yu Gothic UI', sans-serif;letter-spacing:0px;word-spacing:0px;stroke-width:0.67654;stroke-miterlimit:5.6552">
+    <path
+       d="m 64.216226,226.90862 h -8.351118 v 5.17245 h 7.496638 v 1.9824 h -7.496638 v 7.56499 h -2.210255 v -16.70223 h 10.561373 z"
+       style="font-size:23.333px"
+       id="path19479" />
+    <path
+       d="m 73.85476,241.62846 h -2.050752 v -12.99949 q -0.763335,0.76334 -1.845677,1.40135 -1.070948,0.63801 -2.26722,1.07095 v -1.98239 q 1.686174,-0.79752 2.996377,-1.93682 1.310202,-1.13931 1.834283,-2.25583 h 1.332989 z"
+       style="font-size:23.333px"
+       id="path19481" />
+  </g>
+  <g
+     aria-label="F3"
+     id="text18856"
+     style="font-size:16.852px;line-height:125%;font-family:'Arial Nova', 'Arial Unicode MS', 'Yu Gothic UI', sans-serif;letter-spacing:0px;word-spacing:0px;stroke-width:0.67654;stroke-miterlimit:5.6552">
+    <path
+       d="m 164.89665,39.384399 h -8.35111 v 5.172452 h 7.49663 v 1.982393 h -7.49663 v 7.564996 h -2.21026 V 37.402005 h 10.56137 z"
+       style="font-size:23.333px"
+       id="path19469" />
+    <path
+       d="m 177.75943,49.250794 q 0,1.515278 -0.70637,2.688764 -0.70637,1.162093 -1.97101,1.811497 -1.25323,0.638012 -2.88244,0.638012 -1.42413,0 -2.58623,-0.55826 -1.16209,-0.569654 -1.90264,-1.617816 -0.72916,-1.059555 -0.90005,-2.472295 l 2.05075,-0.330399 q 0.3304,1.651995 1.17349,2.472295 0.85448,0.820301 2.16468,0.820301 0.96841,0 1.73175,-0.432936 0.77472,-0.44433 1.19627,-1.219058 0.43293,-0.786122 0.43293,-1.754533 0,-0.96841 -0.39875,-1.67478 -0.39876,-0.717764 -1.12792,-1.105128 -0.71776,-0.387364 -1.66338,-0.387364 h -1.77732 l 0.25064,-1.663388 h 0.39876 q 1.92543,0 2.85966,-0.717763 0.94563,-0.717763 0.94563,-2.062145 0,-1.219058 -0.75195,-1.914035 -0.75194,-0.694977 -2.05075,-0.694977 -1.26463,0 -2.10772,0.808907 -0.83169,0.797515 -1.05955,2.221648 l -2.08493,-0.319005 q 0.23925,-1.355775 0.95702,-2.335579 0.71776,-0.991197 1.82289,-1.515278 1.10512,-0.535474 2.4609,-0.535474 1.4811,0 2.58622,0.524081 1.11652,0.524081 1.72036,1.481099 0.60383,0.957017 0.60383,2.221648 0,1.162092 -0.67219,2.096324 -0.67219,0.922838 -1.84568,1.367168 v 0.05696 q 0.95702,0.216468 1.66339,0.797515 0.70637,0.569653 1.08234,1.424133 0.38737,0.85448 0.38737,1.879856 z"
+       style="font-size:23.333px"
+       id="path19471" />
+  </g>
+  <g
+     aria-label="F2"
+     id="text18860"
+     style="font-size:16.852px;line-height:125%;font-family:'Arial Nova', 'Arial Unicode MS', 'Yu Gothic UI', sans-serif;letter-spacing:0px;word-spacing:0px;stroke-width:0.67654;stroke-miterlimit:5.6552;filter:url(#m)">
+    <path
+       d="m 289.4749,254.09077 h -8.35112 v 5.17245 h 7.49664 v 1.98239 h -7.49664 v 7.565 h -2.21025 v -16.70224 h 10.56137 z"
+       style="font-size:23.333px"
+       id="path19474" />
+    <path
+       d="m 293.92959,266.82821 h 8.2144 v 1.9824 h -11.06267 q 0,-1.44692 0.95702,-2.82548 0.96841,-1.38996 2.9622,-3.04195 l 1.33299,-1.10513 q 1.90264,-1.58364 2.7799,-2.82548 0.88866,-1.24184 0.88866,-2.38115 0,-0.80891 -0.41015,-1.45831 -0.41015,-0.64941 -1.12791,-1.01399 -0.71776,-0.37597 -1.60642,-0.37597 -1.46971,0 -2.32419,0.86588 -0.85448,0.85448 -0.94562,2.51786 l -2.13051,-0.33039 q 0.14811,-1.46971 0.84309,-2.52927 0.70637,-1.07094 1.87986,-1.6292 1.17348,-0.56966 2.71155,-0.56966 1.58363,0 2.75712,0.60383 1.18488,0.60384 1.8115,1.652 0.63801,1.03677 0.63801,2.31279 0,1.57225 -1.07095,3.09892 -1.05956,1.52667 -3.16727,3.26981 l -1.54946,1.28741 q -0.88866,0.75195 -1.44692,1.31021 -0.55826,0.54686 -0.93423,1.18487 z"
+       style="font-size:23.333px"
+       id="path19476" />
+  </g>
+  <g
+     stroke-miterlimit="5.6552"
+     id="g18870">
+    <polygon
+       transform="matrix(1.8156 0 0 1.8156 67.135 22.92)"
+       points="15.521 97.182 13.425 105.2 17.742 105.2"
+       fill="#7ab51d"
+       fill-rule="evenodd"
+       stroke="#7ab51d"
+       stroke-linecap="round"
+       stroke-linejoin="round"
+       stroke-width=".37262"
+       id="polygon18864" />
+    <path
+       d="m129.22 139.16c-3.9744 2.2514-8.0433 2.5764-9.0873 0.7317-1.044-1.8447 1.3309-5.1637 5.3053-7.4133 3.9744-2.2496 8.0451-2.5764 9.0891-0.7317 1.044 1.8447-1.3309 5.1637-5.3071 7.4133z"
+       fill="url(#f)"
+       opacity=".45"
+       stroke="#4d4d4d"
+       stroke-linecap="square"
+       stroke-width=".67654"
+       id="path18866" />
+    <path
+       d="m146.65 113.92c-3.9744 2.2514-8.0433 2.5764-9.0873 0.7317-1.044-1.8447 1.3309-5.1637 5.3053-7.4133 3.9744-2.2496 8.0451-2.5764 9.0891-0.7317 1.044 1.8447-1.3309 5.1637-5.3071 7.4133z"
+       fill="url(#e)"
+       opacity=".45"
+       stroke="#4d4d4d"
+       stroke-linecap="square"
+       stroke-width=".67654"
+       id="path18868" />
+  </g>
+</svg>

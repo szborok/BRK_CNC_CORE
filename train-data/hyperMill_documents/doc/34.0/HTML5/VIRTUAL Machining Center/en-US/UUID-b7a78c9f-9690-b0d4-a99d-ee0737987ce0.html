@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="x-ua-compatible" content="IE=edge" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="search" content="default" />
+  <meta name="use.ic" content="no" />
+  <meta name="tocstandalone" content="yes" />
+  <script type="text/javascript">
+  //<![CDATA[
+                        var index;
+                        var contentLanguage = 'en-US';
+                        var enterKey = 'select';
+                        
+                                        var anchoroption = true;
+                                var instantsearch_minlength = 1;
+                                                
+                                var fuse_threshold = 0.3;
+                        
+                                        var local_csh = false;
+                                
+                        var useanchorlinks = false;
+  //]]>
+  </script>
+  <title>6.2.&nbsp;Positioning machine axes manually</title>
+  <link rel="stylesheet" type="text/css" href="../css/docbook.css" />
+  <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" href="../css/bootstrap-theme.min.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style-common.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style-responsive.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style-print.css" />
+  <link rel="stylesheet" type="text/css" href="../css/font-awesome.css" />
+  <link rel="stylesheet" type="text/css" href="../css/custom.css" />
+  <link rel="stylesheet" type="text/css" href="../css/layout-custom-style.css" />
+  <script src="../js/jquery-1.10.2.min.js" type="text/javascript"></script>
+  <script src="../js/jquery-ui-1.10.3.custom.min.js" type="text/javascript"></script>
+  <script src="../js/bootstrap.min.js" type="text/javascript"></script>
+  <script src="../js/purl.js" type="text/javascript"></script>
+  <script src="../js/jquery.event.move.js" type="text/javascript"></script>
+  <script src="../js/jquery.event.swipe.js" type="text/javascript"></script>
+  <script src="../js/jquery.sticky.js" type="text/javascript"></script>
+  <script src="../js/respond.min.js" type="text/javascript"></script>
+  <script src="../js/script.js" type="text/javascript"></script>
+  <script src="js/toc.js" type="text/javascript"></script>
+  <script src="../js/create-toc.js" type="text/javascript"></script>
+  <script src="../js/clipboard.min.js" type="text/javascript"></script>
+  <script src="../js/fuse.min.js" type="text/javascript"></script>
+  <script src="../js/jquery.mark.min.js" type="text/javascript"></script>
+  <script src="../js/html5.fuse.search.js" type="text/javascript"></script>
+  <script src="js/fuzzydata.js" type="text/javascript"></script>
+  <script src="../js/csh.js" type="text/javascript"></script>
+  <script src="../js/highlight-mergehtml-plugin.js" type="text/javascript"></script>
+  <meta name="generator" content="Paligo" />
+  <link rel="prev" href="UUID-ae034360-497c-1b76-e39e-e504145966e1.html" title="6.1.&nbsp;Control visibility in the graphics area" />
+  <link rel="next" href="UUID-b7a78c9f-9690-b0d4-a99d-ee0737987ce0.html#UUID-b7a78c9f-9690-b0d4-a99d-ee0737987ce0_section-5d306dc456a2a-idm45731662342704" title="Solutions" />
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML" async="async"></script>
+  <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+  <script type="text/javascript" src="../js/cookie-consent.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  <script type="text/javascript">
+  //<![CDATA[
+                        $(document).on('ready ajaxComplete', function() {
+                                
+                                hljs.addPlugin(mergeHTMLPlugin);
+                                hljs.configure({'ignoreUnescapedHTML': true});
+                                
+                                $('pre:not(.embedcode)').each(function() {
+                                        /**
+                                         * @type {string}
+                                         */
+                                        var language = $(this).data('language');
+
+                                        if (language === 'plaintext' || language === 'text') {
+                                                $(this).addClass(language).addClass('hljs');
+                                                return true;
+                                        }
+                                        else {
+                                                var clone = this.cloneNode(true);
+                                                hljs.highlightElement(clone);
+                                                $(this).empty().append($(clone).contents());
+                                                $(this).attr("class", $(clone).attr("class"));
+                                        }
+                                });
+                        });
+  //]]>
+  </script>
+  <style type="text/css">
+  /*<![CDATA[*/
+            div.skipnav {
+            }
+            div.skipnav a {
+                position: fixed;
+                left: -10000px;
+                top: 1.5em;
+                width: 1px;
+                height: 1px;
+                overflow: hidden;
+            }
+            div.skipnav a:focus, div.skipnav a:active, div.skipnav a:hover {
+                background: white;
+                color: black;
+                box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.5);
+                position: fixed;
+                left: 2em;
+                top: 1.5em;
+                width: auto;
+                height: auto;
+                overflow: visible;
+                text-decoration: underline;
+                z-index: 99999; /* has to be higher than the side panel */
+    }
+  /*]]>*/
+  </style>
+</head>
+<body data-link-prefix="">
+  <div class="skipnav">
+    <a href="#content-wrapper">Skip to main content</a>
+  </div>
+  <div id="page" class="clearfix">
+    <div id="header">
+      <div class="container">
+        <div id="logotype-container" class="pull-left">
+          <a href="../index.html"><img id="logotype-pageheader" src="../css/image/corporate-logo.png" alt="Corporate logotype" data-role="logotype" /></a>
+        </div>
+        <div id="pagetools-container" class="pull-right">
+          <ul id="page-tools">
+            <li class="page-tools-search"><input placeholder="Search" type="text" class="form-control" aria-label="Search" id="search" /></li>
+            <li class="page-tools-print">
+              <a href="javascript:window.print();"><span class="tool-label">Print</span><span class="glyphicon glyphicon-print"></span></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <h1 id="publication-title"><span xml:lang="de" lang="de" dir="ltr" class="phrase"><span class="application">VIRTUAL Machining Center</span></span></h1>
+    <div id="subheader-sticky-wrapper" class="sticky-wrapper">
+      <div id="subheader">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3 toc-title">
+              <h2><a class="prev nav-icon hidden-lg hidden-md" href="UUID-ae034360-497c-1b76-e39e-e504145966e1.html"><span class="glyphicon glyphicon-chevron-left"></span></a> <a href="#toc" class="hidden mobile-nav-toggle"><span class="glyphicon glyphicon-list"></span>Table of Contents</a><span class="toc-label">Table of Contents</span><a class=
+              "next nav-icon hidden-lg hidden-md" href="UUID-b7a78c9f-9690-b0d4-a99d-ee0737987ce0.html#UUID-b7a78c9f-9690-b0d4-a99d-ee0737987ce0_section-5d306dc456a2a-idm45731662342704"><span class="glyphicon glyphicon-chevron-right"></span></a></h2>
+            </div>
+            <div class="col-md-9 breadcrumb-container">
+              <ul class="breadcrumb">
+                <li class="breadcrumb-link">
+                  <span class="glyphicon glyphicon-home"></span>&nbsp;<a href="index-en-US.html"><span xml:lang="de" lang="de" dir="ltr" class="phrase"><span class="application">VIRTUAL Machining Center</span></span></a>
+                </li>
+                <li class="breadcrumb-link">
+                  <a href="UUID-63887823-626e-76b1-03ac-ed1f7cf43cd5.html">Machine configuration</a>
+                </li>
+                <li class="breadcrumb-node">Positioning machine axes manually</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="main-content">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 toc-container" id="toc-wrapper">
+            <div id="toc-placeholder">
+              <div id="toc-standalone-placeholder"></div>
+            </div>
+          </div>
+          <div class="col-md-9 content-container" id="content-wrapper">
+            <a accesskey="p" class="prev pull-left prev visible-lg visible-md" id="header-navigation-prev" href="UUID-ae034360-497c-1b76-e39e-e504145966e1.html"><span class="glyphicon glyphicon-circle-arrow-left"></span>Prev</a><a accesskey="n" class="pull-right next visible-lg visible-md" id="header-navigation-next" href=
+            "UUID-b7a78c9f-9690-b0d4-a99d-ee0737987ce0.html#UUID-b7a78c9f-9690-b0d4-a99d-ee0737987ce0_section-5d306dc456a2a-idm45731662342704">Next<span class="glyphicon glyphicon-circle-arrow-right"></span></a>
+            <div id="topic-content">
+              <section xml:lang="en-US" lang="en-US" dir="ltr" class="section" data-origin-id="UUID-ea8d723c-20eb-ca33-92b3-e61811e3e655" data-publication-date="" id="UUID-b7a78c9f-9690-b0d4-a99d-ee0737987ce0">
+                <div class="titlepage">
+                  <div>
+                    <div class="title">
+                      <h1 class="title" style="clear: both"><span class="formal-number">6.2</span><span class="formal-label-delimiter">.</span> <span class="formal-title">Positioning machine axes manually</span></h1>
+                    </div>
+                  </div>
+                </div>
+                <p>Manually position the linear and rotary axes of the machine (X, Y, Z, A, B, C) and test various machining situations on the part under real conditions to determine the optimal tool length or unclamping of the tool, for example.</p>
+                <div class="mediaobject"><img src="image/uuid-52ae5d97-fdf4-e346-9ec6-4a8411ff7c8f-en-US.svg" style="" alt="vmc_handsteuerung.svg" /></div>
+                <p><span class="inlinemediaobject"><img src="image/uuid-d3472d24-15bf-6200-8d62-f37eed6cb967.svg" alt="Nr_01.svg" /></span> Use the secondary navigation toolbar to switch between machine configuration <span class="inlinemediaobject"><img src="image/uuid-18f4cd4c-9996-2b3b-2865-0a84be6e8834.svg" alt="Nr_A.svg" /></span>, manual
+                control <span class="inlinemediaobject"><img src="image/uuid-56f368b6-0584-dd70-72f2-1b6a2a34898a.svg" alt="Nr_B.svg" /></span> and the display of the machine axis limits <span class="inlinemediaobject"><img src="image/uuid-3eb08ebe-3a43-666d-d105-49bb477fa9f3.svg" alt="Nr_C.svg" /></span>.</p>
+                <p><span class="inlinemediaobject"><img src="image/uuid-fa232d44-ccb2-2f50-a1d9-253c460bb62c.svg" alt="Nr_02.svg" /></span> Enter coordinate values for linear and rotary axes of the machine coordinate system (<span class="guilabel">Machine</span>) or the NC program file (<span class="guilabel">NC</span>) directly. Values that are
+                outside of the limits are displayed in red.</p>
+                <p>Click a button (X, Y, Z, A, B) to activate the input field (Machine/NC). Double-click the respective coordinate value to make it editable and adjust in order to move the machine to the required position.</p>
+                <p><span class="inlinemediaobject"><img src="image/uuid-fb9c4824-908e-c3d0-eb1e-1e864608f0ed.svg" alt="Nr_03.svg" /></span> Machine axis that is moved using the buttons <span class="inlinemediaobject"><img src="image/uuid-fb1a8ebc-9f11-c7d7-6068-ea0134526cce.svg" alt="Nr_05.svg" /></span> or the slide control<span class=
+                "inlinemediaobject"><img src="image/uuid-6ae9593e-533c-38c8-f21d-9ab8b709c1bf.svg" alt="Nr_07.svg" /></span> for stepwise positioning (displayed in grey).</p>
+                <p><span class="inlinemediaobject"><img src="image/uuid-8e73687f-89a5-04d8-31df-020f365123aa.svg" alt="Nr_04.svg" /></span> Move the active axis to the lower/upper limit.</p>
+                <p><span class="inlinemediaobject"><img src="image/uuid-fb1a8ebc-9f11-c7d7-6068-ea0134526cce.svg" alt="Nr_05.svg" /></span> Reduce or increase the position of the machine axes (X, Y, Z, A, B) one step at a time.</p>
+                <p><span class="inlinemediaobject"><img src="image/uuid-40776e33-2592-da47-16b2-fcf814e7d95f.svg" alt="Nr_06.svg" /></span> Show the scale for setting the step size. Select the required option to set the coordinate values of the machine axes (X, Y, Z, A, B, C).</p>
+                <p><span class="inlinemediaobject"><img src="image/uuid-6ae9593e-533c-38c8-f21d-9ab8b709c1bf.svg" alt="Nr_07.svg" /></span> Move the active axis using the slide control.</p>
+                <p><span class="inlinemediaobject"><img src="image/uuid-e979a2e8-7174-243d-7a76-d0fd2df3b398.svg" alt="Nr_08.svg" /></span> Display of coordinate values of the active axis. The value can be changed by entering another value.</p>
+                <p><span class="inlinemediaobject"><img src="image/uuid-0afd4b02-bea8-327c-a12a-2fcdddea7416.svg" alt="Nr_09.svg" /></span> Move the machine axes to the original position.</p>
+                <p><span class="inlinemediaobject"><img src="image/uuid-5a823b53-da32-6bf9-91b4-1aa5f84de53a.png" alt="VMC_activated.png" /></span> <span class="guilabel">Move along tool axis</span>: Move the machine along the tool axis.</p>
+                <div class="informalfigure">
+                  <div class="mediaobject">
+                    <table class="image-viewport" style="border-collapse:collapse;border:0; width:638px;">
+                      <tr style="height: 266px">
+                        <td style="padding:0;"><img src="image/uuid-84f59580-8253-ae6d-d758-cf3610c4716e.svg" style="max-width: 638px; max-height: 266px;" alt="vmc_Achse-Werkzeugrichtung-bewegen.svg" /></td>
+                      </tr>
+                    </table>
+                  </div>
+                  <div dir="ltr" class="note">
+                    <h3 class="title">Note</h3>
+                    <p>If the <span class="guilabel">Move along tool axis</span> option is selected, the step size does not refer to an axis but instead specifies the movement in the direction of the tool axis. The allocation of this step size to the movements of all tool axes is calculated automatically. The affected tool axes are displayed in
+                    grey.</p>
+                  </div>
+                </div>
+                <p><span class="inlinemediaobject"><img src="image/uuid-1e2a7ecd-baa7-566f-e99a-cf051aea2c7d.svg" alt="Nr_10.svg" /></span> <span class="guilabel">Trans / RTCP</span>: Turn RTCP* (Rotation Tool Center Point) on or off.</p>
+                <p>* Term is controller-dependent. Also used: TCPM (Tool center Point Management), TRAORI.</p>
+                <p><span class="guilabel">Run to workplane</span>: Move the tool or spindle (if no tool is shown) to the workplane origin. If several traversing options are possible as a result of the machine kinematics, they can be activated as solutions.</p>
+                <section dir="ltr" class="section" data-origin-id="" data-publication-date="" id="UUID-b7a78c9f-9690-b0d4-a99d-ee0737987ce0_section-5d306dc456a2a-idm45731662342704">
+                  <div class="titlepage">
+                    <div>
+                      <div class="title">
+                        <h2 class="title" style="clear: both"><span class="formal-title">Solutions</span></h2>
+                      </div>
+                    </div>
+                  </div>
+                  <p><span class="guilabel">Calculate solutions</span>: The possible solutions are calculated and displayed based on the machine data and the machine configuration settings. <span class="inlinemediaobject"><img src="image/uuid-ff122665-c109-6f5f-71c7-db6b538643c2.svg" alt="activated.svg" /></span> = activated solution. <span class=
+                  "inlinemediaobject"><img src="image/uuid-fa60526d-2696-5c24-60fd-25f97701fb99.svg" alt="not_activated.svg" /></span> = another solution.</p>
+                  <p><span class="inlinemediaobject"><img src="image/uuid-5a823b53-da32-6bf9-91b4-1aa5f84de53a.png" alt="VMC_activated.png" /></span> <span class="guilabel">Update</span>: The data is recalculated based on the values for the displayed rotary axes.</p>
+                </section>
+              </section>
+              <div class="footer-content">
+                <div class="section-toc section-toc-after">
+                  <div class="section-toc-title">
+                    <span class="section-toc-title-delimiter">:</span>
+                  </div>
+                </div>
+              </div>
+              <footer></footer>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="x-ua-compatible" content="IE=edge" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="search" content="default" />
+  <meta name="use.ic" content="no" />
+  <meta name="tocstandalone" content="yes" />
+  <script type="text/javascript">
+  //<![CDATA[
+                        var index;
+                        var contentLanguage = 'en-US';
+                        var enterKey = 'select';
+                        
+                                        var anchoroption = true;
+                                var instantsearch_minlength = 1;
+                                                
+                                var fuse_threshold = 0.3;
+                        
+                                        var local_csh = false;
+                                
+                        var useanchorlinks = false;
+  //]]>
+  </script>
+  <title>The 5-axis parameters</title>
+  <link rel="stylesheet" type="text/css" href="../css/docbook.css" />
+  <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" href="../css/bootstrap-theme.min.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style-common.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style-responsive.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style-print.css" />
+  <link rel="stylesheet" type="text/css" href="../css/font-awesome.css" />
+  <link rel="stylesheet" type="text/css" href="../css/custom.css" />
+  <link rel="stylesheet" type="text/css" href="../css/layout-custom-style.css" />
+  <script src="../js/jquery-1.10.2.min.js" type="text/javascript"></script>
+  <script src="../js/jquery-ui-1.10.3.custom.min.js" type="text/javascript"></script>
+  <script src="../js/bootstrap.min.js" type="text/javascript"></script>
+  <script src="../js/purl.js" type="text/javascript"></script>
+  <script src="../js/jquery.event.move.js" type="text/javascript"></script>
+  <script src="../js/jquery.event.swipe.js" type="text/javascript"></script>
+  <script src="../js/jquery.sticky.js" type="text/javascript"></script>
+  <script src="../js/respond.min.js" type="text/javascript"></script>
+  <script src="../js/script.js" type="text/javascript"></script>
+  <script src="js/toc.js" type="text/javascript"></script>
+  <script src="../js/create-toc.js" type="text/javascript"></script>
+  <script src="../js/clipboard.min.js" type="text/javascript"></script>
+  <script src="../js/fuse.min.js" type="text/javascript"></script>
+  <script src="../js/jquery.mark.min.js" type="text/javascript"></script>
+  <script src="../js/html5.fuse.search.js" type="text/javascript"></script>
+  <script src="js/fuzzydata.js" type="text/javascript"></script>
+  <script src="../js/csh.js" type="text/javascript"></script>
+  <script src="../js/highlight-mergehtml-plugin.js" type="text/javascript"></script>
+  <meta name="generator" content="Paligo" />
+  <link rel="prev" href="UUID-bffb8fcb-db5a-699b-e4a2-461062acdeca.html" title="Setup dialog page" />
+  <link rel="next" href="UUID-82f0b599-805a-d179-48fb-a34666350bbc.html#id122937" title="Inclination strategy" />
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js?config=TeX-MML-AM_CHTML" async="async"></script>
+  <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+  <script type="text/javascript" src="../js/cookie-consent.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  <script type="text/javascript">
+  //<![CDATA[
+                        $(document).on('ready ajaxComplete', function() {
+                                
+                                hljs.addPlugin(mergeHTMLPlugin);
+                                hljs.configure({'ignoreUnescapedHTML': true});
+                                
+                                $('pre:not(.embedcode)').each(function() {
+                                        /**
+                                         * @type {string}
+                                         */
+                                        var language = $(this).data('language');
+
+                                        if (language === 'plaintext' || language === 'text') {
+                                                $(this).addClass(language).addClass('hljs');
+                                                return true;
+                                        }
+                                        else {
+                                                var clone = this.cloneNode(true);
+                                                hljs.highlightElement(clone);
+                                                $(this).empty().append($(clone).contents());
+                                                $(this).attr("class", $(clone).attr("class"));
+                                        }
+                                });
+                        });
+  //]]>
+  </script>
+  <style type="text/css">
+  /*<![CDATA[*/
+            div.skipnav {
+            }
+            div.skipnav a {
+                position: fixed;
+                left: -10000px;
+                top: 1.5em;
+                width: 1px;
+                height: 1px;
+                overflow: hidden;
+            }
+            div.skipnav a:focus, div.skipnav a:active, div.skipnav a:hover {
+                background: white;
+                color: black;
+                box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.5);
+                position: fixed;
+                left: 2em;
+                top: 1.5em;
+                width: auto;
+                height: auto;
+                overflow: visible;
+                text-decoration: underline;
+                z-index: 99999; /* has to be higher than the side panel */
+    }
+  /*]]>*/
+  </style>
+</head>
+<body data-link-prefix="">
+  <div class="skipnav">
+    <a href="#content-wrapper">Skip to main content</a>
+  </div>
+  <div id="page" class="clearfix">
+    <div id="header">
+      <div class="container">
+        <div id="logotype-container" class="pull-left">
+          <a href="../index.html"><img id="logotype-pageheader" src="../css/image/corporate-logo.png" alt="Corporate logotype" data-role="logotype" /></a>
+        </div>
+        <div id="pagetools-container" class="pull-right">
+          <ul id="page-tools">
+            <li class="page-tools-search"><input placeholder="Search" type="text" class="form-control" aria-label="Search" id="search" /></li>
+            <li class="page-tools-print">
+              <a href="javascript:window.print();"><span class="tool-label">Print</span><span class="glyphicon glyphicon-print"></span></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <h1 id="publication-title">CAM</h1>
+    <div id="subheader-sticky-wrapper" class="sticky-wrapper">
+      <div id="subheader">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3 toc-title">
+              <h2><a class="prev nav-icon hidden-lg hidden-md" href="UUID-bffb8fcb-db5a-699b-e4a2-461062acdeca.html"><span class="glyphicon glyphicon-chevron-left"></span></a> <a href="#toc" class="hidden mobile-nav-toggle"><span class="glyphicon glyphicon-list"></span>Table of Contents</a><span class="toc-label">Table of Contents</span><a class=
+              "next nav-icon hidden-lg hidden-md" href="UUID-82f0b599-805a-d179-48fb-a34666350bbc.html#id122937"><span class="glyphicon glyphicon-chevron-right"></span></a></h2>
+            </div>
+            <div class="col-md-9 breadcrumb-container">
+              <ul class="breadcrumb">
+                <li class="breadcrumb-link">
+                  <span class="glyphicon glyphicon-home"></span>&nbsp;<a href="index-en-US.html">CAM</a>
+                </li>
+                <li class="breadcrumb-link">
+                  <a href="UUID-612c317b-197f-d0fa-8b72-ad4799e69646.html">5X Machining</a>
+                </li>
+                <li class="breadcrumb-link">
+                  <a href="UUID-2f4baa96-aca3-c6ed-f9b3-a9f777d49b85.html">Cavity Milling</a>
+                </li>
+                <li class="breadcrumb-node">The 5-axis parameters</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="main-content">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 toc-container" id="toc-wrapper">
+            <div id="toc-placeholder">
+              <div id="toc-standalone-placeholder"></div>
+            </div>
+          </div>
+          <div class="col-md-9 content-container" id="content-wrapper">
+            <a accesskey="p" class="prev pull-left prev visible-lg visible-md" id="header-navigation-prev" href="UUID-bffb8fcb-db5a-699b-e4a2-461062acdeca.html"><span class="glyphicon glyphicon-circle-arrow-left"></span>Prev</a><a accesskey="n" class="pull-right next visible-lg visible-md" id="header-navigation-next" href=
+            "UUID-82f0b599-805a-d179-48fb-a34666350bbc.html#id122937">Next<span class="glyphicon glyphicon-circle-arrow-right"></span></a>
+            <div id="topic-content">
+              <section xml:lang="en-US" lang="en-US" dir="ltr" class="section" data-origin-id="UUID-d1db52f6-512e-5b62-5bea-4858fce9a39a" data-publication-date="" id="UUID-82f0b599-805a-d179-48fb-a34666350bbc">
+                <div class="titlepage">
+                  <div>
+                    <div class="title">
+                      <h1 class="title" style="clear: both"><span class="formal-title">The 5-axis parameters</span></h1>
+                    </div>
+                  </div>
+                </div>
+                <p>1 = Z Level Roughing. 2 = Z Level Finishing, 3 = Profile Finishing (new), 4 = Equidistant Finishing, 5 = Rest Machining, 6 = Free Path Milling, 7 = Rework Machining, 8 = Cutting Edge Machining</p>
+                <div class="informaltable table-responsive">
+                  <table class="informaltable">
+                    <colgroup>
+                      <col style="width:36%;" />
+                      <col style="width:8%;" />
+                      <col style="width:8%;" />
+                      <col style="width:8%;" />
+                      <col style="width:8%;" />
+                      <col style="width:8%;" />
+                      <col style="width:8%;" />
+                      <col style="width:8%;" />
+                      <col style="width:8%;" />
+                    </colgroup>
+                    <tbody>
+                      <tr>
+                        <td class="td"></td>
+                        <td class="td">
+                          <p>1</p>
+                        </td>
+                        <td class="td">
+                          <p>2</p>
+                        </td>
+                        <td class="td">
+                          <p>3</p>
+                        </td>
+                        <td class="td">
+                          <p>4</p>
+                        </td>
+                        <td class="td">
+                          <p>5</p>
+                        </td>
+                        <td class="td">
+                          <p>6</p>
+                        </td>
+                        <td class="td">
+                          <p>7</p>
+                        </td>
+                        <td class="td">
+                          <p>8</p>
+                        </td>
+                        <td class="td">
+                          <p>9</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td colspan="10" style=";" class="td bg1">
+                          <p><span xml:lang="de" lang="de" dir="ltr" class="guilabel">Fixed inclination</span></p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="td">
+                          <p>Fixed tool inclination in the entire machining area</p>
+                        </td>
+                        <td class="td">
+                          <p>x</p>
+                        </td>
+                        <td class="td">
+                          <p>x</p>
+                        </td>
+                        <td class="td">
+                          <p>x</p>
+                        </td>
+                        <td class="td">
+                          <p>x</p>
+                        </td>
+                        <td class="td">
+                          <p>x</p>
+                        </td>
+                        <td class="td">
+                          <p>x</p>
+                        </td>
+                        <td class="td">
+                          <p>x</p>
+                        </td>
+                        <td class="td">
+                          <p>x</p>
+                        </td>
+                        <td class="td">
+                          <p>x</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td colspan="10" style=";" class="td bg1">
+                          <p><span xml:lang="de" lang="de" dir="ltr" class="guilabel">Simultaneous machining</span></p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="td">
+                          <p><span class="guilabel">Automatic</span>: Fully automatic orientation of the tool.</p>
+                        </td>
+                        <td class="td">
+                          <p>-</p>
+                        </td>
+                        <td class="td">
+                          <p>x</p>
+                        </td>
+                        <td class="td">
+                          <p>x</p>
+                        </td>
+                        <td class="td">
+                          <p>x</p>
+                        </td>
+                        <td class="td">
+                          <p>x</p>
+                        </td>
+                        <td class="td">
+                          <p>x</p>
+                        </td>
+                        <td class="td">
+                          <p>x</p>
+                        </td>
+                        <td class="td">
+                          <p>-</p>
+                        </td>
+                        <td class="td">
+                          <p>x</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="td">
+                          <p><span class="guilabel">Radial Z</span>: Orientation of tool radial to the Z axis of the frame.</p>
+                        </td>
+                        <td class="td">
+                          <p>-</p>
+                        </td>
+                        <td class="td">
+                          <p>x</p>
+                        </td>
+                        <td class="td">
+                          <p>x</p>
+                        </td>
+                        <td class="td">
+                          <p>x</p>
+                        </td>
+                        <td class="td">
+                          <p>x</p>
+                        </td>
+                        <td class="td">
+                          <p>x</p>
+                        </td>
+                        <td class="td">
+                          <p>x</p>
+                        </td>
+                        <td class="td">
+                          <p>-</p>
+                        </td>
+                        <td class="td">
+                          <p>x</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="td">
+                          <p><span class="guilabel">Manual curve</span>: Inclination of tool around Z axis via manually defined curves.</p>
+                        </td>
+                        <td class="td">
+                          <p>x</p>
+                        </td>
+                        <td class="td">
+                          <p>x</p>
+                        </td>
+                        <td class="td">
+                          <p>x</p>
+                        </td>
+                        <td class="td">
+                          <p>x</p>
+                        </td>
+                        <td class="td">
+                          <p>x</p>
+                        </td>
+                        <td class="td">
+                          <p>x</p>
+                        </td>
+                        <td class="td">
+                          <p>x</p>
+                        </td>
+                        <td class="td">
+                          <p>x</p>
+                        </td>
+                        <td class="td">
+                          <p>x</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="td">
+                          <p><span class="guilabel">Offset curve</span>: Orientation of tool around Z axis for automatically calculated offset curve to toolpath.</p>
+                        </td>
+                        <td class="td">
+                          <p>-</p>
+                        </td>
+                        <td class="td">
+                          <p>x</p>
+                        </td>
+                        <td class="td">
+                          <p>-</p>
+                        </td>
+                        <td class="td">
+                          <p>x</p>
+                        </td>
+                        <td class="td">
+                          <p>x</p>
+                        </td>
+                        <td class="td">
+                          <p>-</p>
+                        </td>
+                        <td class="td">
+                          <p>-</p>
+                        </td>
+                        <td class="td">
+                          <p>x</p>
+                        </td>
+                        <td class="td">
+                          <p>-</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td colspan="10" style=";" class="td bg1">
+                          <p><span xml:lang="en" lang="en" dir="ltr" class="guilabel">Automatic indexing</span></p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="td">
+                          <p>Cutter paths automatically divided into sections with fixed inclination continuously connected by macro to adjust new inclination within a small loop.</p>
+                        </td>
+                        <td class="td">
+                          <p>x</p>
+                        </td>
+                        <td class="td">
+                          <p>x</p>
+                        </td>
+                        <td class="td">
+                          <p>x</p>
+                        </td>
+                        <td class="td">
+                          <p>x</p>
+                        </td>
+                        <td class="td">
+                          <p>-</p>
+                        </td>
+                        <td class="td">
+                          <p>x</p>
+                        </td>
+                        <td class="td">
+                          <p>-</p>
+                        </td>
+                        <td class="td">
+                          <p>-</p>
+                        </td>
+                        <td class="td">
+                          <p>x</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="td">
+                          <p>Toolpaths are automatically divided into sections with fixed inclination, and toolpath sections that share the same tool inclination are connected.</p>
+                        </td>
+                        <td class="td">
+                          <p>-</p>
+                        </td>
+                        <td class="td">
+                          <p>x</p>
+                        </td>
+                        <td class="td">
+                          <p>x</p>
+                        </td>
+                        <td class="td">
+                          <p>-</p>
+                        </td>
+                        <td class="td">
+                          <p>x</p>
+                        </td>
+                        <td class="td">
+                          <p>-</p>
+                        </td>
+                        <td class="td">
+                          <p>x</p>
+                        </td>
+                        <td class="td">
+                          <p>-</p>
+                        </td>
+                        <td class="td">
+                          <p>x</p>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <p>For information on the 5-axis parameters for the 5X Optimized Rest Roughing cycle, see section <a class="xref linktype-component" href="UUID-a4f9ed33-6cac-4733-1c93-429007907783.html" title="5 axes"><span class="xreftitle">5 axes</span></a>.</p>
+                <section dir="ltr" class="section internal" data-origin-id="" data-publication-date="" id="id122937">
+                  <div class="titlepage">
+                    <div>
+                      <div class="title">
+                        <h2 class="title" style="clear: both"><span class="formal-title">Inclination strategy</span></h2>
+                      </div>
+                    </div>
+                  </div>
+                  <p><span class="guilabel">Fixed</span>: Fixed tool inclination in the entire machining area.</p>
+                  <p><span class="guilabel">Automatic</span></p>
+                  <p>Tool orientation calculated automatically around C axis. Comparing to former version tool paths smoothing of 4th axis (C) as well as automatic collision avoidance is always switched on.</p>
+                  <p>The A/B axis requires a tilt angle definition.</p>
+                  <p>If required, <span class="italic">hyper</span>MILL may change the tilt angle control at a later point if collision avoidance for the A/B axis has been enabled.</p>
+                  <p>Using <span class="guilabel">Holder</span> / <span class="guilabel">Tip</span>, specify the area of the tool that is to be aligned to the Z axis of the machining frame.</p>
+                  <p><span class="guilabel">Rigid guiding</span>: The tool is rigidly aligned to the Z axis of the frame. If the option is disabled, the orientation of this axis may be changed due to automatic smoothing and/or collision avoidance.</p>
+                  <p><span class="guilabel">Tilt angle control</span>: The A/B axis requires tilt angle definition.</p>
+                  <p><span class="guilabel">Additional lead angle</span>: In addition to tilt angle control, a lead angle can be specified for the tool.</p>
+                  <p><span class="guilabel">Offset on XY plane</span>: In the case of end mills and bullnose end mills, you can offset the tool axis to the Z axis as an alternative to using the lead angle.</p>
+                  <p><span class="guilabel">Collision avoidance</span>: If required, <span class="italic">hyper</span>MILL may change the tilt angle control at a later point if collision avoidance for the A/B axis has been enabled.</p>
+                  <p>Manual inclination curve</p>
+                  <p>The movement of both rotary axes can largely be guided independently of the surface formation of the machining area, using the user-defined inclination curve.</p>
+                  <p>Compared to the offset strategy, a more harmonious movement sequence around the Z axis of the selected frame can be achieved. The inclination curve should be only roughly oriented to the profile of the surfaces, have a smooth profile without abrupt changes in direction, enable continuous movements of the rotary axes.</p>
+                  <p>Orientation of 4th axis (C) is calculated as shortest distance towards curve from Z-view of current frame.</p>
+                  <p>3D-information of the curve does not influence tool orientation around 4th axis (C)!</p>
+                  <p>(1) C axis, (2) Toolpath (length), (A) Offset curve, (B) Manual curve</p>
+                  <div class="informalfigure">
+                    <div class="mediaobject">
+                      <table class="image-viewport" style="border-collapse:collapse;border:0; width:638px;">
+                        <tr>
+                          <td style="padding:0;"><img src="image/uuid-bb698ce5-b81e-49c2-423e-7cfcd7f96345.png" style="max-width: 638px;" alt="5X_verlauf_manuelle_kurve_180.png" /></td>
+                        </tr>
+                      </table>
+                    </div>
+                  </div>
+                </section>
+                <section dir="ltr" class="section internal" data-origin-id="" data-publication-date="" id="id122971">
+                  <div class="titlepage">
+                    <div>
+                      <div class="title">
+                        <h2 class="title" style="clear: both"><span class="formal-title">Setup: C axis</span></h2>
+                      </div>
+                    </div>
+                  </div>
+                  <p><span class="guilabel">Holder</span> / <span class="guilabel">Tip</span>: Defines whether the curve guides the tool tip or tool holder.</p>
+                  <p><span class="guilabel">Rigid guiding</span>: If rigid guiding for the curve is not activated, the orientation can be modified by means of smoothing and/or collision avoidance around the C axis by <span class="italic">hyper</span>MILL®. If strict orientation to manual curve or frame Z-axis is required, this switch must not be
+                  disabled!</p>
+                </section>
+                <section dir="ltr" class="section internal" data-origin-id="" data-publication-date="" id="id122979">
+                  <div class="titlepage">
+                    <div>
+                      <div class="title">
+                        <h2 class="title" style="clear: both"><span class="formal-title">Setup A/B axis</span></h2>
+                      </div>
+                    </div>
+                  </div>
+                  <p>A distinction is made between three modes: For all 3 options, the tool orientation can be modified by <span class="italic">hyper</span>MILL® subsequently for the A/B axis if collision avoidance is activated.</p>
+                  <p><span class="guilabel">Consider curve</span>: If <span class="guilabel">Consider curve</span> is not activated, the 3D information of the curve is not used. The height of the curve has no influence on the angle of the A/B axis, because the tilt angle of the milling tool will stay unchanged. If <span class="guilabel">Consider
+                  curve</span> is enabled, two different options are available.</p>
+                  <p><span class="guilabel">Through</span>: Creates a tool inclination at which the tool axis intersects the curve at every point.</p>
+                  <p><span class="guilabel">Toward</span>: If the tool axis arrives at the curve, the tool is positioned to it, possibly up to a perpendicular position. Depending on the machining conditions, this can allow the tilt angle and the movement guidance of the second rotary axis to be influenced using the Z height of the manual
+                  inclination curve.</p>
+                  <p><span class="guilabel">Toward</span> (in connection with <span class="guilabel">Tool holder</span>): The manual inclination curve (1) is used for orienting the tool shank/tool holder. It normally lies in front of the surface to be machined from the tool axis perspective.</p>
+                  <div class="mediaobject">
+                    <table class="image-viewport" style="border-collapse:collapse;border:0; width:461px;">
+                      <tr style="height: 248px">
+                        <td style="padding:0;"><img src="image/uuid-33552fdf-6ea6-b158-21f4-e67ba2e3ad47.svg" style="max-width: 461px; max-height: 248px;" alt="5X_verlauf_neigungskurve.svg" /></td>
+                      </tr>
+                    </table>
+                  </div>
+                  <p><span class="guilabel">Constant tilt angle</span> (1): To attain a constant tilt angle, the manual curve must be defined so that overlapping with the tool axis is avoided during machining. The manual inclination curve should normally be as deep as possible. If necessary, create several jobs with different radial curves.</p>
+                  <p>Deactivate the <span class="guilabel">Consider curve</span> option.</p>
+                  <p><span class="guilabel">Modifiable tilt angle</span> (2): To avoid collisions between tool shank and model surfaces of the opposite wall, set the manual inclination curve high enough in order to position the tool onto it while the machining depth is increasing.</p>
+                  <div class="mediaobject">
+                    <table class="image-viewport" style="border-collapse:collapse;border:0; width:496px;">
+                      <tr style="height: 284px">
+                        <td style="padding:0;"><img src="image/uuid-a97934b4-2532-a08d-c1bb-5a3860193125.svg" style="max-width: 496px; max-height: 284px;" alt="5X_anstellwinkel_konstant_variabel.svg" /></td>
+                      </tr>
+                    </table>
+                  </div>
+                  <p>Smooth tilting of the second rotary axis</p>
+                  <p>For back-and-forth machining of basic surfaces, it is also recommended to set the manual inclination curve higher. Since the positioning of the tool on the manual inclination curve then begins earlier and ends later, it results in a smoother movement guidance of the second rotary axis.</p>
+                  <div class="mediaobject">
+                    <table class="image-viewport" style="border-collapse:collapse;border:0; width:496px;">
+                      <tr>
+                        <td style="padding:0;"><img src="image/uuid-78291827-4208-ff24-c7b7-37702cb48753.svg" style="max-width: 496px;" alt="5X_bearbeitung_verlauf_manuelle_kurve2.svg" /></td>
+                      </tr>
+                    </table>
+                  </div>
+                  <p><span class="guilabel">Toward</span> (in connection with <span class="guilabel">Tool tip</span>): The manual inclination curve (1) is used for orienting the tool tip. It normally lies behind the surface to be machined from the tool axis perspective.</p>
+                  <p>The manual inclination curve allows for, in particular, a specific definition of the position direction for convex surfaces.</p>
+                  <p>Constant tilt angle</p>
+                  <p>To attain a constant tilt angle, the manual inclination curve must be defined such that overlapping with the tool axis is avoided during machining. If necessary, create several jobs with different manual curves. Deactivate the <span class="guilabel">Consider curve</span> option.</p>
+                  <p>Modifiable tilt angle</p>
+                  <p>If the tilt angle changes as machining progresses, then the machining direction and the shape and positioning of the radial curve should be selected such that the tool axis has to cut the radial curve.</p>
+                  <p>For example, it is recommended for back-and-forth machining that the radial curve is set lower. Since the positioning of the tool on the radial curve begins earlier and ends later, it results in a smoother movement guidance of the second rotary axis.</p>
+                  <p><span class="guilabel">Offset curve</span>: The offset curve (1) is used for orienting the tool shank.</p>
+                  <p>With this strategy, the system forms a curve that corresponds to the defined offset value in each machining level for the calculated center path of the tool. Comparing to former version tool paths smoothing of 4th axis (C) as well as automatic collision avoidance is always switched on.</p>
+                  <div dir="ltr" class="warning">
+                    <h3 class="title">Warning</h3>
+                    <p>The surfaces to be machined must not be too flat, as there is then the possibility that no useful offset curves can be formed.</p>
+                  </div>
+                  <p><span class="guilabel">Offset</span>: Using the offset value, you can control how precisely the inclination of the milling tool follows the surface profiles.</p>
+                  <p>Large offset values reduce the rotary motion around the Z axis in small narrow areas. However, they increase the danger of the offset curve breaking down into numerous, separate curves.</p>
+                  <p>If the offset strategy results in a large number rotary motions around the Z axis that are not necessary for milling, the <span class="guilabel">Manual curve</span> option should be used. If it is not possible to avoid a breakdown into individual curves, the machining should be divided up into several jobs with different
+                  machining areas and different offsets.</p>
+                </section>
+                <section dir="ltr" class="section internal" data-origin-id="" data-publication-date="" id="id123031">
+                  <div class="titlepage">
+                    <div>
+                      <div class="title">
+                        <h2 class="title" style="clear: both"><span class="formal-title">Setup: A/B axis</span></h2>
+                      </div>
+                    </div>
+                  </div>
+                  <p><span class="guilabel">Tilt angle control:</span> The current frame is the reference coordinate system for the tilt angle control. The frame can be tilted with respect to the NCS for machining undercuts and achieving an optimum flow of the NC data.</p>
+                  <div class="mediaobject">
+                    <table class="image-viewport" style="border-collapse:collapse;border:0; width:461px;">
+                      <tr style="height: 266px">
+                        <td style="padding:0;"><img src="image/uuid-49efae9e-64e2-8f10-8b36-142f0edc0a11.svg" style="max-width: 461px; max-height: 266px;" alt="5X_sollwinkel.svg" /></td>
+                      </tr>
+                    </table>
+                  </div>
+                </section>
+              </section>
+              <div class="footer-content">
+                <div class="section-toc section-toc-after">
+                  <div class="section-toc-title">
+                    <span class="section-toc-title-delimiter">:</span>
+                  </div>
+                </div>
+              </div>
+              <footer></footer>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

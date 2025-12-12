@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="x-ua-compatible" content="IE=edge" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="search" content="default" />
+  <meta name="use.ic" content="no" />
+  <meta name="tocstandalone" content="yes" />
+  <script type="text/javascript">
+  //<![CDATA[
+                        var index;
+                        var contentLanguage = 'en-US';
+                        var enterKey = 'select';
+                        
+                                        var anchoroption = true;
+                                var instantsearch_minlength = 1;
+                                                
+                                var fuse_threshold = 0.3;
+                        
+                                        var local_csh = false;
+                                
+                        var useanchorlinks = false;
+  //]]>
+  </script>
+  <title>12.18.&nbsp;Define NC tool</title>
+  <link rel="stylesheet" type="text/css" href="../css/docbook.css" />
+  <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" href="../css/bootstrap-theme.min.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style-common.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style-responsive.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style-print.css" />
+  <link rel="stylesheet" type="text/css" href="../css/font-awesome.css" />
+  <link rel="stylesheet" type="text/css" href="../css/custom.css" />
+  <link rel="stylesheet" type="text/css" href="../css/layout-custom-style.css" />
+  <script src="../js/jquery-1.10.2.min.js" type="text/javascript"></script>
+  <script src="../js/jquery-ui-1.10.3.custom.min.js" type="text/javascript"></script>
+  <script src="../js/bootstrap.min.js" type="text/javascript"></script>
+  <script src="../js/purl.js" type="text/javascript"></script>
+  <script src="../js/jquery.event.move.js" type="text/javascript"></script>
+  <script src="../js/jquery.event.swipe.js" type="text/javascript"></script>
+  <script src="../js/jquery.sticky.js" type="text/javascript"></script>
+  <script src="../js/respond.min.js" type="text/javascript"></script>
+  <script src="../js/script.js" type="text/javascript"></script>
+  <script src="js/toc.js" type="text/javascript"></script>
+  <script src="../js/create-toc.js" type="text/javascript"></script>
+  <script src="../js/clipboard.min.js" type="text/javascript"></script>
+  <script src="../js/fuse.min.js" type="text/javascript"></script>
+  <script src="../js/jquery.mark.min.js" type="text/javascript"></script>
+  <script src="../js/html5.fuse.search.js" type="text/javascript"></script>
+  <script src="js/fuzzydata.js" type="text/javascript"></script>
+  <script src="../js/csh.js" type="text/javascript"></script>
+  <script src="../js/highlight-mergehtml-plugin.js" type="text/javascript"></script>
+  <meta name="generator" content="Paligo" />
+  <link rel="prev" href="UUID-95cfc547-c27b-5f7c-2d93-1913f3df8e3a.html" title="Create geometry with the geometry editor" />
+  <link rel="next" href="UUID-f6738cf7-7587-10da-da6c-512a7e30b218.html#UUID-f6738cf7-7587-10da-da6c-512a7e30b218_UUID-98260ad4-446b-0815-6963-f209f4e2aaa3" title="Save NC tool as default" />
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js?config=TeX-MML-AM_CHTML" async="async"></script>
+  <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+  <script type="text/javascript" src="../js/cookie-consent.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  <script type="text/javascript">
+  //<![CDATA[
+                        $(document).on('ready ajaxComplete', function() {
+                                
+                                hljs.addPlugin(mergeHTMLPlugin);
+                                hljs.configure({'ignoreUnescapedHTML': true});
+                                
+                                $('pre:not(.embedcode)').each(function() {
+                                        /**
+                                         * @type {string}
+                                         */
+                                        var language = $(this).data('language');
+
+                                        if (language === 'plaintext' || language === 'text') {
+                                                $(this).addClass(language).addClass('hljs');
+                                                return true;
+                                        }
+                                        else {
+                                                var clone = this.cloneNode(true);
+                                                hljs.highlightElement(clone);
+                                                $(this).empty().append($(clone).contents());
+                                                $(this).attr("class", $(clone).attr("class"));
+                                        }
+                                });
+                        });
+  //]]>
+  </script>
+  <style type="text/css">
+  /*<![CDATA[*/
+            div.skipnav {
+            }
+            div.skipnav a {
+                position: fixed;
+                left: -10000px;
+                top: 1.5em;
+                width: 1px;
+                height: 1px;
+                overflow: hidden;
+            }
+            div.skipnav a:focus, div.skipnav a:active, div.skipnav a:hover {
+                background: white;
+                color: black;
+                box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.5);
+                position: fixed;
+                left: 2em;
+                top: 1.5em;
+                width: auto;
+                height: auto;
+                overflow: visible;
+                text-decoration: underline;
+                z-index: 99999; /* has to be higher than the side panel */
+    }
+  /*]]>*/
+  </style>
+</head>
+<body data-link-prefix="">
+  <div class="skipnav">
+    <a href="#content-wrapper">Skip to main content</a>
+  </div>
+  <div id="page" class="clearfix">
+    <div id="header">
+      <div class="container">
+        <div id="logotype-container" class="pull-left">
+          <a href="../index.html"><img id="logotype-pageheader" src="../css/image/corporate-logo.png" alt="Corporate logotype" data-role="logotype" /></a>
+        </div>
+        <div id="pagetools-container" class="pull-right">
+          <ul id="page-tools">
+            <li class="page-tools-search"><input placeholder="Search" type="text" class="form-control" aria-label="Search" id="search" /></li>
+            <li class="page-tools-print">
+              <a href="javascript:window.print();"><span class="tool-label">Print</span><span class="glyphicon glyphicon-print"></span></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <h1 id="publication-title">CAM</h1>
+    <div id="subheader-sticky-wrapper" class="sticky-wrapper">
+      <div id="subheader">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3 toc-title">
+              <h2><a class="prev nav-icon hidden-lg hidden-md" href="UUID-95cfc547-c27b-5f7c-2d93-1913f3df8e3a.html"><span class="glyphicon glyphicon-chevron-left"></span></a> <a href="#toc" class="hidden mobile-nav-toggle"><span class="glyphicon glyphicon-list"></span>Table of Contents</a><span class="toc-label">Table of Contents</span><a class=
+              "next nav-icon hidden-lg hidden-md" href="UUID-f6738cf7-7587-10da-da6c-512a7e30b218.html#UUID-f6738cf7-7587-10da-da6c-512a7e30b218_UUID-98260ad4-446b-0815-6963-f209f4e2aaa3"><span class="glyphicon glyphicon-chevron-right"></span></a></h2>
+            </div>
+            <div class="col-md-9 breadcrumb-container">
+              <ul class="breadcrumb">
+                <li class="breadcrumb-link">
+                  <span class="glyphicon glyphicon-home"></span>&nbsp;<a href="index-en-US.html">CAM</a>
+                </li>
+                <li class="breadcrumb-link">
+                  <a href="UUID-51eaf0e4-7ec1-8210-187c-12cd10b54a1d.html">Tool database</a>
+                </li>
+                <li class="breadcrumb-node">Define NC tool</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="main-content">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 toc-container" id="toc-wrapper">
+            <div id="toc-placeholder">
+              <div id="toc-standalone-placeholder"></div>
+            </div>
+          </div>
+          <div class="col-md-9 content-container" id="content-wrapper">
+            <a accesskey="p" class="prev pull-left prev visible-lg visible-md" id="header-navigation-prev" href="UUID-95cfc547-c27b-5f7c-2d93-1913f3df8e3a.html"><span class="glyphicon glyphicon-circle-arrow-left"></span>Prev</a><a accesskey="n" class="pull-right next visible-lg visible-md" id="header-navigation-next" href=
+            "UUID-f6738cf7-7587-10da-da6c-512a7e30b218.html#UUID-f6738cf7-7587-10da-da6c-512a7e30b218_UUID-98260ad4-446b-0815-6963-f209f4e2aaa3">Next<span class="glyphicon glyphicon-circle-arrow-right"></span></a>
+            <div id="topic-content">
+              <section xml:lang="en-US" lang="en-US" dir="ltr" class="section" data-origin-id="UUID-76d4fd01-aef4-0002-35c1-310bad7c45de" data-publication-date="" id="UUID-f6738cf7-7587-10da-da6c-512a7e30b218">
+                <div class="titlepage">
+                  <div>
+                    <div class="title">
+                      <h1 class="title" style="clear: both"><span class="formal-number">12.18</span><span class="formal-label-delimiter">.</span> <span class="formal-title">Define NC tool</span></h1>
+                    </div>
+                  </div>
+                </div>
+                <p>In the OPEN MIND tool database, a complete tool, which is used in machining, is referred to as an <span class="guilabel">NC tool</span>. An NC tool always consists of the <span class="guilabel">Tool</span> component, however, a <span class="guilabel">Spindle</span>, <span class="guilabel">Holder</span> and <span class=
+                "guilabel">Extension</span> can be defined as additional components.</p>
+                <p>To define an NC tool:</p>
+                <div class="procedure">
+                  <ol class="procedure" type="1">
+                    <li class="step">
+                      <p>In the browser, switch to the <span class="guilabel">NC tool</span> tab.</p>
+                    </li>
+                    <li class="step">
+                      <p>Choose the database, right-click and select <span class="guimenu">New</span> → <span class="guimenuitem">NC-Tool from existing tool...</span> .</p>
+                    </li>
+                    <li class="step">
+                      <p>Select the tool you require in the <span class="guilabel">Select tool</span> dialog and click <span class="guilabel">OK</span> to confirm.</p>
+                    </li>
+                  </ol>
+                </div>
+                <p>Alternatively, proceed as follows to define an NC tool:</p>
+                <div class="procedure">
+                  <ol class="procedure" type="1">
+                    <li class="step">
+                      <p>In the browser, switch to the <span class="guilabel">Tool</span> tab.</p>
+                    </li>
+                    <li class="step">
+                      <p>Select the <span class="guilabel">Tool</span> that is required to define the <span class="guilabel">NC tool</span>.</p>
+                      <div dir="ltr" class="tip">
+                        <h3 class="title">Tip</h3>
+                        <p>This function can also be used to create several NC tools at the same time. To do this, simply select the required tools.</p>
+                      </div>
+                    </li>
+                    <li class="step">
+                      <p>Right-click and select <span class="guilabel">Create NC-Tool</span>.</p>
+                    </li>
+                  </ol>
+                </div>
+                <p>Define further parameters in the data view.</p>
+                <p>The data view of the NC tool is divided into the <span class="guilabel">Geometry</span> and <span class="guilabel">Technology</span> tabs. On the <span class="guilabel">Geometry</span> tab, specify the general characteristics (NC number, Name) as well as the components that make up the NC tool. On the <span class=
+                "guilabel">Technology</span> tab, define the material used and the cutter material, the usage as well as the spindle speed and feedrates. If these have already been defined for the tool, they can be overwritten for the NC tool.</p>
+                <section xml:lang="en-US" lang="en-US" dir="ltr" class="section" data-origin-id="" data-publication-date="" id="UUID-f6738cf7-7587-10da-da6c-512a7e30b218_UUID-98260ad4-446b-0815-6963-f209f4e2aaa3">
+                  <div class="titlepage">
+                    <div>
+                      <div class="title">
+                        <h2 class="title" style="clear: both"><span class="formal-title">Save NC tool as default</span></h2>
+                      </div>
+                    </div>
+                  </div>
+                  <p>To save an NC tool as a default:</p>
+                  <div class="procedure">
+                    <ol class="procedure" type="1">
+                      <li class="step">
+                        <p>Select the required NC tool in the browser.</p>
+                      </li>
+                      <li class="step">
+                        <p>Right-click and select the <span class="guilabel">Save As Default</span> function on the shortcut menu. This will also save reference points.</p>
+                      </li>
+                    </ol>
+                  </div>
+                </section>
+                <section xml:lang="en-US" lang="en-US" dir="ltr" class="section" data-origin-id="" data-publication-date="" id="UUID-f6738cf7-7587-10da-da6c-512a7e30b218_UUID-1463cf75-6c6c-1c48-f33c-15653fdc32c5">
+                  <div class="titlepage">
+                    <div>
+                      <div class="title">
+                        <h2 class="title" style="clear: both"><span class="formal-title">Assign a holder to several NC tools</span></h2>
+                      </div>
+                    </div>
+                  </div>
+                  <p>To assign a holder to several NC tools at the same time, select the NC tools to which a holder is to be assigned, select the <span class="guilabel">Assign Holder</span> function on the shortcut menu and select the required holder from the list in the <span class="guilabel">Select holder</span> dialog.</p>
+                </section>
+              </section>
+              <div class="footer-content">
+                <div class="section-toc section-toc-after">
+                  <div class="section-toc-title">
+                    <span class="section-toc-title-delimiter">:</span>
+                  </div>
+                </div>
+              </div>
+              <footer></footer>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

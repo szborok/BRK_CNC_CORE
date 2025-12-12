@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="x-ua-compatible" content="IE=edge" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="search" content="default" />
+  <meta name="use.ic" content="no" />
+  <meta name="tocstandalone" content="yes" />
+  <script type="text/javascript">
+  //<![CDATA[
+                        var index;
+                        var contentLanguage = 'en-US';
+                        var enterKey = 'select';
+                        
+                                        var anchoroption = true;
+                                var instantsearch_minlength = 1;
+                                                
+                                var fuse_threshold = 0.3;
+                        
+                                        var local_csh = false;
+                                
+                        var useanchorlinks = false;
+  //]]>
+  </script>
+  <title>Contours</title>
+  <link rel="stylesheet" type="text/css" href="../css/docbook.css" />
+  <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" href="../css/bootstrap-theme.min.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style-common.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style-responsive.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style-print.css" />
+  <link rel="stylesheet" type="text/css" href="../css/font-awesome.css" />
+  <link rel="stylesheet" type="text/css" href="../css/custom.css" />
+  <link rel="stylesheet" type="text/css" href="../css/layout-custom-style.css" />
+  <script src="../js/jquery-1.10.2.min.js" type="text/javascript"></script>
+  <script src="../js/jquery-ui-1.10.3.custom.min.js" type="text/javascript"></script>
+  <script src="../js/bootstrap.min.js" type="text/javascript"></script>
+  <script src="../js/purl.js" type="text/javascript"></script>
+  <script src="../js/jquery.event.move.js" type="text/javascript"></script>
+  <script src="../js/jquery.event.swipe.js" type="text/javascript"></script>
+  <script src="../js/jquery.sticky.js" type="text/javascript"></script>
+  <script src="../js/respond.min.js" type="text/javascript"></script>
+  <script src="../js/script.js" type="text/javascript"></script>
+  <script src="js/toc.js" type="text/javascript"></script>
+  <script src="../js/create-toc.js" type="text/javascript"></script>
+  <script src="../js/clipboard.min.js" type="text/javascript"></script>
+  <script src="../js/fuse.min.js" type="text/javascript"></script>
+  <script src="../js/jquery.mark.min.js" type="text/javascript"></script>
+  <script src="../js/html5.fuse.search.js" type="text/javascript"></script>
+  <script src="js/fuzzydata.js" type="text/javascript"></script>
+  <script src="../js/csh.js" type="text/javascript"></script>
+  <script src="../js/highlight-mergehtml-plugin.js" type="text/javascript"></script>
+  <meta name="generator" content="Paligo" />
+  <link rel="prev" href="UUID-731fd959-4cea-9316-7518-ddeb4db35718.html" title="Tool" />
+  <link rel="next" href="UUID-69afdc39-dbb9-f318-2751-d00aedb83aca.html#id108411" title="Contour selection" />
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js?config=TeX-MML-AM_CHTML" async="async"></script>
+  <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+  <script type="text/javascript" src="../js/cookie-consent.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  <script type="text/javascript">
+  //<![CDATA[
+                        $(document).on('ready ajaxComplete', function() {
+                                
+                                hljs.addPlugin(mergeHTMLPlugin);
+                                hljs.configure({'ignoreUnescapedHTML': true});
+                                
+                                $('pre:not(.embedcode)').each(function() {
+                                        /**
+                                         * @type {string}
+                                         */
+                                        var language = $(this).data('language');
+
+                                        if (language === 'plaintext' || language === 'text') {
+                                                $(this).addClass(language).addClass('hljs');
+                                                return true;
+                                        }
+                                        else {
+                                                var clone = this.cloneNode(true);
+                                                hljs.highlightElement(clone);
+                                                $(this).empty().append($(clone).contents());
+                                                $(this).attr("class", $(clone).attr("class"));
+                                        }
+                                });
+                        });
+  //]]>
+  </script>
+  <style type="text/css">
+  /*<![CDATA[*/
+            div.skipnav {
+            }
+            div.skipnav a {
+                position: fixed;
+                left: -10000px;
+                top: 1.5em;
+                width: 1px;
+                height: 1px;
+                overflow: hidden;
+            }
+            div.skipnav a:focus, div.skipnav a:active, div.skipnav a:hover {
+                background: white;
+                color: black;
+                box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.5);
+                position: fixed;
+                left: 2em;
+                top: 1.5em;
+                width: auto;
+                height: auto;
+                overflow: visible;
+                text-decoration: underline;
+                z-index: 99999; /* has to be higher than the side panel */
+    }
+  /*]]>*/
+  </style>
+</head>
+<body data-link-prefix="">
+  <div class="skipnav">
+    <a href="#content-wrapper">Skip to main content</a>
+  </div>
+  <div id="page" class="clearfix">
+    <div id="header">
+      <div class="container">
+        <div id="logotype-container" class="pull-left">
+          <a href="../index.html"><img id="logotype-pageheader" src="../css/image/corporate-logo.png" alt="Corporate logotype" data-role="logotype" /></a>
+        </div>
+        <div id="pagetools-container" class="pull-right">
+          <ul id="page-tools">
+            <li class="page-tools-search"><input placeholder="Search" type="text" class="form-control" aria-label="Search" id="search" /></li>
+            <li class="page-tools-print">
+              <a href="javascript:window.print();"><span class="tool-label">Print</span><span class="glyphicon glyphicon-print"></span></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <h1 id="publication-title">CAM</h1>
+    <div id="subheader-sticky-wrapper" class="sticky-wrapper">
+      <div id="subheader">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3 toc-title">
+              <h2><a class="prev nav-icon hidden-lg hidden-md" href="UUID-731fd959-4cea-9316-7518-ddeb4db35718.html"><span class="glyphicon glyphicon-chevron-left"></span></a> <a href="#toc" class="hidden mobile-nav-toggle"><span class="glyphicon glyphicon-list"></span>Table of Contents</a><span class="toc-label">Table of Contents</span><a class=
+              "next nav-icon hidden-lg hidden-md" href="UUID-69afdc39-dbb9-f318-2751-d00aedb83aca.html#id108411"><span class="glyphicon glyphicon-chevron-right"></span></a></h2>
+            </div>
+            <div class="col-md-9 breadcrumb-container">
+              <ul class="breadcrumb">
+                <li class="breadcrumb-link">
+                  <span class="glyphicon glyphicon-home"></span>&nbsp;<a href="index-en-US.html">CAM</a>
+                </li>
+                <li class="breadcrumb-link">
+                  <a href="UUID-612ff4af-5647-71ca-6f1a-13a869fc43ff.html">Jig grinding</a>
+                </li>
+                <li class="breadcrumb-link">
+                  <a href="UUID-0d833015-a270-0c07-1516-287605b02801.html">2D Contour Grinding on 3D Model</a>
+                </li>
+                <li class="breadcrumb-node">Contours</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="main-content">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 toc-container" id="toc-wrapper">
+            <div id="toc-placeholder">
+              <div id="toc-standalone-placeholder"></div>
+            </div>
+          </div>
+          <div class="col-md-9 content-container" id="content-wrapper">
+            <a accesskey="p" class="prev pull-left prev visible-lg visible-md" id="header-navigation-prev" href="UUID-731fd959-4cea-9316-7518-ddeb4db35718.html"><span class="glyphicon glyphicon-circle-arrow-left"></span>Prev</a><a accesskey="n" class="pull-right next visible-lg visible-md" id="header-navigation-next" href=
+            "UUID-69afdc39-dbb9-f318-2751-d00aedb83aca.html#id108411">Next<span class="glyphicon glyphicon-circle-arrow-right"></span></a>
+            <div id="topic-content">
+              <section xml:lang="en-US" lang="en-US" dir="ltr" class="section" data-origin-id="UUID-1ae8d5ff-0125-3dbc-7dc4-aa0efbf7dfac" data-publication-date="" id="UUID-69afdc39-dbb9-f318-2751-d00aedb83aca">
+                <div class="titlepage">
+                  <div>
+                    <div class="title">
+                      <h1 class="title" style="clear: both"><span class="formal-title">Contours</span></h1>
+                    </div>
+                  </div>
+                </div>
+                <p>Define machining contours, the vertical machining area and cycle-specific contour parameters.</p>
+                <section dir="ltr" class="section internal" data-origin-id="" data-publication-date="" id="id108411">
+                  <div class="titlepage">
+                    <div>
+                      <div class="title">
+                        <h2 class="title" style="clear: both"><span class="formal-title">Contour selection</span></h2>
+                      </div>
+                    </div>
+                  </div>
+                  <p>The number of selected contours is displayed.</p>
+                </section>
+                <section dir="ltr" class="section internal" data-origin-id="" data-publication-date="" id="id108414">
+                  <div class="titlepage">
+                    <div>
+                      <div class="title">
+                        <h2 class="title" style="clear: both"><span class="formal-title">Contour attributes</span></h2>
+                      </div>
+                    </div>
+                  </div>
+                  <p><span class="guilabel">Top</span>: (1) Start of machining in Z direction, in relation to the current frame.</p>
+                  <p><span class="guilabel">Bottom</span>: (2) Final dimension of machining in Z direction, in relation to the current frame.</p>
+                  <p>To define the top and bottom, select the machining contour in the contour list. Different vertical machining areas are possible for each machining contour. Make multiple selections to define the same top and bottom definitions for different contours.</p>
+                  <div class="mediaobject">
+                    <table class="image-viewport" style="border-collapse:collapse;border:0; width:461px;">
+                      <tr style="height: 230px">
+                        <td style="padding:0;"><img src="image/uuid-ba0a9473-98b1-fd54-abed-85093196d6d4.png" style="max-width: 461px; max-height: 230px;" alt="schleifen_2D_konturschleifen_oberflaeche_tiefe.png" /></td>
+                      </tr>
+                    </table>
+                  </div>
+                  <p>Define the top and bottom either as absolute values or as thicknesses. The bottom can also be defined relative to the top.</p>
+                  <p><span class="guilabel">Absolute (jobframe)</span> (A): The values that are set are relative to the current frame. Use the absolute dimensions when a drawing has no defined Z coordinates (2D drawing). In these cases, define the top (1) as absolute and the bottom as relative or as absolute depending on the dimensions in the
+                  drawing (3). Selected contour (2)</p>
+                  <p><span class="guilabel">Relative to top</span> (B): Relative values are relative to the position of the selected CAD geometry. The values for the top (1) can be defined as absolute (job frame) or as the top or bottom of the contour. The bottom (3) should be defined as a value relative to the top. Use for drawings that have Z
+                  information (3D contours, solids, defined thicknesses). (2) = Top of the geometry (Z = 0).</p>
+                  <p><span class="guilabel">Top of contour</span> / <span class="guilabel">Bottom of contour</span> (C): Thicknesses are relative to the position of the selected CAD geometry. (1) Top, (2) = Bottom. Use for drawings that have Z information (3D contours, solids, defined thicknesses).</p>
+                  <div class="informalfigure">
+                    <div class="mediaobject">
+                      <table class="image-viewport" style="border-collapse:collapse;border:0; width:638px;">
+                        <tr>
+                          <td style="padding:0;"><img src="image/uuid-86870c98-54e0-40a3-e4e3-cd0903f9e5ec.svg" style="max-width: 638px;" alt="2D_bearbeitung_oberfl_tiefe.svg" /></td>
+                        </tr>
+                      </table>
+                    </div>
+                  </div>
+                  <p>Specify the Preferred start point, End point and Plunge point parameters. Enable the checkbox for the desired option and select a point.</p>
+                  <p><span class="guilabel">Preferred start point</span> (1): Freely select for each contour.</p>
+                  <div class="mediaobject">
+                    <table class="image-viewport" style="border-collapse:collapse;border:0; width:461px;">
+                      <tr style="height: 230px">
+                        <td style="padding:0;"><img src="image/uuid-fd72f662-12c9-5a7f-32c3-19ef98af873f.svg" style="max-width: 461px; max-height: 230px;" alt="2D_konturfraesen_3DModell_startpunkt.svg" /></td>
+                      </tr>
+                    </table>
+                  </div>
+                  <p><span class="guilabel">End point</span> (2): Set an end point if the contour is to be machined only partially.</p>
+                  <div class="mediaobject">
+                    <table class="image-viewport" style="border-collapse:collapse;border:0; width:461px;">
+                      <tr style="height: 248px">
+                        <td style="padding:0;"><img src="image/uuid-33ef11f0-c49e-d650-87d8-b093084d424e.svg" style="max-width: 461px; max-height: 248px;" alt="2D_konturfraesen_3DModell_endpunkt.svg" /></td>
+                      </tr>
+                    </table>
+                  </div>
+                  <p><span class="guilabel">Plunge point</span>: The plunge point (1) applies for the infeed to the first workplane. The cutter moves directly from the plunge point to the starting point or to the approach macro position. The plunge point is not collision checked.</p>
+                  <div class="mediaobject">
+                    <table class="image-viewport" style="border-collapse:collapse;border:0; width:461px;">
+                      <tr style="height: 230px">
+                        <td style="padding:0;"><img src="image/uuid-3f45aac2-4447-c820-848e-80831f668a72.svg" style="max-width: 461px; max-height: 230px;" alt="2D_konturfraesen_3DModell_eintauchpunkt2.svg" /></td>
+                      </tr>
+                    </table>
+                  </div>
+                  <p><span class="guilabel">Additional allowance</span>: You can define a horizontal (X, Y) and vertical (Z) allowance for each individual contour.</p>
+                  <div dir="ltr" class="note">
+                    <h3 class="title">Note</h3>
+                    <p>The values for the <span class="guilabel">Additional allowance</span> for contours are taken into account for the path generation but not for collision checks for rapid link movements. The <span class="guilabel">Allowance</span> values defined on the <span class="guilabel">Parameters</span> dialog page are used for this.</p>
+                  </div>
+                  <p><span class="guilabel">Reverse</span>: In the default setting the machining direction follows the direction of the selected contour. This can be seen in the graphic preview. If the generated toolpaths do not result in the intended machining direction, select the relevant contours and select the <span class=
+                  "guilabel">Reverse</span> option.</p>
+                  <p><span class="guilabel">Overlap</span>: An overlap is only permissible for closed contours. After milling the contour, the tool moves past the user-defined start point (1) to the set end point (2).</p>
+                  <div class="mediaobject">
+                    <table class="image-viewport" style="border-collapse:collapse;border:0; width:461px;">
+                      <tr style="height: 212px">
+                        <td style="padding:0;"><img src="image/uuid-05f701ac-2da7-6c41-f3df-fa8b10bdf117.svg" style="max-width: 461px; max-height: 212px;" alt="2D_konturfraesen_3DModell_ueberlappung.svg" /></td>
+                      </tr>
+                    </table>
+                  </div>
+                </section>
+                <section dir="ltr" class="section internal" data-origin-id="" data-publication-date="" id="id108467">
+                  <div class="titlepage">
+                    <div>
+                      <div class="title">
+                        <h2 class="title" style="clear: both"><span class="formal-title">Optimization</span></h2>
+                      </div>
+                    </div>
+                  </div>
+                  <p><span class="guilabel">Soft contours</span>: If several contours are selected, these are sorted in such a way that the linking fast travel movements (rapids) are as short as possible (A). If this option is not enabled, the contours are linked with each other in the order in which they are selected (without sorting) (A).</p>
+                  <div class="mediaobject">
+                    <table class="image-viewport" style="border-collapse:collapse;border:0; width:461px;">
+                      <tr style="height: 212px">
+                        <td style="padding:0;"><img src="image/uuid-5be962ef-c14c-3d54-e1e7-d5060032bf7f.svg" style="max-width: 461px; max-height: 212px;" alt="2D_konturfraesen_3DModell_optimierung.svg" /></td>
+                      </tr>
+                    </table>
+                  </div>
+                </section>
+              </section>
+              <div class="footer-content">
+                <div class="section-toc section-toc-after">
+                  <div class="section-toc-title">
+                    <span class="section-toc-title-delimiter">:</span>
+                  </div>
+                </div>
+              </div>
+              <footer></footer>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

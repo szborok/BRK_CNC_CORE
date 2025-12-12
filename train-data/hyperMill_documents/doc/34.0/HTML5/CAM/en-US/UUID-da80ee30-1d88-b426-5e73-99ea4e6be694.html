@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="x-ua-compatible" content="IE=edge" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="search" content="default" />
+  <meta name="use.ic" content="no" />
+  <meta name="tocstandalone" content="yes" />
+  <script type="text/javascript">
+  //<![CDATA[
+                        var index;
+                        var contentLanguage = 'en-US';
+                        var enterKey = 'select';
+                        
+                                        var anchoroption = true;
+                                var instantsearch_minlength = 1;
+                                                
+                                var fuse_threshold = 0.3;
+                        
+                                        var local_csh = false;
+                                
+                        var useanchorlinks = false;
+  //]]>
+  </script>
+  <title>Define tool geometry</title>
+  <link rel="stylesheet" type="text/css" href="../css/docbook.css" />
+  <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" href="../css/bootstrap-theme.min.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style-common.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style-responsive.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style-print.css" />
+  <link rel="stylesheet" type="text/css" href="../css/font-awesome.css" />
+  <link rel="stylesheet" type="text/css" href="../css/custom.css" />
+  <link rel="stylesheet" type="text/css" href="../css/layout-custom-style.css" />
+  <script src="../js/jquery-1.10.2.min.js" type="text/javascript"></script>
+  <script src="../js/jquery-ui-1.10.3.custom.min.js" type="text/javascript"></script>
+  <script src="../js/bootstrap.min.js" type="text/javascript"></script>
+  <script src="../js/purl.js" type="text/javascript"></script>
+  <script src="../js/jquery.event.move.js" type="text/javascript"></script>
+  <script src="../js/jquery.event.swipe.js" type="text/javascript"></script>
+  <script src="../js/jquery.sticky.js" type="text/javascript"></script>
+  <script src="../js/respond.min.js" type="text/javascript"></script>
+  <script src="../js/script.js" type="text/javascript"></script>
+  <script src="js/toc.js" type="text/javascript"></script>
+  <script src="../js/create-toc.js" type="text/javascript"></script>
+  <script src="../js/clipboard.min.js" type="text/javascript"></script>
+  <script src="../js/fuse.min.js" type="text/javascript"></script>
+  <script src="../js/jquery.mark.min.js" type="text/javascript"></script>
+  <script src="../js/html5.fuse.search.js" type="text/javascript"></script>
+  <script src="js/fuzzydata.js" type="text/javascript"></script>
+  <script src="../js/csh.js" type="text/javascript"></script>
+  <script src="../js/highlight-mergehtml-plugin.js" type="text/javascript"></script>
+  <meta name="generator" content="Paligo" />
+  <link rel="prev" href="UUID-62ffe5f7-2c4c-c02b-daf4-fada29b13852.html" title="12.6.&nbsp;Define tool" />
+  <link rel="next" href="UUID-da80ee30-1d88-b426-5e73-99ea4e6be694.html#id140348" title="General" />
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js?config=TeX-MML-AM_CHTML" async="async"></script>
+  <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+  <script type="text/javascript" src="../js/cookie-consent.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  <script type="text/javascript">
+  //<![CDATA[
+                        $(document).on('ready ajaxComplete', function() {
+                                
+                                hljs.addPlugin(mergeHTMLPlugin);
+                                hljs.configure({'ignoreUnescapedHTML': true});
+                                
+                                $('pre:not(.embedcode)').each(function() {
+                                        /**
+                                         * @type {string}
+                                         */
+                                        var language = $(this).data('language');
+
+                                        if (language === 'plaintext' || language === 'text') {
+                                                $(this).addClass(language).addClass('hljs');
+                                                return true;
+                                        }
+                                        else {
+                                                var clone = this.cloneNode(true);
+                                                hljs.highlightElement(clone);
+                                                $(this).empty().append($(clone).contents());
+                                                $(this).attr("class", $(clone).attr("class"));
+                                        }
+                                });
+                        });
+  //]]>
+  </script>
+  <style type="text/css">
+  /*<![CDATA[*/
+            div.skipnav {
+            }
+            div.skipnav a {
+                position: fixed;
+                left: -10000px;
+                top: 1.5em;
+                width: 1px;
+                height: 1px;
+                overflow: hidden;
+            }
+            div.skipnav a:focus, div.skipnav a:active, div.skipnav a:hover {
+                background: white;
+                color: black;
+                box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.5);
+                position: fixed;
+                left: 2em;
+                top: 1.5em;
+                width: auto;
+                height: auto;
+                overflow: visible;
+                text-decoration: underline;
+                z-index: 99999; /* has to be higher than the side panel */
+    }
+  /*]]>*/
+  </style>
+</head>
+<body data-link-prefix="">
+  <div class="skipnav">
+    <a href="#content-wrapper">Skip to main content</a>
+  </div>
+  <div id="page" class="clearfix">
+    <div id="header">
+      <div class="container">
+        <div id="logotype-container" class="pull-left">
+          <a href="../index.html"><img id="logotype-pageheader" src="../css/image/corporate-logo.png" alt="Corporate logotype" data-role="logotype" /></a>
+        </div>
+        <div id="pagetools-container" class="pull-right">
+          <ul id="page-tools">
+            <li class="page-tools-search"><input placeholder="Search" type="text" class="form-control" aria-label="Search" id="search" /></li>
+            <li class="page-tools-print">
+              <a href="javascript:window.print();"><span class="tool-label">Print</span><span class="glyphicon glyphicon-print"></span></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <h1 id="publication-title">CAM</h1>
+    <div id="subheader-sticky-wrapper" class="sticky-wrapper">
+      <div id="subheader">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3 toc-title">
+              <h2><a class="prev nav-icon hidden-lg hidden-md" href="UUID-62ffe5f7-2c4c-c02b-daf4-fada29b13852.html"><span class="glyphicon glyphicon-chevron-left"></span></a> <a href="#toc" class="hidden mobile-nav-toggle"><span class="glyphicon glyphicon-list"></span>Table of Contents</a><span class="toc-label">Table of Contents</span><a class=
+              "next nav-icon hidden-lg hidden-md" href="UUID-da80ee30-1d88-b426-5e73-99ea4e6be694.html#id140348"><span class="glyphicon glyphicon-chevron-right"></span></a></h2>
+            </div>
+            <div class="col-md-9 breadcrumb-container">
+              <ul class="breadcrumb">
+                <li class="breadcrumb-link">
+                  <span class="glyphicon glyphicon-home"></span>&nbsp;<a href="index-en-US.html">CAM</a>
+                </li>
+                <li class="breadcrumb-link">
+                  <a href="UUID-51eaf0e4-7ec1-8210-187c-12cd10b54a1d.html">Tool database</a>
+                </li>
+                <li class="breadcrumb-link">
+                  <a href="UUID-62ffe5f7-2c4c-c02b-daf4-fada29b13852.html">Define tool</a>
+                </li>
+                <li class="breadcrumb-node">Define tool geometry</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="main-content">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 toc-container" id="toc-wrapper">
+            <div id="toc-placeholder">
+              <div id="toc-standalone-placeholder"></div>
+            </div>
+          </div>
+          <div class="col-md-9 content-container" id="content-wrapper">
+            <a accesskey="p" class="prev pull-left prev visible-lg visible-md" id="header-navigation-prev" href="UUID-62ffe5f7-2c4c-c02b-daf4-fada29b13852.html"><span class="glyphicon glyphicon-circle-arrow-left"></span>Prev</a><a accesskey="n" class="pull-right next visible-lg visible-md" id="header-navigation-next" href=
+            "UUID-da80ee30-1d88-b426-5e73-99ea4e6be694.html#id140348">Next<span class="glyphicon glyphicon-circle-arrow-right"></span></a>
+            <div id="topic-content">
+              <section xml:lang="en-US" lang="en-US" dir="ltr" class="section" data-origin-id="UUID-d6c5ae91-ffa1-e3bd-f419-3c24ecc7ee72" data-publication-date="" id="UUID-da80ee30-1d88-b426-5e73-99ea4e6be694">
+                <div class="titlepage">
+                  <div>
+                    <div class="title">
+                      <h1 class="title" style="clear: both"><span class="formal-title">Define tool geometry</span></h1>
+                    </div>
+                  </div>
+                </div>
+                <section dir="ltr" class="section internal" data-origin-id="" data-publication-date="" id="id140348">
+                  <div class="titlepage">
+                    <div>
+                      <div class="title">
+                        <h2 class="title" style="clear: both"><span class="formal-title">General</span></h2>
+                      </div>
+                    </div>
+                  </div>
+                  <p>Define <span class="guilabel">name</span>, <span class="guilabel">comment</span> (optional) and <span class="guilabel">measurement system</span>.</p>
+                  <p>For a tool series</p>
+                  <p><span class="guilabel">Name pattern part</span></p>
+                  <p><span class="guilabel">Comment pattern part</span></p>
+                  <p><span class="guilabel">Tool series</span>: The name of the tool series is displayed.</p>
+                  <p><span class="guilabel">Manufacturer</span>: The manufacturer is displayed for a tool series. For a single tool, select the manufacturer from the list of available manufacturers.</p>
+                  <p><span class="guilabel">Ordering code</span></p>
+                </section>
+                <section dir="ltr" class="section internal" data-origin-id="" data-publication-date="" id="id140365">
+                  <div class="titlepage">
+                    <div>
+                      <div class="title">
+                        <h2 class="title" style="clear: both"><span class="formal-title">Geometry</span></h2>
+                      </div>
+                    </div>
+                  </div>
+                  <p>Define the <span class="guilabel">Diameter</span> and <span class="guilabel">Length</span> of the tool.</p>
+                  <p>Use the <span class="guilabel">ISO fit</span> geometry parameter and select a tool that is suitable for the hole tolerance using standardized tolerance values (<span class="guilabel">Upper allowance</span> / <span class="guilabel">Lower allowance</span>).</p>
+                </section>
+                <section dir="ltr" class="section internal" data-origin-id="" data-publication-date="" id="id140374">
+                  <div class="titlepage">
+                    <div>
+                      <div class="title">
+                        <h2 class="title" style="clear: both"><span class="formal-title">Shank</span></h2>
+                      </div>
+                    </div>
+                  </div>
+                  <p><span class="guilabel">Shank mode</span>: Select either the <span class="guilabel">Free</span> or <span class="guilabel">Parametric</span> option to define the shank. Select the <span class="guilabel">None</span> option if no shank is necessary.</p>
+                  <div class="informaltable table-responsive">
+                    <table style="width:100%;" class="informaltable">
+                      <colgroup>
+                        <col style="width:12%;" />
+                        <col style="width:88%;" />
+                      </colgroup>
+                      <tbody>
+                        <tr>
+                          <td class="td">
+                            <div class="mediaobject"><img src="image/uuid-f01dff48-8cb1-c0ae-ea23-9ed1a322bd35.svg" style="" alt="hm_edit_tool_type_edit_geo.svg" /></div>
+                          </td>
+                          <td class="td">
+                            <p>In the <span class="guilabel">Free</span> shank mode, use the geometry editor to define the shape of the tool shank. To do this, open the geometry editor.</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="td">
+                            <div class="mediaobject">
+                              <table class="image-viewport" style="border-collapse:collapse;border:0; ;">
+                                <tr style="height: 48px">
+                                  <td style="padding:0;"><img src="image/uuid-b5705e3a-de36-69d4-0419-f0bad491d443.svg" style="max-height: 48px;" alt="delete_r.svg" /></td>
+                                </tr>
+                              </table>
+                            </div>
+                          </td>
+                          <td class="td">
+                            <p>Delete freely defined geometry.</p>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <p>In the <span class="guilabel">Parametric</span> shank mode, specify the <span class="guilabel">shank diameter</span> and the method of <span class="guilabel">chamfer definition</span>. With the <span class="guilabel">Absolute</span> (A) chamfer definition, specify a point for the <span class="guilabel">chamfer end
+                  position</span> (1) as an absolute value. With the <span class="guilabel">Length</span> (B) chamfer definition, specify the <span class="guilabel">chamfer length</span> (1) and with the <span class="guilabel">Angle</span> (C) chamfer definition, specify the <span class="guilabel">chamfer angle</span> (1).</p>
+                  <p>(2) Shank diameter, (3) Tip length, (4) Shank length, (5) Tool length.</p>
+                  <div class="mediaobject">
+                    <table class="image-viewport" style="border-collapse:collapse;border:0; width:461px;">
+                      <tr style="height: 266px">
+                        <td style="padding:0;"><img src="image/uuid-b3d234c3-481d-af11-5a52-77dd40d28133.svg" style="max-width: 461px; max-height: 266px;" alt="WDB_schaftdefinition_methoden.svg" /></td>
+                      </tr>
+                    </table>
+                  </div>
+                </section>
+                <section dir="ltr" class="section internal" data-origin-id="" data-publication-date="" id="id140415">
+                  <div class="titlepage">
+                    <div>
+                      <div class="title">
+                        <h2 class="title" style="clear: both"><span class="formal-title">Tip</span></h2>
+                      </div>
+                    </div>
+                  </div>
+                  <p>Define the parameters for the tip of the tool.</p>
+                  <p>To define a tapered tool, enable the <span class="guilabel">Conical tip</span> option and define the <span class="guilabel">Cone angle</span>.</p>
+                  <p><span class="guilabel">Allow plunge</span>: Only available for <span class="guilabel">Chamfered cutter</span>. Enabled by default. The tool is allowed to plunge into the model without a collision message being generated.</p>
+                  <div class="informaltable table-responsive">
+                    <table style="width:100%;" class="informaltable">
+                      <colgroup>
+                        <col style="width:12%;" />
+                        <col style="width:88%;" />
+                      </colgroup>
+                      <tbody>
+                        <tr>
+                          <td class="td">
+                            <div class="mediaobject"><img src="image/uuid-f01dff48-8cb1-c0ae-ea23-9ed1a322bd35.svg" style="" alt="hm_edit_tool_type_edit_geo.svg" /></div>
+                          </td>
+                          <td class="td">
+                            <p><span class="guilabel">Free tip geometry</span>: Open the geometry editor and define the tip geometry. In the <span class="guilabel">Cutting area</span> column, enable line segments that define the cutting part of the tool tip.</p>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div dir="ltr" class="caution">
+                    <h3 class="title">Caution</h3>
+                    <p>The <span class="guilabel">Free tip geometry</span> is not checked against collisions.</p>
+                  </div>
+                  <p>The length of the tool tip is calculated automatically if the following conditions are fulfilled:</p>
+                  <div class="itemizedlist">
+                    <ul class="itemizedlist" style="list-style-type: disc;">
+                      <li class="listitem">
+                        <p>The Conical tip parameter is enabled,</p>
+                      </li>
+                      <li class="listitem">
+                        <p>the shank mode is set to Parametric,</p>
+                      </li>
+                      <li class="listitem">
+                        <p>length is defined as the chamfer definition and</p>
+                      </li>
+                      <li class="listitem">
+                        <p>the Chamfer length is 0.</p>
+                      </li>
+                    </ul>
+                  </div>
+                  <p>The following applies to the shank definition: Length of the chamfer &gt;= 0 and length of the chamfer &lt;= shank length.</p>
+                </section>
+              </section>
+              <div class="footer-content">
+                <div class="section-toc section-toc-after">
+                  <div class="section-toc-title">
+                    <span class="section-toc-title-delimiter">:</span>
+                  </div>
+                </div>
+              </div>
+              <footer></footer>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="x-ua-compatible" content="IE=edge" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="search" content="default" />
+  <meta name="use.ic" content="no" />
+  <meta name="tocstandalone" content="yes" />
+  <script type="text/javascript">
+  //<![CDATA[
+                        var index;
+                        var contentLanguage = 'en-US';
+                        var enterKey = 'select';
+                        
+                                        var anchoroption = true;
+                                var instantsearch_minlength = 1;
+                                                
+                                var fuse_threshold = 0.3;
+                        
+                                        var local_csh = false;
+                                
+                        var useanchorlinks = false;
+  //]]>
+  </script>
+  <title>4.3.&nbsp;Best Fit - determine real part position</title>
+  <link rel="stylesheet" type="text/css" href="../css/docbook.css" />
+  <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" href="../css/bootstrap-theme.min.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style-common.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style-responsive.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style-print.css" />
+  <link rel="stylesheet" type="text/css" href="../css/font-awesome.css" />
+  <link rel="stylesheet" type="text/css" href="../css/custom.css" />
+  <link rel="stylesheet" type="text/css" href="../css/layout-custom-style.css" />
+  <script src="../js/jquery-1.10.2.min.js" type="text/javascript"></script>
+  <script src="../js/jquery-ui-1.10.3.custom.min.js" type="text/javascript"></script>
+  <script src="../js/bootstrap.min.js" type="text/javascript"></script>
+  <script src="../js/purl.js" type="text/javascript"></script>
+  <script src="../js/jquery.event.move.js" type="text/javascript"></script>
+  <script src="../js/jquery.event.swipe.js" type="text/javascript"></script>
+  <script src="../js/jquery.sticky.js" type="text/javascript"></script>
+  <script src="../js/respond.min.js" type="text/javascript"></script>
+  <script src="../js/script.js" type="text/javascript"></script>
+  <script src="js/toc.js" type="text/javascript"></script>
+  <script src="../js/create-toc.js" type="text/javascript"></script>
+  <script src="../js/clipboard.min.js" type="text/javascript"></script>
+  <script src="../js/fuse.min.js" type="text/javascript"></script>
+  <script src="../js/jquery.mark.min.js" type="text/javascript"></script>
+  <script src="../js/html5.fuse.search.js" type="text/javascript"></script>
+  <script src="js/fuzzydata.js" type="text/javascript"></script>
+  <script src="../js/csh.js" type="text/javascript"></script>
+  <script src="../js/highlight-mergehtml-plugin.js" type="text/javascript"></script>
+  <meta name="generator" content="Paligo" />
+  <link rel="prev" href="UUID-c79376b8-08d7-93d9-f9d0-d3dc5e6ce019.html" title="4.2.&nbsp;Move setup" />
+  <link rel="next" href="UUID-bceb38e7-6115-818d-662d-36fc55903bbc.html" title="5.&nbsp;Program run (simulation)" />
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML" async="async"></script>
+  <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+  <script type="text/javascript" src="../js/cookie-consent.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  <script type="text/javascript">
+  //<![CDATA[
+                        $(document).on('ready ajaxComplete', function() {
+                                
+                                hljs.addPlugin(mergeHTMLPlugin);
+                                hljs.configure({'ignoreUnescapedHTML': true});
+                                
+                                $('pre:not(.embedcode)').each(function() {
+                                        /**
+                                         * @type {string}
+                                         */
+                                        var language = $(this).data('language');
+
+                                        if (language === 'plaintext' || language === 'text') {
+                                                $(this).addClass(language).addClass('hljs');
+                                                return true;
+                                        }
+                                        else {
+                                                var clone = this.cloneNode(true);
+                                                hljs.highlightElement(clone);
+                                                $(this).empty().append($(clone).contents());
+                                                $(this).attr("class", $(clone).attr("class"));
+                                        }
+                                });
+                        });
+  //]]>
+  </script>
+  <style type="text/css">
+  /*<![CDATA[*/
+            div.skipnav {
+            }
+            div.skipnav a {
+                position: fixed;
+                left: -10000px;
+                top: 1.5em;
+                width: 1px;
+                height: 1px;
+                overflow: hidden;
+            }
+            div.skipnav a:focus, div.skipnav a:active, div.skipnav a:hover {
+                background: white;
+                color: black;
+                box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.5);
+                position: fixed;
+                left: 2em;
+                top: 1.5em;
+                width: auto;
+                height: auto;
+                overflow: visible;
+                text-decoration: underline;
+                z-index: 99999; /* has to be higher than the side panel */
+    }
+  /*]]>*/
+  </style>
+</head>
+<body data-link-prefix="">
+  <div class="skipnav">
+    <a href="#content-wrapper">Skip to main content</a>
+  </div>
+  <div id="page" class="clearfix">
+    <div id="header">
+      <div class="container">
+        <div id="logotype-container" class="pull-left">
+          <a href="../index.html"><img id="logotype-pageheader" src="../css/image/corporate-logo.png" alt="Corporate logotype" data-role="logotype" /></a>
+        </div>
+        <div id="pagetools-container" class="pull-right">
+          <ul id="page-tools">
+            <li class="page-tools-search"><input placeholder="Search" type="text" class="form-control" aria-label="Search" id="search" /></li>
+            <li class="page-tools-print">
+              <a href="javascript:window.print();"><span class="tool-label">Print</span><span class="glyphicon glyphicon-print"></span></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <h1 id="publication-title"><span xml:lang="de" lang="de" dir="ltr" class="phrase"><span class="application">VIRTUAL Machining Center</span></span></h1>
+    <div id="subheader-sticky-wrapper" class="sticky-wrapper">
+      <div id="subheader">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3 toc-title">
+              <h2><a class="prev nav-icon hidden-lg hidden-md" href="UUID-c79376b8-08d7-93d9-f9d0-d3dc5e6ce019.html"><span class="glyphicon glyphicon-chevron-left"></span></a> <a href="#toc" class="hidden mobile-nav-toggle"><span class="glyphicon glyphicon-list"></span>Table of Contents</a><span class="toc-label">Table of Contents</span><a class=
+              "next nav-icon hidden-lg hidden-md" href="UUID-bceb38e7-6115-818d-662d-36fc55903bbc.html"><span class="glyphicon glyphicon-chevron-right"></span></a></h2>
+            </div>
+            <div class="col-md-9 breadcrumb-container">
+              <ul class="breadcrumb">
+                <li class="breadcrumb-link">
+                  <span class="glyphicon glyphicon-home"></span>&nbsp;<a href="index-en-US.html"><span xml:lang="de" lang="de" dir="ltr" class="phrase"><span class="application">VIRTUAL Machining Center</span></span></a>
+                </li>
+                <li class="breadcrumb-link">
+                  <a href="UUID-4214ec2d-27ad-f73e-0e21-1b3ca19236f5.html">Project administration</a>
+                </li>
+                <li class="breadcrumb-node"><span class="phrase">Best Fit</span> - determine real part position</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="main-content">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 toc-container" id="toc-wrapper">
+            <div id="toc-placeholder">
+              <div id="toc-standalone-placeholder"></div>
+            </div>
+          </div>
+          <div class="col-md-9 content-container" id="content-wrapper">
+            <a accesskey="p" class="prev pull-left prev visible-lg visible-md" id="header-navigation-prev" href="UUID-c79376b8-08d7-93d9-f9d0-d3dc5e6ce019.html"><span class="glyphicon glyphicon-circle-arrow-left"></span>Prev</a><a accesskey="n" class="pull-right next visible-lg visible-md" id="header-navigation-next" href=
+            "UUID-bceb38e7-6115-818d-662d-36fc55903bbc.html">Next<span class="glyphicon glyphicon-circle-arrow-right"></span></a>
+            <div id="topic-content">
+              <section xml:lang="en-US" lang="en-US" dir="ltr" class="section" data-origin-id="UUID-b5ad04f8-28c5-c9ef-b18b-7136e54dcf4e" data-publication-date="" id="UUID-94e23fed-ef2e-52d4-9510-394564b75dcf">
+                <div class="titlepage">
+                  <div>
+                    <div class="title">
+                      <h1 class="title" style="clear: both"><span class="formal-number">4.3</span><span class="formal-label-delimiter">.</span> <span class="formal-title"><span class="phrase">Best Fit</span> - determine real part position</span></h1>
+                    </div>
+                  </div>
+                </div>
+                <div dir="ltr" class="note notice">
+                  <h3 class="title">Note</h3>
+                  <p>More complex part shapes, alternative manufacturing processes (casting, 3D printing, forged stock) and smaller allowances make manually aligning the part very time-consuming. The <span class="emphasis"><em>hyper</em></span>MILL <span class="phrase">Best Fit</span> alignment eliminates the need for time-consuming manual
+                  alignment measures. Positioning is automatic and based on the internal origin shift captured using the <span class="guilabel">3D Point Probing</span> cycle. Probing takes place both in the CAM programming and on the machine, so that the position deviation between the virtual and the real situation can be determined and corrected.
+                  The <span class="phrase">Best Fit</span> real part position is adjusted in the <span class="phrase"><span class="application">VIRTUAL Machining Center</span></span> and is checked for collisions. An attempt is made to comply with all machine limits with the help of the NC optimizer.</p>
+                </div>
+                <h4 id="idp3375" class="bridgehead">Positioning with&nbsp;<span class="phrase">Best Fit</span>&nbsp;at a glance</h4>
+                <div class="informalfigure" id="UUID-94e23fed-ef2e-52d4-9510-394564b75dcf_figure-idm4605862973288032706925489435">
+                  <div class="mediaobject"><img src="image/uuid-b329ba8e-e40e-e511-8656-c4cdfee52bf1-en-US.svg" style="" alt="vmc_best_fit_workflow-de.svg" /></div>
+                </div>
+                <div dir="ltr" class="note">
+                  <h3 class="title">Note</h3>
+                  <p>With a Heidenhain machine and license for the <span class="phrase"><span class="application">CONNECTED Machining</span></span>, the probing protocol can be read in and read back conveniently via a file exchange dialog.</p>
+                </div>
+                <div class="informalfigure" id="UUID-94e23fed-ef2e-52d4-9510-394564b75dcf_figure-idm231931067673754">
+                  <div class="mediaobject">
+                    <table class="image-viewport" style="border-collapse:collapse;border:0; width:638px;">
+                      <tr>
+                        <td style="padding:0;"><img src="image/uuid-a1847ec1-06e2-5c4c-8b04-06dc12a667f5-en-US.svg" style="max-width: 638px;" alt="vmc_best_fit-de.svg" /></td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+                <p><span class="inlinemediaobject"><img src="image/uuid-d3472d24-15bf-6200-8d62-f37eed6cb967.svg" alt="Nr_01.svg" /></span> Select the probing protocol file that was generated by <span class="emphasis"><em>hyper</em></span>MILL in <code class="filename">*.ompr</code> or <code class="filename">*.txt</code> format with the
+                <span class="guilabel">3D Point probing</span> cycle.</p>
+                <p>If the <span class="phrase"><span class="application">VIRTUAL Machining Center</span></span> is connected to a Heidenhain controller, the protocol file can be transferred directly as follows:</p>
+                <div class="orderedlist">
+                  <ol class="orderedlist" type="1">
+                    <li class="listitem">
+                      <p>In the File exchange dialog, click the&nbsp;<span class="guilabel">Copy and Select file</span>&nbsp;button to copy the probing protocol file [<code class="filename">probe.ompr</code>] and select for the&nbsp;<span class="phrase">Best Fit</span>&nbsp;function or</p>
+                    </li>
+                    <li class="listitem">
+                      <p>click the <span class="guilabel">Select file</span> button to use a probing protocol file from the computer of the <span class="phrase"><span class="application">VIRTUAL Machining Center</span></span>.</p>
+                    </li>
+                  </ol>
+                </div>
+                <p>For information on connecting <span class="phrase"><span class="application">VIRTUAL Machining Center</span></span> and the machine, see section <a class="xref linktype-component" href="UUID-a9ea5c7e-1d68-bc7d-f22e-8e514f02811d.html" title="9.1.&nbsp;Connecting VIRTUAL Machining Center and the machine"><span class=
+                "xreftitle">Connecting <span class="phrase"><span class="application">VIRTUAL Machining Center</span></span> and the machine</span></a>.</p>
+                <h4 id="idp3415" class="bridgehead">Minimize distance between points</h4>
+                <p>To align the component optimally on the machine, minimize the distance between the model positions and the real positions on the machine. The distance can be minimized with the function <span class="guilabel">Surfaces (distance along normals)</span> along the surface normals of the component. To be used for relatively uniform
+                allowances.</p>
+                <p><span class="inlinemediaobject"><img src="image/uuid-fa232d44-ccb2-2f50-a1d9-253c460bb62c.svg" alt="Nr_02.svg" /></span> Axes of the origin table reference.</p>
+                <p><span class="inlinemediaobject"><img src="image/uuid-fb9c4824-908e-c3d0-eb1e-1e864608f0ed.svg" alt="Nr_03.svg" /></span> Lock the axes that are not to be moved when calculating the optimal clamping position on the machine. To do this, click the field for the required axis under <span class="guilabel">Lock</span>.</p>
+                <p><span class="inlinemediaobject"><img src="image/uuid-8e73687f-89a5-04d8-31df-020f365123aa.svg" alt="Nr_04.svg" /></span> <span class="guilabel">Delta</span>: Shift values of the axes of the origin table reference.</p>
+                <p><span class="guilabel">Show points</span> / <span class="guilabel">Remove points</span>: Show or hide the probing points.</p>
+                <p><span class="guilabel">Calculate</span>: The best position of the part origin is calculated based on the information in the probing protocol.</p>
+                <p><span class="guilabel">Generate NC file</span>: Generate an NC file for all machining jobs based on the newly calculated&nbsp;<span class="phrase">Best Fit</span>-coordinate system.</p>
+                <div dir="ltr" class="note notice">
+                  <h3 class="title">Note</h3>
+                  <p>No changes may be made to the origin definition in the machine control while the&nbsp;<span class="phrase">Best Fit</span>&nbsp;function is executed. The adjusted toolpaths are checked for collisions.</p>
+                </div>
+                <p></p>
+              </section>
+              <div class="footer-content">
+                <div class="section-toc section-toc-after">
+                  <div class="section-toc-title">
+                    <span class="section-toc-title-delimiter">:</span>
+                  </div>
+                </div>
+              </div>
+              <footer></footer>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

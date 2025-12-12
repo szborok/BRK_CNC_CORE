@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="x-ua-compatible" content="IE=edge" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="search" content="default" />
+  <meta name="use.ic" content="no" />
+  <meta name="tocstandalone" content="yes" />
+  <script type="text/javascript">
+  //<![CDATA[
+                        var index;
+                        var contentLanguage = 'en-US';
+                        var enterKey = 'select';
+                        
+                                        var anchoroption = true;
+                                var instantsearch_minlength = 1;
+                                                
+                                var fuse_threshold = 0.3;
+                        
+                                        var local_csh = false;
+                                
+                        var useanchorlinks = false;
+  //]]>
+  </script>
+  <title>Overview: cutting types, tool types and parameters</title>
+  <link rel="stylesheet" type="text/css" href="../css/docbook.css" />
+  <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" href="../css/bootstrap-theme.min.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style-common.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style-responsive.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style-print.css" />
+  <link rel="stylesheet" type="text/css" href="../css/font-awesome.css" />
+  <link rel="stylesheet" type="text/css" href="../css/custom.css" />
+  <link rel="stylesheet" type="text/css" href="../css/layout-custom-style.css" />
+  <script src="../js/jquery-1.10.2.min.js" type="text/javascript"></script>
+  <script src="../js/jquery-ui-1.10.3.custom.min.js" type="text/javascript"></script>
+  <script src="../js/bootstrap.min.js" type="text/javascript"></script>
+  <script src="../js/purl.js" type="text/javascript"></script>
+  <script src="../js/jquery.event.move.js" type="text/javascript"></script>
+  <script src="../js/jquery.event.swipe.js" type="text/javascript"></script>
+  <script src="../js/jquery.sticky.js" type="text/javascript"></script>
+  <script src="../js/respond.min.js" type="text/javascript"></script>
+  <script src="../js/script.js" type="text/javascript"></script>
+  <script src="js/toc.js" type="text/javascript"></script>
+  <script src="../js/create-toc.js" type="text/javascript"></script>
+  <script src="../js/clipboard.min.js" type="text/javascript"></script>
+  <script src="../js/fuse.min.js" type="text/javascript"></script>
+  <script src="../js/jquery.mark.min.js" type="text/javascript"></script>
+  <script src="../js/html5.fuse.search.js" type="text/javascript"></script>
+  <script src="js/fuzzydata.js" type="text/javascript"></script>
+  <script src="../js/csh.js" type="text/javascript"></script>
+  <script src="../js/highlight-mergehtml-plugin.js" type="text/javascript"></script>
+  <meta name="generator" content="Paligo" />
+  <link rel="prev" href="UUID-65218bba-9e93-95c2-dcc4-09095c1b8c28.html" title="Overview: jobs and types of cut" />
+  <link rel="next" href="UUID-13671837-d209-e120-c751-db5333ab2dd4.html" title="12.13.&nbsp;Define manufacturer" />
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js?config=TeX-MML-AM_CHTML" async="async"></script>
+  <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+  <script type="text/javascript" src="../js/cookie-consent.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  <script type="text/javascript">
+  //<![CDATA[
+                        $(document).on('ready ajaxComplete', function() {
+                                
+                                hljs.addPlugin(mergeHTMLPlugin);
+                                hljs.configure({'ignoreUnescapedHTML': true});
+                                
+                                $('pre:not(.embedcode)').each(function() {
+                                        /**
+                                         * @type {string}
+                                         */
+                                        var language = $(this).data('language');
+
+                                        if (language === 'plaintext' || language === 'text') {
+                                                $(this).addClass(language).addClass('hljs');
+                                                return true;
+                                        }
+                                        else {
+                                                var clone = this.cloneNode(true);
+                                                hljs.highlightElement(clone);
+                                                $(this).empty().append($(clone).contents());
+                                                $(this).attr("class", $(clone).attr("class"));
+                                        }
+                                });
+                        });
+  //]]>
+  </script>
+  <style type="text/css">
+  /*<![CDATA[*/
+            div.skipnav {
+            }
+            div.skipnav a {
+                position: fixed;
+                left: -10000px;
+                top: 1.5em;
+                width: 1px;
+                height: 1px;
+                overflow: hidden;
+            }
+            div.skipnav a:focus, div.skipnav a:active, div.skipnav a:hover {
+                background: white;
+                color: black;
+                box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.5);
+                position: fixed;
+                left: 2em;
+                top: 1.5em;
+                width: auto;
+                height: auto;
+                overflow: visible;
+                text-decoration: underline;
+                z-index: 99999; /* has to be higher than the side panel */
+    }
+  /*]]>*/
+  </style>
+</head>
+<body data-link-prefix="">
+  <div class="skipnav">
+    <a href="#content-wrapper">Skip to main content</a>
+  </div>
+  <div id="page" class="clearfix">
+    <div id="header">
+      <div class="container">
+        <div id="logotype-container" class="pull-left">
+          <a href="../index.html"><img id="logotype-pageheader" src="../css/image/corporate-logo.png" alt="Corporate logotype" data-role="logotype" /></a>
+        </div>
+        <div id="pagetools-container" class="pull-right">
+          <ul id="page-tools">
+            <li class="page-tools-search"><input placeholder="Search" type="text" class="form-control" aria-label="Search" id="search" /></li>
+            <li class="page-tools-print">
+              <a href="javascript:window.print();"><span class="tool-label">Print</span><span class="glyphicon glyphicon-print"></span></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <h1 id="publication-title">CAM</h1>
+    <div id="subheader-sticky-wrapper" class="sticky-wrapper">
+      <div id="subheader">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3 toc-title">
+              <h2><a class="prev nav-icon hidden-lg hidden-md" href="UUID-65218bba-9e93-95c2-dcc4-09095c1b8c28.html"><span class="glyphicon glyphicon-chevron-left"></span></a> <a href="#toc" class="hidden mobile-nav-toggle"><span class="glyphicon glyphicon-list"></span>Table of Contents</a><span class="toc-label">Table of Contents</span><a class=
+              "next nav-icon hidden-lg hidden-md" href="UUID-13671837-d209-e120-c751-db5333ab2dd4.html"><span class="glyphicon glyphicon-chevron-right"></span></a></h2>
+            </div>
+            <div class="col-md-9 breadcrumb-container">
+              <ul class="breadcrumb">
+                <li class="breadcrumb-link">
+                  <span class="glyphicon glyphicon-home"></span>&nbsp;<a href="index-en-US.html">CAM</a>
+                </li>
+                <li class="breadcrumb-link">
+                  <a href="UUID-51eaf0e4-7ec1-8210-187c-12cd10b54a1d.html">Tool database</a>
+                </li>
+                <li class="breadcrumb-link">
+                  <a href="UUID-0dcc7c01-5f35-bd09-9bda-c7b51a52b52e.html">Tool series and technology templates</a>
+                </li>
+                <li class="breadcrumb-node">Overview: cutting types, tool types and parameters</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="main-content">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 toc-container" id="toc-wrapper">
+            <div id="toc-placeholder">
+              <div id="toc-standalone-placeholder"></div>
+            </div>
+          </div>
+          <div class="col-md-9 content-container" id="content-wrapper">
+            <a accesskey="p" class="prev pull-left prev visible-lg visible-md" id="header-navigation-prev" href="UUID-65218bba-9e93-95c2-dcc4-09095c1b8c28.html"><span class="glyphicon glyphicon-circle-arrow-left"></span>Prev</a><a accesskey="n" class="pull-right next visible-lg visible-md" id="header-navigation-next" href=
+            "UUID-13671837-d209-e120-c751-db5333ab2dd4.html">Next<span class="glyphicon glyphicon-circle-arrow-right"></span></a>
+            <div id="topic-content">
+              <section xml:lang="en-US" lang="en-US" dir="ltr" class="section" data-origin-id="UUID-2d11577e-fa51-432e-cb0a-eb1414fb0ca1" data-publication-date="" id="UUID-8d77d9ae-66bd-ae4c-4a8a-e9acf44653c0">
+                <div class="titlepage">
+                  <div>
+                    <div class="title">
+                      <h1 class="title" style="clear: both"><span class="formal-title">Overview: cutting types, tool types and parameters</span></h1>
+                    </div>
+                  </div>
+                </div>
+                <p>List of available cutting types, suitable tool types and parameters:</p>
+                <div class="informaltable table-responsive" id="UUID-8d77d9ae-66bd-ae4c-4a8a-e9acf44653c0_informaltable-idm53274331191186">
+                  <table rules="rows" style="width:100%;" class="informaltable">
+                    <colgroup>
+                      <col style="width:15%;" />
+                      <col style="width:42%;" />
+                      <col style="width:43%;" />
+                    </colgroup>
+                    <thead>
+                      <tr>
+                        <th class="th">
+                          <p>Symbol</p>
+                        </th>
+                        <th class="th">
+                          <p>Type of cut</p>
+                        </th>
+                        <th class="th">
+                          <p>Tool type</p>
+                        </th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr valign="top">
+                        <td valign="top" class="td align-top">
+                          <div class="mediaobject"><img src="image/uuid-95c7eb67-fde9-b766-b57d-36e5472a68b4.svg" style="" alt="helical_plunge.svg" /></div>
+                        </td>
+                        <td class="td">
+                          <p>Helical plunge</p>
+                        </td>
+                        <td class="td">
+                          <p>End Mill, Ball Mill, Bullnose End Mill, Lollipop,</p>
+                          <p>Indexable cutter with round inserts ,</p>
+                          <p>Indexable cutter with high feed inserts</p>
+                        </td>
+                      </tr>
+                      <tr valign="top">
+                        <td valign="top" class="td align-top">
+                          <div class="mediaobject"><img src="image/uuid-c5fba96e-1c1b-e28c-6f97-de3709b61cae.svg" style="" alt="ramp_plunge.svg" /></div>
+                        </td>
+                        <td class="td">
+                          <p>Ramp plunge</p>
+                        </td>
+                        <td class="td">
+                          <p>End Mill, Ball Mill, Bullnose End Mill, Lollipop,</p>
+                          <p>Indexable cutter with round inserts ,</p>
+                          <p>Indexable cutter with high feed inserts</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td valign="top" class="td align-top">
+                          <div class="mediaobject"><img src="image/uuid-a9349d46-ed6b-8db5-9bdf-ebc617169e16.svg" style="" alt="full_cut.svg" /></div>
+                        </td>
+                        <td valign="top" class="td align-top">
+                          <p>Full cut</p>
+                        </td>
+                        <td valign="top" class="td align-top">
+                          <p>End Mill, Ball Mill, Bullnose End Mill, Lollipop,</p>
+                          <p>Indexable cutter with round inserts ,</p>
+                          <p>Indexable cutter with high feed inserts,</p>
+                          <p>Chamfered cutter</p>
+                        </td>
+                      </tr>
+                      <tr valign="top">
+                        <td valign="top" class="td align-top">
+                          <div class="mediaobject"><img src="image/uuid-136fd98a-1723-e27f-4357-1e92ab2fa4be.svg" style="" alt="standard_rough_cut.svg" /></div>
+                        </td>
+                        <td class="td">
+                          <p>Standard roughing</p>
+                        </td>
+                        <td class="td">
+                          <p>End Mill, Ball Mill, Bullnose End Mill, Lollipop,</p>
+                          <p>Indexable cutter with round inserts ,</p>
+                          <p>Indexable cutter with high feed inserts</p>
+                        </td>
+                      </tr>
+                      <tr valign="top">
+                        <td valign="top" class="td align-top">
+                          <div class="mediaobject"><img src="image/uuid-b3553e52-3a6a-bdfc-612d-58a678eba11e.svg" style="" alt="optimized_side_cut.svg" /></div>
+                        </td>
+                        <td class="td">
+                          <p>Trochoidal roughing</p>
+                        </td>
+                        <td class="td">
+                          <p>End Mill, Ball Mill, Bullnose End Mill, Lollipop,</p>
+                          <p>Indexable cutter with round inserts,</p>
+                          <p>Indexable cutter with high feed inserts</p>
+                        </td>
+                      </tr>
+                      <tr valign="top">
+                        <td valign="top" class="td align-top">
+                          <div class="mediaobject"><img src="image/uuid-68baed86-5eb3-b432-2052-a38efe21253d.svg" style="" alt="high_speed_cut.svg" /></div>
+                        </td>
+                        <td class="td">
+                          <p>High-feed roughing</p>
+                        </td>
+                        <td class="td">
+                          <p>End Mill, Ball Mill, Bullnose End Mill, Lollipop,</p>
+                          <p>Indexable cutter with round inserts,</p>
+                          <p>Indexable cutter with high feed inserts</p>
+                        </td>
+                      </tr>
+                      <tr valign="top">
+                        <td valign="top" class="td align-top">
+                          <div class="mediaobject" id="UUID-8d77d9ae-66bd-ae4c-4a8a-e9acf44653c0_mediaobject-idm53274474497418"><img src="image/uuid-eed0beaf-9071-603a-d64c-3cb0f0e1d102.svg" style="" alt="2D_Side_semi_finish.svg" /></div>
+                        </td>
+                        <td class="td">
+                          <p>Side semi-finishing</p>
+                        </td>
+                        <td class="td">
+                          <p>End Mill, Ball Mill, Bullnose End Mill, Lollipop,</p>
+                          <p>Indexable cutter with round inserts,</p>
+                          <p>Indexable cutter with high feed inserts</p>
+                        </td>
+                      </tr>
+                      <tr valign="top">
+                        <td valign="top" class="td align-top">
+                          <div class="mediaobject"><img src="image/uuid-da051fb7-2460-d002-5940-d776c98e0479.svg" style="" alt="2D_Side_finish.svg" /></div>
+                        </td>
+                        <td class="td">
+                          <p>Side finishing</p>
+                        </td>
+                        <td class="td">
+                          <p>End Mill, Ball Mill, Bullnose End Mill, Lollipop,</p>
+                          <p>Indexable cutter with round inserts,</p>
+                          <p>Indexable cutter with high feed inserts</p>
+                        </td>
+                      </tr>
+                      <tr valign="top">
+                        <td valign="top" class="td align-top">
+                          <div class="mediaobject"><img src="image/uuid-36096981-d977-554f-bd07-28de5570e597.svg" style="" alt="2D_Face_semi_finish.svg" /></div>
+                        </td>
+                        <td class="td">
+                          <p>Face semi-finishing</p>
+                        </td>
+                        <td class="td">
+                          <p>End Mill, Ball Mill, Bullnose End Mill, Lollipop,</p>
+                          <p>Indexable cutter with round inserts,</p>
+                          <p>Indexable cutter with high feed inserts</p>
+                        </td>
+                      </tr>
+                      <tr valign="top">
+                        <td valign="top" class="td align-top">
+                          <div class="mediaobject"><img src="image/uuid-db79678f-fc3e-4e3c-1814-bbd137c30c27.svg" style="" alt="2D_Face_finish.svg" /></div>
+                        </td>
+                        <td class="td">
+                          <p>Face finishing</p>
+                        </td>
+                        <td class="td">
+                          <p>End Mill, Ball Mill, Bullnose End Mill, Lollipop,</p>
+                          <p>Indexable cutter with round inserts,</p>
+                          <p>Indexable cutter with high feed inserts</p>
+                        </td>
+                      </tr>
+                      <tr valign="top">
+                        <td valign="top" class="td align-top">
+                          <div class="mediaobject"><img src="image/uuid-f172b42d-cd0f-b2eb-309a-4483434c98fc.svg" style="" alt="3D_Semi_finish.svg" /></div>
+                        </td>
+                        <td class="td">
+                          <p>3D semi-finishing (fine - medium - rough)</p>
+                        </td>
+                        <td class="td">
+                          <p>End Mill, Ball Mill, Bullnose End Mill, Lollipop,</p>
+                          <p>Indexable cutter with round inserts,</p>
+                          <p>Indexable cutter with high feed inserts</p>
+                        </td>
+                      </tr>
+                      <tr valign="top">
+                        <td valign="top" class="td align-top">
+                          <div class="mediaobject"><img src="image/uuid-67086c32-7445-079e-af54-381145d21233.svg" style="" alt="3D_Finish.svg" /></div>
+                        </td>
+                        <td class="td">
+                          <p>3D finishing (fine - medium - rough)</p>
+                        </td>
+                        <td class="td">
+                          <p>End Mill, Ball Mill, Bullnose End Mill, Lollipop,</p>
+                          <p>Indexable cutter with round inserts,</p>
+                          <p>Indexable cutter with high feed inserts</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td valign="top" class="td align-top">
+                          <div class="mediaobject"><img src="image/uuid-8af3cd56-2fed-51fe-e2ff-4df637e743ad.svg" style="" alt="plunge_milling.svg" /></div>
+                        </td>
+                        <td valign="top" class="td align-top">
+                          <p>Plunge milling</p>
+                        </td>
+                        <td valign="top" class="td align-top">
+                          <p>Ball Mill, End Mill, Bullnose End Mill, Drill Tool,</p>
+                          <p>Indexable cutter with round inserts,</p>
+                          <p>Indexable cutter with high feed inserts</p>
+                        </td>
+                      </tr>
+                      <tr valign="top">
+                        <td valign="top" class="td align-top">
+                          <div class="mediaobject"><img src="image/uuid-c17b2c09-4d42-565a-064f-8531084649e6.svg" style="" alt="simple_drilling.svg" /></div>
+                        </td>
+                        <td class="td">
+                          <p>Simple drilling</p>
+                        </td>
+                        <td class="td">
+                          <p>Ball Mill, End Mill, Bullnose End Mill, Drill Tool, Chamfered Cutter, Boring Bar, Thread Mill,&nbsp; Reamer,</p>
+                          <p>Indexable cutter with round inserts</p>
+                          <p>Indexable cutter with high feed inserts</p>
+                        </td>
+                      </tr>
+                      <tr valign="top">
+                        <td valign="top" class="td align-top">
+                          <div class="mediaobject"><img src="image/uuid-37bdc945-abce-2642-cdee-e19b0d2a6102.svg" style="" alt="drilling_with_chip_break.svg" /></div>
+                        </td>
+                        <td class="td">
+                          <p>Drilling with chip break</p>
+                        </td>
+                        <td class="td">
+                          <p>Ball Mill, End Mill, Bullnose End Mill, Drill Tool, Boring Bar, Thread Mill,</p>
+                          <p>Indexable cutter with round inserts</p>
+                          <p>Indexable cutter with high feed inserts</p>
+                        </td>
+                      </tr>
+                      <tr valign="top">
+                        <td valign="top" class="td align-top">
+                          <div class="mediaobject"><img src="image/uuid-37b8a5f0-cae9-ef18-1636-26ea36afeaf0.svg" style="" alt="drilling_with_pecking.svg" /></div>
+                        </td>
+                        <td class="td">
+                          <p>Drilling with pecking</p>
+                        </td>
+                        <td class="td">
+                          <p>Drill Tool, Bullnose End Mill, End Mill, Ball Mill , Boring Bar, Thread Mill, Reamer,</p>
+                          <p>Indexable cutter with round inserts</p>
+                          <p>Indexable cutter with high feed inserts</p>
+                        </td>
+                      </tr>
+                      <tr valign="top">
+                        <td valign="top" class="td align-top">
+                          <div class="mediaobject"><img src="image/uuid-af4c2bf4-950b-50b1-5fda-9e6b6908d71f.svg" style="" alt="reaming.svg" /></div>
+                        </td>
+                        <td class="td">
+                          <p>Reaming</p>
+                        </td>
+                        <td class="td">
+                          <p>Ball Mill, End Mill,&nbsp; Bullnose End Mill, Drill Tool, Boring Bar, Reamer,</p>
+                          <p>Indexable cutter with round inserts</p>
+                          <p>Indexable cutter with high feed inserts</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td valign="top" class="td align-top">
+                          <div class="mediaobject"><img src="image/uuid-a220a009-9937-9418-17b1-94e7aa5a737e.svg" style="" alt="centering.svg" /></div>
+                        </td>
+                        <td valign="top" class="td align-top">
+                          <p>Centering</p>
+                        </td>
+                        <td valign="top" class="td align-top">
+                          <p>Ball Mill, Drill Tool, Chamfered Cutter, Boring Bar, Thread Mill, Chamfered Cutter</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td valign="top" class="td align-top">
+                          <div class="mediaobject"><img src="image/uuid-c9b3550b-edb7-3f31-f36d-23af2b024357.svg" style="" alt="deep_hole_drilling.svg" /></div>
+                        </td>
+                        <td valign="top" class="td align-top">
+                          <p>Optimized deep hole drilling</p>
+                        </td>
+                        <td valign="top" class="td align-top">
+                          <p>Drill Tool, Boring Bar, Gun Drill</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td valign="top" class="td align-top">
+                          <div class="mediaobject"><img src="image/uuid-915c2943-0dee-f9de-9061-a85d039ced72.svg" style="" alt="deep_hole_drilling_chip_break.svg" /></div>
+                        </td>
+                        <td valign="top" class="td align-top">
+                          <p>Optimized deep hole drilling with chip break</p>
+                        </td>
+                        <td valign="top" class="td align-top">
+                          <p>Drill Tool, Boring Bar, Gun Drill</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td valign="top" class="td align-top">
+                          <div class="mediaobject"><img src="image/uuid-2a987a78-0a7f-1f7e-bf79-5d34c29fc35e.svg" style="" alt="boring.svg" /></div>
+                        </td>
+                        <td valign="top" class="td align-top">
+                          <p>Boring</p>
+                        </td>
+                        <td valign="top" class="td align-top">
+                          <p>Drill Tool, Bullnose End Mill, End Mill, Ball Mill, Boring Bar,</p>
+                          <p>Indexable cutter with round inserts,</p>
+                          <p>Indexable cutter with high feed inserts</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td valign="top" class="td align-top">
+                          <div class="mediaobject"><img src="image/uuid-18062896-54db-6c76-8db6-a2da6b5c832f.svg" style="" alt="gun_drilling.svg" /></div>
+                        </td>
+                        <td valign="top" class="td align-top">
+                          <p>Gun drilling</p>
+                        </td>
+                        <td valign="top" class="td align-top">
+                          <p>Drill Tool, Bullnose End Mill, End Mill, Ball Mill, Gun Drill, Boring Bar,</p>
+                          <p>Indexable cutter with round inserts,</p>
+                          <p>Indexable cutter with high feed inserts</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td valign="top" class="td align-top">
+                          <div class="mediaobject"><img src="image/uuid-52aa2154-2bae-0890-b923-a5cf263b5464.svg" style="" alt="chamfer_milling.svg" /></div>
+                        </td>
+                        <td valign="top" class="td align-top">
+                          <p>Chamfer milling</p>
+                        </td>
+                        <td valign="top" class="td align-top">
+                          <p>Chamfered Cutter</p>
+                        </td>
+                      </tr>
+                      <tr valign="top">
+                        <td valign="top" class="td align-top">
+                          <div class="mediaobject"><img src="image/uuid-862b33f2-c4ff-eb9b-5673-4e27a0880751.svg" style="" alt="tapping2.svg" /></div>
+                        </td>
+                        <td class="td">
+                          <p>Tapping</p>
+                        </td>
+                        <td class="td">
+                          <p>Tap</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td valign="top" class="td align-top">
+                          <div class="mediaobject"><img src="image/uuid-c311c41e-747b-5150-6ed6-0e9327d00a71.svg" style="" alt="tapping2.svg" /></div>
+                        </td>
+                        <td valign="top" class="td align-top">
+                          <p>Thread Milling</p>
+                        </td>
+                        <td valign="top" class="td align-top">
+                          <p>Thread Mill</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td valign="top" class="td align-top">
+                          <div class="mediaobject"><img src="image/uuid-2396799c-385e-7563-bda7-e21a594844e4.svg" style="" alt="back_boring.svg" /></div>
+                        </td>
+                        <td valign="top" class="td align-top">
+                          <p>Back Boring</p>
+                        </td>
+                        <td valign="top" class="td align-top">
+                          <p>Back Boring Tool</p>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </section>
+              <div class="footer-content">
+                <div class="section-toc section-toc-after">
+                  <div class="section-toc-title">
+                    <span class="section-toc-title-delimiter">:</span>
+                  </div>
+                </div>
+              </div>
+              <footer></footer>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

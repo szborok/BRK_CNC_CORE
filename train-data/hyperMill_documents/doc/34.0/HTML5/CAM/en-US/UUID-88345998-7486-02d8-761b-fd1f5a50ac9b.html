@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="x-ua-compatible" content="IE=edge" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="search" content="default" />
+  <meta name="use.ic" content="no" />
+  <meta name="tocstandalone" content="yes" />
+  <script type="text/javascript">
+  //<![CDATA[
+                        var index;
+                        var contentLanguage = 'en-US';
+                        var enterKey = 'select';
+                        
+                                        var anchoroption = true;
+                                var instantsearch_minlength = 1;
+                                                
+                                var fuse_threshold = 0.3;
+                        
+                                        var local_csh = false;
+                                
+                        var useanchorlinks = false;
+  //]]>
+  </script>
+  <title>Text Areas and Properties</title>
+  <link rel="stylesheet" type="text/css" href="../css/docbook.css" />
+  <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" href="../css/bootstrap-theme.min.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style-common.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style-responsive.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style-print.css" />
+  <link rel="stylesheet" type="text/css" href="../css/font-awesome.css" />
+  <link rel="stylesheet" type="text/css" href="../css/custom.css" />
+  <link rel="stylesheet" type="text/css" href="../css/layout-custom-style.css" />
+  <script src="../js/jquery-1.10.2.min.js" type="text/javascript"></script>
+  <script src="../js/jquery-ui-1.10.3.custom.min.js" type="text/javascript"></script>
+  <script src="../js/bootstrap.min.js" type="text/javascript"></script>
+  <script src="../js/purl.js" type="text/javascript"></script>
+  <script src="../js/jquery.event.move.js" type="text/javascript"></script>
+  <script src="../js/jquery.event.swipe.js" type="text/javascript"></script>
+  <script src="../js/jquery.sticky.js" type="text/javascript"></script>
+  <script src="../js/respond.min.js" type="text/javascript"></script>
+  <script src="../js/script.js" type="text/javascript"></script>
+  <script src="js/toc.js" type="text/javascript"></script>
+  <script src="../js/create-toc.js" type="text/javascript"></script>
+  <script src="../js/clipboard.min.js" type="text/javascript"></script>
+  <script src="../js/fuse.min.js" type="text/javascript"></script>
+  <script src="../js/jquery.mark.min.js" type="text/javascript"></script>
+  <script src="../js/html5.fuse.search.js" type="text/javascript"></script>
+  <script src="js/fuzzydata.js" type="text/javascript"></script>
+  <script src="../js/csh.js" type="text/javascript"></script>
+  <script src="../js/highlight-mergehtml-plugin.js" type="text/javascript"></script>
+  <meta name="generator" content="Paligo" />
+  <link rel="prev" href="UUID-434e3e89-1024-f680-509d-02f41447112c.html" title="Visible Elements" />
+  <link rel="next" href="UUID-db7f0438-b893-0d62-53f0-9c77c54135f5.html" title="Tables, rows and columns" />
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js?config=TeX-MML-AM_CHTML" async="async"></script>
+  <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+  <script type="text/javascript" src="../js/cookie-consent.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  <script type="text/javascript">
+  //<![CDATA[
+                        $(document).on('ready ajaxComplete', function() {
+                                
+                                hljs.addPlugin(mergeHTMLPlugin);
+                                hljs.configure({'ignoreUnescapedHTML': true});
+                                
+                                $('pre:not(.embedcode)').each(function() {
+                                        /**
+                                         * @type {string}
+                                         */
+                                        var language = $(this).data('language');
+
+                                        if (language === 'plaintext' || language === 'text') {
+                                                $(this).addClass(language).addClass('hljs');
+                                                return true;
+                                        }
+                                        else {
+                                                var clone = this.cloneNode(true);
+                                                hljs.highlightElement(clone);
+                                                $(this).empty().append($(clone).contents());
+                                                $(this).attr("class", $(clone).attr("class"));
+                                        }
+                                });
+                        });
+  //]]>
+  </script>
+  <style type="text/css">
+  /*<![CDATA[*/
+            div.skipnav {
+            }
+            div.skipnav a {
+                position: fixed;
+                left: -10000px;
+                top: 1.5em;
+                width: 1px;
+                height: 1px;
+                overflow: hidden;
+            }
+            div.skipnav a:focus, div.skipnav a:active, div.skipnav a:hover {
+                background: white;
+                color: black;
+                box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.5);
+                position: fixed;
+                left: 2em;
+                top: 1.5em;
+                width: auto;
+                height: auto;
+                overflow: visible;
+                text-decoration: underline;
+                z-index: 99999; /* has to be higher than the side panel */
+    }
+  /*]]>*/
+  </style>
+</head>
+<body data-link-prefix="">
+  <div class="skipnav">
+    <a href="#content-wrapper">Skip to main content</a>
+  </div>
+  <div id="page" class="clearfix">
+    <div id="header">
+      <div class="container">
+        <div id="logotype-container" class="pull-left">
+          <a href="../index.html"><img id="logotype-pageheader" src="../css/image/corporate-logo.png" alt="Corporate logotype" data-role="logotype" /></a>
+        </div>
+        <div id="pagetools-container" class="pull-right">
+          <ul id="page-tools">
+            <li class="page-tools-search"><input placeholder="Search" type="text" class="form-control" aria-label="Search" id="search" /></li>
+            <li class="page-tools-print">
+              <a href="javascript:window.print();"><span class="tool-label">Print</span><span class="glyphicon glyphicon-print"></span></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <h1 id="publication-title">CAM</h1>
+    <div id="subheader-sticky-wrapper" class="sticky-wrapper">
+      <div id="subheader">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3 toc-title">
+              <h2><a class="prev nav-icon hidden-lg hidden-md" href="UUID-434e3e89-1024-f680-509d-02f41447112c.html"><span class="glyphicon glyphicon-chevron-left"></span></a> <a href="#toc" class="hidden mobile-nav-toggle"><span class="glyphicon glyphicon-list"></span>Table of Contents</a><span class="toc-label">Table of Contents</span><a class=
+              "next nav-icon hidden-lg hidden-md" href="UUID-db7f0438-b893-0d62-53f0-9c77c54135f5.html"><span class="glyphicon glyphicon-chevron-right"></span></a></h2>
+            </div>
+            <div class="col-md-9 breadcrumb-container">
+              <ul class="breadcrumb">
+                <li class="breadcrumb-link">
+                  <span class="glyphicon glyphicon-home"></span>&nbsp;<a href="index-en-US.html">CAM</a>
+                </li>
+                <li class="breadcrumb-link">
+                  <a href="UUID-305a0ad7-3b0b-369a-7409-baf7134842ed.html">Appendix</a>
+                </li>
+                <li class="breadcrumb-link">
+                  <a href="UUID-829dd484-270e-cfc8-077b-8ccf196f4607.html">ReportDesigner</a>
+                </li>
+                <li class="breadcrumb-node">Text Areas and Properties</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="main-content">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 toc-container" id="toc-wrapper">
+            <div id="toc-placeholder">
+              <div id="toc-standalone-placeholder"></div>
+            </div>
+          </div>
+          <div class="col-md-9 content-container" id="content-wrapper">
+            <a accesskey="p" class="prev pull-left prev visible-lg visible-md" id="header-navigation-prev" href="UUID-434e3e89-1024-f680-509d-02f41447112c.html"><span class="glyphicon glyphicon-circle-arrow-left"></span>Prev</a><a accesskey="n" class="pull-right next visible-lg visible-md" id="header-navigation-next" href=
+            "UUID-db7f0438-b893-0d62-53f0-9c77c54135f5.html">Next<span class="glyphicon glyphicon-circle-arrow-right"></span></a>
+            <div id="topic-content">
+              <section xml:lang="en-US" lang="en-US" dir="ltr" class="section" data-origin-id="UUID-9a0318f8-8479-2bad-2a25-1e895226f01d" data-publication-date="" id="UUID-88345998-7486-02d8-761b-fd1f5a50ac9b">
+                <div class="titlepage">
+                  <div>
+                    <div class="title">
+                      <h1 class="title" style="clear: both"><span class="formal-title">Text Areas and Properties</span></h1>
+                    </div>
+                  </div>
+                </div>
+                <p>The main text area in the ReportDesigner is the paragraph ( <span class="guilabel">p</span>). A paragraph initially only contains the letters of the text contained inside this paragraph.</p>
+                <p>The format properties for the paragraph can be displayed and if necessary changed by selecting the <span class="guilabel">p</span> in the structure view. Note that every change affects the entire paragraph.</p>
+                <p>If the user wants to highlight a single word in <span class="guilabel">bold</span> or <span class="guilabel">italic</span>, for example, a separate structure element must first be inserted into a text range ( <span class="guilabel">span</span>) for this specific purpose and then formatted with the <span class=
+                "guilabel">bold</span> or <span class="guilabel">italic</span> property.</p>
+                <p>Cells in a table or positions in a list can also be regarded as text ranges and their format properties adjusted correspondingly.</p>
+                <p>The following displays typical <span class="guilabel">Text</span> properties.</p>
+                <div class="mediaobject">
+                  <table class="image-viewport" style="border-collapse:collapse;border:0; width:344px;">
+                    <tr style="height: 162px">
+                      <td style="padding:0;"><img src="image/uuid-e224d588-7c99-f2ce-8029-a39ad75576b1.png" style="max-width: 344px; max-height: 162px;" alt="rd_win_text_prop.png" /></td>
+                    </tr>
+                  </table>
+                </div>
+                <h5 id="id149850" class="bridgehead">Borders</h5>
+                <div class="mediaobject">
+                  <table class="image-viewport" style="border-collapse:collapse;border:0; width:442px;">
+                    <tr style="height: 218px">
+                      <td style="padding:0;"><img src="image/uuid-0604e4ca-e07b-34c8-d017-0ce6f6b643d0.png" style="max-width: 442px; max-height: 218px;" alt="rd_win_border_prop.png" /></td>
+                    </tr>
+                  </table>
+                </div>
+                <h5 id="id149854" class="bridgehead">Margins</h5>
+                <div class="mediaobject">
+                  <table class="image-viewport" style="border-collapse:collapse;border:0; width:442px;">
+                    <tr style="height: 218px">
+                      <td style="padding:0;"><img src="image/uuid-f4c03e5d-5a66-f138-1f99-beb2f9dfc80a.png" style="max-width: 442px; max-height: 218px;" alt="rd_win_margin_prop.png" /></td>
+                    </tr>
+                  </table>
+                </div>
+                <h5 id="id149858" class="bridgehead">CSS styles</h5>
+                <div class="mediaobject">
+                  <table class="image-viewport" style="border-collapse:collapse;border:0; width:442px;">
+                    <tr style="height: 219px">
+                      <td style="padding:0;"><img src="image/uuid-ececcac9-48e6-5bda-9272-8a631d8e8142.png" style="max-width: 442px; max-height: 219px;" alt="rd_win_css_styles.png" /></td>
+                    </tr>
+                  </table>
+                </div>
+                <h5 id="id149862" class="bridgehead">Element properties</h5>
+                <div class="mediaobject">
+                  <table class="image-viewport" style="border-collapse:collapse;border:0; width:443px;">
+                    <tr style="height: 219px">
+                      <td style="padding:0;"><img src="image/uuid-52d5f7b0-3d0a-bb6b-2a07-1f79ab9f26a4.png" style="max-width: 443px; max-height: 219px;" alt="rd_win_element_prop.png" /></td>
+                    </tr>
+                  </table>
+                </div>
+              </section>
+              <div class="footer-content">
+                <div class="section-toc section-toc-after">
+                  <div class="section-toc-title">
+                    <span class="section-toc-title-delimiter">:</span>
+                  </div>
+                </div>
+              </div>
+              <footer></footer>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

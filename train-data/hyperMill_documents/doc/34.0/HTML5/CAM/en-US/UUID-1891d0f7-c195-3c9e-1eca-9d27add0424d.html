@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="x-ua-compatible" content="IE=edge" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="search" content="default" />
+  <meta name="use.ic" content="no" />
+  <meta name="tocstandalone" content="yes" />
+  <script type="text/javascript">
+  //<![CDATA[
+                        var index;
+                        var contentLanguage = 'en-US';
+                        var enterKey = 'select';
+                        
+                                        var anchoroption = true;
+                                var instantsearch_minlength = 1;
+                                                
+                                var fuse_threshold = 0.3;
+                        
+                                        var local_csh = false;
+                                
+                        var useanchorlinks = false;
+  //]]>
+  </script>
+  <title>10.6.&nbsp;Macros</title>
+  <link rel="stylesheet" type="text/css" href="../css/docbook.css" />
+  <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" href="../css/bootstrap-theme.min.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style-common.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style-responsive.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style-print.css" />
+  <link rel="stylesheet" type="text/css" href="../css/font-awesome.css" />
+  <link rel="stylesheet" type="text/css" href="../css/custom.css" />
+  <link rel="stylesheet" type="text/css" href="../css/layout-custom-style.css" />
+  <script src="../js/jquery-1.10.2.min.js" type="text/javascript"></script>
+  <script src="../js/jquery-ui-1.10.3.custom.min.js" type="text/javascript"></script>
+  <script src="../js/bootstrap.min.js" type="text/javascript"></script>
+  <script src="../js/purl.js" type="text/javascript"></script>
+  <script src="../js/jquery.event.move.js" type="text/javascript"></script>
+  <script src="../js/jquery.event.swipe.js" type="text/javascript"></script>
+  <script src="../js/jquery.sticky.js" type="text/javascript"></script>
+  <script src="../js/respond.min.js" type="text/javascript"></script>
+  <script src="../js/script.js" type="text/javascript"></script>
+  <script src="js/toc.js" type="text/javascript"></script>
+  <script src="../js/create-toc.js" type="text/javascript"></script>
+  <script src="../js/clipboard.min.js" type="text/javascript"></script>
+  <script src="../js/fuse.min.js" type="text/javascript"></script>
+  <script src="../js/jquery.mark.min.js" type="text/javascript"></script>
+  <script src="../js/html5.fuse.search.js" type="text/javascript"></script>
+  <script src="js/fuzzydata.js" type="text/javascript"></script>
+  <script src="../js/csh.js" type="text/javascript"></script>
+  <script src="../js/highlight-mergehtml-plugin.js" type="text/javascript"></script>
+  <meta name="generator" content="Paligo" />
+  <link rel="prev" href="UUID-3529a6cc-e2c2-d547-2090-720559f97f9b.html#UUID-3529a6cc-e2c2-d547-2090-720559f97f9b_UUID-5633f3ff-5a02-ab54-813f-603173a4a9cd" title="Soft bounding" />
+  <link rel="next" href="UUID-aea4c8ea-b6b4-2fe7-3e51-04b3284d4785.html" title="10.7.&nbsp;Setup" />
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js?config=TeX-MML-AM_CHTML" async="async"></script>
+  <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+  <script type="text/javascript" src="../js/cookie-consent.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  <script type="text/javascript">
+  //<![CDATA[
+                        $(document).on('ready ajaxComplete', function() {
+                                
+                                hljs.addPlugin(mergeHTMLPlugin);
+                                hljs.configure({'ignoreUnescapedHTML': true});
+                                
+                                $('pre:not(.embedcode)').each(function() {
+                                        /**
+                                         * @type {string}
+                                         */
+                                        var language = $(this).data('language');
+
+                                        if (language === 'plaintext' || language === 'text') {
+                                                $(this).addClass(language).addClass('hljs');
+                                                return true;
+                                        }
+                                        else {
+                                                var clone = this.cloneNode(true);
+                                                hljs.highlightElement(clone);
+                                                $(this).empty().append($(clone).contents());
+                                                $(this).attr("class", $(clone).attr("class"));
+                                        }
+                                });
+                        });
+  //]]>
+  </script>
+  <style type="text/css">
+  /*<![CDATA[*/
+            div.skipnav {
+            }
+            div.skipnav a {
+                position: fixed;
+                left: -10000px;
+                top: 1.5em;
+                width: 1px;
+                height: 1px;
+                overflow: hidden;
+            }
+            div.skipnav a:focus, div.skipnav a:active, div.skipnav a:hover {
+                background: white;
+                color: black;
+                box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.5);
+                position: fixed;
+                left: 2em;
+                top: 1.5em;
+                width: auto;
+                height: auto;
+                overflow: visible;
+                text-decoration: underline;
+                z-index: 99999; /* has to be higher than the side panel */
+    }
+  /*]]>*/
+  </style>
+</head>
+<body data-link-prefix="">
+  <div class="skipnav">
+    <a href="#content-wrapper">Skip to main content</a>
+  </div>
+  <div id="page" class="clearfix">
+    <div id="header">
+      <div class="container">
+        <div id="logotype-container" class="pull-left">
+          <a href="../index.html"><img id="logotype-pageheader" src="../css/image/corporate-logo.png" alt="Corporate logotype" data-role="logotype" /></a>
+        </div>
+        <div id="pagetools-container" class="pull-right">
+          <ul id="page-tools">
+            <li class="page-tools-search"><input placeholder="Search" type="text" class="form-control" aria-label="Search" id="search" /></li>
+            <li class="page-tools-print">
+              <a href="javascript:window.print();"><span class="tool-label">Print</span><span class="glyphicon glyphicon-print"></span></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <h1 id="publication-title">CAM</h1>
+    <div id="subheader-sticky-wrapper" class="sticky-wrapper">
+      <div id="subheader">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3 toc-title">
+              <h2><a class="prev nav-icon hidden-lg hidden-md" href="UUID-3529a6cc-e2c2-d547-2090-720559f97f9b.html#UUID-3529a6cc-e2c2-d547-2090-720559f97f9b_UUID-5633f3ff-5a02-ab54-813f-603173a4a9cd"><span class="glyphicon glyphicon-chevron-left"></span></a> <a href="#toc" class="hidden mobile-nav-toggle"><span class=
+              "glyphicon glyphicon-list"></span>Table of Contents</a><span class="toc-label">Table of Contents</span><a class="next nav-icon hidden-lg hidden-md" href="UUID-aea4c8ea-b6b4-2fe7-3e51-04b3284d4785.html"><span class="glyphicon glyphicon-chevron-right"></span></a></h2>
+            </div>
+            <div class="col-md-9 breadcrumb-container">
+              <ul class="breadcrumb">
+                <li class="breadcrumb-link">
+                  <span class="glyphicon glyphicon-home"></span>&nbsp;<a href="index-en-US.html">CAM</a>
+                </li>
+                <li class="breadcrumb-link">
+                  <a href="UUID-4c32e00e-243c-8e49-1e15-a8a644637a71.html">3D Machining</a>
+                </li>
+                <li class="breadcrumb-node">Macros</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="main-content">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 toc-container" id="toc-wrapper">
+            <div id="toc-placeholder">
+              <div id="toc-standalone-placeholder"></div>
+            </div>
+          </div>
+          <div class="col-md-9 content-container" id="content-wrapper">
+            <a accesskey="p" class="prev pull-left prev visible-lg visible-md" id="header-navigation-prev" href="UUID-3529a6cc-e2c2-d547-2090-720559f97f9b.html#UUID-3529a6cc-e2c2-d547-2090-720559f97f9b_UUID-5633f3ff-5a02-ab54-813f-603173a4a9cd"><span class="glyphicon glyphicon-circle-arrow-left"></span>Prev</a><a accesskey="n" class=
+            "pull-right next visible-lg visible-md" id="header-navigation-next" href="UUID-aea4c8ea-b6b4-2fe7-3e51-04b3284d4785.html">Next<span class="glyphicon glyphicon-circle-arrow-right"></span></a>
+            <div id="topic-content">
+              <section xml:lang="en-US" lang="en-US" dir="ltr" class="section" data-origin-id="UUID-45caaaeb-c8e2-f54f-8adb-841df1706464" data-publication-date="" id="UUID-1891d0f7-c195-3c9e-1eca-9d27add0424d">
+                <div class="titlepage">
+                  <div>
+                    <div class="title">
+                      <h1 class="title" style="clear: both"><span class="formal-number">10.6</span><span class="formal-label-delimiter">.</span> <span class="formal-title">Macros</span></h1>
+                    </div>
+                  </div>
+                </div>
+                <p>Additional movements to vertical infeed and retract movements that define a gentle approach and retract behavior at the calculated milling paths.</p>
+                <p>Macros are only executed if they do not result in a collision with neighboring surfaces.</p>
+                <div xml:lang="en-US" lang="en-US" dir="ltr" class="sidebar" id="UUID-1891d0f7-c195-3c9e-1eca-9d27add0424d_UUID-38ba8236-786c-9098-898a-e1f00a256dc9">
+                  <h4 id="id113390" class="bridgehead">Automatic</h4>
+                  <p><span class="guilabel">Length</span>: Defines the length of the approach or retract movement.</p>
+                  <p><span class="guilabel">Side clearance/Axial clearance:</span> Clearance in the axial or X/Y direction that can be travelled without a collision.</p>
+                  <p><span class="guilabel">Max. axial lift:</span> Maximum lifting movement in the axial direction.</p>
+                  <p><span class="guilabel">Feedrate macros</span>: Various feedrate values for approach and retract macros. Default = Feedrate XY.</p>
+                </div>
+                <div xml:lang="en-US" lang="en-US" dir="ltr" class="sidebar" id="UUID-1891d0f7-c195-3c9e-1eca-9d27add0424d_UUID-8a8febe6-b8d0-515d-9f8f-c225d265c257">
+                  <h4 id="id113400" class="bridgehead">Manual</h4>
+                  <p>The tool is approached or retracted either in a <span class="guilabel">Perpendicular</span>, <span class="guilabel">Circular</span> or <span class="guilabel">Tangential</span> manner.</p>
+                  <p>The retraction can also be performed as a <span class="guilabel">Ramp</span>. These additional movements are only ever performed if they do not result in a collision with neighboring surfaces.</p>
+                  <p>The approach or retract movement is performed smoothly in a circular motion.</p>
+                </div>
+                <div xml:lang="en-US" lang="en-US" dir="ltr" class="sidebar" id="UUID-1891d0f7-c195-3c9e-1eca-9d27add0424d_UUID-3a84821a-1245-e168-a37e-db5aaae5b98d">
+                  <h4 id="id113409" class="bridgehead">Plunge macro</h4>
+                  <p>Various plunge strategies for infeed movement to the next machining level are available for all level-by-level machining cycles (except Z Level Finishing).</p>
+                  <p><span class="guilabel">Axial</span> (A): The infeed is executed as a linear movement in Z direction.</p>
+                  <p>Use the axial plunge macro for:</p>
+                  <div class="itemizedlist">
+                    <ul class="itemizedlist" style="list-style-type: disc;">
+                      <li class="listitem">
+                        <p>Infeed without stock removal (user-defined plunge point is outside of stock or boundary).</p>
+                      </li>
+                      <li class="listitem">
+                        <p>Pre-drilling at the existing user-defined plunge point.</p>
+                      </li>
+                      <li class="listitem">
+                        <p>Axial plunging with a tool suitable for vertical chip removal.</p>
+                      </li>
+                    </ul>
+                  </div>
+                  <p><span class="guilabel">Helical</span> (B): used to remove the stock of 3D pockets. <span class="guilabel">Helix radius</span> (1): offset of the cutter center point relative to the axis of the helix (= Z axis through plunge point). <span class="guilabel">Angle</span> (2): lead angle of the helix. The number of revolutions
+                  executed by the tool in the course of the infeed movement is computed from the value of the vertical stepdown and the lead angle of the helix. The helix direction is defined by the selected orientation (climb/conventional milling).Lead angle of the helix. The number of revolutions executed by the tool in the course of the infeed
+                  movement is computed from the value of the vertical stepdown and the lead angle of the helix.</p>
+                  <p><span class="guilabel">Ramp</span> (C): ramping-in proceeds along the first milling path. <span class="guilabel">Angle</span> (3): enter the lead angle of the ramp.Enter the lead angle of the ramp.</p>
+                  <div class="informalfigure">
+                    <div class="mediaobject">
+                      <table class="image-viewport" style="border-collapse:collapse;border:0; width:638px;">
+                        <tr style="height: 266px">
+                          <td style="padding:0;"><img src="image/uuid-74c0e8b2-b5e7-e1f9-b0b3-f0268efbf0c7.svg" style="max-width: 638px; max-height: 266px;" alt="3D_basis_eintauchmakros.svg" /></td>
+                        </tr>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+                <div xml:lang="en-US" lang="en-US" dir="ltr" class="sidebar" id="UUID-1891d0f7-c195-3c9e-1eca-9d27add0424d_UUID-10eda361-acf5-87fe-d04c-079d991b35e2">
+                  <h4 id="id113433" class="bridgehead">Approach macro / Retract macro</h4>
+                  <p>Retract macros are additional movements during infeed on the first milling path of a job, infeeds between the milling paths via the clearance plane or clearance distance. The following approach macros are available depending on the machining cycle: <span class="guilabel">Axial</span>, <span class=
+                  "guilabel">Perpendicular</span>, <span class="guilabel">Circular</span>, <span class="guilabel">Tangential</span> as well as the Ramp macro for level-by-level material removal.</p>
+                  <div dir="ltr" class="note">
+                    <h3 class="title">Note</h3>
+                    <p>During roughing, the approach macros only apply to the Finish pass during machining parallel to the axis.</p>
+                  </div>
+                  <p>Retract macros are additional motions during retraction after the last milling path of a cycle, retraction for horizontal stepover between the milling paths via the clearance plane or clearance distance. The following approach macros are available depending on the machining cycle.</p>
+                  <p><span class="guilabel">Axial</span> (1): Linear movement along the tool axis towards or away from the part. Enter length of movement. Closed and concave (inner) contours.</p>
+                  <p><span class="guilabel">Circular</span> (2): Approach and retract movements are performed in a quarter circle. Enter radius of the circle.</p>
+                  <div class="mediaobject">
+                    <table class="image-viewport" style="border-collapse:collapse;border:0; width:461px;">
+                      <tr style="height: 212px">
+                        <td style="padding:0;"><img src="image/uuid-1a34248a-789d-80c7-5778-6ad011bb913c.svg" style="max-width: 461px; max-height: 212px;" alt="3D_basis_an_abfahrmakros.svg" /></td>
+                      </tr>
+                    </table>
+                  </div>
+                  <p>All circular movement macros are split into G1-straights.</p>
+                  <p>Profile-oriented machining (1): Linear movements along the surface tangent towards or away from the contact point. Closed and concave (inner) contours.</p>
+                  <p>Level-by-level machining (2): Approach and retract movements are performed in the machining plane along the contour tangent.</p>
+                  <div class="mediaobject">
+                    <table class="image-viewport" style="border-collapse:collapse;border:0; width:461px;">
+                      <tr style="height: 212px">
+                        <td style="padding:0;"><img src="image/uuid-dec4a668-bd9a-e9a4-3460-3226752fc1bf.svg" style="max-width: 461px; max-height: 212px;" alt="3D_basis_tangentiales_makro.svg" /></td>
+                      </tr>
+                    </table>
+                  </div>
+                  <p><span class="guilabel">Ramp</span> (1): this approach macro is exclusively available for level-by-level machining. Soft cutting along the path. Applicable for machining in tight areas where the first infeed for finishing could lead to contour violations or collision due to peaks in the material.</p>
+                  <p><span class="guilabel">Return macros</span> (2): Return macros are possible during machining with alternating orientation (zigzag strategies). The following applies here: the horizontal stepover between the milling paths takes place via the clearance distance or clearance plane. The activated approach and retract macro is
+                  carried out during each retract and infeed movement.</p>
+                  <div class="mediaobject">
+                    <table class="image-viewport" style="border-collapse:collapse;border:0; width:461px;">
+                      <tr style="height: 212px">
+                        <td style="padding:0;"><img src="image/uuid-771df41d-bc98-7128-25b8-09bbe41c0731.svg" style="max-width: 461px; max-height: 212px;" alt="3D_basis_returnmakro.svg" /></td>
+                      </tr>
+                    </table>
+                  </div>
+                  <p><span class="guilabel">Macros normal to surfaces</span>: The approach and retract macros are executed in the direction of the surface normals.</p>
+                </div>
+                <div xml:lang="en-US" lang="en-US" dir="ltr" class="sidebar" id="UUID-1891d0f7-c195-3c9e-1eca-9d27add0424d_UUID-c68bf135-bf92-fb59-640f-57dd5886b1d7">
+                  <h4 id="id113465" class="bridgehead">Feedrate macros</h4>
+                  <p>Define the feedrate for approach and retract macros with <span class="guilabel">Feedrate lead in</span> and <span class="guilabel">Retract</span> . Default = Feedrate XY.</p>
+                </div>
+                <div xml:lang="en-US" lang="en-US" dir="ltr" class="sidebar" id="UUID-1891d0f7-c195-3c9e-1eca-9d27add0424d_UUID-9b8a2657-1e45-eda3-8ca2-5f2450227efd">
+                  <p><span class="guilabel">Macro simultaneous</span>: Available for the cycles 5X Z Level Finishing, 5X Swarf Cutting 1 Curve and 5X Shape Offset Finishing. The transition to the macro movement takes place without abruptly changing direction and without slowing down the machining speed. Visible machining marks are avoided.</p>
+                  <p>(1) Not activated, (2) Activated.</p>
+                  <div class="informalfigure">
+                    <div class="mediaobject"><img src="image/uuid-6dcf2de6-7339-4c04-60b1-7fae3d600168.svg" style="width: 598px; height: 233px;" alt="3D_ebenenschlichten_makro_simultan.svg" /></div>
+                  </div>
+                </div>
+              </section>
+              <div class="footer-content">
+                <div class="section-toc section-toc-after">
+                  <div class="section-toc-title">
+                    <span class="section-toc-title-delimiter">:</span>
+                  </div>
+                </div>
+              </div>
+              <footer></footer>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

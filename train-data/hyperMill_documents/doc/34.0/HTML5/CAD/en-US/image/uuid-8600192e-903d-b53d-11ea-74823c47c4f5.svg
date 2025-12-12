@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18cm" height="4.5cm" version="1.1" xmlns="http://www.w3.org/2000/svg">
+ <defs>
+  <linearGradient id="a" x1="150.23" x2="290.52" y1="72.697" y2="73.197" gradientTransform="matrix(1.0667 0 0 1.0667 -344.04 254.66)" gradientUnits="userSpaceOnUse">
+   <stop stop-color="#fff" offset="0"/>
+   <stop stop-color="#808080" offset="1"/>
+  </linearGradient>
+ </defs>
+ <g transform="translate(0 -283.46)">
+  <rect x="5.4962" y="7.3885" width="443.5" height="307.29" rx="7.5591" ry="7.5591" fill-opacity="0"/>
+  <path d="m127.51 369.54 89.754-63.301" fill="#f00" stroke="#f00" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.7795"/>
+  <rect transform="rotate(-35.114)" x="-181.91" y="306.6" width="94.667" height="51.2" fill="url(#a)" stroke="#7d7d7d" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.7795"/>
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+   <path d="m42.058 376.53 77.657-54.606" stroke="#7d7d7d" stroke-width=".75591"/>
+   <path d="m65.964 327.78 29.91 42.537" stroke="#7d7d7d" stroke-width=".75591"/>
+   <path d="m57.001 397.32 77.439-54.452" stroke="#f00" stroke-width="3.7795"/>
+  </g>
+  <g stroke-linecap="round" stroke-linejoin="round">
+   <g transform="translate(-69.54 266.67)" fill="#f00" stroke="#f00" stroke-width="3.7837">
+    <ellipse transform="rotate(-2)" cx="231.28" cy="169.98" rx="4.0406" ry="3.7795"/>
+    <ellipse transform="rotate(-2)" cx="316.78" cy="113.2" rx="4.0406" ry="3.7795"/>
+   </g>
+   <path d="m163.18 431.33 89.754-63.301" fill="#f00" stroke="#f00" stroke-dasharray="0.75590554, 1.51181106" stroke-width=".75591"/>
+   <path d="m250.8 393.8 6.2254-5.147 6.9023 14.13 6.2932-3.0742-6.9023-14.13 7.4286-1.523-19.542-14.716z" fill="#fff" stroke="#000" stroke-width=".75591"/>
+  </g>
+  <text x="563.10913" y="401.09818" fill="#000000" font-family="'Arial Nova', 'Arial Unicode MS', 'Yu Gothic UI', sans-serif" font-size="12.8px" letter-spacing="0px" stroke-width="1.0667" word-spacing="0px" style="line-height:0%" xml:space="preserve"><tspan x="563.10913" y="401.09818" fill="#ff0000" font-family="'Arial Nova', 'Arial Unicode MS', 'Yu Gothic UI', sans-serif" font-size="10.667px" stroke="#ff0000" stroke-width="1.0667" style="line-height:1.25">X</tspan></text>
+  <path d="m542.51 372.84-100.84 71.119" fill="#f00" stroke="#f00" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8898"/>
+  <g transform="matrix(1.7207 0 0 1.7207 294.88 100.71)" stroke="#f00" stroke-dasharray="1.64733936, 1.64733936" stroke-linecap="round" stroke-linejoin="round" stroke-width=".54911">
+   <path d="m203.39 116.37 0.17496 39.728" fill="#00f"/>
+   <path d="m203.68 156.38-29.443 17.394" fill="#0f0"/>
+   <path d="m173.75 173.85-28.882-15.871" fill="#f00"/>
+  </g>
+  <g fill="#f00" stroke="#f00" stroke-linecap="round" stroke-linejoin="round">
+   <path d="m542.83 372.1 100.84-71.119" stroke-width="1.8898"/>
+   <ellipse transform="rotate(-2)" cx="530.65" cy="389.77" rx="4.0406" ry="3.7795" stroke-width="3.7837"/>
+   <path d="m643.31 301.16-7.8896 10.647-5.0288-7.1751z" stroke-width="1.0658"/>
+  </g>
+  <text x="623.33881" y="395.32306" fill="#000000" font-family="'Arial Nova', 'Arial Unicode MS', 'Yu Gothic UI', sans-serif" font-size="12.8px" letter-spacing="0px" stroke-width="1.0667" word-spacing="0px" style="line-height:0%" xml:space="preserve"><tspan x="623.33881" y="395.32306" fill="#ff0000" font-family="'Arial Nova', 'Arial Unicode MS', 'Yu Gothic UI', sans-serif" font-size="10.667px" stroke="#ff0000" stroke-width="1.0667" style="line-height:1.25">Y</tspan></text>
+  <text x="650.79388" y="346.936" fill="#000000" font-family="'Arial Nova', 'Arial Unicode MS', 'Yu Gothic UI', sans-serif" font-size="12.8px" letter-spacing="0px" stroke-width="1.0667" word-spacing="0px" style="line-height:0%" xml:space="preserve"><tspan x="650.79388" y="346.936" fill="#ff0000" font-family="'Arial Nova', 'Arial Unicode MS', 'Yu Gothic UI', sans-serif" font-size="10.667px" stroke="#ff0000" stroke-width="1.0667" style="line-height:1.25">Z</tspan></text>
+  <path d="m439.43 445.07 7.8896-10.647 5.0288 7.1751z" fill="#f00" stroke="#f00" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.0658"/>
+  <g transform="translate(-95.972 123.48)">
+   <ellipse cx="249.27" cy="188.88" rx="13.199" ry="13.469" fill="#1f638a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.0658"/>
+   <text x="246.29865" y="196.51596" fill="#000000" font-family="'Arial Nova', 'Arial Unicode MS', 'Yu Gothic UI', sans-serif" font-size="12.8px" letter-spacing="0px" stroke-width="1.0667" word-spacing="0px" style="line-height:0%" xml:space="preserve"><tspan x="246.29865" y="196.51596" fill="#ffffff" font-family="'Arial Nova', 'Arial Unicode MS', 'Yu Gothic UI', sans-serif" font-size="21.333px" stroke="#ffffff" stroke-width="1.0667" style="line-height:1.25">I</tspan></text>
+  </g>
+  <g transform="translate(181.66 448.63)">
+   <ellipse cx="14.853" cy="-64.45" rx="13.199" ry="13.469" fill="#1f638a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.0658"/>
+   <g transform="translate(1.0622)" font-family="'Arial Nova', 'Arial Unicode MS', 'Yu Gothic UI', sans-serif" font-size="12.8px" letter-spacing="0px" stroke-width="1.0667" word-spacing="0px">
+    <text x="7.6122456" y="-56.815075" style="line-height:0%" xml:space="preserve"><tspan x="7.6122456" y="-56.815075" fill="#ffffff" font-family="'Arial Nova', 'Arial Unicode MS', 'Yu Gothic UI', sans-serif" font-size="21.333px" stroke="#ffffff" stroke-width="1.0667" style="line-height:1.25">I</tspan></text>
+    <text x="14.021075" y="-56.815075" style="line-height:0%" xml:space="preserve"><tspan x="14.021075" y="-56.815075" fill="#ffffff" font-family="'Arial Nova', 'Arial Unicode MS', 'Yu Gothic UI', sans-serif" font-size="21.333px" stroke="#ffffff" stroke-width="1.0667" style="line-height:1.25">I</tspan></text>
+   </g>
+  </g>
+  <g transform="translate(392.32 405.02)">
+   <ellipse cx="45.719" cy="-64.45" rx="13.199" ry="13.469" fill="#1f638a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.0658"/>
+   <g transform="translate(-3.1777 -1.8789e-6)" font-family="'Arial Nova', 'Arial Unicode MS', 'Yu Gothic UI', sans-serif" font-size="12.8px" letter-spacing="0px" stroke-width="1.0667" word-spacing="0px">
+    <text x="40.629589" y="-56.815075" style="line-height:0%" xml:space="preserve"><tspan x="40.629589" y="-56.815075" fill="#ffffff" font-family="'Arial Nova', 'Arial Unicode MS', 'Yu Gothic UI', sans-serif" font-size="21.333px" stroke="#ffffff" stroke-width="1.0667" style="line-height:1.25">I</tspan></text>
+    <text x="45.922688" y="-56.815075" style="line-height:0%" xml:space="preserve"><tspan x="45.922688" y="-56.815075" fill="#ffffff" font-family="'Arial Nova', 'Arial Unicode MS', 'Yu Gothic UI', sans-serif" font-size="21.333px" stroke="#ffffff" stroke-width="1.0667" style="line-height:1.25">I</tspan></text>
+    <text x="51.215786" y="-56.815075" style="line-height:0%" xml:space="preserve"><tspan x="51.215786" y="-56.815075" fill="#ffffff" font-family="'Arial Nova', 'Arial Unicode MS', 'Yu Gothic UI', sans-serif" font-size="21.333px" stroke="#ffffff" stroke-width="1.0667" style="line-height:1.25">I</tspan></text>
+   </g>
+  </g>
+  <g transform="translate(301.64 453.46)">
+   <ellipse cx="182.48" cy="-64.364" rx="13.199" ry="13.469" fill="#1f638a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.0658"/>
+   <text x="175.37788" y="-56.728989" fill="#000000" font-family="'Arial Nova', 'Arial Unicode MS', 'Yu Gothic UI', sans-serif" font-size="12.8px" letter-spacing="0px" stroke-width="1.0667" word-spacing="0px" style="line-height:0%" xml:space="preserve"><tspan x="175.37788" y="-56.728989" fill="#ffffff" font-family="'Arial Nova', 'Arial Unicode MS', 'Yu Gothic UI', sans-serif" font-size="21.333px" stroke="#ffffff" stroke-width="1.0667" style="line-height:1.25">V</tspan></text>
+  </g>
+  <g transform="translate(178.32 168.75)">
+   <ellipse cx="426.74" cy="192.79" rx="13.199" ry="13.469" fill="#1f638a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.0658"/>
+   <g transform="translate(-.11049)" font-family="'Arial Nova', 'Arial Unicode MS', 'Yu Gothic UI', sans-serif" font-size="12.8px" letter-spacing="0px" stroke-width="1.0667" word-spacing="0px">
+    <text x="421.75012" y="200.42574" style="line-height:0%" xml:space="preserve"><tspan x="421.75012" y="200.42574" fill="#ffffff" font-family="'Arial Nova', 'Arial Unicode MS', 'Yu Gothic UI', sans-serif" font-size="21.333px" stroke="#ffffff" stroke-width="1.0667" style="line-height:1.25">V</tspan></text>
+    <text x="416.52451" y="200.41812" style="line-height:0%" xml:space="preserve"><tspan x="416.52451" y="200.41812" fill="#ffffff" font-family="'Arial Nova', 'Arial Unicode MS', 'Yu Gothic UI', sans-serif" font-size="21.333px" stroke="#ffffff" stroke-width="1.0667" style="line-height:1.25">I</tspan></text>
+   </g>
+  </g>
+  <g stroke-linecap="round" stroke-linejoin="round">
+   <g transform="translate(164.33 215.59)" stroke-width="1.8898">
+    <g transform="rotate(-59.09 134.78 172.55)" fill="#0f0" stroke="#0f0">
+     <path d="m185 157.64-20.624 6.4215 5.206 8.707c8.2105-7.0026 15.418-15.128 15.418-15.128z"/>
+     <path d="m174.2 164.03-29.443 17.393"/>
+    </g>
+    <g transform="rotate(-28.115 122.25 169.14)" fill="#f00" stroke="#f00">
+     <path d="m183.63 203.52-20.719-6.1073 5.0731-8.7851c8.316 6.877 15.646 14.892 15.646 14.892z"/>
+     <path d="m173.54 197.43-28.882-15.871"/>
+    </g>
+   </g>
+   <ellipse transform="rotate(-2)" cx="390.99" cy="335.25" rx="4.0406" ry="3.7795" fill="#f00" stroke="#f00" stroke-width="3.7837"/>
+   <path d="m402.43 349.05 6.2254-5.147 6.9023 14.13 6.2932-3.0742-6.9023-14.13 7.4286-1.523-19.542-14.716z" fill="#fff" stroke="#000" stroke-width=".75591"/>
+   <path d="m314.4 383.8 89.754-63.301" fill="#f00" stroke="#f00" stroke-dasharray="0.75590554, 1.51181106" stroke-width=".75591"/>
+  </g>
+ </g>
+</svg>

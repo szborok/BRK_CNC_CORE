@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="x-ua-compatible" content="IE=edge" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="search" content="default" />
+  <meta name="use.ic" content="no" />
+  <meta name="tocstandalone" content="yes" />
+  <script type="text/javascript">
+  //<![CDATA[
+                        var index;
+                        var contentLanguage = 'en-US';
+                        var enterKey = 'select';
+                        
+                                        var anchoroption = true;
+                                var instantsearch_minlength = 1;
+                                                
+                                var fuse_threshold = 0.3;
+                        
+                                        var local_csh = false;
+                                
+                        var useanchorlinks = false;
+  //]]>
+  </script>
+  <title>Boundary dialog page</title>
+  <link rel="stylesheet" type="text/css" href="../css/docbook.css" />
+  <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" href="../css/bootstrap-theme.min.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style-common.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style-responsive.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style-print.css" />
+  <link rel="stylesheet" type="text/css" href="../css/font-awesome.css" />
+  <link rel="stylesheet" type="text/css" href="../css/custom.css" />
+  <link rel="stylesheet" type="text/css" href="../css/layout-custom-style.css" />
+  <script src="../js/jquery-1.10.2.min.js" type="text/javascript"></script>
+  <script src="../js/jquery-ui-1.10.3.custom.min.js" type="text/javascript"></script>
+  <script src="../js/bootstrap.min.js" type="text/javascript"></script>
+  <script src="../js/purl.js" type="text/javascript"></script>
+  <script src="../js/jquery.event.move.js" type="text/javascript"></script>
+  <script src="../js/jquery.event.swipe.js" type="text/javascript"></script>
+  <script src="../js/jquery.sticky.js" type="text/javascript"></script>
+  <script src="../js/respond.min.js" type="text/javascript"></script>
+  <script src="../js/script.js" type="text/javascript"></script>
+  <script src="js/toc.js" type="text/javascript"></script>
+  <script src="../js/create-toc.js" type="text/javascript"></script>
+  <script src="../js/clipboard.min.js" type="text/javascript"></script>
+  <script src="../js/fuse.min.js" type="text/javascript"></script>
+  <script src="../js/jquery.mark.min.js" type="text/javascript"></script>
+  <script src="../js/html5.fuse.search.js" type="text/javascript"></script>
+  <script src="js/fuzzydata.js" type="text/javascript"></script>
+  <script src="../js/csh.js" type="text/javascript"></script>
+  <script src="../js/highlight-mergehtml-plugin.js" type="text/javascript"></script>
+  <meta name="generator" content="Paligo" />
+  <link rel="prev" href="UUID-9c45fcee-6b0c-6ac8-faa1-824470028cf8.html" title="Parameters dialog page" />
+  <link rel="next" href="UUID-4bb0b314-e3a2-7ccb-d6ea-12b5393a4d58.html" title="3.11.&nbsp;Simulate machining" />
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js?config=TeX-MML-AM_CHTML" async="async"></script>
+  <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+  <script type="text/javascript" src="../js/cookie-consent.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  <script type="text/javascript">
+  //<![CDATA[
+                        $(document).on('ready ajaxComplete', function() {
+                                
+                                hljs.addPlugin(mergeHTMLPlugin);
+                                hljs.configure({'ignoreUnescapedHTML': true});
+                                
+                                $('pre:not(.embedcode)').each(function() {
+                                        /**
+                                         * @type {string}
+                                         */
+                                        var language = $(this).data('language');
+
+                                        if (language === 'plaintext' || language === 'text') {
+                                                $(this).addClass(language).addClass('hljs');
+                                                return true;
+                                        }
+                                        else {
+                                                var clone = this.cloneNode(true);
+                                                hljs.highlightElement(clone);
+                                                $(this).empty().append($(clone).contents());
+                                                $(this).attr("class", $(clone).attr("class"));
+                                        }
+                                });
+                        });
+  //]]>
+  </script>
+  <style type="text/css">
+  /*<![CDATA[*/
+            div.skipnav {
+            }
+            div.skipnav a {
+                position: fixed;
+                left: -10000px;
+                top: 1.5em;
+                width: 1px;
+                height: 1px;
+                overflow: hidden;
+            }
+            div.skipnav a:focus, div.skipnav a:active, div.skipnav a:hover {
+                background: white;
+                color: black;
+                box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.5);
+                position: fixed;
+                left: 2em;
+                top: 1.5em;
+                width: auto;
+                height: auto;
+                overflow: visible;
+                text-decoration: underline;
+                z-index: 99999; /* has to be higher than the side panel */
+    }
+  /*]]>*/
+  </style>
+</head>
+<body data-link-prefix="">
+  <div class="skipnav">
+    <a href="#content-wrapper">Skip to main content</a>
+  </div>
+  <div id="page" class="clearfix">
+    <div id="header">
+      <div class="container">
+        <div id="logotype-container" class="pull-left">
+          <a href="../index.html"><img id="logotype-pageheader" src="../css/image/corporate-logo.png" alt="Corporate logotype" data-role="logotype" /></a>
+        </div>
+        <div id="pagetools-container" class="pull-right">
+          <ul id="page-tools">
+            <li class="page-tools-search"><input placeholder="Search" type="text" class="form-control" aria-label="Search" id="search" /></li>
+            <li class="page-tools-print">
+              <a href="javascript:window.print();"><span class="tool-label">Print</span><span class="glyphicon glyphicon-print"></span></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <h1 id="publication-title">CAM</h1>
+    <div id="subheader-sticky-wrapper" class="sticky-wrapper">
+      <div id="subheader">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3 toc-title">
+              <h2><a class="prev nav-icon hidden-lg hidden-md" href="UUID-9c45fcee-6b0c-6ac8-faa1-824470028cf8.html"><span class="glyphicon glyphicon-chevron-left"></span></a> <a href="#toc" class="hidden mobile-nav-toggle"><span class="glyphicon glyphicon-list"></span>Table of Contents</a><span class="toc-label">Table of Contents</span><a class=
+              "next nav-icon hidden-lg hidden-md" href="UUID-4bb0b314-e3a2-7ccb-d6ea-12b5393a4d58.html"><span class="glyphicon glyphicon-chevron-right"></span></a></h2>
+            </div>
+            <div class="col-md-9 breadcrumb-container">
+              <ul class="breadcrumb">
+                <li class="breadcrumb-link">
+                  <span class="glyphicon glyphicon-home"></span>&nbsp;<a href="index-en-US.html">CAM</a>
+                </li>
+                <li class="breadcrumb-link">
+                  <a href="UUID-0751db51-8b5b-ae49-1904-dce4b8c92263.html">Basics of CAM editing</a>
+                </li>
+                <li class="breadcrumb-link">
+                  <a href="UUID-6e79b039-ebca-2996-f21b-d906314be784.html">Calculate and analyze toolpaths</a>
+                </li>
+                <li class="breadcrumb-link">
+                  <a href="UUID-115bbc0d-6f3e-8657-069a-c851225ac79c.html">The cycle Edit toolpath</a>
+                </li>
+                <li class="breadcrumb-node">Boundary dialog page</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="main-content">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 toc-container" id="toc-wrapper">
+            <div id="toc-placeholder">
+              <div id="toc-standalone-placeholder"></div>
+            </div>
+          </div>
+          <div class="col-md-9 content-container" id="content-wrapper">
+            <a accesskey="p" class="prev pull-left prev visible-lg visible-md" id="header-navigation-prev" href="UUID-9c45fcee-6b0c-6ac8-faa1-824470028cf8.html"><span class="glyphicon glyphicon-circle-arrow-left"></span>Prev</a><a accesskey="n" class="pull-right next visible-lg visible-md" id="header-navigation-next" href=
+            "UUID-4bb0b314-e3a2-7ccb-d6ea-12b5393a4d58.html">Next<span class="glyphicon glyphicon-circle-arrow-right"></span></a>
+            <div id="topic-content">
+              <section xml:lang="en-US" lang="en-US" dir="ltr" class="section" data-origin-id="UUID-edba4eb3-79b1-b934-a579-ed77abfea795" data-publication-date="" id="UUID-60538df3-39ec-208e-9e1f-9dc4b08e186d">
+                <div class="titlepage">
+                  <div>
+                    <div class="title">
+                      <h1 class="title" style="clear: both"><span class="formal-title">Boundary dialog page</span></h1>
+                    </div>
+                  </div>
+                </div>
+                <p><span class="guimenuitem">Selection mode</span> → <span class="guisubmenu">Boundary</span></p>
+                <p>The boundary is projected from the position defined in the CAD system onto the toolpaths.</p>
+                <p>(1) Original job, (2) Toolpath edited using boundary</p>
+                <div class="mediaobject">
+                  <table class="image-viewport" style="border-collapse:collapse;border:0; width:461px;">
+                    <tr style="height: 284px">
+                      <td style="padding:0;"><img src="image/uuid-9a058c32-258e-b0c3-523b-853ff4dd0eda.svg" style="max-width: 461px; max-height: 284px;" alt="grundlagen_werkzeugweg_bearbeiten.svg" /></td>
+                    </tr>
+                  </table>
+                </div>
+                <div xml:lang="en-US" lang="en-US" dir="ltr" class="sidebar" id="UUID-60538df3-39ec-208e-9e1f-9dc4b08e186d_UUID-aacf8f68-5a52-c0e2-1260-2aa14aaf812a">
+                  <p><span class="guimenuitem">Selection mode</span> → <span class="guisubmenu">Interactive</span></p>
+                  <div class="informaltable table-responsive">
+                    <table style="width:100%;" class="informaltable">
+                      <colgroup>
+                        <col style="width:12%;" />
+                        <col style="width:88%;" />
+                      </colgroup>
+                      <tbody>
+                        <tr>
+                          <td class="td">
+                            <div class="mediaobject">
+                              <table class="image-viewport" style="border-collapse:collapse;border:0; ;">
+                                <tr style="height: 48px">
+                                  <td style="padding:0;"><img src="image/uuid-1a5cc2dd-ddd6-2eca-e430-64add42b62e4.svg" style="max-height: 48px;" alt="interactive_trim.svg" /></td>
+                                </tr>
+                              </table>
+                            </div>
+                          </td>
+                          <td class="td">
+                            <p><span class="guilabel">Start</span>: Start the <span class="guilabel">Edit toolpath</span> dialog to edit the toolpath interactively.</p>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div class="informaltable table-responsive">
+                    <table style="width:100%;" class="informaltable">
+                      <colgroup>
+                        <col style="width:10%;" />
+                        <col style="width:30%;" />
+                        <col style="width:60%;" />
+                      </colgroup>
+                      <thead>
+                        <tr>
+                          <th class="th">
+                            <p>Icon</p>
+                          </th>
+                          <th class="th">
+                            <p>Command</p>
+                          </th>
+                          <th class="th">
+                            <p>Description</p>
+                          </th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td class="td">
+                            <div class="mediaobject">
+                              <table class="image-viewport" style="border-collapse:collapse;border:0; ;">
+                                <tr style="height: 48px">
+                                  <td style="padding:0;"><img src="image/uuid-2615baed-9808-ed1e-ebd4-480281fe4405.png" style="max-height: 48px;" alt="toolpathedit_trimbypoints.png" /></td>
+                                </tr>
+                              </table>
+                            </div>
+                          </td>
+                          <td class="td">
+                            <p>Trim by points</p>
+                          </td>
+                          <td rowspan="2" valign="top" class="td align-top">
+                            <h6 id="id87779" class="bridgehead">Select</h6>
+                            <p>Use <span class="guimenuitem">Select</span> → <span class="guisubmenu">First</span> and <span class="guimenuitem">Select</span> → <span class="guisubmenu">Second</span> to select the two toolpath points that comprise the required section of the toolpath.</p>
+                            <p>Use <span class="guilabel">Invert selection</span> to invert the current selection.</p>
+                            <p>If the <span class="guilabel">To begin / To end</span> option has been selected, only the <span class="guilabel">First</span> toolpath point can be selected. The selection is made from the selected point to the start/end of the toolpath.</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="td">
+                            <div class="mediaobject">
+                              <table class="image-viewport" style="border-collapse:collapse;border:0; ;">
+                                <tr style="height: 48px">
+                                  <td style="padding:0;"><img src="image/uuid-61e43b52-b732-e1ad-de75-0878cdc673c8.png" style="max-height: 48px;" alt="toolpathedit_untrimbypoints.png" /></td>
+                                </tr>
+                              </table>
+                            </div>
+                          </td>
+                          <td class="td">
+                            <p>Untrim by points</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="td">
+                            <div class="mediaobject">
+                              <table class="image-viewport" style="border-collapse:collapse;border:0; ;">
+                                <tr style="height: 48px">
+                                  <td style="padding:0;"><img src="image/uuid-872c7efb-cc56-0410-acb4-3e86566af6c0.png" style="max-height: 48px;" alt="toolpathedit_trimbygroup.png" /></td>
+                                </tr>
+                              </table>
+                            </div>
+                          </td>
+                          <td class="td">
+                            <p>Trim by group</p>
+                          </td>
+                          <td rowspan="2" valign="top" class="td align-top">
+                            <h6 id="id87807" class="bridgehead">Select</h6>
+                            <p>Use <span class="guimenuitem">Select</span> → <span class="guisubmenu">Select</span> to select a group of G1/G2/G3 toolpath points between two G0 toolpath points.</p>
+                            <p>Use <span class="guilabel">Invert selection</span> to invert the current selection.</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="td">
+                            <div class="mediaobject">
+                              <table class="image-viewport" style="border-collapse:collapse;border:0; ;">
+                                <tr style="height: 48px">
+                                  <td style="padding:0;"><img src="image/uuid-98717441-dcdc-709d-bb72-c97bb6a5b0c3.png" style="max-height: 48px;" alt="toolpathedit_untrimbygroup.png" /></td>
+                                </tr>
+                              </table>
+                            </div>
+                          </td>
+                          <td class="td">
+                            <p>Untrim by group</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="td">
+                            <div class="mediaobject">
+                              <table class="image-viewport" style="border-collapse:collapse;border:0; ;">
+                                <tr style="height: 48px">
+                                  <td style="padding:0;"><img src="image/uuid-7faf905d-14f8-8c1e-dcf4-cdee77d80e69.png" style="max-height: 48px;" alt="toolpathedit_trimbyselection.png" /></td>
+                                </tr>
+                              </table>
+                            </div>
+                          </td>
+                          <td class="td">
+                            <p>Trim by selection</p>
+                          </td>
+                          <td rowspan="2" valign="top" class="td align-top">
+                            <h6 id="id87829" class="bridgehead">Modes</h6>
+                            <p>Select one of the available <span class="guilabel">Modes</span>. Trimming is performed from the direction of the current view. No toolpath points are used for trimming.</p>
+                            <p>The toolpath is trimmed exactly where the selection and toolpath intersect.</p>
+                            <p>Use <span class="guilabel">Invert selection</span> to invert the current selection.</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="td">
+                            <div class="mediaobject">
+                              <table class="image-viewport" style="border-collapse:collapse;border:0; ;">
+                                <tr style="height: 48px">
+                                  <td style="padding:0;"><img src="image/uuid-8e9af04a-1b69-1ae0-7320-fa71b91f7805.png" style="max-height: 48px;" alt="toolpathedit_untrimbyselection.png" /></td>
+                                </tr>
+                              </table>
+                            </div>
+                          </td>
+                          <td class="td">
+                            <p>Untrim by selection</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="td">
+                            <div class="mediaobject">
+                              <table class="image-viewport" style="border-collapse:collapse;border:0; ;">
+                                <tr style="height: 48px">
+                                  <td style="padding:0;"><img src="image/uuid-56ae1667-383d-2761-0220-bad157ed137a.png" style="max-height: 48px;" alt="sel_window.png" /></td>
+                                </tr>
+                              </table>
+                            </div>
+                          </td>
+                          <td class="td">
+                            <p>Select window</p>
+                          </td>
+                          <td class="td">
+                            <p>Select a toolpath section within a rectangular selection area.</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="td">
+                            <div class="mediaobject">
+                              <table class="image-viewport" style="border-collapse:collapse;border:0; ;">
+                                <tr style="height: 48px">
+                                  <td style="padding:0;"><img src="image/uuid-68d6573c-615f-40fc-b6a1-3e8dd083fecb.png" style="max-height: 48px;" alt="sel_lasso.png" /></td>
+                                </tr>
+                              </table>
+                            </div>
+                          </td>
+                          <td class="td">
+                            <p>Select lasso</p>
+                          </td>
+                          <td class="td">
+                            <p>Select a toolpath section within an area specified by a polygonal chain.</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="td">
+                            <div class="mediaobject" id="UUID-60538df3-39ec-208e-9e1f-9dc4b08e186d_mediaobject-idm51595851992150">
+                              <table class="image-viewport" style="border-collapse:collapse;border:0; ;">
+                                <tr style="height: 48px">
+                                  <td style="padding:0;"><img src="image/uuid-f4a25726-ac99-ec4d-b188-e5903ec91e0d.png" style="max-height: 48px;" alt="sel_circular.png" /></td>
+                                </tr>
+                              </table>
+                            </div>
+                          </td>
+                          <td class="td">
+                            <p>Select circle</p>
+                          </td>
+                          <td class="td">
+                            <p>Select a toolpath section within a circular selection area.</p>
+                            <h6 id="id87869" class="bridgehead">Modes</h6>
+                            <p><span class="guilabel">C. + P.</span>: Enter the middle point and point on the circumference of the circular selection area.</p>
+                            <p><span class="guilabel">C. + R.</span>: Enter middle point and radius.</p>
+                            <p>The number of selected elements is displayed.</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="td">
+                            <div class="mediaobject"><img src="image/uuid-ae370c7a-5b73-ed2d-c1a1-f01de285a164.png" style="" alt="sel_segment.png" /></div>
+                          </td>
+                          <td class="td">
+                            <p>Select segment</p>
+                          </td>
+                          <td class="td">
+                            <p>Select elements arranged in an arc.</p>
+                            <h6 id="id87884" class="bridgehead">Select</h6>
+                            <p><span class="guilabel">Center</span>: Click the center of the arc with the left mouse button or snap a position or select a point.</p>
+                            <p><span class="guilabel">Vertices</span>: Click two diagonally opposite corners with the left mouse button or snap positions or select two points to draw the selection area.</p>
+                            <p>The number of selected elements is displayed.</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="td">
+                            <div class="mediaobject">
+                              <table class="image-viewport" style="border-collapse:collapse;border:0; ;">
+                                <tr style="height: 48px">
+                                  <td style="padding:0;"><img src="image/uuid-23803983-2068-0dc4-238b-fe6818d8b6b9.png" style="max-height: 48px;" alt="toolpathedit_trimbyplane.png" /></td>
+                                </tr>
+                              </table>
+                            </div>
+                          </td>
+                          <td class="td">
+                            <p>Trim by plane</p>
+                          </td>
+                          <td rowspan="2" class="td">
+                            <h6 id="id87898" class="bridgehead">Modes</h6>
+                            <p>Select one of the available <span class="guilabel">Modes</span>. No toolpath points are used for trimming. The toolpath is trimmed exactly where the selection and toolpath intersect.</p>
+                            <p><span class="guilabel">Entity Type</span>: Select a plane element (plane curve, plane surface, workplane).</p>
+                            <p><span class="guilabel">3 Points</span>: Select three non-collinear points.</p>
+                            <p><span class="guilabel">Direction + Origin</span>: Select a <span class="guilabel">Direction</span>. Then select an <span class="guilabel">Origin</span>. A preview of the plane is displayed perpendicular to the direction and to the origin.</p>
+                            <h6 id="id87909" class="bridgehead">Direction</h6>
+                            <p><span class="guilabel">Select</span> the reference direction using an element, via <span class="guilabel">2 Points</span> or by selecting an axial direction of the current (<span class="guilabel">X Wp</span>, <span class="guilabel">Y Wp</span>, <span class="guilabel">Z Wp</span>).</p>
+                            <h6 id="id87916" class="bridgehead">Origin</h6>
+                            <p id="UUID-60538df3-39ec-208e-9e1f-9dc4b08e186d_para-idm13070025151770">The origin is initialized at the first selected point.</p>
+                            <p><span class="guilabel">Select</span> a point in the graphics area for the origin of the plane, enter a coordinate <span class="guilabel">Coord.</span> or select <span class="guilabel">Wp 0 0 0</span> for the origin of the current workplane.</p>
+                            <p>Use <span class="guilabel">Invert selection</span> to invert the current selection.</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="td">
+                            <div class="mediaobject">
+                              <table class="image-viewport" style="border-collapse:collapse;border:0; ;">
+                                <tr style="height: 48px">
+                                  <td style="padding:0;"><img src="image/uuid-b0848db5-c7e8-e2bc-08ec-977531d2d33a.png" style="max-height: 48px;" alt="toolpathedit_untrimbyplane.png" /></td>
+                                </tr>
+                              </table>
+                            </div>
+                          </td>
+                          <td class="td">
+                            <p>Untrim by plane</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="td">
+                            <div class="mediaobject">
+                              <table class="image-viewport" style="border-collapse:collapse;border:0; ;">
+                                <tr style="height: 48px">
+                                  <td style="padding:0;"><img src="image/uuid-07be73cd-6bad-4d5b-f7f1-5e6e00b04de9.png" style="max-height: 48px;" alt="toolpathedit_trimbycurves.png" /></td>
+                                </tr>
+                              </table>
+                            </div>
+                          </td>
+                          <td class="td">
+                            <p>Trim by curves</p>
+                          </td>
+                          <td rowspan="2" valign="top" class="td align-top">
+                            <h6 id="id87939" class="bridgehead">Select</h6>
+                            <p>Use <span class="guimenuitem">Select</span> → <span class="guisubmenu">Curves</span> to select a closed curved line.</p>
+                            <h6 id="id87944" class="bridgehead">Direction</h6>
+                            <p><span class="guilabel">Select</span> the direction using an element, via <span class="guilabel">2 Points</span>, the current view or specify by selecting an axial direction of the current workplane (<span class="guilabel">X Wp</span>, <span class="guilabel">Y Wp</span>, <span class="guilabel">Z Wp</span>).</p>
+                            <p>Use <span class="guilabel">Invert selection</span> to invert the current selection.</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="td">
+                            <div class="mediaobject"><img src="image/uuid-2446096a-705d-6438-e320-26ff20f332cd.png" style="" alt="toolpathedit_untrimbycurves.png" /></div>
+                          </td>
+                          <td class="td">
+                            <p>Untrim by curves</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="td">
+                            <div class="mediaobject">
+                              <table class="image-viewport" style="border-collapse:collapse;border:0; ;">
+                                <tr style="height: 48px">
+                                  <td style="padding:0;"><img src="image/uuid-a21dcd70-3f11-f6cb-f8dd-992f3eb1f965.png" style="max-height: 48px;" alt="toolpathedit_invertall.png" /></td>
+                                </tr>
+                              </table>
+                            </div>
+                          </td>
+                          <td class="td">
+                            <p>Invert selection</p>
+                          </td>
+                          <td class="td">
+                            <p>Invert the current selection.</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="td">
+                            <div class="mediaobject">
+                              <table class="image-viewport" style="border-collapse:collapse;border:0; ;">
+                                <tr style="height: 48px">
+                                  <td style="padding:0;"><img src="image/uuid-af9d7c23-8819-a072-a9b3-cdf5ee8d7d24.png" style="max-height: 48px;" alt="toolpathedit_untrimall.png" /></td>
+                                </tr>
+                              </table>
+                            </div>
+                          </td>
+                          <td class="td">
+                            <p>Untrim all</p>
+                          </td>
+                          <td class="td">
+                            <p>Undo all trims.</p>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </section>
+              <div class="footer-content">
+                <div class="section-toc section-toc-after">
+                  <div class="section-toc-title">
+                    <span class="section-toc-title-delimiter">:</span>
+                  </div>
+                </div>
+              </div>
+              <footer></footer>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
