@@ -1,0 +1,25 @@
+# Working data - ALL generated runtime data excluded from git
+working_data/
+
+# Source data - INCLUDE all source files (CAD models, Excel, etc)
+# Only exclude working copies and temp files
+source_data/**/*.tmp
+source_data/**/*.temp
+source_data/**/*.bak
+source_data/**/*.old
+source_data/**/~$*
+
+# Temporary files
+*.tmp
+*.temp
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo

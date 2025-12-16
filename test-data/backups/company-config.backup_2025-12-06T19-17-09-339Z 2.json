@@ -1,0 +1,799 @@
+{
+  "companyName": "BRK Manufacturing",
+  "machines": [
+    {
+      "id": "dmu-65-monoblock",
+      "name": "DMU 65 Monoblock",
+      "type": "CNC Mill",
+      "manufacturer": "DMG MORI",
+      "model": "DMU 65 Monoblock",
+      "control": "Heidenhain",
+      "controlVersion": "TBD",
+      "axes": 3,
+      "maxSpindleSpeed": 18000,
+      "toolMagazineCapacity": 40,
+      "maxLoadWeight": 500,
+      "internalCoolant": true,
+      "internalAir": true,
+      "coolantType": "Blaser Swisslube",
+      "fineCoolantFilter": true,
+      "fixtureSystem": "Schunk",
+      "workEnvelope": {
+        "x": 650,
+        "y": 520,
+        "z": 475,
+        "unit": "mm"
+      },
+      "precision": {
+        "positioningAccuracy": 0.005,
+        "repeatability": 0.003,
+        "unit": "mm"
+      },
+      "network": {
+        "ipAddress": "192.168.1.101",
+        "hostname": "dmu65-01"
+      },
+      "maintenance": {
+        "lastService": "2025-10-15",
+        "nextScheduled": "2025-12-15",
+        "intervalHours": 500,
+        "history": [
+          {
+            "date": "2025-10-15",
+            "type": "preventive",
+            "description": "Regular maintenance - lubrication, calibration",
+            "technician": "Service Team"
+          },
+          {
+            "date": "2025-07-20",
+            "type": "repair",
+            "description": "Spindle bearing replacement",
+            "technician": "DMG Service"
+          }
+        ]
+      },
+      "documentation": {
+        "manual": "./docs/machines/DMU65_Manual.pdf",
+        "setupSheets": "./docs/machines/DMU65_Setup/",
+        "maintenanceLog": "./docs/machines/DMU65_Maintenance.xlsx"
+      }
+    },
+    {
+      "id": "dmu-85-monoblock",
+      "name": "DMU 85 Monoblock",
+      "type": "5-axis milling",
+      "manufacturer": "DMG MORI",
+      "model": "DMU 85 Monoblock",
+      "control": "Heidenhain",
+      "controlVersion": "TBD",
+      "axes": 5,
+      "maxSpindleSpeed": 24000,
+      "internalCoolant": true,
+      "internalAir": true,
+      "coolantType": "Blaser Swisslube",
+      "fineCoolantFilter": true,
+      "fixtureSystem": "FCS/Parotech",
+      "workEnvelope": {
+        "x": 850,
+        "y": 800,
+        "z": 500
+      }
+    },
+    {
+      "id": "dmu-hsc75",
+      "name": "DMU HSC 75",
+      "type": "CNC Mill",
+      "manufacturer": "DMG MORI",
+      "model": "DMU HSC 75",
+      "control": "Heidenhain",
+      "controlVersion": "TBD",
+      "axes": 5,
+      "maxSpindleSpeed": 28000,
+      "internalCoolant": true,
+      "internalAir": true,
+      "coolantType": "Blaser Swisslube",
+      "fineCoolantFilter": true,
+      "fixtureSystem": "FCS/Parotech",
+      "toolMagazineCapacity": 60,
+      "maxLoadWeight": 600,
+      "workEnvelope": {
+        "x": 735,
+        "y": 650,
+        "z": 560,
+        "unit": "mm"
+      }
+    },
+    {
+      "id": "dmu-100p",
+      "name": "DMU 100P",
+      "type": "CNC Mill",
+      "manufacturer": "DMG MORI",
+      "model": "DMU 100P",
+      "control": "Heidenhain",
+      "controlVersion": "TBD",
+      "axes": 5,
+      "maxSpindleSpeed": 18000,
+      "internalCoolant": true,
+      "internalAir": false,
+      "coolantType": "Blaser Swisslube",
+      "fineCoolantFilter": false,
+      "fixtureSystem": "FCS/Parotech",
+      "toolMagazineCapacity": 60,
+      "maxLoadWeight": 1200,
+      "workEnvelope": {
+        "x": 1000,
+        "y": 800,
+        "z": 800,
+        "unit": "mm"
+      }
+    },
+    {
+      "id": "trimill",
+      "name": "Trimill",
+      "type": "CNC Mill",
+      "manufacturer": "DMG MORI",
+      "model": "Trimill",
+      "control": "Heidenhain",
+      "controlVersion": "TBD",
+      "axes": 5,
+      "maxSpindleSpeed": 24000,
+      "internalCoolant": true,
+      "coolantType": "Blaser Swisslube",
+      "fineCoolantFilter": false,
+      "fixtureSystem": "Schunk",
+      "toolMagazineCapacity": 42,
+      "maxLoadWeight": 700,
+      "workEnvelope": {
+        "x": 800,
+        "y": 700,
+        "z": 600,
+        "unit": "mm"
+      }
+    },
+    {
+      "id": "100p4-robot",
+      "name": "100P4 with Robot",
+      "type": "CNC Mill",
+      "manufacturer": "DMG MORI",
+      "model": "100P4",
+      "control": "Heidenhain",
+      "controlVersion": "TBD",
+      "axes": 5,
+      "maxSpindleSpeed": 20000,
+      "internalCoolant": true,
+      "internalAir": true,
+      "coolantType": "Blaser Swisslube",
+      "fineCoolantFilter": false,
+      "fixtureSystem": "FCS/Parotech",
+      "toolMagazineCapacity": 60,
+      "maxLoadWeight": 1200,
+      "hasRobot": true,
+      "workEnvelope": {
+        "x": 1000,
+        "y": 800,
+        "z": 800,
+        "unit": "mm"
+      }
+    },
+    {
+      "id": "deckel-maho-105v",
+      "name": "Deckel Maho DMC 105 V",
+      "type": "CNC Mill",
+      "manufacturer": "Deckel Maho",
+      "model": "DMC 105 V",
+      "control": "Heidenhain",
+      "controlVersion": "TBD",
+      "axes": 3,
+      "maxSpindleSpeed": 18000,
+      "internalCoolant": false,
+      "internalAir": true,
+      "coolantType": "Blaser Swisslube",
+      "fineCoolantFilter": false,
+      "fixtureSystem": "Permanent Magnet",
+      "toolMagazineCapacity": 30,
+      "maxLoadWeight": 1000,
+      "workEnvelope": {
+        "x": 1050,
+        "y": 600,
+        "z": 560,
+        "unit": "mm"
+      }
+    },
+    {
+      "id": "dmu-60t",
+      "name": "DMU 60T",
+      "type": "CNC Mill",
+      "manufacturer": "DMG MORI",
+      "model": "DMU 60T",
+      "control": "Heidenhain",
+      "controlVersion": "TBD",
+      "axes": 5,
+      "maxSpindleSpeed": 18000,
+      "internalCoolant": false,
+      "internalAir": false,
+      "coolantType": "Blaser Swisslube",
+      "fineCoolantFilter": false,
+      "fixtureSystem": "Schunk",
+      "toolMagazineCapacity": 40,
+      "maxLoadWeight": 500,
+      "workEnvelope": {
+        "x": 600,
+        "y": 500,
+        "z": 450,
+        "unit": "mm"
+      }
+    }
+  ],
+  "cycles": [
+    {
+      "id": "drill",
+      "name": "Drill",
+      "type": "drilling",
+      "description": "Standard drilling cycle",
+      "machineTypes": [
+        "CNC Mill"
+      ],
+      "parameters": [
+        "depth",
+        "feedRate",
+        "spindleSpeed",
+        "dwell"
+      ],
+      "icon": "drill"
+    },
+    {
+      "id": "drill-deep",
+      "name": "Deep Hole Drilling",
+      "type": "drilling",
+      "description": "Deep hole drilling with peck cycle",
+      "machineTypes": [
+        "CNC Mill"
+      ],
+      "parameters": [
+        "depth",
+        "feedRate",
+        "spindleSpeed",
+        "peckDepth",
+        "retractHeight"
+      ],
+      "icon": "drill"
+    },
+    {
+      "id": "tap",
+      "name": "Tap",
+      "type": "threading",
+      "description": "Thread tapping cycle",
+      "machineTypes": [
+        "CNC Mill"
+      ],
+      "parameters": [
+        "depth",
+        "pitch",
+        "spindleSpeed"
+      ],
+      "icon": "tap"
+    },
+    {
+      "id": "bore",
+      "name": "Bore",
+      "type": "boring",
+      "description": "Precision boring cycle",
+      "machineTypes": [
+        "CNC Mill"
+      ],
+      "parameters": [
+        "depth",
+        "feedRate",
+        "spindleSpeed",
+        "diameter"
+      ],
+      "icon": "bore"
+    },
+    {
+      "id": "ream",
+      "name": "Ream",
+      "type": "finishing",
+      "description": "Reaming cycle for hole finishing",
+      "machineTypes": [
+        "CNC Mill"
+      ],
+      "parameters": [
+        "depth",
+        "feedRate",
+        "spindleSpeed"
+      ],
+      "icon": "ream"
+    },
+    {
+      "id": "contour",
+      "name": "Contour",
+      "type": "milling",
+      "description": "2D contour milling",
+      "machineTypes": [
+        "CNC Mill"
+      ],
+      "parameters": [
+        "depth",
+        "feedRate",
+        "spindleSpeed",
+        "stepOver",
+        "compensation"
+      ],
+      "icon": "contour"
+    },
+    {
+      "id": "pocket",
+      "name": "Pocket",
+      "type": "milling",
+      "description": "Pocket milling cycle",
+      "machineTypes": [
+        "CNC Mill"
+      ],
+      "parameters": [
+        "depth",
+        "feedRate",
+        "spindleSpeed",
+        "stepOver",
+        "stepDown"
+      ],
+      "icon": "pocket"
+    },
+    {
+      "id": "face",
+      "name": "Face Mill",
+      "type": "milling",
+      "description": "Face milling cycle",
+      "machineTypes": [
+        "CNC Mill"
+      ],
+      "parameters": [
+        "depth",
+        "feedRate",
+        "spindleSpeed",
+        "stepOver"
+      ],
+      "icon": "face"
+    },
+    {
+      "id": "plane",
+      "name": "Plane Milling",
+      "type": "milling",
+      "description": "Planar surface milling",
+      "machineTypes": [
+        "CNC Mill"
+      ],
+      "parameters": [
+        "depth",
+        "feedRate",
+        "spindleSpeed",
+        "stepOver",
+        "angle"
+      ],
+      "icon": "plane"
+    },
+    {
+      "id": "3d-surface",
+      "name": "3D Surface",
+      "type": "milling",
+      "description": "3D surface machining",
+      "machineTypes": [
+        "CNC Mill"
+      ],
+      "parameters": [
+        "feedRate",
+        "spindleSpeed",
+        "stepOver",
+        "tolerance"
+      ],
+      "icon": "3d"
+    },
+    {
+      "id": "turn-rough",
+      "name": "Rough Turning",
+      "type": "turning",
+      "description": "Rough turning cycle",
+      "machineTypes": [
+        "CNC Lathe"
+      ],
+      "parameters": [
+        "feedRate",
+        "spindleSpeed",
+        "depthOfCut"
+      ],
+      "icon": "turn"
+    },
+    {
+      "id": "turn-finish",
+      "name": "Finish Turning",
+      "type": "turning",
+      "description": "Finish turning cycle",
+      "machineTypes": [
+        "CNC Lathe"
+      ],
+      "parameters": [
+        "feedRate",
+        "spindleSpeed",
+        "depthOfCut"
+      ],
+      "icon": "turn"
+    },
+    {
+      "id": "groove",
+      "name": "Grooving",
+      "type": "turning",
+      "description": "Grooving cycle",
+      "machineTypes": [
+        "CNC Lathe"
+      ],
+      "parameters": [
+        "width",
+        "depth",
+        "feedRate",
+        "spindleSpeed"
+      ],
+      "icon": "groove"
+    },
+    {
+      "id": "thread-turn",
+      "name": "Thread Turning",
+      "type": "threading",
+      "description": "External/internal threading on lathe",
+      "machineTypes": [
+        "CNC Lathe"
+      ],
+      "parameters": [
+        "pitch",
+        "depth",
+        "spindleSpeed"
+      ],
+      "icon": "thread"
+    }
+  ],
+  "toolCategories": [
+    {
+      "id": "drill",
+      "name": "Drills",
+      "description": "All types of drilling tools",
+      "patterns": [
+        "*drill*",
+        "*bohrer*"
+      ],
+      "types": [
+        "twist-drill",
+        "center-drill",
+        "spot-drill",
+        "gun-drill",
+        "step-drill"
+      ]
+    },
+    {
+      "id": "end-mill",
+      "name": "End Mills",
+      "description": "End milling cutters",
+      "patterns": [
+        "*mill*",
+        "*fräser*"
+      ],
+      "types": [
+        "flat-end",
+        "ball-end",
+        "bull-nose",
+        "corner-radius"
+      ]
+    },
+    {
+      "id": "face-mill",
+      "name": "Face Mills",
+      "description": "Face milling cutters",
+      "patterns": [
+        "*face*",
+        "*planfräser*"
+      ],
+      "types": [
+        "indexable",
+        "solid"
+      ]
+    },
+    {
+      "id": "tap",
+      "name": "Taps",
+      "description": "Threading taps",
+      "patterns": [
+        "*tap*",
+        "*gewindebohrer*"
+      ],
+      "types": [
+        "spiral-point",
+        "spiral-flute",
+        "forming"
+      ]
+    },
+    {
+      "id": "reamer",
+      "name": "Reamers",
+      "description": "Hole finishing reamers",
+      "patterns": [
+        "*ream*",
+        "*reibahle*"
+      ],
+      "types": [
+        "straight-flute",
+        "spiral-flute"
+      ]
+    },
+    {
+      "id": "boring",
+      "name": "Boring Tools",
+      "description": "Boring bars and tools",
+      "patterns": [
+        "*bore*",
+        "*bohrwerkzeug*"
+      ],
+      "types": [
+        "boring-bar",
+        "boring-head"
+      ]
+    },
+    {
+      "id": "turning",
+      "name": "Turning Tools",
+      "description": "Lathe turning tools",
+      "patterns": [
+        "*turn*",
+        "*drehmeißel*"
+      ],
+      "types": [
+        "roughing",
+        "finishing",
+        "profile"
+      ]
+    },
+    {
+      "id": "grooving",
+      "name": "Grooving Tools",
+      "description": "Grooving and parting tools",
+      "patterns": [
+        "*groove*",
+        "*parting*",
+        "*abstechmeißel*"
+      ],
+      "types": [
+        "internal",
+        "external",
+        "parting"
+      ]
+    },
+    {
+      "id": "thread-turn",
+      "name": "Threading Tools",
+      "description": "Thread turning inserts",
+      "patterns": [
+        "*thread*",
+        "*gewinde*"
+      ],
+      "types": [
+        "internal",
+        "external"
+      ]
+    }
+  ],
+  "validationRules": [
+    {
+      "id": "gundrill-60min",
+      "name": "GunDrill 60 Min Limit",
+      "description": "Validates that gun drilling operations don't exceed 60 minutes",
+      "active": true,
+      "appliesTo": {
+        "machines": true,
+        "cycles": false,
+        "tools": true
+      },
+      "machineIds": [
+        "dmu-65-monoblock",
+        "dmu-85-monoblock",
+        "dmu-hsc75",
+        "dmu-100p",
+        "100p4-robot",
+        "trimill"
+      ],
+      "cycleIds": [
+        "drill",
+        "drill-deep"
+      ],
+      "toolPatterns": [
+        "*gundrill*",
+        "*gun-drill*",
+        "*drill*",
+        "*bohrer*",
+        "*bore*",
+        "*bohrwerkzeug*"
+      ],
+      "conditions": {
+        "duration": {
+          "operator": ">",
+          "value": 60,
+          "unit": "minutes"
+        }
+      }
+    },
+    {
+      "id": "auto-correct-contour",
+      "name": "Auto-Correction Contour",
+      "description": "Automatically corrects missing properties in contour cycles",
+      "active": true,
+      "appliesTo": {
+        "machines": true,
+        "cycles": false,
+        "tools": false
+      },
+      "machineIds": [
+        "100p4-robot"
+      ],
+      "cycleIds": [
+        "contour"
+      ],
+      "toolPatterns": [],
+      "conditions": {
+        "missingProperties": [
+          "feedRate",
+          "spindleSpeed",
+          "compensation"
+        ]
+      }
+    },
+    {
+      "id": "auto-correct-plane",
+      "name": "Auto-Correction Plane",
+      "description": "Automatically corrects missing properties in plane milling",
+      "active": false,
+      "appliesTo": {
+        "machines": true,
+        "cycles": false,
+        "tools": false
+      },
+      "machineIds": [],
+      "cycleIds": [
+        "plane"
+      ],
+      "toolPatterns": [],
+      "conditions": {
+        "missingProperties": [
+          "angle",
+          "stepOver"
+        ]
+      }
+    },
+    {
+      "id": "spindle-speed-limit",
+      "name": "Spindle Speed Limit Check",
+      "description": "Validates spindle speed doesn't exceed machine capability",
+      "active": true,
+      "appliesTo": {
+        "machines": true,
+        "cycles": false,
+        "tools": false
+      },
+      "machineIds": [
+        "dmu-65-monoblock",
+        "dmu-hsc75",
+        "trimill",
+        "deckel-maho-105v",
+        "dmu-85-monoblock",
+        "dmu-100p",
+        "100p4-robot",
+        "dmu-60t"
+      ],
+      "cycleIds": [],
+      "toolPatterns": [],
+      "conditions": {
+        "spindleSpeed": {
+          "operator": ">",
+          "value": "machineMaxSpeed"
+        }
+      }
+    },
+    {
+      "id": "m110-contour",
+      "name": "M110 Contour Validation",
+      "description": "Validates M110 contour milling operations and parameters",
+      "active": true,
+      "appliesTo": {
+        "machines": true,
+        "cycles": false,
+        "tools": true
+      },
+      "machineIds": [
+        "dmu-65-monoblock",
+        "dmu-hsc75",
+        "trimill",
+        "deckel-maho-105v",
+        "dmu-85-monoblock",
+        "dmu-100p",
+        "100p4-robot",
+        "dmu-60t"
+      ],
+      "cycleIds": [
+        "contour"
+      ],
+      "toolPatterns": [
+        "*mill*",
+        "*fräser*"
+      ],
+      "conditions": {
+        "cycleType": "M110"
+      }
+    },
+    {
+      "id": "m110-helical",
+      "name": "M110 Helical Validation",
+      "description": "Validates M110 helical interpolation operations",
+      "active": true,
+      "appliesTo": {
+        "machines": false,
+        "cycles": true,
+        "tools": true
+      },
+      "machineIds": [],
+      "cycleIds": [
+        "drill"
+      ],
+      "toolPatterns": [
+        "*mill*",
+        "*fräser*"
+      ],
+      "conditions": {
+        "cycleType": "M110",
+        "helicalInterpolation": true
+      }
+    },
+    {
+      "id": "reconditioned-tool",
+      "name": "Reconditioned Tool Check",
+      "description": "Flags usage of reconditioned tools and validates cycle limits",
+      "active": true,
+      "appliesTo": {
+        "machines": true,
+        "cycles": false,
+        "tools": false
+      },
+      "machineIds": [
+        "dmu-65-monoblock"
+      ],
+      "cycleIds": [],
+      "toolPatterns": [
+        "*recond*",
+        "*regrind*",
+        "*resharp*"
+      ],
+      "conditions": {
+        "toolStatus": "reconditioned"
+      }
+    },
+    {
+      "id": "single-tool-in-nc",
+      "name": "Single Tool in NC Program",
+      "description": "Validates that NC program uses only one tool",
+      "active": true,
+      "appliesTo": {
+        "machines": true,
+        "cycles": false,
+        "tools": false
+      },
+      "machineIds": [
+        "dmu-65-monoblock",
+        "dmu-85-monoblock",
+        "dmu-100p",
+        "100p4-robot",
+        "dmu-60t",
+        "deckel-maho-105v",
+        "trimill",
+        "dmu-hsc75"
+      ],
+      "cycleIds": [],
+      "toolPatterns": [],
+      "conditions": {
+        "maxToolCount": 1
+      }
+    }
+  ]
+}

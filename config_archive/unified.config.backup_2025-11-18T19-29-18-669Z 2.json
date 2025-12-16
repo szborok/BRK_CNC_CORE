@@ -1,0 +1,73 @@
+{
+  "isConfigured": true,
+  "demoMode": true,
+  "companyName": "BRK Manufacturing (Demo)",
+  "companyFeatures": {
+    "jsonScanner": true,
+    "toolManager": true,
+    "clampingPlateManager": true
+  },
+  "modules": {
+    "jsonAnalyzer": {
+      "enabled": true,
+      "mode": "auto",
+      "dataPath": "../BRK_CNC_CORE/test-data/source_data/json_files",
+      "autoProcessing": true
+    },
+    "matrixTools": {
+      "enabled": true,
+      "mode": "auto",
+      "dataPath": "../BRK_CNC_CORE/test-data/source_data/json_files",
+      "inventoryFile": "../BRK_CNC_CORE/train-data/matrix_tools/E-Cut készlet.xlsx",
+      "features": {
+        "excelProcessing": true,
+        "jsonScanning": true
+      },
+      "paths": {
+        "excelInputPath": "../BRK_CNC_CORE/train-data/matrix_tools",
+        "jsonInputPath": "../BRK_CNC_CORE/test-data/source_data/json_files"
+      }
+    },
+    "platesManager": {
+      "enabled": true,
+      "mode": "auto",
+      "modelsPath": "../ClampingPlateManager/data/test_source_data",
+      "plateInfoFile": "../ClampingPlateManager/data/test_source_data/Készülékek.xlsx"
+    }
+  },
+  "authentication": {
+    "method": "file",
+    "employeeFile": "./test_data/employees.json"
+  },
+  "storage": {
+    "mode": "simple",
+    "basePath": "../BRK_CNC_CORE/test-data/working_data/BRK CNC Management Dashboard/dashboard",
+    "logsPath": "../BRK_CNC_CORE/test-data/working_data/BRK CNC Management Dashboard/logs",
+    "backupPath": "../BRK_CNC_CORE/test-data/working_data/BRK CNC Management Dashboard/backups",
+    "tempPath": "../BRK_CNC_CORE/test-data/working_data/BRK CNC Management Dashboard/temp",
+    "outputPath": "../BRK_CNC_CORE/test-data/working_data/BRK CNC Management Dashboard/output"
+  },
+  "features": {
+    "themeMode": "system",
+    "notifications": {
+      "enabled": true,
+      "showTaskCompletion": true,
+      "showErrors": true,
+      "showWarnings": true,
+      "showSystemUpdates": true
+    },
+    "autoBackup": true,
+    "exportReports": true,
+    "autoScan": {
+      "enabled": true,
+      "interval": 60,
+      "jsonScannerEnabled": true,
+      "toolManagerEnabled": true,
+      "runOnStartup": false
+    }
+  },
+  "companyLogo": "",
+  "configVersion": "1.0.0",
+  "savedAt": "2025-11-18T19:25:57.047Z",
+  "savedBy": "Dashboard"
+}
